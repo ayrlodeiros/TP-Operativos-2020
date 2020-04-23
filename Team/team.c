@@ -13,10 +13,14 @@ int i=0;
 
 int main(void){
 
-	cola* cola_de_entrenadores;
+	t_queue* cola_de_entrenadores = queue_create();
+	queue_push()
 
 	cola_de_entrenadores = (cola*)malloc(sizeof(cola));
 	cola_de_entrenadores -> inicio = NULL;
+
+	queue_create(cola_de_entrenadores);
+	queue_push()
 
 
 
@@ -30,6 +34,8 @@ int main(void){
 
 	printf("El valor de i es : %d \n ",i);
 	*/
+
+
 
 	return 0;
 }
