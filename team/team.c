@@ -8,16 +8,23 @@
 void* restar();
 pthread_t entrenadores[3];
 */
-int i=0;
 
 
 int main(void){
 
+	pthread_t* conexion_broker;
+
+	iniciar_team();
+	log_info(nuestro_log, leer_algoritmo_planificacion());
+
+	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
+	pthread_join(conexion_broker,NULL);
+
+
+	//VER MAS ADELANTE
+
 	t_queue* cola_de_entrenadores = queue_create();
 	//queue_push();
-
-	printf("Hola");
-	asd();
 
 	/*pthread_create(&(entrenadores[0]),NULL,sumar,NULL);
 
@@ -31,4 +38,16 @@ int main(void){
 	*/
 
 	return 0;
+}
+
+void iniciar_team() {
+	iniciar_config();
+	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
+	nuestro_log = log_create("nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
+}
+
+void terminar_team() {
+	destruir_config();
+	log_destroy(logger);
+	log_destroy(nuestro_log);
 }
