@@ -12,14 +12,33 @@ void destruir_config(void) {
 	config_destroy(config);
 }
 
-void leer_posiciones_entrenadores(void){
-
+t_list* crear_t_list(char** array) {
+	t_list* lista = list_create();
+	int pos = 0;
+	while(array[pos] != NULL) {
+		list_add(lista, array[pos]);
+		pos++;
+	}
+	return lista;
 }
-void leer_pokemon_entrenadores(void){
 
+t_list* leer_posiciones_entrenadores(void){
+
+	char** posiciones_config = config_get_array_value(config, "POSICIONES_ENTRENADORES");
+
+	return crear_t_list(posiciones_config);
 }
-void leer_objetivos_entrenadores(void){
 
+t_list* leer_pokemon_entrenadores(void){
+	char** pokemons_config = config_get_array_value(config, "POKEMON_ENTRENADORES");
+
+	return crear_t_list(pokemons_config);
+}
+
+t_list* leer_objetivos_entrenadores(void){
+	char** objetivos_config = config_get_array_value(config, "OBJETIVOS_ENTRENADORES");
+
+	return crear_t_list(objetivos_config);
 }
 
 int leer_tiempo_reconexion(void){

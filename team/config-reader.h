@@ -1,7 +1,9 @@
 #ifndef CONFIGREADER_H_
 #define CONFIGREADER_H_
 
+#include<stdio.h>
 #include<commons/config.h>
+#include<commons/collections/list.h>
 
 t_config* config;
 
@@ -9,11 +11,10 @@ void iniciar_config(void);
 t_config* get_config(void);
 void destruir_config(void);
 
-
-//HACER ESTOS TRES MAS ADELANTE
-void leer_posiciones_entrenadores(void);
-void leer_pokemon_entrenadores(void);
-void leer_objetivos_entrenadores(void);
+t_list* crear_t_list(char** array);
+t_list* leer_posiciones_entrenadores(void);
+t_list* leer_pokemon_entrenadores(void);
+t_list* leer_objetivos_entrenadores(void);
 
 int leer_tiempo_reconexion(void);
 

@@ -17,8 +17,11 @@ int main(void){
 	iniciar_team();
 	log_info(nuestro_log, leer_algoritmo_planificacion());
 
+	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
+
+
 	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
-	pthread_join(conexion_broker,NULL);
+	pthread_detach(conexion_broker);
 
 
 	//VER MAS ADELANTE
@@ -44,6 +47,7 @@ void iniciar_team() {
 	iniciar_config();
 	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
+	armar_entrenadores();
 }
 
 void terminar_team() {
