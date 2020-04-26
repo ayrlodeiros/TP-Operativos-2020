@@ -11,21 +11,20 @@ void conectar_broker(void) {
 }
 
 void armar_entrenadores(void) {
-	t_list* posiciones = leer_objetivos_entrenadores();
+	t_list* posiciones = leer_posiciones_entrenadores();
 	t_list* pokemons = leer_pokemon_entrenadores();
 	t_list* objetivos = leer_objetivos_entrenadores();
 
 	entrenadores = list_create();
 
 	for(int i=0; i< list_size(posiciones);i++){
-		entrenador* entrenador = armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i));
-		list_add(entrenadores, entrenador);
+		list_add(entrenadores, armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i)));
 	}
 
 }
 
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
-	entrenador* un_entrenador = malloc(obtener_tamanio_entrenador(posicion, pokemons, objetivos));
+	entrenador* un_entrenador = malloc(sizeof(entrenador));
 	t_list* lista_objetivos = crear_t_list(string_split(objetivos,"|"));
 
 	un_entrenador->posicion = armar_posicion(posicion);
@@ -33,18 +32,19 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->pokemons_objetivo = lista_objetivos;
 	un_entrenador->cant_maxima_pokemons = list_size(lista_objetivos);
 
+
 	return un_entrenador;
 }
 
 posicion* armar_posicion(char* posicion_a_armar) {
-	posicion* posicion;
+	posicion* pos = malloc(sizeof(posicion));
 
-	t_list* posiciones = string_split(posicion_a_armar,"|");
+	char** posiciones = string_split(posicion_a_armar,"|");
 
-	posicion->posicion_x = list_get(posiciones, 0);
-	posicion->posicion_y = list_get(posiciones, 1);
+	pos->posicion_x = atoi(posiciones[0]);
+	pos->posicion_y = atoi(posiciones[1]);
 
-	return posicion;
+	return pos;
 }
 
 size_t obtener_tamanio_entrenador(char* posicion, char* pokemons, char* objetivos){

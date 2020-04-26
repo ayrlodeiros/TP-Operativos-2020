@@ -4,7 +4,7 @@ void iniciar_config(void){
 	config = config_create("team.config");
 }
 
-t_config* get_config(void){
+t_config* get_config(void) {
 	return config;
 }
 
