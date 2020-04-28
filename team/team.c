@@ -20,6 +20,8 @@ int main(void){
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 
 
+	//entrenador_a_ejecutar();
+
 	for(int i = 0; i < list_size(entrenadores); i++){
 		entrenador* entrenador = list_get(entrenadores, i);
 		printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);

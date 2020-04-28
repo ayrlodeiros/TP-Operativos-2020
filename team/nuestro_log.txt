@@ -66,3 +66,49 @@
 [INFO] 23:21:01:256 team/(5261:5261): La cantidad de entrenadores del equipo es de 3 entrenadores
 [INFO] 23:22:31:543 team/(5309:5309): RR
 [INFO] 23:22:31:552 team/(5309:5309): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 15:58:57:557 team/(4679:4679): RR
+[INFO] 15:58:57:559 team/(4679:4679): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:03:13:992 team/(6775:6775): RR
+[INFO] 17:03:13:993 team/(6775:6775): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:06:43:393 team/(6885:6885): RR
+[INFO] 17:06:43:394 team/(6885:6885): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:07:19:770 team/(6918:6918): RR
+[INFO] 17:07:19:780 team/(6918:6918): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:11:23:665 team/(7040:7040): RR
+[INFO] 17:11:23:667 team/(7040:7040): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:12:33:819 team/(7109:7109): RR
+[INFO] 17:12:33:824 team/(7109:7109): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:13:09:343 team/(7157:7157): RR
+[INFO] 17:13:09:352 team/(7157:7157): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:14:32:59 team/(7219:7219): RR
+[INFO] 17:14:32:60 team/(7219:7219): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:14:57:382 team/(7245:7245): RR
+[INFO] 17:14:57:388 team/(7245:7245): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:15:11:279 team/(7279:7279): RR
+[INFO] 17:15:11:284 team/(7279:7279): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:30:24:620 team/(7686:7686): RR
+[INFO] 17:30:24:620 team/(7686:7686): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:31:01:357 team/(7718:7718): RR
+[INFO] 17:31:01:359 team/(7718:7718): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:31:26:391 team/(7756:7756): RR
+[INFO] 17:31:26:396 team/(7756:7756): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:32:34:555 team/(7821:7821): RR
+[INFO] 17:32:34:558 team/(7821:7821): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:33:01:460 team/(7862:7862): RR
+[INFO] 17:33:01:462 team/(7862:7862): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:33:23:80 team/(7892:7892): RR
+[INFO] 17:33:23:82 team/(7892:7892): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:33:36:889 team/(7913:7913): RR
+[INFO] 17:33:36:890 team/(7913:7913): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:33:49:579 team/(7940:7940): RR
+[INFO] 17:33:49:579 team/(7940:7940): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:34:05:364 team/(7966:7966): RR
+[INFO] 17:34:05:365 team/(7966:7966): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:34:50:758 team/(8024:8024): RR
+[INFO] 17:34:50:761 team/(8024:8024): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:35:07:8 team/(8056:8056): RR
+[INFO] 17:35:07:8 team/(8056:8056): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:35:33:458 team/(8086:8086): RR
+[INFO] 17:35:33:464 team/(8086:8086): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:35:56:33 team/(8116:8116): RR
+[INFO] 17:35:56:39 team/(8116:8116): La cantidad de entrenadores del equipo es de 3 entrenadores
