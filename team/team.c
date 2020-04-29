@@ -20,6 +20,7 @@ int main(void){
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 
 
+	printf("\n 1");
 	pokemons_sueltos = queue_create();
 
 	pokemon* pokemon_de_prueba  = malloc(sizeof(pokemon));;
@@ -27,27 +28,30 @@ int main(void){
 	pokemon_de_prueba->posicion->posicion_x = 0;
 	pokemon_de_prueba->posicion->posicion_y = 0;
 
-
+	printf("\n 2");
 	queue_push(pokemons_sueltos,pokemon_de_prueba);
-	entrenador* entrenador_prueba_1 = list_get(entrenadores,1);
-	entrenador* entrenador_prueba_2 = list_get(entrenadores,0);
+	//entrenador* entrenador_prueba_1 = list_get(entrenadores,1);
+	//entrenador* entrenador_prueba_2 = list_get(entrenadores,0);
 
-
-	el_entrenador1_esta_mas_cerca(entrenador_prueba_1,entrenador_prueba_2);
-
+	printf("\n 3");
+	printf("\n 4");
+	entrenador* unentrenador = entrenador_a_ejecutar();
+	printf("Posicion X : %d",unentrenador->posicion->posicion_x);
+	printf("Posicion Y : %d",unentrenador->posicion->posicion_y);
+	printf("\n 5");
 	free(pokemon_de_prueba);
 
 
-	//entrenador_a_ejecutar();
-
-	/*for(int i = 0; i < list_size(entrenadores); i++){
+	/*
+	for(int i = 0; i < list_size(entrenadores); i++){
 		entrenador* entrenador = list_get(entrenadores, i);
 		printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
 		printf("\nCANTIDAD MAXIMA POKEMONS ENTRENADOR %d: %d", i, entrenador->cant_maxima_pokemons);
 		for(int j = 0; j<list_size(entrenador->pokemons_adquiridos); j++){
 			printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
 		}
-	}*/
+	}
+	*/
 
 	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
 	pthread_detach(conexion_broker);

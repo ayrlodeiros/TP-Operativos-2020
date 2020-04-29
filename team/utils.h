@@ -63,5 +63,6 @@ entrenador* entrenador_a_ejecutar(void);
 int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon);
 int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2);
 int hay_deadlock(entrenador* entrenador1, entrenador* entrenador2);
+void mover_entrenador_a_la_posicion(entrenador* entrenador,int x ,int y);
 
 #endif /* UTILS_H_ */

@@ -59,11 +59,8 @@ int el_entrenador_se_puede_planificar(entrenador* un_entrenador){
 
 entrenador* entrenador_a_ejecutar(){
 	t_list* entrenadores_listos = list_filter(entrenadores, (int*) el_entrenador_se_puede_planificar);
-	t_list* entrenadores_ordenados = list_sort(entrenadores_listos, (int*) el_entrenador1_esta_mas_cerca);
+	t_list* entrenadores_ordenados = list_sorted(entrenadores_listos,(int*)el_entrenador1_esta_mas_cerca);
 
-	if(hay_deadlock(entrenadores_ordenados[0],entrenadores_ordenados[1])){
-		//Hacer el intercambio             ->>>> Que pasa si hay 3 o mas entrenadores a la misma distancia, puede pasar?
-	}
 
 	for(int i = 0; i < list_size(entrenadores_ordenados); i++){
 			entrenador* entrenador = list_get(entrenadores_ordenados, i);
@@ -74,9 +71,38 @@ entrenador* entrenador_a_ejecutar(){
 			}
 		}
 
-	return NULL;
+	if(hay_deadlock(list_get(entrenadores_ordenados,0),list_get(entrenadores_ordenados,1))){
+		//Hacer el intercambio             ->>>> Que pasa si hay 3 o mas entrenadores a la misma distancia, puede pasar?
+
+		entrenador* entrenador1 = list_get(entrenadores_ordenados,0);
+		entrenador* entrenador2 = list_get(entrenadores_ordenados,1);
+
+		cambiar_estado(entrenador1,READY); //Dice que bloquiemos a los 2 , y despues pasemos uno a READY, asi que directamente el entrenador1 lo dejo ready
+		cambiar_estado(entrenador2,BLOCK);
+
+		mover_entrenador_a_la_posicion(entrenador1,entrenador2->posicion->posicion_x,entrenador2->posicion->posicion_y);
+
+		return NULL;
+	}else{
+		return list_get(entrenadores_ordenados,0);
+	}
+
+
 
 }
+
+void intercambiar_pokemons(entrenador* entrenador1,entrenador* entrenador2){
+	/*list_get(entrenador1)
+	list_replace(entrenador1->pokemons_adquiridos,0)
+	*/
+
+}
+
+void mover_entrenador_a_la_posicion(entrenador* entrenador,int x ,int y){
+	entrenador->posicion->posicion_x = x;
+	entrenador->posicion->posicion_y = y;
+}
+
 
 int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
 	return (int) (fabs(entrenador->posicion->posicion_x - pokemon->posicion->posicion_x)) + (int) (fabs(entrenador->posicion->posicion_y - pokemon->posicion->posicion_y));
