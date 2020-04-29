@@ -59,7 +59,22 @@ int el_entrenador_se_puede_planificar(entrenador* un_entrenador){
 
 entrenador* entrenador_a_ejecutar(){
 	t_list* entrenadores_listos = list_filter(entrenadores, (int*) el_entrenador_se_puede_planificar);
-	t_list* entrenadores_ordenados = list_sort(entrenadores, (int*) el_entrenador_esta_mas_cerca);
+	t_list* entrenadores_ordenados = list_sort(entrenadores_listos, (int*) el_entrenador1_esta_mas_cerca);
+
+	if(hay_deadlock(entrenadores_ordenados[0],entrenadores_ordenados[1])){
+		//Hacer el intercambio             ->>>> Que pasa si hay 3 o mas entrenadores a la misma distancia, puede pasar?
+	}
+
+	for(int i = 0; i < list_size(entrenadores_ordenados); i++){
+			entrenador* entrenador = list_get(entrenadores_ordenados, i);
+			printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
+			printf("\nCANTIDAD MAXIMA POKEMONS ENTRENADOR %d: %d", i, entrenador->cant_maxima_pokemons);
+			for(int j = 0; j<list_size(entrenador->pokemons_adquiridos); j++){
+				printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
+			}
+		}
+
+	return NULL;
 
 }
 
@@ -67,6 +82,21 @@ int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon
 	return (int) (fabs(entrenador->posicion->posicion_x - pokemon->posicion->posicion_x)) + (int) (fabs(entrenador->posicion->posicion_y - pokemon->posicion->posicion_y));
 }
 
-int el_entrenador_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2) {
+int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2) {
+	int distancia_al_pokemon_entrenador1 = distancia_del_entrenador_al_pokemon(entrenador1,queue_peek(pokemons_sueltos));
+	int distancia_al_pokemon_entrenador2 = distancia_del_entrenador_al_pokemon(entrenador2,queue_peek(pokemons_sueltos));
 
+	if(distancia_al_pokemon_entrenador1 <= distancia_al_pokemon_entrenador2){
+		printf("\n El resultado de la funcion es: 1");
+		return 1;
+	}
+	else {
+		printf("\n El resultado de la funcion es: 0");
+		return 0;
+	}
+
+}
+
+int hay_deadlock(entrenador* entrenador1, entrenador* entrenador2){
+	return distancia_del_entrenador_al_pokemon(entrenador1,queue_peek(pokemons_sueltos)) == distancia_del_entrenador_al_pokemon(entrenador2,queue_peek(pokemons_sueltos));
 }

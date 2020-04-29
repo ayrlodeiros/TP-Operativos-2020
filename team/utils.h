@@ -60,5 +60,8 @@ size_t obtener_tamanio_entrenador(char* posicion, char* pokemons, char* objetivo
 void cambiar_estado(entrenador* entrenador,estado_entrenador un_estado);
 int el_entrenador_se_puede_planificar(entrenador* un_entrenador);
 entrenador* entrenador_a_ejecutar(void);
+int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon);
+int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2);
+int hay_deadlock(entrenador* entrenador1, entrenador* entrenador2);
 
 #endif /* UTILS_H_ */
