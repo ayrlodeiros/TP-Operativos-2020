@@ -11,72 +11,21 @@ void conectar_broker(void) {
 	}
 }
 
-//Se deberia ejecutar una sola vez, al iniciar el proceso team
-void armar_entrenadores() {
-	entrenadores = list_create();
-
-	t_list* posiciones = leer_posiciones_entrenadores();
-	t_list* pokemons = leer_pokemon_entrenadores();
-	t_list* objetivos = leer_objetivos_entrenadores();
-
-	for(int i=0; i< list_size(posiciones);i++){
-		list_add(entrenadores, armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i)));
+void appeared_pokemon(char* nombre_pokemon,int posicion_x,int posicion_y){
+	if(el_pokemon_es_requerido(nombre_pokemon)){
+		armar_pokemon(nombre_pokemon,posicion_x,posicion_y);
 	}
-
 }
 
-//Se deberia usar solo en armar_entrenadores
-entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
-	entrenador* un_entrenador = malloc(sizeof(entrenador));
-	t_list* lista_pokemons_objetivo = crear_t_list(string_split(objetivos,"|"));
-	t_list* lista_pokemons_adquiridos = crear_t_list(string_split(pokemons,"|"));
+t_list* get_pokemon(char* nombre_pokemon){
 
-	un_entrenador->posicion = armar_posicion(posicion);
-	un_entrenador->estado = NEW;
-	un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;
-	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
-	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
-
-	return un_entrenador;
-}
-
-
-posicion* armar_posicion(char* posicion_a_armar) {
-	posicion* pos = malloc(sizeof(posicion));
-
-	char** posiciones = string_split(posicion_a_armar,"|");
-
-	pos->posicion_x = atoi(posiciones[0]);
-	pos->posicion_y = atoi(posiciones[1]);
-
-	return pos;
-}
-
-//Se deberia ejecutar una sola vez, al iniciar el proceso team
-void armar_objetivo_global() {
-	objetivo_global = dictionary_create();
-
-	//Recorro los objetivos de los entrenadores para agregarlos al objetivo global
-	for(int i = 0; i<list_size(entrenadores); i++) {
-		entrenador* entrenador_aux = list_get(entrenadores, i);
-		for(int j = 0; j<list_size(entrenador_aux->pokemons_objetivo); j++) {
-			agregar_objetivo_a_objetivo_global(list_get(entrenador_aux->pokemons_objetivo, j));
-		}
-	}
-
-	for(int i = 0; i<list_size(entrenadores); i++) {
-		entrenador* entrenador_aux = list_get(entrenadores, i);
-		for(int j = 0; j<list_size(entrenador_aux->pokemons_adquiridos); j++) {
-			restar_adquirido_a_objetivo_global(list_get(entrenador_aux->pokemons_adquiridos, j));
-		}
-	}
 }
 
 //Se deberia usar solo en armar_objetivo_global
 void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
 
 	//Si el pokemon ya existia en el objetivo global, obtengo el valor que tenia y le sumo uno
-	if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
+	if(esta_en_el_objetivo_global(pokemon_objetivo)) {
 		dictionary_put(objetivo_global, pokemon_objetivo, dictionary_get(objetivo_global, pokemon_objetivo)+1);
 	}
 	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
@@ -100,39 +49,22 @@ int el_entrenador_se_puede_planificar(entrenador* un_entrenador){
 }
 
 entrenador* entrenador_a_ejecutar(){
-	t_list* entrenadores_listos = list_filter(entrenadores, (int*) el_entrenador_se_puede_planificar);
+	//Consigo los entrenador que estan en ready
+	t_list* entrenadores_a_ejecutar = list_filter(entrenadores, (int*) el_entrenador_se_puede_planificar);
 
-	//Ver si se puede usar list_sort
-	t_list* entrenadores_ordenados = list_sorted(entrenadores_listos,(int*)el_entrenador1_esta_mas_cerca);
+	//Ordeno los entrenadores en funcion de que tan cerca estan del pokemon
+	list_sort(entrenadores_a_ejecutar,(int*)el_entrenador1_esta_mas_cerca);
 
 
-	for(int i = 0; i < list_size(entrenadores_ordenados); i++){
-			entrenador* entrenador = list_get(entrenadores_ordenados, i);
+
+	for(int i = 0; i < list_size(entrenadores_a_ejecutar); i++){
+			entrenador* entrenador = list_get(entrenadores_a_ejecutar, i);
 			printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
 			printf("\nCANTIDAD MAXIMA POKEMONS ENTRENADOR %d: %d", i, entrenador->cant_maxima_pokemons);
 			for(int j = 0; j<list_size(entrenador->pokemons_adquiridos); j++){
 				printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
 			}
 		}
-
-	//VER LO DEL DEADLOCK, ACA?
-	if(hay_deadlock(list_get(entrenadores_ordenados,0),list_get(entrenadores_ordenados,1))){
-
-		entrenador* entrenador1 = list_get(entrenadores_ordenados,0);
-		entrenador* entrenador2 = list_get(entrenadores_ordenados,1);
-
-		cambiar_estado_entrenador(entrenador1,READY); //Dice que bloquiemos a los 2 , y despues pasemos uno a READY, asi que directamente el entrenador1 lo dejo ready
-		cambiar_estado_entrenador(entrenador2,BLOCK);
-
-		//VER DE SACAR
-		//mover_entrenador_a_la_posicion(entrenador1,entrenador2->posicion->posicion_x,entrenador2->posicion->posicion_y);
-
-		return NULL;
-	}else{
-		return list_get(entrenadores_ordenados,0);
-	}
-
-
 
 }
 
@@ -156,10 +88,6 @@ int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenado
 
 }
 
-int hay_deadlock(entrenador* entrenador1, entrenador* entrenador2){
-	return distancia_del_entrenador_al_pokemon(entrenador1,queue_peek(pokemons_sueltos)) == distancia_del_entrenador_al_pokemon(entrenador2,queue_peek(pokemons_sueltos));
-}
-
 void restar_cpu_disponible(entrenador* entrenador, int cantidad) {
 	entrenador->cpu_disponible -= cantidad;
 }
@@ -167,3 +95,23 @@ void restar_cpu_disponible(entrenador* entrenador, int cantidad) {
 void sumar_cpu_usado(entrenador* entrenador, int cantidad) {
 	entrenador->cpu_usado += cantidad;
 }
+
+int el_pokemon_es_requerido(char* nombre_pokemon){
+	return esta_en_el_objetivo_global(nombre_pokemon) && necesito_mas_de_ese_pokemon(nombre_pokemon);
+}
+
+int esta_en_el_objetivo_global(char* nombre_pokemon){
+	if(dictionary_has_key(objetivo_global,nombre_pokemon)){ //Lo pongo con un IF, porque dictionary_has_key devuelve un bool,y no se si rompe todo el bool.
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+//Si encuentra en el objetivo global, una cantidad mayor a 0 de ese pokemon, entonces lo necesitamos. Al devolver un numero mayor a 0 -> True
+int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
+	return dictionary_get(objetivo_global,nombre_pokemon);
+}
+
+

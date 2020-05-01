@@ -66,6 +66,7 @@ int main(void){
 	//LO ESPERO
 	pthread_join(conexion_broker, NULL);
 
+
 	return 0;
 }
 

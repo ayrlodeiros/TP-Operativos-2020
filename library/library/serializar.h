@@ -11,6 +11,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+typedef struct {
 
+} t_paquete;
+
+void* serializar_paquete(t_paquete* paquete, int *bytes);
 
 #endif /* SERIALIZAR_H_ */
