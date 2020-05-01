@@ -1,0 +1,20 @@
+[INFO] 15:19:23:66 team/(5327:5332): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:19:53:67 team/(5327:5332): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:20:16:370 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:20:21:372 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:20:26:372 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:20:31:374 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:20:36:376 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:38:55:774 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:00:775 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:05:779 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:10:781 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:15:782 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:20:784 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:25:784 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:39:30:786 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:40:02:238 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:40:07:238 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:40:12:239 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:40:17:241 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 15:40:22:243 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.

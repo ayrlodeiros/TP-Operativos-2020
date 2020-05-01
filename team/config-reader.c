@@ -12,6 +12,7 @@ void destruir_config(void) {
 	config_destroy(config);
 }
 
+//Recibe lista como char** y la transforma a t_list con elementos char*
 t_list* crear_t_list(char** array) {
 	t_list* lista = list_create();
 	int pos = 0;

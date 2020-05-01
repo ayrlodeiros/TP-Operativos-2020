@@ -20,7 +20,7 @@ int main(void){
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 
 
-	printf("\n 1");
+	/*printf("\n 1");
 	pokemons_sueltos = queue_create();
 
 	pokemon* pokemon_de_prueba  = malloc(sizeof(pokemon));;
@@ -40,7 +40,7 @@ int main(void){
 	printf("Posicion Y : %d",unentrenador->posicion->posicion_y);
 	printf("\n 5");
 	free(pokemon_de_prueba);
-
+	*/
 
 	/*
 	for(int i = 0; i < list_size(entrenadores); i++){
@@ -53,25 +53,18 @@ int main(void){
 	}
 	*/
 
+	//PRUEBA DE CREACION DE OBJETIVO GLOBAL
+	printf("\nPikachus faltantes: %d\n", dictionary_get(objetivo_global, "Pikachu"));
+	printf("\nSquirtle faltantes: %d\n", dictionary_get(objetivo_global, "Squirtle"));
+	printf("\nPidgey faltantes: %d\n", dictionary_get(objetivo_global, "Pidgey"));
+	printf("\nCharmander faltantes: %d\n", dictionary_get(objetivo_global, "Charmander"));
+	printf("\nBulbasaur faltantes: %d\n", dictionary_get(objetivo_global, "Bulbasaur"));
+
 	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
-	pthread_detach(conexion_broker);
-
-
-	//VER MAS ADELANTE
-
-	t_queue* cola_de_entrenadores = queue_create();
-	//queue_push();
-
-	/*pthread_create(&(entrenadores[0]),NULL,sumar,NULL);
-
-	pthread_create(&(entrenadores[1]),NULL,restar,NULL);
-
-
-	pthread_join(entrenadores[0],NULL);
-	pthread_join(entrenadores[1],NULL);
-
-	printf("El valor de i es : %d \n ",i);
-	*/
+	//NO LO ESPERO
+	//pthread_detach(conexion_broker);
+	//LO ESPERO
+	pthread_join(conexion_broker, NULL);
 
 	return 0;
 }
@@ -81,6 +74,7 @@ void iniciar_team() {
 	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
 	armar_entrenadores();
+	armar_objetivo_global();
 }
 
 void terminar_team() {
