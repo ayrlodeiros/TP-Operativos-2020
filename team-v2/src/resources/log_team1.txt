@@ -65,3 +65,5 @@
 [INFO] 19:49:53:746 team/(9036:9041): 10. Inicio de proceso de reintento de comunicación con el Broker.
 [INFO] 20:10:24:694 team/(9727:9732): 10. Inicio de proceso de reintento de comunicación con el Broker.
 [INFO] 20:10:29:695 team/(9727:9732): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 20:28:35:159 team/(10954:10959): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 20:28:40:159 team/(10954:10959): 10. Inicio de proceso de reintento de comunicación con el Broker.
