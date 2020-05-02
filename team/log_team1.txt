@@ -1,20 +1,25 @@
-[INFO] 15:19:23:66 team/(5327:5332): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:19:53:67 team/(5327:5332): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:20:16:370 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:20:21:372 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:20:26:372 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:20:31:374 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:20:36:376 team/(5349:5355): Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:38:55:774 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:00:775 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:05:779 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:10:781 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:15:782 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:20:784 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:25:784 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:39:30:786 team/(5838:5844): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:40:02:238 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:40:07:238 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:40:12:239 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:40:17:241 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
-[INFO] 15:40:22:243 team/(5883:5888): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:34:07:340 team/(4472:4478): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:34:12:341 team/(4472:4478): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:34:17:341 team/(4472:4478): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:05:768 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:10:771 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:15:772 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:20:773 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:25:775 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:26:887 team/(4549:4555): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:30:776 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:31:887 team/(4549:4555): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:35:777 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:36:887 team/(4549:4555): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:40:777 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:41:887 team/(4549:4555): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:45:777 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:50:781 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:55:782 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:35:59:897 team/(4586:4592): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:36:00:785 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:36:04:898 team/(4586:4592): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:36:05:785 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:36:09:899 team/(4586:4592): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:36:10:786 team/(4518:4524): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:36:14:900 team/(4586:4592): 10. Inicio de proceso de reintento de comunicación con el Broker.

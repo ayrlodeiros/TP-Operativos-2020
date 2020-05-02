@@ -9,6 +9,8 @@
 #define CONSTRUCTOR_H_
 
 #include<pthread.h>
+#include<stdlib.h>
+#include<commons/string.h>
 #include<commons/collections/list.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/dictionary.h>
@@ -16,6 +18,7 @@
 t_list* entrenadores;
 t_dictionary* objetivo_global;
 t_queue* pokemons_sueltos;
+t_list* entrenadores_ready;
 
 
 
@@ -53,12 +56,18 @@ typedef struct
 	posicion* posicion;
 } pokemon;
 
+void iniciar_variables_globales();
 
 void armar_entrenadores();
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos);
-pokemon* armar_pokemon(char* nombre, int posicion_x, int posicion_y);
-posicion* armar_posicion(char* posicion_a_armar);
 void armar_objetivo_global();
+
+void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo);
+void restar_adquirido_a_objetivo_global(char* pokemon_adquirido);
+
+void armar_pokemon(char* nombre, int posicion_x, int posicion_y);
+
+posicion* armar_posicion(char* posicion_a_armar);
 
 
 

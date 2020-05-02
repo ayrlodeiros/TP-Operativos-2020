@@ -54,11 +54,14 @@ int main(void){
 	*/
 
 	//PRUEBA DE CREACION DE OBJETIVO GLOBAL
-	printf("\nPikachus faltantes: %d\n", dictionary_get(objetivo_global, "Pikachu"));
-	printf("\nSquirtle faltantes: %d\n", dictionary_get(objetivo_global, "Squirtle"));
-	printf("\nPidgey faltantes: %d\n", dictionary_get(objetivo_global, "Pidgey"));
-	printf("\nCharmander faltantes: %d\n", dictionary_get(objetivo_global, "Charmander"));
-	printf("\nBulbasaur faltantes: %d\n", dictionary_get(objetivo_global, "Bulbasaur"));
+	printf("\nPikachus faltantes: %d\n", (int) dictionary_get(objetivo_global, "Pikachu"));
+	printf("\nSquirtle faltantes: %d\n", (int) dictionary_get(objetivo_global, "Squirtle"));
+	printf("\nPidgey faltantes: %d\n", (int) dictionary_get(objetivo_global, "Pidgey"));
+	printf("\nCharmander faltantes: %d\n", (int) dictionary_get(objetivo_global, "Charmander"));
+	printf("\nBulbasaur faltantes: %d\n", (int) dictionary_get(objetivo_global, "Bulbasaur"));
+	printf("\nCualquiercosa faltantes: %d\n"), (int) dictionary_get(objetivo_global, "Cualquiercosa");
+
+	printf("\nLo necesito a Charmander? %d\n", el_pokemon_es_requerido("Charmander"));
 
 	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
 	//NO LO ESPERO
@@ -74,8 +77,7 @@ void iniciar_team() {
 	iniciar_config();
 	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
-	armar_entrenadores();
-	armar_objetivo_global();
+	iniciar_variables_globales();
 }
 
 void terminar_team() {

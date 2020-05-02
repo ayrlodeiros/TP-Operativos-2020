@@ -1,6 +1,14 @@
 #include "constructor.h"
 
-//Se deberia ejecutar una sola vez, al iniciar el proceso team
+//Se deberia ejecutar una sola vez en el team
+void iniciar_variables_globales() {
+	armar_entrenadores();
+	armar_objetivo_global();
+	pokemons_sueltos = queue_create();
+	entrenadores_ready = list_create();
+}
+
+//Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales
 void armar_entrenadores() {
 	entrenadores = list_create();
 
@@ -29,29 +37,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	return un_entrenador;
 }
 
-pokemon* armar_pokemon(char* nombre, int posicion_x, int posicion_y) {
-		pokemons_sueltos = queue_create();
-
-		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));;
-		nuevo_pokemon->nombre = nombre;
-		nuevo_pokemon->posicion->posicion_x = posicion_x;
-		nuevo_pokemon->posicion->posicion_y = posicion_y;
-
-		queue_push(pokemons_sueltos,nuevo_pokemon);
-}
-
-posicion* armar_posicion(char* posicion_a_armar) {
-	posicion* pos = malloc(sizeof(posicion));
-
-	char** posiciones = string_split(posicion_a_armar,"|");
-
-	pos->posicion_x = atoi(posiciones[0]);
-	pos->posicion_y = atoi(posiciones[1]);
-
-	return pos;
-}
-
-//Se deberia ejecutar una sola vez, al iniciar el proceso team
+//Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales
 void armar_objetivo_global() {
 	objetivo_global = dictionary_create();
 
@@ -69,4 +55,44 @@ void armar_objetivo_global() {
 			restar_adquirido_a_objetivo_global(list_get(entrenador_aux->pokemons_adquiridos, j));
 		}
 	}
+}
+
+//Se deberia usar solo en armar_objetivo_global
+void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
+
+	//Si el pokemon ya existia en el objetivo global, obtengo el valor que tenia y le sumo uno
+	if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
+		dictionary_put(objetivo_global, pokemon_objetivo, dictionary_get(objetivo_global, pokemon_objetivo)+1);
+	}
+	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
+	else {
+		dictionary_put(objetivo_global, pokemon_objetivo, 1);
+	}
+}
+
+//Resto el pokemon atrapado del objetivo global
+void restar_adquirido_a_objetivo_global(char* pokemon_adquirido) {
+	dictionary_put(objetivo_global, pokemon_adquirido, dictionary_get(objetivo_global, pokemon_adquirido)-1);
+
+}
+
+
+//Arma un pokemon con los parametros pasados y lo agrega a la cola de pokemons sueltos
+void armar_pokemon(char* nombre, int posicion_x, int posicion_y) {
+		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));;
+		nuevo_pokemon->nombre = nombre;
+		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+
+		queue_push(pokemons_sueltos,nuevo_pokemon);
+}
+
+posicion* armar_posicion(char* posicion_a_armar) {
+	posicion* pos = malloc(sizeof(posicion));
+
+	char** posiciones = string_split(posicion_a_armar,"|");
+
+	pos->posicion_x = atoi(posiciones[0]);
+	pos->posicion_y = atoi(posiciones[1]);
+
+	return pos;
 }

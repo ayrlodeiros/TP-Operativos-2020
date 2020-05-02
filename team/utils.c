@@ -3,11 +3,12 @@
 void conectar_broker(void) {
 	char* ip_broker = leer_ip_broker();
 	char* puerto_broker = leer_puerto_broker();
+	int tiempo_reconexion = leer_tiempo_reconexion();
 
 	while(1) {
 		log_info(nuestro_log, "Conectando con broker...");
 		log_info(logger, "10. Inicio de proceso de reintento de comunicación con el Broker.");
-		sleep(leer_tiempo_reconexion());
+		sleep(tiempo_reconexion);
 	}
 }
 
@@ -21,25 +22,6 @@ t_list* get_pokemon(char* nombre_pokemon){
 
 }
 
-//Se deberia usar solo en armar_objetivo_global
-void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
-
-	//Si el pokemon ya existia en el objetivo global, obtengo el valor que tenia y le sumo uno
-	if(esta_en_el_objetivo_global(pokemon_objetivo)) {
-		dictionary_put(objetivo_global, pokemon_objetivo, dictionary_get(objetivo_global, pokemon_objetivo)+1);
-	}
-	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
-	else {
-		dictionary_put(objetivo_global, pokemon_objetivo, 1);
-	}
-}
-
-//Resto el pokemon atrapado del objetivo global
-void restar_adquirido_a_objetivo_global(char* pokemon_adquirido) {
-	dictionary_put(objetivo_global, pokemon_adquirido, dictionary_get(objetivo_global, pokemon_adquirido)-1);
-
-}
-
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado){
 	entrenador->estado = un_estado;
 }
@@ -50,12 +32,10 @@ int el_entrenador_se_puede_planificar(entrenador* un_entrenador){
 
 entrenador* entrenador_a_ejecutar(){
 	//Consigo los entrenador que estan en ready
-	t_list* entrenadores_a_ejecutar = list_filter(entrenadores, (int*) el_entrenador_se_puede_planificar);
+	t_list* entrenadores_a_ejecutar = list_filter(entrenadores, el_entrenador_se_puede_planificar);
 
 	//Ordeno los entrenadores en funcion de que tan cerca estan del pokemon
-	list_sort(entrenadores_a_ejecutar,(int*)el_entrenador1_esta_mas_cerca);
-
-
+	list_sort(entrenadores_a_ejecutar, el_entrenador1_esta_mas_cerca);
 
 	for(int i = 0; i < list_size(entrenadores_a_ejecutar); i++){
 			entrenador* entrenador = list_get(entrenadores_a_ejecutar, i);
@@ -96,22 +76,27 @@ void sumar_cpu_usado(entrenador* entrenador, int cantidad) {
 	entrenador->cpu_usado += cantidad;
 }
 
+
+
 int el_pokemon_es_requerido(char* nombre_pokemon){
-	return esta_en_el_objetivo_global(nombre_pokemon) && necesito_mas_de_ese_pokemon(nombre_pokemon);
+	return dictionary_has_key(objetivo_global,nombre_pokemon)
+			&& necesito_mas_de_ese_pokemon(nombre_pokemon);
 }
 
-int esta_en_el_objetivo_global(char* nombre_pokemon){
-	if(dictionary_has_key(objetivo_global,nombre_pokemon)){ //Lo pongo con un IF, porque dictionary_has_key devuelve un bool,y no se si rompe todo el bool.
+//Hablarla
+/*int esta_en_el_objetivo_global(char* nombre_pokemon){
+	//Lo pongo con un IF, porque dictionary_has_key devuelve un bool,y no se si rompe por el bool.
+	if(dictionary_has_key(objetivo_global,nombre_pokemon)){
 		return 1;
 	}
 	else{
 		return 0;
 	}
-}
+}*/
 
 //Si encuentra en el objetivo global, una cantidad mayor a 0 de ese pokemon, entonces lo necesitamos. Al devolver un numero mayor a 0 -> True
 int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
-	return dictionary_get(objetivo_global,nombre_pokemon);
+	return ((int) dictionary_get(objetivo_global,nombre_pokemon)) > 0;
 }
 
 

@@ -25,11 +25,13 @@ void registrar_movimiento(entrenador* entrenador) {
 	restar_cpu_disponible(entrenador, 1);
 	sumar_cpu_usado(entrenador, 1);
 	loggear_movimiento(entrenador);
+	//Ver como hacer para leer una unica vez el retardo
+	//sleep(retardo_leido_del_config);
 }
 //Logea en el logger principal el movimiento que realizo un entrenador
 //Solo usar dsp de que un entrenador cambio de posicion
 void loggear_movimiento(entrenador* entrenador) {
-	log_info(logger, string_from_format("2. Movimiento de entrenador a la posicion: %d|%d.", entrenador->posicion->posicion_x, entrenador->posicion->posicion_y));
+	log_info(logger, string_from_format("2. Entrenador moviendose a la posicion: %d|%d.", entrenador->posicion->posicion_x, entrenador->posicion->posicion_y));
 }
 
 
