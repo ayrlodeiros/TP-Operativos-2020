@@ -25,14 +25,11 @@ endif
 # All Target
 all: team-v2
 
-dependents:
-	-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/nuestra-library/Debug && $(MAKE) all
-
 # Tool invocations
-team-v2: $(OBJS) $(USER_OBJS) /home/utnso/Documentos/tp-2020-1c-C-aprueba/nuestra-library/Debug/libnuestra-library.so
+team-v2: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc -L"/home/utnso/Documentos/tp-2020-1c-C-aprueba/nuestra-library/Debug" -o "team-v2" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "team-v2" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -42,6 +39,5 @@ clean:
 	-@echo ' '
 
 .PHONY: all clean dependents
-/home/utnso/Documentos/tp-2020-1c-C-aprueba/nuestra-library/Debug/libnuestra-library.so:
 
 -include ../makefile.targets

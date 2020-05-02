@@ -55,3 +55,13 @@
 [INFO] 19:17:01:231 team/(7305:7310): 10. Inicio de proceso de reintento de comunicación con el Broker.
 [INFO] 19:17:16:465 team/(7346:7351): 10. Inicio de proceso de reintento de comunicación con el Broker.
 [INFO] 19:17:21:465 team/(7346:7351): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:45:38:371 team/(8867:8872): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:45:43:372 team/(8867:8872): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:45:48:373 team/(8867:8872): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:45:53:373 team/(8867:8872): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:49:25:902 team/(9023:9028): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:49:30:903 team/(9023:9028): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:49:48:745 team/(9036:9041): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 19:49:53:746 team/(9036:9041): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 20:10:24:694 team/(9727:9732): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 20:10:29:695 team/(9727:9732): 10. Inicio de proceso de reintento de comunicación con el Broker.

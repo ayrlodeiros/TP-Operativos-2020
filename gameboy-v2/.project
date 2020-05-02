@@ -3,7 +3,6 @@
 	<name>gameboy-v2</name>
 	<comment></comment>
 	<projects>
-		<project>nuestra-library</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
