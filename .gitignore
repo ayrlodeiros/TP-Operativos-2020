@@ -156,5 +156,3 @@ local.properties
 .nfs*
 
 language.settings.xml
-
-# End of https://www.gitignore.io/api/c,git,linux,eclipse
