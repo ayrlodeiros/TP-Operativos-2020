@@ -7,5 +7,8 @@
 #include<commons/log.h>
 #include<commons/config.h>
 
+#include "utils.h"
+
+void iniciar_broker(void);
 
 #endif /* BROKER_H_ */
