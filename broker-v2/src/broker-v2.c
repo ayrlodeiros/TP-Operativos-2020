@@ -9,5 +9,11 @@ int main(void)
 }
 
 void iniciar_broker(){
-	logger = log_create("src/resources/broker.log","broker",false,LOG_LEVEL_INFO);
+	iniciar_config();
+	logger = log_create(leer_log_file,"broker",false,LOG_LEVEL_INFO);
+	mi_log = log_create("src/resources/mi_log_broker.txt","broker",true,LOG_LEVEL_INFO);
+}
+
+void terminar_broker(){
+
 }

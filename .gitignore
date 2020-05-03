@@ -155,6 +155,12 @@ local.properties
 .nfs*
 
 language.settings.xml
+team-v2/.settings/language.settings.xml
+nuestra-library/.settings/language.settings.xml
+gamecard-v2/.settings/language.settings.xml
+gameboy-v2/.settings/language.settings.xml
+broker-v2/settings/language.settings.xml
+TP0-Operativos/.settings/language.settings.xml
 
 # End of https://www.gitignore.io/api/c,git,linux,eclipse
 /Debug/

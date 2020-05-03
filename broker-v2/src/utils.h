@@ -12,5 +12,6 @@
 #include<commons/config.h>
 
 t_log* logger;
+t_log* mi_log;
 
 #endif /* UTILS_H_ */
