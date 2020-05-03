@@ -3,8 +3,8 @@
 
 void iniciar_config(void){
 	config = config_create("src/resources/broker.config");
-	//setear_tamano_memoria();
-	setear_tamano_minimo_particion();
+	setear_tamano_memoria();
+	//setear_tamano_minimo_particion();
 	setear_algoritmo_memoria();
 	setear_algoritmo_reemplazo();
 	setear_algoritmo_particion_libre();
@@ -41,7 +41,7 @@ void setear_puerto_broker(void){
 	PUERTO_BROKER = config_get_int_value(config,"PUERTO_BROKER");
 }
 void setear_frecuencia_compactacion(void){
-	FRECUENCIA_COMPACTACION = config_get_int_value(config,"FRECUANCIA_COMPACTACION");
+	FRECUENCIA_COMPACTACION = config_get_int_value(config,"FRECUENCIA_COMPACTACION");
 }
 void setear_log_file(void){
 	LOG_FILE = config_get_string_value(config,"LOG_FILE");
