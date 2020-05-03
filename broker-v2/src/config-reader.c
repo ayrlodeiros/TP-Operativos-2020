@@ -2,8 +2,8 @@
 
 
 void iniciar_config(void){
-	config = config_create("src/resources/team.config");
-	setear_tamano_memoria();
+	config = config_create("src/resources/broker.config");
+	//setear_tamano_memoria();
 	setear_tamano_minimo_particion();
 	setear_algoritmo_memoria();
 	setear_algoritmo_reemplazo();
@@ -44,7 +44,7 @@ void setear_frecuencia_compactacion(void){
 	FRECUENCIA_COMPACTACION = config_get_int_value(config,"FRECUANCIA_COMPACTACION");
 }
 void setear_log_file(void){
-	LOG_FILE = config_get_string_value("LOG_FILE");
+	LOG_FILE = config_get_string_value(config,"LOG_FILE");
 }
 
 int leer_tamano_memoria(void){

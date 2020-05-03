@@ -5,14 +5,17 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/broker-v2.c \
+../src/config-reader.c \
 ../src/utils.c 
 
 OBJS += \
 ./src/broker-v2.o \
+./src/config-reader.o \
 ./src/utils.o 
 
 C_DEPS += \
 ./src/broker-v2.d \
+./src/config-reader.d \
 ./src/utils.d 
 
 
