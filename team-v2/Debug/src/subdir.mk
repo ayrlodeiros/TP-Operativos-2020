@@ -7,6 +7,7 @@ C_SRCS += \
 ../src/acciones.c \
 ../src/config-reader.c \
 ../src/constructor.c \
+../src/planificacion.c \
 ../src/team-v2.c \
 ../src/utils.c 
 
@@ -14,6 +15,7 @@ OBJS += \
 ./src/acciones.o \
 ./src/config-reader.o \
 ./src/constructor.o \
+./src/planificacion.o \
 ./src/team-v2.o \
 ./src/utils.o 
 
@@ -21,6 +23,7 @@ C_DEPS += \
 ./src/acciones.d \
 ./src/config-reader.d \
 ./src/constructor.d \
+./src/planificacion.d \
 ./src/team-v2.d \
 ./src/utils.d 
 

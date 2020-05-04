@@ -17,6 +17,7 @@ int main(void){
 	pthread_join(conexion_broker, NULL);
 
 
+
 	return 0;
 }
 
