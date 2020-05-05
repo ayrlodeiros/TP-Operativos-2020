@@ -1,5 +1,6 @@
 #include "utils.h"
 
+
 void inicializar_message_queues(){
 
 

@@ -11,7 +11,7 @@ char* ALGORITMO_MEMORIA;
 char* ALGORITMO_REEMPLAZO;
 char* ALGORITMO_PARTICION_LIBRE;
 char* IP_BROKER;
-int PUERTO_BROKER;
+char* PUERTO_BROKER;
 int FRECUENCIA_COMPACTACION;
 char* LOG_FILE;
 
@@ -34,7 +34,7 @@ char* leer_algoritmo_memoria(void);
 char* leer_algoritmo_reemplazo(void);
 char* leer_algoritmo_particion_libre(void);
 char* leer_ip_broker(void);
-int leer_puerto_broker(void);
+char* leer_puerto_broker(void);
 int leer_frecuencia_compactacion(void);
 char* leer_log_file(void);
 

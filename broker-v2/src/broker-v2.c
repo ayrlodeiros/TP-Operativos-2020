@@ -8,13 +8,31 @@ struct mesg_buffer {
 
 int main(void)
 {
-	//prueba message queue
+
+	//pthread_t* conexion_team;
 
 	iniciar_broker();
 
+	/*
+	logger = leer_log_file();
+	pthread_create(&conexion_team,NULL,conectar_team, NULL);
+		//NO LO ESPERO
+		//pthread_detach(conexion_broker);
+		//LO ESPERO
+	pthread_join(conexion_team, NULL);
+
+	int socket = levantar_servidor(leer_ip_broker(),leer_puerto_broker(),logger);
+	printf("Socket es %d",socket);
+
+	while(1){
+		esperar_cliente(socket);
+	}
+	*/
 	terminar_broker();
 
 	printf("Todo joya \n");
+
+
 	return EXIT_SUCCESS;
 
 }
@@ -25,6 +43,7 @@ void iniciar_broker(){
 	inicializar_message_queues();
 	logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
 	mi_log = log_create("src/resources/mi_log_broker.txt","broker",true,LOG_LEVEL_INFO);
+
 }
 
 void terminar_broker(){
@@ -34,4 +53,3 @@ void terminar_broker(){
 	log_destroy(logger);
 	log_destroy(mi_log);
 }
-
