@@ -96,3 +96,12 @@ posicion* armar_posicion(char* posicion_a_armar) {
 
 	return pos;
 }
+
+accion* armar_accion(void(*closure)(entrenador*),int cpu_requerido){
+	accion* accion = malloc(sizeof(accion));
+
+	accion->closure = closure;
+	accion->cpu_requerido = cpu_requerido;
+
+	return accion;
+}
