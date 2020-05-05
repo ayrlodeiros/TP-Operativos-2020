@@ -40,6 +40,13 @@ typedef enum
 
 }estado_entrenador;
 
+typedef struct{
+	void(*closure)(entrenador*);
+	int cpu_requerido;
+	float cpu_estimado_anterior;
+
+}accion;
+
 typedef struct
 {
 	pthread_t* hilo;
@@ -50,6 +57,7 @@ typedef struct
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;
 	t_list* pokemons_objetivo;
+	accion* accion_a_ejecutar;
 } entrenador;
 
 typedef struct
@@ -57,6 +65,8 @@ typedef struct
 	char* nombre;
 	posicion* posicion;
 } pokemon;
+
+
 
 void iniciar_variables_globales();
 

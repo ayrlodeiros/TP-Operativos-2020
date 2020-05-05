@@ -1,11 +1,14 @@
 #include "planificacion.h"
 
 t_list* estimar_rafagas_entrenadores(t_list* entrenadores_a_planificar){
-	//return list_map(entrenadores_a_planificar,estimar_siguiente_rafaga())
+	return list_map(entrenadores_a_planificar,estimar_siguiente_rafaga());
 }
 
-float estimar_siguiente_rafaga(float estimacion_anterior, int cpu_anterior_real){
-	//return alpha * cpu_anterior_real + (1-alpha) * estimacion_anterior;
+float estimar_siguiente_rafaga(entrenador* entrenador){
+	float estimacion = alpha * entrenador->accion_a_ejecutar->cpu_requerido + (1-alpha) * entrenador->accion_a_ejecutar->cpu_estimado_anterior;
+	entrenador->accion_a_ejecutar->cpu_estimado_anterior = estimacion;
+
+	return estimacion;
 
 	//No se como hacer con la estimacion anterior, habia pensado en crear una variable para cada entrenador
 	//tipo, en el struct entrenador, poner una variable.
@@ -14,12 +17,13 @@ float estimar_siguiente_rafaga(float estimacion_anterior, int cpu_anterior_real)
 }
 
 int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2){
-	//return estimar_siguiente_rafaga(,entrenador1->cpu_usado)
+	return estimar_siguiente_rafaga(entrenador1) <= estimar_siguiente_rafaga(entrenador2);
 }
 
 pthread_t* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar){
-
+	return list_sorted(entrenadores_a_planificar,tiene_menor_rafaga());
 }
+
 
 void planificar(t_list* entrenadores_a_planificar){
 
@@ -48,6 +52,13 @@ void planificar(t_list* entrenadores_a_planificar){
 
 
 void fifo(t_list* entrenadores_a_planificar){
+
+	entrenador* entrenador_a_ejecutar = list_get(entrenadores_a_planificar,0);
+	list_replace()
+
+	while(entrenador_a_ejecutar->cpu_usado < entrenador_a_ejecutar->accion_a_ejecutar->cpu_requerido){
+		ejecutar(entrenador_a_ejecutar);
+	}
 
 }
 

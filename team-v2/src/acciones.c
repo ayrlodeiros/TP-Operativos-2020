@@ -22,8 +22,7 @@ void moverse_derecha(entrenador* entrenador) {
 }
 //Comportamiento en comun que tienen los movimientos
 void registrar_movimiento(entrenador* entrenador) {
-	restar_cpu_disponible(entrenador, 1);
-	sumar_cpu_usado(entrenador, 1);
+
 	loggear_movimiento(entrenador);
 	//Ver como hacer para leer una unica vez el retardo
 	sleep(leer_retardo_ciclo_cpu());
@@ -38,4 +37,14 @@ void loggear_movimiento(entrenador* entrenador) {
 //Realiza un intercambio entre dos entrenadores que estaban bloqueados
 void intercambiar(entrenador* entrenador1, entrenador* entrenador2) {
 
+}
+
+void ejecutar(entrenador* entrenador){
+
+	restar_cpu_disponible(entrenador, 1);
+	sumar_cpu_usado(entrenador, 1);
+
+	if(entrenador->cpu_usado == entrenador->accion_a_ejecutar->cpu_requerido){
+		entrenador->accion_a_ejecutar->closure;
+	}
 }
