@@ -38,7 +38,7 @@ void setear_ip_broker(void){
 	IP_BROKER = config_get_string_value(config,"IP_BROKER");
 }
 void setear_puerto_broker(void){
-	PUERTO_BROKER = config_get_int_value(config,"PUERTO_BROKER");
+	PUERTO_BROKER = config_get_string_value(config,"PUERTO_BROKER");
 }
 void setear_frecuencia_compactacion(void){
 	FRECUENCIA_COMPACTACION = config_get_int_value(config,"FRECUENCIA_COMPACTACION");
@@ -65,7 +65,7 @@ char* leer_algoritmo_particion_libre(void){
 char* leer_ip_broker(void){
 	return IP_BROKER;
 }
-int leer_puerto_broker(void){
+char* leer_puerto_broker(void){
 	return PUERTO_BROKER;
 }
 int leer_frecuencia_compactacion(void){

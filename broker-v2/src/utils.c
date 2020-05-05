@@ -1,5 +1,9 @@
 #include "utils.h"
 
+void conectar_team(void){
+
+}
+
 void inicializar_message_queues(){
 
 	key_t key;

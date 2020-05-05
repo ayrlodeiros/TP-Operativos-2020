@@ -8,6 +8,7 @@
 #include<commons/config.h>
 
 #include "utils.h"
+#include "conexion.h"
 
 void iniciar_broker(void);
 
