@@ -39,12 +39,16 @@ void intercambiar(entrenador* entrenador1, entrenador* entrenador2) {
 
 }
 
+int cpu_restante_entrenador (entrenador* entrenador_a_ejecutar){
+	return entrenador_a_ejecutar->accion_a_ejecutar->cpu_requerido - entrenador_a_ejecutar->cpu_usado;
+}
+
 void ejecutar(entrenador* entrenador){
 
 	restar_cpu_disponible(entrenador, 1);
 	sumar_cpu_usado(entrenador, 1);
 
-	if(entrenador->cpu_usado == entrenador->accion_a_ejecutar->cpu_requerido){
+	if(cpu_restante_entrenador(entrenador) == 0){
 		entrenador->accion_a_ejecutar->closure;
 	}
 }

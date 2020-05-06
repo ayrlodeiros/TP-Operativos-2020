@@ -52,7 +52,6 @@ typedef struct
 	pthread_t* hilo;
 	estado_entrenador estado;
 	int cpu_usado;
-	int cpu_disponible;
 	posicion* posicion;
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;
