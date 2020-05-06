@@ -1,0 +1,9 @@
+[INFO] 00:11:29:501 broker/(10368:10368): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 00:35:44:585 broker/(10660:10660): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 00:37:13:885 broker/(10718:10718): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 00:41:23:422 broker/(11275:11275): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:04:18:204 broker/(4858:4858): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:24:04:807 broker/(6073:6073): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:37:460 broker/(7555:7555): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 18:20:58:360 broker/(29176:29176): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 18:24:52:902 broker/(29312:29312): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080

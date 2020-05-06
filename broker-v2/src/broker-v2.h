@@ -9,6 +9,7 @@
 
 #include "utils.h"
 #include "conexion.h"
+#include "message-queue.h"
 
 void iniciar_broker(void);
 

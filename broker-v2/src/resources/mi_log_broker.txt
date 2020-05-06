@@ -1,0 +1,26 @@
+[INFO] 19:08:29:187 broker/(30149:30149): Servidor levantado en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 19:13:34:133 broker/(30206:30206): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 19:29:23:674 broker/(30637:30637): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 19:29:29:223 broker/(30637:30637): Recibi una conexion
+
+[INFO] 19:33:11:348 broker/(30742:30742): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 19:36:20:720 broker/(30742:30742): Recibi una conexion
+
+[INFO] 19:58:03:943 broker/(31054:31054): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 19:58:09:30 broker/(31054:31054): Recibi una conexion
+
+[INFO] 19:58:55:78 broker/(31054:31054): Recibi una conexion
+
+[INFO] 19:59:30:991 broker/(31214:31214): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 19:59:34:326 broker/(31214:31214): Recibi una conexion
+
+[INFO] 19:59:34:326 broker/(31214:31214): Se creo el thread 
+
+[INFO] 20:33:55:263 broker/(31214:31214): Recibi una conexion
+
+[INFO] 20:33:55:315 broker/(31214:31214): Se creo el thread 
+
+[INFO] 20:41:50:83 broker/(31657:31657): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 20:41:59:856 broker/(31668:31668): Servidor levantado en IP: 127.0.0.1 y PUERTO: 8080
+[INFO] 20:42:03:911 broker/(31668:31668): Recibi una conexion
+

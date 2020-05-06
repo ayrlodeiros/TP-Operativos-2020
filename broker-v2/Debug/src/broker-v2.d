@@ -1,8 +1,10 @@
 src/broker-v2.o: ../src/broker-v2.c ../src/broker-v2.h ../src/utils.h \
- ../src/conexion.h
+ ../src/conexion.h ../src/message-queue.h
 
 ../src/broker-v2.h:
 
 ../src/utils.h:
 
 ../src/conexion.h:
+
+../src/message-queue.h:

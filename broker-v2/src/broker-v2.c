@@ -13,21 +13,8 @@ int main(void)
 
 	iniciar_broker();
 
-	/*
-	logger = leer_log_file();
-	pthread_create(&conexion_team,NULL,conectar_team, NULL);
-		//NO LO ESPERO
-		//pthread_detach(conexion_broker);
-		//LO ESPERO
-	pthread_join(conexion_team, NULL);
+	levantar_servidor(leer_ip_broker(),leer_puerto_broker(),mi_log);
 
-	int socket = levantar_servidor(leer_ip_broker(),leer_puerto_broker(),logger);
-	printf("Socket es %d",socket);
-
-	while(1){
-		esperar_cliente(socket);
-	}
-	*/
 	terminar_broker();
 
 	printf("Todo joya \n");

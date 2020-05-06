@@ -1,7 +1,6 @@
 
 #include "conexion.h"
 
-pthread_t* espera;
 
 int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger) {
 	struct addrinfo hints;
@@ -28,10 +27,10 @@ void liberar_conexion(int socket) {
 	close(socket);
 }
 
-int levantar_servidor(char* ip, char* puerto, t_log* logger) {
+void levantar_servidor(char* ip, int port, t_log* logger) {
 
 	int socket_servidor;
-
+	char* puerto = string_itoa(port);
 	struct addrinfo hints, *servinfo, *p;
 
 	memset(&hints, 0, sizeof(hints));
@@ -58,18 +57,27 @@ int levantar_servidor(char* ip, char* puerto, t_log* logger) {
 
 	freeaddrinfo(servinfo);
 
-	return socket_servidor;
+	printf("El servidor se ha levantado, esperando respuesta del cliente\n");
+
+	while(1)
+	    	esperar_cliente(socket_servidor,logger);
 }
 
-void esperar_cliente(int socket_servidor)
+void esperar_cliente(int socket_servidor,t_log* logger)
 {
+	int err;
+
 	struct sockaddr_in dir_cliente;
 
 	int tam_direccion = sizeof(struct sockaddr_in);
 
 	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
 
-	pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
+	log_info(logger,"Recibi una conexion\n");
+	err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
+	if( err != 0){
+		log_info(logger,string_from_format("Hubo un error al intentar crear el thread: %s",strerror(err)));
+	}
 	pthread_detach(espera);
 
 }
@@ -87,6 +95,7 @@ void process_request(int cod_op, int cliente_fd) {
 	void* msg;
 		switch (cod_op) {
 		case 1:
+			printf("Se recibio el msj del cliente\n");
 			pthread_exit(NULL);
 			break;
 		case 0:
