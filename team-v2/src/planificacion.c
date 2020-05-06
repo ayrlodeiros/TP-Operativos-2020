@@ -51,22 +51,52 @@ void planificar(t_list* entrenadores_a_planificar){
 }
 
 
-void fifo(t_list* entrenadores_a_planificar){
+//NO ESTOY TENIENDO EN CUENTA LAS ENTRADAS/SALIDAS, no se como manejarlas en codigo y como
+//hacer toda esa parte
 
-	entrenador* entrenador_a_ejecutar = list_get(entrenadores_a_planificar,0);
-	list_replace()
+void fifo(t_queue* entrenadores_a_planificar){
 
-	while(entrenador_a_ejecutar->cpu_usado < entrenador_a_ejecutar->accion_a_ejecutar->cpu_requerido){
-		ejecutar(entrenador_a_ejecutar);
+
+
+	while(not(queue_is_empty(entrenadores_a_planificar))){
+		entrenador* entrenador_a_ejecutar = queue_pop(entrenadores_a_planificar);
+
+		while(cpu_restante_entrenador(entrenador_a_ejecutar)){
+			ejecutar(entrenador_a_ejecutar);
+		}
+
 	}
 
 }
 
-void round_robin(t_list* entrenadores_a_planificar){
+entrenador* regla_RR(t_queue* entrenadores_a_planificar , int tiempo){
+
+}
+
+void round_robin(t_queue* entrenadores_a_planificar){
+
+	int tiempo;
+	int quantum_consumido = 1;  //Lo seteo en 1 , porque puse <= en el IF
+
+	//QUANTUM = 2   (Del ejemplo del config)
+
+
+	while(not(queue_is_empty(entrenadores_a_planificar))){
+			entrenador* entrenador_a_ejecutar = queue_pop(entrenadores_a_planificar);
+
+			while(cpu_restante_entrenador(entrenador_a_ejecutar) && quantum_consumido <= quantum){
+				ejecutar(entrenador_a_ejecutar);
+				tiempo ++;
+				quantum_consumido ++;
+			}
+
+
+	}
 
 }
 
 void sjf_sin_desalojo(t_list* entrenadores_a_planificar){
+
 
 }
 
