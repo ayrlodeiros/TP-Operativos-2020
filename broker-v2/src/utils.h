@@ -15,4 +15,10 @@
 t_log* logger;
 t_log* mi_log;
 
+typedef enum{
+	GAME_BOY = 1,
+	GAME_CARD = 2,
+	TEAM = 3
+}modulo_code;
+
 #endif /* UTILS_H_ */

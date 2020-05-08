@@ -12,5 +12,6 @@
 #include "message-queue.h"
 
 void iniciar_broker(void);
+void terminar_broker(void);
 
 #endif /* BROKER_H_ */

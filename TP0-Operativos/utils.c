@@ -94,6 +94,7 @@ char* recibir_mensaje(int socket_cliente)
 	log_info(logger, "Comienza a recibir el mensaje");
 
 	t_paquete* paquete = malloc(sizeof(paquete));
+	paquete->buffer = malloc(sizeof(t_buffer));
 
 
 	if(recv(socket_cliente,&(paquete->codigo_operacion),sizeof(int),0) > 0){

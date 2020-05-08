@@ -18,6 +18,7 @@
 #include<stdlib.h>
 #include<pthread.h>
 #include<commons/string.h>
+#include"protocolo.h"
 
 pthread_t* espera;
 

@@ -57,10 +57,11 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 
 	freeaddrinfo(servinfo);
 
-	printf("El servidor se ha levantado, esperando respuesta del cliente\n");
+	printf("Esperando conexiones\n");
+	pthread_t* prueba;
 
 	while(1)
-	    	esperar_cliente(socket_servidor,logger);
+	esperar_cliente(socket_servidor,logger);
 }
 
 void esperar_cliente(int socket_servidor,t_log* logger)
@@ -73,12 +74,15 @@ void esperar_cliente(int socket_servidor,t_log* logger)
 
 	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
 
-	log_info(logger,"Recibi una conexion\n");
+	log_info(mi_log,"Estableci una conexion con un modulo de socket\n");
+	log_info(logger,"Estableci una conexion con un modulo\n");
+
 	err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
 	if( err != 0){
 		log_info(logger,string_from_format("Hubo un error al intentar crear el thread: %s",strerror(err)));
 	}
 	pthread_detach(espera);
+
 
 }
 
@@ -94,11 +98,13 @@ void process_request(int cod_op, int cliente_fd) {
 	int size;
 	void* msg;
 		switch (cod_op) {
-		case 1:
-			printf("Se recibio el msj del cliente\n");
-			pthread_exit(NULL);
+		case GET:
+			printf("Se recibio una conexion al tp 0\n");
+			recibir_mensaje(cliente_fd,&size);
+			//enviar_mensaje_suscriptores(get_mq);
 			break;
-		case 0:
+		case 2:
+			printf("Se recibio el msj 2\n");
 			pthread_exit(NULL);
 		case -1:
 			pthread_exit(NULL);
