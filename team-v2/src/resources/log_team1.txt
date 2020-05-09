@@ -223,3 +223,25 @@
 [INFO] 12:49:44:343 team/(6717:6722): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
 [INFO] 12:49:49:343 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 12:49:49:343 team/(6717:6722): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:05:703 team/(8170:8175): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:05:708 team/(8170:8175): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:10:711 team/(8170:8175): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:10:711 team/(8170:8175): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:15:711 team/(8170:8175): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:15:712 team/(8170:8175): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:20:712 team/(8170:8175): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:20:716 team/(8170:8175): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:25:716 team/(8170:8175): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:25:716 team/(8170:8175): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:30:716 team/(8170:8175): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:30:716 team/(8170:8175): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:36:58:688 team/(8276:8281): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:36:58:688 team/(8276:8281): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:37:03:690 team/(8276:8281): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:37:03:690 team/(8276:8281): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:37:08:691 team/(8276:8281): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:37:08:691 team/(8276:8281): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:37:13:691 team/(8276:8281): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:37:13:691 team/(8276:8281): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:37:18:692 team/(8276:8281): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:37:18:692 team/(8276:8281): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

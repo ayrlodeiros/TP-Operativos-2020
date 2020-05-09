@@ -96,10 +96,34 @@ int funciona_la_conexion_con_broker() {
 	}
 }
 
+//VER DE INICIAR TODO LO DE EL REINTENGO EN ESTE METODO, ADEMAS DE INICIALIZAR EL PTHREAD ACA
+void intentar_conectar_al_broker() {
+
+	pthread_t* conexion_broker;
+
+	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
+	//NO LO ESPERO
+	pthread_detach(conexion_broker);
+	//LO ESPERO
+	//pthread_join(conexion_broker, NULL);
+
+	//ESTO ES SOLO PARA PROBAR
+	while(1) {
+		log_info(nuestro_log, string_from_format("VALOR DEL SOCKET: %d", socket_broker));
+		if(funciona_la_conexion_con_broker()){
+			log_info(nuestro_log, "FUNCIONA");
+		} else {
+			log_info(nuestro_log, "NO FUNCIONA");
+		}
+		sleep(1);
+	}
+}
+
 //FIN DE CONEXIONES
 //
 //
 //
+
 void appeared_pokemon(char* nombre_pokemon,int posicion_x,int posicion_y){
 	if(el_pokemon_es_requerido(nombre_pokemon)){
 		armar_pokemon(nombre_pokemon,posicion_x,posicion_y);

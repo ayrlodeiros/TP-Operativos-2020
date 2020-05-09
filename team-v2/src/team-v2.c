@@ -3,28 +3,12 @@
 
 int main(void){
 
-	pthread_t* conexion_broker;
-
 	iniciar_team();
 	log_info(nuestro_log, string_from_format("El algoritmo de planificacion es: %d", leer_algoritmo_planificacion()));
 
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 
-	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
-	//NO LO ESPERO
-	pthread_detach(conexion_broker);
-	//LO ESPERO
-	//pthread_join(conexion_broker, NULL);
-
-	while(1) {
-		log_info(nuestro_log, string_from_format("VALOR DEL SOCKET: %d", socket_broker));
-		if(funciona_la_conexion_con_broker()){
-			log_info(nuestro_log, "FUNCIONA");
-		} else {
-			log_info(nuestro_log, "NO FUNCIONA");
-		}
-		sleep(1);
-	}
+	intentar_conectar_al_broker();
 
 
 	return 0;

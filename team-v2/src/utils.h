@@ -27,6 +27,7 @@ void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
 void conectar_broker(void);
 int funciona_la_conexion_con_broker();
+void intentar_conectar_al_broker();
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
