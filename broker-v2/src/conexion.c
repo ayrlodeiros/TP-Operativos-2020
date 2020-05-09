@@ -94,19 +94,17 @@ void servir_cliente(int* socket)
 	process_request(cod_op, *socket);
 }
 
-void process_request(int cod_op, int cliente_fd) {
-	int size;
-	void* msg;
+void process_request(int cod_op, int socket_cliente) {
 		switch (cod_op) {
-		case GET:
-			printf("Se recibio una conexion al tp 0\n");
-			recibir_mensaje(cliente_fd,&size);
-			//enviar_mensaje_suscriptores(get_mq);
+		case MENSAJE:
+			/** Por ahora para probar uso solo una cola*/
+			recibir_y_guardar_mensaje(socket_cliente,get_mq);
 			break;
-		case 2:
-			printf("Se recibio el msj 2\n");
-			pthread_exit(NULL);
+		case SUSCRIPCION:
+			agregar_suscriptor_cola(get_mq,socket_cliente);
+			break;
 		case -1:
+			log_info(mi_log,"HUbo un error al tratar de recibir el mensaje\n");
 			pthread_exit(NULL);
 		}
 }

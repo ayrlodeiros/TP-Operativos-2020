@@ -17,12 +17,13 @@ typedef enum{
 typedef struct{
 	mq_nombre nombre;
 	t_queue* cola;
-	t_list* suscriptores;
+	t_list* suscriptores; /** Por ahora los suscriptores se guardan como ints que serian las conexiones*/
 
 }t_mq;
 
-//despues veo si arme este struct
-/*
+/**
+ * Despues veo si armo este struct
+
 typedef struct{
 	t_mq* GET;
 	//t_mq* LOCALIZED;
@@ -40,7 +41,7 @@ t_mq* new_mq;
 t_mq* appeared_mq;
 
 
-//----Metodos para crear las colas de mensajes ------
+/** Metodos para crear las colas de mensajes */
 void inicializar_message_queues(void);
 void liberar_message_queues(void);
 void crear_get_mq(void);

@@ -8,7 +8,6 @@ struct mesg_buffer {
 
 int main(void)
 {
-
 	//pthread_t* conexion_team;
 
 	iniciar_broker();
@@ -16,9 +15,6 @@ int main(void)
 	levantar_servidor(leer_ip_broker(),leer_puerto_broker(),mi_log);
 
 	terminar_broker();
-
-	printf("Todo joya \n");
-
 
 	return EXIT_SUCCESS;
 
