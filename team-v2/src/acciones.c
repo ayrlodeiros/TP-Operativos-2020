@@ -51,5 +51,6 @@ void ejecutar(entrenador* entrenador){
 	if(cpu_restante_entrenador(entrenador) == 0){
 		//Se ejecuta la accion
 		//entrenador->accion_a_ejecutar->closure;
+		entrenador->estado = EXIT;
 	}
 }

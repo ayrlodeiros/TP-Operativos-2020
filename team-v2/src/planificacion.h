@@ -18,7 +18,11 @@ float alpha = 0.5;
 t_list* estimar_rafagas_entrenadores(t_list* entrenadores_a_planificar);
 float estimar_siguiente_rafaga(entrenador* entrenador);
 int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2);
-pthread_t* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar);
+int entrenador_en_ready(entrenador* entrenador);
+int entrenador_necesita_planificarse(entrenador* entrenador);
+int hay_entrenadores_para_planificar(t_list* entrenadores_a_planificar);
+
+entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar);
 void planificar(t_list* entrenadores_a_planificar);
 void fifo(t_queue* entrenadores_a_planificar);
 void round_robin(t_queue* entrenadores_a_planificar);

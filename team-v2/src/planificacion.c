@@ -21,9 +21,27 @@ int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2){
 	return estimar_siguiente_rafaga(entrenador1) <= estimar_siguiente_rafaga(entrenador2);
 }
 
+int entrenador_en_ready(entrenador* entrenador){
+	return entrenador->estado == READY;
+}
+
+int entrenador_necesita_planificarse(entrenador* entrenador){
+	if(entrenador_en_ready(entrenador) || entrenador->estado == BLOCK_READY){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+int hay_entrenadores_para_planificar(t_list* entrenadores_a_planificar){
+	return list_any_satisfy(entrenadores_a_planificar,entrenador_necesita_planificarse);
+}
+
 //ARREGLAR, devuelve pthread_t?
-pthread_t* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar){
-	return list_sorted(entrenadores_a_planificar,tiene_menor_rafaga);
+entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar){
+	t_list* entrenadores_en_ready = list_filter(entrenadores_a_planificar,entrenador_en_ready);
+	return list_sorted(entrenadores_en_ready,tiene_menor_rafaga);
 }
 
 
@@ -67,9 +85,9 @@ void fifo(t_queue* entrenadores_a_planificar){
 
 }
 
-entrenador* regla_RR(t_queue* entrenadores_a_planificar , int tiempo){
-
+entrenador* regla_RR(entrenador* entrenador1, entrenador* entrenador2){
 }
+
 
 void round_robin(t_queue* entrenadores_a_planificar){
 
@@ -88,18 +106,38 @@ void round_robin(t_queue* entrenadores_a_planificar){
 				quantum_consumido ++;
 			}
 
+			if(cpu_restante_entrenador(entrenador_a_ejecutar)){
+				queue_push(entrenadores_a_planificar,entrenador_a_ejecutar);
+			}
+
+
 
 	}
 
 }
 
 void sjf_sin_desalojo(t_list* entrenadores_a_planificar){
+	t_list* estimaciones_rafagas_entrenadores = estimar_rafagas_entrenadores(entrenadores_a_planificar);
 
+	while(hay_entrenadores_para_planificar()){
+		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_a_planificar);
+
+		while(cpu_restante_entrenador(entrenador_a_ejecutar)){
+			ejecutar(entrenador_a_ejecutar);
+		}
+	}
 
 }
 
 void sjf_con_desalojo(t_list* entrenadores_a_planificar){
+	t_list* estimaciones_rafagas_entrenadores = estimar_rafagas_entrenadores(entrenadores_a_planificar);
 
+		while(hay_entrenadores_para_planificar()){
+			entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_a_planificar);
+
+			ejecutar(entrenador_a_ejecutar);
+
+		}
 }
 
 t_queue* lista_a_cola(t_list* lista) {

@@ -2,6 +2,7 @@
 #define ACCIONES_H_
 
 #include "utils.h"
+#include "constructor.h"
 
 void moverse_arriba(entrenador* entrenador);
 void moverse_abajo(entrenador* entrenador);

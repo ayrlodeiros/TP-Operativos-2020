@@ -40,7 +40,7 @@ typedef enum
 }estado_entrenador;
 
 typedef struct{
-	//void(*closure)(entrenador*);
+	void(*closure)(entrenador*);
 	int cpu_requerido;
 	float cpu_estimado_anterior;
 
