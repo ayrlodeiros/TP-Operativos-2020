@@ -69,3 +69,157 @@
 [INFO] 20:28:40:159 team/(10954:10959): 10. Inicio de proceso de reintento de comunicación con el Broker.
 [INFO] 20:32:21:930 team/(11429:11434): 10. Inicio de proceso de reintento de comunicación con el Broker.
 [INFO] 20:32:26:930 team/(11429:11434): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:57:29:816 team/(7534:7539): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:57:34:818 team/(7534:7539): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 21:57:39:819 team/(7534:7539): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:05:622 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:10:624 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:15:626 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:20:627 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:25:628 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:30:629 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:35:630 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:40:631 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:45:632 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:11:50:633 team/(4645:4650): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:13:41:531 team/(4731:4736): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:13:46:533 team/(4731:4736): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:13:51:534 team/(4731:4736): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:13:56:535 team/(4731:4736): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:14:01:536 team/(4731:4736): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:19:33:223 team/(5025:5031): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:19:38:225 team/(5025:5031): 10. Inicio de proceso de reintento de comunicación con el Broker.
+[INFO] 12:37:38:403 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:38:404 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:37:43:404 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:43:405 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:37:48:405 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:48:405 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:37:53:406 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:53:406 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:37:58:407 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:58:407 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:03:408 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:03:408 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:08:409 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:08:410 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:13:411 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:13:411 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:18:413 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:18:416 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:23:420 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:23:424 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:28:428 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:28:429 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:33:431 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:33:431 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:38:434 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:38:438 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:43:442 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:43:442 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:48:452 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:48:452 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:53:453 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:53:453 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:58:454 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:58:454 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:03:456 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:03:456 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:08:457 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:08:457 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:13:458 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:13:458 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:18:459 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:18:459 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:23:461 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:23:461 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:28:462 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:28:463 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:33:466 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:33:471 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:38:473 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:38:476 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:43:481 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:43:484 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:48:487 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:48:490 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:53:492 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:53:492 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:58:493 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:58:493 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:03:494 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:03:494 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:08:496 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:08:496 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:13:497 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:13:497 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:18:498 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:18:498 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:23:500 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:23:501 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:28:502 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:28:503 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:33:504 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:33:504 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:38:505 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:38:505 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:43:506 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:43:506 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:48:507 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:48:507 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:53:512 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:53:514 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:58:515 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:58:515 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:41:03:521 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:41:03:521 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:41:08:523 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:41:08:523 team/(5324:5331): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:41:13:525 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:41:13:526 team/(5324:5331): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:41:18:527 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:41:18:528 team/(5324:5331): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:41:23:529 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:41:23:530 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:41:28:533 team/(5324:5331): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:41:28:534 team/(5324:5331): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:10:158 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:10:158 team/(6474:6479): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:15:160 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:15:160 team/(6474:6479): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:20:160 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:20:161 team/(6474:6479): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:25:161 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:25:161 team/(6474:6479): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:30:162 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:30:163 team/(6474:6479): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:35:163 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:35:164 team/(6474:6479): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:44:40:165 team/(6474:6479): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:44:40:166 team/(6474:6479): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:46:20:948 team/(6610:6615): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:46:20:952 team/(6610:6615): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:46:25:952 team/(6610:6615): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:46:25:952 team/(6610:6615): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:46:30:953 team/(6610:6615): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:46:30:953 team/(6610:6615): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:46:35:954 team/(6610:6615): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:46:35:955 team/(6610:6615): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:49:09:335 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:09:335 team/(6717:6722): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:14:335 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:14:335 team/(6717:6722): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:19:336 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:19:337 team/(6717:6722): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:49:24:338 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:24:339 team/(6717:6722): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:49:29:339 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:29:339 team/(6717:6722): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:49:34:340 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:34:341 team/(6717:6722): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:49:39:341 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:39:342 team/(6717:6722): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:49:44:342 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:44:343 team/(6717:6722): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:49:343 team/(6717:6722): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:49:343 team/(6717:6722): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

@@ -66,7 +66,8 @@ void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
 	}
 	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
 	else {
-		dictionary_put(objetivo_global, pokemon_objetivo, 1);
+		int valor_inicial = 1;
+		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
 	}
 }
 
@@ -100,7 +101,7 @@ posicion* armar_posicion(char* posicion_a_armar) {
 accion* armar_accion(void(*closure)(entrenador*),int cpu_requerido){
 	accion* accion = malloc(sizeof(accion));
 
-	accion->closure = closure;
+	//accion->closure = closure;
 	accion->cpu_requerido = cpu_requerido;
 
 	return accion;

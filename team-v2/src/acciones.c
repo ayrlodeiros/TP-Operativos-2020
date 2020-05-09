@@ -49,6 +49,7 @@ void ejecutar(entrenador* entrenador){
 	sumar_cpu_usado(entrenador, 1);
 
 	if(cpu_restante_entrenador(entrenador) == 0){
-		entrenador->accion_a_ejecutar->closure;
+		//Se ejecuta la accion
+		//entrenador->accion_a_ejecutar->closure;
 	}
 }

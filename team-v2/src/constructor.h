@@ -8,6 +8,7 @@
 #ifndef CONSTRUCTOR_H_
 #define CONSTRUCTOR_H_
 
+#include"config-reader.h"
 #include<pthread.h>
 #include<stdlib.h>
 #include<commons/string.h>
@@ -19,8 +20,6 @@ t_list* entrenadores;
 t_dictionary* objetivo_global;
 t_queue* pokemons_sueltos;
 t_list* entrenadores_ready;
-
-
 
 typedef struct
 {
@@ -41,7 +40,7 @@ typedef enum
 }estado_entrenador;
 
 typedef struct{
-	void(*closure)(entrenador*);
+	//void(*closure)(entrenador*);
 	int cpu_requerido;
 	float cpu_estimado_anterior;
 
@@ -52,6 +51,7 @@ typedef struct
 	pthread_t* hilo;
 	estado_entrenador estado;
 	int cpu_usado;
+	int cpu_disponible;
 	posicion* posicion;
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;

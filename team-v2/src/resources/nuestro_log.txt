@@ -113,3 +113,498 @@
 [INFO] 20:32:21:919 team/(11429:11429): La cantidad de entrenadores del equipo es de 3 entrenadores
 [INFO] 20:32:21:920 team/(11429:11434): Conectando con broker...
 [INFO] 20:32:26:930 team/(11429:11434): Conectando con broker...
+[INFO] 21:57:29:807 team/(7534:7534): El algoritmo de planificacion es: 1
+[INFO] 21:57:29:812 team/(7534:7534): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 21:57:29:816 team/(7534:7539): Conectando con broker...
+[INFO] 21:57:34:817 team/(7534:7539): Conectando con broker...
+[INFO] 21:57:39:819 team/(7534:7539): Conectando con broker...
+[INFO] 12:11:05:603 team/(4645:4645): El algoritmo de planificacion es: 1
+[INFO] 12:11:05:608 team/(4645:4645): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:11:05:620 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:05:623 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:05:623 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:05:623 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:10:623 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:10:625 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:10:625 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:10:625 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:15:625 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:15:626 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:15:626 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:15:626 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:20:626 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:20:627 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:20:627 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:20:627 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:25:627 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:25:628 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:25:628 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:25:628 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:30:628 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:30:629 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:30:629 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:30:629 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:35:629 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:35:630 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:35:630 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:35:630 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:40:630 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:40:631 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:40:631 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:40:631 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:45:631 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:45:632 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:45:632 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:45:632 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:50:633 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:50:634 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:50:634 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:50:634 team/(4645:4650): Valor del socker: 0
+[INFO] 12:13:41:514 team/(4731:4731): El algoritmo de planificacion es: 1
+[INFO] 12:13:41:526 team/(4731:4731): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:13:41:531 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:41:532 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:41:532 team/(4731:4736): Valor del socket: 0
+[INFO] 12:13:46:532 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:46:533 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:46:533 team/(4731:4736): Valor del socket: 0
+[INFO] 12:13:51:534 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:51:535 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:51:535 team/(4731:4736): Valor del socket: 0
+[INFO] 12:13:56:535 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:56:536 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:56:536 team/(4731:4736): Valor del socket: 0
+[INFO] 12:14:01:536 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:14:01:536 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:14:01:536 team/(4731:4736): Valor del socket: 0
+[INFO] 12:19:33:223 team/(5025:5025): El algoritmo de planificacion es: 1
+[INFO] 12:19:33:223 team/(5025:5025): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:19:33:223 team/(5025:5031): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:19:33:223 team/(5025:5031): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:19:33:224 team/(5025:5031): Valor del socket: -1
+[INFO] 12:19:38:224 team/(5025:5031): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:19:38:225 team/(5025:5031): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:19:38:225 team/(5025:5031): Valor del socket: -1
+[INFO] 12:37:38:402 team/(5324:5324): El algoritmo de planificacion es: 1
+[INFO] 12:37:38:403 team/(5324:5324): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:37:38:403 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:38:404 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:43:404 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:43:405 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:48:405 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:48:405 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:53:405 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:53:406 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:58:406 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:58:407 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:03:407 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:03:408 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:08:409 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:08:410 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:13:410 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:13:411 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:18:411 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:18:415 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:23:417 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:23:422 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:28:424 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:28:428 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:33:429 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:33:431 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:38:432 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:38:436 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:43:442 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:43:442 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:48:451 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:48:452 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:53:452 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:53:453 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:58:453 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:58:454 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:03:454 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:03:456 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:08:457 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:08:457 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:13:458 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:13:458 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:18:459 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:18:459 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:23:459 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:23:461 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:28:462 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:28:463 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:33:464 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:33:469 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:38:471 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:38:475 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:43:477 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:43:483 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:48:485 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:48:488 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:53:491 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:53:492 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:58:492 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:58:493 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:03:493 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:03:494 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:08:494 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:08:496 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:13:497 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:13:497 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:18:498 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:18:498 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:23:499 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:23:501 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:28:501 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:28:503 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:33:503 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:33:504 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:38:504 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:38:505 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:43:505 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:43:506 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:48:506 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:48:507 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:53:512 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:53:513 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:58:515 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:58:515 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:03:520 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:41:03:521 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:08:521 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:08:523 team/(5324:5331): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:13:523 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:13:525 team/(5324:5331): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:18:526 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:18:528 team/(5324:5331): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:23:528 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:41:23:530 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:28:532 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:41:28:534 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:10:156 team/(6474:6474): El algoritmo de planificacion es: 1
+[INFO] 12:44:10:157 team/(6474:6474): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:44:10:157 team/(6474:6474): VALOR DEL SOCKET: 0
+[INFO] 12:44:10:157 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:10:158 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:11:158 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:12:159 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:13:164 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:14:165 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:15:160 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:15:160 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:15:165 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:16:167 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:17:168 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:18:169 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:19:169 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:20:160 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:20:161 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:20:171 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:21:171 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:22:173 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:23:174 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:24:174 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:25:161 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:25:161 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:25:176 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:26:180 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:27:180 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:28:181 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:29:185 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:30:162 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:30:163 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:30:185 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:31:186 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:32:186 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:33:187 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:34:189 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:35:163 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:35:164 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:35:191 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:36:191 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:37:191 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:38:192 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:39:193 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:40:165 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:40:166 team/(6474:6479): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:40:195 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:41:195 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:42:196 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:43:197 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:44:198 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:45:199 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:46:203 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:47:204 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:48:204 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:49:205 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:50:205 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:51:207 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:52:207 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:53:208 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:54:208 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:55:210 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:56:214 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:57:214 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:58:215 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:59:216 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:00:217 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:01:218 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:02:218 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:03:219 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:04:219 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:05:219 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:06:220 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:07:221 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:08:221 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:09:223 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:10:223 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:11:224 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:12:224 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:46:20:946 team/(6610:6610): El algoritmo de planificacion es: 1
+[INFO] 12:46:20:947 team/(6610:6610): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:46:20:948 team/(6610:6610): VALOR DEL SOCKET: 0
+[INFO] 12:46:20:948 team/(6610:6610): FUNCIONA
+[INFO] 12:46:20:948 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:46:20:948 team/(6610:6615): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:21:949 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:21:955 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:22:955 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:22:955 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:23:955 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:23:956 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:24:957 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:24:957 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:25:952 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:46:25:952 team/(6610:6615): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:25:958 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:25:958 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:26:959 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:26:959 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:27:959 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:27:960 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:28:960 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:28:960 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:29:961 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:29:965 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:30:952 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:46:30:953 team/(6610:6615): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:30:966 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:30:967 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:31:968 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:31:968 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:32:968 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:32:968 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:33:969 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:33:969 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:34:969 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:34:970 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:35:953 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:35:955 team/(6610:6615): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:35:971 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:35:971 team/(6610:6610): FUNCIONA
+[INFO] 12:46:36:971 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:36:972 team/(6610:6610): FUNCIONA
+[INFO] 12:46:37:972 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:37:972 team/(6610:6610): FUNCIONA
+[INFO] 12:46:38:973 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:38:973 team/(6610:6610): FUNCIONA
+[INFO] 12:46:39:974 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:39:977 team/(6610:6610): FUNCIONA
+[INFO] 12:46:40:977 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:40:978 team/(6610:6610): FUNCIONA
+[INFO] 12:46:41:979 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:41:979 team/(6610:6610): FUNCIONA
+[INFO] 12:46:42:980 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:42:980 team/(6610:6610): FUNCIONA
+[INFO] 12:46:43:981 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:43:981 team/(6610:6610): FUNCIONA
+[INFO] 12:46:44:981 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:44:982 team/(6610:6610): FUNCIONA
+[INFO] 12:46:45:982 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:45:983 team/(6610:6610): FUNCIONA
+[INFO] 12:46:46:984 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:46:984 team/(6610:6610): FUNCIONA
+[INFO] 12:46:47:985 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:47:985 team/(6610:6610): FUNCIONA
+[INFO] 12:46:48:985 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:48:986 team/(6610:6610): FUNCIONA
+[INFO] 12:46:49:986 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:49:986 team/(6610:6610): FUNCIONA
+[INFO] 12:46:50:986 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:50:987 team/(6610:6610): FUNCIONA
+[INFO] 12:46:51:987 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:51:987 team/(6610:6610): FUNCIONA
+[INFO] 12:46:52:988 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:52:988 team/(6610:6610): FUNCIONA
+[INFO] 12:46:53:988 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:53:989 team/(6610:6610): FUNCIONA
+[INFO] 12:46:54:989 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:54:990 team/(6610:6610): FUNCIONA
+[INFO] 12:46:55:991 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:55:991 team/(6610:6610): FUNCIONA
+[INFO] 12:46:56:992 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:56:992 team/(6610:6610): FUNCIONA
+[INFO] 12:46:57:993 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:57:993 team/(6610:6610): FUNCIONA
+[INFO] 12:46:58:994 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:58:994 team/(6610:6610): FUNCIONA
+[INFO] 12:46:59:995 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:59:996 team/(6610:6610): FUNCIONA
+[INFO] 12:47:00:996 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:00:996 team/(6610:6610): FUNCIONA
+[INFO] 12:47:01:996 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:01:997 team/(6610:6610): FUNCIONA
+[INFO] 12:47:02:997 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:02:998 team/(6610:6610): FUNCIONA
+[INFO] 12:47:03:998 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:03:998 team/(6610:6610): FUNCIONA
+[INFO] 12:47:04:998 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:04:999 team/(6610:6610): FUNCIONA
+[INFO] 12:47:05:0 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:05:0 team/(6610:6610): FUNCIONA
+[INFO] 12:47:06:1 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:06:1 team/(6610:6610): FUNCIONA
+[INFO] 12:47:08:2 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:08:2 team/(6610:6610): FUNCIONA
+[INFO] 12:47:09:2 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:09:3 team/(6610:6610): FUNCIONA
+[INFO] 12:47:10:3 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:10:4 team/(6610:6610): FUNCIONA
+[INFO] 12:47:11:4 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:11:5 team/(6610:6610): FUNCIONA
+[INFO] 12:47:12:5 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:12:5 team/(6610:6610): FUNCIONA
+[INFO] 12:47:13:6 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:13:6 team/(6610:6610): FUNCIONA
+[INFO] 12:47:14:7 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:14:10 team/(6610:6610): FUNCIONA
+[INFO] 12:47:15:10 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:15:10 team/(6610:6610): FUNCIONA
+[INFO] 12:47:16:11 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:16:11 team/(6610:6610): FUNCIONA
+[INFO] 12:47:17:12 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:17:12 team/(6610:6610): FUNCIONA
+[INFO] 12:47:18:12 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:18:13 team/(6610:6610): FUNCIONA
+[INFO] 12:47:19:14 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:19:14 team/(6610:6610): FUNCIONA
+[INFO] 12:47:20:14 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:20:14 team/(6610:6610): FUNCIONA
+[INFO] 12:47:21:15 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:21:15 team/(6610:6610): FUNCIONA
+[INFO] 12:47:22:15 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:22:15 team/(6610:6610): FUNCIONA
+[INFO] 12:47:23:16 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:23:16 team/(6610:6610): FUNCIONA
+[INFO] 12:47:24:16 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:24:17 team/(6610:6610): FUNCIONA
+[INFO] 12:49:09:323 team/(6717:6717): El algoritmo de planificacion es: 1
+[INFO] 12:49:09:326 team/(6717:6717): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:49:09:326 team/(6717:6717): VALOR DEL SOCKET: 0
+[INFO] 12:49:09:326 team/(6717:6717): FUNCIONA
+[INFO] 12:49:09:332 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:09:335 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:10:327 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:10:327 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:11:332 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:11:333 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:12:333 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:12:333 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:13:333 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:13:334 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:14:334 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:14:334 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:14:335 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:14:335 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:15:334 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:15:334 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:16:335 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:16:335 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:17:336 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:17:336 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:18:337 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:18:337 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:19:336 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:19:337 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:19:337 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:19:338 team/(6717:6717): FUNCIONA
+[INFO] 12:49:20:338 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:20:338 team/(6717:6717): FUNCIONA
+[INFO] 12:49:21:338 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:21:339 team/(6717:6717): FUNCIONA
+[INFO] 12:49:22:339 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:22:339 team/(6717:6717): FUNCIONA
+[INFO] 12:49:23:340 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:23:340 team/(6717:6717): FUNCIONA
+[INFO] 12:49:24:338 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:24:338 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:24:340 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:24:340 team/(6717:6717): FUNCIONA
+[INFO] 12:49:25:341 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:25:341 team/(6717:6717): FUNCIONA
+[INFO] 12:49:26:342 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:26:342 team/(6717:6717): FUNCIONA
+[INFO] 12:49:27:343 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:27:343 team/(6717:6717): FUNCIONA
+[INFO] 12:49:28:343 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:28:343 team/(6717:6717): FUNCIONA
+[INFO] 12:49:29:339 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:29:339 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:29:344 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:29:344 team/(6717:6717): FUNCIONA
+[INFO] 12:49:30:345 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:30:345 team/(6717:6717): FUNCIONA
+[INFO] 12:49:31:346 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:31:346 team/(6717:6717): FUNCIONA
+[INFO] 12:49:32:347 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:32:347 team/(6717:6717): FUNCIONA
+[INFO] 12:49:33:347 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:33:347 team/(6717:6717): FUNCIONA
+[INFO] 12:49:34:340 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:34:340 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:34:348 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:34:348 team/(6717:6717): FUNCIONA
+[INFO] 12:49:35:349 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:35:350 team/(6717:6717): FUNCIONA
+[INFO] 12:49:36:350 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:36:351 team/(6717:6717): FUNCIONA
+[INFO] 12:49:37:351 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:37:351 team/(6717:6717): FUNCIONA
+[INFO] 12:49:38:352 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:38:353 team/(6717:6717): FUNCIONA
+[INFO] 12:49:39:341 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:39:341 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:39:354 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:39:354 team/(6717:6717): FUNCIONA
+[INFO] 12:49:40:355 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:40:355 team/(6717:6717): FUNCIONA
+[INFO] 12:49:41:356 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:41:357 team/(6717:6717): FUNCIONA
+[INFO] 12:49:42:357 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:42:357 team/(6717:6717): FUNCIONA
+[INFO] 12:49:43:357 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:43:357 team/(6717:6717): FUNCIONA
+[INFO] 12:49:44:342 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:44:343 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:44:358 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:44:359 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:45:359 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:45:359 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:46:360 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:46:361 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:47:361 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:47:361 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:48:361 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:48:362 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:49:343 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:49:343 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:49:362 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:49:362 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:50:363 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:50:363 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:51:363 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:51:364 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:52:365 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:52:365 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:53:365 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:53:366 team/(6717:6717): NO FUNCIONA

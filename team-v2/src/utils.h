@@ -3,6 +3,9 @@
 
 #include"constructor.h"
 #include"config-reader.h"
+#include<sys/socket.h>
+#include<netdb.h>
+#include<signal.h>
 #include<math.h>
 #include<stdio.h>
 #include<stdlib.h>
@@ -14,10 +17,17 @@
 
 t_log* logger;
 t_log* nuestro_log;
+
+pthread_mutex_t lock_de_conexion_broker;
 int socket_broker;
 
-
+//CONEXIONES
+int crear_conexion_como_cliente(char *ip, char* puerto);
+void liberar_conexion(int socket);
+int levantar_servidor(char* ip, char* puerto);
 void conectar_broker(void);
+int funciona_la_conexion_con_broker();
+//FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
 int el_entrenador_se_puede_planificar(entrenador* un_entrenador);

@@ -54,7 +54,7 @@ int leer_retardo_ciclo_cpu(void){
 	return retardo_ciclo_cpu;
 }
 
-char* leer_algoritmo_planificacion(void){
+enum_algoritmo_planificacion leer_algoritmo_planificacion(void){
 	return algoritmo_planificacion;
 }
 
@@ -89,7 +89,22 @@ void setear_retardo_ciclo_cpu(void){
 }
 
 void setear_algoritmo_planificacion(void){
-	algoritmo_planificacion = config_get_string_value(config, "ALGORITMO_PLANIFICACION");
+	char* algoritmo_del_config = config_get_string_value(config, "ALGORITMO_PLANIFICACION");
+	if(string_equals_ignore_case(algoritmo_del_config, "FIFO")) {
+		algoritmo_planificacion = FIFO;
+	}
+	else if(string_equals_ignore_case(algoritmo_del_config, "RR")) {
+		algoritmo_planificacion = RR;
+	}
+	else if(string_equals_ignore_case(algoritmo_del_config, "SJF-CD")) {
+		algoritmo_planificacion = SJFCD;
+	}
+	else if(string_equals_ignore_case(algoritmo_del_config, "SJF-SD")) {
+		algoritmo_planificacion = SJFSD;
+	}
+	else {
+		algoritmo_planificacion = ALGORITMO_DESCONOCIDO;
+	}
 }
 
 void setear_quantum(void){

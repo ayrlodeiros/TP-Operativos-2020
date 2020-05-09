@@ -11,7 +11,7 @@ void iniciar_config(void) {
 	t_config* read_config = config_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/Modulo2");
 
 	config_set_value(read_config,"IP","127.0.0.1");
-	config_set_value(read_config,"PUERTO","4444");
+	config_set_value(read_config,"PUERTO","5002");
 
 	config_save_in_file(read_config, "/home/utnso/Documentos/tp-2020-1c-C-aprueba/Modulo2/server.config");
 
