@@ -8,9 +8,18 @@ int main(void){
 
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 
-	intentar_conectar_al_broker();
+	//intentar_conectar_al_broker();
 
+	for(int i = 0; i < list_size(entrenadores_ready); i++){
+		entrenador* entrenador = list_get(entrenadores_ready, i);
+		printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
+		printf("\nCANTIDAD MAXIMA POKEMONS ENTRENADOR %d: %d", i, entrenador->cant_maxima_pokemons);
+		for(int j = 0; j<list_size(entrenador->pokemons_adquiridos); j++){
+			printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
+		}
+	}
 
+	planificar(entrenadores_ready);
 	return 0;
 }
 
@@ -22,6 +31,8 @@ void iniciar_team() {
 	nuestro_log = log_create("src/resources/nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
 	//Iniciamos las variables globales del constructor
 	iniciar_variables_globales();
+
+
 
 }
 

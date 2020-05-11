@@ -33,6 +33,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;
 	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
+	un_entrenador->cpu_usado = 0;
 
 	return un_entrenador;
 }
@@ -98,10 +99,10 @@ posicion* armar_posicion(char* posicion_a_armar) {
 	return pos;
 }
 
-accion* armar_accion(void(*closure)(),int cpu_requerido){
+accion* armar_accion(/*void(*closure)(),*/int cpu_requerido){
 	accion* accion = malloc(sizeof(accion));
 
-	accion->closure = closure;
+	//accion->closure = closure;
 	accion->cpu_requerido = cpu_requerido;
 
 	return accion;

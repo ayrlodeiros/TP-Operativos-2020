@@ -9,6 +9,9 @@ float estimar_siguiente_rafaga(entrenador* entrenador){
 			(1-alpha) * entrenador->accion_a_ejecutar->cpu_estimado_anterior;
 	entrenador->accion_a_ejecutar->cpu_estimado_anterior = estimacion;
 
+	printf("\nPOSICION ENTRENADOR : X->%d e Y->%d",entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
+	printf("\n ESTIMACION DE RAFAGA ENTRENADOR: %d",estimacion);
+
 	return estimacion;
 
 	//No se como hacer con la estimacion anterior, habia pensado en crear una variable para cada entrenador
@@ -41,7 +44,8 @@ int hay_entrenadores_para_planificar(t_list* entrenadores_a_planificar){
 //ARREGLAR, devuelve pthread_t?
 entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar){
 	t_list* entrenadores_en_ready = list_filter(entrenadores_a_planificar,entrenador_en_ready);
-	return list_sorted(entrenadores_en_ready,tiene_menor_rafaga);
+	list_sort(entrenadores_en_ready,tiene_menor_rafaga);
+	return list_get(entrenadores_en_ready,0);
 }
 
 
@@ -77,8 +81,18 @@ void fifo(t_queue* entrenadores_a_planificar){
 	while(!queue_is_empty(entrenadores_a_planificar)){
 		entrenador* entrenador_a_ejecutar = queue_pop(entrenadores_a_planificar);
 
+		printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
+		printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
+		printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d",entrenador_a_ejecutar->posicion->posicion_x, entrenador_a_ejecutar->posicion->posicion_y);
+
+		for(int j = 0; j<list_size(entrenador_a_ejecutar->pokemons_adquiridos); j++){
+			printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
+		}
+
 		while(cpu_restante_entrenador(entrenador_a_ejecutar)){
 			ejecutar(entrenador_a_ejecutar);
+			printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
+			printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
 		}
 
 	}
@@ -96,14 +110,27 @@ void round_robin(t_queue* entrenadores_a_planificar){
 
 	//QUANTUM = 2   (Del ejemplo del config)
 
+	printf("\n QUANTUM TOTAL : %d", quantum);
 
 	while(!queue_is_empty(entrenadores_a_planificar)){
 			entrenador* entrenador_a_ejecutar = queue_pop(entrenadores_a_planificar);
+
+			printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
+			printf("\n CPU REQUERIDO ENTRENADOR : %d", entrenador_a_ejecutar->accion_a_ejecutar->cpu_requerido);
+			printf("\nPOSICION ENTRENADOR : X->%d e Y->%d",entrenador_a_ejecutar->posicion->posicion_x, entrenador_a_ejecutar->posicion->posicion_y);
+
+			for(int j = 0; j<list_size(entrenador_a_ejecutar->pokemons_adquiridos); j++){
+				printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
+			}
 
 			while(cpu_restante_entrenador(entrenador_a_ejecutar) && quantum_consumido <= quantum){
 				ejecutar(entrenador_a_ejecutar);
 				tiempo ++;
 				quantum_consumido ++;
+				printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
+				printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
+				printf("\n QUANTUM CONSUMIDO : %d", quantum_consumido);
+				printf("\n CPU TIEMPO : %d", tiempo);
 			}
 
 			if(cpu_restante_entrenador(entrenador_a_ejecutar)){
@@ -119,8 +146,16 @@ void round_robin(t_queue* entrenadores_a_planificar){
 void sjf_sin_desalojo(t_list* entrenadores_a_planificar){
 	t_list* estimaciones_rafagas_entrenadores = estimar_rafagas_entrenadores(entrenadores_a_planificar);
 
-	while(hay_entrenadores_para_planificar()){
+	while(hay_entrenadores_para_planificar(entrenadores_a_planificar)){
 		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_a_planificar);
+
+		printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
+		printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
+		printf("\nPOSICION ENTRENADOR : X->%d e Y->%d",entrenador_a_ejecutar->posicion->posicion_x, entrenador_a_ejecutar->posicion->posicion_y);
+
+		for(int j = 0; j<list_size(entrenador_a_ejecutar->pokemons_adquiridos); j++){
+			printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
+		}
 
 		while(cpu_restante_entrenador(entrenador_a_ejecutar)){
 			ejecutar(entrenador_a_ejecutar);
@@ -132,8 +167,16 @@ void sjf_sin_desalojo(t_list* entrenadores_a_planificar){
 void sjf_con_desalojo(t_list* entrenadores_a_planificar){
 	t_list* estimaciones_rafagas_entrenadores = estimar_rafagas_entrenadores(entrenadores_a_planificar);
 
-		while(hay_entrenadores_para_planificar()){
+		while(hay_entrenadores_para_planificar(entrenadores_a_planificar)){
 			entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_a_planificar);
+
+			printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
+			printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
+			printf("\nPOSICION ENTRENADOR : X->%d e Y->%d",entrenador_a_ejecutar->posicion->posicion_x, entrenador_a_ejecutar->posicion->posicion_y);
+
+			for(int j = 0; j<list_size(entrenador_a_ejecutar->pokemons_adquiridos); j++){
+				printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
+			}
 
 			ejecutar(entrenador_a_ejecutar);
 
