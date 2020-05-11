@@ -39,18 +39,22 @@ void intercambiar(entrenador* entrenador1, entrenador* entrenador2) {
 
 }
 
-int cpu_restante_entrenador (entrenador* entrenador_a_ejecutar){
-	return entrenador_a_ejecutar->accion_a_ejecutar->cpu_requerido - entrenador_a_ejecutar->cpu_usado;
-}
-
 void ejecutar(entrenador* entrenador){
 
-	restar_cpu_disponible(entrenador, 1);
-	sumar_cpu_usado(entrenador, 1);
+	accion* accion_a_ejecutar = queue_pop(entrenador->acciones);
 
-	if(cpu_restante_entrenador(entrenador) == 0){
-		//Se ejecuta la accion
-		//entrenador->accion_a_ejecutar->closure;
-		entrenador->estado = EXIT;
-	}
+	sumar_cpu_usado(entrenador, accion_a_ejecutar->cpu_requerido);
+
+	pthread_create(&(entrenador->hilo), NULL, accion_a_ejecutar->funcion, entrenador);
+	pthread_join(entrenador->hilo, NULL);
+
+	free(accion_a_ejecutar);
+}
+
+int cpu_restante_entrenador (entrenador* entrenador_a_ejecutar){
+	return entrenador_a_ejecutar->cpu_disponible - entrenador_a_ejecutar->cpu_usado;
+}
+
+void sumar_cpu_usado(entrenador* entrenador, int cantidad) {
+	entrenador->cpu_usado += cantidad;
 }

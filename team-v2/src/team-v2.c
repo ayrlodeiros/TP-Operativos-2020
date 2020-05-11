@@ -5,12 +5,19 @@ int main(void){
 
 	iniciar_team();
 	log_info(nuestro_log, string_from_format("El algoritmo de planificacion es: %d", leer_algoritmo_planificacion()));
-
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
+	dictionary_iterator(objetivo_global, mostrar_objetivo_global);
 
 	//intentar_conectar_al_broker();
 
-	for(int i = 0; i < list_size(entrenadores_ready); i++){
+
+	manejar_aparicion_de_pokemon("Pikachu", 0, 0);
+
+	pthread_t* hilo_planificacion;
+	pthread_create(&hilo_planificacion,NULL, planificar, NULL);
+	pthread_join(hilo_planificacion, NULL);
+
+	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);
 		printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
 		printf("\nCANTIDAD MAXIMA POKEMONS ENTRENADOR %d: %d", i, entrenador->cant_maxima_pokemons);
@@ -18,22 +25,23 @@ int main(void){
 			printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
 		}
 	}
+*/
 
-	planificar(entrenadores_ready);
 	return 0;
 }
 
+void mostrar_objetivo_global(char* key, void* value) {
+	log_info(nuestro_log, "Necesito %d pokemons %s", value, key);
+}
+
 void iniciar_team() {
-	//Leemos el config
 	iniciar_config();
-	//Levantamos los archivos de logeo
 	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("src/resources/nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
 	//Iniciamos las variables globales del constructor
 	iniciar_variables_globales();
 
-
-
+	pthread_mutex_lock(&lock_de_planificacion);
 }
 
 void terminar_team() {

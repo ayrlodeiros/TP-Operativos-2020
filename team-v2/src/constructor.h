@@ -9,16 +9,28 @@
 #define CONSTRUCTOR_H_
 
 #include"config-reader.h"
-#include<pthread.h>
+#include<math.h>
+#include<netdb.h>
+#include<signal.h>
+#include<stdio.h>
 #include<stdlib.h>
+#include<unistd.h>
+#include<pthread.h>
+#include<sys/socket.h>
+#include<readline/readline.h>
+#include<commons/log.h>
+#include<commons/config.h>
 #include<commons/string.h>
 #include<commons/collections/list.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/dictionary.h>
 
+t_log* logger;
+t_log* nuestro_log;
+
 t_list* entrenadores;
 t_dictionary* objetivo_global;
-t_queue* pokemons_sueltos;
+t_list* pokemons_sueltos;
 t_list* entrenadores_ready;
 
 typedef struct
@@ -40,10 +52,8 @@ typedef enum
 }estado_entrenador;
 
 typedef struct{
-	//void(*closure)(entrenador*);
+	void(*funcion)(void*);
 	int cpu_requerido;
-	float cpu_estimado_anterior;
-
 }accion;
 
 typedef struct
@@ -56,7 +66,7 @@ typedef struct
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;
 	t_list* pokemons_objetivo;
-	accion* accion_a_ejecutar;
+	t_queue* acciones;
 } entrenador;
 
 typedef struct
@@ -76,9 +86,8 @@ void armar_objetivo_global();
 void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo);
 void restar_adquirido_a_objetivo_global(char* pokemon_adquirido);
 
-void armar_pokemon(char* nombre, int posicion_x, int posicion_y);
-
 posicion* armar_posicion(char* posicion_a_armar);
+accion* armar_accion(void(*funcion)(void*), int cpu_requerido);
 
 
 

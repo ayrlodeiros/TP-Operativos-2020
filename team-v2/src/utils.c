@@ -124,69 +124,50 @@ void intentar_conectar_al_broker() {
 //
 //
 
-void appeared_pokemon(char* nombre_pokemon,int posicion_x,int posicion_y){
-	if(el_pokemon_es_requerido(nombre_pokemon)){
-		armar_pokemon(nombre_pokemon,posicion_x,posicion_y);
-	}
-}
-
-t_list* get_pokemon(char* nombre_pokemon){
-
-}
-
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado){
 	entrenador->estado = un_estado;
 }
 
+//Manejo la llegada de un nuevo pokemon (LOCALIZED O APPEARED)
+void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) {
+	pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));;
+	nuevo_pokemon->nombre = nombre;
+	nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+
+	list_add(pokemons_sueltos, nuevo_pokemon);
+	buscar_entrenador_a_planificar(nuevo_pokemon);
+}
+
+
+void buscar_entrenador_a_planificar(pokemon* pokemon_objetivo){
+	//Seteo la variable global del utils para poder manejarla en los distintos metodos
+	pokemon_para_planificar = pokemon_objetivo;
+
+	//Filtro entrenadores en estado NEW o BLOCK_READY, luego ordeno la lista para obtener al primero mas cercano y despues lo agrego a la lista de entredores ready
+	agregar_entrenador_a_entrenadores_ready(list_get(list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca), 0));
+}
+
+void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo) {
+	cambiar_estado_entrenador(entrenador_listo, READY);
+	list_add(entrenadores_ready, entrenador_listo);
+	//AGREGAR ACCIONES AL ENTRENADOR PARA QUE SE MUEVA A LA POSICION
+	printf("AGREGAR ACCIONES AL ENTRENADOR PARA QUE SE MUEVA A LA POSICION");
+	pthread_mutex_unlock(&lock_de_planificacion);
+}
+
 int el_entrenador_se_puede_planificar(entrenador* un_entrenador){
-	return un_entrenador->estado == READY;
+	return un_entrenador->estado == NEW || un_entrenador->estado == BLOCK_READY;
 }
 
-entrenador* entrenador_a_ejecutar(){
-	//Consigo los entrenador que estan en ready
-	t_list* entrenadores_a_ejecutar = list_filter(entrenadores, el_entrenador_se_puede_planificar);
-
-	//Ordeno los entrenadores en funcion de que tan cerca estan del pokemon
-	list_sort(entrenadores_a_ejecutar, el_entrenador1_esta_mas_cerca);
-
-	for(int i = 0; i < list_size(entrenadores_a_ejecutar); i++){
-			entrenador* entrenador = list_get(entrenadores_a_ejecutar, i);
-			printf("\nPOSICION ENTRENADOR %d: X->%d e Y->%d", i, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
-			printf("\nCANTIDAD MAXIMA POKEMONS ENTRENADOR %d: %d", i, entrenador->cant_maxima_pokemons);
-			for(int j = 0; j<list_size(entrenador->pokemons_adquiridos); j++){
-				printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
-			}
-		}
-
+int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2) {
+	return distancia_del_entrenador_al_pokemon(entrenador1,pokemon_para_planificar) <= distancia_del_entrenador_al_pokemon(entrenador2,pokemon_para_planificar);
 }
-
 
 int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
 	return (int) (fabs(entrenador->posicion->posicion_x - pokemon->posicion->posicion_x)) + (int) (fabs(entrenador->posicion->posicion_y - pokemon->posicion->posicion_y));
 }
 
-int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2) {
-	int distancia_al_pokemon_entrenador1 = distancia_del_entrenador_al_pokemon(entrenador1,queue_peek(pokemons_sueltos));
-	int distancia_al_pokemon_entrenador2 = distancia_del_entrenador_al_pokemon(entrenador2,queue_peek(pokemons_sueltos));
 
-	if(distancia_al_pokemon_entrenador1 <= distancia_al_pokemon_entrenador2){
-		printf("\n El resultado de la funcion es: 1");
-		return 1;
-	}
-	else {
-		printf("\n El resultado de la funcion es: 0");
-		return 0;
-	}
-
-}
-
-void restar_cpu_disponible(entrenador* entrenador, int cantidad) {
-	entrenador->cpu_disponible -= cantidad;
-}
-
-void sumar_cpu_usado(entrenador* entrenador, int cantidad) {
-	entrenador->cpu_usado += cantidad;
-}
 
 
 

@@ -4,7 +4,7 @@
 void iniciar_variables_globales() {
 	armar_entrenadores();
 	armar_objetivo_global();
-	pokemons_sueltos = queue_create();
+	pokemons_sueltos = list_create();
 	entrenadores_ready = list_create();
 }
 
@@ -34,6 +34,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
 	un_entrenador->cpu_usado = 0;
+	un_entrenador->acciones = queue_create();
 
 	return un_entrenador;
 }
@@ -75,17 +76,6 @@ void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
 //Resto el pokemon atrapado del objetivo global
 void restar_adquirido_a_objetivo_global(char* pokemon_adquirido) {
 	dictionary_put(objetivo_global, pokemon_adquirido, dictionary_get(objetivo_global, pokemon_adquirido)-1);
-
-}
-
-
-//Arma un pokemon con los parametros pasados y lo agrega a la cola de pokemons sueltos
-void armar_pokemon(char* nombre, int posicion_x, int posicion_y) {
-		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));;
-		nuevo_pokemon->nombre = nombre;
-		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
-
-		queue_push(pokemons_sueltos,nuevo_pokemon);
 }
 
 posicion* armar_posicion(char* posicion_a_armar) {
@@ -99,11 +89,11 @@ posicion* armar_posicion(char* posicion_a_armar) {
 	return pos;
 }
 
-accion* armar_accion(/*void(*closure)(),*/int cpu_requerido){
-	accion* accion = malloc(sizeof(accion));
+accion* armar_accion(void(*funcion)(void*), int cpu_requerido){
+	accion* nueva_accion = malloc(sizeof(accion));
 
-	//accion->closure = closure;
-	accion->cpu_requerido = cpu_requerido;
+	nueva_accion->funcion = funcion;
+	nueva_accion->cpu_requerido = cpu_requerido;
 
-	return accion;
+	return nueva_accion;
 }
