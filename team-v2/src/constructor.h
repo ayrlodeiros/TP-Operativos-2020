@@ -27,6 +27,7 @@
 
 t_log* logger;
 t_log* nuestro_log;
+int ejecutar_default;
 
 t_list* entrenadores;
 t_dictionary* objetivo_global;

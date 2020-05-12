@@ -5,7 +5,6 @@
 
 int socket_broker;
 
-static pthread_mutex_t lock_de_conexion_broker = PTHREAD_MUTEX_INITIALIZER;
 static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
 
 pokemon* pokemon_para_planificar;
@@ -14,9 +13,8 @@ pokemon* pokemon_para_planificar;
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
-void conectar_broker(void);
-int funciona_la_conexion_con_broker();
-void intentar_conectar_al_broker();
+void conectar_broker(int conexion);
+void intentar_conectar_al_broker(int conexion);
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);

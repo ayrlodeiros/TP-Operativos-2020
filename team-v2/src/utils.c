@@ -63,60 +63,70 @@ int levantar_servidor(char* ip, char* puerto) {
 	return socket_servidor;
 }
 
-void conectar_broker(void) {
+void intentar_conectar_al_broker(int conexion) {
 	char* ip_broker = leer_ip_broker();
 	char* puerto_broker = leer_puerto_broker();
 
-	while(1) {
-		pthread_mutex_lock(&lock_de_conexion_broker);
+	while(conexion == -1) {
 		log_info(nuestro_log, string_from_format("Intentando conectar con broker en IP: %s y PUERTO: %s", ip_broker, puerto_broker));
 		log_info(logger, "10. Inicio de proceso de intento de comunicación con el Broker.");
 
-		socket_broker = crear_conexion_como_cliente(ip_broker, puerto_broker);
+		conexion = crear_conexion_como_cliente(ip_broker, puerto_broker);
 
-		pthread_mutex_unlock(&lock_de_conexion_broker);
-
-		if(socket_broker == -1) {
+		if(conexion == -1) {
 			log_info(logger, "11. Intento de conexion con el broker fallida. Se volvera a intentar.");
+			sleep(leer_tiempo_reconexion());
 		} else {
 			log_info(logger, "11. Intento de conexion con el broker exitosa.");
-			pthread_mutex_lock(&lock_de_conexion_broker);
 		}
-
-		sleep(leer_tiempo_reconexion());
 	}
 }
 
-int funciona_la_conexion_con_broker() {
+/*int funciona_la_conexion_con_broker() {
 	if(socket_broker == -1) {
-		pthread_mutex_unlock(&lock_de_conexion_broker);
 		return 0;
 	} else {
 		return 1;
 	}
+}*/
+
+void suscribirse_a_cola_appeared() {
+	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	if(conexion_a_broker == -1) {
+		intentar_conectar_al_broker(conexion_a_broker);
+	}
 }
 
-//VER DE INICIAR TODO LO DE EL REINTENGO EN ESTE METODO, ADEMAS DE INICIALIZAR EL PTHREAD ACA
-void intentar_conectar_al_broker() {
-
-	pthread_t* conexion_broker;
-
-	pthread_create(&conexion_broker,NULL,conectar_broker, NULL);
-	//NO LO ESPERO
-	pthread_detach(conexion_broker);
-	//LO ESPERO
-	//pthread_join(conexion_broker, NULL);
-
-	//ESTO ES SOLO PARA PROBAR
-	while(1) {
-		log_info(nuestro_log, string_from_format("VALOR DEL SOCKET: %d", socket_broker));
-		if(funciona_la_conexion_con_broker()){
-			log_info(nuestro_log, "FUNCIONA");
-		} else {
-			log_info(nuestro_log, "NO FUNCIONA");
-		}
-		sleep(1);
+void suscribirse_a_cola_localized() {
+	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	if(conexion_a_broker == -1) {
+		intentar_conectar_al_broker(conexion_a_broker);
 	}
+}
+
+void suscribirse_a_cola_caught() {
+	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	if(conexion_a_broker == -1) {
+		intentar_conectar_al_broker(conexion_a_broker);
+	}
+}
+
+void levantar_conexiones_al_broker() {
+	int primera_conexion = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	if(primera_conexion == -1) {
+		ejecutar_default = 1;
+		pthread_t* reintento_conexion_broker = pthread_create(&reintento_conexion_broker,NULL,intentar_conectar_al_broker, primera_conexion);
+		pthread_join(reintento_conexion_broker, NULL);
+		ejecutar_default = 0;
+	}
+	pthread_t* cola_appeared = pthread_create(&cola_appeared,NULL,suscribirse_a_cola_appeared, NULL);
+	pthread_t* cola_localized = pthread_create(&cola_localized,NULL,suscribirse_a_cola_localized, NULL);
+	pthread_t* cola_caught = pthread_create(&cola_caught,NULL,suscribirse_a_cola_caught, NULL);
+
+	pthread_detach(cola_appeared);
+	pthread_detach(cola_localized);
+	pthread_detach(cola_caught);
+
 }
 
 //FIN DE CONEXIONES
