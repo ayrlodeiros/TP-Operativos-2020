@@ -880,3 +880,10 @@
 [INFO] 16:18:05:955 team/(4885:4885): Necesito 0 pokemons Squirtle
 [INFO] 16:18:05:955 team/(4885:4885): Necesito 2 pokemons Pikachu
 [INFO] 16:18:05:955 team/(4885:4885): Necesito 1 pokemons Charmander
+[INFO] 17:41:24:703 team/(7876:7876): El algoritmo de planificacion es: 0
+[INFO] 17:41:24:706 team/(7876:7876): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:41:24:706 team/(7876:7876): Necesito 0 pokemons Pidgey
+[INFO] 17:41:24:709 team/(7876:7876): Necesito 0 pokemons Bulbasaur
+[INFO] 17:41:24:709 team/(7876:7876): Necesito 0 pokemons Squirtle
+[INFO] 17:41:24:710 team/(7876:7876): Necesito 2 pokemons Pikachu
+[INFO] 17:41:24:710 team/(7876:7876): Necesito 1 pokemons Charmander

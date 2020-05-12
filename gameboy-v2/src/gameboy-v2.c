@@ -3,8 +3,7 @@
 int main(void)
 {
 	iniciar_gameBoy();
-	printf("1");
-	int socket_broker = crear_conexion_del_cliente(leer_ip_broker(),4444,logger);
+	//int socket_broker = crear_conexion_del_cliente(leer_ip_broker(),4444,logger);
 
 	terminar_gameBoy();
 
@@ -13,16 +12,20 @@ int main(void)
 
 
 void iniciar_gameBoy(){
-	printf("-----------------Iniciando archivo config-----------------\n");
 	iniciar_config();
-	printf("2");
 	logger = log_create("src/resources/log_gameBoy.txt","gameBoy",false,LOG_LEVEL_INFO);
 	mi_log = log_create("src/resources/mi_log_gameBoy.txt","gameBoy",true,LOG_LEVEL_INFO);
-
+	log_info(mi_log, "-----------------Leyendo archivo config-----------------");
+	log_info(mi_log, leer_ip_broker());
+	log_info(mi_log, leer_ip_team());
+	log_info(mi_log, leer_ip_gamecard());
+	log_info(mi_log, leer_puerto_broker());
+	log_info(mi_log, leer_puerto_team());
+	log_info(mi_log, leer_puerto_gamecard());
 }
 
 void terminar_gameBoy(){
-	printf("-----------------Destruyendo archivo config-----------------\n");
+	log_info(mi_log, "-----------------Destruyendo archivo config-----------------");
 	destruir_config();
 	log_destroy(logger);
 	log_destroy(mi_log);

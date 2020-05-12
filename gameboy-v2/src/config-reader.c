@@ -52,6 +52,6 @@ char* leer_puerto_broker(void){
 char* leer_puerto_team(void){
 	return PUERTO_TEAM;
 }
-char*leer_puerto_gamecard(void){
+char* leer_puerto_gamecard(void){
 	return PUERTO_GAMECARD;
 }

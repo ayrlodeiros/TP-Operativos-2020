@@ -1,5 +1,6 @@
 #ifndef CONFIGREADER_H_
 #define CONFIGREADER_H_
+
 #include<stdio.h>
 #include<commons/config.h>
 #include<commons/collections/list.h>
