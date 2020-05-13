@@ -1,0 +1,51 @@
+[INFO] 18:00:23:683 gameBoy/(8501:8501): Hola
+[INFO] 18:05:05:412 gameBoy/(8721:8721): -----------------Iniciando archivo config-----------------
+[INFO] 18:05:05:421 gameBoy/(8721:8721): IP BROKER: (null)
+[INFO] 18:05:05:421 gameBoy/(8721:8721): IP TEAM: (null)
+[INFO] 18:05:05:421 gameBoy/(8721:8721): IP GAMECARD: (null)
+[INFO] 18:05:05:421 gameBoy/(8721:8721): PUERTO BROKER: (null)
+[INFO] 18:05:05:421 gameBoy/(8721:8721): PUERTO_TEAM: (null)
+[INFO] 18:05:05:421 gameBoy/(8721:8721): PUERTO_GAMECARD: (null)
+[INFO] 18:06:13:643 gameBoy/(8780:8780): -----------------Iniciando archivo config-----------------
+[INFO] 18:06:13:645 gameBoy/(8780:8780): IP BROKER: (null)
+[INFO] 18:06:13:646 gameBoy/(8780:8780): IP TEAM: (null)
+[INFO] 18:06:13:646 gameBoy/(8780:8780): IP GAMECARD: (null)
+[INFO] 18:06:13:646 gameBoy/(8780:8780): PUERTO BROKER: (null)
+[INFO] 18:06:13:646 gameBoy/(8780:8780): PUERTO_TEAM: (null)
+[INFO] 18:06:13:646 gameBoy/(8780:8780): PUERTO_GAMECARD: (null)
+[INFO] 18:07:32:988 gameBoy/(8853:8853): -----------------Iniciando archivo config-----------------
+[INFO] 18:07:32:993 gameBoy/(8853:8853): IP BROKER: (null)
+[INFO] 18:07:32:993 gameBoy/(8853:8853): IP TEAM: (null)
+[INFO] 18:07:32:998 gameBoy/(8853:8853): IP GAMECARD: (null)
+[INFO] 18:07:32:998 gameBoy/(8853:8853): PUERTO BROKER: (null)
+[INFO] 18:07:32:998 gameBoy/(8853:8853): PUERTO_TEAM: (null)
+[INFO] 18:07:32:998 gameBoy/(8853:8853): PUERTO_GAMECARD: (null)
+[INFO] 18:08:05:40 gameBoy/(8906:8906): -----------------Iniciando archivo config-----------------
+[INFO] 18:08:05:46 gameBoy/(8906:8906): IP BROKER: (null)
+[INFO] 18:08:05:46 gameBoy/(8906:8906): IP TEAM: (null)
+[INFO] 18:08:05:47 gameBoy/(8906:8906): IP GAMECARD: (null)
+[INFO] 18:08:05:47 gameBoy/(8906:8906): PUERTO BROKER: (null)
+[INFO] 18:08:05:47 gameBoy/(8906:8906): PUERTO_TEAM: (null)
+[INFO] 18:08:05:47 gameBoy/(8906:8906): PUERTO_GAMECARD: (null)
+[INFO] 18:13:03:34 gameBoy/(9033:9033): IP BROKER: (null)
+[INFO] 18:13:03:37 gameBoy/(9033:9033): IP TEAM: (null)
+[INFO] 18:13:03:37 gameBoy/(9033:9033): IP GAMECARD: (null)
+[INFO] 18:13:03:37 gameBoy/(9033:9033): PUERTO BROKER: (null)
+[INFO] 18:13:03:38 gameBoy/(9033:9033): PUERTO_TEAM: (null)
+[INFO] 18:13:03:38 gameBoy/(9033:9033): PUERTO_GAMECARD: (null)
+[INFO] 18:13:03:38 gameBoy/(9033:9033): -----------------Destruyendo archivo config-----------------
+[INFO] 18:15:54:687 gameBoy/(9131:9131): °'n·°'n·
+[INFO] 18:15:54:691 gameBoy/(9131:9131): È'n·È'n·
+[INFO] 18:15:54:691 gameBoy/(9131:9131): 
+[INFO] 18:15:54:691 gameBoy/(9131:9131): 
+[INFO] 18:15:54:693 gameBoy/(9131:9131): 
+[INFO] 18:15:54:693 gameBoy/(9131:9131): 
+[INFO] 18:15:54:693 gameBoy/(9131:9131): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:29:897 gameBoy/(9166:9166): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:29:901 gameBoy/(9166:9166): °go·°go·
+[INFO] 18:16:29:901 gameBoy/(9166:9166): 
+[INFO] 18:16:29:901 gameBoy/(9166:9166): 
+[INFO] 18:16:29:901 gameBoy/(9166:9166): 
+[INFO] 18:16:29:913 gameBoy/(9166:9166): 
+[INFO] 18:16:29:913 gameBoy/(9166:9166): 
+[INFO] 18:16:29:913 gameBoy/(9166:9166): -----------------Destruyendo archivo config-----------------
