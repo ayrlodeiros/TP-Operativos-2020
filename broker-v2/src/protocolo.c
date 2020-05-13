@@ -20,8 +20,8 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		log_info(mi_log, string_from_format("Se recibio el mensaje: %s\n", (char*) buffer));
 
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre);
-
 		agregar_msj_cola(queue,mensaje);
+		enviar_id_msj_cliente(socket_cliente,queue,mensaje->id);
 }
 
 /*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
@@ -124,7 +124,14 @@ int asignar_id_univoco(){
 	return valor;
 }
 
+void enviar_id_msj_cliente(int socket_cliente,t_mq* cola,int id_msj){
+	if(send(socket_cliente,id_msj, sizeof(int), 0) > 0){
+			log_info(mi_log,"Se envio el id del mensaje correctamente\n");
+		}
+}
+
 void mandar_mensajes_cache();
+
 
 void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor* suscriptor){
 
