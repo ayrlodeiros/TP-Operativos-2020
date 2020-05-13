@@ -1,11 +1,13 @@
 #include "protocolo.h"
 
+
 void agregar_suscriptor_cola(t_mq* cola,int suscriptor){
 	int tamanio_anterior = list_size(cola->suscriptores);
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
 			log_info(mi_log,"Se agrego el suscriptor a la cola correctamente");
 	}
+
 }
 
 void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
@@ -17,17 +19,18 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
 		log_info(mi_log, string_from_format("Se recibio el mensaje: %s\n", (char*) buffer));
 
-		t_mensaje* mensaje = crear_mensaje(buffer,tamanio);
+		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre);
 
 		agregar_msj_cola(queue,mensaje);
 }
 
 /*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
-t_mensaje* crear_mensaje(void* buffer,int tamanio){
+t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola){
 
 	t_mensaje* mensaje  = malloc(sizeof(t_mensaje));
 	mensaje->buffer = malloc(sizeof(t_buffer));
 	mensaje->id = asignar_id_univoco();
+	mensaje->cola = cola;
 	mensaje->buffer->size = tamanio;
 	mensaje->buffer->stream = malloc(mensaje->buffer->size);
 	memcpy(mensaje->buffer->stream,buffer,mensaje->buffer->size);
@@ -45,17 +48,24 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 
 void enviar_mensaje_suscriptores(t_mq* cola){
 	t_mensaje* mensaje = queue_pop(cola->cola);
+	suscriptor* suscriptor;
 	int i;
+
 	for(i=0;i<list_size(cola->suscriptores);i++){
-		enviar_mensaje(mensaje,list_get(cola->suscriptores,i));
+		suscriptor = list_get(cola->suscriptores,i);
+		enviar_mensaje(mensaje,suscriptor);
+		if(pthread_create(&ack,NULL,(void*)recibir_ACK,&suscriptor,&mensaje) != 0)
+		{
+			log_info(mi_log,"Hubo un error al intentar crear el thread");
+		}
+		pthread_detach(ack);
 	}
 	log_info(mi_log,"Se envio el mensaje a todos los suscriptores \n");
 
 }
 
-void enviar_mensaje(t_mensaje* mensaje, int cliente)
+void enviar_mensaje(t_mensaje* mensaje, suscriptor* cliente)
 {
-
 	t_paquete* paquete= malloc(sizeof(paquete));
 
 	paquete->id = mensaje->id;
@@ -68,13 +78,27 @@ void enviar_mensaje(t_mensaje* mensaje, int cliente)
 
 	void* a_enviar = serializar_paquete(paquete, bytes);
 
-	if(send(cliente, a_enviar, bytes, 0) > 0)
+	if(send(cliente->conexion, a_enviar, bytes, 0) > 0){
+		add_sub_lista_env_msj(mensaje,cliente);
 		log_info(mi_log,"Se envio correctamente el mensaje\n");
+	}
+	else
+		log_info(mi_log,"NO se envio correctamente el mensaje\n");
 
 	free(a_enviar);
 	free(paquete->buffer->stream);
 	free(paquete->buffer);
 	free(paquete);
+}
+
+void recibir_ACK(suscriptor* suscriptor,t_mensaje* mensaje){
+	int valor;
+	if (recv(suscriptor->conexion,valor, sizeof(int), MSG_WAITALL) < 0){
+		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
+		/* Deberia actualizar el mensaje e indicar que no se recibio la confirmacion de recepcion*/
+	}
+	else
+		add_sub_lista_conf_msj(mensaje,suscriptor);
 }
 
 void* serializar_paquete(t_paquete* paquete, int bytes)
@@ -95,5 +119,17 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 }
 
 int asignar_id_univoco(){
-	return 1;
+	int valor = contador_ids_mensaje;
+	contador_ids_mensaje++;
+	return valor;
+}
+
+void mandar_mensajes_cache();
+
+void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor* suscriptor){
+
+}
+
+void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor* suscriptor){
+
 }

@@ -17,7 +17,7 @@ typedef enum{
 typedef struct{
 	mq_nombre nombre;
 	t_queue* cola;
-	t_list* suscriptores; /** Por ahora los suscriptores se guardan como ints que serian las conexiones*/
+	t_list* suscriptores; /** Lo cambie a una estructura suscriptor definida en protocolo.h*/
 
 }t_mq;
 

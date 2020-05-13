@@ -9,6 +9,7 @@ C_SRCS += \
 ../src/config-reader.c \
 ../src/message-queue.c \
 ../src/protocolo.c \
+../src/suscriptores.c \
 ../src/utils.c 
 
 OBJS += \
@@ -17,6 +18,7 @@ OBJS += \
 ./src/config-reader.o \
 ./src/message-queue.o \
 ./src/protocolo.o \
+./src/suscriptores.o \
 ./src/utils.o 
 
 C_DEPS += \
@@ -25,6 +27,7 @@ C_DEPS += \
 ./src/config-reader.d \
 ./src/message-queue.d \
 ./src/protocolo.d \
+./src/suscriptores.d \
 ./src/utils.d 
 
 
