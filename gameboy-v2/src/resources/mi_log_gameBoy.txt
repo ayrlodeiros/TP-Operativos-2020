@@ -49,3 +49,172 @@
 [INFO] 18:16:29:913 gameBoy/(9166:9166): 
 [INFO] 18:16:29:913 gameBoy/(9166:9166): 
 [INFO] 18:16:29:913 gameBoy/(9166:9166): -----------------Destruyendo archivo config-----------------
+[INFO] 17:19:15:68 gameBoy/(5202:5202): -----------------Leyendo archivo config-----------------
+[INFO] 17:19:15:71 gameBoy/(5202:5202): °wu·°wu·
+[INFO] 17:19:15:71 gameBoy/(5202:5202): 
+[INFO] 17:19:15:71 gameBoy/(5202:5202): 
+[INFO] 17:19:15:72 gameBoy/(5202:5202): 
+[INFO] 17:19:15:72 gameBoy/(5202:5202): 
+[INFO] 17:19:15:72 gameBoy/(5202:5202): 
+[INFO] 17:19:15:72 gameBoy/(5202:5202): -----------------Destruyendo archivo config-----------------
+[INFO] 17:20:48:638 gameBoy/(5271:5271): -----------------Leyendo archivo config-----------------
+[INFO] 17:20:48:643 gameBoy/(5271:5271): °çx·°çx·
+[INFO] 17:20:48:643 gameBoy/(5271:5271): 
+[INFO] 17:20:48:643 gameBoy/(5271:5271): 
+[INFO] 17:20:48:644 gameBoy/(5271:5271): 
+[INFO] 17:20:48:644 gameBoy/(5271:5271): 
+[INFO] 17:20:48:644 gameBoy/(5271:5271): 
+[INFO] 17:20:48:644 gameBoy/(5271:5271): -----------------Destruyendo archivo config-----------------
+[INFO] 17:21:20:901 gameBoy/(5322:5322): -----------------Leyendo archivo config-----------------
+[INFO] 17:21:20:903 gameBoy/(5322:5322): °ww·°ww·
+[INFO] 17:21:20:903 gameBoy/(5322:5322): 
+[INFO] 17:21:20:903 gameBoy/(5322:5322): 
+[INFO] 17:21:20:903 gameBoy/(5322:5322): 
+[INFO] 17:21:20:903 gameBoy/(5322:5322): 
+[INFO] 17:21:20:903 gameBoy/(5322:5322): 
+[INFO] 17:21:20:904 gameBoy/(5322:5322): -----------------Destruyendo archivo config-----------------
+[INFO] 17:25:44:56 gameBoy/(5516:5516): -----------------Leyendo archivo config-----------------
+[INFO] 17:25:44:59 gameBoy/(5516:5516): °çs·°çs·
+[INFO] 17:25:44:59 gameBoy/(5516:5516): 
+[INFO] 17:25:44:59 gameBoy/(5516:5516): 
+[INFO] 17:25:44:59 gameBoy/(5516:5516): 
+[INFO] 17:25:44:59 gameBoy/(5516:5516): 
+[INFO] 17:25:44:59 gameBoy/(5516:5516): 
+[INFO] 17:25:44:59 gameBoy/(5516:5516): -----------------Destruyendo archivo config-----------------
+[INFO] 17:26:59:224 gameBoy/(5569:5569): -----------------Leyendo archivo config-----------------
+[INFO] 17:26:59:224 gameBoy/(5569:5569): °wq·°wq·
+[INFO] 17:26:59:224 gameBoy/(5569:5569): 
+[INFO] 17:26:59:224 gameBoy/(5569:5569): 
+[INFO] 17:26:59:227 gameBoy/(5569:5569): 
+[INFO] 17:26:59:227 gameBoy/(5569:5569): 
+[INFO] 17:26:59:227 gameBoy/(5569:5569): 
+[INFO] 17:26:59:227 gameBoy/(5569:5569): -----------------Destruyendo archivo config-----------------
+[INFO] 17:27:43:61 gameBoy/(5607:5607): -----------------Leyendo archivo config-----------------
+[INFO] 17:27:43:64 gameBoy/(5607:5607): °çx·°çx·
+[INFO] 17:27:43:64 gameBoy/(5607:5607): 
+[INFO] 17:27:43:69 gameBoy/(5607:5607): 
+[INFO] 17:27:43:69 gameBoy/(5607:5607): 
+[INFO] 17:27:43:69 gameBoy/(5607:5607): 
+[INFO] 17:27:43:70 gameBoy/(5607:5607): 
+[INFO] 17:27:43:70 gameBoy/(5607:5607): -----------------Destruyendo archivo config-----------------
+[INFO] 17:31:59:520 gameBoy/(5811:5811): -----------------Leyendo archivo config-----------------
+[INFO] 17:31:59:523 gameBoy/(5811:5811): La ip del broker es: (null)
+[INFO] 17:31:59:524 gameBoy/(5811:5811): 8u·8u·7:31Q
+[INFO] 17:31:59:524 gameBoy/(5811:5811): 
+[INFO] 17:31:59:524 gameBoy/(5811:5811): 
+[INFO] 17:31:59:524 gameBoy/(5811:5811): 
+[INFO] 17:31:59:524 gameBoy/(5811:5811): 
+[INFO] 17:31:59:524 gameBoy/(5811:5811): 
+[INFO] 17:31:59:525 gameBoy/(5811:5811): -----------------Destruyendo archivo config-----------------
+[INFO] 17:33:24:886 gameBoy/(5884:5884): -----------------Leyendo archivo config-----------------
+[INFO] 17:33:24:891 gameBoy/(5884:5884): °·l·°·l·
+[INFO] 17:33:24:891 gameBoy/(5884:5884): 
+[INFO] 17:33:24:891 gameBoy/(5884:5884): 
+[INFO] 17:33:24:891 gameBoy/(5884:5884): 
+[INFO] 17:33:24:892 gameBoy/(5884:5884): 
+[INFO] 17:33:24:892 gameBoy/(5884:5884): 
+[INFO] 17:33:24:892 gameBoy/(5884:5884): -----------------Destruyendo archivo config-----------------
+[INFO] 17:35:55:142 gameBoy/(6007:6007): -----------------Leyendo archivo config-----------------
+[INFO] 17:35:55:143 gameBoy/(6007:6007): Ø7l·Ø7l·
+[INFO] 17:35:55:143 gameBoy/(6007:6007): 
+[INFO] 17:35:55:143 gameBoy/(6007:6007): 
+[INFO] 17:35:55:143 gameBoy/(6007:6007): 
+[INFO] 17:35:55:143 gameBoy/(6007:6007): 
+[INFO] 17:35:55:143 gameBoy/(6007:6007): 
+[INFO] 17:35:55:143 gameBoy/(6007:6007): -----------------Destruyendo archivo config-----------------
+[INFO] 17:36:17:565 gameBoy/(6052:6052): -----------------Leyendo archivo config-----------------
+[INFO] 17:36:17:570 gameBoy/(6052:6052): Øgr·Øgr·
+[INFO] 17:36:17:570 gameBoy/(6052:6052): 
+[INFO] 17:36:17:575 gameBoy/(6052:6052): 
+[INFO] 17:36:17:575 gameBoy/(6052:6052): 
+[INFO] 17:36:17:575 gameBoy/(6052:6052): 
+[INFO] 17:36:17:575 gameBoy/(6052:6052): 
+[INFO] 17:36:17:576 gameBoy/(6052:6052): -----------------Destruyendo archivo config-----------------
+[INFO] 17:37:54:253 gameBoy/(6159:6159): hola
+[INFO] 17:37:54:255 gameBoy/(6159:6159): -----------------Leyendo archivo config-----------------
+[INFO] 17:37:54:255 gameBoy/(6159:6159): Ðwr·Ðwr·ˆ©
+[INFO] 17:37:54:256 gameBoy/(6159:6159): 
+[INFO] 17:37:54:256 gameBoy/(6159:6159): 
+[INFO] 17:37:54:257 gameBoy/(6159:6159): 
+[INFO] 17:37:54:257 gameBoy/(6159:6159): 
+[INFO] 17:37:54:257 gameBoy/(6159:6159): 
+[INFO] 17:37:54:257 gameBoy/(6159:6159): -----------------Destruyendo archivo config-----------------
+[INFO] 17:42:16:874 gameBoy/(6339:6339): hola
+[INFO] 17:42:16:885 gameBoy/(6339:6339): -----------------Leyendo archivo config-----------------
+[INFO] 17:42:16:885 gameBoy/(6339:6339): Ð'q·Ð'q·ˆó~
+[INFO] 17:42:16:885 gameBoy/(6339:6339): 
+[INFO] 17:42:16:886 gameBoy/(6339:6339): 
+[INFO] 17:42:16:886 gameBoy/(6339:6339): 
+[INFO] 17:42:16:886 gameBoy/(6339:6339): 
+[INFO] 17:42:16:886 gameBoy/(6339:6339): 
+[INFO] 17:42:16:886 gameBoy/(6339:6339): -----------------Destruyendo archivo config-----------------
+[INFO] 17:43:36:616 gameBoy/(6397:6397): hola
+[INFO] 17:43:36:619 gameBoy/(6397:6397): -----------------Leyendo archivo config-----------------
+[INFO] 17:43:36:619 gameBoy/(6397:6397): Ð§v·Ð§v·ˆ#Ú
+[INFO] 17:43:36:620 gameBoy/(6397:6397): 
+[INFO] 17:43:36:620 gameBoy/(6397:6397): 
+[INFO] 17:43:36:620 gameBoy/(6397:6397): 
+[INFO] 17:43:36:620 gameBoy/(6397:6397): 
+[INFO] 17:43:36:620 gameBoy/(6397:6397): 
+[INFO] 17:43:36:620 gameBoy/(6397:6397): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:48:529 gameBoy/(6458:6458): hola
+[INFO] 17:44:48:531 gameBoy/(6458:6458): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:48:531 gameBoy/(6458:6458): ÐÇp·ÐÇp·ˆ3”	
+[INFO] 17:44:48:531 gameBoy/(6458:6458): 
+[INFO] 17:44:48:531 gameBoy/(6458:6458): 
+[INFO] 17:44:48:531 gameBoy/(6458:6458): 
+[INFO] 17:44:48:531 gameBoy/(6458:6458): 
+[INFO] 17:44:48:531 gameBoy/(6458:6458): 
+[INFO] 17:44:48:531 gameBoy/(6458:6458): -----------------Destruyendo archivo config-----------------
+[INFO] 17:45:12:34 gameBoy/(6501:6501): hola
+[INFO] 17:45:12:47 gameBoy/(6501:6501): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:12:48 gameBoy/(6501:6501): Ð‡j·Ð‡j·ˆ
+[INFO] 17:45:12:48 gameBoy/(6501:6501): 
+[INFO] 17:45:12:50 gameBoy/(6501:6501): 
+[INFO] 17:45:12:50 gameBoy/(6501:6501): 
+[INFO] 17:45:12:51 gameBoy/(6501:6501): 
+[INFO] 17:45:12:55 gameBoy/(6501:6501): 
+[INFO] 17:45:12:56 gameBoy/(6501:6501): -----------------Destruyendo archivo config-----------------
+[INFO] 17:45:36:984 gameBoy/(6547:6547): hola
+[INFO] 17:45:36:991 gameBoy/(6547:6547): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:36:991 gameBoy/(6547:6547): Ðv·Ðv·ˆƒn
+[INFO] 17:45:36:991 gameBoy/(6547:6547): 
+[INFO] 17:45:36:991 gameBoy/(6547:6547): 
+[INFO] 17:45:36:991 gameBoy/(6547:6547): 
+[INFO] 17:45:36:991 gameBoy/(6547:6547): 
+[INFO] 17:45:36:991 gameBoy/(6547:6547): 
+[INFO] 17:45:36:991 gameBoy/(6547:6547): -----------------Destruyendo archivo config-----------------
+[INFO] 17:49:08:876 gameBoy/(6715:6715): hola
+[INFO] 17:49:08:877 gameBoy/(6715:6715): -----------------Leyendo archivo config-----------------
+[INFO] 17:49:08:879 gameBoy/(6715:6715): 
+[INFO] 17:49:08:879 gameBoy/(6715:6715): 
+[INFO] 17:49:08:879 gameBoy/(6715:6715): 
+[INFO] 17:49:08:879 gameBoy/(6715:6715): 
+[INFO] 17:49:08:879 gameBoy/(6715:6715): 
+[INFO] 17:49:08:879 gameBoy/(6715:6715): 
+[INFO] 17:49:08:880 gameBoy/(6715:6715): -----------------Destruyendo archivo config-----------------
+[INFO] 17:49:29:463 gameBoy/(6765:6765): hola
+[INFO] 17:49:29:464 gameBoy/(6765:6765): -----------------Leyendo archivo config-----------------
+[INFO] 17:49:29:464 gameBoy/(6765:6765): )s·)s·
+[INFO] 17:49:29:464 gameBoy/(6765:6765): 
+[INFO] 17:49:29:466 gameBoy/(6765:6765): 
+[INFO] 17:49:29:467 gameBoy/(6765:6765): 
+[INFO] 17:49:29:467 gameBoy/(6765:6765): 
+[INFO] 17:49:29:467 gameBoy/(6765:6765): 
+[INFO] 17:49:29:467 gameBoy/(6765:6765): -----------------Destruyendo archivo config-----------------
+[INFO] 17:51:00:350 gameBoy/(6826:6826): °x·°x·
+[INFO] 17:51:00:359 gameBoy/(6826:6826): Èx·Èx·
+[INFO] 17:51:00:359 gameBoy/(6826:6826): 
+[INFO] 17:51:00:359 gameBoy/(6826:6826): 
+[INFO] 17:51:00:359 gameBoy/(6826:6826): 
+[INFO] 17:51:00:359 gameBoy/(6826:6826): 
+[INFO] 17:51:00:360 gameBoy/(6826:6826): -----------------Destruyendo archivo config-----------------
+[INFO] 17:52:50:122 gameBoy/(6911:6911): -----------------Leyendo archivo config-----------------
+[INFO] 17:52:50:131 gameBoy/(6911:6911): °÷u·°÷u·
+[INFO] 17:52:50:131 gameBoy/(6911:6911): 
+[INFO] 17:52:50:131 gameBoy/(6911:6911): 
+[INFO] 17:52:50:131 gameBoy/(6911:6911): 
+[INFO] 17:52:50:131 gameBoy/(6911:6911): 
+[INFO] 17:52:50:131 gameBoy/(6911:6911): 
+[INFO] 17:52:50:132 gameBoy/(6911:6911): -----------------Destruyendo archivo config-----------------
+[INFO] 17:55:41:689 gameBoy/(6976:6976): -----------------Leyendo archivo config-----------------

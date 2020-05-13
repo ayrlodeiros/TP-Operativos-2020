@@ -12,11 +12,10 @@
 #include<netdb.h>
 #include<signal.h>
 #include<unistd.h>
-#include<commons/log.h>
-#include<commons/string.h>
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
+#include<commons/log.h>
 #include<commons/string.h>
 
 pthread_t* espera;

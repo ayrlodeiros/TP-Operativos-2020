@@ -11,47 +11,47 @@ void iniciar_config(void){
 	setear_puerto_gamecard();
 }
 
-void destruir_config(){
+void destruir_config(void){
 	config_destroy(config);
 }
 
 
 void setear_ip_broker(void){
-	IP_BROKER = config_get_string_value(config,"IP_BROKER");
+	ip_broker = config_get_string_value(config,"IP_BROKER");
 }
 void setear_ip_team(void){
-	IP_TEAM = config_get_string_value(config,"IP_TEAM");
+	ip_team = config_get_string_value(config,"IP_TEAM");
 }
 void setear_ip_gamecard(void){
-	IP_GAMECARD = config_get_string_value(config,"IP_GAMECARD");
+	ip_gamecard = config_get_string_value(config,"IP_GAMECARD");
 }
 void setear_puerto_broker(void){
-	PUERTO_BROKER = config_get_string_value(config,"PUERTO_BROKER");
+	puerto_broker = config_get_string_value(config,"PUERTO_BROKER");
 }
 void setear_puerto_team(void){
-	PUERTO_TEAM = config_get_string_value(config,"PUERTO_TEAM");
+	puerto_team = config_get_string_value(config,"PUERTO_TEAM");
 }
 void setear_puerto_gamecard(void){
-	PUERTO_GAMECARD = config_get_string_value(config,"PUERTO_GAMECARD");
+	puerto_gamecard = config_get_string_value(config,"PUERTO_GAMECARD");
 }
 
 
 
 char* leer_ip_broker(void){
-	return IP_BROKER;
+	return ip_broker;
 }
 char* leer_ip_team(void){
-	return IP_TEAM;
+	return ip_team;
 }
 char* leer_ip_gamecard(void){
-	return IP_GAMECARD;
+	return ip_gamecard;
 }
 char* leer_puerto_broker(void){
-	return PUERTO_BROKER;
+	return puerto_broker;
 }
 char* leer_puerto_team(void){
-	return PUERTO_TEAM;
+	return puerto_team;
 }
 char* leer_puerto_gamecard(void){
-	return PUERTO_GAMECARD;
+	return puerto_gamecard;
 }

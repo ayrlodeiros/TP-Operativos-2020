@@ -3,15 +3,14 @@
 
 #include<stdio.h>
 #include<commons/config.h>
-#include<commons/collections/list.h>
 
 t_config* config;
-char* IP_BROKER;
-char* PUERTO_BROKER;
-char* IP_TEAM;
-char* PUERTO_TEAM;
-char* IP_GAMECARD;
-char* PUERTO_GAMECARD;
+char* ip_broker;
+char* puerto_broker;
+char* ip_team;
+char* puerto_team;
+char* ip_gamecard;
+char* puerto_gamecard;
 
 void iniciar_config(void);
 void destruir_config(void);

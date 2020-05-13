@@ -887,3 +887,18 @@
 [INFO] 17:41:24:709 team/(7876:7876): Necesito 0 pokemons Squirtle
 [INFO] 17:41:24:710 team/(7876:7876): Necesito 2 pokemons Pikachu
 [INFO] 17:41:24:710 team/(7876:7876): Necesito 1 pokemons Charmander
+[INFO] 17:18:39:503 team/(5164:5164): El algoritmo de planificacion es: 0
+[INFO] 17:18:39:511 team/(5164:5164): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:18:39:515 team/(5164:5164): Necesito 0 pokemons Pidgey
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 0 pokemons Bulbasaur
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 0 pokemons Squirtle
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 2 pokemons Pikachu
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 1 pokemons Charmander
+[INFO] 17:31:14:773 team/(5742:5742): El algoritmo de planificacion es: 0
+[INFO] 17:31:14:775 team/(5742:5742): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:31:14:775 team/(5742:5742): La ip del broker es: 127.0.0.1
+[INFO] 17:31:14:775 team/(5742:5742): Necesito 0 pokemons Pidgey
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 0 pokemons Bulbasaur
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 0 pokemons Squirtle
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 2 pokemons Pikachu
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 1 pokemons Charmander
