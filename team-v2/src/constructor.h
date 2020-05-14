@@ -25,13 +25,16 @@
 #include<commons/collections/queue.h>
 #include<commons/collections/dictionary.h>
 
+static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
+
 t_log* logger;
 t_log* nuestro_log;
 int ejecutar_default;
 
 t_list* entrenadores;
 t_dictionary* objetivo_global;
-t_list* pokemons_sueltos;
+//TODO VER MAS ADELANTE EL CASO EN EL QUE LOS ENTRENADORES ESTEN OCUPADOS Y NINGUNO PUEDA IR A BUSCARLO
+t_queue* pokemons_sin_entrenador;
 t_list* entrenadores_ready;
 
 typedef struct
@@ -59,6 +62,12 @@ typedef struct{
 
 typedef struct
 {
+	char* nombre;
+	posicion* posicion;
+} pokemon;
+
+typedef struct
+{
 	pthread_t* hilo;
 	estado_entrenador estado;
 	int cpu_usado;
@@ -67,14 +76,9 @@ typedef struct
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;
 	t_list* pokemons_objetivo;
+	pokemon* pokemon_en_busqueda;
 	t_queue* acciones;
 } entrenador;
-
-typedef struct
-{
-	char* nombre;
-	posicion* posicion;
-} pokemon;
 
 
 

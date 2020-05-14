@@ -50,7 +50,7 @@ void planificar(){
 	    	//sjf_con_desalojo();
 	    	break;
 	    case ALGORITMO_DESCONOCIDO:
-	    	printf("El algoritmo ingresado no existe \n");
+	    	log_error(nuestro_log, "El algoritmo ingresado no existe");
 	    	break;
 	}
 
@@ -63,23 +63,15 @@ void planificar(){
 void fifo(){
 
 	while(1){
-		printf("\nEstoy en FIFO preparado para planificar");
-		pthread_mutex_lock(&lock_de_planificacion);
-		printf("\nComienzo a planificar entrenador");
+		log_info(nuestro_log, "Estoy en FIFO preparado para planificar");
+		if(list_size(entrenadores_ready) == 0) {
+			pthread_mutex_lock(&lock_de_planificacion);
+		}
 		entrenador* entrenador_a_ejecutar = list_remove(entrenadores_ready, 0);
 
-		printf("\nPOSICION ENTRENADOR: X->%d e Y->%d",entrenador_a_ejecutar->posicion->posicion_x, entrenador_a_ejecutar->posicion->posicion_y);
-
-		printf("\nREALICE LA EJECUCION");
-
-
-		/*printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
-		printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
-		while(cpu_restante_entrenador(entrenador_a_ejecutar)){
+		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
-			printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
-			printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
-		}*/
+		}
 	}
 }
 
@@ -103,7 +95,7 @@ void round_robin(){
 				printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
 			}
 
-			while(cpu_restante_entrenador(entrenador_a_ejecutar) && quantum_consumido <= quantum){
+			while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0 && quantum_consumido <= quantum){
 				ejecutar(entrenador_a_ejecutar);
 				tiempo ++;
 				quantum_consumido ++;
@@ -137,7 +129,7 @@ void sjf_sin_desalojo(){
 			printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
 		}
 
-		while(cpu_restante_entrenador(entrenador_a_ejecutar)){
+		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
 	}

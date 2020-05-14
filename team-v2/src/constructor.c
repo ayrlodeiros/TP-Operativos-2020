@@ -4,8 +4,9 @@
 void iniciar_variables_globales() {
 	armar_entrenadores();
 	armar_objetivo_global();
-	pokemons_sueltos = list_create();
+	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
+	pthread_mutex_lock(&lock_de_planificacion);
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales
@@ -34,6 +35,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
 	un_entrenador->cpu_usado = 0;
+	un_entrenador->cpu_disponible = 0;
 	un_entrenador->acciones = queue_create();
 
 	return un_entrenador;

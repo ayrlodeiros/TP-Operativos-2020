@@ -5,8 +5,6 @@
 
 int socket_broker;
 
-static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
-
 pokemon* pokemon_para_planificar;
 
 //CONEXIONES
@@ -20,13 +18,16 @@ void intentar_conectar_al_broker(int conexion);
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
 
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y);
-
-void buscar_entrenador_a_planificar();
-void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo);
+void buscar_entrenador_a_planificar_para_moverse();
+void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto);
+void agregar_movimientos_en_x(entrenador* entrenador_listo);
+void agregar_movimientos_en_y(entrenador* entrenador_listo);
+void agregar_accion(entrenador* entrenador_listo, void* movimiento, int cpu_requerido);
 int el_entrenador_se_puede_planificar(entrenador* un_entrenador);
 int el_entrenador1_esta_mas_cerca(entrenador* entrenador1, entrenador* entrenador2);
 int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon);
-void sumar_cpu_usado(entrenador* entrenador, int cantidad);
+int diferencia_en_x_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon);
+int diferencia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon);
 
 int el_pokemon_es_requerido(char* nombre_pokemon);
 int necesito_mas_de_ese_pokemon(char* nombre_pokemon);

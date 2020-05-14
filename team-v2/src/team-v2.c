@@ -10,12 +10,14 @@ int main(void){
 
 	//intentar_conectar_al_broker();
 
-
-	manejar_aparicion_de_pokemon("Pikachu", 0, 0);
+	//AGREGO MANUALMENTE A UN POKEMON PARA PROBAR
 
 	pthread_t* hilo_planificacion;
-	pthread_create(&hilo_planificacion,NULL, planificar, NULL);
-	pthread_join(hilo_planificacion, NULL);
+	pthread_create(&hilo_planificacion,NULL,(void*) planificar, NULL);
+	pthread_detach(hilo_planificacion);
+
+	manejar_aparicion_de_pokemon("Pikachu", 500, 7);
+	manejar_aparicion_de_pokemon("Pikachu", 0, 10);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);
@@ -24,10 +26,19 @@ int main(void){
 		for(int j = 0; j<list_size(entrenador->pokemons_adquiridos); j++){
 			printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
 		}
-	}
-*/
+	}*/
+
+	pthread_t* hilo_de_espera;
+	pthread_create(&hilo_de_espera,NULL, while_uno, NULL);
+	pthread_join(hilo_de_espera, NULL);
 
 	return 0;
+}
+
+void while_uno() {
+	while(1){
+
+	}
 }
 
 void mostrar_objetivo_global(char* key, void* value) {

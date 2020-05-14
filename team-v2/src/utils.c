@@ -140,30 +140,72 @@ void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estad
 
 //Manejo la llegada de un nuevo pokemon (LOCALIZED O APPEARED)
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) {
-	pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));;
-	nuevo_pokemon->nombre = nombre;
-	nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+	if(el_pokemon_es_requerido(nombre)) {
+		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
+		nuevo_pokemon->nombre = nombre;
+		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
 
-	list_add(pokemons_sueltos, nuevo_pokemon);
-	buscar_entrenador_a_planificar(nuevo_pokemon);
+		buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
+	}
 }
 
 
-void buscar_entrenador_a_planificar(pokemon* pokemon_objetivo){
-	//Seteo la variable global del utils para poder manejarla en los distintos metodos
+void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
+	//Seteo la variable global del utils para poder manejarla en los distintos metodos que me filtran al entrenador mas cerca
 	pokemon_para_planificar = pokemon_objetivo;
-
 	//Filtro entrenadores en estado NEW o BLOCK_READY, luego ordeno la lista para obtener al primero mas cercano y despues lo agrego a la lista de entredores ready
-	agregar_entrenador_a_entrenadores_ready(list_get(list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca), 0));
+	t_list* entrenadores_mas_cercanos = list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca);
+	if(list_size(entrenadores_mas_cercanos) == 0) {
+		queue_push(pokemons_sin_entrenador, pokemon_objetivo);
+		//VER DESPUES ESTE CASO
+	} else {
+		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);
+	}
 }
 
-void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo) {
+void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto) {
+
+	entrenador_listo->pokemon_en_busqueda = pokemon_suelto;
+	agregar_movimientos_en_x(entrenador_listo);
+	agregar_movimientos_en_y(entrenador_listo);
+
 	cambiar_estado_entrenador(entrenador_listo, READY);
 	list_add(entrenadores_ready, entrenador_listo);
-	//AGREGAR ACCIONES AL ENTRENADOR PARA QUE SE MUEVA A LA POSICION
-	printf("AGREGAR ACCIONES AL ENTRENADOR PARA QUE SE MUEVA A LA POSICION");
 	pthread_mutex_unlock(&lock_de_planificacion);
 }
+
+void agregar_movimientos_en_x(entrenador* entrenador_listo) {
+	int diferencia_en_x = diferencia_en_x_del_entrenador_al_pokemon(entrenador_listo, entrenador_listo->pokemon_en_busqueda);
+	if(diferencia_en_x > 0) {
+		for(int i = 0; i < diferencia_en_x; i++) {
+			agregar_accion(entrenador_listo, moverse_derecha, 1);
+		}
+	} else if(diferencia_en_x < 0) {
+		for(int i = 0; i > diferencia_en_x; i--) {
+			agregar_accion(entrenador_listo, moverse_izquierda, 1);
+		}
+	}
+}
+
+void agregar_movimientos_en_y(entrenador* entrenador_listo) {
+	int diferencia_en_y = diferencia_en_y_del_entrenador_al_pokemon(entrenador_listo, entrenador_listo->pokemon_en_busqueda);
+	if(diferencia_en_y > 0) {
+		for(int i = 0; i < diferencia_en_y; i++) {
+			agregar_accion(entrenador_listo, moverse_arriba, 1);
+		}
+	} else if(diferencia_en_y < 0) {
+		for(int i = 0; i > diferencia_en_y; i--) {
+			agregar_accion(entrenador_listo, moverse_abajo, 1);
+		}
+	}
+}
+
+void agregar_accion(entrenador* entrenador_listo, void* movimiento, int cpu_requerido) {
+	accion* accion_entrenador = armar_accion(movimiento, cpu_requerido);
+	entrenador_listo->cpu_disponible += cpu_requerido;
+	queue_push(entrenador_listo->acciones, accion_entrenador);
+}
+
 
 int el_entrenador_se_puede_planificar(entrenador* un_entrenador){
 	return un_entrenador->estado == NEW || un_entrenador->estado == BLOCK_READY;
@@ -177,8 +219,13 @@ int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon
 	return (int) (fabs(entrenador->posicion->posicion_x - pokemon->posicion->posicion_x)) + (int) (fabs(entrenador->posicion->posicion_y - pokemon->posicion->posicion_y));
 }
 
+int diferencia_en_x_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
+	return (pokemon->posicion->posicion_x - entrenador->posicion->posicion_x);
+}
 
-
+int diferencia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
+	return (pokemon->posicion->posicion_y - entrenador->posicion->posicion_y);
+}
 
 
 int el_pokemon_es_requerido(char* nombre_pokemon){
