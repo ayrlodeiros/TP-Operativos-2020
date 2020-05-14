@@ -1,7 +1,7 @@
 #include "protocolo.h"
 
 
-void agregar_suscriptor_cola(t_mq* cola,int suscriptor){
+void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 	int tamanio_anterior = list_size(cola->suscriptores);
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
@@ -48,7 +48,7 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 
 void enviar_mensaje_suscriptores(t_mq* cola){
 	t_mensaje* mensaje = queue_pop(cola->cola);
-	suscriptor* suscriptor;
+	suscriptor_t* suscriptor;
 	int i;
 
 	for(i=0;i<list_size(cola->suscriptores);i++){
@@ -64,7 +64,7 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 
 }
 
-void enviar_mensaje(t_mensaje* mensaje, suscriptor* cliente)
+void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* cliente)
 {
 	t_paquete* paquete= malloc(sizeof(paquete));
 
@@ -91,7 +91,7 @@ void enviar_mensaje(t_mensaje* mensaje, suscriptor* cliente)
 	free(paquete);
 }
 
-void recibir_ACK(suscriptor* suscriptor,t_mensaje* mensaje){
+void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
 	int valor;
 	if (recv(suscriptor->conexion,valor, sizeof(int), MSG_WAITALL) < 0){
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
@@ -133,10 +133,10 @@ void enviar_id_msj_cliente(int socket_cliente,t_mq* cola,int id_msj){
 void mandar_mensajes_cache();
 
 
-void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor* suscriptor){
-
+void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor_t* suscriptor){
+	list_add(mensaje->suscriptores_conf,suscriptor);
 }
 
-void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor* suscriptor){
-
+void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
+	list_add(mensaje->suscriptores_env,suscriptor);
 }

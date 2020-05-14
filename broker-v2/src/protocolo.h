@@ -1,19 +1,11 @@
 #ifndef PROTOCOLO_H_
 #define PROTOCOLO_H_
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "message-queue.h"
-#include "utils.h"
 #include "suscriptores.h"
 
 pthread_t* ack;
 
 /*Uno para verificar que tipo de modulo se conecto y el otro para verificar la conexion */
-typedef struct{
-	int conexion;
-	modulo_code modulo;
-}suscriptor;
 
 typedef enum
 {
@@ -45,7 +37,7 @@ typedef struct{
 	t_buffer* buffer;
 }t_paquete; /**  Es la estructura con la que se va a enviar los mensajes a los modulos */
 
-void agregar_suscriptor_cola(t_mq* cola,int suscriptor);
+void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor);
 
 /**Tambien se podria separar en dos funciones */
 void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue);
@@ -57,7 +49,7 @@ void agregar_msj_cola(t_mq* cola,t_mensaje* mensaje);
 void enviar_mensaje_suscriptores(t_mq* cola);
 
 /** Crea el paquete para manda en funcion del mensaje */
-void enviar_mensaje(t_mensaje* mensaje,suscriptor* suscriptor);
+void enviar_mensaje(t_mensaje* mensaje,suscriptor_t* suscriptor);
 
 void* serializar_paquete(t_paquete* paquete, int bytes);
 
@@ -65,12 +57,12 @@ void enviar_id_msj_cliente(int socket_cliente,t_mq* mq,int id_msj);
 
 /* Falta definir los siguientes metodos */
 
-void recibir_ACK(suscriptor* socket_cliente,t_mensaje* mensaje);
+void recibir_ACK(suscriptor_t* socket_cliente,t_mensaje* mensaje);
 int asignar_id_univoco();
 /*Al suscribirse un modulo, se le tienen que mandar todos los mensajes correspondientes */
 void mandar_mensajes_cache();
-void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor* suscriptor);
-void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor* suscriptor);
+void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
+void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 
 
 #endif PROTOCOLO_H_

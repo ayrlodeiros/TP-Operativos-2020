@@ -95,13 +95,18 @@ void servir_cliente(int* socket)
 }
 
 void process_request(int cod_op, int socket_cliente) {
-		switch (cod_op) {
+	int cola_code;
+	recv(socket_cliente,&cola_code,sizeof(int),MSG_WAITALL);
+	int modulo;
+	switch (cod_op) {
 		case MENSAJE:
 			/** Por ahora para probar uso solo una cola*/
-			recibir_y_guardar_mensaje(socket_cliente,get_mq);
+			switch_mensaje(cola_code,socket_cliente);
 			break;
 		case SUSCRIPCION:
-			agregar_suscriptor_cola(get_mq,socket_cliente);
+			/**Faltaria definir bien cuando se recibe cada cosa, por ahora lo pongo asi */
+			recv(socket_cliente,&modulo,sizeof(int),MSG_WAITALL);
+			switch_suscripcion(cola_code,socket_cliente,modulo);
 			break;
 		case -1:
 			log_info(mi_log,"HUbo un error al tratar de recibir el mensaje\n");
