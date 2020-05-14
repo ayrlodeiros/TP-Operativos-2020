@@ -27,4 +27,38 @@ void liberar_conexion(int socket) {
 	close(socket);
 }
 
+void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_team){
+	t_paquete *paquete = malloc(sizeof(t_paquete));
+	paquete->codigo_operacion = APPEARED_POKEMON;
 
+	paquete->buffer = malloc(sizeof(t_buffer));
+	paquete->buffer->size = strlen(appeared_pokemon->nombre_pokemon) + 1 + sizeof(uint32_t) * 3;
+
+	void* stream = malloc(paquete->buffer->size);
+	int bytes_escritos = 0;
+
+	memcpy(stream + bytes_escritos, &appeared_pokemon.largo_nombre_pokemon, sizeof(uint32_t));
+	bytes_escritos += sizeof(uint32_t);
+
+	memcpy(stream + bytes_escritos, &appeared_pokemon.nombre_pokemon, strlen(appeared_pokemon.nombre_pokemon)+1);
+	bytes_escritos += strlen(appeared_pokemon.nombre_pokemon)+1;
+
+	memcpy(stream + bytes_escritos, &appeared_pokemon.posicionX, sizeof(uint32_t));
+	bytes_escritos += sizeof(uint32_t);
+
+	memcpy(stream + bytes_escritos, &appeared_pokemon.posicionY, sizeof(uint32_t));
+
+	paquete->buffer->stream = stream;
+
+	int size_serializados;
+	void* mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
+
+	send(socket_team,mensaje_a_enviar,size_serializados,0);
+
+
+	free(mensaje_a_enviar);
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
+
+}

@@ -18,35 +18,38 @@
 #include<commons/log.h>
 #include<commons/string.h>
 
-pthread_t* espera;
+typedef enum
+{
+	NEW_POKEMON=1,
+	LOCALIZED_POKEMON=2,
+	GET_POKEMON=3,
+	APPEARED_POKEMON=4,
+	CATCH_POKEMON=5,
+	GET_POKEMON=6
+}tipo_mensaje;
 
-/* crear_conexion_del_cliente:
- * Recibe como parametros la ip y el puerto del servidor a conectarse
- * y el logger en donde registrar los sucesos
- *
- * Devuelve como entero la conexion al cliente (socket_cliente)
- * si devuelve -1 la conexion fallo.
- * */
-//int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
+typedef struct
+{
+	int size;
+	void* stream;
+} t_buffer;
 
-/* liberar_conexion:
- * Recibe un socket al que finalizaremos
- * */
+typedef struct
+{
+	tipo_mensaje codigo_operacion;
+	t_buffer* buffer;
+} t_paquete;
+
+typedef struct{
+	uint32_t largo_nombre_pokemon;
+	char* nombre_pokemon;
+	uint32_t posicionX;
+	uint32_t posicionY;
+}t_appeared_pokemon;
+
+int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
 void liberar_conexion(int socket);
-
-/* levantar_servidor:
- * Recibe como parametros la ip y el puerto en donde se levantar el servidor
- * y el logger en donde registrar los sucesos
- *
- * Devuelve como entero el servidor levantado.
- * */
-
-void levantar_servidor(char* ip, int puerto, t_log* logger);
-
-
-void esperar_cliente(int socket_servidor, t_log* logger);
-
-void servir_cliente(int* socket);
-
+void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_team);
+void* serializar_paquete(t_paquete paquete, int &size_serializado);
 
 #endif /* CONEXION_H_ */
