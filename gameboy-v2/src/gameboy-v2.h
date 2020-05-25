@@ -8,7 +8,7 @@
 
 #include "config-reader.h"
 #include "conexion.h"
-#include "protocolo.h"
+//#include "protocolo.h"
 
 t_log* logger;
 t_log* mi_log;

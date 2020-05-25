@@ -25,7 +25,7 @@ typedef enum
 	GET_POKEMON=3,
 	APPEARED_POKEMON=4,
 	CATCH_POKEMON=5,
-	GET_POKEMON=6
+	GET_CAUGHT=6
 }tipo_mensaje;
 
 typedef struct
@@ -50,6 +50,6 @@ typedef struct{
 int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
 void liberar_conexion(int socket);
 void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_team);
-void* serializar_paquete(t_paquete paquete, int &size_serializado);
+void* serializar_paquete(t_paquete* paquete, int *size_serializado);
 
 #endif /* CONEXION_H_ */

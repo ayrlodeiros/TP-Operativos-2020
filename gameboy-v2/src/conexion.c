@@ -32,7 +32,7 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_tea
 	paquete->codigo_operacion = APPEARED_POKEMON;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
-	paquete->buffer->size = strlen(appeared_pokemon->nombre_pokemon) + 1 + sizeof(uint32_t) * 3;
+	paquete->buffer->size = strlen(&appeared_pokemon.nombre_pokemon) + 1 + sizeof(uint32_t) * 3;
 
 	void* stream = malloc(paquete->buffer->size);
 	int bytes_escritos = 0;
@@ -51,7 +51,7 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_tea
 	paquete->buffer->stream = stream;
 
 	int size_serializados;
-	void* mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
+	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
 
 	send(socket_team,mensaje_a_enviar,size_serializados,0);
 
@@ -61,4 +61,25 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_tea
 	free(paquete->buffer);
 	free(paquete);
 
+}
+
+
+
+void* serializar_paquete(t_paquete* paquete, int *bytes){
+	int size_serializado = sizeof(paquete->codigo_operacion) + sizeof(paquete->buffer->size) + (*bytes);
+	void* buffer = malloc(size_serializado);
+
+	int bytes_escritos = 0;
+
+	memcpy(buffer + bytes_escritos, &paquete->codigo_operacion, sizeof(paquete->codigo_operacion));
+	bytes_escritos += sizeof(paquete->codigo_operacion);
+
+	memcpy(buffer + bytes_escritos, &paquete->buffer->size, sizeof(int));
+	bytes_escritos += sizeof(int);
+
+	memcpy(buffer + bytes_escritos, &paquete->buffer->stream, paquete->buffer->size);
+	bytes_escritos += paquete->buffer->size;
+
+	(*bytes) = size_serializado;
+	return buffer;
 }

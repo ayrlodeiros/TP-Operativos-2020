@@ -218,3 +218,11 @@
 [INFO] 17:52:50:131 gameBoy/(6911:6911): 
 [INFO] 17:52:50:132 gameBoy/(6911:6911): -----------------Destruyendo archivo config-----------------
 [INFO] 17:55:41:689 gameBoy/(6976:6976): -----------------Leyendo archivo config-----------------
+[INFO] 18:43:20:293 gameBoy/(6828:6828): -----------------Leyendo archivo config-----------------
+[INFO] 18:43:20:295 gameBoy/(6828:6828): °y·°y·
+[INFO] 18:43:20:295 gameBoy/(6828:6828): 
+[INFO] 18:43:20:295 gameBoy/(6828:6828): 
+[INFO] 18:43:20:295 gameBoy/(6828:6828): 
+[INFO] 18:43:20:295 gameBoy/(6828:6828): 
+[INFO] 18:43:20:295 gameBoy/(6828:6828): 
+[INFO] 18:43:20:296 gameBoy/(6828:6828): -----------------Destruyendo archivo config-----------------
