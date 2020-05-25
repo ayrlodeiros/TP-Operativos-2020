@@ -9,9 +9,9 @@ int main(void)
 	log_info(mi_log, leer_ip_broker());
 	log_info(mi_log, leer_ip_team());
 	log_info(mi_log, leer_ip_gamecard());
-	log_info(mi_log, leer_puerto_broker());
-	log_info(mi_log, leer_puerto_team());
-	log_info(mi_log, leer_puerto_gamecard());
+	//log_info(mi_log, leer_puerto_broker());
+	//log_info(mi_log, leer_puerto_team());
+	//log_info(mi_log, leer_puerto_gamecard());
 
 	terminar_gameBoy();
 

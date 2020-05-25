@@ -26,13 +26,13 @@ void setear_ip_gamecard(void){
 	ip_gamecard = config_get_string_value(config,"IP_GAMECARD");
 }
 void setear_puerto_broker(void){
-	puerto_broker = config_get_string_value(config,"PUERTO_BROKER");
+	puerto_broker = config_get_int_value(config,"PUERTO_BROKER");
 }
 void setear_puerto_team(void){
-	puerto_team = config_get_string_value(config,"PUERTO_TEAM");
+	puerto_team = config_get_int_value(config,"PUERTO_TEAM");
 }
 void setear_puerto_gamecard(void){
-	puerto_gamecard = config_get_string_value(config,"PUERTO_GAMECARD");
+	puerto_gamecard = config_get_int_value(config,"PUERTO_GAMECARD");
 }
 
 
@@ -46,12 +46,12 @@ char* leer_ip_team(void){
 char* leer_ip_gamecard(void){
 	return ip_gamecard;
 }
-char* leer_puerto_broker(void){
+int leer_puerto_broker(void){
 	return puerto_broker;
 }
-char* leer_puerto_team(void){
+int leer_puerto_team(void){
 	return puerto_team;
 }
-char* leer_puerto_gamecard(void){
+int leer_puerto_gamecard(void){
 	return puerto_gamecard;
 }

@@ -25,7 +25,7 @@ typedef enum
 	GET_POKEMON=3,
 	APPEARED_POKEMON=4,
 	CATCH_POKEMON=5,
-	GET_CAUGHT=6
+	CAUGHT_POKEMON=6
 }tipo_mensaje;
 
 typedef struct
@@ -46,6 +46,30 @@ typedef struct{
 	uint32_t posicionX;
 	uint32_t posicionY;
 }t_appeared_pokemon;
+
+typedef struct{
+	uint32_t largo_nombre_pokemon;
+	char* nombre_pokemon;
+}t_get_pokemon;
+
+typedef struct{
+	uint32_t largo_nombre_pokemon;
+	char* nombre_pokemon;
+	uint32_t posicionX;
+	uint32_t posicionY;
+	uint32_t cantidad_pokemon;
+}t_new_pokemon;
+
+typedef struct{
+	uint32_t atrapado;
+}t_caught_pokemon;
+
+typedef struct{
+	uint32_t largo_nombre_pokemon;
+	char* nombre_pokemon;
+	uint32_t posicionX;
+	uint32_t posicionY;
+}t_catch_pokemon;
 
 int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
 void liberar_conexion(int socket);

@@ -6,11 +6,11 @@
 
 t_config* config;
 char* ip_broker;
-char* puerto_broker;
+int puerto_broker;
 char* ip_team;
-char* puerto_team;
+int puerto_team;
 char* ip_gamecard;
-char* puerto_gamecard;
+int puerto_gamecard;
 
 void iniciar_config(void);
 void destruir_config(void);
@@ -26,11 +26,11 @@ void setear_puerto_gamecard(void);
 void setear_log_file(void);
 
 char* leer_ip_broker(void);
-char* leer_puerto_broker(void);
+int leer_puerto_broker(void);
 char* leer_ip_team(void);
-char* leer_puerto_team(void);
+int leer_puerto_team(void);
 char* leer_ip_gamecard(void);
-char* leer_puerto_gamecard(void);
+int leer_puerto_gamecard(void);
 
 char* leer_log_file(void);
 

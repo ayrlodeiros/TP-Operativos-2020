@@ -226,3 +226,23 @@
 [INFO] 18:43:20:295 gameBoy/(6828:6828): 
 [INFO] 18:43:20:295 gameBoy/(6828:6828): 
 [INFO] 18:43:20:296 gameBoy/(6828:6828): -----------------Destruyendo archivo config-----------------
+[INFO] 19:35:50:103 gameBoy/(8347:8347): -----------------Leyendo archivo config-----------------
+[INFO] 19:35:50:113 gameBoy/(8347:8347): °çp·°çp·
+[INFO] 19:35:50:114 gameBoy/(8347:8347): 
+[INFO] 19:35:50:114 gameBoy/(8347:8347): 
+[INFO] 19:35:50:114 gameBoy/(8347:8347): 
+[INFO] 19:35:50:117 gameBoy/(8347:8347): 
+[INFO] 19:35:50:117 gameBoy/(8347:8347): 
+[INFO] 19:35:50:117 gameBoy/(8347:8347): -----------------Destruyendo archivo config-----------------
+[INFO] 19:53:46:672 gameBoy/(8935:8935): -----------------Leyendo archivo config-----------------
+[INFO] 19:53:46:675 gameBoy/(8935:8935): -----------------Destruyendo archivo config-----------------
+[INFO] 20:08:42:396 gameBoy/(9202:9202): -----------------Leyendo archivo config-----------------
+[INFO] 20:08:42:400 gameBoy/(9202:9202): 127.0.0.1
+[INFO] 20:08:42:400 gameBoy/(9202:9202): -----------------Destruyendo archivo config-----------------
+[INFO] 20:09:34:637 gameBoy/(9251:9251): -----------------Leyendo archivo config-----------------
+[INFO] 20:09:34:643 gameBoy/(9251:9251): 127.0.0.1
+[INFO] 20:11:17:268 gameBoy/(9315:9315): -----------------Leyendo archivo config-----------------
+[INFO] 20:11:17:268 gameBoy/(9315:9315): 127.0.0.1
+[INFO] 20:11:17:269 gameBoy/(9315:9315): 127.0.0.2
+[INFO] 20:11:17:269 gameBoy/(9315:9315): 127.0.0.3
+[INFO] 20:11:17:269 gameBoy/(9315:9315): -----------------Destruyendo archivo config-----------------
