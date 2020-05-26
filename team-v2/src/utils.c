@@ -149,6 +149,16 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 	}
 }
 
+void entrenador_disponible(entrenador* entrenador){
+
+	cambiar_estado_entrenador(entrenador, READY);
+
+	if(queue_size(pokemons_sin_entrenador) > 0){
+		log_info(nuestro_log,"Un entrenador que se libero esta atendiendo a un nuevo pokemon");
+		pokemon* pokemon = queue_pop(pokemons_sin_entrenador);
+		agregar_entrenador_a_entrenadores_ready(entrenador, pokemon);
+	}
+}
 
 void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 	//Seteo la variable global del utils para poder manejarla en los distintos metodos que me filtran al entrenador mas cerca
@@ -157,6 +167,7 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 	t_list* entrenadores_mas_cercanos = list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca);
 	if(list_size(entrenadores_mas_cercanos) == 0) {
 		queue_push(pokemons_sin_entrenador, pokemon_objetivo);
+		log_info(nuestro_log,"NO HAY ENTRENADORES DISPONIBLES EN ESTE MOMENTO");
 		//VER DESPUES ESTE CASO
 	} else {
 		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);

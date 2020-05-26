@@ -16,8 +16,10 @@ int main(void){
 	pthread_create(&hilo_planificacion,NULL,(void*) planificar, NULL);
 	pthread_detach(hilo_planificacion);
 
-	manejar_aparicion_de_pokemon("Pikachu", 500, 7);
-	manejar_aparicion_de_pokemon("Pikachu", 0, 10);
+	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
+	manejar_aparicion_de_pokemon("Pikachu", 105, 0);
+	manejar_aparicion_de_pokemon("Charmander", 210, 0);
+	//manejar_aparicion_de_pokemon("Pikachu", 510, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);

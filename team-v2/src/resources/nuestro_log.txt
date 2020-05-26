@@ -1284,3 +1284,370 @@
 [INFO] 18:19:23:147 team/(8407:8412): Cpu usado del entrenador: 13
 [INFO] 18:19:23:155 team/(8407:8430): Entrenador moviendose a la posicion: 0|10.
 [INFO] 18:19:25:155 team/(8407:8412): Estoy en FIFO preparado para planificar
+[INFO] 19:23:27:542 team/(5608:5608): El algoritmo de planificacion es: 0
+[INFO] 19:23:27:546 team/(5608:5608): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 0 pokemons Pidgey
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 0 pokemons Bulbasaur
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 0 pokemons Squirtle
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 2 pokemons Pikachu
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 1 pokemons Charmander
+[INFO] 19:23:27:549 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:23:27:549 team/(5608:5613): Cpu disponible del entrenador: 2
+[INFO] 19:23:27:553 team/(5608:5613): Cpu usado del entrenador: 1
+[INFO] 19:23:27:565 team/(5608:5615): Entrenador moviendose a la posicion: 500|6.
+[INFO] 19:23:29:565 team/(5608:5613): Cpu disponible del entrenador: 2
+[INFO] 19:23:29:565 team/(5608:5613): Cpu usado del entrenador: 2
+[INFO] 19:23:29:572 team/(5608:5616): Entrenador moviendose a la posicion: 500|7.
+[INFO] 19:23:31:573 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:23:31:573 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:31:573 team/(5608:5613): Cpu usado del entrenador: 1
+[INFO] 19:23:31:588 team/(5608:5617): Entrenador moviendose a la posicion: 9|7.
+[INFO] 19:23:33:588 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:33:589 team/(5608:5613): Cpu usado del entrenador: 2
+[INFO] 19:23:33:589 team/(5608:5618): Entrenador moviendose a la posicion: 8|7.
+[INFO] 19:23:35:590 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:35:590 team/(5608:5613): Cpu usado del entrenador: 3
+[INFO] 19:23:35:593 team/(5608:5619): Entrenador moviendose a la posicion: 7|7.
+[INFO] 19:23:37:594 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:37:594 team/(5608:5613): Cpu usado del entrenador: 4
+[INFO] 19:23:37:605 team/(5608:5620): Entrenador moviendose a la posicion: 6|7.
+[INFO] 19:23:39:606 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:39:606 team/(5608:5613): Cpu usado del entrenador: 5
+[INFO] 19:23:39:609 team/(5608:5621): Entrenador moviendose a la posicion: 5|7.
+[INFO] 19:23:41:610 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:41:613 team/(5608:5613): Cpu usado del entrenador: 6
+[INFO] 19:23:41:615 team/(5608:5622): Entrenador moviendose a la posicion: 4|7.
+[INFO] 19:23:43:615 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:43:615 team/(5608:5613): Cpu usado del entrenador: 7
+[INFO] 19:23:43:621 team/(5608:5623): Entrenador moviendose a la posicion: 3|7.
+[INFO] 19:23:45:621 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:45:622 team/(5608:5613): Cpu usado del entrenador: 8
+[INFO] 19:23:45:625 team/(5608:5624): Entrenador moviendose a la posicion: 2|7.
+[INFO] 19:23:47:630 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:47:630 team/(5608:5613): Cpu usado del entrenador: 9
+[INFO] 19:23:47:632 team/(5608:5625): Entrenador moviendose a la posicion: 1|7.
+[INFO] 19:23:49:633 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:49:633 team/(5608:5613): Cpu usado del entrenador: 10
+[INFO] 19:23:49:649 team/(5608:5626): Entrenador moviendose a la posicion: 0|7.
+[INFO] 19:23:51:650 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:51:650 team/(5608:5613): Cpu usado del entrenador: 11
+[INFO] 19:23:51:653 team/(5608:5627): Entrenador moviendose a la posicion: 0|8.
+[INFO] 19:23:53:653 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:53:654 team/(5608:5613): Cpu usado del entrenador: 12
+[INFO] 19:23:53:657 team/(5608:5630): Entrenador moviendose a la posicion: 0|9.
+[INFO] 19:23:55:666 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:55:666 team/(5608:5613): Cpu usado del entrenador: 13
+[INFO] 19:23:55:669 team/(5608:5631): Entrenador moviendose a la posicion: 0|10.
+[INFO] 19:23:57:670 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:23:57:670 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:23:57:670 team/(5608:5613): Cpu usado del entrenador: 1
+[INFO] 19:23:57:673 team/(5608:5633): Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:23:59:673 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:23:59:674 team/(5608:5613): Cpu usado del entrenador: 2
+[INFO] 19:23:59:677 team/(5608:5634): Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:24:01:682 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:01:682 team/(5608:5613): Cpu usado del entrenador: 3
+[INFO] 19:24:01:685 team/(5608:5635): Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:24:03:685 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:03:685 team/(5608:5613): Cpu usado del entrenador: 4
+[INFO] 19:24:03:689 team/(5608:5636): Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:24:05:689 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:05:690 team/(5608:5613): Cpu usado del entrenador: 5
+[INFO] 19:24:05:692 team/(5608:5637): Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:24:07:692 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:07:692 team/(5608:5613): Cpu usado del entrenador: 6
+[INFO] 19:24:07:697 team/(5608:5638): Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:24:09:698 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:09:698 team/(5608:5613): Cpu usado del entrenador: 7
+[INFO] 19:24:09:713 team/(5608:5639): Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:24:11:713 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:11:714 team/(5608:5613): Cpu usado del entrenador: 8
+[INFO] 19:24:11:731 team/(5608:5640): Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:24:13:744 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:13:744 team/(5608:5613): Cpu usado del entrenador: 9
+[INFO] 19:24:13:744 team/(5608:5641): Entrenador moviendose a la posicion: 16|0.
+[INFO] 19:24:15:754 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:15:754 team/(5608:5613): Cpu usado del entrenador: 10
+[INFO] 19:24:15:757 team/(5608:5642): Entrenador moviendose a la posicion: 17|0.
+[INFO] 19:24:17:758 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:17:758 team/(5608:5613): Cpu usado del entrenador: 11
+[INFO] 19:24:17:761 team/(5608:5643): Entrenador moviendose a la posicion: 18|0.
+[INFO] 19:24:19:761 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:19:762 team/(5608:5613): Cpu usado del entrenador: 12
+[INFO] 19:24:19:765 team/(5608:5649): Entrenador moviendose a la posicion: 19|0.
+[INFO] 19:24:21:770 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:21:770 team/(5608:5613): Cpu usado del entrenador: 13
+[INFO] 19:24:21:777 team/(5608:5650): Entrenador moviendose a la posicion: 20|0.
+[INFO] 19:24:23:778 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:23:778 team/(5608:5613): Cpu usado del entrenador: 14
+[INFO] 19:24:23:781 team/(5608:5651): Entrenador moviendose a la posicion: 20|1.
+[INFO] 19:24:25:782 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:25:782 team/(5608:5613): Cpu usado del entrenador: 15
+[INFO] 19:24:25:798 team/(5608:5652): Entrenador moviendose a la posicion: 20|2.
+[INFO] 19:24:27:801 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:27:801 team/(5608:5613): Cpu usado del entrenador: 16
+[INFO] 19:24:27:805 team/(5608:5653): Entrenador moviendose a la posicion: 20|3.
+[INFO] 19:24:29:806 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:29:806 team/(5608:5613): Cpu usado del entrenador: 17
+[INFO] 19:24:29:809 team/(5608:5654): Entrenador moviendose a la posicion: 20|4.
+[INFO] 19:24:31:810 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:31:810 team/(5608:5613): Cpu usado del entrenador: 18
+[INFO] 19:24:31:813 team/(5608:5655): Entrenador moviendose a la posicion: 20|5.
+[INFO] 19:24:33:814 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:33:814 team/(5608:5613): Cpu usado del entrenador: 19
+[INFO] 19:24:33:818 team/(5608:5656): Entrenador moviendose a la posicion: 20|6.
+[INFO] 19:24:35:818 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:35:818 team/(5608:5613): Cpu usado del entrenador: 20
+[INFO] 19:24:35:821 team/(5608:5662): Entrenador moviendose a la posicion: 20|7.
+[INFO] 19:24:37:822 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:37:822 team/(5608:5613): Cpu usado del entrenador: 21
+[INFO] 19:24:37:827 team/(5608:5663): Entrenador moviendose a la posicion: 20|8.
+[INFO] 19:24:39:827 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:39:828 team/(5608:5613): Cpu usado del entrenador: 22
+[INFO] 19:24:39:835 team/(5608:5664): Entrenador moviendose a la posicion: 20|9.
+[INFO] 19:24:41:836 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:41:836 team/(5608:5613): Cpu usado del entrenador: 23
+[INFO] 19:24:41:841 team/(5608:5665): Entrenador moviendose a la posicion: 20|10.
+[INFO] 19:24:43:842 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:43:842 team/(5608:5613): Cpu usado del entrenador: 24
+[INFO] 19:24:43:845 team/(5608:5666): Entrenador moviendose a la posicion: 20|11.
+[INFO] 19:24:45:845 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:45:845 team/(5608:5613): Cpu usado del entrenador: 25
+[INFO] 19:24:45:849 team/(5608:5672): Entrenador moviendose a la posicion: 20|12.
+[INFO] 19:24:47:850 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:47:850 team/(5608:5613): Cpu usado del entrenador: 26
+[INFO] 19:24:47:853 team/(5608:5673): Entrenador moviendose a la posicion: 20|13.
+[INFO] 19:24:49:854 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:49:854 team/(5608:5613): Cpu usado del entrenador: 27
+[INFO] 19:24:49:857 team/(5608:5674): Entrenador moviendose a la posicion: 20|14.
+[INFO] 19:24:51:862 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:51:862 team/(5608:5613): Cpu usado del entrenador: 28
+[INFO] 19:24:51:865 team/(5608:5675): Entrenador moviendose a la posicion: 20|15.
+[INFO] 19:24:53:865 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:53:866 team/(5608:5613): Cpu usado del entrenador: 29
+[INFO] 19:24:53:869 team/(5608:5678): Entrenador moviendose a la posicion: 20|16.
+[INFO] 19:24:55:873 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:55:874 team/(5608:5613): Cpu usado del entrenador: 30
+[INFO] 19:24:55:874 team/(5608:5679): Entrenador moviendose a la posicion: 20|17.
+[INFO] 19:24:57:874 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:57:874 team/(5608:5613): Cpu usado del entrenador: 31
+[INFO] 19:24:57:877 team/(5608:5680): Entrenador moviendose a la posicion: 20|18.
+[INFO] 19:24:59:878 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:59:878 team/(5608:5613): Cpu usado del entrenador: 32
+[INFO] 19:24:59:883 team/(5608:5681): Entrenador moviendose a la posicion: 20|19.
+[INFO] 19:25:01:884 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:25:01:884 team/(5608:5613): Cpu usado del entrenador: 33
+[INFO] 19:25:01:889 team/(5608:5682): Entrenador moviendose a la posicion: 20|20.
+[INFO] 19:25:03:890 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:29:39:899 team/(5790:5790): El algoritmo de planificacion es: 0
+[INFO] 19:29:39:905 team/(5790:5790): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 0 pokemons Pidgey
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 0 pokemons Bulbasaur
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 0 pokemons Squirtle
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 3 pokemons Pikachu
+[INFO] 19:29:39:906 team/(5790:5790): Necesito 1 pokemons Charmander
+[INFO] 19:29:39:910 team/(5790:5790): NO HAY ENTRENADORES DISPONIBLES EN ESTE MOMENTO
+[INFO] 19:29:39:920 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:29:39:920 team/(5790:5795): Cpu disponible del entrenador: 2
+[INFO] 19:29:39:920 team/(5790:5795): Cpu usado del entrenador: 1
+[INFO] 19:29:39:922 team/(5790:5797): Entrenador moviendose a la posicion: 500|6.
+[INFO] 19:29:41:928 team/(5790:5795): Cpu disponible del entrenador: 2
+[INFO] 19:29:41:928 team/(5790:5795): Cpu usado del entrenador: 2
+[INFO] 19:29:41:933 team/(5790:5798): Entrenador moviendose a la posicion: 500|7.
+[INFO] 19:29:43:936 team/(5790:5795): Un entrenador que se libero esta atendiendo a un nuevo pokemon
+[INFO] 19:29:43:936 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:29:43:936 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:43:937 team/(5790:5795): Cpu usado del entrenador: 1
+[INFO] 19:29:43:939 team/(5790:5804): Entrenador moviendose a la posicion: 9|7.
+[INFO] 19:29:45:939 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:45:940 team/(5790:5795): Cpu usado del entrenador: 2
+[INFO] 19:29:45:943 team/(5790:5805): Entrenador moviendose a la posicion: 8|7.
+[INFO] 19:29:47:943 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:47:943 team/(5790:5795): Cpu usado del entrenador: 3
+[INFO] 19:29:47:948 team/(5790:5806): Entrenador moviendose a la posicion: 7|7.
+[INFO] 19:29:49:949 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:49:949 team/(5790:5795): Cpu usado del entrenador: 4
+[INFO] 19:29:49:953 team/(5790:5807): Entrenador moviendose a la posicion: 6|7.
+[INFO] 19:29:51:954 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:51:954 team/(5790:5795): Cpu usado del entrenador: 5
+[INFO] 19:29:51:957 team/(5790:5808): Entrenador moviendose a la posicion: 5|7.
+[INFO] 19:29:53:958 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:53:958 team/(5790:5795): Cpu usado del entrenador: 6
+[INFO] 19:29:53:961 team/(5790:5811): Entrenador moviendose a la posicion: 4|7.
+[INFO] 19:29:55:962 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:55:962 team/(5790:5795): Cpu usado del entrenador: 7
+[INFO] 19:29:55:965 team/(5790:5812): Entrenador moviendose a la posicion: 3|7.
+[INFO] 19:29:57:965 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:57:966 team/(5790:5795): Cpu usado del entrenador: 8
+[INFO] 19:29:57:969 team/(5790:5813): Entrenador moviendose a la posicion: 2|7.
+[INFO] 19:29:59:970 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:59:970 team/(5790:5795): Cpu usado del entrenador: 9
+[INFO] 19:29:59:973 team/(5790:5814): Entrenador moviendose a la posicion: 1|7.
+[INFO] 19:30:01:974 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:01:974 team/(5790:5795): Cpu usado del entrenador: 10
+[INFO] 19:30:01:977 team/(5790:5815): Entrenador moviendose a la posicion: 0|7.
+[INFO] 19:30:03:978 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:03:980 team/(5790:5795): Cpu usado del entrenador: 11
+[INFO] 19:30:03:985 team/(5790:5816): Entrenador moviendose a la posicion: 0|8.
+[INFO] 19:30:05:985 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:05:986 team/(5790:5795): Cpu usado del entrenador: 12
+[INFO] 19:30:05:989 team/(5790:5817): Entrenador moviendose a la posicion: 0|9.
+[INFO] 19:30:07:989 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:07:990 team/(5790:5795): Cpu usado del entrenador: 13
+[INFO] 19:30:07:993 team/(5790:5818): Entrenador moviendose a la posicion: 0|10.
+[INFO] 19:30:09:997 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:30:09:998 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:09:998 team/(5790:5795): Cpu usado del entrenador: 1
+[INFO] 19:30:09:1 team/(5790:5819): Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:30:11:2 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:11:2 team/(5790:5795): Cpu usado del entrenador: 2
+[INFO] 19:30:12:5 team/(5790:5820): Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:30:14:6 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:14:6 team/(5790:5795): Cpu usado del entrenador: 3
+[INFO] 19:30:14:9 team/(5790:5821): Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:30:16:10 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:16:10 team/(5790:5795): Cpu usado del entrenador: 4
+[INFO] 19:30:16:13 team/(5790:5822): Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:30:18:13 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:18:14 team/(5790:5795): Cpu usado del entrenador: 5
+[INFO] 19:30:18:17 team/(5790:5823): Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:30:20:17 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:20:18 team/(5790:5795): Cpu usado del entrenador: 6
+[INFO] 19:30:20:20 team/(5790:5824): Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:30:22:20 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:22:20 team/(5790:5795): Cpu usado del entrenador: 7
+[INFO] 19:30:22:23 team/(5790:5825): Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:30:24:23 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:24:23 team/(5790:5795): Cpu usado del entrenador: 8
+[INFO] 19:30:24:27 team/(5790:5826): Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:30:26:28 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:26:28 team/(5790:5795): Cpu usado del entrenador: 9
+[INFO] 19:30:26:33 team/(5790:5827): Entrenador moviendose a la posicion: 16|0.
+[INFO] 19:30:28:37 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:28:37 team/(5790:5795): Cpu usado del entrenador: 10
+[INFO] 19:30:28:41 team/(5790:5828): Entrenador moviendose a la posicion: 17|0.
+[INFO] 19:30:30:45 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:30:46 team/(5790:5795): Cpu usado del entrenador: 11
+[INFO] 19:30:30:49 team/(5790:5829): Entrenador moviendose a la posicion: 18|0.
+[INFO] 19:30:32:50 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:32:50 team/(5790:5795): Cpu usado del entrenador: 12
+[INFO] 19:30:32:53 team/(5790:5830): Entrenador moviendose a la posicion: 19|0.
+[INFO] 19:30:34:54 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:34:54 team/(5790:5795): Cpu usado del entrenador: 13
+[INFO] 19:30:34:57 team/(5790:5831): Entrenador moviendose a la posicion: 20|0.
+[INFO] 19:30:36:58 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:36:58 team/(5790:5795): Cpu usado del entrenador: 14
+[INFO] 19:30:36:60 team/(5790:5832): Entrenador moviendose a la posicion: 20|1.
+[INFO] 19:30:38:60 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:38:61 team/(5790:5795): Cpu usado del entrenador: 15
+[INFO] 19:30:38:64 team/(5790:5833): Entrenador moviendose a la posicion: 20|2.
+[INFO] 19:30:40:64 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:40:64 team/(5790:5795): Cpu usado del entrenador: 16
+[INFO] 19:30:40:67 team/(5790:5834): Entrenador moviendose a la posicion: 20|3.
+[INFO] 19:30:42:67 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:42:67 team/(5790:5795): Cpu usado del entrenador: 17
+[INFO] 19:30:42:70 team/(5790:5835): Entrenador moviendose a la posicion: 20|4.
+[INFO] 19:30:44:70 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:44:70 team/(5790:5795): Cpu usado del entrenador: 18
+[INFO] 19:30:44:73 team/(5790:5836): Entrenador moviendose a la posicion: 20|5.
+[INFO] 19:30:46:73 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:46:73 team/(5790:5795): Cpu usado del entrenador: 19
+[INFO] 19:30:46:76 team/(5790:5837): Entrenador moviendose a la posicion: 20|6.
+[INFO] 19:30:48:76 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:48:76 team/(5790:5795): Cpu usado del entrenador: 20
+[INFO] 19:30:48:81 team/(5790:5838): Entrenador moviendose a la posicion: 20|7.
+[INFO] 19:30:50:81 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:50:82 team/(5790:5795): Cpu usado del entrenador: 21
+[INFO] 19:30:50:85 team/(5790:5844): Entrenador moviendose a la posicion: 20|8.
+[INFO] 19:30:52:86 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:52:86 team/(5790:5795): Cpu usado del entrenador: 22
+[INFO] 19:30:52:89 team/(5790:5845): Entrenador moviendose a la posicion: 20|9.
+[INFO] 19:30:54:90 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:54:90 team/(5790:5795): Cpu usado del entrenador: 23
+[INFO] 19:30:54:93 team/(5790:5848): Entrenador moviendose a la posicion: 20|10.
+[INFO] 19:30:56:93 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:56:93 team/(5790:5795): Cpu usado del entrenador: 24
+[INFO] 19:30:56:96 team/(5790:5854): Entrenador moviendose a la posicion: 20|11.
+[INFO] 19:30:58:96 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:58:96 team/(5790:5795): Cpu usado del entrenador: 25
+[INFO] 19:30:58:101 team/(5790:5855): Entrenador moviendose a la posicion: 20|12.
+[INFO] 19:31:00:101 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:00:102 team/(5790:5795): Cpu usado del entrenador: 26
+[INFO] 19:31:00:105 team/(5790:5861): Entrenador moviendose a la posicion: 20|13.
+[INFO] 19:31:02:106 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:02:106 team/(5790:5795): Cpu usado del entrenador: 27
+[INFO] 19:31:02:108 team/(5790:5862): Entrenador moviendose a la posicion: 20|14.
+[INFO] 19:31:04:109 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:04:109 team/(5790:5795): Cpu usado del entrenador: 28
+[INFO] 19:31:04:112 team/(5790:5863): Entrenador moviendose a la posicion: 20|15.
+[INFO] 19:31:06:113 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:06:113 team/(5790:5795): Cpu usado del entrenador: 29
+[INFO] 19:31:06:117 team/(5790:5864): Entrenador moviendose a la posicion: 20|16.
+[INFO] 19:31:08:117 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:08:118 team/(5790:5795): Cpu usado del entrenador: 30
+[INFO] 19:31:08:121 team/(5790:5865): Entrenador moviendose a la posicion: 20|17.
+[INFO] 19:31:10:121 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:10:122 team/(5790:5795): Cpu usado del entrenador: 31
+[INFO] 19:31:10:124 team/(5790:5866): Entrenador moviendose a la posicion: 20|18.
+[INFO] 19:31:12:124 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:12:125 team/(5790:5795): Cpu usado del entrenador: 32
+[INFO] 19:31:12:127 team/(5790:5867): Entrenador moviendose a la posicion: 20|19.
+[INFO] 19:31:14:127 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:14:127 team/(5790:5795): Cpu usado del entrenador: 33
+[INFO] 19:31:14:132 team/(5790:5868): Entrenador moviendose a la posicion: 20|20.
+[INFO] 19:31:16:132 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:31:16:132 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:16:132 team/(5790:5795): Cpu usado del entrenador: 3
+[INFO] 19:31:16:136 team/(5790:5869): Entrenador moviendose a la posicion: 501|7.
+[INFO] 19:31:18:137 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:18:137 team/(5790:5795): Cpu usado del entrenador: 4
+[INFO] 19:31:18:141 team/(5790:5870): Entrenador moviendose a la posicion: 502|7.
+[INFO] 19:31:20:145 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:20:146 team/(5790:5795): Cpu usado del entrenador: 5
+[INFO] 19:31:20:149 team/(5790:5871): Entrenador moviendose a la posicion: 503|7.
+[INFO] 19:31:22:153 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:22:153 team/(5790:5795): Cpu usado del entrenador: 6
+[INFO] 19:31:22:154 team/(5790:5872): Entrenador moviendose a la posicion: 504|7.
+[INFO] 19:31:24:157 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:24:157 team/(5790:5795): Cpu usado del entrenador: 7
+[INFO] 19:31:24:159 team/(5790:5873): Entrenador moviendose a la posicion: 505|7.
+[INFO] 19:31:26:159 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:26:159 team/(5790:5795): Cpu usado del entrenador: 8
+[INFO] 19:31:26:166 team/(5790:5874): Entrenador moviendose a la posicion: 506|7.
+[INFO] 19:31:28:167 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:28:167 team/(5790:5795): Cpu usado del entrenador: 9
+[INFO] 19:31:28:169 team/(5790:5875): Entrenador moviendose a la posicion: 507|7.
+[INFO] 19:31:30:170 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:30:170 team/(5790:5795): Cpu usado del entrenador: 10
+[INFO] 19:31:30:173 team/(5790:5876): Entrenador moviendose a la posicion: 508|7.
+[INFO] 19:31:32:174 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:32:174 team/(5790:5795): Cpu usado del entrenador: 11
+[INFO] 19:31:32:177 team/(5790:5882): Entrenador moviendose a la posicion: 509|7.
+[INFO] 19:31:34:178 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:34:178 team/(5790:5795): Cpu usado del entrenador: 12
+[INFO] 19:31:34:181 team/(5790:5884): Entrenador moviendose a la posicion: 510|7.
+[INFO] 19:31:36:181 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:36:182 team/(5790:5795): Cpu usado del entrenador: 13
+[INFO] 19:31:36:185 team/(5790:5885): Entrenador moviendose a la posicion: 510|8.
+[INFO] 19:31:38:186 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:38:186 team/(5790:5795): Cpu usado del entrenador: 14
+[INFO] 19:31:38:189 team/(5790:5887): Entrenador moviendose a la posicion: 510|9.
+[INFO] 19:31:40:190 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:40:190 team/(5790:5795): Cpu usado del entrenador: 15
+[INFO] 19:31:40:201 team/(5790:5888): Entrenador moviendose a la posicion: 510|10.
+[INFO] 19:31:42:202 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:42:202 team/(5790:5795): Cpu usado del entrenador: 16
+[INFO] 19:31:42:205 team/(5790:5889): Entrenador moviendose a la posicion: 510|11.
+[INFO] 19:31:44:206 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:44:206 team/(5790:5795): Cpu usado del entrenador: 17
+[INFO] 19:31:44:209 team/(5790:5890): Entrenador moviendose a la posicion: 510|12.
+[INFO] 19:31:46:210 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:46:210 team/(5790:5795): Cpu usado del entrenador: 18
+[INFO] 19:31:46:212 team/(5790:5891): Entrenador moviendose a la posicion: 510|13.
+[INFO] 19:31:48:213 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:48:213 team/(5790:5795): Cpu usado del entrenador: 19
+[INFO] 19:31:48:217 team/(5790:5892): Entrenador moviendose a la posicion: 510|14.
+[INFO] 19:31:50:218 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:50:218 team/(5790:5795): Cpu usado del entrenador: 20
+[INFO] 19:31:50:221 team/(5790:5893): Entrenador moviendose a la posicion: 510|15.
+[INFO] 19:31:52:222 team/(5790:5795): Estoy en FIFO preparado para planificar

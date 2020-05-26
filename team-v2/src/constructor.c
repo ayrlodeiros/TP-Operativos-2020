@@ -36,6 +36,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
 	un_entrenador->cpu_usado = 0;
 	un_entrenador->cpu_disponible = 0;
+	un_entrenador->cpu_estimado_anterior = estimacion_inicial;
 	un_entrenador->acciones = queue_create();
 
 	return un_entrenador;
