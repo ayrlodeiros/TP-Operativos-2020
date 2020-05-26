@@ -8,19 +8,34 @@
 #ifndef CONSTRUCTOR_H_
 #define CONSTRUCTOR_H_
 
-#include<pthread.h>
+#include"config-reader.h"
+#include<math.h>
+#include<netdb.h>
+#include<signal.h>
+#include<stdio.h>
 #include<stdlib.h>
+#include<unistd.h>
+#include<pthread.h>
+#include<sys/socket.h>
+#include<readline/readline.h>
+#include<commons/log.h>
+#include<commons/config.h>
 #include<commons/string.h>
 #include<commons/collections/list.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/dictionary.h>
 
+static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
+
+t_log* logger;
+t_log* nuestro_log;
+int ejecutar_default;
+
 t_list* entrenadores;
 t_dictionary* objetivo_global;
-t_queue* pokemons_sueltos;
+//TODO VER MAS ADELANTE EL CASO EN EL QUE LOS ENTRENADORES ESTEN OCUPADOS Y NINGUNO PUEDA IR A BUSCARLO
+t_queue* pokemons_sin_entrenador;
 t_list* entrenadores_ready;
-
-
 
 typedef struct
 {
@@ -40,23 +55,33 @@ typedef enum
 
 }estado_entrenador;
 
-typedef struct
-{
-	pthread_t* hilo;
-	estado_entrenador estado;
-	int cpu_usado;
-	int cpu_disponible;
-	posicion* posicion;
-	int cant_maxima_pokemons;
-	t_list* pokemons_adquiridos;
-	t_list* pokemons_objetivo;
-} entrenador;
+typedef struct{
+	void(*funcion)(void*);
+	int cpu_requerido;
+}accion;
 
 typedef struct
 {
 	char* nombre;
 	posicion* posicion;
 } pokemon;
+
+typedef struct
+{
+	pthread_t* hilo;
+	estado_entrenador estado;
+	int cpu_usado;
+	int cpu_disponible;
+	int cpu_estimado_anterior;
+	posicion* posicion;
+	int cant_maxima_pokemons;
+	t_list* pokemons_adquiridos;
+	t_list* pokemons_objetivo;
+	pokemon* pokemon_en_busqueda;
+	t_queue* acciones;
+} entrenador;
+
+
 
 void iniciar_variables_globales();
 
@@ -67,9 +92,8 @@ void armar_objetivo_global();
 void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo);
 void restar_adquirido_a_objetivo_global(char* pokemon_adquirido);
 
-void armar_pokemon(char* nombre, int posicion_x, int posicion_y);
-
 posicion* armar_posicion(char* posicion_a_armar);
+accion* armar_accion(void(*funcion)(void*), int cpu_requerido);
 
 
 

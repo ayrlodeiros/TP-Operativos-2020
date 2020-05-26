@@ -3,12 +3,23 @@
 
 #include<stdio.h>
 #include<commons/config.h>
+#include<commons/string.h>
 #include<commons/collections/list.h>
+
+typedef enum
+{
+	FIFO = 0,
+	RR = 1,
+	SJFCD = 2,
+	SJFSD = 3,
+	ALGORITMO_DESCONOCIDO = 4
+
+} enum_algoritmo_planificacion;
 
 t_config* config;
 int tiempo_reconexion;
 int retardo_ciclo_cpu;
-char* algoritmo_planificacion;
+enum_algoritmo_planificacion algoritmo_planificacion;
 int quantum;
 int estimacion_inicial;
 char* ip_broker;
@@ -25,7 +36,7 @@ t_list* leer_objetivos_entrenadores(void);
 
 int leer_tiempo_reconexion(void);
 int leer_retardo_ciclo_cpu(void);
-char* leer_algoritmo_planificacion(void);
+enum_algoritmo_planificacion leer_algoritmo_planificacion(void);
 int leer_quantum(void);
 int leer_estimacion_inicial(void);
 char* leer_ip_broker(void);

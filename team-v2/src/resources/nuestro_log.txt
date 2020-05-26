@@ -113,3 +113,1541 @@
 [INFO] 20:32:21:919 team/(11429:11429): La cantidad de entrenadores del equipo es de 3 entrenadores
 [INFO] 20:32:21:920 team/(11429:11434): Conectando con broker...
 [INFO] 20:32:26:930 team/(11429:11434): Conectando con broker...
+[INFO] 21:57:29:807 team/(7534:7534): El algoritmo de planificacion es: 1
+[INFO] 21:57:29:812 team/(7534:7534): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 21:57:29:816 team/(7534:7539): Conectando con broker...
+[INFO] 21:57:34:817 team/(7534:7539): Conectando con broker...
+[INFO] 21:57:39:819 team/(7534:7539): Conectando con broker...
+[INFO] 12:11:05:603 team/(4645:4645): El algoritmo de planificacion es: 1
+[INFO] 12:11:05:608 team/(4645:4645): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:11:05:620 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:05:623 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:05:623 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:05:623 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:10:623 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:10:625 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:10:625 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:10:625 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:15:625 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:15:626 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:15:626 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:15:626 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:20:626 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:20:627 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:20:627 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:20:627 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:25:627 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:25:628 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:25:628 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:25:628 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:30:628 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:30:629 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:30:629 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:30:629 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:35:629 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:35:630 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:35:630 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:35:630 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:40:630 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:40:631 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:40:631 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:40:631 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:45:631 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:45:632 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:45:632 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:45:632 team/(4645:4650): Valor del socker: 0
+[INFO] 12:11:50:633 team/(4645:4650): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:11:50:634 team/(4645:4650): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:50:634 team/(4645:4650): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:11:50:634 team/(4645:4650): Valor del socker: 0
+[INFO] 12:13:41:514 team/(4731:4731): El algoritmo de planificacion es: 1
+[INFO] 12:13:41:526 team/(4731:4731): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:13:41:531 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:41:532 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:41:532 team/(4731:4736): Valor del socket: 0
+[INFO] 12:13:46:532 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:46:533 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:46:533 team/(4731:4736): Valor del socket: 0
+[INFO] 12:13:51:534 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:51:535 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:51:535 team/(4731:4736): Valor del socket: 0
+[INFO] 12:13:56:535 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:13:56:536 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:13:56:536 team/(4731:4736): Valor del socket: 0
+[INFO] 12:14:01:536 team/(4731:4736): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:14:01:536 team/(4731:4736): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:14:01:536 team/(4731:4736): Valor del socket: 0
+[INFO] 12:19:33:223 team/(5025:5025): El algoritmo de planificacion es: 1
+[INFO] 12:19:33:223 team/(5025:5025): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:19:33:223 team/(5025:5031): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:19:33:223 team/(5025:5031): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:19:33:224 team/(5025:5031): Valor del socket: -1
+[INFO] 12:19:38:224 team/(5025:5031): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:19:38:225 team/(5025:5031): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:19:38:225 team/(5025:5031): Valor del socket: -1
+[INFO] 12:37:38:402 team/(5324:5324): El algoritmo de planificacion es: 1
+[INFO] 12:37:38:403 team/(5324:5324): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:37:38:403 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:38:404 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:43:404 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:43:405 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:48:405 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:48:405 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:53:405 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:53:406 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:37:58:406 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:37:58:407 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:03:407 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:03:408 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:08:409 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:08:410 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:13:410 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:13:411 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:18:411 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:18:415 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:23:417 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:23:422 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:28:424 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:28:428 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:33:429 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:33:431 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:38:432 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:38:436 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:43:442 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:43:442 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:48:451 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:48:452 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:53:452 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:53:453 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:38:58:453 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:38:58:454 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:03:454 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:03:456 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:08:457 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:08:457 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:13:458 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:13:458 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:18:459 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:18:459 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:23:459 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:23:461 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:28:462 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:28:463 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:33:464 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:33:469 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:38:471 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:38:475 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:43:477 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:43:483 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:48:485 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:48:488 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:53:491 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:53:492 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:39:58:492 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:39:58:493 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:03:493 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:03:494 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:08:494 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:08:496 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:13:497 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:13:497 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:18:498 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:18:498 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:23:499 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:23:501 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:28:501 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:28:503 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:33:503 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:33:504 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:38:504 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:38:505 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:43:505 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:43:506 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:48:506 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:48:507 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:53:512 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:53:513 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:40:58:515 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:40:58:515 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:03:520 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:41:03:521 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:08:521 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:08:523 team/(5324:5331): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:13:523 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:13:525 team/(5324:5331): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:18:526 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:18:528 team/(5324:5331): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:23:528 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:41:23:530 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:41:28:532 team/(5324:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:41:28:534 team/(5324:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:10:156 team/(6474:6474): El algoritmo de planificacion es: 1
+[INFO] 12:44:10:157 team/(6474:6474): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:44:10:157 team/(6474:6474): VALOR DEL SOCKET: 0
+[INFO] 12:44:10:157 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:10:158 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:11:158 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:12:159 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:13:164 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:14:165 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:15:160 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:15:160 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:15:165 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:16:167 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:17:168 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:18:169 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:19:169 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:20:160 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:20:161 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:20:171 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:21:171 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:22:173 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:23:174 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:24:174 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:25:161 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:25:161 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:25:176 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:26:180 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:27:180 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:28:181 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:29:185 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:30:162 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:30:163 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:30:185 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:31:186 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:32:186 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:33:187 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:34:189 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:35:163 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:44:35:164 team/(6474:6479): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:35:191 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:36:191 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:37:191 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:38:192 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:39:193 team/(6474:6474): VALOR DEL SOCKET: -1
+[INFO] 12:44:40:165 team/(6474:6479): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:40:166 team/(6474:6479): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:44:40:195 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:41:195 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:42:196 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:43:197 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:44:198 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:45:199 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:46:203 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:47:204 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:48:204 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:49:205 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:50:205 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:51:207 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:52:207 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:53:208 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:54:208 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:55:210 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:56:214 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:57:214 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:58:215 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:44:59:216 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:00:217 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:01:218 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:02:218 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:03:219 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:04:219 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:05:219 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:06:220 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:07:221 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:08:221 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:09:223 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:10:223 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:11:224 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:45:12:224 team/(6474:6474): VALOR DEL SOCKET: 11
+[INFO] 12:46:20:946 team/(6610:6610): El algoritmo de planificacion es: 1
+[INFO] 12:46:20:947 team/(6610:6610): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:46:20:948 team/(6610:6610): VALOR DEL SOCKET: 0
+[INFO] 12:46:20:948 team/(6610:6610): FUNCIONA
+[INFO] 12:46:20:948 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:46:20:948 team/(6610:6615): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:21:949 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:21:955 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:22:955 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:22:955 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:23:955 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:23:956 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:24:957 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:24:957 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:25:952 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:46:25:952 team/(6610:6615): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:25:958 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:25:958 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:26:959 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:26:959 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:27:959 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:27:960 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:28:960 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:28:960 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:29:961 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:29:965 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:30:952 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:46:30:953 team/(6610:6615): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:30:966 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:30:967 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:31:968 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:31:968 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:32:968 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:32:968 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:33:969 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:33:969 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:34:969 team/(6610:6610): VALOR DEL SOCKET: -1
+[INFO] 12:46:34:970 team/(6610:6610): NO FUNCIONA
+[INFO] 12:46:35:953 team/(6610:6615): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:35:955 team/(6610:6615): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:46:35:971 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:35:971 team/(6610:6610): FUNCIONA
+[INFO] 12:46:36:971 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:36:972 team/(6610:6610): FUNCIONA
+[INFO] 12:46:37:972 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:37:972 team/(6610:6610): FUNCIONA
+[INFO] 12:46:38:973 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:38:973 team/(6610:6610): FUNCIONA
+[INFO] 12:46:39:974 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:39:977 team/(6610:6610): FUNCIONA
+[INFO] 12:46:40:977 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:40:978 team/(6610:6610): FUNCIONA
+[INFO] 12:46:41:979 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:41:979 team/(6610:6610): FUNCIONA
+[INFO] 12:46:42:980 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:42:980 team/(6610:6610): FUNCIONA
+[INFO] 12:46:43:981 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:43:981 team/(6610:6610): FUNCIONA
+[INFO] 12:46:44:981 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:44:982 team/(6610:6610): FUNCIONA
+[INFO] 12:46:45:982 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:45:983 team/(6610:6610): FUNCIONA
+[INFO] 12:46:46:984 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:46:984 team/(6610:6610): FUNCIONA
+[INFO] 12:46:47:985 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:47:985 team/(6610:6610): FUNCIONA
+[INFO] 12:46:48:985 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:48:986 team/(6610:6610): FUNCIONA
+[INFO] 12:46:49:986 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:49:986 team/(6610:6610): FUNCIONA
+[INFO] 12:46:50:986 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:50:987 team/(6610:6610): FUNCIONA
+[INFO] 12:46:51:987 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:51:987 team/(6610:6610): FUNCIONA
+[INFO] 12:46:52:988 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:52:988 team/(6610:6610): FUNCIONA
+[INFO] 12:46:53:988 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:53:989 team/(6610:6610): FUNCIONA
+[INFO] 12:46:54:989 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:54:990 team/(6610:6610): FUNCIONA
+[INFO] 12:46:55:991 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:55:991 team/(6610:6610): FUNCIONA
+[INFO] 12:46:56:992 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:56:992 team/(6610:6610): FUNCIONA
+[INFO] 12:46:57:993 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:57:993 team/(6610:6610): FUNCIONA
+[INFO] 12:46:58:994 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:58:994 team/(6610:6610): FUNCIONA
+[INFO] 12:46:59:995 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:46:59:996 team/(6610:6610): FUNCIONA
+[INFO] 12:47:00:996 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:00:996 team/(6610:6610): FUNCIONA
+[INFO] 12:47:01:996 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:01:997 team/(6610:6610): FUNCIONA
+[INFO] 12:47:02:997 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:02:998 team/(6610:6610): FUNCIONA
+[INFO] 12:47:03:998 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:03:998 team/(6610:6610): FUNCIONA
+[INFO] 12:47:04:998 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:04:999 team/(6610:6610): FUNCIONA
+[INFO] 12:47:05:0 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:05:0 team/(6610:6610): FUNCIONA
+[INFO] 12:47:06:1 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:06:1 team/(6610:6610): FUNCIONA
+[INFO] 12:47:08:2 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:08:2 team/(6610:6610): FUNCIONA
+[INFO] 12:47:09:2 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:09:3 team/(6610:6610): FUNCIONA
+[INFO] 12:47:10:3 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:10:4 team/(6610:6610): FUNCIONA
+[INFO] 12:47:11:4 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:11:5 team/(6610:6610): FUNCIONA
+[INFO] 12:47:12:5 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:12:5 team/(6610:6610): FUNCIONA
+[INFO] 12:47:13:6 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:13:6 team/(6610:6610): FUNCIONA
+[INFO] 12:47:14:7 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:14:10 team/(6610:6610): FUNCIONA
+[INFO] 12:47:15:10 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:15:10 team/(6610:6610): FUNCIONA
+[INFO] 12:47:16:11 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:16:11 team/(6610:6610): FUNCIONA
+[INFO] 12:47:17:12 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:17:12 team/(6610:6610): FUNCIONA
+[INFO] 12:47:18:12 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:18:13 team/(6610:6610): FUNCIONA
+[INFO] 12:47:19:14 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:19:14 team/(6610:6610): FUNCIONA
+[INFO] 12:47:20:14 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:20:14 team/(6610:6610): FUNCIONA
+[INFO] 12:47:21:15 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:21:15 team/(6610:6610): FUNCIONA
+[INFO] 12:47:22:15 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:22:15 team/(6610:6610): FUNCIONA
+[INFO] 12:47:23:16 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:23:16 team/(6610:6610): FUNCIONA
+[INFO] 12:47:24:16 team/(6610:6610): VALOR DEL SOCKET: 8
+[INFO] 12:47:24:17 team/(6610:6610): FUNCIONA
+[INFO] 12:49:09:323 team/(6717:6717): El algoritmo de planificacion es: 1
+[INFO] 12:49:09:326 team/(6717:6717): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:49:09:326 team/(6717:6717): VALOR DEL SOCKET: 0
+[INFO] 12:49:09:326 team/(6717:6717): FUNCIONA
+[INFO] 12:49:09:332 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:09:335 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:10:327 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:10:327 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:11:332 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:11:333 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:12:333 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:12:333 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:13:333 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:13:334 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:14:334 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:14:334 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:14:335 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:14:335 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:15:334 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:15:334 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:16:335 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:16:335 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:17:336 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:17:336 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:18:337 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:18:337 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:19:336 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:19:337 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:19:337 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:19:338 team/(6717:6717): FUNCIONA
+[INFO] 12:49:20:338 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:20:338 team/(6717:6717): FUNCIONA
+[INFO] 12:49:21:338 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:21:339 team/(6717:6717): FUNCIONA
+[INFO] 12:49:22:339 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:22:339 team/(6717:6717): FUNCIONA
+[INFO] 12:49:23:340 team/(6717:6717): VALOR DEL SOCKET: 7
+[INFO] 12:49:23:340 team/(6717:6717): FUNCIONA
+[INFO] 12:49:24:338 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:24:338 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:24:340 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:24:340 team/(6717:6717): FUNCIONA
+[INFO] 12:49:25:341 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:25:341 team/(6717:6717): FUNCIONA
+[INFO] 12:49:26:342 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:26:342 team/(6717:6717): FUNCIONA
+[INFO] 12:49:27:343 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:27:343 team/(6717:6717): FUNCIONA
+[INFO] 12:49:28:343 team/(6717:6717): VALOR DEL SOCKET: 8
+[INFO] 12:49:28:343 team/(6717:6717): FUNCIONA
+[INFO] 12:49:29:339 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:29:339 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:29:344 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:29:344 team/(6717:6717): FUNCIONA
+[INFO] 12:49:30:345 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:30:345 team/(6717:6717): FUNCIONA
+[INFO] 12:49:31:346 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:31:346 team/(6717:6717): FUNCIONA
+[INFO] 12:49:32:347 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:32:347 team/(6717:6717): FUNCIONA
+[INFO] 12:49:33:347 team/(6717:6717): VALOR DEL SOCKET: 9
+[INFO] 12:49:33:347 team/(6717:6717): FUNCIONA
+[INFO] 12:49:34:340 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:34:340 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:34:348 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:34:348 team/(6717:6717): FUNCIONA
+[INFO] 12:49:35:349 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:35:350 team/(6717:6717): FUNCIONA
+[INFO] 12:49:36:350 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:36:351 team/(6717:6717): FUNCIONA
+[INFO] 12:49:37:351 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:37:351 team/(6717:6717): FUNCIONA
+[INFO] 12:49:38:352 team/(6717:6717): VALOR DEL SOCKET: 10
+[INFO] 12:49:38:353 team/(6717:6717): FUNCIONA
+[INFO] 12:49:39:341 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:39:341 team/(6717:6722): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:39:354 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:39:354 team/(6717:6717): FUNCIONA
+[INFO] 12:49:40:355 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:40:355 team/(6717:6717): FUNCIONA
+[INFO] 12:49:41:356 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:41:357 team/(6717:6717): FUNCIONA
+[INFO] 12:49:42:357 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:42:357 team/(6717:6717): FUNCIONA
+[INFO] 12:49:43:357 team/(6717:6717): VALOR DEL SOCKET: 11
+[INFO] 12:49:43:357 team/(6717:6717): FUNCIONA
+[INFO] 12:49:44:342 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:44:343 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:44:358 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:44:359 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:45:359 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:45:359 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:46:360 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:46:361 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:47:361 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:47:361 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:48:361 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:48:362 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:49:343 team/(6717:6722): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:49:49:343 team/(6717:6722): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:49:49:362 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:49:362 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:50:363 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:50:363 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:51:363 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:51:364 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:52:365 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:52:365 team/(6717:6717): NO FUNCIONA
+[INFO] 12:49:53:365 team/(6717:6717): VALOR DEL SOCKET: -1
+[INFO] 12:49:53:366 team/(6717:6717): NO FUNCIONA
+[INFO] 14:36:05:693 team/(8170:8170): El algoritmo de planificacion es: 1
+[INFO] 14:36:05:696 team/(8170:8170): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 14:36:05:696 team/(8170:8170): VALOR DEL SOCKET: 0
+[INFO] 14:36:05:696 team/(8170:8170): FUNCIONA
+[INFO] 14:36:05:703 team/(8170:8175): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:05:704 team/(8170:8175): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:06:697 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:06:697 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:07:698 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:07:698 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:08:698 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:08:698 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:09:699 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:09:699 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:10:700 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:10:700 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:10:711 team/(8170:8175): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:10:711 team/(8170:8175): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:11:701 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:11:701 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:12:704 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:12:704 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:13:704 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:13:705 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:14:706 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:14:706 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:15:706 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:15:706 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:15:711 team/(8170:8175): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:15:712 team/(8170:8175): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:16:706 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:16:707 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:17:707 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:17:707 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:18:707 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:18:708 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:19:708 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:19:708 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:20:708 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:20:709 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:20:712 team/(8170:8175): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:20:713 team/(8170:8175): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:21:709 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:21:710 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:22:710 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:22:710 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:23:711 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:23:711 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:24:711 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:24:712 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:25:712 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:25:712 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:25:716 team/(8170:8175): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:25:716 team/(8170:8175): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:26:713 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:26:713 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:27:713 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:27:714 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:28:714 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:28:714 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:29:714 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:29:715 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:30:715 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:30:715 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:30:716 team/(8170:8175): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:30:716 team/(8170:8175): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:31:716 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:31:716 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:32:727 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:32:728 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:33:732 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:33:735 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:34:735 team/(8170:8170): VALOR DEL SOCKET: -1
+[INFO] 14:36:34:735 team/(8170:8170): NO FUNCIONA
+[INFO] 14:36:58:680 team/(8276:8276): El algoritmo de planificacion es: 1
+[INFO] 14:36:58:688 team/(8276:8276): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 14:36:58:688 team/(8276:8276): VALOR DEL SOCKET: 0
+[INFO] 14:36:58:688 team/(8276:8276): FUNCIONA
+[INFO] 14:36:58:688 team/(8276:8281): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:36:58:688 team/(8276:8281): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:36:59:689 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:36:59:689 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:00:690 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:00:690 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:01:690 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:01:690 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:02:691 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:02:691 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:03:688 team/(8276:8281): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:37:03:690 team/(8276:8281): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:37:03:693 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:03:693 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:04:693 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:04:693 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:05:694 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:05:694 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:06:695 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:06:695 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:07:696 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:07:696 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:08:690 team/(8276:8281): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:37:08:691 team/(8276:8281): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:37:08:696 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:08:697 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:09:697 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:09:697 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:10:697 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:10:698 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:11:698 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:11:698 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:12:699 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:12:704 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:13:691 team/(8276:8281): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:37:13:691 team/(8276:8281): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:37:13:706 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:13:706 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:14:707 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:14:716 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:15:716 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:15:716 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:16:717 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:16:717 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:17:718 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:17:718 team/(8276:8276): NO FUNCIONA
+[INFO] 14:37:18:692 team/(8276:8281): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 14:37:18:692 team/(8276:8281): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 14:37:18:718 team/(8276:8276): VALOR DEL SOCKET: -1
+[INFO] 14:37:18:718 team/(8276:8276): NO FUNCIONA
+[INFO] 12:02:42:469 team/(5326:5326): El algoritmo de planificacion es: 1
+[INFO] 12:02:42:475 team/(5326:5326): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:02:42:475 team/(5326:5326): VALOR DEL SOCKET: 0
+[INFO] 12:02:42:476 team/(5326:5326): FUNCIONA
+[INFO] 12:02:42:476 team/(5326:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:02:42:492 team/(5326:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:02:43:476 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:43:477 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:44:477 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:44:477 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:45:478 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:45:479 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:46:479 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:46:479 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:47:481 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:47:483 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:47:495 team/(5326:5331): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 5002
+[ERROR] 12:02:47:495 team/(5326:5331): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 12:02:48:487 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:48:487 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:49:487 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:49:487 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:50:488 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:50:489 team/(5326:5326): NO FUNCIONA
+[INFO] 12:02:51:489 team/(5326:5326): VALOR DEL SOCKET: -1
+[INFO] 12:02:51:489 team/(5326:5326): NO FUNCIONA
+[INFO] 12:03:01:208 team/(5364:5364): El algoritmo de planificacion es: 1
+[INFO] 12:03:01:209 team/(5364:5364): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:03:55:562 team/(5404:5404): El algoritmo de planificacion es: 1
+[INFO] 12:03:55:566 team/(5404:5404): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:05:28:449 team/(5460:5460): El algoritmo de planificacion es: 1
+[INFO] 12:05:28:449 team/(5460:5460): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:09:31:158 team/(5582:5582): El algoritmo de planificacion es: 1
+[INFO] 12:09:31:159 team/(5582:5582): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:09:52:19 team/(5631:5631): El algoritmo de planificacion es: 1
+[INFO] 12:09:52:35 team/(5631:5631): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:09:52:75 team/(5632:5632): El algoritmo de planificacion es: 1
+[INFO] 12:09:52:90 team/(5632:5632): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:10:13:623 team/(5656:5656): El algoritmo de planificacion es: 1
+[INFO] 12:10:13:625 team/(5656:5656): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:10:34:654 team/(5677:5677): El algoritmo de planificacion es: 1
+[INFO] 12:10:34:664 team/(5677:5677): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:17:00:461 team/(5775:5775): El algoritmo de planificacion es: 1
+[INFO] 12:17:00:463 team/(5775:5775): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:18:38:854 team/(5841:5841): El algoritmo de planificacion es: 1
+[INFO] 12:18:38:866 team/(5841:5841): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:55:32:727 team/(7665:7665): El algoritmo de planificacion es: 0
+[INFO] 19:55:32:727 team/(7665:7665): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:55:32:727 team/(7665:7665): Necesito 0 pokemons $s
+[INFO] 19:55:32:727 team/(7665:7665): Necesito 0 pokemons $s
+[INFO] 19:55:32:727 team/(7665:7665): Necesito 0 pokemons $s
+[INFO] 19:55:32:728 team/(7665:7665): Necesito 2 pokemons $s
+[INFO] 19:55:32:728 team/(7665:7665): Necesito 1 pokemons $s
+[INFO] 19:55:45:948 team/(7697:7697): El algoritmo de planificacion es: 0
+[INFO] 19:55:45:948 team/(7697:7697): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:55:45:948 team/(7697:7697): Necesito 0 pokemons Pidgey
+[INFO] 19:55:45:948 team/(7697:7697): Necesito 0 pokemons Bulbasaur
+[INFO] 19:55:45:948 team/(7697:7697): Necesito 0 pokemons Squirtle
+[INFO] 19:55:45:948 team/(7697:7697): Necesito 2 pokemons Pikachu
+[INFO] 19:55:45:948 team/(7697:7697): Necesito 1 pokemons Charmander
+[INFO] 20:07:40:176 team/(8016:8016): El algoritmo de planificacion es: 0
+[INFO] 20:07:40:176 team/(8016:8016): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:07:40:176 team/(8016:8016): Necesito 0 pokemons Pidgey
+[INFO] 20:07:40:176 team/(8016:8016): Necesito 0 pokemons Bulbasaur
+[INFO] 20:07:40:176 team/(8016:8016): Necesito 0 pokemons Squirtle
+[INFO] 20:07:40:176 team/(8016:8016): Necesito 2 pokemons Pikachu
+[INFO] 20:07:40:176 team/(8016:8016): Necesito 1 pokemons Charmander
+[INFO] 20:09:15:700 team/(8079:8079): El algoritmo de planificacion es: 0
+[INFO] 20:09:15:700 team/(8079:8079): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:09:15:700 team/(8079:8079): Necesito 0 pokemons Pidgey
+[INFO] 20:09:15:700 team/(8079:8079): Necesito 0 pokemons Bulbasaur
+[INFO] 20:09:15:701 team/(8079:8079): Necesito 0 pokemons Squirtle
+[INFO] 20:09:15:701 team/(8079:8079): Necesito 2 pokemons Pikachu
+[INFO] 20:09:15:701 team/(8079:8079): Necesito 1 pokemons Charmander
+[INFO] 20:11:40:120 team/(8161:8161): El algoritmo de planificacion es: 0
+[INFO] 20:11:40:120 team/(8161:8161): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:11:40:120 team/(8161:8161): Necesito 0 pokemons Pidgey
+[INFO] 20:11:40:121 team/(8161:8161): Necesito 0 pokemons Bulbasaur
+[INFO] 20:11:40:121 team/(8161:8161): Necesito 0 pokemons Squirtle
+[INFO] 20:11:40:121 team/(8161:8161): Necesito 2 pokemons Pikachu
+[INFO] 20:11:40:121 team/(8161:8161): Necesito 1 pokemons Charmander
+[INFO] 20:11:53:317 team/(8198:8198): El algoritmo de planificacion es: 0
+[INFO] 20:11:53:319 team/(8198:8198): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:11:53:319 team/(8198:8198): Necesito 0 pokemons Pidgey
+[INFO] 20:11:53:319 team/(8198:8198): Necesito 0 pokemons Bulbasaur
+[INFO] 20:11:53:319 team/(8198:8198): Necesito 0 pokemons Squirtle
+[INFO] 20:11:53:319 team/(8198:8198): Necesito 2 pokemons Pikachu
+[INFO] 20:11:53:322 team/(8198:8198): Necesito 1 pokemons Charmander
+[INFO] 20:13:43:326 team/(8275:8275): El algoritmo de planificacion es: 0
+[INFO] 20:13:43:332 team/(8275:8275): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:13:43:332 team/(8275:8275): Necesito 0 pokemons Pidgey
+[INFO] 20:13:43:332 team/(8275:8275): Necesito 0 pokemons Bulbasaur
+[INFO] 20:13:43:332 team/(8275:8275): Necesito 0 pokemons Squirtle
+[INFO] 20:13:43:332 team/(8275:8275): Necesito 2 pokemons Pikachu
+[INFO] 20:13:43:332 team/(8275:8275): Necesito 1 pokemons Charmander
+[INFO] 20:15:40:434 team/(8343:8343): El algoritmo de planificacion es: 0
+[INFO] 20:15:40:436 team/(8343:8343): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:15:40:436 team/(8343:8343): Necesito 0 pokemons Pidgey
+[INFO] 20:15:40:437 team/(8343:8343): Necesito 0 pokemons Bulbasaur
+[INFO] 20:15:40:437 team/(8343:8343): Necesito 0 pokemons Squirtle
+[INFO] 20:15:40:437 team/(8343:8343): Necesito 2 pokemons Pikachu
+[INFO] 20:15:40:437 team/(8343:8343): Necesito 1 pokemons Charmander
+[INFO] 20:17:08:821 team/(8444:8444): El algoritmo de planificacion es: 0
+[INFO] 20:17:08:821 team/(8444:8444): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:17:08:822 team/(8444:8444): Necesito 0 pokemons Pidgey
+[INFO] 20:17:08:822 team/(8444:8444): Necesito 0 pokemons Bulbasaur
+[INFO] 20:17:08:822 team/(8444:8444): Necesito 0 pokemons Squirtle
+[INFO] 20:17:08:822 team/(8444:8444): Necesito 2 pokemons Pikachu
+[INFO] 20:17:08:822 team/(8444:8444): Necesito 1 pokemons Charmander
+[INFO] 20:20:19:578 team/(8543:8543): El algoritmo de planificacion es: 0
+[INFO] 20:20:19:578 team/(8543:8543): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:20:19:578 team/(8543:8543): Necesito 0 pokemons Pidgey
+[INFO] 20:20:19:578 team/(8543:8543): Necesito 0 pokemons Bulbasaur
+[INFO] 20:20:19:584 team/(8543:8543): Necesito 0 pokemons Squirtle
+[INFO] 20:20:19:584 team/(8543:8543): Necesito 2 pokemons Pikachu
+[INFO] 20:20:19:588 team/(8543:8543): Necesito 1 pokemons Charmander
+[INFO] 20:20:44:123 team/(8588:8588): El algoritmo de planificacion es: 0
+[INFO] 20:20:44:125 team/(8588:8588): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:20:44:125 team/(8588:8588): Necesito 0 pokemons Pidgey
+[INFO] 20:20:44:125 team/(8588:8588): Necesito 0 pokemons Bulbasaur
+[INFO] 20:20:44:125 team/(8588:8588): Necesito 0 pokemons Squirtle
+[INFO] 20:20:44:125 team/(8588:8588): Necesito 2 pokemons Pikachu
+[INFO] 20:20:44:126 team/(8588:8588): Necesito 1 pokemons Charmander
+[INFO] 20:21:03:344 team/(8624:8624): El algoritmo de planificacion es: 0
+[INFO] 20:21:03:347 team/(8624:8624): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:21:03:348 team/(8624:8624): Necesito 0 pokemons Pidgey
+[INFO] 20:21:03:348 team/(8624:8624): Necesito 0 pokemons Bulbasaur
+[INFO] 20:21:03:348 team/(8624:8624): Necesito 0 pokemons Squirtle
+[INFO] 20:21:03:348 team/(8624:8624): Necesito 2 pokemons Pikachu
+[INFO] 20:21:03:348 team/(8624:8624): Necesito 1 pokemons Charmander
+[INFO] 20:22:43:963 team/(8676:8676): El algoritmo de planificacion es: 0
+[INFO] 20:22:43:963 team/(8676:8676): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:22:43:963 team/(8676:8676): Necesito 0 pokemons Pidgey
+[INFO] 20:22:43:964 team/(8676:8676): Necesito 0 pokemons Bulbasaur
+[INFO] 20:22:43:964 team/(8676:8676): Necesito 0 pokemons Squirtle
+[INFO] 20:22:43:964 team/(8676:8676): Necesito 2 pokemons Pikachu
+[INFO] 20:22:43:964 team/(8676:8676): Necesito 1 pokemons Charmander
+[INFO] 16:18:05:947 team/(4885:4885): El algoritmo de planificacion es: 0
+[INFO] 16:18:05:950 team/(4885:4885): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 16:18:05:955 team/(4885:4885): Necesito 0 pokemons Pidgey
+[INFO] 16:18:05:955 team/(4885:4885): Necesito 0 pokemons Bulbasaur
+[INFO] 16:18:05:955 team/(4885:4885): Necesito 0 pokemons Squirtle
+[INFO] 16:18:05:955 team/(4885:4885): Necesito 2 pokemons Pikachu
+[INFO] 16:18:05:955 team/(4885:4885): Necesito 1 pokemons Charmander
+[INFO] 17:41:24:703 team/(7876:7876): El algoritmo de planificacion es: 0
+[INFO] 17:41:24:706 team/(7876:7876): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:41:24:706 team/(7876:7876): Necesito 0 pokemons Pidgey
+[INFO] 17:41:24:709 team/(7876:7876): Necesito 0 pokemons Bulbasaur
+[INFO] 17:41:24:709 team/(7876:7876): Necesito 0 pokemons Squirtle
+[INFO] 17:41:24:710 team/(7876:7876): Necesito 2 pokemons Pikachu
+[INFO] 17:41:24:710 team/(7876:7876): Necesito 1 pokemons Charmander
+[INFO] 17:18:39:503 team/(5164:5164): El algoritmo de planificacion es: 0
+[INFO] 17:18:39:511 team/(5164:5164): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:18:39:515 team/(5164:5164): Necesito 0 pokemons Pidgey
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 0 pokemons Bulbasaur
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 0 pokemons Squirtle
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 2 pokemons Pikachu
+[INFO] 17:18:39:516 team/(5164:5164): Necesito 1 pokemons Charmander
+[INFO] 17:31:14:773 team/(5742:5742): El algoritmo de planificacion es: 0
+[INFO] 17:31:14:775 team/(5742:5742): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:31:14:775 team/(5742:5742): La ip del broker es: 127.0.0.1
+[INFO] 17:31:14:775 team/(5742:5742): Necesito 0 pokemons Pidgey
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 0 pokemons Bulbasaur
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 0 pokemons Squirtle
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 2 pokemons Pikachu
+[INFO] 17:31:14:776 team/(5742:5742): Necesito 1 pokemons Charmander
+[INFO] 16:38:41:780 team/(5150:5150): El algoritmo de planificacion es: 0
+[INFO] 16:38:41:781 team/(5150:5150): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 16:38:41:781 team/(5150:5150): Necesito 0 pokemons Pidgey
+[INFO] 16:38:41:781 team/(5150:5150): Necesito 0 pokemons Bulbasaur
+[INFO] 16:38:41:781 team/(5150:5150): Necesito 0 pokemons Squirtle
+[INFO] 16:38:41:781 team/(5150:5150): Necesito 2 pokemons Pikachu
+[INFO] 16:38:41:781 team/(5150:5150): Necesito 1 pokemons Charmander
+[INFO] 16:38:41:781 team/(5150:5150): El pokemon Pikachu es requerido?: 1
+[INFO] 16:38:54:115 team/(5189:5189): El algoritmo de planificacion es: 0
+[INFO] 16:38:54:116 team/(5189:5189): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 16:38:54:117 team/(5189:5189): Necesito 0 pokemons Pidgey
+[INFO] 16:38:54:117 team/(5189:5189): Necesito 0 pokemons Bulbasaur
+[INFO] 16:38:54:117 team/(5189:5189): Necesito 0 pokemons Squirtle
+[INFO] 16:38:54:117 team/(5189:5189): Necesito 2 pokemons Pikachu
+[INFO] 16:38:54:117 team/(5189:5189): Necesito 1 pokemons Charmander
+[INFO] 16:38:54:117 team/(5189:5189): El pokemon Pikachu es requerido?: 0
+[INFO] 17:53:24:591 team/(7305:7305): El algoritmo de planificacion es: 0
+[INFO] 17:53:24:592 team/(7305:7305): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:53:24:592 team/(7305:7305): Necesito 0 pokemons Pidgey
+[INFO] 17:53:24:592 team/(7305:7305): Necesito 0 pokemons Bulbasaur
+[INFO] 17:53:24:592 team/(7305:7305): Necesito 0 pokemons Squirtle
+[INFO] 17:53:24:592 team/(7305:7305): Necesito 2 pokemons Pikachu
+[INFO] 17:53:24:593 team/(7305:7305): Necesito 1 pokemons Charmander
+[INFO] 17:53:24:594 team/(7305:7311): Estoy en FIFO preparado para planificar
+[INFO] 17:53:24:595 team/(7305:7311): Cpu disponible del entrenador: 1163023441
+[INFO] 17:53:24:595 team/(7305:7311): Cpu usado del entrenador: 1
+[INFO] 17:53:26:601 team/(7305:7311): Cpu disponible del entrenador: 1163023441
+[INFO] 17:53:26:601 team/(7305:7311): Cpu usado del entrenador: 2
+[INFO] 17:53:28:602 team/(7305:7311): Cpu disponible del entrenador: 1163023441
+[INFO] 17:53:28:603 team/(7305:7311): Cpu usado del entrenador: 3
+[INFO] 17:54:51:68 team/(7365:7365): El algoritmo de planificacion es: 0
+[INFO] 17:54:51:71 team/(7365:7365): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:54:51:71 team/(7365:7365): Necesito 0 pokemons Pidgey
+[INFO] 17:54:51:71 team/(7365:7365): Necesito 0 pokemons Bulbasaur
+[INFO] 17:54:51:71 team/(7365:7365): Necesito 0 pokemons Squirtle
+[INFO] 17:54:51:71 team/(7365:7365): Necesito 2 pokemons Pikachu
+[INFO] 17:54:51:71 team/(7365:7365): Necesito 1 pokemons Charmander
+[INFO] 17:54:51:72 team/(7365:7370): Estoy en FIFO preparado para planificar
+[INFO] 17:54:51:72 team/(7365:7370): Cpu disponible del entrenador: 3
+[INFO] 17:54:51:72 team/(7365:7370): Cpu usado del entrenador: 1
+[INFO] 17:54:53:76 team/(7365:7370): Cpu disponible del entrenador: 3
+[INFO] 17:54:53:76 team/(7365:7370): Cpu usado del entrenador: 2
+[INFO] 17:54:55:76 team/(7365:7370): Cpu disponible del entrenador: 3
+[INFO] 17:54:55:76 team/(7365:7370): Cpu usado del entrenador: 3
+[INFO] 17:54:57:77 team/(7365:7370): Estoy en FIFO preparado para planificar
+[INFO] 17:58:30:429 team/(7490:7490): El algoritmo de planificacion es: 0
+[INFO] 17:58:30:430 team/(7490:7490): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:58:30:430 team/(7490:7490): Necesito 0 pokemons Pidgey
+[INFO] 17:58:30:430 team/(7490:7490): Necesito 0 pokemons Bulbasaur
+[INFO] 17:58:30:430 team/(7490:7490): Necesito 0 pokemons Squirtle
+[INFO] 17:58:30:430 team/(7490:7490): Necesito 2 pokemons Pikachu
+[INFO] 17:58:30:430 team/(7490:7490): Necesito 1 pokemons Charmander
+[INFO] 17:58:30:435 team/(7490:7495): Estoy en FIFO preparado para planificar
+[INFO] 17:58:30:435 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:30:436 team/(7490:7495): Cpu usado del entrenador: 1
+[INFO] 17:58:30:436 team/(7490:7496): Entrenador moviendose a la posicion: 9|7.
+[INFO] 17:58:32:438 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:32:438 team/(7490:7495): Cpu usado del entrenador: 2
+[INFO] 17:58:32:439 team/(7490:7497): Entrenador moviendose a la posicion: 8|7.
+[INFO] 17:58:34:440 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:34:441 team/(7490:7495): Cpu usado del entrenador: 3
+[INFO] 17:58:34:441 team/(7490:7498): Entrenador moviendose a la posicion: 7|7.
+[INFO] 17:58:36:441 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:36:441 team/(7490:7495): Cpu usado del entrenador: 4
+[INFO] 17:58:36:441 team/(7490:7499): Entrenador moviendose a la posicion: 6|7.
+[INFO] 17:58:38:442 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:38:443 team/(7490:7495): Cpu usado del entrenador: 5
+[INFO] 17:58:38:443 team/(7490:7500): Entrenador moviendose a la posicion: 5|7.
+[INFO] 17:58:40:443 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:40:443 team/(7490:7495): Cpu usado del entrenador: 6
+[INFO] 17:58:40:443 team/(7490:7501): Entrenador moviendose a la posicion: 4|7.
+[INFO] 17:58:42:444 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:42:444 team/(7490:7495): Cpu usado del entrenador: 7
+[INFO] 17:58:42:444 team/(7490:7502): Entrenador moviendose a la posicion: 3|7.
+[INFO] 17:58:44:445 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:44:446 team/(7490:7495): Cpu usado del entrenador: 8
+[INFO] 17:58:44:446 team/(7490:7503): Entrenador moviendose a la posicion: 2|7.
+[INFO] 17:58:46:446 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:46:447 team/(7490:7495): Cpu usado del entrenador: 9
+[INFO] 17:58:46:449 team/(7490:7504): Entrenador moviendose a la posicion: 1|7.
+[INFO] 17:58:48:450 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:48:450 team/(7490:7495): Cpu usado del entrenador: 10
+[INFO] 17:58:48:450 team/(7490:7507): Entrenador moviendose a la posicion: 0|7.
+[INFO] 17:58:50:450 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:50:450 team/(7490:7495): Cpu usado del entrenador: 11
+[INFO] 17:58:50:451 team/(7490:7508): Entrenador moviendose a la posicion: 0|6.
+[INFO] 17:58:52:451 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:52:452 team/(7490:7495): Cpu usado del entrenador: 12
+[INFO] 17:58:52:457 team/(7490:7509): Entrenador moviendose a la posicion: 0|5.
+[INFO] 17:58:54:458 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:54:458 team/(7490:7495): Cpu usado del entrenador: 13
+[INFO] 17:58:54:458 team/(7490:7510): Entrenador moviendose a la posicion: 0|4.
+[INFO] 17:58:56:459 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:56:459 team/(7490:7495): Cpu usado del entrenador: 14
+[INFO] 17:58:56:459 team/(7490:7511): Entrenador moviendose a la posicion: 0|3.
+[INFO] 17:58:58:459 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:58:58:466 team/(7490:7495): Cpu usado del entrenador: 15
+[INFO] 17:58:58:466 team/(7490:7512): Entrenador moviendose a la posicion: 0|2.
+[INFO] 17:59:00:467 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:59:00:467 team/(7490:7495): Cpu usado del entrenador: 16
+[INFO] 17:59:00:467 team/(7490:7513): Entrenador moviendose a la posicion: 0|1.
+[INFO] 17:59:02:467 team/(7490:7495): Cpu disponible del entrenador: 17
+[INFO] 17:59:02:468 team/(7490:7495): Cpu usado del entrenador: 17
+[INFO] 17:59:02:468 team/(7490:7514): Entrenador moviendose a la posicion: 0|0.
+[INFO] 17:59:04:469 team/(7490:7495): Estoy en FIFO preparado para planificar
+[INFO] 18:00:03:823 team/(7553:7553): El algoritmo de planificacion es: 0
+[INFO] 18:00:03:827 team/(7553:7553): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:00:03:828 team/(7553:7553): Necesito 0 pokemons Pidgey
+[INFO] 18:00:03:828 team/(7553:7553): Necesito 0 pokemons Bulbasaur
+[INFO] 18:00:03:828 team/(7553:7553): Necesito 0 pokemons Squirtle
+[INFO] 18:00:03:828 team/(7553:7553): Necesito 2 pokemons Pikachu
+[INFO] 18:00:03:828 team/(7553:7553): Necesito 1 pokemons Charmander
+[INFO] 18:00:03:830 team/(7553:7558): Estoy en FIFO preparado para planificar
+[INFO] 18:00:03:831 team/(7553:7558): Cpu disponible del entrenador: 17
+[INFO] 18:00:03:831 team/(7553:7558): Cpu usado del entrenador: 1
+[INFO] 18:00:03:836 team/(7553:7559): Entrenador moviendose a la posicion: 6|10.
+[INFO] 18:00:05:838 team/(7553:7558): Cpu disponible del entrenador: 17
+[INFO] 18:00:05:839 team/(7553:7558): Cpu usado del entrenador: 2
+[INFO] 18:00:05:848 team/(7553:7560): Entrenador moviendose a la posicion: 5|10.
+[INFO] 18:00:07:848 team/(7553:7558): Cpu disponible del entrenador: 17
+[INFO] 18:00:07:851 team/(7553:7558): Cpu usado del entrenador: 3
+[INFO] 18:00:07:856 team/(7553:7561): Entrenador moviendose a la posicion: 4|10.
+[INFO] 18:00:09:857 team/(7553:7558): Cpu disponible del entrenador: 17
+[INFO] 18:00:09:857 team/(7553:7558): Cpu usado del entrenador: 4
+[INFO] 18:00:09:857 team/(7553:7562): Entrenador moviendose a la posicion: 3|10.
+[INFO] 18:00:11:858 team/(7553:7558): Cpu disponible del entrenador: 17
+[INFO] 18:00:11:860 team/(7553:7558): Cpu usado del entrenador: 5
+[INFO] 18:00:11:862 team/(7553:7563): Entrenador moviendose a la posicion: 2|10.
+[INFO] 18:00:13:863 team/(7553:7558): Cpu disponible del entrenador: 17
+[INFO] 18:00:13:863 team/(7553:7558): Cpu usado del entrenador: 6
+[INFO] 18:00:13:863 team/(7553:7564): Entrenador moviendose a la posicion: 1|10.
+[INFO] 18:01:02:848 team/(7599:7599): El algoritmo de planificacion es: 0
+[INFO] 18:01:02:848 team/(7599:7599): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:01:02:849 team/(7599:7599): Necesito 0 pokemons Pidgey
+[INFO] 18:01:02:849 team/(7599:7599): Necesito 0 pokemons Bulbasaur
+[INFO] 18:01:02:853 team/(7599:7599): Necesito 0 pokemons Squirtle
+[INFO] 18:01:02:853 team/(7599:7599): Necesito 2 pokemons Pikachu
+[INFO] 18:01:02:854 team/(7599:7599): Necesito 1 pokemons Charmander
+[INFO] 18:01:02:855 team/(7599:7604): Estoy en FIFO preparado para planificar
+[INFO] 18:01:02:855 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:02:855 team/(7599:7604): Cpu usado del entrenador: 1
+[INFO] 18:01:02:856 team/(7599:7605): Entrenador moviendose a la posicion: 501|5.
+[INFO] 18:01:04:856 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:04:856 team/(7599:7604): Cpu usado del entrenador: 2
+[INFO] 18:01:04:856 team/(7599:7606): Entrenador moviendose a la posicion: 502|5.
+[INFO] 18:01:06:857 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:06:857 team/(7599:7604): Cpu usado del entrenador: 3
+[INFO] 18:01:06:858 team/(7599:7607): Entrenador moviendose a la posicion: 503|5.
+[INFO] 18:01:08:868 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:08:868 team/(7599:7604): Cpu usado del entrenador: 4
+[INFO] 18:01:08:868 team/(7599:7609): Entrenador moviendose a la posicion: 504|5.
+[INFO] 18:01:10:869 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:10:869 team/(7599:7604): Cpu usado del entrenador: 5
+[INFO] 18:01:10:870 team/(7599:7610): Entrenador moviendose a la posicion: 505|5.
+[INFO] 18:01:12:871 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:12:871 team/(7599:7604): Cpu usado del entrenador: 6
+[INFO] 18:01:12:871 team/(7599:7611): Entrenador moviendose a la posicion: 506|5.
+[INFO] 18:01:14:872 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:14:878 team/(7599:7604): Cpu usado del entrenador: 7
+[INFO] 18:01:14:879 team/(7599:7612): Entrenador moviendose a la posicion: 507|5.
+[INFO] 18:01:16:880 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:16:880 team/(7599:7604): Cpu usado del entrenador: 8
+[INFO] 18:01:16:881 team/(7599:7613): Entrenador moviendose a la posicion: 508|5.
+[INFO] 18:01:18:881 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:18:881 team/(7599:7604): Cpu usado del entrenador: 9
+[INFO] 18:01:18:881 team/(7599:7614): Entrenador moviendose a la posicion: 509|5.
+[INFO] 18:01:20:882 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:20:882 team/(7599:7604): Cpu usado del entrenador: 10
+[INFO] 18:01:20:882 team/(7599:7615): Entrenador moviendose a la posicion: 510|5.
+[INFO] 18:01:22:883 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:22:883 team/(7599:7604): Cpu usado del entrenador: 11
+[INFO] 18:01:22:884 team/(7599:7616): Entrenador moviendose a la posicion: 510|6.
+[INFO] 18:01:24:884 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:24:884 team/(7599:7604): Cpu usado del entrenador: 12
+[INFO] 18:01:24:884 team/(7599:7617): Entrenador moviendose a la posicion: 510|7.
+[INFO] 18:01:26:885 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:26:885 team/(7599:7604): Cpu usado del entrenador: 13
+[INFO] 18:01:26:885 team/(7599:7618): Entrenador moviendose a la posicion: 510|8.
+[INFO] 18:01:28:885 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:28:885 team/(7599:7604): Cpu usado del entrenador: 14
+[INFO] 18:01:28:885 team/(7599:7620): Entrenador moviendose a la posicion: 510|9.
+[INFO] 18:01:30:886 team/(7599:7604): Cpu disponible del entrenador: 15
+[INFO] 18:01:30:887 team/(7599:7604): Cpu usado del entrenador: 15
+[INFO] 18:01:30:888 team/(7599:7621): Entrenador moviendose a la posicion: 510|10.
+[INFO] 18:01:32:888 team/(7599:7604): Estoy en FIFO preparado para planificar
+[INFO] 18:04:05:96 team/(7718:7718): El algoritmo de planificacion es: 0
+[INFO] 18:04:05:104 team/(7718:7718): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:04:05:104 team/(7718:7718): Necesito 0 pokemons Pidgey
+[INFO] 18:04:05:104 team/(7718:7718): Necesito 0 pokemons Bulbasaur
+[INFO] 18:04:05:104 team/(7718:7718): Necesito 0 pokemons Squirtle
+[INFO] 18:04:05:104 team/(7718:7718): Necesito 2 pokemons Pikachu
+[INFO] 18:04:05:104 team/(7718:7718): Necesito 1 pokemons Charmander
+[INFO] 18:04:05:110 team/(7718:7723): Estoy en FIFO preparado para planificar
+[INFO] 18:05:01:843 team/(7770:7770): El algoritmo de planificacion es: 0
+[INFO] 18:05:01:844 team/(7770:7770): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:05:01:844 team/(7770:7770): Necesito 0 pokemons Pidgey
+[INFO] 18:05:01:844 team/(7770:7770): Necesito 0 pokemons Bulbasaur
+[INFO] 18:05:01:844 team/(7770:7770): Necesito 0 pokemons Squirtle
+[INFO] 18:05:01:846 team/(7770:7770): Necesito 2 pokemons Pikachu
+[INFO] 18:05:01:846 team/(7770:7770): Necesito 1 pokemons Charmander
+[INFO] 18:06:04:673 team/(7821:7821): El algoritmo de planificacion es: 0
+[INFO] 18:06:04:673 team/(7821:7821): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:06:04:673 team/(7821:7821): Necesito 0 pokemons Pidgey
+[INFO] 18:06:04:673 team/(7821:7821): Necesito 0 pokemons Bulbasaur
+[INFO] 18:06:04:673 team/(7821:7821): Necesito 0 pokemons Squirtle
+[INFO] 18:06:04:673 team/(7821:7821): Necesito 2 pokemons Pikachu
+[INFO] 18:06:04:673 team/(7821:7821): Necesito 1 pokemons Charmander
+[INFO] 18:06:04:675 team/(7821:7826): Estoy en FIFO preparado para planificar
+[INFO] 18:06:22:176 team/(7856:7856): El algoritmo de planificacion es: 0
+[INFO] 18:06:22:176 team/(7856:7856): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:06:22:176 team/(7856:7856): Necesito 0 pokemons Pidgey
+[INFO] 18:06:22:176 team/(7856:7856): Necesito 0 pokemons Bulbasaur
+[INFO] 18:06:22:176 team/(7856:7856): Necesito 0 pokemons Squirtle
+[INFO] 18:06:22:176 team/(7856:7856): Necesito 2 pokemons Pikachu
+[INFO] 18:06:22:177 team/(7856:7856): Necesito 1 pokemons Charmander
+[INFO] 18:06:22:177 team/(7856:7861): Estoy en FIFO preparado para planificar
+[INFO] 18:06:37:195 team/(7890:7890): El algoritmo de planificacion es: 0
+[INFO] 18:06:37:195 team/(7890:7890): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:06:37:195 team/(7890:7890): Necesito 0 pokemons Pidgey
+[INFO] 18:06:37:195 team/(7890:7890): Necesito 0 pokemons Bulbasaur
+[INFO] 18:06:37:195 team/(7890:7890): Necesito 0 pokemons Squirtle
+[INFO] 18:06:37:195 team/(7890:7890): Necesito 2 pokemons Pikachu
+[INFO] 18:06:37:203 team/(7890:7890): Necesito 1 pokemons Charmander
+[INFO] 18:06:37:203 team/(7890:7895): Estoy en FIFO preparado para planificar
+[INFO] 18:10:11:552 team/(8043:8043): El algoritmo de planificacion es: 0
+[INFO] 18:10:11:561 team/(8043:8043): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:10:11:561 team/(8043:8043): Necesito 0 pokemons Pidgey
+[INFO] 18:10:11:566 team/(8043:8043): Necesito 0 pokemons Bulbasaur
+[INFO] 18:10:11:566 team/(8043:8043): Necesito 0 pokemons Squirtle
+[INFO] 18:10:11:566 team/(8043:8043): Necesito 2 pokemons Pikachu
+[INFO] 18:10:11:566 team/(8043:8043): Necesito 1 pokemons Charmander
+[INFO] 18:10:11:570 team/(8043:8048): Estoy en FIFO preparado para planificar
+[INFO] 18:13:40:205 team/(8198:8198): El algoritmo de planificacion es: 0
+[INFO] 18:13:40:205 team/(8198:8198): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:13:40:205 team/(8198:8198): Necesito 0 pokemons Pidgey
+[INFO] 18:13:40:205 team/(8198:8198): Necesito 0 pokemons Bulbasaur
+[INFO] 18:13:40:205 team/(8198:8198): Necesito 0 pokemons Squirtle
+[INFO] 18:13:40:205 team/(8198:8198): Necesito 2 pokemons Pikachu
+[INFO] 18:13:40:206 team/(8198:8198): Necesito 1 pokemons Charmander
+[INFO] 18:13:40:212 team/(8198:8203): Estoy en FIFO preparado para planificar
+[INFO] 18:13:40:212 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:40:212 team/(8198:8203): Cpu usado del entrenador: 1
+[INFO] 18:13:40:213 team/(8198:8205): Entrenador moviendose a la posicion: 501|5.
+[INFO] 18:13:42:214 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:42:214 team/(8198:8203): Cpu usado del entrenador: 2
+[INFO] 18:13:42:220 team/(8198:8206): Entrenador moviendose a la posicion: 502|5.
+[INFO] 18:13:44:221 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:44:221 team/(8198:8203): Cpu usado del entrenador: 3
+[INFO] 18:13:44:225 team/(8198:8207): Entrenador moviendose a la posicion: 503|5.
+[INFO] 18:13:46:225 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:46:225 team/(8198:8203): Cpu usado del entrenador: 4
+[INFO] 18:13:46:230 team/(8198:8209): Entrenador moviendose a la posicion: 504|5.
+[INFO] 18:13:48:231 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:48:231 team/(8198:8203): Cpu usado del entrenador: 5
+[INFO] 18:13:48:238 team/(8198:8210): Entrenador moviendose a la posicion: 505|5.
+[INFO] 18:13:50:239 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:50:239 team/(8198:8203): Cpu usado del entrenador: 6
+[INFO] 18:13:50:242 team/(8198:8213): Entrenador moviendose a la posicion: 506|5.
+[INFO] 18:13:52:246 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:52:246 team/(8198:8203): Cpu usado del entrenador: 7
+[INFO] 18:13:52:246 team/(8198:8214): Entrenador moviendose a la posicion: 507|5.
+[INFO] 18:13:54:246 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:54:247 team/(8198:8203): Cpu usado del entrenador: 8
+[INFO] 18:13:54:251 team/(8198:8215): Entrenador moviendose a la posicion: 508|5.
+[INFO] 18:13:56:254 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:56:254 team/(8198:8203): Cpu usado del entrenador: 9
+[INFO] 18:13:56:259 team/(8198:8216): Entrenador moviendose a la posicion: 509|5.
+[INFO] 18:13:58:259 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:13:58:260 team/(8198:8203): Cpu usado del entrenador: 10
+[INFO] 18:13:58:262 team/(8198:8217): Entrenador moviendose a la posicion: 510|5.
+[INFO] 18:14:00:263 team/(8198:8203): Cpu disponible del entrenador: 15
+[INFO] 18:14:00:263 team/(8198:8203): Cpu usado del entrenador: 11
+[INFO] 18:14:00:271 team/(8198:8223): Entrenador moviendose a la posicion: 510|6.
+[INFO] 18:14:08:767 team/(8249:8249): El algoritmo de planificacion es: 0
+[INFO] 18:14:08:774 team/(8249:8249): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:14:08:777 team/(8249:8249): Necesito 0 pokemons Pidgey
+[INFO] 18:14:08:777 team/(8249:8249): Necesito 0 pokemons Bulbasaur
+[INFO] 18:14:08:777 team/(8249:8249): Necesito 0 pokemons Squirtle
+[INFO] 18:14:08:777 team/(8249:8249): Necesito 2 pokemons Pikachu
+[INFO] 18:14:08:777 team/(8249:8249): Necesito 1 pokemons Charmander
+[INFO] 18:14:08:791 team/(8249:8254): Estoy en FIFO preparado para planificar
+[INFO] 18:14:08:803 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:08:803 team/(8249:8254): Cpu usado del entrenador: 1
+[INFO] 18:14:08:804 team/(8249:8256): Entrenador moviendose a la posicion: 501|5.
+[INFO] 18:14:10:805 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:10:808 team/(8249:8254): Cpu usado del entrenador: 2
+[INFO] 18:14:10:811 team/(8249:8257): Entrenador moviendose a la posicion: 502|5.
+[INFO] 18:14:12:812 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:12:812 team/(8249:8254): Cpu usado del entrenador: 3
+[INFO] 18:14:12:815 team/(8249:8258): Entrenador moviendose a la posicion: 503|5.
+[INFO] 18:14:14:815 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:14:816 team/(8249:8254): Cpu usado del entrenador: 4
+[INFO] 18:14:14:818 team/(8249:8259): Entrenador moviendose a la posicion: 504|5.
+[INFO] 18:14:16:819 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:16:819 team/(8249:8254): Cpu usado del entrenador: 5
+[INFO] 18:14:16:822 team/(8249:8260): Entrenador moviendose a la posicion: 505|5.
+[INFO] 18:14:18:822 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:18:822 team/(8249:8254): Cpu usado del entrenador: 6
+[INFO] 18:14:18:827 team/(8249:8261): Entrenador moviendose a la posicion: 506|5.
+[INFO] 18:14:20:827 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:20:828 team/(8249:8254): Cpu usado del entrenador: 7
+[INFO] 18:14:20:831 team/(8249:8262): Entrenador moviendose a la posicion: 507|5.
+[INFO] 18:14:22:832 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:22:832 team/(8249:8254): Cpu usado del entrenador: 8
+[INFO] 18:14:22:834 team/(8249:8263): Entrenador moviendose a la posicion: 508|5.
+[INFO] 18:14:24:836 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:24:836 team/(8249:8254): Cpu usado del entrenador: 9
+[INFO] 18:14:24:847 team/(8249:8264): Entrenador moviendose a la posicion: 509|5.
+[INFO] 18:14:26:848 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:26:848 team/(8249:8254): Cpu usado del entrenador: 10
+[INFO] 18:14:26:851 team/(8249:8265): Entrenador moviendose a la posicion: 510|5.
+[INFO] 18:14:28:851 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:28:852 team/(8249:8254): Cpu usado del entrenador: 11
+[INFO] 18:14:28:854 team/(8249:8266): Entrenador moviendose a la posicion: 510|6.
+[INFO] 18:14:30:855 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:30:855 team/(8249:8254): Cpu usado del entrenador: 12
+[INFO] 18:14:30:863 team/(8249:8272): Entrenador moviendose a la posicion: 510|7.
+[INFO] 18:14:32:863 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:32:864 team/(8249:8254): Cpu usado del entrenador: 13
+[INFO] 18:14:32:866 team/(8249:8273): Entrenador moviendose a la posicion: 510|8.
+[INFO] 18:14:34:867 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:34:867 team/(8249:8254): Cpu usado del entrenador: 14
+[INFO] 18:14:34:869 team/(8249:8274): Entrenador moviendose a la posicion: 510|9.
+[INFO] 18:14:36:870 team/(8249:8254): Cpu disponible del entrenador: 15
+[INFO] 18:14:36:870 team/(8249:8254): Cpu usado del entrenador: 15
+[INFO] 18:14:36:872 team/(8249:8275): Entrenador moviendose a la posicion: 510|10.
+[INFO] 18:14:38:873 team/(8249:8254): Estoy en FIFO preparado para planificar
+[INFO] 18:18:55:32 team/(8407:8407): El algoritmo de planificacion es: 0
+[INFO] 18:18:55:32 team/(8407:8407): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:18:55:32 team/(8407:8407): Necesito 0 pokemons Pidgey
+[INFO] 18:18:55:32 team/(8407:8407): Necesito 0 pokemons Bulbasaur
+[INFO] 18:18:55:33 team/(8407:8407): Necesito 0 pokemons Squirtle
+[INFO] 18:18:55:33 team/(8407:8407): Necesito 2 pokemons Pikachu
+[INFO] 18:18:55:33 team/(8407:8407): Necesito 1 pokemons Charmander
+[INFO] 18:18:55:38 team/(8407:8412): Estoy en FIFO preparado para planificar
+[INFO] 18:18:55:38 team/(8407:8412): Cpu disponible del entrenador: 2
+[INFO] 18:18:55:39 team/(8407:8412): Cpu usado del entrenador: 1
+[INFO] 18:18:55:42 team/(8407:8414): Entrenador moviendose a la posicion: 500|6.
+[INFO] 18:18:57:43 team/(8407:8412): Cpu disponible del entrenador: 2
+[INFO] 18:18:57:44 team/(8407:8412): Cpu usado del entrenador: 2
+[INFO] 18:18:57:45 team/(8407:8415): Entrenador moviendose a la posicion: 500|7.
+[INFO] 18:18:59:45 team/(8407:8412): Estoy en FIFO preparado para planificar
+[INFO] 18:18:59:46 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:18:59:46 team/(8407:8412): Cpu usado del entrenador: 1
+[INFO] 18:18:59:54 team/(8407:8416): Entrenador moviendose a la posicion: 9|7.
+[INFO] 18:19:01:55 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:01:55 team/(8407:8412): Cpu usado del entrenador: 2
+[INFO] 18:19:01:62 team/(8407:8417): Entrenador moviendose a la posicion: 8|7.
+[INFO] 18:19:03:63 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:03:64 team/(8407:8412): Cpu usado del entrenador: 3
+[INFO] 18:19:03:70 team/(8407:8418): Entrenador moviendose a la posicion: 7|7.
+[INFO] 18:19:05:71 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:05:71 team/(8407:8412): Cpu usado del entrenador: 4
+[INFO] 18:19:05:78 team/(8407:8419): Entrenador moviendose a la posicion: 6|7.
+[INFO] 18:19:07:79 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:07:79 team/(8407:8412): Cpu usado del entrenador: 5
+[INFO] 18:19:07:83 team/(8407:8420): Entrenador moviendose a la posicion: 5|7.
+[INFO] 18:19:09:83 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:09:84 team/(8407:8412): Cpu usado del entrenador: 6
+[INFO] 18:19:09:90 team/(8407:8421): Entrenador moviendose a la posicion: 4|7.
+[INFO] 18:19:11:91 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:11:91 team/(8407:8412): Cpu usado del entrenador: 7
+[INFO] 18:19:11:95 team/(8407:8422): Entrenador moviendose a la posicion: 3|7.
+[INFO] 18:19:13:96 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:13:96 team/(8407:8412): Cpu usado del entrenador: 8
+[INFO] 18:19:13:109 team/(8407:8423): Entrenador moviendose a la posicion: 2|7.
+[INFO] 18:19:15:110 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:15:110 team/(8407:8412): Cpu usado del entrenador: 9
+[INFO] 18:19:15:112 team/(8407:8424): Entrenador moviendose a la posicion: 1|7.
+[INFO] 18:19:17:113 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:17:113 team/(8407:8412): Cpu usado del entrenador: 10
+[INFO] 18:19:17:114 team/(8407:8425): Entrenador moviendose a la posicion: 0|7.
+[INFO] 18:19:19:122 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:19:122 team/(8407:8412): Cpu usado del entrenador: 11
+[INFO] 18:19:19:125 team/(8407:8426): Entrenador moviendose a la posicion: 0|8.
+[INFO] 18:19:21:130 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:21:130 team/(8407:8412): Cpu usado del entrenador: 12
+[INFO] 18:19:21:145 team/(8407:8428): Entrenador moviendose a la posicion: 0|9.
+[INFO] 18:19:23:146 team/(8407:8412): Cpu disponible del entrenador: 13
+[INFO] 18:19:23:147 team/(8407:8412): Cpu usado del entrenador: 13
+[INFO] 18:19:23:155 team/(8407:8430): Entrenador moviendose a la posicion: 0|10.
+[INFO] 18:19:25:155 team/(8407:8412): Estoy en FIFO preparado para planificar
+[INFO] 19:23:27:542 team/(5608:5608): El algoritmo de planificacion es: 0
+[INFO] 19:23:27:546 team/(5608:5608): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 0 pokemons Pidgey
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 0 pokemons Bulbasaur
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 0 pokemons Squirtle
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 2 pokemons Pikachu
+[INFO] 19:23:27:547 team/(5608:5608): Necesito 1 pokemons Charmander
+[INFO] 19:23:27:549 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:23:27:549 team/(5608:5613): Cpu disponible del entrenador: 2
+[INFO] 19:23:27:553 team/(5608:5613): Cpu usado del entrenador: 1
+[INFO] 19:23:27:565 team/(5608:5615): Entrenador moviendose a la posicion: 500|6.
+[INFO] 19:23:29:565 team/(5608:5613): Cpu disponible del entrenador: 2
+[INFO] 19:23:29:565 team/(5608:5613): Cpu usado del entrenador: 2
+[INFO] 19:23:29:572 team/(5608:5616): Entrenador moviendose a la posicion: 500|7.
+[INFO] 19:23:31:573 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:23:31:573 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:31:573 team/(5608:5613): Cpu usado del entrenador: 1
+[INFO] 19:23:31:588 team/(5608:5617): Entrenador moviendose a la posicion: 9|7.
+[INFO] 19:23:33:588 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:33:589 team/(5608:5613): Cpu usado del entrenador: 2
+[INFO] 19:23:33:589 team/(5608:5618): Entrenador moviendose a la posicion: 8|7.
+[INFO] 19:23:35:590 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:35:590 team/(5608:5613): Cpu usado del entrenador: 3
+[INFO] 19:23:35:593 team/(5608:5619): Entrenador moviendose a la posicion: 7|7.
+[INFO] 19:23:37:594 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:37:594 team/(5608:5613): Cpu usado del entrenador: 4
+[INFO] 19:23:37:605 team/(5608:5620): Entrenador moviendose a la posicion: 6|7.
+[INFO] 19:23:39:606 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:39:606 team/(5608:5613): Cpu usado del entrenador: 5
+[INFO] 19:23:39:609 team/(5608:5621): Entrenador moviendose a la posicion: 5|7.
+[INFO] 19:23:41:610 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:41:613 team/(5608:5613): Cpu usado del entrenador: 6
+[INFO] 19:23:41:615 team/(5608:5622): Entrenador moviendose a la posicion: 4|7.
+[INFO] 19:23:43:615 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:43:615 team/(5608:5613): Cpu usado del entrenador: 7
+[INFO] 19:23:43:621 team/(5608:5623): Entrenador moviendose a la posicion: 3|7.
+[INFO] 19:23:45:621 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:45:622 team/(5608:5613): Cpu usado del entrenador: 8
+[INFO] 19:23:45:625 team/(5608:5624): Entrenador moviendose a la posicion: 2|7.
+[INFO] 19:23:47:630 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:47:630 team/(5608:5613): Cpu usado del entrenador: 9
+[INFO] 19:23:47:632 team/(5608:5625): Entrenador moviendose a la posicion: 1|7.
+[INFO] 19:23:49:633 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:49:633 team/(5608:5613): Cpu usado del entrenador: 10
+[INFO] 19:23:49:649 team/(5608:5626): Entrenador moviendose a la posicion: 0|7.
+[INFO] 19:23:51:650 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:51:650 team/(5608:5613): Cpu usado del entrenador: 11
+[INFO] 19:23:51:653 team/(5608:5627): Entrenador moviendose a la posicion: 0|8.
+[INFO] 19:23:53:653 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:53:654 team/(5608:5613): Cpu usado del entrenador: 12
+[INFO] 19:23:53:657 team/(5608:5630): Entrenador moviendose a la posicion: 0|9.
+[INFO] 19:23:55:666 team/(5608:5613): Cpu disponible del entrenador: 13
+[INFO] 19:23:55:666 team/(5608:5613): Cpu usado del entrenador: 13
+[INFO] 19:23:55:669 team/(5608:5631): Entrenador moviendose a la posicion: 0|10.
+[INFO] 19:23:57:670 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:23:57:670 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:23:57:670 team/(5608:5613): Cpu usado del entrenador: 1
+[INFO] 19:23:57:673 team/(5608:5633): Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:23:59:673 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:23:59:674 team/(5608:5613): Cpu usado del entrenador: 2
+[INFO] 19:23:59:677 team/(5608:5634): Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:24:01:682 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:01:682 team/(5608:5613): Cpu usado del entrenador: 3
+[INFO] 19:24:01:685 team/(5608:5635): Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:24:03:685 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:03:685 team/(5608:5613): Cpu usado del entrenador: 4
+[INFO] 19:24:03:689 team/(5608:5636): Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:24:05:689 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:05:690 team/(5608:5613): Cpu usado del entrenador: 5
+[INFO] 19:24:05:692 team/(5608:5637): Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:24:07:692 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:07:692 team/(5608:5613): Cpu usado del entrenador: 6
+[INFO] 19:24:07:697 team/(5608:5638): Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:24:09:698 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:09:698 team/(5608:5613): Cpu usado del entrenador: 7
+[INFO] 19:24:09:713 team/(5608:5639): Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:24:11:713 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:11:714 team/(5608:5613): Cpu usado del entrenador: 8
+[INFO] 19:24:11:731 team/(5608:5640): Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:24:13:744 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:13:744 team/(5608:5613): Cpu usado del entrenador: 9
+[INFO] 19:24:13:744 team/(5608:5641): Entrenador moviendose a la posicion: 16|0.
+[INFO] 19:24:15:754 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:15:754 team/(5608:5613): Cpu usado del entrenador: 10
+[INFO] 19:24:15:757 team/(5608:5642): Entrenador moviendose a la posicion: 17|0.
+[INFO] 19:24:17:758 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:17:758 team/(5608:5613): Cpu usado del entrenador: 11
+[INFO] 19:24:17:761 team/(5608:5643): Entrenador moviendose a la posicion: 18|0.
+[INFO] 19:24:19:761 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:19:762 team/(5608:5613): Cpu usado del entrenador: 12
+[INFO] 19:24:19:765 team/(5608:5649): Entrenador moviendose a la posicion: 19|0.
+[INFO] 19:24:21:770 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:21:770 team/(5608:5613): Cpu usado del entrenador: 13
+[INFO] 19:24:21:777 team/(5608:5650): Entrenador moviendose a la posicion: 20|0.
+[INFO] 19:24:23:778 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:23:778 team/(5608:5613): Cpu usado del entrenador: 14
+[INFO] 19:24:23:781 team/(5608:5651): Entrenador moviendose a la posicion: 20|1.
+[INFO] 19:24:25:782 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:25:782 team/(5608:5613): Cpu usado del entrenador: 15
+[INFO] 19:24:25:798 team/(5608:5652): Entrenador moviendose a la posicion: 20|2.
+[INFO] 19:24:27:801 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:27:801 team/(5608:5613): Cpu usado del entrenador: 16
+[INFO] 19:24:27:805 team/(5608:5653): Entrenador moviendose a la posicion: 20|3.
+[INFO] 19:24:29:806 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:29:806 team/(5608:5613): Cpu usado del entrenador: 17
+[INFO] 19:24:29:809 team/(5608:5654): Entrenador moviendose a la posicion: 20|4.
+[INFO] 19:24:31:810 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:31:810 team/(5608:5613): Cpu usado del entrenador: 18
+[INFO] 19:24:31:813 team/(5608:5655): Entrenador moviendose a la posicion: 20|5.
+[INFO] 19:24:33:814 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:33:814 team/(5608:5613): Cpu usado del entrenador: 19
+[INFO] 19:24:33:818 team/(5608:5656): Entrenador moviendose a la posicion: 20|6.
+[INFO] 19:24:35:818 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:35:818 team/(5608:5613): Cpu usado del entrenador: 20
+[INFO] 19:24:35:821 team/(5608:5662): Entrenador moviendose a la posicion: 20|7.
+[INFO] 19:24:37:822 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:37:822 team/(5608:5613): Cpu usado del entrenador: 21
+[INFO] 19:24:37:827 team/(5608:5663): Entrenador moviendose a la posicion: 20|8.
+[INFO] 19:24:39:827 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:39:828 team/(5608:5613): Cpu usado del entrenador: 22
+[INFO] 19:24:39:835 team/(5608:5664): Entrenador moviendose a la posicion: 20|9.
+[INFO] 19:24:41:836 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:41:836 team/(5608:5613): Cpu usado del entrenador: 23
+[INFO] 19:24:41:841 team/(5608:5665): Entrenador moviendose a la posicion: 20|10.
+[INFO] 19:24:43:842 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:43:842 team/(5608:5613): Cpu usado del entrenador: 24
+[INFO] 19:24:43:845 team/(5608:5666): Entrenador moviendose a la posicion: 20|11.
+[INFO] 19:24:45:845 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:45:845 team/(5608:5613): Cpu usado del entrenador: 25
+[INFO] 19:24:45:849 team/(5608:5672): Entrenador moviendose a la posicion: 20|12.
+[INFO] 19:24:47:850 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:47:850 team/(5608:5613): Cpu usado del entrenador: 26
+[INFO] 19:24:47:853 team/(5608:5673): Entrenador moviendose a la posicion: 20|13.
+[INFO] 19:24:49:854 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:49:854 team/(5608:5613): Cpu usado del entrenador: 27
+[INFO] 19:24:49:857 team/(5608:5674): Entrenador moviendose a la posicion: 20|14.
+[INFO] 19:24:51:862 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:51:862 team/(5608:5613): Cpu usado del entrenador: 28
+[INFO] 19:24:51:865 team/(5608:5675): Entrenador moviendose a la posicion: 20|15.
+[INFO] 19:24:53:865 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:53:866 team/(5608:5613): Cpu usado del entrenador: 29
+[INFO] 19:24:53:869 team/(5608:5678): Entrenador moviendose a la posicion: 20|16.
+[INFO] 19:24:55:873 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:55:874 team/(5608:5613): Cpu usado del entrenador: 30
+[INFO] 19:24:55:874 team/(5608:5679): Entrenador moviendose a la posicion: 20|17.
+[INFO] 19:24:57:874 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:57:874 team/(5608:5613): Cpu usado del entrenador: 31
+[INFO] 19:24:57:877 team/(5608:5680): Entrenador moviendose a la posicion: 20|18.
+[INFO] 19:24:59:878 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:24:59:878 team/(5608:5613): Cpu usado del entrenador: 32
+[INFO] 19:24:59:883 team/(5608:5681): Entrenador moviendose a la posicion: 20|19.
+[INFO] 19:25:01:884 team/(5608:5613): Cpu disponible del entrenador: 33
+[INFO] 19:25:01:884 team/(5608:5613): Cpu usado del entrenador: 33
+[INFO] 19:25:01:889 team/(5608:5682): Entrenador moviendose a la posicion: 20|20.
+[INFO] 19:25:03:890 team/(5608:5613): Estoy en FIFO preparado para planificar
+[INFO] 19:29:39:899 team/(5790:5790): El algoritmo de planificacion es: 0
+[INFO] 19:29:39:905 team/(5790:5790): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 0 pokemons Pidgey
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 0 pokemons Bulbasaur
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 0 pokemons Squirtle
+[INFO] 19:29:39:905 team/(5790:5790): Necesito 3 pokemons Pikachu
+[INFO] 19:29:39:906 team/(5790:5790): Necesito 1 pokemons Charmander
+[INFO] 19:29:39:910 team/(5790:5790): NO HAY ENTRENADORES DISPONIBLES EN ESTE MOMENTO
+[INFO] 19:29:39:920 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:29:39:920 team/(5790:5795): Cpu disponible del entrenador: 2
+[INFO] 19:29:39:920 team/(5790:5795): Cpu usado del entrenador: 1
+[INFO] 19:29:39:922 team/(5790:5797): Entrenador moviendose a la posicion: 500|6.
+[INFO] 19:29:41:928 team/(5790:5795): Cpu disponible del entrenador: 2
+[INFO] 19:29:41:928 team/(5790:5795): Cpu usado del entrenador: 2
+[INFO] 19:29:41:933 team/(5790:5798): Entrenador moviendose a la posicion: 500|7.
+[INFO] 19:29:43:936 team/(5790:5795): Un entrenador que se libero esta atendiendo a un nuevo pokemon
+[INFO] 19:29:43:936 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:29:43:936 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:43:937 team/(5790:5795): Cpu usado del entrenador: 1
+[INFO] 19:29:43:939 team/(5790:5804): Entrenador moviendose a la posicion: 9|7.
+[INFO] 19:29:45:939 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:45:940 team/(5790:5795): Cpu usado del entrenador: 2
+[INFO] 19:29:45:943 team/(5790:5805): Entrenador moviendose a la posicion: 8|7.
+[INFO] 19:29:47:943 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:47:943 team/(5790:5795): Cpu usado del entrenador: 3
+[INFO] 19:29:47:948 team/(5790:5806): Entrenador moviendose a la posicion: 7|7.
+[INFO] 19:29:49:949 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:49:949 team/(5790:5795): Cpu usado del entrenador: 4
+[INFO] 19:29:49:953 team/(5790:5807): Entrenador moviendose a la posicion: 6|7.
+[INFO] 19:29:51:954 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:51:954 team/(5790:5795): Cpu usado del entrenador: 5
+[INFO] 19:29:51:957 team/(5790:5808): Entrenador moviendose a la posicion: 5|7.
+[INFO] 19:29:53:958 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:53:958 team/(5790:5795): Cpu usado del entrenador: 6
+[INFO] 19:29:53:961 team/(5790:5811): Entrenador moviendose a la posicion: 4|7.
+[INFO] 19:29:55:962 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:55:962 team/(5790:5795): Cpu usado del entrenador: 7
+[INFO] 19:29:55:965 team/(5790:5812): Entrenador moviendose a la posicion: 3|7.
+[INFO] 19:29:57:965 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:57:966 team/(5790:5795): Cpu usado del entrenador: 8
+[INFO] 19:29:57:969 team/(5790:5813): Entrenador moviendose a la posicion: 2|7.
+[INFO] 19:29:59:970 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:29:59:970 team/(5790:5795): Cpu usado del entrenador: 9
+[INFO] 19:29:59:973 team/(5790:5814): Entrenador moviendose a la posicion: 1|7.
+[INFO] 19:30:01:974 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:01:974 team/(5790:5795): Cpu usado del entrenador: 10
+[INFO] 19:30:01:977 team/(5790:5815): Entrenador moviendose a la posicion: 0|7.
+[INFO] 19:30:03:978 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:03:980 team/(5790:5795): Cpu usado del entrenador: 11
+[INFO] 19:30:03:985 team/(5790:5816): Entrenador moviendose a la posicion: 0|8.
+[INFO] 19:30:05:985 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:05:986 team/(5790:5795): Cpu usado del entrenador: 12
+[INFO] 19:30:05:989 team/(5790:5817): Entrenador moviendose a la posicion: 0|9.
+[INFO] 19:30:07:989 team/(5790:5795): Cpu disponible del entrenador: 13
+[INFO] 19:30:07:990 team/(5790:5795): Cpu usado del entrenador: 13
+[INFO] 19:30:07:993 team/(5790:5818): Entrenador moviendose a la posicion: 0|10.
+[INFO] 19:30:09:997 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:30:09:998 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:09:998 team/(5790:5795): Cpu usado del entrenador: 1
+[INFO] 19:30:09:1 team/(5790:5819): Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:30:11:2 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:11:2 team/(5790:5795): Cpu usado del entrenador: 2
+[INFO] 19:30:12:5 team/(5790:5820): Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:30:14:6 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:14:6 team/(5790:5795): Cpu usado del entrenador: 3
+[INFO] 19:30:14:9 team/(5790:5821): Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:30:16:10 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:16:10 team/(5790:5795): Cpu usado del entrenador: 4
+[INFO] 19:30:16:13 team/(5790:5822): Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:30:18:13 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:18:14 team/(5790:5795): Cpu usado del entrenador: 5
+[INFO] 19:30:18:17 team/(5790:5823): Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:30:20:17 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:20:18 team/(5790:5795): Cpu usado del entrenador: 6
+[INFO] 19:30:20:20 team/(5790:5824): Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:30:22:20 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:22:20 team/(5790:5795): Cpu usado del entrenador: 7
+[INFO] 19:30:22:23 team/(5790:5825): Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:30:24:23 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:24:23 team/(5790:5795): Cpu usado del entrenador: 8
+[INFO] 19:30:24:27 team/(5790:5826): Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:30:26:28 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:26:28 team/(5790:5795): Cpu usado del entrenador: 9
+[INFO] 19:30:26:33 team/(5790:5827): Entrenador moviendose a la posicion: 16|0.
+[INFO] 19:30:28:37 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:28:37 team/(5790:5795): Cpu usado del entrenador: 10
+[INFO] 19:30:28:41 team/(5790:5828): Entrenador moviendose a la posicion: 17|0.
+[INFO] 19:30:30:45 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:30:46 team/(5790:5795): Cpu usado del entrenador: 11
+[INFO] 19:30:30:49 team/(5790:5829): Entrenador moviendose a la posicion: 18|0.
+[INFO] 19:30:32:50 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:32:50 team/(5790:5795): Cpu usado del entrenador: 12
+[INFO] 19:30:32:53 team/(5790:5830): Entrenador moviendose a la posicion: 19|0.
+[INFO] 19:30:34:54 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:34:54 team/(5790:5795): Cpu usado del entrenador: 13
+[INFO] 19:30:34:57 team/(5790:5831): Entrenador moviendose a la posicion: 20|0.
+[INFO] 19:30:36:58 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:36:58 team/(5790:5795): Cpu usado del entrenador: 14
+[INFO] 19:30:36:60 team/(5790:5832): Entrenador moviendose a la posicion: 20|1.
+[INFO] 19:30:38:60 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:38:61 team/(5790:5795): Cpu usado del entrenador: 15
+[INFO] 19:30:38:64 team/(5790:5833): Entrenador moviendose a la posicion: 20|2.
+[INFO] 19:30:40:64 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:40:64 team/(5790:5795): Cpu usado del entrenador: 16
+[INFO] 19:30:40:67 team/(5790:5834): Entrenador moviendose a la posicion: 20|3.
+[INFO] 19:30:42:67 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:42:67 team/(5790:5795): Cpu usado del entrenador: 17
+[INFO] 19:30:42:70 team/(5790:5835): Entrenador moviendose a la posicion: 20|4.
+[INFO] 19:30:44:70 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:44:70 team/(5790:5795): Cpu usado del entrenador: 18
+[INFO] 19:30:44:73 team/(5790:5836): Entrenador moviendose a la posicion: 20|5.
+[INFO] 19:30:46:73 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:46:73 team/(5790:5795): Cpu usado del entrenador: 19
+[INFO] 19:30:46:76 team/(5790:5837): Entrenador moviendose a la posicion: 20|6.
+[INFO] 19:30:48:76 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:48:76 team/(5790:5795): Cpu usado del entrenador: 20
+[INFO] 19:30:48:81 team/(5790:5838): Entrenador moviendose a la posicion: 20|7.
+[INFO] 19:30:50:81 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:50:82 team/(5790:5795): Cpu usado del entrenador: 21
+[INFO] 19:30:50:85 team/(5790:5844): Entrenador moviendose a la posicion: 20|8.
+[INFO] 19:30:52:86 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:52:86 team/(5790:5795): Cpu usado del entrenador: 22
+[INFO] 19:30:52:89 team/(5790:5845): Entrenador moviendose a la posicion: 20|9.
+[INFO] 19:30:54:90 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:54:90 team/(5790:5795): Cpu usado del entrenador: 23
+[INFO] 19:30:54:93 team/(5790:5848): Entrenador moviendose a la posicion: 20|10.
+[INFO] 19:30:56:93 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:56:93 team/(5790:5795): Cpu usado del entrenador: 24
+[INFO] 19:30:56:96 team/(5790:5854): Entrenador moviendose a la posicion: 20|11.
+[INFO] 19:30:58:96 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:30:58:96 team/(5790:5795): Cpu usado del entrenador: 25
+[INFO] 19:30:58:101 team/(5790:5855): Entrenador moviendose a la posicion: 20|12.
+[INFO] 19:31:00:101 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:00:102 team/(5790:5795): Cpu usado del entrenador: 26
+[INFO] 19:31:00:105 team/(5790:5861): Entrenador moviendose a la posicion: 20|13.
+[INFO] 19:31:02:106 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:02:106 team/(5790:5795): Cpu usado del entrenador: 27
+[INFO] 19:31:02:108 team/(5790:5862): Entrenador moviendose a la posicion: 20|14.
+[INFO] 19:31:04:109 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:04:109 team/(5790:5795): Cpu usado del entrenador: 28
+[INFO] 19:31:04:112 team/(5790:5863): Entrenador moviendose a la posicion: 20|15.
+[INFO] 19:31:06:113 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:06:113 team/(5790:5795): Cpu usado del entrenador: 29
+[INFO] 19:31:06:117 team/(5790:5864): Entrenador moviendose a la posicion: 20|16.
+[INFO] 19:31:08:117 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:08:118 team/(5790:5795): Cpu usado del entrenador: 30
+[INFO] 19:31:08:121 team/(5790:5865): Entrenador moviendose a la posicion: 20|17.
+[INFO] 19:31:10:121 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:10:122 team/(5790:5795): Cpu usado del entrenador: 31
+[INFO] 19:31:10:124 team/(5790:5866): Entrenador moviendose a la posicion: 20|18.
+[INFO] 19:31:12:124 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:12:125 team/(5790:5795): Cpu usado del entrenador: 32
+[INFO] 19:31:12:127 team/(5790:5867): Entrenador moviendose a la posicion: 20|19.
+[INFO] 19:31:14:127 team/(5790:5795): Cpu disponible del entrenador: 33
+[INFO] 19:31:14:127 team/(5790:5795): Cpu usado del entrenador: 33
+[INFO] 19:31:14:132 team/(5790:5868): Entrenador moviendose a la posicion: 20|20.
+[INFO] 19:31:16:132 team/(5790:5795): Estoy en FIFO preparado para planificar
+[INFO] 19:31:16:132 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:16:132 team/(5790:5795): Cpu usado del entrenador: 3
+[INFO] 19:31:16:136 team/(5790:5869): Entrenador moviendose a la posicion: 501|7.
+[INFO] 19:31:18:137 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:18:137 team/(5790:5795): Cpu usado del entrenador: 4
+[INFO] 19:31:18:141 team/(5790:5870): Entrenador moviendose a la posicion: 502|7.
+[INFO] 19:31:20:145 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:20:146 team/(5790:5795): Cpu usado del entrenador: 5
+[INFO] 19:31:20:149 team/(5790:5871): Entrenador moviendose a la posicion: 503|7.
+[INFO] 19:31:22:153 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:22:153 team/(5790:5795): Cpu usado del entrenador: 6
+[INFO] 19:31:22:154 team/(5790:5872): Entrenador moviendose a la posicion: 504|7.
+[INFO] 19:31:24:157 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:24:157 team/(5790:5795): Cpu usado del entrenador: 7
+[INFO] 19:31:24:159 team/(5790:5873): Entrenador moviendose a la posicion: 505|7.
+[INFO] 19:31:26:159 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:26:159 team/(5790:5795): Cpu usado del entrenador: 8
+[INFO] 19:31:26:166 team/(5790:5874): Entrenador moviendose a la posicion: 506|7.
+[INFO] 19:31:28:167 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:28:167 team/(5790:5795): Cpu usado del entrenador: 9
+[INFO] 19:31:28:169 team/(5790:5875): Entrenador moviendose a la posicion: 507|7.
+[INFO] 19:31:30:170 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:30:170 team/(5790:5795): Cpu usado del entrenador: 10
+[INFO] 19:31:30:173 team/(5790:5876): Entrenador moviendose a la posicion: 508|7.
+[INFO] 19:31:32:174 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:32:174 team/(5790:5795): Cpu usado del entrenador: 11
+[INFO] 19:31:32:177 team/(5790:5882): Entrenador moviendose a la posicion: 509|7.
+[INFO] 19:31:34:178 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:34:178 team/(5790:5795): Cpu usado del entrenador: 12
+[INFO] 19:31:34:181 team/(5790:5884): Entrenador moviendose a la posicion: 510|7.
+[INFO] 19:31:36:181 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:36:182 team/(5790:5795): Cpu usado del entrenador: 13
+[INFO] 19:31:36:185 team/(5790:5885): Entrenador moviendose a la posicion: 510|8.
+[INFO] 19:31:38:186 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:38:186 team/(5790:5795): Cpu usado del entrenador: 14
+[INFO] 19:31:38:189 team/(5790:5887): Entrenador moviendose a la posicion: 510|9.
+[INFO] 19:31:40:190 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:40:190 team/(5790:5795): Cpu usado del entrenador: 15
+[INFO] 19:31:40:201 team/(5790:5888): Entrenador moviendose a la posicion: 510|10.
+[INFO] 19:31:42:202 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:42:202 team/(5790:5795): Cpu usado del entrenador: 16
+[INFO] 19:31:42:205 team/(5790:5889): Entrenador moviendose a la posicion: 510|11.
+[INFO] 19:31:44:206 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:44:206 team/(5790:5795): Cpu usado del entrenador: 17
+[INFO] 19:31:44:209 team/(5790:5890): Entrenador moviendose a la posicion: 510|12.
+[INFO] 19:31:46:210 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:46:210 team/(5790:5795): Cpu usado del entrenador: 18
+[INFO] 19:31:46:212 team/(5790:5891): Entrenador moviendose a la posicion: 510|13.
+[INFO] 19:31:48:213 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:48:213 team/(5790:5795): Cpu usado del entrenador: 19
+[INFO] 19:31:48:217 team/(5790:5892): Entrenador moviendose a la posicion: 510|14.
+[INFO] 19:31:50:218 team/(5790:5795): Cpu disponible del entrenador: 20
+[INFO] 19:31:50:218 team/(5790:5795): Cpu usado del entrenador: 20
+[INFO] 19:31:50:221 team/(5790:5893): Entrenador moviendose a la posicion: 510|15.
+[INFO] 19:31:52:222 team/(5790:5795): Estoy en FIFO preparado para planificar

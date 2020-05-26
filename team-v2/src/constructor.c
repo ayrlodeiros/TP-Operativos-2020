@@ -4,8 +4,9 @@
 void iniciar_variables_globales() {
 	armar_entrenadores();
 	armar_objetivo_global();
-	pokemons_sueltos = queue_create();
+	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
+	pthread_mutex_lock(&lock_de_planificacion);
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales
@@ -33,6 +34,10 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;
 	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
+	un_entrenador->cpu_usado = 0;
+	un_entrenador->cpu_disponible = 0;
+	un_entrenador->cpu_estimado_anterior = estimacion_inicial;
+	un_entrenador->acciones = queue_create();
 
 	return un_entrenador;
 }
@@ -66,24 +71,14 @@ void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
 	}
 	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
 	else {
-		dictionary_put(objetivo_global, pokemon_objetivo, 1);
+		int valor_inicial = 1;
+		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
 	}
 }
 
 //Resto el pokemon atrapado del objetivo global
 void restar_adquirido_a_objetivo_global(char* pokemon_adquirido) {
 	dictionary_put(objetivo_global, pokemon_adquirido, dictionary_get(objetivo_global, pokemon_adquirido)-1);
-
-}
-
-
-//Arma un pokemon con los parametros pasados y lo agrega a la cola de pokemons sueltos
-void armar_pokemon(char* nombre, int posicion_x, int posicion_y) {
-		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));;
-		nuevo_pokemon->nombre = nombre;
-		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
-
-		queue_push(pokemons_sueltos,nuevo_pokemon);
 }
 
 posicion* armar_posicion(char* posicion_a_armar) {
@@ -95,4 +90,13 @@ posicion* armar_posicion(char* posicion_a_armar) {
 	pos->posicion_y = atoi(posiciones[1]);
 
 	return pos;
+}
+
+accion* armar_accion(void(*funcion)(void*), int cpu_requerido){
+	accion* nueva_accion = malloc(sizeof(accion));
+
+	nueva_accion->funcion = funcion;
+	nueva_accion->cpu_requerido = cpu_requerido;
+
+	return nueva_accion;
 }

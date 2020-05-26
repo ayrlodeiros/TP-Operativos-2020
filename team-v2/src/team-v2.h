@@ -2,7 +2,12 @@
 #define TEAM_H_
 
 
-#include "utils.h"
+#include "planificacion.h"
+
+void mostrar_objetivo_global(char* key, void* value);
+
+//TODO BORRAR
+void while_uno();
 
 void iniciar_team(void);
 void terminar_team(void);
