@@ -29,7 +29,7 @@ static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
 
 t_log* logger;
 t_log* nuestro_log;
-int ejecutar_default;
+int funciona_broker;
 
 t_list* entrenadores;
 t_dictionary* objetivo_global;

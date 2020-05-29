@@ -7,6 +7,8 @@ void iniciar_variables_globales() {
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
 	pthread_mutex_lock(&lock_de_planificacion);
+
+	funciona_broker=0;
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales

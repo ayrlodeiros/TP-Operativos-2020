@@ -11,8 +11,11 @@ pokemon* pokemon_para_planificar;
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
-void conectar_broker(int conexion);
 void intentar_conectar_al_broker(int conexion);
+void suscribirse_a_cola_appeared();
+void suscribirse_a_cola_localized();
+void suscribirse_a_cola_caught();
+void levantar_conexiones_al_broker();
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
@@ -32,7 +35,9 @@ int diferencia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* p
 int el_pokemon_es_requerido(char* nombre_pokemon);
 int necesito_mas_de_ese_pokemon(char* nombre_pokemon);
 
-void atrapar_pokemon(entrenador* entrenador);
+void get_pokemon();
+
+void catch_pokemon(entrenador* entrenador);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
 void destruir_pokemon(pokemon* pokemon);
 

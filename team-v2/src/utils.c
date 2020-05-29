@@ -82,14 +82,6 @@ void intentar_conectar_al_broker(int conexion) {
 	}
 }
 
-/*int funciona_la_conexion_con_broker() {
-	if(socket_broker == -1) {
-		return 0;
-	} else {
-		return 1;
-	}
-}*/
-
 void suscribirse_a_cola_appeared() {
 	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 	if(conexion_a_broker == -1) {
@@ -114,10 +106,11 @@ void suscribirse_a_cola_caught() {
 void levantar_conexiones_al_broker() {
 	int primera_conexion = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 	if(primera_conexion == -1) {
-		ejecutar_default = 1;
-		pthread_t* reintento_conexion_broker = pthread_create(&reintento_conexion_broker,NULL,intentar_conectar_al_broker, primera_conexion);
-		pthread_join(reintento_conexion_broker, NULL);
-		ejecutar_default = 0;
+		funciona_broker = 0;
+
+		intentar_conectar_al_broker(primera_conexion);
+
+		funciona_broker = 1;
 	}
 	pthread_t* cola_appeared = pthread_create(&cola_appeared,NULL,suscribirse_a_cola_appeared, NULL);
 	pthread_t* cola_localized = pthread_create(&cola_localized,NULL,suscribirse_a_cola_localized, NULL);
@@ -179,7 +172,7 @@ void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokem
 	entrenador_listo->pokemon_en_busqueda = pokemon_suelto;
 	agregar_movimientos_en_x(entrenador_listo);
 	agregar_movimientos_en_y(entrenador_listo);
-	agregar_accion(entrenador_listo, atrapar_pokemon, 1);
+	agregar_accion(entrenador_listo, catch_pokemon, 1);
 
 	cambiar_estado_entrenador(entrenador_listo, READY);
 	list_add(entrenadores_ready, entrenador_listo);
@@ -250,11 +243,34 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 	return ((int) dictionary_get(objetivo_global,nombre_pokemon)) > 0;
 }
 
-//ACCION CATCH:
-void atrapar_pokemon(entrenador* entrenador) {
+
+
+//GET
+void get_pokemon() {
+
+}
+
+void realizar_get(char* key, void* value) {
+	int socket_get = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	if(socket_get == -1) {
+		//ACCION POR DEFAULT, NO HACER NADA
+		log_info(logger, "9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+		log_info(nuestro_log, "9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+	} else {
+		//ACCION CON EL BROKER
+		//TODO realizar el mandado del GET al broker y el recibo del ID para luego esperar en LOCALIZED
+	}
+}
+
+
+
+//CATCH
+void catch_pokemon(entrenador* entrenador) {
 	int socket_catch = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 	if(socket_catch == -1) {
 		//ACCION POR DEFAULT
+		log_info(logger, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
+		log_info(logger, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
 		manejar_la_captura_del_pokemon(entrenador);
 	} else {
 		//ACCION CON EL BROKER
@@ -263,13 +279,15 @@ void atrapar_pokemon(entrenador* entrenador) {
 }
 
 void manejar_la_captura_del_pokemon(entrenador* entrenador) {
-	agregar_objetivo_a_objetivo_global(entrenador->pokemon_en_busqueda->nombre);
-	list_add(entrenador->pokemons_adquiridos, entrenador->pokemon_en_busqueda->nombre);
-	destruir_pokemon(entrenador->pokemon_en_busqueda);
+	pokemon* pokemon_en_captura = entrenador->pokemon_en_busqueda;
+	log_info(logger, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
+	log_info(nuestro_log, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
+	agregar_objetivo_a_objetivo_global(pokemon_en_captura->nombre);
+	list_add(entrenador->pokemons_adquiridos, pokemon_en_captura->nombre);
+	destruir_pokemon(pokemon_en_captura);
 }
 
 void destruir_pokemon(pokemon* pokemon) {
-	free(pokemon->nombre);
 	free(pokemon->posicion);
 	free(pokemon);
 }

@@ -2013,3 +2013,372 @@
 [INFO] 16:58:35:498 team/(4554:4559): Cpu disponible del entrenador: 16
 [INFO] 16:58:35:499 team/(4554:4559): Cpu usado del entrenador: 4
 [INFO] 16:58:35:509 team/(4554:4567): Entrenador moviendose a la posicion: 4|0.
+[INFO] 17:02:19:474 team/(5797:5797): El algoritmo de planificacion es: 0
+[INFO] 17:02:19:475 team/(5797:5797): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:02:19:475 team/(5797:5797): Necesito 0 pokemons Pidgey
+[INFO] 17:02:19:475 team/(5797:5797): Necesito 0 pokemons Bulbasaur
+[INFO] 17:02:19:475 team/(5797:5797): Necesito 0 pokemons Squirtle
+[INFO] 17:02:19:475 team/(5797:5797): Necesito 3 pokemons Pikachu
+[INFO] 17:02:19:475 team/(5797:5797): Necesito 1 pokemons Charmander
+[INFO] 17:02:19:475 team/(5797:5797): No hay entrenadores disponibles en este momentos
+[INFO] 17:02:19:482 team/(5797:5803): Estoy en FIFO preparado para planificar
+[INFO] 17:02:19:482 team/(5797:5803): Cpu disponible del entrenador: 16
+[INFO] 17:02:19:482 team/(5797:5803): Cpu usado del entrenador: 1
+[INFO] 17:02:19:484 team/(5797:5805): Entrenador moviendose a la posicion: 1|0.
+[INFO] 17:02:21:489 team/(5797:5803): Cpu disponible del entrenador: 16
+[INFO] 17:02:21:489 team/(5797:5803): Cpu usado del entrenador: 2
+[INFO] 17:02:21:501 team/(5797:5806): Entrenador moviendose a la posicion: 2|0.
+[INFO] 17:05:41:329 team/(6558:6558): El algoritmo de planificacion es: 0
+[INFO] 17:05:41:331 team/(6558:6558): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:05:41:331 team/(6558:6558): Necesito 0 pokemons Pidgey
+[INFO] 17:05:41:331 team/(6558:6558): Necesito 0 pokemons Bulbasaur
+[INFO] 17:05:41:331 team/(6558:6558): Necesito 0 pokemons Squirtle
+[INFO] 17:05:41:334 team/(6558:6558): Necesito 3 pokemons Pikachu
+[INFO] 17:05:41:334 team/(6558:6558): Necesito 1 pokemons Charmander
+[INFO] 17:05:41:334 team/(6558:6558): No hay entrenadores disponibles en este momentos
+[INFO] 17:05:41:348 team/(6558:6563): Estoy en FIFO preparado para planificar
+[INFO] 17:05:41:349 team/(6558:6563): Cpu disponible del entrenador: 16
+[INFO] 17:05:41:349 team/(6558:6563): Cpu usado del entrenador: 1
+[INFO] 17:05:41:350 team/(6558:6565): Entrenador moviendose a la posicion: 1|0.
+[INFO] 17:05:43:356 team/(6558:6563): Cpu disponible del entrenador: 16
+[INFO] 17:05:43:356 team/(6558:6563): Cpu usado del entrenador: 2
+[INFO] 17:05:43:370 team/(6558:6566): Entrenador moviendose a la posicion: 2|0.
+[INFO] 17:05:45:375 team/(6558:6563): Cpu disponible del entrenador: 16
+[INFO] 17:05:45:375 team/(6558:6563): Cpu usado del entrenador: 3
+[INFO] 17:05:45:380 team/(6558:6567): Entrenador moviendose a la posicion: 3|0.
+[INFO] 17:05:47:381 team/(6558:6563): Cpu disponible del entrenador: 16
+[INFO] 17:05:47:381 team/(6558:6563): Cpu usado del entrenador: 4
+[INFO] 17:05:47:384 team/(6558:6568): Entrenador moviendose a la posicion: 4|0.
+[INFO] 17:05:49:384 team/(6558:6563): Cpu disponible del entrenador: 16
+[INFO] 17:05:49:385 team/(6558:6563): Cpu usado del entrenador: 5
+[INFO] 17:05:49:387 team/(6558:6574): Entrenador moviendose a la posicion: 5|0.
+[INFO] 17:06:18:733 team/(7156:7156): El algoritmo de planificacion es: 0
+[INFO] 17:06:18:734 team/(7156:7156): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:06:18:734 team/(7156:7156): Necesito 0 pokemons Pidgey
+[INFO] 17:06:18:734 team/(7156:7156): Necesito 0 pokemons Bulbasaur
+[INFO] 17:06:18:734 team/(7156:7156): Necesito 0 pokemons Squirtle
+[INFO] 17:06:18:734 team/(7156:7156): Necesito 3 pokemons Pikachu
+[INFO] 17:06:18:734 team/(7156:7156): Necesito 1 pokemons Charmander
+[INFO] 17:06:18:734 team/(7156:7156): No hay entrenadores disponibles en este momentos
+[INFO] 17:06:18:736 team/(7156:7157): Estoy en FIFO preparado para planificar
+[INFO] 17:06:18:737 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:18:737 team/(7156:7157): Cpu usado del entrenador: 1
+[INFO] 17:06:18:741 team/(7156:7159): Entrenador moviendose a la posicion: 1|0.
+[INFO] 17:06:20:741 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:20:742 team/(7156:7157): Cpu usado del entrenador: 2
+[INFO] 17:06:20:745 team/(7156:7160): Entrenador moviendose a la posicion: 2|0.
+[INFO] 17:06:22:745 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:22:745 team/(7156:7157): Cpu usado del entrenador: 3
+[INFO] 17:06:22:748 team/(7156:7161): Entrenador moviendose a la posicion: 3|0.
+[INFO] 17:06:24:749 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:24:749 team/(7156:7157): Cpu usado del entrenador: 4
+[INFO] 17:06:24:753 team/(7156:7162): Entrenador moviendose a la posicion: 4|0.
+[INFO] 17:06:26:753 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:26:754 team/(7156:7157): Cpu usado del entrenador: 5
+[INFO] 17:06:26:757 team/(7156:7163): Entrenador moviendose a la posicion: 5|0.
+[INFO] 17:06:28:758 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:28:758 team/(7156:7157): Cpu usado del entrenador: 6
+[INFO] 17:06:28:761 team/(7156:7164): Entrenador moviendose a la posicion: 6|0.
+[INFO] 17:06:30:761 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:30:762 team/(7156:7157): Cpu usado del entrenador: 7
+[INFO] 17:06:30:765 team/(7156:7170): Entrenador moviendose a la posicion: 7|0.
+[INFO] 17:06:32:765 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:32:765 team/(7156:7157): Cpu usado del entrenador: 8
+[INFO] 17:06:32:769 team/(7156:7173): Entrenador moviendose a la posicion: 8|0.
+[INFO] 17:06:34:769 team/(7156:7157): Cpu disponible del entrenador: 16
+[INFO] 17:06:34:770 team/(7156:7157): Cpu usado del entrenador: 9
+[INFO] 17:06:34:773 team/(7156:7174): Entrenador moviendose a la posicion: 9|0.
+[INFO] 17:34:40:897 team/(8205:8205): El algoritmo de planificacion es: 0
+[INFO] 17:34:40:900 team/(8205:8205): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:34:40:901 team/(8205:8205): Necesito 0 pokemons Pidgey
+[INFO] 17:34:40:901 team/(8205:8205): Necesito 0 pokemons Bulbasaur
+[INFO] 17:34:40:901 team/(8205:8205): Necesito 0 pokemons Squirtle
+[INFO] 17:34:40:901 team/(8205:8205): Necesito 3 pokemons Pikachu
+[INFO] 17:34:40:901 team/(8205:8205): Necesito 1 pokemons Charmander
+[ERROR] 17:34:40:901 team/(8205:8205): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:34:40:901 team/(8205:8205): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:34:40:905 team/(8205:8210): Estoy en FIFO preparado para planificar
+[INFO] 17:34:40:905 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:40:905 team/(8205:8210): Cpu usado del entrenador: 1
+[INFO] 17:34:40:905 team/(8205:8212): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 17:34:42:906 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:42:906 team/(8205:8210): Cpu usado del entrenador: 2
+[INFO] 17:34:42:914 team/(8205:8213): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 17:34:44:917 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:44:917 team/(8205:8210): Cpu usado del entrenador: 3
+[INFO] 17:34:44:920 team/(8205:8214): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 17:34:46:922 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:46:923 team/(8205:8210): Cpu usado del entrenador: 4
+[INFO] 17:34:46:930 team/(8205:8215): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 17:34:48:931 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:48:931 team/(8205:8210): Cpu usado del entrenador: 5
+[INFO] 17:34:48:937 team/(8205:8216): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 17:34:50:938 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:50:938 team/(8205:8210): Cpu usado del entrenador: 6
+[INFO] 17:34:50:950 team/(8205:8217): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 17:34:52:951 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:52:951 team/(8205:8210): Cpu usado del entrenador: 7
+[INFO] 17:34:52:964 team/(8205:8218): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 17:34:54:965 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:54:965 team/(8205:8210): Cpu usado del entrenador: 8
+[INFO] 17:34:54:969 team/(8205:8219): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 17:34:56:970 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:56:970 team/(8205:8210): Cpu usado del entrenador: 9
+[INFO] 17:34:56:973 team/(8205:8220): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 17:34:58:973 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:34:58:974 team/(8205:8210): Cpu usado del entrenador: 10
+[INFO] 17:34:58:981 team/(8205:8221): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 17:35:00:986 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:35:00:986 team/(8205:8210): Cpu usado del entrenador: 11
+[INFO] 17:35:00:988 team/(8205:8222): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 17:35:02:989 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:35:02:989 team/(8205:8210): Cpu usado del entrenador: 12
+[INFO] 17:35:02:993 team/(8205:8223): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 17:35:04:993 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:35:04:994 team/(8205:8210): Cpu usado del entrenador: 13
+[INFO] 17:35:04:998 team/(8205:8224): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 17:35:06:998 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:35:06:999 team/(8205:8210): Cpu usado del entrenador: 14
+[INFO] 17:35:07:7 team/(8205:8225): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 17:35:09:8 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:35:09:8 team/(8205:8210): Cpu usado del entrenador: 15
+[INFO] 17:35:09:13 team/(8205:8226): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 17:35:11:14 team/(8205:8210): Cpu disponible del entrenador: 16
+[INFO] 17:35:11:14 team/(8205:8210): Cpu usado del entrenador: 16
+[ERROR] 17:35:11:17 team/(8205:8227): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:35:11:18 team/(8205:8227): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 17:38:22:784 team/(8298:8298): El algoritmo de planificacion es: 0
+[INFO] 17:38:22:785 team/(8298:8298): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:38:22:785 team/(8298:8298): Necesito 0 pokemons Pidgey
+[INFO] 17:38:22:785 team/(8298:8298): Necesito 0 pokemons Bulbasaur
+[INFO] 17:38:22:787 team/(8298:8298): Necesito 0 pokemons Squirtle
+[INFO] 17:38:22:787 team/(8298:8298): Necesito 3 pokemons Pikachu
+[INFO] 17:38:22:787 team/(8298:8298): Necesito 1 pokemons Charmander
+[ERROR] 17:38:22:787 team/(8298:8298): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:38:22:787 team/(8298:8298): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:38:22:796 team/(8298:8303): Estoy en FIFO preparado para planificar
+[INFO] 17:38:22:796 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:22:796 team/(8298:8303): Cpu usado del entrenador: 1
+[INFO] 17:38:22:805 team/(8298:8305): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 17:38:24:806 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:24:806 team/(8298:8303): Cpu usado del entrenador: 2
+[INFO] 17:38:24:813 team/(8298:8306): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 17:38:26:813 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:26:814 team/(8298:8303): Cpu usado del entrenador: 3
+[INFO] 17:38:26:816 team/(8298:8307): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 17:38:28:825 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:28:826 team/(8298:8303): Cpu usado del entrenador: 4
+[INFO] 17:38:28:829 team/(8298:8308): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 17:38:30:829 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:30:830 team/(8298:8303): Cpu usado del entrenador: 5
+[INFO] 17:38:30:837 team/(8298:8309): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 17:38:32:839 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:32:839 team/(8298:8303): Cpu usado del entrenador: 6
+[INFO] 17:38:32:842 team/(8298:8310): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 17:38:34:845 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:34:845 team/(8298:8303): Cpu usado del entrenador: 7
+[INFO] 17:38:34:849 team/(8298:8313): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 17:38:36:849 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:36:849 team/(8298:8303): Cpu usado del entrenador: 8
+[INFO] 17:38:36:853 team/(8298:8314): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 17:38:38:853 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:38:853 team/(8298:8303): Cpu usado del entrenador: 9
+[INFO] 17:38:38:857 team/(8298:8315): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 17:38:40:857 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:40:858 team/(8298:8303): Cpu usado del entrenador: 10
+[INFO] 17:38:40:861 team/(8298:8316): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 17:38:42:861 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:42:862 team/(8298:8303): Cpu usado del entrenador: 11
+[INFO] 17:38:42:865 team/(8298:8317): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 17:38:44:868 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:44:868 team/(8298:8303): Cpu usado del entrenador: 12
+[INFO] 17:38:44:871 team/(8298:8319): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 17:38:46:871 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:46:871 team/(8298:8303): Cpu usado del entrenador: 13
+[INFO] 17:38:46:877 team/(8298:8320): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 17:38:48:877 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:48:877 team/(8298:8303): Cpu usado del entrenador: 14
+[INFO] 17:38:48:880 team/(8298:8321): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 17:38:50:885 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:50:885 team/(8298:8303): Cpu usado del entrenador: 15
+[INFO] 17:38:50:887 team/(8298:8322): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 17:38:52:889 team/(8298:8303): Cpu disponible del entrenador: 16
+[INFO] 17:38:52:889 team/(8298:8303): Cpu usado del entrenador: 16
+[ERROR] 17:38:52:893 team/(8298:8323): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:38:52:893 team/(8298:8323): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 17:38:52:893 team/(8298:8303): Estoy en FIFO preparado para planificar
+[INFO] 17:38:52:893 team/(8298:8303): Cpu disponible del entrenador: 6
+[INFO] 17:38:52:893 team/(8298:8303): Cpu usado del entrenador: 1
+[INFO] 17:38:52:896 team/(8298:8324): 2. Entrenador moviendose a la posicion: 101|0.
+[INFO] 17:38:54:897 team/(8298:8303): Cpu disponible del entrenador: 6
+[INFO] 17:38:54:897 team/(8298:8303): Cpu usado del entrenador: 2
+[INFO] 17:38:54:901 team/(8298:8325): 2. Entrenador moviendose a la posicion: 102|0.
+[INFO] 17:38:56:901 team/(8298:8303): Cpu disponible del entrenador: 6
+[INFO] 17:38:56:901 team/(8298:8303): Cpu usado del entrenador: 3
+[INFO] 17:38:56:913 team/(8298:8326): 2. Entrenador moviendose a la posicion: 103|0.
+[INFO] 17:38:58:915 team/(8298:8303): Cpu disponible del entrenador: 6
+[INFO] 17:38:58:915 team/(8298:8303): Cpu usado del entrenador: 4
+[INFO] 17:38:58:921 team/(8298:8327): 2. Entrenador moviendose a la posicion: 104|0.
+[INFO] 17:39:00:921 team/(8298:8303): Cpu disponible del entrenador: 6
+[INFO] 17:39:00:921 team/(8298:8303): Cpu usado del entrenador: 5
+[INFO] 17:39:00:925 team/(8298:8328): 2. Entrenador moviendose a la posicion: 105|0.
+[INFO] 17:39:02:926 team/(8298:8303): Cpu disponible del entrenador: 6
+[INFO] 17:39:02:926 team/(8298:8303): Cpu usado del entrenador: 6
+[ERROR] 17:39:02:933 team/(8298:8329): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:39:02:933 team/(8298:8329): 3. Se realiza la captura del pokemon Pikachu, en la posicion 105|0 exitosamente.
+[INFO] 17:39:02:933 team/(8298:8303): Estoy en FIFO preparado para planificar
+[INFO] 17:39:02:933 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:02:933 team/(8298:8303): Cpu usado del entrenador: 1
+[INFO] 17:39:02:934 team/(8298:8330): 2. Entrenador moviendose a la posicion: 201|0.
+[INFO] 17:39:04:935 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:04:935 team/(8298:8303): Cpu usado del entrenador: 2
+[INFO] 17:39:04:941 team/(8298:8331): 2. Entrenador moviendose a la posicion: 202|0.
+[INFO] 17:39:06:942 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:06:942 team/(8298:8303): Cpu usado del entrenador: 3
+[INFO] 17:39:06:945 team/(8298:8332): 2. Entrenador moviendose a la posicion: 203|0.
+[INFO] 17:39:08:946 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:08:947 team/(8298:8303): Cpu usado del entrenador: 4
+[INFO] 17:39:08:950 team/(8298:8333): 2. Entrenador moviendose a la posicion: 204|0.
+[INFO] 17:39:10:951 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:10:951 team/(8298:8303): Cpu usado del entrenador: 5
+[INFO] 17:39:10:957 team/(8298:8334): 2. Entrenador moviendose a la posicion: 205|0.
+[INFO] 17:39:12:958 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:12:958 team/(8298:8303): Cpu usado del entrenador: 6
+[INFO] 17:39:12:969 team/(8298:8335): 2. Entrenador moviendose a la posicion: 206|0.
+[INFO] 17:39:14:969 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:14:970 team/(8298:8303): Cpu usado del entrenador: 7
+[INFO] 17:39:14:976 team/(8298:8336): 2. Entrenador moviendose a la posicion: 207|0.
+[INFO] 17:39:16:976 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:16:977 team/(8298:8303): Cpu usado del entrenador: 8
+[INFO] 17:39:16:984 team/(8298:8337): 2. Entrenador moviendose a la posicion: 208|0.
+[INFO] 17:39:18:993 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:18:993 team/(8298:8303): Cpu usado del entrenador: 9
+[INFO] 17:39:18:994 team/(8298:8338): 2. Entrenador moviendose a la posicion: 209|0.
+[INFO] 17:39:20:995 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:20:995 team/(8298:8303): Cpu usado del entrenador: 10
+[INFO] 17:39:20:997 team/(8298:8339): 2. Entrenador moviendose a la posicion: 210|0.
+[INFO] 17:39:22:998 team/(8298:8303): Cpu disponible del entrenador: 11
+[INFO] 17:39:22:998 team/(8298:8303): Cpu usado del entrenador: 11
+[ERROR] 17:39:23:2 team/(8298:8340): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:39:23:2 team/(8298:8340): 3. Se realiza la captura del pokemon Charmander, en la posicion 210|0 exitosamente.
+[INFO] 17:39:23:2 team/(8298:8303): Estoy en FIFO preparado para planificar
+[INFO] 18:08:03:85 team/(9063:9063): El algoritmo de planificacion es: 0
+[INFO] 18:08:03:89 team/(9063:9063): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:08:03:89 team/(9063:9063): Necesito 0 pokemons Pidgey
+[INFO] 18:08:03:89 team/(9063:9063): Necesito 0 pokemons Bulbasaur
+[INFO] 18:08:03:89 team/(9063:9063): Necesito 0 pokemons Squirtle
+[INFO] 18:08:03:89 team/(9063:9063): Necesito 3 pokemons Pikachu
+[INFO] 18:08:03:89 team/(9063:9063): Necesito 1 pokemons Charmander
+[ERROR] 18:08:03:89 team/(9063:9063): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 18:08:03:89 team/(9063:9063): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:08:03:90 team/(9063:9063): Finalizo el programa con exito
+[INFO] 18:11:06:36 team/(9180:9180): El algoritmo de planificacion es: 0
+[INFO] 18:11:06:38 team/(9180:9180): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:11:06:38 team/(9180:9180): Necesito 0 pokemons Pidgey
+[INFO] 18:11:06:39 team/(9180:9180): Necesito 0 pokemons Bulbasaur
+[INFO] 18:11:06:39 team/(9180:9180): Necesito 0 pokemons Squirtle
+[INFO] 18:11:06:39 team/(9180:9180): Necesito 3 pokemons Pikachu
+[INFO] 18:11:06:39 team/(9180:9180): Necesito 1 pokemons Charmander
+[ERROR] 18:11:06:39 team/(9180:9180): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 18:11:06:39 team/(9180:9180): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:11:06:41 team/(9180:9186): Finalizo el programa con exito
+[INFO] 18:16:08:263 team/(9283:9283): El algoritmo de planificacion es: 0
+[INFO] 18:16:08:267 team/(9283:9283): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:16:08:267 team/(9283:9283): Necesito 0 pokemons Pidgey
+[INFO] 18:16:08:274 team/(9283:9283): Necesito 0 pokemons Bulbasaur
+[INFO] 18:16:08:274 team/(9283:9283): Necesito 0 pokemons Squirtle
+[INFO] 18:16:08:279 team/(9283:9283): Necesito 3 pokemons Pikachu
+[INFO] 18:16:08:279 team/(9283:9283): Necesito 1 pokemons Charmander
+[ERROR] 18:16:08:279 team/(9283:9283): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 18:16:08:280 team/(9283:9283): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:16:08:287 team/(9283:9288): Estoy en FIFO preparado para planificar
+[INFO] 18:16:08:288 team/(9283:9288): Cpu disponible del entrenador: 16
+[INFO] 18:16:08:288 team/(9283:9288): Cpu usado del entrenador: 1
+[INFO] 18:16:08:294 team/(9283:9290): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 18:16:10:295 team/(9283:9288): Cpu disponible del entrenador: 16
+[INFO] 18:16:10:295 team/(9283:9288): Cpu usado del entrenador: 2
+[INFO] 18:16:10:301 team/(9283:9291): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 18:16:12:302 team/(9283:9288): Cpu disponible del entrenador: 16
+[INFO] 18:16:12:302 team/(9283:9288): Cpu usado del entrenador: 3
+[INFO] 18:16:12:305 team/(9283:9292): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:16:14:306 team/(9283:9288): Cpu disponible del entrenador: 16
+[INFO] 18:16:14:306 team/(9283:9288): Cpu usado del entrenador: 4
+[INFO] 18:16:14:309 team/(9283:9294): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 18:16:16:309 team/(9283:9288): Cpu disponible del entrenador: 16
+[INFO] 18:16:16:310 team/(9283:9288): Cpu usado del entrenador: 5
+[INFO] 18:16:16:313 team/(9283:9295): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 18:16:48:258 team/(9376:9376): El algoritmo de planificacion es: 0
+[INFO] 18:16:48:258 team/(9376:9376): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 18:16:48:259 team/(9376:9376): Necesito 0 pokemons Pidgey
+[INFO] 18:16:48:259 team/(9376:9376): Necesito 0 pokemons Bulbasaur
+[INFO] 18:16:48:259 team/(9376:9376): Necesito 0 pokemons Squirtle
+[INFO] 18:16:48:259 team/(9376:9376): Necesito 3 pokemons Pikachu
+[INFO] 18:16:48:259 team/(9376:9376): Necesito 1 pokemons Charmander
+[ERROR] 18:16:48:259 team/(9376:9376): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 18:16:48:259 team/(9376:9376): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:16:48:268 team/(9376:9381): Estoy en FIFO preparado para planificar
+[INFO] 18:16:48:269 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:16:48:269 team/(9376:9381): Cpu usado del entrenador: 1
+[INFO] 18:16:48:269 team/(9376:9383): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 18:16:50:270 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:16:50:270 team/(9376:9381): Cpu usado del entrenador: 2
+[INFO] 18:16:50:273 team/(9376:9384): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 18:16:52:274 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:16:52:274 team/(9376:9381): Cpu usado del entrenador: 3
+[INFO] 18:16:52:277 team/(9376:9385): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:16:54:277 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:16:54:278 team/(9376:9381): Cpu usado del entrenador: 4
+[INFO] 18:16:54:281 team/(9376:9386): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 18:16:56:282 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:16:56:282 team/(9376:9381): Cpu usado del entrenador: 5
+[INFO] 18:16:56:285 team/(9376:9387): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 18:16:58:285 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:16:58:285 team/(9376:9381): Cpu usado del entrenador: 6
+[INFO] 18:16:58:293 team/(9376:9388): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 18:17:00:295 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:00:295 team/(9376:9381): Cpu usado del entrenador: 7
+[INFO] 18:17:00:300 team/(9376:9389): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 18:17:02:301 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:02:301 team/(9376:9381): Cpu usado del entrenador: 8
+[INFO] 18:17:02:305 team/(9376:9393): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 18:17:04:305 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:04:306 team/(9376:9381): Cpu usado del entrenador: 9
+[INFO] 18:17:04:309 team/(9376:9394): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 18:17:06:310 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:06:310 team/(9376:9381): Cpu usado del entrenador: 10
+[INFO] 18:17:06:313 team/(9376:9395): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 18:17:08:314 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:08:314 team/(9376:9381): Cpu usado del entrenador: 11
+[INFO] 18:17:08:318 team/(9376:9396): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 18:17:10:325 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:10:327 team/(9376:9381): Cpu usado del entrenador: 12
+[INFO] 18:17:10:332 team/(9376:9397): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 18:17:12:332 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:12:332 team/(9376:9381): Cpu usado del entrenador: 13
+[INFO] 18:17:12:335 team/(9376:9398): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 18:17:14:336 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:14:336 team/(9376:9381): Cpu usado del entrenador: 14
+[INFO] 18:17:14:339 team/(9376:9399): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 18:17:16:340 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:16:340 team/(9376:9381): Cpu usado del entrenador: 15
+[INFO] 18:17:16:345 team/(9376:9400): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 18:17:18:349 team/(9376:9381): Cpu disponible del entrenador: 16
+[INFO] 18:17:18:349 team/(9376:9381): Cpu usado del entrenador: 16
+[ERROR] 18:17:18:352 team/(9376:9401): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 18:17:18:353 team/(9376:9401): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 18:17:18:353 team/(9376:9381): Estoy en FIFO preparado para planificar
+[INFO] 18:17:18:353 team/(9376:9381): Cpu disponible del entrenador: 6
+[INFO] 18:17:18:353 team/(9376:9381): Cpu usado del entrenador: 1
+[INFO] 18:17:18:357 team/(9376:9402): 2. Entrenador moviendose a la posicion: 101|0.
+[INFO] 18:17:20:357 team/(9376:9381): Cpu disponible del entrenador: 6
+[INFO] 18:17:20:358 team/(9376:9381): Cpu usado del entrenador: 2
+[INFO] 18:17:20:361 team/(9376:9403): 2. Entrenador moviendose a la posicion: 102|0.
+[INFO] 18:17:22:362 team/(9376:9381): Cpu disponible del entrenador: 6
+[INFO] 18:17:22:363 team/(9376:9381): Cpu usado del entrenador: 3
+[INFO] 18:17:22:365 team/(9376:9404): 2. Entrenador moviendose a la posicion: 103|0.
+[INFO] 18:17:24:366 team/(9376:9381): Cpu disponible del entrenador: 6
+[INFO] 18:17:24:366 team/(9376:9381): Cpu usado del entrenador: 4
+[INFO] 18:17:24:368 team/(9376:9405): 2. Entrenador moviendose a la posicion: 104|0.
+[INFO] 18:17:26:369 team/(9376:9381): Cpu disponible del entrenador: 6
+[INFO] 18:17:26:369 team/(9376:9381): Cpu usado del entrenador: 5
+[INFO] 18:17:26:373 team/(9376:9406): 2. Entrenador moviendose a la posicion: 105|0.

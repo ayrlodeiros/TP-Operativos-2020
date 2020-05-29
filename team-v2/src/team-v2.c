@@ -4,11 +4,18 @@
 int main(void){
 
 	iniciar_team();
+	//
 	log_info(nuestro_log, string_from_format("El algoritmo de planificacion es: %d", leer_algoritmo_planificacion()));
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 	dictionary_iterator(objetivo_global, mostrar_objetivo_global);
 
-	//intentar_conectar_al_broker();
+
+	/*pthread_t* hilo_reintento_conexion_broker;
+	pthread_create(&hilo_reintento_conexion_broker,NULL,levantar_conexiones_al_broker, NULL);
+	pthread_detach(hilo_reintento_conexion_broker);*/
+
+
+	realizar_get();
 
 	pthread_t* hilo_planificacion;
 	pthread_create(&hilo_planificacion,NULL,(void*) planificar, NULL);
@@ -18,7 +25,7 @@ int main(void){
 	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
 	manejar_aparicion_de_pokemon("Pikachu", 105, 0);
 	manejar_aparicion_de_pokemon("Charmander", 210, 0);
-	manejar_aparicion_de_pokemon("Pikachu", 510, 15);
+	//manejar_aparicion_de_pokemon("Pikachu", 510, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);
@@ -28,6 +35,8 @@ int main(void){
 			printf("\nPOKEMONS ENTRENADOR %d: %s", i, list_get(entrenador->pokemons_adquiridos, j));
 		}
 	}*/
+
+
 
 	pthread_t* hilo_de_espera;
 	pthread_create(&hilo_de_espera,NULL, while_uno, NULL);
@@ -48,13 +57,10 @@ void mostrar_objetivo_global(char* key, void* value) {
 
 void iniciar_team() {
 	iniciar_config();
-	//logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
-	logger = log_create("src/resources/log_team1.txt", "team", false, LOG_LEVEL_INFO);
-	nuestro_log = log_create("src/resources/nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
+	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
+	nuestro_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
 	//Iniciamos las variables globales del constructor
 	iniciar_variables_globales();
-
-	pthread_mutex_lock(&lock_de_planificacion);
 }
 
 void terminar_team() {

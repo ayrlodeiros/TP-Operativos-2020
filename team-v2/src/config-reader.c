@@ -1,7 +1,7 @@
 #include "config-reader.h"
 
 void iniciar_config(void){
-	config = config_create("src/resources/team.config");
+	config = config_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/team.config");
 	setear_tiempo_reconexion();
 	setear_retardo_ciclo_cpu();
 	setear_algoritmo_planificacion();
