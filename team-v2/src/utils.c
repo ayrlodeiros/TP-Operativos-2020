@@ -167,7 +167,7 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 	t_list* entrenadores_mas_cercanos = list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca);
 	if(list_size(entrenadores_mas_cercanos) == 0) {
 		queue_push(pokemons_sin_entrenador, pokemon_objetivo);
-		log_info(nuestro_log,"NO HAY ENTRENADORES DISPONIBLES EN ESTE MOMENTO");
+		log_info(nuestro_log,"No hay entrenadores disponibles en este momentos");
 		//VER DESPUES ESTE CASO
 	} else {
 		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);
@@ -179,6 +179,7 @@ void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokem
 	entrenador_listo->pokemon_en_busqueda = pokemon_suelto;
 	agregar_movimientos_en_x(entrenador_listo);
 	agregar_movimientos_en_y(entrenador_listo);
+	agregar_accion(entrenador_listo, atrapar_pokemon, 1);
 
 	cambiar_estado_entrenador(entrenador_listo, READY);
 	list_add(entrenadores_ready, entrenador_listo);
@@ -249,4 +250,27 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 	return ((int) dictionary_get(objetivo_global,nombre_pokemon)) > 0;
 }
 
+//ACCION CATCH:
+void atrapar_pokemon(entrenador* entrenador) {
+	int socket_catch = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	if(socket_catch == -1) {
+		//ACCION POR DEFAULT
+		manejar_la_captura_del_pokemon(entrenador);
+	} else {
+		//ACCION CON EL BROKER
+		//TODO realizar el mandado del CATCH al broker y el recibo del ID para luego esperar en CAUGHT
+	}
+}
+
+void manejar_la_captura_del_pokemon(entrenador* entrenador) {
+	agregar_objetivo_a_objetivo_global(entrenador->pokemon_en_busqueda->nombre);
+	list_add(entrenador->pokemons_adquiridos, entrenador->pokemon_en_busqueda->nombre);
+	destruir_pokemon(entrenador->pokemon_en_busqueda);
+}
+
+void destruir_pokemon(pokemon* pokemon) {
+	free(pokemon->nombre);
+	free(pokemon->posicion);
+	free(pokemon);
+}
 

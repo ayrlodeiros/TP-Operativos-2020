@@ -10,16 +10,15 @@ int main(void){
 
 	//intentar_conectar_al_broker();
 
-	//AGREGO MANUALMENTE A UN POKEMON PARA PROBAR
-
 	pthread_t* hilo_planificacion;
 	pthread_create(&hilo_planificacion,NULL,(void*) planificar, NULL);
 	pthread_detach(hilo_planificacion);
 
+	//AGREGO MANUALMENTE A UN POKEMON PARA PROBAR
 	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
 	manejar_aparicion_de_pokemon("Pikachu", 105, 0);
 	manejar_aparicion_de_pokemon("Charmander", 210, 0);
-	//manejar_aparicion_de_pokemon("Pikachu", 510, 15);
+	manejar_aparicion_de_pokemon("Pikachu", 510, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);
@@ -49,7 +48,8 @@ void mostrar_objetivo_global(char* key, void* value) {
 
 void iniciar_team() {
 	iniciar_config();
-	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
+	//logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
+	logger = log_create("src/resources/log_team1.txt", "team", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("src/resources/nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
 	//Iniciamos las variables globales del constructor
 	iniciar_variables_globales();

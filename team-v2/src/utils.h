@@ -32,5 +32,9 @@ int diferencia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* p
 int el_pokemon_es_requerido(char* nombre_pokemon);
 int necesito_mas_de_ese_pokemon(char* nombre_pokemon);
 
+void atrapar_pokemon(entrenador* entrenador);
+void manejar_la_captura_del_pokemon(entrenador* entrenador);
+void destruir_pokemon(pokemon* pokemon);
+
 
 #endif /* UTILS_H_ */
