@@ -26,6 +26,8 @@
 #include<commons/collections/dictionary.h>
 
 static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
+static pthread_mutex_t lock_de_entrenador_disponible = PTHREAD_MUTEX_INITIALIZER;
+static pthread_mutex_t mutex_entrenadores;
 
 t_log* logger;
 t_log* nuestro_log;
@@ -72,8 +74,8 @@ typedef struct
 	estado_entrenador estado;
 	int cpu_usado;
 	int cpu_disponible;
-	float cpu_estimado_anterior;
-	float cpu_estimado_restante;
+	double cpu_estimado_anterior;
+	double cpu_estimado_restante;
 	posicion* posicion;
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;

@@ -62,7 +62,11 @@ int leer_quantum(void){
 	return quantum;
 }
 
-int leer_estimacion_inicial(void){
+double leer_alpha(void) {
+	return alpha;
+}
+
+double leer_estimacion_inicial(void){
 	return estimacion_inicial;
 }
 
@@ -111,8 +115,12 @@ void setear_quantum(void){
 	quantum = config_get_int_value(config, "QUANTUM");
 }
 
+void setear_alpha(void) {
+	alpha = config_get_double_value(config, "ALPHA");
+}
+
 void setear_estimacion_inicial(void){
-	estimacion_inicial = config_get_int_value(config, "ESTIMACION_INICIAL");
+	estimacion_inicial = config_get_double_value(config, "ESTIMACION_INICIAL");
 }
 
 void setear_ip_broker(void){

@@ -13,7 +13,7 @@
 #define PLANIFICACION_H_
 
 
-float estimar_siguiente_rafaga(entrenador* entrenador);
+double estimar_siguiente_rafaga(entrenador* entrenador);
 void asignar_rafaga_estimada_al_entrenador(entrenador* entrenador);
 int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2);
 entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_con_rafagas_estimadas);

@@ -18,14 +18,18 @@ int main(void){
 	realizar_get();
 
 	pthread_t* hilo_planificacion;
-	pthread_create(&hilo_planificacion,NULL,(void*) planificar, NULL);
+	pthread_create(&hilo_planificacion,NULL, planificar, NULL);
 	pthread_detach(hilo_planificacion);
+
+	pthread_t* hilo_entrenador_disponible;
+	pthread_create(&hilo_entrenador_disponible, NULL, buscar_entrenador_disponible, NULL);
+	pthread_detach(hilo_entrenador_disponible);
 
 	//AGREGO MANUALMENTE A UN POKEMON PARA PROBAR
 	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
 	manejar_aparicion_de_pokemon("Pikachu", 105, 0);
 	manejar_aparicion_de_pokemon("Charmander", 210, 0);
-	//manejar_aparicion_de_pokemon("Pikachu", 10, 15);
+	manejar_aparicion_de_pokemon("Pikachu", 10, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);

@@ -134,6 +134,8 @@ void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estad
 //Manejo la llegada de un nuevo pokemon (LOCALIZED O APPEARED)
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) {
 	if(el_pokemon_es_requerido(nombre)) {
+		log_info(nuestro_log, string_from_format("Aparecio un %s, el cual es requerido", nombre));
+
 		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
 		nuevo_pokemon->nombre = nombre;
 		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
@@ -142,14 +144,18 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 	}
 }
 
-void entrenador_disponible(entrenador* entrenador){
+//Funcion que ejecuta el hilo cuando se le manda la señal de liberacion de un entrenador
+void buscar_entrenador_disponible(){
+	while(1){
+		if(!list_any_satisfy(entrenadores, el_entrenador_se_puede_planificar) || queue_size(pokemons_sin_entrenador)==0) {
+			log_info(nuestro_log, "Esperando a que algun entrenador se libere");
+			pthread_mutex_lock(&lock_de_entrenador_disponible);
+		}
 
-	cambiar_estado_entrenador(entrenador, READY);
-
-	if(queue_size(pokemons_sin_entrenador) > 0){
-		log_info(nuestro_log,"Un entrenador que se libero esta atendiendo a un nuevo pokemon");
-		pokemon* pokemon = queue_pop(pokemons_sin_entrenador);
-		agregar_entrenador_a_entrenadores_ready(entrenador, pokemon);
+		if(list_any_satisfy(entrenadores, el_entrenador_se_puede_planificar) && queue_size(pokemons_sin_entrenador)>0) {
+			log_info(nuestro_log,"Se libero entrenador para buscar pokemon sin asignar");
+			buscar_entrenador_a_planificar_para_moverse(queue_pop(pokemons_sin_entrenador));
+		}
 	}
 }
 
@@ -160,11 +166,12 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 	t_list* entrenadores_mas_cercanos = list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca);
 	if(list_size(entrenadores_mas_cercanos) == 0) {
 		queue_push(pokemons_sin_entrenador, pokemon_objetivo);
-		log_info(nuestro_log,"No hay entrenadores disponibles en este momentos");
-		//VER DESPUES ESTE CASO
+		log_info(nuestro_log,"No hay entrenadores disponibles en este momento, cuando alguno finalice el hilo de entrenadores disponibles se encargara de la asignacion.");
 	} else {
+		log_info(nuestro_log, string_from_format("Se encontro entrenador para asignar a la busqueda de %s", pokemon_objetivo->nombre));
 		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);
 	}
+	list_destroy(entrenadores_mas_cercanos);
 }
 
 void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto) {

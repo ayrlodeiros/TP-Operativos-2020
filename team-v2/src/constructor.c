@@ -7,6 +7,7 @@ void iniciar_variables_globales() {
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
 	pthread_mutex_lock(&lock_de_planificacion);
+	pthread_mutex_lock(&lock_de_entrenador_disponible);
 
 	funciona_broker=0;
 }
@@ -38,7 +39,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
 	un_entrenador->cpu_usado = 0;
 	un_entrenador->cpu_disponible = 0;
-	un_entrenador->cpu_estimado_anterior = estimacion_inicial;
+	un_entrenador->cpu_estimado_anterior = leer_estimacion_inicial();
 	un_entrenador->cpu_estimado_restante = un_entrenador->cpu_estimado_anterior;
 	un_entrenador->acciones = queue_create();
 
