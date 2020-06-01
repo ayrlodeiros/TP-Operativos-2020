@@ -39,6 +39,7 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	un_entrenador->cpu_usado = 0;
 	un_entrenador->cpu_disponible = 0;
 	un_entrenador->cpu_estimado_anterior = estimacion_inicial;
+	un_entrenador->cpu_estimado_restante = un_entrenador->cpu_estimado_anterior;
 	un_entrenador->acciones = queue_create();
 
 	return un_entrenador;

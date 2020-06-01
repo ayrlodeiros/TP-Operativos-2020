@@ -285,6 +285,8 @@ void manejar_la_captura_del_pokemon(entrenador* entrenador) {
 	agregar_objetivo_a_objetivo_global(pokemon_en_captura->nombre);
 	list_add(entrenador->pokemons_adquiridos, pokemon_en_captura->nombre);
 	destruir_pokemon(pokemon_en_captura);
+
+	cambiar_estado_entrenador(entrenador, BLOCK_READY);
 }
 
 void destruir_pokemon(pokemon* pokemon) {

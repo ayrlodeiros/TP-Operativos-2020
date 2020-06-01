@@ -73,6 +73,8 @@ void ejecutar(entrenador* entrenador){
 	//TODO VER ESTO
 	pthread_join(entrenador->hilo, NULL);
 
+	free(accion_a_ejecutar->funcion);
+	free(accion_a_ejecutar->cpu_requerido);
 	free(accion_a_ejecutar);
 }
 

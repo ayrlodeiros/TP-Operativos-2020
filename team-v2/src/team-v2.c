@@ -4,7 +4,7 @@
 int main(void){
 
 	iniciar_team();
-	//
+
 	log_info(nuestro_log, string_from_format("El algoritmo de planificacion es: %d", leer_algoritmo_planificacion()));
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 	dictionary_iterator(objetivo_global, mostrar_objetivo_global);
@@ -25,7 +25,7 @@ int main(void){
 	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
 	manejar_aparicion_de_pokemon("Pikachu", 105, 0);
 	manejar_aparicion_de_pokemon("Charmander", 210, 0);
-	//manejar_aparicion_de_pokemon("Pikachu", 510, 15);
+	//manejar_aparicion_de_pokemon("Pikachu", 10, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);

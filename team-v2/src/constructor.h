@@ -72,7 +72,8 @@ typedef struct
 	estado_entrenador estado;
 	int cpu_usado;
 	int cpu_disponible;
-	int cpu_estimado_anterior;
+	float cpu_estimado_anterior;
+	float cpu_estimado_restante;
 	posicion* posicion;
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;

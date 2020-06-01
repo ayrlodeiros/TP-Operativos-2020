@@ -1,41 +1,32 @@
 #include "planificacion.h"
 
-/*t_list* estimar_rafagas_entrenadores(){
-	return list_map(entrenadores_ready, estimar_siguiente_rafaga);
-}
-
 float estimar_siguiente_rafaga(entrenador* entrenador){
 	float alpha = 0.5;
 	float estimacion = alpha * entrenador->cpu_disponible +
 			(1-alpha) * entrenador->cpu_estimado_anterior;
 
-	entrenador->cpu_estimado_anterior = estimacion;
-
-	printf("\nPOSICION ENTRENADOR : X->%d e Y->%d",entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
-	printf("\n ESTIMACION DE RAFAGA ENTRENADOR: %d",estimacion);
-
 	return estimacion;
+}
 
-	//No se como hacer con la estimacion anterior, habia pensado en crear una variable para cada entrenador
-	//tipo, en el struct entrenador, poner una variable.
-	//Que guarde la rafaga anterior, no se. Si se te ocurre otra cosa mejor, avisa.
-	// Igual, por ahora no cambie otra cosa que no sea en planificacion.
+void asignar_rafaga_estimada_al_entrenador(entrenador* entrenador){
+	entrenador->cpu_estimado_anterior = estimar_siguiente_rafaga(entrenador);
+	entrenador->cpu_estimado_restante = entrenador->cpu_estimado_anterior;
 }
 
 int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2){
-	return estimar_siguiente_rafaga(entrenador1) <= estimar_siguiente_rafaga(entrenador2);
+	return entrenador1->cpu_estimado_restante <= entrenador2->cpu_estimado_restante;
 }
 
-//ARREGLAR, devuelve pthread_t?
-entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_a_planificar){
-	list_sort(entrenadores_ready,tiene_menor_rafaga);
-	return list_remove(entrenadores_ready,0);
+entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_con_rafagas_estimadas){
+	list_sort(entrenadores_con_rafagas_estimadas,tiene_menor_rafaga);
+	return list_remove(entrenadores_con_rafagas_estimadas,0);
 }
-*/
+
 
 void planificar(){
-	//EN EL SWITCH TIENEN QUE IR VALORES INT
-	//QUE LA PLANIFICACION SEA UN HILO QUE ARRANCA Y ESTA SIEMPRE CORRIENDO, VER DE CAMBIARLO
+
+	log_info(nuestro_log, "Estoy en el planificador");
+
 	switch (leer_algoritmo_planificacion()) {
 	    case FIFO:
 	    	fifo();
@@ -44,10 +35,10 @@ void planificar(){
 	    	round_robin();
 	    	break;
 	    case SJFSD:
-	    	//sjf_sin_desalojo();
+	    	sjf_sin_desalojo();
 	    	break;
 	    case SJFCD:
-	    	//sjf_con_desalojo();
+	    	sjf_con_desalojo();
 	    	break;
 	    case ALGORITMO_DESCONOCIDO:
 	    	log_error(nuestro_log, "El algoritmo ingresado no existe");
@@ -72,21 +63,26 @@ void fifo(){
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
-		entrenador_disponible(entrenador_a_ejecutar);
+
 	}
 }
 
 void round_robin(){
 
 	int tiempo = 0;
-	int quantum_consumido = 1;  //Lo seteo en 1 , porque puse <= en el IF
+	int quantum_consumido = 0;
 
 	//QUANTUM = 2   (Del ejemplo del config)
 
 	printf("\n QUANTUM TOTAL : %d", quantum);
 
 	while(1){
-			entrenador* entrenador_a_ejecutar = queue_pop(entrenadores_ready);
+
+		if(list_size(entrenadores_ready) == 0) {
+			pthread_mutex_lock(&lock_de_planificacion);
+		}
+
+			entrenador* entrenador_a_ejecutar = list_remove(entrenadores_ready, 0);
 
 			printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
 			//printf("\n CPU REQUERIDO ENTRENADOR : %d", entrenador_a_ejecutar->accion_a_ejecutar->cpu_requerido);
@@ -96,7 +92,7 @@ void round_robin(){
 				printf("\nPOKEMONS ENTRENADOR : %s", list_get(entrenador_a_ejecutar->pokemons_adquiridos, j));
 			}
 
-			while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0 && quantum_consumido <= quantum){
+			while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0 && quantum_consumido < quantum){
 				ejecutar(entrenador_a_ejecutar);
 				tiempo ++;
 				quantum_consumido ++;
@@ -107,29 +103,38 @@ void round_robin(){
 			}
 
 			if(cpu_restante_entrenador(entrenador_a_ejecutar)){
-				queue_push(entrenadores_ready,entrenador_a_ejecutar);
-			}
-			else{
-				entrenador_disponible(entrenador_a_ejecutar);
+				list_add(entrenadores_ready,entrenador_a_ejecutar);
 			}
 
-
+			quantum_consumido = 0;
 
 	}
 
 }
 
-/*void sjf_sin_desalojo(){
+void sjf_sin_desalojo(){
 
-	if(list_size(entrenadores_ready) == 0) {
-		pthread_mutex_lock(&lock_de_planificacion);
-	}
+	log_info(nuestro_log, "Estoy por entrar a SJF sin desalojo");
 
-	t_list* estimaciones_rafagas_entrenadores = list_create();
-	estimaciones_rafagas_entrenadores = estimar_rafagas_entrenadores();
+	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
 	while(1){
-		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada();
+
+		log_info(nuestro_log, "Estoy en SJF SIN DESALOJO preparado para planificar");
+
+		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
+			pthread_mutex_lock(&lock_de_planificacion);
+		}
+
+
+
+		while(list_size(entrenadores_ready) > 0){
+			entrenador* entrenador_a_estimar = list_remove(entrenadores_ready,0);
+			asignar_rafaga_estimada_al_entrenador(entrenador_a_estimar);
+			list_add(entrenadores_con_rafagas_estimadas,entrenador_a_estimar);
+		}
+
+		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
 
 		printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
 		printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
@@ -142,7 +147,7 @@ void round_robin(){
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
-		entrenador_disponible(entrenador_a_ejecutar);
+
 	}
 
 }
@@ -150,10 +155,22 @@ void round_robin(){
 
 
 void sjf_con_desalojo(){
-	t_list* estimaciones_rafagas_entrenadores = estimar_rafagas_entrenadores();
+
+	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
 	while(1){
-		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada();
+
+		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
+			pthread_mutex_lock(&lock_de_planificacion);
+		}
+
+		while(list_size(entrenadores_ready) > 0){
+			entrenador* entrenador_a_estimar = list_remove(entrenadores_ready,0);
+			asignar_rafaga_estimada_al_entrenador(entrenador_a_estimar);
+			list_add(entrenadores_con_rafagas_estimadas,entrenador_a_estimar);
+		}
+
+		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
 
 		printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
 		printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
@@ -164,10 +181,9 @@ void sjf_con_desalojo(){
 		}
 
 		ejecutar(entrenador_a_ejecutar);
+		entrenador_a_ejecutar->cpu_estimado_restante -= 1;
 
-		if(cpu_restante_entrenador(entrenador_a_ejecutar) == 0){
-			entrenador_disponible(entrenador_a_ejecutar);
-		}
 
 	}
-}*/
+}
+

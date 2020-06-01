@@ -12,18 +12,19 @@
 #ifndef PLANIFICACION_H_
 #define PLANIFICACION_H_
 
-t_list* estimar_rafagas_entrenadores();
+
 float estimar_siguiente_rafaga(entrenador* entrenador);
+void asignar_rafaga_estimada_al_entrenador(entrenador* entrenador);
 int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2);
-entrenador* entrenador_con_menor_rafaga_estimada();
+entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_con_rafagas_estimadas);
 
 void planificar();
 void fifo();
 void round_robin();
 
-/*
+
 void sjf_sin_desalojo();
-void sjf_con_desalojo();*/
+void sjf_con_desalojo();
 
 
 #endif /* PLANIFICACION_H_ */
