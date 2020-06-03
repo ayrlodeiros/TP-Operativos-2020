@@ -21,6 +21,7 @@ int main(void)
 }
 
 void iniciar_broker(){
+
 	printf("-----------------Iniciando archivo config-----------------\n");
 	iniciar_config();
 	inicializar_message_queues();

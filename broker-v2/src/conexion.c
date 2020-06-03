@@ -88,28 +88,14 @@ void esperar_cliente(int socket_servidor,t_log* logger)
 
 void servir_cliente(int* socket)
 {
-	int cod_op;
-	if(recv(*socket, &cod_op, sizeof(int), MSG_WAITALL) == -1)
-		cod_op = -1;
-	process_request(cod_op, *socket);
+	int cod_modulo;
+	if(recv(*socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
+		cod_modulo = -1;
+	process_request(cod_modulo, *socket);
 }
 
-void process_request(int cod_op, int socket_cliente) {
-	int cola_code;
-	recv(socket_cliente,&cola_code,sizeof(int),MSG_WAITALL);
-	int modulo;
-	switch (cod_op) {
-		case MENSAJE:
-			/** Por ahora para probar uso solo una cola*/
-			switch_mensaje(cola_code,socket_cliente);
-			break;
-		case SUSCRIPCION:
-			/**Faltaria definir bien cuando se recibe cada cosa, por ahora lo pongo asi */
-			recv(socket_cliente,&modulo,sizeof(int),MSG_WAITALL);
-			switch_suscripcion(cola_code,socket_cliente,modulo);
-			break;
-		case -1:
-			log_info(mi_log,"HUbo un error al tratar de recibir el mensaje\n");
-			pthread_exit(NULL);
-		}
+void process_request(int cod_modulo, int socket_cliente) {
+	int cod_op;
+	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
+	switch_cola(cod_op,socket_cliente,cod_modulo);
 }

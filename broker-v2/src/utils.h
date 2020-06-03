@@ -18,11 +18,17 @@ t_log* mi_log;
 int contador_ids_mensaje;
 
 typedef enum{
-	GAME_BOY = 1,
-	GAME_CARD = 2,
-	TEAM = 3
+	TEAM = 1,
+	GAMEBOY = 2,
+	GAMECARD = 3
 }modulo_code;
 
+
+typedef enum
+{
+	MENSAJE=1,
+	SUSCRIPCION=2
+}op_code;
 
 void iniciar_contador_ids_mensaje();
 

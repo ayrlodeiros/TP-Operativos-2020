@@ -7,11 +7,8 @@ pthread_t* ack;
 
 /*Uno para verificar que tipo de modulo se conecto y el otro para verificar la conexion */
 
-typedef enum
-{
-	MENSAJE=1,
-	SUSCRIPCION=2
-}op_code; /** Para identificar cuando se recibe una conexion que tipo de operacion se va a realizar*/
+ /** Para identificar cuando se recibe una conexion que tipo de operacion se va a realizar*/
+
 
 typedef struct
 {
