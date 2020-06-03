@@ -2,7 +2,7 @@
 
 
 void iniciar_config(void){
-	config = config_create("src/resources/gameBoy.config");
+	config = config_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/gameBoy.config");
 	setear_ip_broker();
 	setear_ip_team();
 	setear_ip_gamecard();
