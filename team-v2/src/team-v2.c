@@ -29,7 +29,7 @@ int main(void){
 	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
 	manejar_aparicion_de_pokemon("Pikachu", 105, 0);
 	manejar_aparicion_de_pokemon("Charmander", 210, 0);
-	manejar_aparicion_de_pokemon("Pikachu", 10, 15);
+	//manejar_aparicion_de_pokemon("Pikachu", 10, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){
 		entrenador* entrenador = list_get(entrenadores_ready, i);

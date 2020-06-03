@@ -72,8 +72,8 @@ typedef struct
 {
 	pthread_t* hilo;
 	estado_entrenador estado;
-	int cpu_usado;
-	int cpu_disponible;
+	double cpu_usado;
+	double cpu_disponible;
 	double cpu_estimado_anterior;
 	double cpu_estimado_restante;
 	posicion* posicion;
