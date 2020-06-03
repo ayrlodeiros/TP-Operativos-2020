@@ -6,6 +6,7 @@ void iniciar_config(void){
 	setear_retardo_ciclo_cpu();
 	setear_algoritmo_planificacion();
 	setear_quantum();
+	setear_alpha();
 	setear_estimacion_inicial();
 	setear_ip_broker();
 	setear_puerto_broker();

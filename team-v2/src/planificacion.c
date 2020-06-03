@@ -2,7 +2,7 @@
 
 double estimar_siguiente_rafaga(entrenador* entrenador){
 	double config_alpha = leer_alpha();
-	double estimacion = config_alpha * cpu_restante_entrenador(entrenador) +
+	double estimacion = config_alpha * entrenador->cpu_disponible +
 			(1-config_alpha) * entrenador->cpu_estimado_anterior;
 
 	return estimacion;
@@ -132,6 +132,7 @@ void sjf_sin_desalojo(){
 			list_add(entrenadores_con_rafagas_estimadas,entrenador_a_estimar);
 		}
 
+
 		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
 
 		printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
@@ -149,7 +150,7 @@ void sjf_sin_desalojo(){
 		}
 	}
 
-	list_destroy(entrenadores_con_rafagas_estimadas);
+	//list_destroy(entrenadores_con_rafagas_estimadas);
 
 }
 
