@@ -2,7 +2,7 @@
 
 double estimar_siguiente_rafaga(entrenador* entrenador){
 	double config_alpha = leer_alpha();
-	double estimacion = config_alpha * cpu_restante_entrenador(entrenador) +
+	double estimacion = config_alpha * entrenador->cpu_disponible +
 			(1-config_alpha) * entrenador->cpu_estimado_anterior;
 
 	return estimacion;
