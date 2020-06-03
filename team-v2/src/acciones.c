@@ -49,6 +49,7 @@ void realizar_catch(entrenador* entrenador) {
 //Realiza un intercambio entre dos entrenadores que estaban bloqueados
 void intercambiar(entrenador* entrenador1, entrenador* entrenador2) {
 	//TODO realizar intercamiar
+
 	//Vamos a tener que ver que pokemons no necesita el entrenador1, que pokemons no necesita el entrenador2,...
 	//... ver si alguno de los dos necesita lo que el otro no necesita y:
 	//Si ambos necesitan lo que el otro no necesita: ambos van a recibir algo que necesitan

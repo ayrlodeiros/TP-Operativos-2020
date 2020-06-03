@@ -251,6 +251,81 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 }
 
 
+//PARTE DE DETECCION DEADLOCK (FALTA TERMINAR)
+/*
+int necesito_mas_pokemons(){
+	int i=0;
+
+	while(i<dictionary_size(objetivo_global)){
+		if((int)dictionary_get(objetivo_global,i) > 0){
+			return 1;
+		}
+	}
+	return 0;
+}
+
+int el_entrenador_cumplio_su_objetivo(entrenador* entrenador){
+	return entrenador->pokemons_objetivo == entrenador->pokemons_adquiridos;
+}
+
+
+int hay_deadlock(){
+	return !(necesito_mas_pokemons() || list_all_satisfy(entrenadores,el_entrenador_cumplio_su_objetivo));
+}
+
+
+void salida_entrenador(entrenador* entrenador){
+	if(el_entreador_cumplio_su_objetivo(entrenador)){
+		cambiar_estado_entrenador(entrenador,EXIT);
+	}
+}
+
+int el_entrenador_esta_block_deadlock(entrenador* entrenador){
+	return entrenador->estado == BLOCK_DEADLOCK;
+}
+
+int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,pokemon* pokemon){
+
+	int cantidad = 0;
+
+	for(int i=0;i<list_size(lista_de_pokemons);i++){
+		if(pokemon == list_get(lista_de_pokemons,i)){
+			cantidad ++;
+		}
+	}
+	return cantidad;
+}
+
+int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos,t_list* pokemons_objetivo, pokemon* pokemon){
+	return cantidad_del_mismo_pokemon_por_entrenador(pokemons_adquiridos,pokemon) > cantidad_del_mismo_pokemon_por_entrenador(pokemons_objetivo,pokemon);
+}
+
+pokemon* pokemon_que_me_sobra(entrenador* entrenador){
+
+	for(int i=0;i<list_size(entrenador->pokemons_adquiridos);i++){
+		if(tiene_mas_cantidad_de_ese_pokemon(entrenador->pokemons_adquiridos,entrenador->pokemons_objetivo,list_get(entrenador->pokemons_adquiridos,i))){
+			return list_get(entrenador->pokemons_adquiridos,i);
+		}
+	}
+	return NULL;
+}
+
+pokemon* pokemon_que_necesito(entrenador* entrenador){
+
+	for(int i=0;i<list_size(entrenador->pokemons_objetivo);i++){
+		if(!tiene_mas_cantidad_de_ese_pokemon(entrenador->pokemons_adquiridos,entrenador->pokemons_objetivo,list_get(entrenador->pokemons_adquiridos,i))){
+			return list_get(entrenador->pokemons_objetivo,i);
+		}
+	}
+	return NULL;
+
+}
+
+t_list* entrenadores_con_block_deadlock(){
+	return list_filter(entrenadores,el_entrenador_esta_block_deadlock);
+}
+
+*/
 
 //GET
 void get_pokemon() {
