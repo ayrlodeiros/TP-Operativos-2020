@@ -27,7 +27,7 @@ void liberar_conexion(int socket) {
 	close(socket);
 }
 
-void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket){
+void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket, int puerto, int id_mensaje_correlativo){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->codigo_operacion = APPEARED_POKEMON;
 
@@ -47,14 +47,21 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket){
 	bytes_escritos += sizeof(uint32_t);
 
 	memcpy(stream + bytes_escritos, &appeared_pokemon.posicionY, sizeof(uint32_t));
+	bytes_escritos += sizeof(uint32_t);
 
+	if(puerto == 5003){
+		memcpy(stream + bytes_escritos, id_mensaje_correlativo, sizeof(uint32_t));
+	}
 	paquete->buffer->stream = stream;
 
 	int size_serializados;
 	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
 
-	send(socket,mensaje_a_enviar,size_serializados,0);
-
+	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
+		log_info(logger, string_from_format("Se envio el mensaje APPEARED: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
+	}else{
+		log_error(logger, "No se pudo enviar el mensaje APPEARED.");
+	}
 
 	free(mensaje_a_enviar);
 	free(paquete->buffer->stream);
@@ -63,7 +70,7 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket){
 
 }
 
-void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket){
+void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket,int puerto, int id_mensaje){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->codigo_operacion = NEW_POKEMON;
 
@@ -88,13 +95,20 @@ void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket){
 	memcpy(stream + bytes_escritos, &new_pokemon.cantidad_pokemon, sizeof(uint32_t));
 	bytes_escritos += sizeof(uint32_t);
 
+	if(puerto == 5001){
+		memcpy(stream + bytes_escritos, id_mensaje, sizeof(uint32_t));
+	}
+
 	paquete->buffer->stream = stream;
 
 	int size_serializados;
 	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
 
-	send(socket,mensaje_a_enviar,size_serializados,0);
-
+	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
+		log_info(logger, string_from_format("Se envio el mensaje NEW: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
+	}else{
+		log_error(logger, "No se pudo enviar el mensaje NEW.");
+	}
 
 	free(mensaje_a_enviar);
 	free(paquete->buffer->stream);
@@ -103,7 +117,7 @@ void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket){
 
 }
 
-void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker){
+void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,int puerto,int id_mensaje_correlativo){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->codigo_operacion = CAUGHT_POKEMON;
 
@@ -116,12 +130,19 @@ void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker){
 	memcpy(stream + bytes_escritos, &caught_pokemon.atrapado, sizeof(uint32_t));
 	bytes_escritos += sizeof(uint32_t);
 
+	if(puerto == 5003){
+			memcpy(stream + bytes_escritos, id_mensaje_correlativo, sizeof(uint32_t));
+	}
 	paquete->buffer->stream = stream;
 
 	int size_serializados;
 	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
 
-	send(socket_broker,mensaje_a_enviar,size_serializados,0);
+	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
+		log_info(logger, string_from_format("Se envio el mensaje CAUGHT: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
+	}else{
+		log_error(logger, "No se pudo enviar el mensaje CAUGHT.");
+	}
 
 
 	free(mensaje_a_enviar);
@@ -131,7 +152,7 @@ void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker){
 
 }
 
-void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket){
+void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket,int puerto, int id_mensaje){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->codigo_operacion = CATCH_POKEMON;
 
@@ -151,13 +172,21 @@ void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket){
 	bytes_escritos += sizeof(uint32_t);
 
 	memcpy(stream + bytes_escritos, &catch_pokemon.posicionY, sizeof(uint32_t));
+	bytes_escritos += sizeof(uint32_t);
 
+	if(puerto == 5001){
+		memcpy(stream + bytes_escritos, id_mensaje, sizeof(uint32_t));
+	}
 	paquete->buffer->stream = stream;
 
 	int size_serializados;
 	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
 
-	send(socket,mensaje_a_enviar,size_serializados,0);
+	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
+		log_info(logger, string_from_format("Se envio el mensaje CATCH: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
+	}else{
+		log_error(logger, "No se pudo enviar el mensaje CATCH.");
+	}
 
 
 	free(mensaje_a_enviar);
@@ -167,7 +196,7 @@ void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket){
 
 }
 
-void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket_broker){
+void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket,int puerto, int id_mensaje){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->codigo_operacion = GET_POKEMON;
 
@@ -180,14 +209,20 @@ void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket_broker){
 	memcpy(stream + bytes_escritos, &get_pokemon.largo_nombre_pokemon, sizeof(uint32_t));
 	bytes_escritos += sizeof(uint32_t);
 
+	if(puerto == 5001){
+		memcpy(stream + bytes_escritos, id_mensaje, sizeof(uint32_t));
+	}
+
 	paquete->buffer->stream = stream;
 
 	int size_serializados;
 	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
 
-	send(socket_broker,mensaje_a_enviar,size_serializados,0);
-	//log_info(logger, string_from_format("Se envio el mensaje GET: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
-
+	if(send(socket,mensaje_a_enviar,size_serializados,0) > 0){
+		log_info(logger, string_from_format("Se envio el mensaje GET: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
+	}else{
+		log_error(logger, "No se pudo enviar el mensaje GET.");
+	}
 
 	free(mensaje_a_enviar);
 	free(paquete->buffer->stream);
@@ -196,6 +231,38 @@ void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket_broker){
 
 }
 
+void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker){
+	t_paquete *paquete = malloc(sizeof(t_paquete));
+	paquete->codigo_operacion = SUSCRIPCION;
+
+	paquete->buffer = malloc(sizeof(t_buffer));
+	paquete->buffer->size = sizeof(mq_nombre) + sizeof(uint32_t);
+
+	void* stream = malloc(paquete->buffer->size);
+	int bytes_escritos = 0;
+
+	memcpy(stream + bytes_escritos, &cola_de_mensajes.nombre, sizeof(mq_nombre));
+	bytes_escritos += sizeof(mq_nombre);
+
+	memcpy(stream + bytes_escritos, tiempo,sizeof(uint32_t));
+
+	paquete->buffer->stream = stream;
+
+	int size_serializados;
+	void *mensaje_a_enviar = serializar_paquete(paquete,&size_serializados);
+
+	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
+		log_info(logger, string_from_format("Se suscribio correctamente a la cola %s", &cola_de_mensajes.nombre));
+	}else{
+		log_error(logger, string_from_format("No se pudo suscribir a la cola %s",&cola_de_mensajes.nombre));
+	}
+
+
+	free(mensaje_a_enviar);
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
+}
 
 void* serializar_paquete(t_paquete* paquete, int *bytes){
 	int size_serializado = sizeof(paquete->codigo_operacion) + sizeof(paquete->buffer->size) + (*bytes);
