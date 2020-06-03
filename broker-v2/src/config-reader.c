@@ -2,7 +2,7 @@
 
 
 void iniciar_config(void){
-	config = config_create("src/resources/broker.config");
+	config = config_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/broker.config");
 	setear_tamano_memoria();
 	setear_tamano_minimo_particion();
 	setear_algoritmo_memoria();
