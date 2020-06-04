@@ -8,6 +8,8 @@ int socket_broker;
 pokemon* pokemon_para_planificar;
 
 //CONEXIONES
+void* serializar_paquete(t_paquete* paquete, int bytes);
+int obtener_tamanio_de_paquete(t_paquete* paquete);
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
@@ -36,6 +38,12 @@ int diferencia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* p
 int el_pokemon_es_requerido(char* nombre_pokemon);
 int necesito_mas_de_ese_pokemon(char* nombre_pokemon);
 
+//DEADLOCK
+
+//FIN DE DEADLOCK
+
+
+//ACCIONES
 void get_pokemon();
 
 void catch_pokemon(entrenador* entrenador);

@@ -24,6 +24,7 @@
 #include<commons/collections/list.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/dictionary.h>
+#define NUMERO_MODULO 1
 
 static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
 static pthread_mutex_t lock_de_entrenador_disponible = PTHREAD_MUTEX_INITIALIZER;
@@ -72,8 +73,8 @@ typedef struct
 {
 	pthread_t* hilo;
 	estado_entrenador estado;
-	double cpu_usado;
-	double cpu_disponible;
+	int cpu_usado;
+	int cpu_disponible;
 	double cpu_estimado_anterior;
 	double cpu_estimado_restante;
 	posicion* posicion;
@@ -83,6 +84,37 @@ typedef struct
 	pokemon* pokemon_en_busqueda;
 	t_queue* acciones;
 } entrenador;
+
+//CONEXIONES
+typedef enum
+{
+	MENSAJE = 1,
+	SUSCRIPCION = 2
+}codigo_operacion;
+
+typedef enum
+{
+	GET = 1,
+	LOCALIZED = 2,
+	CATCH = 3,
+	CAUGHT = 4,
+	NEW_ACCION = 5,
+	APPEARED = 6
+}codigo_accion;
+
+typedef struct
+{
+	int tamanio;
+	void* stream;
+} t_buffer;
+
+typedef struct
+{
+	int numero_de_modulo;
+	codigo_operacion codigo_de_operacion;
+	codigo_accion codigo_de_accion;
+	t_buffer* buffer;
+} t_paquete;
 
 
 

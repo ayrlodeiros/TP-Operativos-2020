@@ -2,6 +2,27 @@
 
 
 //CONEXIONES
+void* serializar_paquete(t_paquete* paquete, int bytes){
+	void * a_enviar = malloc(bytes);
+	int offset = 0;
+
+	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(int));
+	offset += sizeof(int);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_operacion),sizeof(int));
+	offset += sizeof(int);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_accion),sizeof(int));
+	offset += sizeof(int);
+	memcpy(a_enviar + offset,&(paquete->buffer->tamanio),sizeof(int));
+	offset += sizeof(int);
+	memcpy(a_enviar + offset,paquete->buffer->stream, paquete->buffer->tamanio);
+
+	return a_enviar;
+}
+
+int obtener_tamanio_de_paquete(t_paquete* paquete) {
+	return paquete->buffer->tamanio + 4*sizeof(int);
+}
+
 int crear_conexion_como_cliente(char *ip, char* puerto) {
 	struct addrinfo hints;
 	struct addrinfo *server_info;
@@ -329,7 +350,7 @@ t_list* entrenadores_con_block_deadlock(){
 
 //GET
 void get_pokemon() {
-
+	//ITERAR LOS POKEMONS DEL OBJETIVO PARA ENVIAR UN GET POR CADA POKEMON
 }
 
 void realizar_get(char* key, void* value) {
@@ -341,6 +362,39 @@ void realizar_get(char* key, void* value) {
 	} else {
 		//ACCION CON EL BROKER
 		//TODO realizar el mandado del GET al broker y el recibo del ID para luego esperar en LOCALIZED
+		t_buffer* buffer = malloc(sizeof(t_buffer));
+		buffer->tamanio = 0;
+		t_paquete* paquete = malloc(sizeof(t_paquete));
+		paquete->numero_de_modulo = NUMERO_MODULO;
+		paquete->codigo_de_operacion = MENSAJE;
+		paquete->codigo_de_accion = GET;
+		paquete->buffer = buffer;
+
+
+		int bytes = obtener_tamanio_de_paquete(paquete);
+		void* a_enviar = serializar_paquete(paquete, bytes);
+
+		if(send(socket_get, a_enviar, bytes ,0) > 0){
+			log_info(nuestro_log, "Se realizo el envio de GET correctamente");
+			int id_localized;
+
+			if(recv(socket_get,&id_localized, sizeof(int), 0) > 0){
+				log_info(nuestro_log, "Se recibio el ID para esperar LOCALIZED correctamente");
+			}
+			else {
+
+			}
+		}
+		else{
+
+			log_info(logger, "9. No se pudo realizar el envio del GET al broker, se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+			log_info(nuestro_log, "9. No se pudo realizar el envio del GET al broker, se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+		}
+
+		free(a_enviar);
+		free(paquete->buffer->stream);
+		free(paquete->buffer);
+		free(paquete);
 	}
 }
 
