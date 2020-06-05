@@ -22,14 +22,26 @@
 
 typedef enum
 {
-	NEW_POKEMON=1,
+	GET_POKEMON=1,
 	LOCALIZED_POKEMON=2,
-	GET_POKEMON=3,
-	APPEARED_POKEMON=4,
-	CATCH_POKEMON=5,
-	CAUGHT_POKEMON=6,
-	SUSCRIPCION=7
+	CATCH_POKEMON=3,
+	CAUGHT_POKEMON=4,
+	NEW_POKEMON=5,
+	APPEARED_POKEMON=6
 }tipo_mensaje;
+
+typedef enum
+{
+	MENSAJE=1,
+	SUSCRIPCION=2
+}codigo_operacion;
+
+typedef enum
+{
+	TEAM = 1,
+	GAMEBOY = 2,
+	GAMECARD = 3
+}tipo_modulo;
 
 typedef struct
 {
@@ -39,7 +51,9 @@ typedef struct
 
 typedef struct
 {
-	tipo_mensaje codigo_operacion;
+	tipo_modulo modulo;
+	codigo_operacion cod_op;
+	tipo_mensaje mensaje;
 	t_buffer* buffer;
 } t_paquete;
 
@@ -82,6 +96,6 @@ void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket_broker,int puerto,
 void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,int puerto,int id_mensaje_correlativo);
 void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket_broker,int puerto, int id_mensaje);
 void* serializar_paquete(t_paquete* paquete, int *size_serializado);
-void* suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker);
+void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker);
 
 #endif /* CONEXION_H_ */

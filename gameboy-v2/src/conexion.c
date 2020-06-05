@@ -29,7 +29,9 @@ void liberar_conexion(int socket) {
 
 void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket, int puerto, int id_mensaje_correlativo){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = APPEARED_POKEMON;
+	paquete->modulo = GAMEBOY;
+	paquete->cod_op = MENSAJE;
+	paquete->mensaje = APPEARED_POKEMON;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = strlen(&appeared_pokemon.nombre_pokemon) + 1 + sizeof(uint32_t) * 3;
@@ -72,7 +74,9 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket, in
 
 void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket,int puerto, int id_mensaje){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = NEW_POKEMON;
+	paquete->modulo = GAMEBOY;
+	paquete->cod_op = MENSAJE;
+	paquete->mensaje = NEW_POKEMON;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = strlen(&new_pokemon.nombre_pokemon) + 1 + sizeof(uint32_t) * 4;
@@ -119,7 +123,9 @@ void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket,int puerto, int id
 
 void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,int puerto,int id_mensaje_correlativo){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = CAUGHT_POKEMON;
+	paquete->modulo = GAMEBOY;
+	paquete->cod_op = MENSAJE;
+	paquete->mensaje = CAUGHT_POKEMON;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = sizeof(uint32_t);
@@ -154,7 +160,10 @@ void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,in
 
 void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket,int puerto, int id_mensaje){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = CATCH_POKEMON;
+	paquete->modulo = GAMEBOY;
+	paquete->cod_op = MENSAJE;
+	paquete->mensaje = CATCH_POKEMON;
+
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = strlen(&catch_pokemon.nombre_pokemon) + 1 + sizeof(uint32_t) * 3;
@@ -198,7 +207,9 @@ void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket,int puerto, 
 
 void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket,int puerto, int id_mensaje){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = GET_POKEMON;
+	paquete->modulo = GAMEBOY;
+	paquete->cod_op = MENSAJE;
+	paquete->mensaje = GET_POKEMON;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = strlen(&get_pokemon.nombre_pokemon) + 1 + sizeof(uint32_t);
@@ -233,16 +244,15 @@ void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket,int puerto, int id
 
 void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker){
 	t_paquete *paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = SUSCRIPCION;
+	paquete->modulo = GAMEBOY;
+	paquete->cod_op = SUSCRIPCION;
+	paquete->mensaje = cola_de_mensajes.nombre;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = sizeof(mq_nombre) + sizeof(uint32_t);
 
 	void* stream = malloc(paquete->buffer->size);
 	int bytes_escritos = 0;
-
-	memcpy(stream + bytes_escritos, &cola_de_mensajes.nombre, sizeof(mq_nombre));
-	bytes_escritos += sizeof(mq_nombre);
 
 	memcpy(stream + bytes_escritos, tiempo,sizeof(uint32_t));
 
@@ -265,13 +275,19 @@ void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker){
 }
 
 void* serializar_paquete(t_paquete* paquete, int *bytes){
-	int size_serializado = sizeof(paquete->codigo_operacion) + sizeof(paquete->buffer->size) + (*bytes);
+	int size_serializado = sizeof(paquete->cod_op) + sizeof(paquete->mensaje) + sizeof(paquete->modulo) + sizeof(paquete->buffer->size) + (*bytes);
 	void* buffer = malloc(size_serializado);
 
 	int bytes_escritos = 0;
 
-	memcpy(buffer + bytes_escritos, &paquete->codigo_operacion, sizeof(paquete->codigo_operacion));
-	bytes_escritos += sizeof(paquete->codigo_operacion);
+	memcpy(buffer + bytes_escritos, &paquete->modulo, sizeof(paquete->modulo));
+	bytes_escritos += sizeof(paquete->modulo);
+
+	memcpy(buffer + bytes_escritos, &paquete->cod_op, sizeof(paquete->cod_op));
+	bytes_escritos += sizeof(paquete->cod_op);
+
+	memcpy(buffer + bytes_escritos, &paquete->mensaje, sizeof(paquete->mensaje));
+	bytes_escritos += sizeof(paquete->mensaje);
 
 	memcpy(buffer + bytes_escritos, &paquete->buffer->size, sizeof(int));
 	bytes_escritos += sizeof(int);
