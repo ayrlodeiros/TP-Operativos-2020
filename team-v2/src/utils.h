@@ -39,6 +39,22 @@ int el_pokemon_es_requerido(char* nombre_pokemon);
 int necesito_mas_de_ese_pokemon(char* nombre_pokemon);
 
 //DEADLOCK
+int necesito_mas_pokemons();
+int el_entrenador_cumplio_su_objetivo(entrenador* entrenador);
+int hay_deadlock();
+void salida_entrenador(entrenador* entrenador);
+int el_entrenador_esta_block_deadlock(entrenador* entrenador);
+int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,pokemon* pokemon);
+int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos,t_list* pokemons_objetivo, pokemon* pokemon);
+pokemon* pokemon_que_me_sobra(entrenador* entrenador);
+pokemon* pokemon_que_necesito(entrenador* entrenador);
+void realizar_intercambio(entrenador* entrenador);
+t_list* entrenadores_con_block_deadlock();
+int el_entrenador_esta_en_exit(entrenador* entrenador);
+int terminaron_todos_los_entrenadores();
+int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador);
+
+
 
 //FIN DE DEADLOCK
 

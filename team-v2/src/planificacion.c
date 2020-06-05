@@ -53,7 +53,7 @@ void planificar(){
 
 void fifo(){
 
-	while(1){
+	while(terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en FIFO preparado para planificar");
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -62,6 +62,15 @@ void fifo(){
 
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
+		}
+
+		if(el_entrenador_no_puede_capturar_mas_pokemons(entrenador_a_ejecutar) && !el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar) && !el_entrenador_esta_block_deadlock(entrenador_a_ejecutar)){
+			cambiar_estado_entrenador(entrenador_a_ejecutar,BLOCK_DEADLOCK);
+
+		}
+		if(list_size(entrenadores_con_block_deadlock() >=2 )){ // Esto lo hice para que el entrenador no tenga la accion de intercambiar y no halla ningun otro entrenador para intercambiar ,y por eso pierda la accion
+
+			agregar_accion(entrenador_a_ejecutar,intercambiar,5);
 		}
 
 		pthread_mutex_unlock(&lock_de_entrenador_disponible);
@@ -77,7 +86,7 @@ void round_robin(){
 
 	printf("\n QUANTUM TOTAL : %d", quantum);
 
-	while(1){
+	while(terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en RR preparado para planificar");
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -118,7 +127,7 @@ void sjf_sin_desalojo(){
 
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
-	while(1){
+	while(terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en SJF SIN DESALOJO preparado para planificar");
 
 		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
@@ -160,7 +169,7 @@ void sjf_con_desalojo(){
 
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
-	while(1){
+	while(terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en SJF CON DESALOJO preparado para planificar");
 		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);

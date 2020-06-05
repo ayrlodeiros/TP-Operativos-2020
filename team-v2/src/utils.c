@@ -273,7 +273,7 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 
 
 //PARTE DE DETECCION DEADLOCK (FALTA TERMINAR)
-/*
+
 int necesito_mas_pokemons(){
 	int i=0;
 
@@ -296,7 +296,7 @@ int hay_deadlock(){
 
 
 void salida_entrenador(entrenador* entrenador){
-	if(el_entreador_cumplio_su_objetivo(entrenador)){
+	if(el_entrenador_cumplio_su_objetivo(entrenador)){
 		cambiar_estado_entrenador(entrenador,EXIT);
 	}
 }
@@ -342,11 +342,42 @@ pokemon* pokemon_que_necesito(entrenador* entrenador){
 
 }
 
+/*
+void intercambiar_pokemons(entrenador* entrenador,entrenador* entrenador_a_intercambiar){
+
+	pokemon* pokemon_que_requiero = pokemon_que_necesito(entrenador);
+	pokemon* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador);
+
+}*/
+
+void realizar_intercambio(entrenador* entrenador){
+	int i = 0;
+
+	while(i < list_size(entrenadores_con_block_deadlock())){
+		if(pokemon_que_necesito(entrenador) == pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))){
+			if(pokemon_que_me_sobra(entrenador) == pokemon_que_necesito(list_get(entrenadores_con_block_deadlock(),i))){
+				//intercambiar_pokemons(entrenador,list_get(entrenadores_con_block_deadlock(),i));
+			}
+		}
+		i++;
+	}
+}
+
 t_list* entrenadores_con_block_deadlock(){
 	return list_filter(entrenadores,el_entrenador_esta_block_deadlock);
 }
 
-*/
+int el_entrenador_esta_en_exit(entrenador* entrenador){
+	return entrenador->estado == EXIT;
+}
+
+int terminaron_todos_los_entrenadores(){
+	list_all_satisfy(entrenadores,el_entrenador_esta_en_exit);
+}
+
+int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador){
+	return list_size(entrenador->pokemons_adquiridos) == list_size(entrenador->pokemons_objetivo);
+}
 
 //GET
 void get_pokemon() {
