@@ -198,8 +198,8 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto) {
 
 	entrenador_listo->pokemon_en_busqueda = pokemon_suelto;
-	agregar_movimientos_en_x(entrenador_listo);
-	agregar_movimientos_en_y(entrenador_listo);
+	calcular_distancia_en_x_del_entrenador_al_pokemon(entrenador_listo,entrenador_listo->pokemon_en_busqueda);
+	calcular_distancia_en_y_del_entrenador_al_pokemon(entrenador_listo,entrenador_listo->pokemon_en_busqueda);
 	agregar_accion(entrenador_listo, catch_pokemon, 1);
 
 	cambiar_estado_entrenador(entrenador_listo, READY);
@@ -207,8 +207,7 @@ void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokem
 	pthread_mutex_unlock(&lock_de_planificacion);
 }
 
-void agregar_movimientos_en_x(entrenador* entrenador_listo) {
-	int diferencia_en_x = diferencia_en_x_del_entrenador_al_pokemon(entrenador_listo, entrenador_listo->pokemon_en_busqueda);
+void agregar_movimientos_en_x(entrenador* entrenador_listo, int diferencia_en_x) {
 	if(diferencia_en_x > 0) {
 		for(int i = 0; i < diferencia_en_x; i++) {
 			agregar_accion(entrenador_listo, moverse_derecha, 1);
@@ -220,8 +219,7 @@ void agregar_movimientos_en_x(entrenador* entrenador_listo) {
 	}
 }
 
-void agregar_movimientos_en_y(entrenador* entrenador_listo) {
-	int diferencia_en_y = diferencia_en_y_del_entrenador_al_pokemon(entrenador_listo, entrenador_listo->pokemon_en_busqueda);
+void agregar_movimientos_en_y(entrenador* entrenador_listo, int diferencia_en_y) {
 	if(diferencia_en_y > 0) {
 		for(int i = 0; i < diferencia_en_y; i++) {
 			agregar_accion(entrenador_listo, moverse_arriba, 1);
@@ -252,12 +250,12 @@ int distancia_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon
 	return (int) (fabs(entrenador->posicion->posicion_x - pokemon->posicion->posicion_x)) + (int) (fabs(entrenador->posicion->posicion_y - pokemon->posicion->posicion_y));
 }
 
-int diferencia_en_x_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
-	return (pokemon->posicion->posicion_x - entrenador->posicion->posicion_x);
+void calcular_distancia_en_x_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
+	agregar_movimientos_en_x(entrenador,pokemon->posicion->posicion_x - entrenador->posicion->posicion_x);
 }
 
-int diferencia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
-	return (pokemon->posicion->posicion_y - entrenador->posicion->posicion_y);
+void calcular_distancia_en_y_del_entrenador_al_pokemon(entrenador* entrenador, pokemon* pokemon) {
+	agregar_movimientos_en_y(entrenador,pokemon->posicion->posicion_y - entrenador->posicion->posicion_y);
 }
 
 
@@ -296,9 +294,7 @@ int hay_deadlock(){
 
 
 void salida_entrenador(entrenador* entrenador){
-	if(el_entrenador_cumplio_su_objetivo(entrenador)){
-		cambiar_estado_entrenador(entrenador,EXIT);
-	}
+	cambiar_estado_entrenador(entrenador,EXIT);
 }
 
 int el_entrenador_esta_block_deadlock(entrenador* entrenador){
@@ -342,25 +338,63 @@ pokemon* pokemon_que_necesito(entrenador* entrenador){
 
 }
 
-/*
-void intercambiar_pokemons(entrenador* entrenador,entrenador* entrenador_a_intercambiar){
 
-	pokemon* pokemon_que_requiero = pokemon_que_necesito(entrenador);
-	pokemon* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador);
+//ESTA FUNCION LA HAGO PORQUE NO ME DEJABA AGARRAR LA LISTA DESPUES DE HACER UN GET
 
-}*/
+t_list* devolver_lista_de_pokemons_adquiridos(entrenador* entrenador){
+	return entrenador -> pokemons_adquiridos;
+}
+
+
 
 void realizar_intercambio(entrenador* entrenador){
 	int i = 0;
+	int intercambio_realizado = 0;
 
-	while(i < list_size(entrenadores_con_block_deadlock())){
+	while(i < list_size(entrenadores_con_block_deadlock()) && intercambio_realizado == 0){
 		if(pokemon_que_necesito(entrenador) == pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))){
 			if(pokemon_que_me_sobra(entrenador) == pokemon_que_necesito(list_get(entrenadores_con_block_deadlock(),i))){
-				//intercambiar_pokemons(entrenador,list_get(entrenadores_con_block_deadlock(),i));
+				pokemon* pokemon_que_requiero = pokemon_que_necesito(entrenador);
+				pokemon* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador);
+
+				list_add(entrenador->pokemons_adquiridos,pokemon_que_requiero);
+				list_add(list_get(entrenadores_con_block_deadlock(),i),pokemon_que_no_necesito);
+
+
+				//list_remove_and_destroy_by_condition(entrenador->pokemons_adquiridos,es_el_pokemon_buscado(entrenador,pokemon_que_no_necesito),pokemon_que_no_necesito);
+				//list_remove_and_destroy_by_condition(devolver_lista_de_pokemons_adquiridos(list_get(entrenadores_con_block_deadlock(),i)),es_el_pokemon_buscado(list_get(entrenadores_con_block_deadlock(),i),pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))),pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i)));
+
+				intercambio_realizado = 1;
 			}
 		}
 		i++;
 	}
+}
+
+entrenador* entrenador_a_intercambiar(entrenador* entrenador){
+	int i = 0;
+
+	while(i < list_size(entrenadores_con_block_deadlock())){
+			if(pokemon_que_necesito(entrenador) == pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))){
+				if(pokemon_que_me_sobra(entrenador) == pokemon_que_necesito(list_get(entrenadores_con_block_deadlock(),i))){
+					return list_get(entrenadores_con_block_deadlock(),i);
+				}
+			}
+			i++;
+	}
+
+}
+/*
+void diferencia_en_x_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar) {
+	agregar_movimientos_en_x(entrenador,entrenador_a_intercambiar-> - entrenador->posicion->posicion_x);
+}
+
+void diferencia_en_x_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar) {
+	agregar_movimientos_en_y(entrenador,entrenador_a_intercambiar-> - entrenador->posicion->posicion_x);
+}
+*/
+void planear_intercambio(entrenador* entrenador1){
+	//entrenador* entrenador_a_negociar = entrenador_a_intercambiar(entrenador);
 }
 
 t_list* entrenadores_con_block_deadlock(){

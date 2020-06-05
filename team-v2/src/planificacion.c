@@ -53,7 +53,7 @@ void planificar(){
 
 void fifo(){
 
-	while(terminaron_todos_los_entrenadores()){
+	while(!terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en FIFO preparado para planificar");
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -70,23 +70,39 @@ void fifo(){
 		}
 		if(list_size(entrenadores_con_block_deadlock() >=2 )){ // Esto lo hice para que el entrenador no tenga la accion de intercambiar y no halla ningun otro entrenador para intercambiar ,y por eso pierda la accion
 
-			agregar_accion(entrenador_a_ejecutar,intercambiar,5);
+			planear_intercambio(entrenador_a_ejecutar);
+		}
+
+		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
+			salida_entrenador(entrenador_a_ejecutar);
 		}
 
 		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 }
 
+/*
+void regla_RR(entrenador* entrenador_desalojado_por_quantum){
+
+	if(entrenador_desalojado_por_quantum != NULL){
+		list_add(entrenadores_ready,entrenador_desalojado_por_quantum);
+	}
+	if()
+
+
+}
+*/
 void round_robin(){
 
 	int tiempo = 0;
 	int quantum_consumido = 0;
+	//entrenador* entrenador_desalojado_por_quantum;
 
 	//QUANTUM = 2   (Del ejemplo del config)
 
 	printf("\n QUANTUM TOTAL : %d", quantum);
 
-	while(terminaron_todos_los_entrenadores()){
+	while(!terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en RR preparado para planificar");
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -106,14 +122,32 @@ void round_robin(){
 			ejecutar(entrenador_a_ejecutar);
 			tiempo ++;
 			quantum_consumido ++;
+
+			/*
+			if(quantum_consumido == quantum -1){
+				entrenador_desalojado_por_quantum = entrenador_a_ejecutar;
+			}else{
+				entrenador_desalojado_por_quantum = NULL;
+			}
+			*/
+
 			printf("\n CPU USADO ENTRENADOR : %d", entrenador_a_ejecutar->cpu_usado);
 			printf("\n CPU DISPONIBLE ENTRENADOR : %d", entrenador_a_ejecutar->cpu_disponible);
 			printf("\n QUANTUM CONSUMIDO : %d", quantum_consumido);
 			printf("\n CPU TIEMPO : %d", tiempo);
 		}
 			if(cpu_restante_entrenador(entrenador_a_ejecutar)){
-			list_add(entrenadores_ready,entrenador_a_ejecutar);
-		}
+				list_add(entrenadores_ready,entrenador_a_ejecutar);
+			}
+
+			if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
+				salida_entrenador(entrenador_a_ejecutar);
+			}
+			else{
+				if(cpu_restante_entrenador(entrenador_a_ejecutar)){
+					list_add(entrenadores_ready,entrenador_a_ejecutar);
+				}
+			}
 
 		quantum_consumido = 0;
 
@@ -127,7 +161,7 @@ void sjf_sin_desalojo(){
 
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
-	while(terminaron_todos_los_entrenadores()){
+	while(!terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en SJF SIN DESALOJO preparado para planificar");
 
 		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
@@ -157,6 +191,10 @@ void sjf_sin_desalojo(){
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
+
+		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
+			salida_entrenador(entrenador_a_ejecutar);
+		}
 	}
 
 	//list_destroy(entrenadores_con_rafagas_estimadas);
@@ -169,7 +207,7 @@ void sjf_con_desalojo(){
 
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
-	while(terminaron_todos_los_entrenadores()){
+	while(!terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en SJF CON DESALOJO preparado para planificar");
 		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -193,6 +231,10 @@ void sjf_con_desalojo(){
 
 		ejecutar(entrenador_a_ejecutar);
 		entrenador_a_ejecutar->cpu_estimado_restante -= 1;
+
+		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
+			salida_entrenador(entrenador_a_ejecutar);
+		}
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
