@@ -15,7 +15,7 @@ int main(void){
 	pthread_detach(hilo_reintento_conexion_broker);*/
 
 
-	realizar_get();
+	get_pokemon();
 
 	pthread_t* hilo_planificacion;
 	pthread_create(&hilo_planificacion,NULL, planificar, NULL);

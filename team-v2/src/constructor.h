@@ -26,9 +26,9 @@
 #include<commons/collections/dictionary.h>
 #define NUMERO_MODULO 1
 
-static pthread_mutex_t lock_de_planificacion = PTHREAD_MUTEX_INITIALIZER;
-static pthread_mutex_t lock_de_entrenador_disponible = PTHREAD_MUTEX_INITIALIZER;
-static pthread_mutex_t mutex_entrenadores;
+pthread_mutex_t lock_de_planificacion;
+pthread_mutex_t lock_de_entrenador_disponible;
+pthread_mutex_t mutex_entrenadores;
 
 t_log* logger;
 t_log* nuestro_log;
@@ -86,6 +86,9 @@ typedef struct
 } entrenador;
 
 //CONEXIONES
+t_list* lista_ids_localized;
+pthread_mutex_t mutex_lista_ids_localized;
+
 typedef enum
 {
 	MENSAJE = 1,

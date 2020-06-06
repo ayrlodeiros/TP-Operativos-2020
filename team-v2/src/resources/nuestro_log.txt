@@ -2871,3 +2871,216 @@
 [ERROR] 17:17:58:508 team/(8625:8976): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
 [INFO] 17:17:58:508 team/(8625:8976): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
 [INFO] 17:17:58:508 team/(8625:8630): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:03:29:461 team/(6061:6061): El algoritmo de planificacion es: 3
+[INFO] 13:03:29:466 team/(6061:6061): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:03:29:467 team/(6061:6061): Necesito 0 pokemons Pidgey
+[INFO] 13:03:29:468 team/(6061:6061): Necesito 0 pokemons Bulbasaur
+[INFO] 13:03:29:468 team/(6061:6061): Necesito 0 pokemons Squirtle
+[INFO] 13:03:29:470 team/(6061:6061): Necesito 3 pokemons Pikachu
+[INFO] 13:03:29:470 team/(6061:6061): Necesito 1 pokemons Charmander
+[ERROR] 13:03:29:471 team/(6061:6061): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:29:471 team/(6061:6061): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 13:03:29:471 team/(6061:6061): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:29:471 team/(6061:6061): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 13:03:29:473 team/(6061:6061): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:29:473 team/(6061:6061): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 13:03:29:475 team/(6061:6061): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:29:475 team/(6061:6061): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 13:03:29:476 team/(6061:6061): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:29:476 team/(6061:6061): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 13:03:29:476 team/(6061:6061): Aparecio un Pikachu, el cual es requerido
+[INFO] 13:03:29:476 team/(6061:6061): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:03:29:486 team/(6061:6061): Aparecio un Pikachu, el cual es requerido
+[INFO] 13:03:29:487 team/(6061:6061): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:03:29:487 team/(6061:6061): Aparecio un Charmander, el cual es requerido
+[INFO] 13:03:29:488 team/(6061:6061): Se encontro entrenador para asignar a la busqueda de Charmander
+[INFO] 13:03:29:492 team/(6061:6067): Esperando a que algun entrenador se libere
+[INFO] 13:03:29:492 team/(6061:6066): Estoy en el planificador
+[INFO] 13:03:29:493 team/(6061:6066): Estoy por entrar a SJF sin desalojo
+[INFO] 13:03:29:493 team/(6061:6066): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:03:29:498 team/(6061:6066): Cpu disponible del entrenador: 6
+[INFO] 13:03:29:498 team/(6061:6066): Cpu usado del entrenador: 1
+[INFO] 13:03:29:499 team/(6061:6069): 2. Entrenador moviendose a la posicion: 101|0.
+[INFO] 13:03:31:502 team/(6061:6066): Cpu disponible del entrenador: 6
+[INFO] 13:03:31:503 team/(6061:6066): Cpu usado del entrenador: 2
+[INFO] 13:03:31:507 team/(6061:6075): 2. Entrenador moviendose a la posicion: 102|0.
+[INFO] 13:03:33:508 team/(6061:6066): Cpu disponible del entrenador: 6
+[INFO] 13:03:33:508 team/(6061:6066): Cpu usado del entrenador: 3
+[INFO] 13:03:33:515 team/(6061:6076): 2. Entrenador moviendose a la posicion: 103|0.
+[INFO] 13:03:35:519 team/(6061:6066): Cpu disponible del entrenador: 6
+[INFO] 13:03:35:519 team/(6061:6066): Cpu usado del entrenador: 4
+[INFO] 13:03:35:521 team/(6061:6082): 2. Entrenador moviendose a la posicion: 104|0.
+[INFO] 13:03:37:522 team/(6061:6066): Cpu disponible del entrenador: 6
+[INFO] 13:03:37:522 team/(6061:6066): Cpu usado del entrenador: 5
+[INFO] 13:03:37:539 team/(6061:6083): 2. Entrenador moviendose a la posicion: 105|0.
+[INFO] 13:03:39:551 team/(6061:6066): Cpu disponible del entrenador: 6
+[INFO] 13:03:39:555 team/(6061:6066): Cpu usado del entrenador: 6
+[ERROR] 13:03:39:572 team/(6061:6084): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:39:572 team/(6061:6084): 3. Se realiza la captura del pokemon Pikachu, en la posicion 105|0 exitosamente.
+[INFO] 13:03:39:572 team/(6061:6066): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:03:39:572 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:39:572 team/(6061:6066): Cpu usado del entrenador: 1
+[INFO] 13:03:39:573 team/(6061:6085): 2. Entrenador moviendose a la posicion: 201|0.
+[INFO] 13:03:41:573 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:41:573 team/(6061:6066): Cpu usado del entrenador: 2
+[INFO] 13:03:41:579 team/(6061:6086): 2. Entrenador moviendose a la posicion: 202|0.
+[INFO] 13:03:43:580 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:43:583 team/(6061:6066): Cpu usado del entrenador: 3
+[INFO] 13:03:43:587 team/(6061:6087): 2. Entrenador moviendose a la posicion: 203|0.
+[INFO] 13:03:45:588 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:45:588 team/(6061:6066): Cpu usado del entrenador: 4
+[INFO] 13:03:45:591 team/(6061:6088): 2. Entrenador moviendose a la posicion: 204|0.
+[INFO] 13:03:47:592 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:47:593 team/(6061:6066): Cpu usado del entrenador: 5
+[INFO] 13:03:47:595 team/(6061:6089): 2. Entrenador moviendose a la posicion: 205|0.
+[INFO] 13:03:49:599 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:49:600 team/(6061:6066): Cpu usado del entrenador: 6
+[INFO] 13:03:49:603 team/(6061:6090): 2. Entrenador moviendose a la posicion: 206|0.
+[INFO] 13:03:51:603 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:51:604 team/(6061:6066): Cpu usado del entrenador: 7
+[INFO] 13:03:51:607 team/(6061:6091): 2. Entrenador moviendose a la posicion: 207|0.
+[INFO] 13:03:53:608 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:53:608 team/(6061:6066): Cpu usado del entrenador: 8
+[INFO] 13:03:53:615 team/(6061:6092): 2. Entrenador moviendose a la posicion: 208|0.
+[INFO] 13:03:55:617 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:55:617 team/(6061:6066): Cpu usado del entrenador: 9
+[INFO] 13:03:55:621 team/(6061:6093): 2. Entrenador moviendose a la posicion: 209|0.
+[INFO] 13:03:57:622 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:57:622 team/(6061:6066): Cpu usado del entrenador: 10
+[INFO] 13:03:57:633 team/(6061:6094): 2. Entrenador moviendose a la posicion: 210|0.
+[INFO] 13:03:59:634 team/(6061:6066): Cpu disponible del entrenador: 11
+[INFO] 13:03:59:635 team/(6061:6066): Cpu usado del entrenador: 11
+[ERROR] 13:03:59:641 team/(6061:6095): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:03:59:641 team/(6061:6095): 3. Se realiza la captura del pokemon Charmander, en la posicion 210|0 exitosamente.
+[INFO] 13:03:59:648 team/(6061:6066): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:03:59:648 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:03:59:648 team/(6061:6066): Cpu usado del entrenador: 1
+[INFO] 13:03:59:652 team/(6061:6096): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 13:04:01:653 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:01:653 team/(6061:6066): Cpu usado del entrenador: 2
+[INFO] 13:04:01:655 team/(6061:6097): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 13:04:03:660 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:03:660 team/(6061:6066): Cpu usado del entrenador: 3
+[INFO] 13:04:03:663 team/(6061:6098): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 13:04:05:665 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:05:667 team/(6061:6066): Cpu usado del entrenador: 4
+[INFO] 13:04:05:670 team/(6061:6101): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 13:04:07:672 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:07:672 team/(6061:6066): Cpu usado del entrenador: 5
+[INFO] 13:04:07:677 team/(6061:6107): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 13:04:09:678 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:09:678 team/(6061:6066): Cpu usado del entrenador: 6
+[INFO] 13:04:09:683 team/(6061:6109): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 13:04:11:686 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:11:686 team/(6061:6066): Cpu usado del entrenador: 7
+[INFO] 13:04:11:689 team/(6061:6110): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 13:04:13:691 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:13:692 team/(6061:6066): Cpu usado del entrenador: 8
+[INFO] 13:04:13:701 team/(6061:6111): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 13:04:15:703 team/(6061:6066): Cpu disponible del entrenador: 16
+[INFO] 13:04:15:703 team/(6061:6066): Cpu usado del entrenador: 9
+[INFO] 13:04:15:707 team/(6061:6112): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 13:06:16:987 team/(6240:6240): El algoritmo de planificacion es: 3
+[INFO] 13:06:16:988 team/(6240:6240): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:06:16:988 team/(6240:6240): Necesito 0 pokemons Pidgey
+[INFO] 13:06:16:989 team/(6240:6240): Necesito 0 pokemons Bulbasaur
+[INFO] 13:06:16:989 team/(6240:6240): Necesito 0 pokemons Squirtle
+[INFO] 13:06:16:989 team/(6240:6240): Necesito 3 pokemons Pikachu
+[INFO] 13:06:16:989 team/(6240:6240): Necesito 1 pokemons Charmander
+[ERROR] 13:06:16:989 team/(6240:6240): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:06:16:990 team/(6240:6240): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 13:06:16:990 team/(6240:6240): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:06:16:990 team/(6240:6240): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 13:06:16:990 team/(6240:6240): Aparecio un Pikachu, el cual es requerido
+[INFO] 13:06:16:998 team/(6240:6240): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:06:16:998 team/(6240:6240): Aparecio un Pikachu, el cual es requerido
+[INFO] 13:06:16:998 team/(6240:6240): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:06:16:998 team/(6240:6240): Aparecio un Charmander, el cual es requerido
+[INFO] 13:06:16:998 team/(6240:6240): Se encontro entrenador para asignar a la busqueda de Charmander
+[INFO] 13:06:17:11 team/(6240:6246): Esperando a que algun entrenador se libere
+[INFO] 13:06:17:11 team/(6240:6245): Estoy en el planificador
+[INFO] 13:06:17:11 team/(6240:6245): Estoy por entrar a SJF sin desalojo
+[INFO] 13:06:17:11 team/(6240:6245): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:06:17:12 team/(6240:6245): Cpu disponible del entrenador: 6
+[INFO] 13:06:17:12 team/(6240:6245): Cpu usado del entrenador: 1
+[INFO] 13:06:17:12 team/(6240:6248): 2. Entrenador moviendose a la posicion: 101|0.
+[INFO] 13:06:19:13 team/(6240:6245): Cpu disponible del entrenador: 6
+[INFO] 13:06:19:16 team/(6240:6245): Cpu usado del entrenador: 2
+[INFO] 13:06:19:19 team/(6240:6249): 2. Entrenador moviendose a la posicion: 102|0.
+[INFO] 13:06:21:23 team/(6240:6245): Cpu disponible del entrenador: 6
+[INFO] 13:06:21:23 team/(6240:6245): Cpu usado del entrenador: 3
+[INFO] 13:06:21:39 team/(6240:6255): 2. Entrenador moviendose a la posicion: 103|0.
+[INFO] 13:06:23:41 team/(6240:6245): Cpu disponible del entrenador: 6
+[INFO] 13:06:23:41 team/(6240:6245): Cpu usado del entrenador: 4
+[INFO] 13:06:23:45 team/(6240:6256): 2. Entrenador moviendose a la posicion: 104|0.
+[INFO] 13:06:25:48 team/(6240:6245): Cpu disponible del entrenador: 6
+[INFO] 13:06:25:48 team/(6240:6245): Cpu usado del entrenador: 5
+[INFO] 13:06:25:55 team/(6240:6257): 2. Entrenador moviendose a la posicion: 105|0.
+[INFO] 13:06:27:59 team/(6240:6245): Cpu disponible del entrenador: 6
+[INFO] 13:06:27:60 team/(6240:6245): Cpu usado del entrenador: 6
+[ERROR] 13:06:27:65 team/(6240:6258): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:06:27:66 team/(6240:6258): 3. Se realiza la captura del pokemon Pikachu, en la posicion 105|0 exitosamente.
+[INFO] 13:06:27:66 team/(6240:6245): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:06:27:66 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:27:66 team/(6240:6245): Cpu usado del entrenador: 1
+[INFO] 13:06:27:67 team/(6240:6259): 2. Entrenador moviendose a la posicion: 201|0.
+[INFO] 13:06:29:67 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:29:67 team/(6240:6245): Cpu usado del entrenador: 2
+[INFO] 13:06:29:71 team/(6240:6260): 2. Entrenador moviendose a la posicion: 202|0.
+[INFO] 13:06:31:71 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:31:72 team/(6240:6245): Cpu usado del entrenador: 3
+[INFO] 13:06:31:75 team/(6240:6261): 2. Entrenador moviendose a la posicion: 203|0.
+[INFO] 13:06:33:76 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:33:77 team/(6240:6245): Cpu usado del entrenador: 4
+[INFO] 13:06:33:87 team/(6240:6262): 2. Entrenador moviendose a la posicion: 204|0.
+[INFO] 13:06:35:92 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:35:93 team/(6240:6245): Cpu usado del entrenador: 5
+[INFO] 13:06:35:96 team/(6240:6263): 2. Entrenador moviendose a la posicion: 205|0.
+[INFO] 13:06:37:97 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:37:97 team/(6240:6245): Cpu usado del entrenador: 6
+[INFO] 13:06:37:115 team/(6240:6264): 2. Entrenador moviendose a la posicion: 206|0.
+[INFO] 13:06:39:123 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:39:127 team/(6240:6245): Cpu usado del entrenador: 7
+[INFO] 13:06:39:131 team/(6240:6265): 2. Entrenador moviendose a la posicion: 207|0.
+[INFO] 13:06:41:131 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:41:132 team/(6240:6245): Cpu usado del entrenador: 8
+[INFO] 13:06:41:135 team/(6240:6266): 2. Entrenador moviendose a la posicion: 208|0.
+[INFO] 13:06:43:139 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:43:140 team/(6240:6245): Cpu usado del entrenador: 9
+[INFO] 13:06:43:141 team/(6240:6267): 2. Entrenador moviendose a la posicion: 209|0.
+[INFO] 13:06:45:147 team/(6240:6245): Cpu disponible del entrenador: 11
+[INFO] 13:06:45:147 team/(6240:6245): Cpu usado del entrenador: 10
+[INFO] 13:06:45:154 team/(6240:6268): 2. Entrenador moviendose a la posicion: 210|0.
+[INFO] 13:44:26:69 team/(7069:7069): El algoritmo de planificacion es: 3
+[INFO] 13:44:26:75 team/(7069:7069): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:44:26:75 team/(7069:7069): Necesito 0 pokemons Pidgey
+[INFO] 13:44:26:75 team/(7069:7069): Necesito 0 pokemons Bulbasaur
+[INFO] 13:44:26:76 team/(7069:7069): Necesito 0 pokemons Squirtle
+[INFO] 13:44:26:76 team/(7069:7069): Necesito 3 pokemons Pikachu
+[INFO] 13:44:26:76 team/(7069:7069): Necesito 1 pokemons Charmander
+[ERROR] 13:44:26:76 team/(7069:7069): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:44:26:76 team/(7069:7069): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 13:44:26:77 team/(7069:7069): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 13:44:26:78 team/(7069:7069): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 13:44:26:78 team/(7069:7069): Aparecio un Pikachu, el cual es requerido
+[INFO] 13:44:26:78 team/(7069:7069): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:44:26:78 team/(7069:7069): Aparecio un Pikachu, el cual es requerido
+[INFO] 13:44:26:79 team/(7069:7069): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:44:26:79 team/(7069:7069): Aparecio un Charmander, el cual es requerido
+[INFO] 13:44:26:79 team/(7069:7069): Se encontro entrenador para asignar a la busqueda de Charmander
+[INFO] 13:44:26:79 team/(7069:7075): Esperando a que algun entrenador se libere
+[INFO] 13:44:26:90 team/(7069:7074): Estoy en el planificador
+[INFO] 13:44:26:93 team/(7069:7074): Estoy por entrar a SJF sin desalojo
+[INFO] 13:44:26:94 team/(7069:7074): Estoy en SJF SIN DESALOJO preparado para planificar
+[INFO] 13:44:26:99 team/(7069:7074): Cpu disponible del entrenador: 6
+[INFO] 13:44:26:99 team/(7069:7074): Cpu usado del entrenador: 1
+[INFO] 13:44:26:100 team/(7069:7077): 2. Entrenador moviendose a la posicion: 101|0.
+[INFO] 13:44:28:104 team/(7069:7074): Cpu disponible del entrenador: 6
+[INFO] 13:44:28:104 team/(7069:7074): Cpu usado del entrenador: 2
+[INFO] 13:44:28:107 team/(7069:7079): 2. Entrenador moviendose a la posicion: 102|0.
+[INFO] 13:44:30:111 team/(7069:7074): Cpu disponible del entrenador: 6
+[INFO] 13:44:30:111 team/(7069:7074): Cpu usado del entrenador: 3
+[INFO] 13:44:30:115 team/(7069:7080): 2. Entrenador moviendose a la posicion: 103|0.
+[INFO] 13:44:32:115 team/(7069:7074): Cpu disponible del entrenador: 6
+[INFO] 13:44:32:117 team/(7069:7074): Cpu usado del entrenador: 4
+[INFO] 13:44:32:125 team/(7069:7081): 2. Entrenador moviendose a la posicion: 104|0.

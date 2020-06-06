@@ -6,6 +6,12 @@ void iniciar_variables_globales() {
 	armar_objetivo_global();
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
+	lista_ids_localized = list_create();
+	pthread_mutex_init(&lock_de_planificacion, NULL);
+	pthread_mutex_init(&lock_de_entrenador_disponible, NULL);
+	pthread_mutex_init(&mutex_entrenadores, NULL);
+	pthread_mutex_init(&mutex_lista_ids_localized, NULL);
+
 	pthread_mutex_lock(&lock_de_planificacion);
 	pthread_mutex_lock(&lock_de_entrenador_disponible);
 

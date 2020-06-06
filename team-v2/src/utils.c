@@ -2,6 +2,14 @@
 
 
 //CONEXIONES
+t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffer* buffer) {
+	t_paquete* paquete = malloc(sizeof(t_paquete));
+	paquete->numero_de_modulo = NUMERO_MODULO;
+	paquete->codigo_de_operacion = cod_op;
+	paquete->codigo_de_accion = cod_acc;
+	paquete->buffer = buffer;
+	return paquete;
+}
 void* serializar_paquete(t_paquete* paquete, int bytes){
 	void * a_enviar = malloc(bytes);
 	int offset = 0;
@@ -21,6 +29,12 @@ void* serializar_paquete(t_paquete* paquete, int bytes){
 
 int obtener_tamanio_de_paquete(t_paquete* paquete) {
 	return paquete->buffer->tamanio + 4*sizeof(int);
+}
+
+void destruir_paquete(t_paquete* paquete) {
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
 }
 
 int crear_conexion_como_cliente(char *ip, char* puerto) {
@@ -413,53 +427,70 @@ int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador){
 	return list_size(entrenador->pokemons_adquiridos) == list_size(entrenador->pokemons_objetivo);
 }
 
+
+//ACCIONES DE TIPO MENSAJE
 //GET
 void get_pokemon() {
 	//ITERAR LOS POKEMONS DEL OBJETIVO PARA ENVIAR UN GET POR CADA POKEMON
+	dictionary_iterator(objetivo_global, realizar_get);
 }
 
 void realizar_get(char* key, void* value) {
-	int socket_get = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-	if(socket_get == -1) {
-		//ACCION POR DEFAULT, NO HACER NADA
-		log_info(logger, "9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
-		log_info(nuestro_log, "9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
-	} else {
-		//ACCION CON EL BROKER
-		//TODO realizar el mandado del GET al broker y el recibo del ID para luego esperar en LOCALIZED
-		t_buffer* buffer = malloc(sizeof(t_buffer));
-		buffer->tamanio = 0;
-		t_paquete* paquete = malloc(sizeof(t_paquete));
-		paquete->numero_de_modulo = NUMERO_MODULO;
-		paquete->codigo_de_operacion = MENSAJE;
-		paquete->codigo_de_accion = GET;
-		paquete->buffer = buffer;
+	if(value > 0) {
+		int socket_get = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+		if(socket_get == -1) {
+			//ACCION POR DEFAULT, NO HACER NADA
+			log_info(logger, "9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+			log_info(nuestro_log, "9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+		} else {
+			//ACCION CON EL BROKER
 
+			//CREO EL BUFFER CON SU TAMANIO Y STREAM
+			t_buffer* buffer = malloc(sizeof(t_buffer));
+			buffer->tamanio = strlen(key) + 1;
+			void* stream = malloc(buffer->tamanio);
+			int offset = 0;
+			memcpy(stream + offset,&key, buffer->tamanio);
+			buffer->stream = stream;
 
-		int bytes = obtener_tamanio_de_paquete(paquete);
-		void* a_enviar = serializar_paquete(paquete, bytes);
+			//CREO EL PAQUETE CON EL CONTENIDO DE LO QUE VOY A ENVIAR
+			t_paquete* paquete = crear_paquete(MENSAJE, GET, buffer);
 
-		if(send(socket_get, a_enviar, bytes ,0) > 0){
-			log_info(nuestro_log, "Se realizo el envio de GET correctamente");
-			int id_localized;
+			//SERIALIZO EL PAQUETE, LO MANDO y ESPERO LA RESPUESTA DEL BROKER
+			int bytes = obtener_tamanio_de_paquete(paquete);
+			void* a_enviar = serializar_paquete(paquete, bytes);
 
-			if(recv(socket_get,&id_localized, sizeof(int), 0) > 0){
-				log_info(nuestro_log, "Se recibio el ID para esperar LOCALIZED correctamente");
+			if(send(socket_get, a_enviar, bytes ,0) > 0){
+				log_info(nuestro_log, "Se realizo el envio de GET correctamente");
+
+				pthread_t* hilo_espera_get;
+				pthread_create(&hilo_espera_get,NULL, esperar_id_localized, socket_get);
+				pthread_detach(hilo_espera_get);
 			}
-			else {
+			else{
 
+				log_info(logger, "9. No se pudo realizar el envio del GET al broker, se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+				log_info(nuestro_log, "9. No se pudo realizar el envio del GET al broker, se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
 			}
-		}
-		else{
 
-			log_info(logger, "9. No se pudo realizar el envio del GET al broker, se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
-			log_info(nuestro_log, "9. No se pudo realizar el envio del GET al broker, se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.");
+			free(a_enviar);
+			destruir_paquete(paquete);
 		}
+	}
+}
 
-		free(a_enviar);
-		free(paquete->buffer->stream);
-		free(paquete->buffer);
-		free(paquete);
+void esperar_id_localized(int socket_get) {
+	int id_localized;
+
+	if(recv(socket_get,&id_localized, sizeof(int), 0) > 0){
+		log_info(nuestro_log, "Se recibio correctamente el ID para esperar en LOCALIZED");
+
+		pthread_mutex_lock(&mutex_lista_ids_localized);
+		list_add(lista_ids_localized, &id_localized);
+		pthread_mutex_unlock(&mutex_lista_ids_localized);
+	}
+	else {
+		log_info(nuestro_log, "No se pudo recibir el ID de LOCALIZED");
 	}
 }
 
@@ -494,4 +525,3 @@ void destruir_pokemon(pokemon* pokemon) {
 	free(pokemon->posicion);
 	free(pokemon);
 }
-

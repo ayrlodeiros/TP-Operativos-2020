@@ -8,8 +8,10 @@ int socket_broker;
 pokemon* pokemon_para_planificar;
 
 //CONEXIONES
+t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffer* buffer);
 void* serializar_paquete(t_paquete* paquete, int bytes);
 int obtener_tamanio_de_paquete(t_paquete* paquete);
+void destruir_paquete(t_paquete* paquete);
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
@@ -61,6 +63,8 @@ int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador);
 
 //ACCIONES
 void get_pokemon();
+void realizar_get(char* key, void* value);
+void esperar_id_localized(int socket_get);
 
 void catch_pokemon(entrenador* entrenador);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
