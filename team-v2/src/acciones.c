@@ -47,8 +47,12 @@ void realizar_catch(entrenador* entrenador) {
 
 
 //Realiza un intercambio entre dos entrenadores que estaban bloqueados
-void intercambiar(entrenador* entrenador) {
+void intercambiar(entrenador* entrenador1) {
 	//TODO realizar intercamiar
+	log_info(nuestro_log,string_from_format("Empezando la accion de intercambio"));
+	entrenador* entrenador_a_negociar = entrenador_a_intercambiar(entrenador1);
+	realizar_intercambio(entrenador1,entrenador_a_negociar);
+	log_info(nuestro_log,string_from_format("Terminando la accion de intercambio"));
 
 
 

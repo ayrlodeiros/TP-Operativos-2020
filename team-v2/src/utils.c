@@ -298,7 +298,25 @@ int necesito_mas_pokemons(){
 }
 
 int el_entrenador_cumplio_su_objetivo(entrenador* entrenador){
-	return entrenador->pokemons_objetivo == entrenador->pokemons_adquiridos;
+
+
+	int se_cumple = 1;
+
+	if(list_size(entrenador->pokemons_adquiridos) == list_size(entrenador->pokemons_objetivo)){
+		for(int i = 0; i<list_size(entrenador->pokemons_adquiridos);i++){
+			printf("\n CANTIDAD DEL MISMO POKEMON ADQUIRIDOS: %d", cantidad_del_mismo_pokemon_por_entrenador(entrenador->pokemons_adquiridos,list_get(entrenador->pokemons_adquiridos,i)));
+			printf("\n CANTIDAD DEL MISMO POKEMON OBJETIVO : %d", cantidad_del_mismo_pokemon_por_entrenador(entrenador->pokemons_objetivo,list_get(entrenador->pokemons_adquiridos,i)));
+			if (cantidad_del_mismo_pokemon_por_entrenador(entrenador->pokemons_adquiridos,list_get(entrenador->pokemons_adquiridos,i)) != cantidad_del_mismo_pokemon_por_entrenador(entrenador->pokemons_objetivo,list_get(entrenador->pokemons_adquiridos,i))){
+				se_cumple = 0;
+			}
+		}
+	}
+	else{
+		se_cumple = 0;;
+	}
+
+	return se_cumple;
+
 }
 
 
@@ -315,12 +333,13 @@ int el_entrenador_esta_block_deadlock(entrenador* entrenador){
 	return entrenador->estado == BLOCK_DEADLOCK;
 }
 
-int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,pokemon* pokemon){
+int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,pokemon* pokemon1){
 
 	int cantidad = 0;
 
 	for(int i=0;i<list_size(lista_de_pokemons);i++){
-		if(pokemon == list_get(lista_de_pokemons,i)){
+		pokemon* pokemon_posicion = list_get(lista_de_pokemons,i);
+		if(pokemon1->nombre == pokemon_posicion->nombre){
 			cantidad ++;
 		}
 	}
@@ -352,63 +371,66 @@ pokemon* pokemon_que_necesito(entrenador* entrenador){
 
 }
 
+int es_el_pokemon_buscado(entrenador* entrenador1,pokemon* pokemon_a_eliminar){
 
-//ESTA FUNCION LA HAGO PORQUE NO ME DEJABA AGARRAR LA LISTA DESPUES DE HACER UN GET
+	pokemon* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador1);
 
-t_list* devolver_lista_de_pokemons_adquiridos(entrenador* entrenador){
-	return entrenador -> pokemons_adquiridos;
+	return pokemon_que_no_necesito->nombre == pokemon_a_eliminar->nombre;
 }
 
+void realizar_intercambio(entrenador* entrenador1, entrenador* entrenador_a_negociar){
+
+	log_info(nuestro_log,string_from_format("Entrando a realizar Intercambio"));
+
+	pokemon* pokemon_que_requiero = pokemon_que_necesito(entrenador1);
+	pokemon* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador1);
 
 
-void realizar_intercambio(entrenador* entrenador){
-	int i = 0;
-	int intercambio_realizado = 0;
-
-	while(i < list_size(entrenadores_con_block_deadlock()) && intercambio_realizado == 0){
-		if(pokemon_que_necesito(entrenador) == pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))){
-			if(pokemon_que_me_sobra(entrenador) == pokemon_que_necesito(list_get(entrenadores_con_block_deadlock(),i))){
-				pokemon* pokemon_que_requiero = pokemon_que_necesito(entrenador);
-				pokemon* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador);
-
-				list_add(entrenador->pokemons_adquiridos,pokemon_que_requiero);
-				list_add(list_get(entrenadores_con_block_deadlock(),i),pokemon_que_no_necesito);
+	list_add(entrenador1->pokemons_adquiridos,pokemon_que_requiero);
+	log_info(nuestro_log,string_from_format("Estoy en el medio de realizar Intercambio"));
+	list_add(entrenador_a_negociar->pokemons_adquiridos,pokemon_que_no_necesito); //TODO REVISAR ESTO DE DEADLOCK
+	log_info(nuestro_log,string_from_format("Estoy en el medio parte 2 de realizar Intercambio"));
 
 
-				//list_remove_and_destroy_by_condition(entrenador->pokemons_adquiridos,es_el_pokemon_buscado(entrenador,pokemon_que_no_necesito),pokemon_que_no_necesito);
-				//list_remove_and_destroy_by_condition(devolver_lista_de_pokemons_adquiridos(list_get(entrenadores_con_block_deadlock(),i)),es_el_pokemon_buscado(list_get(entrenadores_con_block_deadlock(),i),pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))),pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i)));
+	list_remove_and_destroy_by_condition(entrenador1->pokemons_adquiridos,es_el_pokemon_buscado(entrenador1,pokemon_que_no_necesito),pokemon_que_no_necesito);
+	list_remove_and_destroy_by_condition(entrenador_a_negociar->pokemons_adquiridos,es_el_pokemon_buscado(entrenador_a_negociar,pokemon_que_me_sobra(entrenador_a_negociar)),pokemon_que_me_sobra(entrenador_a_negociar));
 
-				intercambio_realizado = 1;
-			}
-		}
-		i++;
-	}
 }
 
 entrenador* entrenador_a_intercambiar(entrenador* entrenador){
 	int i = 0;
 
 	while(i < list_size(entrenadores_con_block_deadlock())){
-			if(pokemon_que_necesito(entrenador) == pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))){
-				if(pokemon_que_me_sobra(entrenador) == pokemon_que_necesito(list_get(entrenadores_con_block_deadlock(),i))){
+			if(pokemon_que_necesito(entrenador)->nombre == pokemon_que_me_sobra(list_get(entrenadores_con_block_deadlock(),i))->nombre){
+				if(pokemon_que_me_sobra(entrenador)->nombre == pokemon_que_necesito(list_get(entrenadores_con_block_deadlock(),i))->nombre){
 					return list_get(entrenadores_con_block_deadlock(),i);
 				}
 			}
-			i++;
+		i++;
 	}
 
 }
-/*
-void diferencia_en_x_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar) {
-	agregar_movimientos_en_x(entrenador,entrenador_a_intercambiar-> - entrenador->posicion->posicion_x);
+
+void calcular_distancia_en_x_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar) {
+	agregar_movimientos_en_x(entrenador1,entrenador_a_intercambiar->posicion->posicion_x - entrenador1->posicion->posicion_x);
 }
 
-void diferencia_en_x_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar) {
-	agregar_movimientos_en_y(entrenador,entrenador_a_intercambiar-> - entrenador->posicion->posicion_x);
+void calcular_distancia_en_y_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar) {
+	agregar_movimientos_en_y(entrenador1,entrenador_a_intercambiar->posicion->posicion_y - entrenador1->posicion->posicion_y);
 }
-*/
+
 void planear_intercambio(entrenador* entrenador1){
-	//entrenador* entrenador_a_negociar = entrenador_a_intercambiar(entrenador);
+	log_info(nuestro_log,"Entre a planear el intercambio");
+	entrenador* entrenador_a_negociar = entrenador_a_intercambiar(entrenador1);
+	log_info(nuestro_log,"Estoy en el principio de planear el intercambio");
+	calcular_distancia_en_x_de__un_entrenador_al_otro_entrenador(entrenador1, entrenador_a_negociar);
+	calcular_distancia_en_y_de__un_entrenador_al_otro_entrenador(entrenador1,entrenador_a_negociar);
+	log_info(nuestro_log,"Estoy en el medio de planear el intercambio");
+	agregar_accion(entrenador1,intercambiar,5);
+	cambiar_estado_entrenador(entrenador1,READY); //TODO Revisar esta parte de deadlock
+	list_add(entrenadores_ready,entrenador1);
+	log_info(nuestro_log,"Sali de planear el intercambio");
+
 }
 
 t_list* entrenadores_con_block_deadlock(){
