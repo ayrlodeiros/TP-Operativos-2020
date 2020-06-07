@@ -8076,3 +8076,35 @@
 [INFO] 22:49:06:360 team/(13230:13269): Empezando la accion de intercambio
 [INFO] 22:49:06:360 team/(13230:13269): Entrando a realizar Intercambio
 [INFO] 22:49:06:361 team/(13230:13269): Estoy en el medio de realizar Intercambio
+[INFO] 17:14:50:270 team/(6510:6510): El algoritmo de planificacion es: 0
+[INFO] 17:14:50:282 team/(6510:6510): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:14:50:282 team/(6510:6510): Necesito 0 pokemons Pidgey
+[INFO] 17:14:50:282 team/(6510:6510): Necesito 0 pokemons Bulbasaur
+[INFO] 17:14:50:282 team/(6510:6510): Necesito 1 pokemons Squirtle
+[INFO] 17:14:50:283 team/(6510:6510): Necesito 2 pokemons Pikachu
+[INFO] 17:14:50:283 team/(6510:6510): Necesito 0 pokemons Charmander
+[ERROR] 17:14:50:291 team/(6510:6510): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:14:50:291 team/(6510:6510): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[ERROR] 17:14:50:292 team/(6510:6510): Falla al conectarse en IP: 127.0.0.1 y PUERTO: 5002
+[INFO] 17:14:50:292 team/(6510:6510): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:14:50:292 team/(6510:6510): Aparecio un Pikachu, el cual es requerido
+[INFO] 17:14:50:292 team/(6510:6510): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 17:14:50:292 team/(6510:6510): Aparecio un Squirtle, el cual es requerido
+[INFO] 17:14:50:292 team/(6510:6510): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 17:14:50:292 team/(6510:6510): Aparecio un Pikachu, el cual es requerido
+[INFO] 17:14:50:292 team/(6510:6510): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 17:14:50:292 team/(6510:6517): Esperando a que algun entrenador se libere
+[INFO] 17:14:50:292 team/(6510:6516): Estoy en el planificador
+[INFO] 17:14:50:309 team/(6510:6516): Estoy en FIFO preparado para planificar
+[INFO] 17:14:50:318 team/(6510:6516): Cpu disponible del entrenador: 14
+[INFO] 17:14:50:322 team/(6510:6516): Cpu usado del entrenador: 1
+[INFO] 17:14:50:323 team/(6510:6519): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 17:14:52:325 team/(6510:6516): Cpu disponible del entrenador: 14
+[INFO] 17:14:52:325 team/(6510:6516): Cpu usado del entrenador: 2
+[INFO] 17:14:52:332 team/(6510:6520): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 17:14:54:336 team/(6510:6516): Cpu disponible del entrenador: 14
+[INFO] 17:14:54:337 team/(6510:6516): Cpu usado del entrenador: 3
+[INFO] 17:14:54:340 team/(6510:6523): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 17:14:56:341 team/(6510:6516): Cpu disponible del entrenador: 14
+[INFO] 17:14:56:342 team/(6510:6516): Cpu usado del entrenador: 4
+[INFO] 17:14:56:347 team/(6510:6524): 2. Entrenador moviendose a la posicion: 6|0.

@@ -89,6 +89,9 @@ typedef struct
 t_list* lista_ids_localized;
 pthread_mutex_t mutex_lista_ids_localized;
 
+t_list* lista_ids_caught;
+pthread_mutex_t mutex_lista_ids_caught;
+
 typedef enum
 {
 	MENSAJE = 1,

@@ -72,6 +72,7 @@ void realizar_get(char* key, void* value);
 void esperar_id_localized(int socket_get);
 
 void catch_pokemon(entrenador* entrenador);
+void esperar_id_caught(int socket_catch);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
 void destruir_pokemon(pokemon* pokemon);
 

@@ -10,8 +10,8 @@ t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffe
 	paquete->buffer = buffer;
 	return paquete;
 }
-void* serializar_paquete(t_paquete* paquete, int bytes){
-	void * a_enviar = malloc(bytes);
+void* serializar_paquete(t_paquete* paquete, int tamanio_a_enviar){
+	void * a_enviar = malloc(tamanio_a_enviar);
 	int offset = 0;
 
 	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(int));
@@ -510,8 +510,7 @@ void esperar_id_localized(int socket_get) {
 		pthread_mutex_lock(&mutex_lista_ids_localized);
 		list_add(lista_ids_localized, &id_localized);
 		pthread_mutex_unlock(&mutex_lista_ids_localized);
-	}
-	else {
+	} else {
 		log_info(nuestro_log, "No se pudo recibir el ID de LOCALIZED");
 	}
 }
@@ -528,7 +527,58 @@ void catch_pokemon(entrenador* entrenador) {
 		manejar_la_captura_del_pokemon(entrenador);
 	} else {
 		//ACCION CON EL BROKER
-		//TODO realizar el mandado del CATCH al broker y el recibo del ID para luego esperar en CAUGHT
+
+		//CREO EL BUFFER CON SU TAMANIO Y STREAM
+		t_buffer* buffer = malloc(sizeof(t_buffer));
+
+		int tamanio_char_pokemon = strlen(entrenador->pokemon_en_busqueda->nombre) + 1;
+		buffer->tamanio = tamanio_char_pokemon + (2*sizeof(int));
+
+		void* stream = malloc(buffer->tamanio);
+		int offset = 0;
+		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->nombre), tamanio_char_pokemon);
+		offset += tamanio_char_pokemon;
+		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_x), sizeof(int));
+		offset += sizeof(int);
+		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_y), sizeof(int));
+
+		buffer->stream = stream;
+
+		//CREO EL PAQUETE CON EL CONTENIDO DE LO QUE VOY A ENVIAR
+		t_paquete* paquete = crear_paquete(MENSAJE, CATCH, buffer);
+
+		//SERIALIZO EL PAQUETE, LO MANDO y ESPERO LA RESPUESTA DEL BROKER
+		int bytes = obtener_tamanio_de_paquete(paquete);
+		void* a_enviar = serializar_paquete(paquete, bytes);
+
+		if(send(socket_catch, a_enviar, bytes ,0) > 0){
+			log_info(nuestro_log, "Se realizo el envio de CATCH correctamente");
+
+			pthread_t* hilo_espera_catch;
+			pthread_create(&hilo_espera_catch,NULL, esperar_id_caught, socket_catch);
+			pthread_detach(hilo_espera_catch);
+		} else{
+			log_info(logger, "9. No se pudo realizar el envio del CATCH al broker, se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
+			log_info(nuestro_log, "9. No se pudo realizar el envio del CATCH al broker, se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
+			manejar_la_captura_del_pokemon(entrenador);
+		}
+
+		free(a_enviar);
+		destruir_paquete(paquete);
+	}
+}
+
+void esperar_id_caught(int socket_catch) {
+	int id_caught;
+
+	if(recv(socket_catch,&id_caught, sizeof(int), 0) > 0){
+		log_info(nuestro_log, "Se recibio correctamente el ID para esperar en CAUGHT");
+
+		pthread_mutex_lock(&mutex_lista_ids_caught);
+		list_add(lista_ids_caught, &id_caught);
+		pthread_mutex_unlock(&mutex_lista_ids_caught);
+	} else {
+		log_info(nuestro_log, "No se pudo recibir el ID de CAUGHT");
 	}
 }
 
