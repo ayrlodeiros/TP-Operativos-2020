@@ -31,6 +31,7 @@ void iniciar_config(void);
 void destruir_config(void);
 
 t_list* crear_t_list(char** array);
+t_dictionary* crear_t_dictionary(char** array);
 t_list* leer_posiciones_entrenadores(void);
 t_list* leer_pokemon_entrenadores(void);
 t_list* leer_objetivos_entrenadores(void);

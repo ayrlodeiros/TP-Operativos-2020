@@ -28,6 +28,22 @@ t_list* crear_t_list(char** array) {
 	return lista;
 }
 
+t_dictionary* crear_t_dictionary(char** array) {
+	t_dictionary* diccionario = dictionary_create();
+	int pos = 0;
+	while(array[pos] != NULL) {
+		char* key = array[pos];
+		if(dictionary_has_key(diccionario, key)) {
+			dictionary_put(diccionario, key, dictionary_get(diccionario, key)+1);
+		} else {
+			dictionary_put(diccionario, key, 1);
+		}
+		pos++;
+	}
+	return diccionario;
+}
+
+
 t_list* leer_posiciones_entrenadores(void){
 
 	char** posiciones_config = config_get_array_value(config, "POSICIONES_ENTRENADORES");

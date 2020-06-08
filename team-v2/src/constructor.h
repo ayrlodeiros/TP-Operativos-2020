@@ -40,6 +40,9 @@ t_dictionary* objetivo_global;
 t_queue* pokemons_sin_entrenador;
 t_list* entrenadores_ready;
 
+t_list* lista_aux_pokemons;
+//TODO VER DE USAR MUTEX PARA ESTA LISTA
+
 typedef struct
 {
 	int posicion_x;
@@ -54,7 +57,8 @@ typedef enum
 	BLOCK_READY = 3,
 	BLOCK_CATCHING = 4,
 	BLOCK_DEADLOCK = 5,
-	EXIT = 6
+	BLOCK = 6,
+	EXIT = 7
 
 }estado_entrenador;
 
@@ -79,8 +83,8 @@ typedef struct
 	double cpu_estimado_restante;
 	posicion* posicion;
 	int cant_maxima_pokemons;
-	t_list* pokemons_adquiridos;
-	t_list* pokemons_objetivo;
+	t_dictionary* pokemons_adquiridos;
+	t_dictionary* pokemons_objetivo;
 	pokemon* pokemon_en_busqueda;
 	t_queue* acciones;
 } entrenador;
@@ -130,8 +134,8 @@ void armar_entrenadores();
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos);
 void armar_objetivo_global();
 
-void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo);
-void restar_adquirido_a_objetivo_global(char* pokemon_adquirido);
+void agregar_objetivo_a_objetivo_global(char* key, void* value);
+void restar_adquirido_a_objetivo_global(char* key, void* value);
 
 posicion* armar_posicion(char* posicion_a_armar);
 accion* armar_accion(void(*funcion)(void*), int cpu_requerido);
