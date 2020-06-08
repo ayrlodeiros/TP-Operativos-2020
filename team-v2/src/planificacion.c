@@ -76,9 +76,8 @@ void fifo(){
 			planear_intercambio(entrenador_a_ejecutar);
 		}
 
-		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-			salida_entrenador(entrenador_a_ejecutar);
-		}
+		salida_entrenador(entrenador_a_ejecutar);
+
 
 		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}

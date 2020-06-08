@@ -50,8 +50,14 @@ void realizar_catch(entrenador* entrenador) {
 void intercambiar(entrenador* entrenador1) {
 	//TODO realizar intercamiar
 	log_info(nuestro_log,string_from_format("Empezando la accion de intercambio"));
-	entrenador* entrenador_a_negociar = entrenador_a_intercambiar(entrenador1);
-	realizar_intercambio(entrenador1,entrenador_a_negociar);
+
+	if(hay_algun_entrenador_para_intercambiar(entrenador1) == 1){
+		entrenador* entrenador_a_negociar = entrenador_a_intercambiar(entrenador1);
+		log_info(nuestro_log,string_from_format("ESTOY ANTES DE LLAMAR A REALIZAR INTERCAMBIO"));
+		realizar_intercambio(entrenador1,entrenador_a_negociar);
+	}else{
+		log_info(nuestro_log,string_from_format("No se encontro ningun entrenador para intercambiar"));
+	}
 	log_info(nuestro_log,string_from_format("Terminando la accion de intercambio"));
 
 

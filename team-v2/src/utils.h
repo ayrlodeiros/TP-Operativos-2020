@@ -50,9 +50,11 @@ int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,pokemon*
 int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos,t_list* pokemons_objetivo, pokemon* pokemon);
 pokemon* pokemon_que_me_sobra(entrenador* entrenador);
 pokemon* pokemon_que_necesito(entrenador* entrenador);
+int devolver_posicion_en_la_lista_del_pokemon(entrenador* entrenador, pokemon* pokemon_a_buscar);
 int es_el_pokemon_buscado(entrenador* entrenador1,pokemon* pokemon_a_eliminar);
 void realizar_intercambio(entrenador* entrenador1, entrenador* entrenador_a_negociar);
-entrenador* entrenador_a_intercambiar(entrenador* entrenador);
+int hay_algun_entrenador_para_intercambiar(entrenador* entrenador1);
+entrenador* entrenador_a_intercambiar(entrenador* entrenador1);
 void calcular_distancia_en_x_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar);
 void calcular_distancia_en_y_de__un_entrenador_al_otro_entrenador(entrenador* entrenador1, entrenador* entrenador_a_intercambiar);
 void planear_intercambio(entrenador* entrenador1);

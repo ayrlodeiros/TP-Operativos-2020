@@ -2465,3 +2465,816 @@
 [INFO] 17:14:52:332 team/(6510:6520): 2. Entrenador moviendose a la posicion: 4|0.
 [INFO] 17:14:54:341 team/(6510:6523): 2. Entrenador moviendose a la posicion: 5|0.
 [INFO] 17:14:56:347 team/(6510:6524): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 18:43:00:585 team/(5164:5164): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:00:585 team/(5164:5164): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:00:608 team/(5164:5168): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:43:02:616 team/(5164:5174): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 18:43:04:623 team/(5164:5175): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 18:43:06:627 team/(5164:5176): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 18:43:08:635 team/(5164:5177): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 18:43:10:643 team/(5164:5178): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 18:43:12:651 team/(5164:5179): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 18:43:14:655 team/(5164:5180): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 18:43:16:659 team/(5164:5181): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 18:43:18:663 team/(5164:5182): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 18:43:20:668 team/(5164:5188): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 18:43:22:675 team/(5164:5190): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 18:43:24:681 team/(5164:5191): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 18:43:26:691 team/(5164:5192): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:26:691 team/(5164:5192): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:26:691 team/(5164:5192): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 18:43:26:696 team/(5164:5193): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 18:43:28:703 team/(5164:5196): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:43:30:709 team/(5164:5197): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 18:43:32:722 team/(5164:5203): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 18:43:34:735 team/(5164:5210): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:34:735 team/(5164:5210): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:34:735 team/(5164:5210): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 18:43:34:736 team/(5164:5211): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 18:43:36:743 team/(5164:5212): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 18:43:38:749 team/(5164:5213): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:43:40:755 team/(5164:5216): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 18:43:42:759 team/(5164:5217): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 18:43:44:763 team/(5164:5218): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 18:43:46:767 team/(5164:5224): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 18:43:48:771 team/(5164:5225): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 18:43:50:779 team/(5164:5226): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 18:43:52:783 team/(5164:5233): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 18:43:54:791 team/(5164:5234): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:54:791 team/(5164:5234): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:43:54:791 team/(5164:5234): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 18:59:28:186 team/(5721:5721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:59:28:187 team/(5721:5721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:59:28:207 team/(5721:5727): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:59:30:214 team/(5721:5731): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 18:59:32:217 team/(5721:5732): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 18:59:34:225 team/(5721:5738): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 18:59:36:231 team/(5721:5739): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 18:59:38:235 team/(5721:5740): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 18:59:40:251 team/(5721:5741): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 18:59:42:259 team/(5721:5744): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 18:59:44:267 team/(5721:5751): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 18:59:46:271 team/(5721:5753): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 18:59:48:276 team/(5721:5757): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 18:59:50:279 team/(5721:5758): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 18:59:52:283 team/(5721:5759): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 18:59:54:291 team/(5721:5760): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:59:54:291 team/(5721:5760): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:59:54:291 team/(5721:5760): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 18:59:54:299 team/(5721:5761): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 18:59:56:311 team/(5721:5767): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 18:59:58:323 team/(5721:5768): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:00:00:327 team/(5721:5769): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:00:02:333 team/(5721:5770): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:00:02:333 team/(5721:5770): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:00:02:333 team/(5721:5770): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:00:02:334 team/(5721:5771): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:00:04:339 team/(5721:5772): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:00:06:345 team/(5721:5778): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:00:08:349 team/(5721:5779): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:00:10:355 team/(5721:5780): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:00:12:359 team/(5721:5781): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:00:14:363 team/(5721:5782): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:00:16:374 team/(5721:5783): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:00:18:383 team/(5721:5789): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:00:20:387 team/(5721:5790): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:00:22:391 team/(5721:5791): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:00:22:391 team/(5721:5791): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:00:22:391 team/(5721:5791): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:04:04:370 team/(5944:5944): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:04:370 team/(5944:5944): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:04:375 team/(5944:5948): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:04:06:381 team/(5944:5953): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:04:08:391 team/(5944:5954): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:04:10:393 team/(5944:5955): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:04:12:403 team/(5944:5957): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:04:14:412 team/(5944:5958): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:04:16:422 team/(5944:5959): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:04:18:426 team/(5944:5960): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:04:20:432 team/(5944:5961): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:04:22:435 team/(5944:5962): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:04:24:439 team/(5944:5963): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:04:26:443 team/(5944:5970): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:04:28:447 team/(5944:5971): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:04:30:451 team/(5944:5972): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:30:451 team/(5944:5972): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:30:451 team/(5944:5972): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:04:30:452 team/(5944:5973): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:04:32:455 team/(5944:5974): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:04:34:459 team/(5944:5975): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:04:36:463 team/(5944:5976): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:04:38:467 team/(5944:5977): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:38:467 team/(5944:5977): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:38:467 team/(5944:5977): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:04:38:470 team/(5944:5978): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:04:40:473 team/(5944:5979): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:04:42:479 team/(5944:5982): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:04:44:483 team/(5944:5983): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:04:46:486 team/(5944:5984): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:04:48:491 team/(5944:5985): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:04:50:495 team/(5944:5986): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:04:52:503 team/(5944:5987): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:04:54:507 team/(5944:5988): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:04:56:511 team/(5944:5989): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:04:58:514 team/(5944:5990): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:58:514 team/(5944:5990): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:04:58:514 team/(5944:5990): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:10:24:358 team/(6219:6219): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:10:24:358 team/(6219:6219): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:10:24:363 team/(6219:6227): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:10:26:379 team/(6219:6229): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:10:28:383 team/(6219:6230): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:10:30:391 team/(6219:6231): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:10:32:395 team/(6219:6234): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:10:34:399 team/(6219:6235): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:10:36:403 team/(6219:6236): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:10:38:415 team/(6219:6237): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:10:40:427 team/(6219:6238): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:10:42:430 team/(6219:6241): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:10:44:434 team/(6219:6248): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:10:46:443 team/(6219:6250): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:10:48:451 team/(6219:6251): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:10:50:455 team/(6219:6252): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:10:50:455 team/(6219:6252): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:10:50:455 team/(6219:6252): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:10:50:460 team/(6219:6253): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:10:52:469 team/(6219:6255): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:10:54:478 team/(6219:6256): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:10:56:484 team/(6219:6263): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:10:58:487 team/(6219:6269): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:10:58:487 team/(6219:6269): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:10:58:487 team/(6219:6269): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:10:58:498 team/(6219:6270): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:11:00:504 team/(6219:6271): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:11:02:507 team/(6219:6272): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:11:04:510 team/(6219:6273): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:11:06:519 team/(6219:6274): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:11:08:523 team/(6219:6275): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:11:10:527 team/(6219:6276): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:11:12:528 team/(6219:6277): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:11:14:535 team/(6219:6278): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:11:16:539 team/(6219:6279): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:11:18:543 team/(6219:6280): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:11:18:543 team/(6219:6280): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:11:18:543 team/(6219:6280): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:14:12:612 team/(6395:6395): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:14:12:612 team/(6395:6395): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:14:12:623 team/(6395:6404): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:14:14:627 team/(6395:6405): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:14:16:631 team/(6395:6406): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:14:18:634 team/(6395:6407): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:14:20:639 team/(6395:6408): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:14:22:643 team/(6395:6409): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:14:24:647 team/(6395:6410): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:14:26:650 team/(6395:6412): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:14:28:655 team/(6395:6413): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:14:30:659 team/(6395:6419): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:14:32:663 team/(6395:6420): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:14:34:666 team/(6395:6421): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:14:36:671 team/(6395:6422): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:14:38:676 team/(6395:6423): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:14:38:677 team/(6395:6423): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:14:38:677 team/(6395:6423): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:14:38:679 team/(6395:6424): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:14:40:683 team/(6395:6425): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:14:42:687 team/(6395:6428): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:14:44:692 team/(6395:6429): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:14:46:695 team/(6395:6430): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:14:46:695 team/(6395:6430): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:14:46:695 team/(6395:6430): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:14:46:699 team/(6395:6431): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:14:48:703 team/(6395:6432): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:14:50:707 team/(6395:6433): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:14:52:711 team/(6395:6434): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:14:54:715 team/(6395:6435): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:14:56:719 team/(6395:6441): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:14:58:723 team/(6395:6442): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:15:00:727 team/(6395:6443): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:15:02:731 team/(6395:6444): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:15:04:735 team/(6395:6445): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:15:06:739 team/(6395:6446): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:15:06:739 team/(6395:6446): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:15:06:739 team/(6395:6446): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:19:46:850 team/(9603:9603): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:19:46:850 team/(9603:9603): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:19:46:862 team/(9603:9611): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:19:48:870 team/(9603:9614): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:19:50:875 team/(9603:9615): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:19:52:879 team/(9603:9616): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:19:54:884 team/(9603:9617): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:19:56:887 team/(9603:9618): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:19:58:890 team/(9603:9619): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:20:00:893 team/(9603:9620): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:20:02:896 team/(9603:9621): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:20:04:899 team/(9603:9622): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:20:06:902 team/(9603:9623): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:20:08:907 team/(9603:9624): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:20:10:911 team/(9603:9625): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:20:12:915 team/(9603:9626): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:20:12:915 team/(9603:9626): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:20:12:915 team/(9603:9626): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:20:12:916 team/(9603:9627): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:20:14:919 team/(9603:9628): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:20:16:923 team/(9603:9629): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:20:18:927 team/(9603:9630): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:20:20:930 team/(9603:9631): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:20:20:930 team/(9603:9631): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:20:20:930 team/(9603:9631): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:20:20:933 team/(9603:9632): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:20:22:937 team/(9603:9633): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:20:24:942 team/(9603:9635): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:20:26:947 team/(9603:9636): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:20:28:951 team/(9603:9637): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:20:30:955 team/(9603:9638): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:20:32:958 team/(9603:9639): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:20:34:964 team/(9603:9640): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:20:36:967 team/(9603:9641): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:20:38:971 team/(9603:9642): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:20:40:975 team/(9603:9643): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:20:40:975 team/(9603:9643): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:20:40:975 team/(9603:9643): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:33:37:126 team/(10729:10729): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:33:37:126 team/(10729:10729): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:33:37:131 team/(10729:10733): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:33:39:147 team/(10729:10738): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:33:41:155 team/(10729:10740): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:33:43:159 team/(10729:10741): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:33:45:163 team/(10729:10744): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:33:47:167 team/(10729:10745): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:33:49:171 team/(10729:10746): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:33:51:175 team/(10729:10747): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:33:53:179 team/(10729:10748): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:33:55:183 team/(10729:10749): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:33:57:187 team/(10729:10750): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:33:59:191 team/(10729:10751): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:34:01:193 team/(10729:10752): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:34:03:199 team/(10729:10753): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:34:03:199 team/(10729:10753): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:34:03:199 team/(10729:10753): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:34:03:200 team/(10729:10754): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:34:05:203 team/(10729:10755): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:34:07:207 team/(10729:10756): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:34:09:210 team/(10729:10757): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:34:11:214 team/(10729:10758): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:34:11:214 team/(10729:10758): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:34:11:214 team/(10729:10758): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:34:11:217 team/(10729:10759): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:34:13:223 team/(10729:10761): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:34:15:226 team/(10729:10762): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:34:17:232 team/(10729:10763): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:34:19:235 team/(10729:10764): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:34:21:239 team/(10729:10765): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:34:23:243 team/(10729:10766): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:34:25:248 team/(10729:10768): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:34:27:251 team/(10729:10769): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:34:29:255 team/(10729:10770): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:34:31:259 team/(10729:10771): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:34:31:259 team/(10729:10771): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:34:31:259 team/(10729:10771): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:40:24:385 team/(11257:11257): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:40:24:385 team/(11257:11257): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:40:24:390 team/(11257:11265): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:40:26:395 team/(11257:11268): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:40:28:399 team/(11257:11269): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:40:30:404 team/(11257:11270): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:40:32:408 team/(11257:11271): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:40:34:411 team/(11257:11272): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:40:36:415 team/(11257:11273): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:40:38:419 team/(11257:11274): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:40:40:423 team/(11257:11275): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:40:42:427 team/(11257:11276): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:40:44:432 team/(11257:11279): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:40:46:435 team/(11257:11280): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:40:48:439 team/(11257:11281): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:40:50:443 team/(11257:11282): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:40:50:443 team/(11257:11282): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:40:50:443 team/(11257:11282): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:40:50:447 team/(11257:11283): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:40:52:451 team/(11257:11284): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:40:54:455 team/(11257:11285): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:40:56:463 team/(11257:11286): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:40:58:467 team/(11257:11287): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:40:58:467 team/(11257:11287): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:40:58:467 team/(11257:11287): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:40:58:469 team/(11257:11288): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:41:00:475 team/(11257:11289): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:41:02:479 team/(11257:11290): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:41:04:483 team/(11257:11291): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:41:06:487 team/(11257:11292): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:41:08:491 team/(11257:11293): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:41:10:495 team/(11257:11294): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:41:12:500 team/(11257:11295): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:41:14:503 team/(11257:11296): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:41:16:507 team/(11257:11297): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:41:18:511 team/(11257:11298): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:41:18:511 team/(11257:11298): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:41:18:511 team/(11257:11298): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:49:14:6 team/(12051:12051): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:49:14:7 team/(12051:12051): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:49:15:11 team/(12051:12059): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:49:17:19 team/(12051:12061): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:49:19:23 team/(12051:12062): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:49:21:27 team/(12051:12063): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:49:23:31 team/(12051:12064): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:49:25:35 team/(12051:12066): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:49:27:39 team/(12051:12067): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:49:29:43 team/(12051:12068): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:49:31:47 team/(12051:12069): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:49:33:51 team/(12051:12070): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:49:35:54 team/(12051:12071): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:49:37:59 team/(12051:12072): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:49:39:63 team/(12051:12073): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:49:41:67 team/(12051:12074): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:49:41:67 team/(12051:12074): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:49:41:67 team/(12051:12074): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:49:41:72 team/(12051:12075): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:49:43:75 team/(12051:12076): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:49:45:83 team/(12051:12079): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:49:47:87 team/(12051:12080): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:49:49:91 team/(12051:12081): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:49:49:91 team/(12051:12081): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:49:49:91 team/(12051:12081): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:49:49:95 team/(12051:12082): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:49:51:99 team/(12051:12083): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:49:53:103 team/(12051:12084): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:49:55:107 team/(12051:12085): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:49:57:111 team/(12051:12086): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:49:59:119 team/(12051:12087): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:50:01:123 team/(12051:12088): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:50:03:127 team/(12051:12089): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:50:05:131 team/(12051:12090): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:50:07:142 team/(12051:12091): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:50:09:154 team/(12051:12092): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:50:09:154 team/(12051:12092): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:50:09:154 team/(12051:12092): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 19:56:47:799 team/(13673:13673): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:56:47:800 team/(13673:13673): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:56:47:810 team/(13673:13681): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:56:49:815 team/(13673:13682): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:56:51:819 team/(13673:13683): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:56:53:827 team/(13673:13684): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:56:55:831 team/(13673:13685): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:56:57:835 team/(13673:13686): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:56:59:839 team/(13673:13687): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:57:01:843 team/(13673:13688): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:57:03:847 team/(13673:13689): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 19:57:05:850 team/(13673:13690): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 19:57:07:855 team/(13673:13691): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 19:57:09:859 team/(13673:13692): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 19:57:11:863 team/(13673:13693): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 19:57:13:867 team/(13673:13694): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:57:13:867 team/(13673:13694): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:57:13:867 team/(13673:13694): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 19:57:13:871 team/(13673:13695): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:57:15:875 team/(13673:13701): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:57:17:878 team/(13673:13702): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:57:19:881 team/(13673:13703): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:57:21:886 team/(13673:13704): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:57:21:886 team/(13673:13704): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:57:21:886 team/(13673:13704): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 19:57:21:886 team/(13673:13705): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 19:57:23:891 team/(13673:13706): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 19:57:25:895 team/(13673:13707): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 19:57:27:899 team/(13673:13708): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 19:57:29:903 team/(13673:13709): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 19:57:31:907 team/(13673:13710): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 19:57:33:911 team/(13673:13711): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 19:57:35:915 team/(13673:13712): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 19:57:37:919 team/(13673:13713): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 19:57:39:923 team/(13673:13714): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 19:57:41:927 team/(13673:13715): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:57:41:927 team/(13673:13715): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 19:57:41:927 team/(13673:13715): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 20:01:55:638 team/(14655:14655): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:01:55:638 team/(14655:14655): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:01:55:643 team/(14655:14663): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:01:57:647 team/(14655:14667): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:01:59:651 team/(14655:14669): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:02:01:659 team/(14655:14670): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:02:03:663 team/(14655:14671): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:02:05:666 team/(14655:14672): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:02:07:671 team/(14655:14673): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:02:09:679 team/(14655:14674): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:02:11:684 team/(14655:14675): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 20:02:13:687 team/(14655:14676): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 20:02:15:692 team/(14655:14677): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 20:02:17:699 team/(14655:14680): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 20:02:19:707 team/(14655:14682): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 20:02:21:715 team/(14655:14687): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:02:21:715 team/(14655:14687): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:02:21:715 team/(14655:14687): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 20:02:21:719 team/(14655:14688): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:02:23:727 team/(14655:14689): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:02:25:730 team/(14655:14690): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:02:27:735 team/(14655:14691): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:02:29:739 team/(14655:14692): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:02:29:739 team/(14655:14692): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:02:29:739 team/(14655:14692): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 20:02:29:740 team/(14655:14693): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 20:02:31:743 team/(14655:14694): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:02:33:751 team/(14655:14695): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:02:35:755 team/(14655:14696): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:02:37:763 team/(14655:14702): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:02:39:780 team/(14655:14703): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:02:41:783 team/(14655:14704): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:02:43:789 team/(14655:14705): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:02:45:795 team/(14655:14714): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:02:47:811 team/(14655:14715): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:02:49:815 team/(14655:14716): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:02:49:815 team/(14655:14716): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:02:49:815 team/(14655:14716): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 20:04:06:334 team/(15256:15256): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:04:06:334 team/(15256:15256): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:04:06:343 team/(15256:15262): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:04:08:351 team/(15256:15266): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:04:10:355 team/(15256:15267): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:04:12:367 team/(15256:15269): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:04:14:375 team/(15256:15273): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:04:16:381 team/(15256:15277): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:04:18:387 team/(15256:15278): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:04:20:391 team/(15256:15279): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:04:22:394 team/(15256:15281): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 20:04:24:398 team/(15256:15282): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 20:04:26:402 team/(15256:15283): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 20:04:28:407 team/(15256:15284): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 20:04:30:411 team/(15256:15285): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 20:04:32:414 team/(15256:15286): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:04:32:414 team/(15256:15286): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:04:32:414 team/(15256:15286): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 20:04:32:417 team/(15256:15287): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:04:34:423 team/(15256:15288): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:04:36:427 team/(15256:15289): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:04:38:430 team/(15256:15290): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:04:40:435 team/(15256:15291): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:04:40:435 team/(15256:15291): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:04:40:435 team/(15256:15291): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 20:04:40:436 team/(15256:15292): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 20:04:42:439 team/(15256:15293): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:04:44:443 team/(15256:15294): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:04:46:447 team/(15256:15298): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:04:48:449 team/(15256:15299): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:04:50:453 team/(15256:15300): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:04:52:459 team/(15256:15301): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:04:54:463 team/(15256:15302): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:04:56:467 team/(15256:15303): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:04:58:471 team/(15256:15304): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:05:00:475 team/(15256:15305): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:05:00:475 team/(15256:15305): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:05:00:475 team/(15256:15305): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 20:08:55:593 team/(16060:16060): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:08:55:593 team/(16060:16060): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:08:55:599 team/(16060:16065): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:08:57:606 team/(16060:16072): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:08:59:611 team/(16060:16075): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:09:01:615 team/(16060:16076): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:09:03:620 team/(16060:16078): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:09:05:623 team/(16060:16079): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:09:07:627 team/(16060:16080): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:09:09:631 team/(16060:16081): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:09:11:635 team/(16060:16082): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 20:09:13:639 team/(16060:16083): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 20:09:15:643 team/(16060:16084): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 20:09:17:647 team/(16060:16085): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 20:09:19:651 team/(16060:16086): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 20:09:21:655 team/(16060:16087): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:09:21:655 team/(16060:16087): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:09:21:655 team/(16060:16087): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 20:09:21:659 team/(16060:16088): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:09:23:663 team/(16060:16089): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:09:25:667 team/(16060:16090): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:09:27:671 team/(16060:16091): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:09:29:675 team/(16060:16092): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:09:29:675 team/(16060:16092): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:09:29:675 team/(16060:16092): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 20:09:29:676 team/(16060:16093): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 20:09:31:679 team/(16060:16094): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:09:33:683 team/(16060:16095): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:09:35:687 team/(16060:16096): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:09:37:691 team/(16060:16097): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:09:39:695 team/(16060:16098): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:09:41:697 team/(16060:16099): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:09:43:703 team/(16060:16100): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:09:45:707 team/(16060:16101): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:09:47:711 team/(16060:16104): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:09:49:719 team/(16060:16105): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:09:49:719 team/(16060:16105): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:09:49:719 team/(16060:16105): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 20:12:49:88 team/(16648:16648): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:12:49:88 team/(16648:16648): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:12:49:91 team/(16648:16652): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:12:51:103 team/(16648:16658): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:12:53:106 team/(16648:16659): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:12:55:111 team/(16648:16661): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:12:57:119 team/(16648:16662): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:12:59:125 team/(16648:16663): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:13:01:128 team/(16648:16664): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:13:03:131 team/(16648:16665): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:13:05:135 team/(16648:16666): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 20:13:07:139 team/(16648:16667): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 20:13:09:143 team/(16648:16668): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 20:13:11:147 team/(16648:16669): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 20:13:13:150 team/(16648:16670): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 20:13:15:158 team/(16648:16671): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:13:15:158 team/(16648:16671): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:13:15:158 team/(16648:16671): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 20:13:15:159 team/(16648:16672): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:13:17:165 team/(16648:16673): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:13:19:170 team/(16648:16674): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:13:21:175 team/(16648:16675): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:13:23:183 team/(16648:16676): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:13:23:183 team/(16648:16676): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:13:23:183 team/(16648:16676): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 20:13:23:183 team/(16648:16677): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 20:13:25:205 team/(16648:16679): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:13:27:211 team/(16648:16680): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:13:29:218 team/(16648:16681): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:13:31:223 team/(16648:16682): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:13:33:227 team/(16648:16688): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:13:35:231 team/(16648:16689): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:13:37:235 team/(16648:16690): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:13:39:239 team/(16648:16691): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:13:41:243 team/(16648:16692): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:13:43:246 team/(16648:16693): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:13:43:246 team/(16648:16693): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:13:43:246 team/(16648:16693): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 20:31:26:993 team/(18107:18107): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:31:26:993 team/(18107:18107): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:31:26:999 team/(18107:18115): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:31:29:3 team/(18107:18116): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:31:31:7 team/(18107:18117): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:31:33:11 team/(18107:18119): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:31:35:15 team/(18107:18120): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:31:37:19 team/(18107:18121): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:31:39:23 team/(18107:18122): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:31:41:27 team/(18107:18123): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:31:43:29 team/(18107:18124): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 20:31:45:35 team/(18107:18125): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 20:31:47:39 team/(18107:18126): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 20:31:49:43 team/(18107:18129): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 20:31:51:47 team/(18107:18130): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 20:31:53:51 team/(18107:18131): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:31:53:51 team/(18107:18131): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:31:53:51 team/(18107:18131): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 20:31:53:52 team/(18107:18132): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:31:55:55 team/(18107:18133): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:31:57:60 team/(18107:18134): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:31:59:63 team/(18107:18135): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:32:01:67 team/(18107:18136): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:32:01:67 team/(18107:18136): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:32:01:67 team/(18107:18136): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 20:32:01:68 team/(18107:18137): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 20:32:03:71 team/(18107:18138): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:32:05:76 team/(18107:18139): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:32:07:80 team/(18107:18141): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:32:09:83 team/(18107:18142): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:32:11:86 team/(18107:18143): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:32:13:90 team/(18107:18144): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:32:15:95 team/(18107:18145): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:32:17:99 team/(18107:18146): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:32:19:103 team/(18107:18147): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:32:21:126 team/(18107:18148): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:32:21:126 team/(18107:18148): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:32:21:126 team/(18107:18148): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 20:38:11:120 team/(18837:18837): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:38:11:120 team/(18837:18837): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:38:11:127 team/(18837:18845): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:38:13:139 team/(18837:18846): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:38:15:143 team/(18837:18847): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:38:17:147 team/(18837:18848): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:38:19:151 team/(18837:18849): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:38:21:155 team/(18837:18850): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:38:23:159 team/(18837:18851): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:38:25:163 team/(18837:18852): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:38:27:175 team/(18837:18853): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 20:38:29:187 team/(18837:18855): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 20:38:31:192 team/(18837:18856): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 20:38:33:195 team/(18837:18862): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 20:38:35:199 team/(18837:18863): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 20:38:37:203 team/(18837:18864): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:38:37:203 team/(18837:18864): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:38:37:203 team/(18837:18864): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 20:38:37:207 team/(18837:18865): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:38:39:209 team/(18837:18866): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:38:41:213 team/(18837:18867): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:38:43:217 team/(18837:18868): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:38:45:223 team/(18837:18870): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:38:45:223 team/(18837:18870): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:38:45:223 team/(18837:18870): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 20:38:45:224 team/(18837:18871): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 20:38:47:231 team/(18837:18872): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 20:38:49:241 team/(18837:18880): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 20:38:51:247 team/(18837:18881): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 20:38:53:251 team/(18837:18882): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 20:38:55:256 team/(18837:18883): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 20:38:57:259 team/(18837:18884): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 20:38:59:264 team/(18837:18885): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 20:39:01:267 team/(18837:18886): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 20:39:03:271 team/(18837:18887): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 20:39:05:276 team/(18837:18888): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:39:05:276 team/(18837:18888): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:39:05:276 team/(18837:18888): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 21:29:15:436 team/(19823:19823): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:29:15:436 team/(19823:19823): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:29:15:439 team/(19823:19828): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:29:17:447 team/(19823:19833): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:29:19:450 team/(19823:19835): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:29:21:455 team/(19823:19836): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 21:29:23:467 team/(19823:19838): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 21:29:25:483 team/(19823:19839): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 21:29:27:487 team/(19823:19842): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 21:29:29:491 team/(19823:19843): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 21:29:31:495 team/(19823:19844): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 21:29:33:501 team/(19823:19846): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 21:29:35:507 team/(19823:19849): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 21:29:37:516 team/(19823:19850): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 21:29:39:519 team/(19823:19851): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 21:31:30:265 team/(19934:19934): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:31:30:265 team/(19934:19934): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:31:30:267 team/(19934:19939): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:31:32:271 team/(19934:19945): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:31:34:278 team/(19934:19946): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:31:36:281 team/(19934:19948): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 21:31:38:292 team/(19934:19949): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 21:31:40:304 team/(19934:19950): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 21:31:42:307 team/(19934:19951): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 21:31:44:311 team/(19934:19952): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 21:31:46:314 team/(19934:19953): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 21:31:48:325 team/(19934:19954): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 21:31:50:331 team/(19934:19955): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 21:31:52:335 team/(19934:19958): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 21:31:54:339 team/(19934:19959): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 21:31:56:343 team/(19934:19960): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:31:56:343 team/(19934:19960): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:31:56:343 team/(19934:19960): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 21:31:56:346 team/(19934:19961): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 21:31:58:351 team/(19934:19962): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:32:00:356 team/(19934:19963): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:32:02:359 team/(19934:19964): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:32:04:362 team/(19934:19965): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:32:04:363 team/(19934:19965): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:32:04:363 team/(19934:19965): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 21:32:04:367 team/(19934:19966): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 21:32:06:371 team/(19934:19967): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 21:32:08:375 team/(19934:19968): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:32:10:379 team/(19934:19969): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:32:12:383 team/(19934:19970): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:32:14:387 team/(19934:19971): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 21:32:16:391 team/(19934:19972): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 21:32:18:395 team/(19934:19973): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 21:32:20:399 team/(19934:19974): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 21:32:22:402 team/(19934:19975): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 21:32:24:406 team/(19934:19976): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:32:24:406 team/(19934:19976): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:32:24:406 team/(19934:19976): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 21:34:53:355 team/(20082:20082): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:34:53:359 team/(20082:20082): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:34:53:364 team/(20082:20090): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:34:55:372 team/(20082:20093): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:34:57:379 team/(20082:20095): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:34:59:383 team/(20082:20096): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 21:35:01:385 team/(20082:20098): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 21:35:03:408 team/(20082:20099): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 21:35:05:415 team/(20082:20101): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 21:35:07:423 team/(20082:20102): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 21:35:09:438 team/(20082:20103): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 21:35:11:446 team/(20082:20105): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 21:35:13:455 team/(20082:20107): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 21:35:15:459 team/(20082:20110): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 21:35:17:467 team/(20082:20112): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 21:35:19:471 team/(20082:20114): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:35:19:471 team/(20082:20114): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:35:19:471 team/(20082:20114): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 21:35:19:472 team/(20082:20115): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 21:35:21:487 team/(20082:20117): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:35:23:499 team/(20082:20118): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:35:25:504 team/(20082:20120): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:35:27:515 team/(20082:20121): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:35:27:515 team/(20082:20121): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:35:27:515 team/(20082:20121): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 21:35:27:516 team/(20082:20122): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 21:35:29:519 team/(20082:20123): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 21:35:31:522 team/(20082:20125): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 21:35:33:524 team/(20082:20126): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 21:35:35:529 team/(20082:20128): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 21:35:37:535 team/(20082:20129): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 21:35:39:539 team/(20082:20130): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 21:35:41:546 team/(20082:20132): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 21:35:43:554 team/(20082:20133): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 21:35:45:557 team/(20082:20135): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 21:35:47:563 team/(20082:20136): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:35:47:563 team/(20082:20136): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 21:35:47:563 team/(20082:20136): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 22:14:15:688 team/(21483:21483): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:14:15:688 team/(21483:21483): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:14:15:707 team/(21483:21491): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:14:17:719 team/(21483:21492): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:14:19:724 team/(21483:21494): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:14:21:731 team/(21483:21495): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 22:14:23:739 team/(21483:21497): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 22:14:25:742 team/(21483:21498): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 22:14:27:747 team/(21483:21500): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 22:14:29:751 team/(21483:21502): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 22:14:31:755 team/(21483:21503): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 22:14:33:757 team/(21483:21505): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 22:14:35:760 team/(21483:21506): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 22:14:37:767 team/(21483:21507): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 22:14:39:771 team/(21483:21509): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 22:14:41:774 team/(21483:21510): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:14:41:774 team/(21483:21510): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:14:41:774 team/(21483:21510): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 22:14:41:779 team/(21483:21511): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 22:14:43:782 team/(21483:21513): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:14:45:787 team/(21483:21514): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:14:47:795 team/(21483:21515): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:14:49:799 team/(21483:21517): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:14:49:799 team/(21483:21517): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:14:49:799 team/(21483:21517): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 22:14:49:799 team/(21483:21518): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 22:14:51:806 team/(21483:21519): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 22:14:53:811 team/(21483:21523): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:14:55:815 team/(21483:21524): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:14:57:819 team/(21483:21525): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:14:59:823 team/(21483:21527): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 22:15:01:831 team/(21483:21528): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 22:15:03:836 team/(21483:21530): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 22:15:05:839 team/(21483:21531): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 22:15:07:845 team/(21483:21532): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 22:15:09:851 team/(21483:21534): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:15:09:851 team/(21483:21534): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:15:09:851 team/(21483:21534): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 22:16:43:215 team/(21608:21608): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:16:43:216 team/(21608:21608): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:16:43:223 team/(21608:21616): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:16:45:225 team/(21608:21618): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:16:47:231 team/(21608:21619): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:16:49:235 team/(21608:21620): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 22:16:51:238 team/(21608:21622): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 22:16:53:240 team/(21608:21625): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 22:16:55:242 team/(21608:21627): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 22:16:57:246 team/(21608:21628): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 22:16:59:250 team/(21608:21629): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 22:17:01:256 team/(21608:21631): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 22:17:03:259 team/(21608:21635): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 22:17:05:263 team/(21608:21637): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 22:17:07:271 team/(21608:21638): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 22:17:09:277 team/(21608:21639): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:17:09:277 team/(21608:21639): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:17:09:278 team/(21608:21639): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 22:17:09:278 team/(21608:21640): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 22:17:11:282 team/(21608:21642): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:17:13:287 team/(21608:21643): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:17:15:289 team/(21608:21645): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:17:17:294 team/(21608:21646): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:17:17:294 team/(21608:21646): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:17:17:294 team/(21608:21646): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 22:17:17:296 team/(21608:21647): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 22:17:19:302 team/(21608:21648): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 22:17:21:306 team/(21608:21650): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:17:23:308 team/(21608:21651): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:17:25:315 team/(21608:21653): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:17:27:323 team/(21608:21654): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 22:17:29:325 team/(21608:21655): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 22:17:31:332 team/(21608:21657): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 22:17:33:339 team/(21608:21658): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 22:17:35:342 team/(21608:21660): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 22:17:37:349 team/(21608:21661): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:17:37:349 team/(21608:21661): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:17:37:349 team/(21608:21661): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
+[INFO] 22:18:58:836 team/(21777:21777): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:18:58:839 team/(21777:21777): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:18:58:852 team/(21777:21785): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:19:00:863 team/(21777:21786): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:19:02:867 team/(21777:21787): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:19:04:871 team/(21777:21788): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 22:19:06:875 team/(21777:21789): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 22:19:08:879 team/(21777:21790): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 22:19:10:883 team/(21777:21791): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 22:19:12:887 team/(21777:21792): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 22:19:14:895 team/(21777:21793): 2. Entrenador moviendose a la posicion: 11|0.
+[INFO] 22:19:16:899 team/(21777:21794): 2. Entrenador moviendose a la posicion: 12|0.
+[INFO] 22:19:18:903 team/(21777:21795): 2. Entrenador moviendose a la posicion: 13|0.
+[INFO] 22:19:20:908 team/(21777:21796): 2. Entrenador moviendose a la posicion: 14|0.
+[INFO] 22:19:22:911 team/(21777:21797): 2. Entrenador moviendose a la posicion: 15|0.
+[INFO] 22:19:24:915 team/(21777:21798): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:19:24:915 team/(21777:21798): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:19:24:915 team/(21777:21798): 3. Se realiza la captura del pokemon Pikachu, en la posicion 15|0 exitosamente.
+[INFO] 22:19:24:917 team/(21777:21799): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 22:19:26:923 team/(21777:21800): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:19:28:931 team/(21777:21801): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:19:30:935 team/(21777:21802): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:19:32:939 team/(21777:21803): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:19:32:939 team/(21777:21803): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:19:32:939 team/(21777:21803): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|0 exitosamente.
+[INFO] 22:19:32:943 team/(21777:21804): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 22:19:34:948 team/(21777:21805): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 22:19:36:951 team/(21777:21806): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 22:19:38:955 team/(21777:21807): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 22:19:40:959 team/(21777:21808): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 22:19:42:963 team/(21777:21809): 2. Entrenador moviendose a la posicion: 6|0.
+[INFO] 22:19:44:967 team/(21777:21810): 2. Entrenador moviendose a la posicion: 7|0.
+[INFO] 22:19:46:976 team/(21777:21812): 2. Entrenador moviendose a la posicion: 8|0.
+[INFO] 22:19:48:982 team/(21777:21813): 2. Entrenador moviendose a la posicion: 9|0.
+[INFO] 22:19:50:987 team/(21777:21814): 2. Entrenador moviendose a la posicion: 10|0.
+[INFO] 22:19:52:991 team/(21777:21815): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:19:52:991 team/(21777:21815): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 22:19:52:991 team/(21777:21815): 3. Se realiza la captura del pokemon Pikachu, en la posicion 10|0 exitosamente.
