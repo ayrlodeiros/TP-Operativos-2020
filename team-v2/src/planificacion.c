@@ -125,18 +125,10 @@ void round_robin(){
 			printf("\n QUANTUM CONSUMIDO : %d", quantum_consumido);
 			printf("\n CPU TIEMPO : %d", tiempo);
 		}
-			if(cpu_restante_entrenador(entrenador_a_ejecutar)){
-				list_add(entrenadores_ready,entrenador_a_ejecutar);
-			}
+		if(cpu_restante_entrenador(entrenador_a_ejecutar)){
+			list_add(entrenadores_ready,entrenador_a_ejecutar);
+		}
 
-			if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-				salida_entrenador(entrenador_a_ejecutar);
-			}
-			else{
-				if(cpu_restante_entrenador(entrenador_a_ejecutar)){
-					list_add(entrenadores_ready,entrenador_a_ejecutar);
-				}
-			}
 
 		quantum_consumido = 0;
 
@@ -180,10 +172,6 @@ void sjf_sin_desalojo(){
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
-
-		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-			salida_entrenador(entrenador_a_ejecutar);
-		}
 	}
 
 	//list_destroy(entrenadores_con_rafagas_estimadas);
@@ -220,10 +208,6 @@ void sjf_con_desalojo(){
 
 		ejecutar(entrenador_a_ejecutar);
 		entrenador_a_ejecutar->cpu_estimado_restante -= 1;
-
-		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-			salida_entrenador(entrenador_a_ejecutar);
-		}
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);

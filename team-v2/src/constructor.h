@@ -40,8 +40,6 @@ t_dictionary* objetivo_global;
 t_queue* pokemons_sin_entrenador;
 t_list* entrenadores_ready;
 
-t_list* lista_aux_pokemons;
-//TODO VER DE USAR MUTEX PARA ESTA LISTA
 
 typedef struct
 {
@@ -83,8 +81,9 @@ typedef struct
 	double cpu_estimado_restante;
 	posicion* posicion;
 	int cant_maxima_pokemons;
-	t_dictionary* pokemons_adquiridos;
-	t_dictionary* pokemons_objetivo;
+	t_list* pokemons_adquiridos;
+	t_list* pokemons_objetivo;
+	t_list* pokemons_sobrantes;
 	pokemon* pokemon_en_busqueda;
 	t_queue* acciones;
 } entrenador;
@@ -132,10 +131,13 @@ void iniciar_variables_globales();
 
 void armar_entrenadores();
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos);
+void actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(entrenador* entrenador);
+void actualizar_objetivo_y_sobrante_del_entrenador(entrenador* entrenador, char* pokemon_adquirido);
+int devolver_posicion_en_la_lista_del_pokemon(t_list* lista_pokemons, char* pokemon_a_buscar);
 void armar_objetivo_global();
 
-void agregar_objetivo_a_objetivo_global(char* key, void* value);
-void restar_adquirido_a_objetivo_global(char* key, void* value);
+void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo);
+void restar_adquirido_a_objetivo_global(char* pokemon_adquirido);
 
 posicion* armar_posicion(char* posicion_a_armar);
 accion* armar_accion(void(*funcion)(void*), int cpu_requerido);

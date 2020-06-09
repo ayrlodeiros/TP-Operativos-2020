@@ -9,13 +9,24 @@ int main(void){
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 	dictionary_iterator(objetivo_global, mostrar_objetivo_global);
 
+	entrenador* entrenador1 = list_get(entrenadores, 0);
+
+	for(int i = 0; i < list_size(entrenador1->pokemons_adquiridos); i++) {
+		log_info(nuestro_log, string_from_format("\nPokemon ADQUIRIDO %d: %s", i, list_get(entrenador1->pokemons_adquiridos, i)));
+	}
+	for(int i = 0; i < list_size(entrenador1->pokemons_sobrantes); i++) {
+			log_info(nuestro_log, string_from_format("\nPokemon SOBRANTES %d: %s", i, list_get(entrenador1->pokemons_sobrantes, i)));
+		}
+	for(int i = 0; i < list_size(entrenador1->pokemons_objetivo); i++) {
+			log_info(nuestro_log, string_from_format("\nPokemon OBJETIVO %d: %s", i, list_get(entrenador1->pokemons_objetivo, i)));
+		}
 
 	/*pthread_t* hilo_reintento_conexion_broker;
 	pthread_create(&hilo_reintento_conexion_broker,NULL,levantar_conexiones_al_broker, NULL);
 	pthread_detach(hilo_reintento_conexion_broker);*/
 
 
-	get_pokemon();
+	/*get_pokemon();
 
 	pthread_t* hilo_planificacion;
 	pthread_create(&hilo_planificacion,NULL, planificar, NULL);
@@ -40,11 +51,10 @@ int main(void){
 		}
 	}*/
 
-
-
+/*
 	pthread_t* hilo_de_espera;
 	pthread_create(&hilo_de_espera,NULL, while_uno, NULL);
-	pthread_join(hilo_de_espera, NULL);
+	pthread_join(hilo_de_espera, NULL);*/
 
 	return 0;
 }

@@ -7,7 +7,6 @@ void iniciar_variables_globales() {
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
 	lista_ids_localized = list_create();
-	lista_aux_pokemons = list_create();
 	pthread_mutex_init(&lock_de_planificacion, NULL);
 	pthread_mutex_init(&lock_de_entrenador_disponible, NULL);
 	pthread_mutex_init(&mutex_entrenadores, NULL);
@@ -36,22 +35,49 @@ void armar_entrenadores() {
 //Se deberia usar solo en armar_entrenadores
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
 	entrenador* un_entrenador = malloc(sizeof(entrenador));
-	char** lista_objetivos = string_split(objetivos,"|");
-	t_list* lista_pokemons_objetivo = crear_t_list(lista_objetivos);
+	t_list* lista_pokemons_adquiridos = crear_t_list(string_split(pokemons,"|"));
+	t_list* lista_pokemons_objetivo = crear_t_list(string_split(objetivos,"|"));
 
 	un_entrenador->posicion = armar_posicion(posicion);
 	un_entrenador->estado = NEW;
-	un_entrenador->pokemons_adquiridos = crear_t_dictionary(string_split(pokemons,"|"));
-	un_entrenador->pokemons_objetivo = crear_t_dictionary(lista_objetivos);
+	un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;
+	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
+	un_entrenador->pokemons_sobrantes = list_create();
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
-	list_destroy(lista_pokemons_objetivo);
 	un_entrenador->cpu_usado = 0;
 	un_entrenador->cpu_disponible = 0;
 	un_entrenador->cpu_estimado_anterior = leer_estimacion_inicial();
 	un_entrenador->cpu_estimado_restante = un_entrenador->cpu_estimado_anterior;
 	un_entrenador->acciones = queue_create();
 
+	actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(un_entrenador);
+
 	return un_entrenador;
+}
+
+//ESTO SOLO SE LLAMA AL ARMAR LOS ENTRENADORES
+void actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(entrenador* entrenador) {
+	for(int i = 0; i < list_size(entrenador->pokemons_adquiridos); i++) {
+		actualizar_objetivo_y_sobrante_del_entrenador(entrenador, list_get(entrenador->pokemons_adquiridos, i));
+	}
+}
+
+void actualizar_objetivo_y_sobrante_del_entrenador(entrenador* entrenador, char* pokemon_adquirido) {
+	int posicion_del_pokemon_en_lista = devolver_posicion_en_la_lista_del_pokemon(entrenador->pokemons_objetivo, pokemon_adquirido);
+	if(posicion_del_pokemon_en_lista == -1) {
+		list_add(entrenador->pokemons_sobrantes, pokemon_adquirido);
+	} else {
+		list_remove(entrenador->pokemons_objetivo, posicion_del_pokemon_en_lista);
+	}
+}
+
+int devolver_posicion_en_la_lista_del_pokemon(t_list* lista_pokemons, char* pokemon_a_buscar){
+	for(int i = 0; i< list_size(lista_pokemons);i++){
+		if(string_equals_ignore_case(list_get(lista_pokemons, i), pokemon_a_buscar)){
+			return i;
+		}
+	}
+	return -1;
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales
@@ -61,32 +87,37 @@ void armar_objetivo_global() {
 	//Recorro los objetivos de los entrenadores para agregarlos al objetivo global
 	for(int i = 0; i<list_size(entrenadores); i++) {
 		entrenador* entrenador_aux = list_get(entrenadores, i);
-		dictionary_iterator(entrenador_aux->pokemons_objetivo, agregar_objetivo_a_objetivo_global);
+		for(int j = 0; j<list_size(entrenador_aux->pokemons_objetivo); j++) {
+			agregar_objetivo_a_objetivo_global(list_get(entrenador_aux->pokemons_objetivo, j));
+		}
 	}
 
 	//Recorro los adquiridos de los entrenadores para restarlos del objetivo global
 	for(int i = 0; i<list_size(entrenadores); i++) {
 		entrenador* entrenador_aux = list_get(entrenadores, i);
-		dictionary_iterator(entrenador_aux->pokemons_objetivo, restar_adquirido_a_objetivo_global);
+		for(int j = 0; j<list_size(entrenador_aux->pokemons_adquiridos); j++) {
+			restar_adquirido_a_objetivo_global(list_get(entrenador_aux->pokemons_adquiridos, j));
+		}
 	}
 }
 
 //Se deberia usar solo en armar_objetivo_global y cuando se captura un pokemon
-void agregar_objetivo_a_objetivo_global(char* key, void* value) {
+void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
 
 	//Si el pokemon ya existia en el objetivo global, obtengo el valor que tenia y le sumo uno
-	if(dictionary_has_key(objetivo_global, key)) {
-		dictionary_put(objetivo_global, key, (void*) ((int) dictionary_get(objetivo_global, key) + (int) value));
+	if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
+		dictionary_put(objetivo_global, pokemon_objetivo, (void*) (dictionary_get(objetivo_global, pokemon_objetivo) + 1));
 	}
 	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
 	else {
-		dictionary_put(objetivo_global, key, value);
+		int valor_inicial = 1;
+		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
 	}
 }
 
 //Resto el pokemon atrapado del objetivo global
-void restar_adquirido_a_objetivo_global(char* key, void* value) {
-	dictionary_put(objetivo_global, key, (void*) ((int) dictionary_get(objetivo_global, key) - (int) value));
+void restar_adquirido_a_objetivo_global(char* pokemon_adquirido) {
+	dictionary_put(objetivo_global, pokemon_adquirido, (void*) (dictionary_get(objetivo_global, pokemon_adquirido) - 1));
 }
 
 posicion* armar_posicion(char* posicion_a_armar) {

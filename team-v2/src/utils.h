@@ -45,9 +45,8 @@ int necesito_mas_pokemons();
 int el_entrenador_cumplio_su_objetivo(entrenador* entrenador);
 int hay_deadlock();
 int el_entrenador_esta_block_deadlock(entrenador* entrenador);
-int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,char* pokemon1);
-int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos,t_list* pokemons_objetivo, char* pokemon);
-int devolver_posicion_en_la_lista_del_pokemon(entrenador* entrenador, char* pokemon_a_buscar);
+int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,char* pokemon);
+int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos, t_list* pokemons_objetivo, char* pokemon);
 int es_el_pokemon_buscado(entrenador* entrenador1, char* pokemon_a_eliminar);
 t_list* obtener_entrenadores_para_intercambiar(entrenador* entrenador1);
 void planear_intercambio(entrenador* entrenador1);
@@ -71,7 +70,7 @@ void esperar_id_localized(int socket_get);
 void catch_pokemon(entrenador* entrenador);
 void esperar_id_caught(int socket_catch);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
-void agregar_pokemon_a_adquirido(t_dictionary* pokemons_adquiridos_entrenador, char* pokemon_adquirido);
+void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido);
 void destruir_pokemon(pokemon* pokemon);
 
 
