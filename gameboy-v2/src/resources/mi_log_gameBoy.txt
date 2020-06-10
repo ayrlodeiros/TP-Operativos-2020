@@ -246,3 +246,2324 @@
 [INFO] 20:11:17:269 gameBoy/(9315:9315): 127.0.0.2
 [INFO] 20:11:17:269 gameBoy/(9315:9315): 127.0.0.3
 [INFO] 20:11:17:269 gameBoy/(9315:9315): -----------------Destruyendo archivo config-----------------
+[INFO] 15:34:54:121 gameBoy/(5811:5811): -----------------Leyendo archivo config-----------------
+[INFO] 15:34:54:123 gameBoy/(5811:5811): 127.0.0.1
+[INFO] 15:34:54:123 gameBoy/(5811:5811): 127.0.0.2
+[INFO] 15:34:54:123 gameBoy/(5811:5811): 127.0.0.3
+[INFO] 15:34:54:124 gameBoy/(5811:5811): -----------------Destruyendo archivo config-----------------
+[INFO] 15:38:09:662 gameBoy/(6031:6031): -----------------Leyendo archivo config-----------------
+[INFO] 15:38:09:662 gameBoy/(6031:6031): 127.0.0.1
+[INFO] 15:38:09:662 gameBoy/(6031:6031): 127.0.0.2
+[INFO] 15:38:09:662 gameBoy/(6031:6031): 127.0.0.3
+[INFO] 15:38:09:662 gameBoy/(6031:6031): -----------------Destruyendo archivo config-----------------
+[INFO] 17:05:41:793 gameBoy/(9727:9727): -----------------Leyendo archivo config-----------------
+[INFO] 17:05:41:799 gameBoy/(9727:9727): 127.0.0.1
+[INFO] 17:05:41:799 gameBoy/(9727:9727): 127.0.0.2
+[INFO] 17:05:41:799 gameBoy/(9727:9727): 127.0.0.3
+[INFO] 17:05:41:799 gameBoy/(9727:9727): -----------------Destruyendo archivo config-----------------
+[INFO] 17:06:38:3 gameBoy/(9783:9783): -----------------Leyendo archivo config-----------------
+[INFO] 17:06:38:3 gameBoy/(9783:9783): 127.0.0.1
+[INFO] 17:06:38:3 gameBoy/(9783:9783): 127.0.0.2
+[INFO] 17:06:38:3 gameBoy/(9783:9783): 127.0.0.3
+[INFO] 17:06:38:4 gameBoy/(9783:9783): -----------------Destruyendo archivo config-----------------
+[INFO] 17:07:52:159 gameBoy/(9865:9865): -----------------Leyendo archivo config-----------------
+[INFO] 17:07:52:159 gameBoy/(9865:9865): 127.0.0.1
+[INFO] 17:07:52:159 gameBoy/(9865:9865): 127.0.0.2
+[INFO] 17:07:52:159 gameBoy/(9865:9865): 127.0.0.3
+[INFO] 17:07:52:159 gameBoy/(9865:9865): -----------------Destruyendo archivo config-----------------
+[INFO] 17:08:09:614 gameBoy/(5984:5984): -----------------Leyendo archivo config-----------------
+[INFO] 17:08:09:617 gameBoy/(5984:5984): 127.0.0.1
+[INFO] 17:08:09:618 gameBoy/(5984:5984): 127.0.0.2
+[INFO] 17:08:09:618 gameBoy/(5984:5984): 127.0.0.3
+[INFO] 17:08:09:618 gameBoy/(5984:5984): -----------------Destruyendo archivo config-----------------
+[INFO] 17:10:02:320 gameBoy/(10036:10036): -----------------Leyendo archivo config-----------------
+[INFO] 17:10:02:320 gameBoy/(10035:10035): -----------------Leyendo archivo config-----------------
+[INFO] 17:10:02:332 gameBoy/(10035:10035): 127.0.0.1
+[INFO] 17:10:02:332 gameBoy/(10035:10035): 127.0.0.2
+[INFO] 17:10:02:332 gameBoy/(10036:10036): 127.0.0.1
+[INFO] 17:10:02:332 gameBoy/(10035:10035): 127.0.0.3
+[INFO] 17:10:02:332 gameBoy/(10036:10036): 127.0.0.2
+[INFO] 17:10:02:332 gameBoy/(10035:10035): -----------------Destruyendo archivo config-----------------
+[INFO] 17:10:02:332 gameBoy/(10036:10036): 127.0.0.3
+[INFO] 17:10:02:332 gameBoy/(10036:10036): -----------------Destruyendo archivo config-----------------
+[INFO] 17:10:22:776 gameBoy/(31159:31159): -----------------Leyendo archivo config-----------------
+[INFO] 17:10:22:776 gameBoy/(31159:31159): 127.0.0.1
+[INFO] 17:10:22:776 gameBoy/(31159:31159): 127.0.0.2
+[INFO] 17:10:22:776 gameBoy/(31159:31159): 127.0.0.3
+[INFO] 17:10:22:776 gameBoy/(31159:31159): -----------------Destruyendo archivo config-----------------
+[INFO] 17:12:01:357 gameBoy/(4388:4388): -----------------Leyendo archivo config-----------------
+[INFO] 17:12:01:357 gameBoy/(4388:4388): 127.0.0.1
+[INFO] 17:12:01:357 gameBoy/(4388:4388): 127.0.0.2
+[INFO] 17:12:01:357 gameBoy/(4388:4388): 127.0.0.3
+[INFO] 17:12:01:358 gameBoy/(4388:4388): -----------------Destruyendo archivo config-----------------
+[INFO] 17:12:17:452 gameBoy/(4406:4406): -----------------Leyendo archivo config-----------------
+[INFO] 17:12:17:458 gameBoy/(4406:4406): 127.0.0.1
+[INFO] 17:12:17:458 gameBoy/(4406:4406): 127.0.0.2
+[INFO] 17:12:17:458 gameBoy/(4406:4406): 127.0.0.3
+[INFO] 17:12:17:459 gameBoy/(4406:4406): -----------------Destruyendo archivo config-----------------
+[INFO] 17:14:58:148 gameBoy/(28272:28272): -----------------Leyendo archivo config-----------------
+[INFO] 17:14:58:155 gameBoy/(28272:28272): 127.0.0.1
+[INFO] 17:14:58:156 gameBoy/(28272:28272): 127.0.0.2
+[INFO] 17:14:58:156 gameBoy/(28272:28272): 127.0.0.3
+[INFO] 17:14:58:156 gameBoy/(28272:28272): -----------------Destruyendo archivo config-----------------
+[INFO] 17:18:24:812 gameBoy/(28481:28481): -----------------Leyendo archivo config-----------------
+[INFO] 17:18:24:813 gameBoy/(28481:28481): 127.0.0.1
+[INFO] 17:18:24:813 gameBoy/(28481:28481): 127.0.0.2
+[INFO] 17:18:24:813 gameBoy/(28481:28481): 127.0.0.3
+[INFO] 17:18:24:813 gameBoy/(28481:28481): -----------------Destruyendo archivo config-----------------
+[INFO] 17:18:45:678 gameBoy/(28520:28520): -----------------Leyendo archivo config-----------------
+[INFO] 17:18:45:683 gameBoy/(28520:28520): 127.0.0.1
+[INFO] 17:18:45:683 gameBoy/(28520:28520): 127.0.0.2
+[INFO] 17:18:45:683 gameBoy/(28520:28520): 127.0.0.3
+[INFO] 17:18:45:683 gameBoy/(28520:28520): -----------------Destruyendo archivo config-----------------
+[INFO] 17:19:02:955 gameBoy/(28555:28555): -----------------Leyendo archivo config-----------------
+[INFO] 17:19:02:961 gameBoy/(28555:28555): 127.0.0.1
+[INFO] 17:19:02:962 gameBoy/(28555:28555): 127.0.0.2
+[INFO] 17:19:02:962 gameBoy/(28555:28555): 127.0.0.3
+[INFO] 17:19:02:962 gameBoy/(28555:28555): -----------------Destruyendo archivo config-----------------
+[INFO] 17:19:17:543 gameBoy/(28590:28590): -----------------Leyendo archivo config-----------------
+[INFO] 17:19:17:544 gameBoy/(28590:28590): 127.0.0.1
+[INFO] 17:19:17:544 gameBoy/(28590:28590): 127.0.0.2
+[INFO] 17:19:17:544 gameBoy/(28590:28590): 127.0.0.3
+[INFO] 17:19:17:544 gameBoy/(28590:28590): -----------------Destruyendo archivo config-----------------
+[INFO] 17:19:53:416 gameBoy/(28636:28636): -----------------Leyendo archivo config-----------------
+[INFO] 17:19:53:417 gameBoy/(28636:28636): 127.0.0.1
+[INFO] 17:19:53:417 gameBoy/(28636:28636): 127.0.0.2
+[INFO] 17:19:53:417 gameBoy/(28636:28636): 127.0.0.3
+[INFO] 17:19:53:417 gameBoy/(28636:28636): -----------------Destruyendo archivo config-----------------
+[INFO] 17:20:33:293 gameBoy/(28680:28680): -----------------Leyendo archivo config-----------------
+[INFO] 17:20:33:293 gameBoy/(28680:28680): 127.0.0.1
+[INFO] 17:20:33:293 gameBoy/(28680:28680): 127.0.0.2
+[INFO] 17:20:33:293 gameBoy/(28680:28680): 127.0.0.3
+[INFO] 17:22:29:847 gameBoy/(28751:28751): -----------------Leyendo archivo config-----------------
+[INFO] 17:22:29:848 gameBoy/(28751:28751): 127.0.0.1
+[INFO] 17:22:29:848 gameBoy/(28751:28751): 127.0.0.2
+[INFO] 17:22:29:848 gameBoy/(28751:28751): 127.0.0.3
+[INFO] 17:22:42:212 gameBoy/(28788:28788): -----------------Leyendo archivo config-----------------
+[INFO] 17:22:42:212 gameBoy/(28788:28788): 127.0.0.1
+[INFO] 17:22:42:218 gameBoy/(28788:28788): 127.0.0.2
+[INFO] 17:22:42:218 gameBoy/(28788:28788): 127.0.0.3
+[INFO] 17:23:18:804 gameBoy/(28831:28831): -----------------Leyendo archivo config-----------------
+[INFO] 17:23:18:805 gameBoy/(28831:28831): 127.0.0.1
+[INFO] 17:23:18:805 gameBoy/(28831:28831): 127.0.0.2
+[INFO] 17:23:18:809 gameBoy/(28831:28831): 127.0.0.3
+[INFO] 17:24:00:481 gameBoy/(28911:28911): -----------------Leyendo archivo config-----------------
+[INFO] 17:24:00:484 gameBoy/(28911:28911): 127.0.0.1
+[INFO] 17:24:00:484 gameBoy/(28911:28911): 127.0.0.2
+[INFO] 17:24:00:484 gameBoy/(28911:28911): 127.0.0.3
+[INFO] 17:25:36:348 gameBoy/(28981:28981): -----------------Leyendo archivo config-----------------
+[INFO] 17:25:36:356 gameBoy/(28981:28981): 127.0.0.1
+[INFO] 17:25:36:356 gameBoy/(28981:28981): 127.0.0.2
+[INFO] 17:25:36:357 gameBoy/(28981:28981): 127.0.0.3
+[INFO] 17:26:34:997 gameBoy/(29039:29039): -----------------Leyendo archivo config-----------------
+[INFO] 17:26:34:997 gameBoy/(29039:29039): 127.0.0.1
+[INFO] 17:26:34:997 gameBoy/(29039:29039): 127.0.0.2
+[INFO] 17:26:34:997 gameBoy/(29039:29039): 127.0.0.3
+[INFO] 17:30:46:793 gameBoy/(29188:29188): -----------------Leyendo archivo config-----------------
+[INFO] 17:30:46:797 gameBoy/(29188:29188): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:30:46:797 gameBoy/(29188:29188): -----------------Destruyendo archivo config-----------------
+[INFO] 17:32:32:411 gameBoy/(29249:29249): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:32:417 gameBoy/(29249:29249): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:33:42:871 gameBoy/(29312:29312): -----------------Leyendo archivo config-----------------
+[INFO] 17:33:42:884 gameBoy/(29312:29312): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:34:11:913 gameBoy/(29354:29354): -----------------Leyendo archivo config-----------------
+[INFO] 17:34:11:918 gameBoy/(29354:29354): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:34:54:27 gameBoy/(29406:29406): -----------------Leyendo archivo config-----------------
+[INFO] 17:34:54:29 gameBoy/(29406:29406): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:34:54:29 gameBoy/(29406:29406): 0
+[INFO] 17:35:16:77 gameBoy/(29447:29447): -----------------Leyendo archivo config-----------------
+[INFO] 17:35:16:78 gameBoy/(29447:29447): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:16:79 gameBoy/(29447:29447): 0
+[INFO] 17:35:16:80 gameBoy/(29447:29447): 1
+[INFO] 17:35:46:308 gameBoy/(29513:29513): -----------------Leyendo archivo config-----------------
+[INFO] 17:35:46:310 gameBoy/(29513:29513): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:46:311 gameBoy/(29513:29513): 0
+[INFO] 17:35:46:311 gameBoy/(29513:29513): 1
+[INFO] 17:35:46:311 gameBoy/(29513:29513): 2
+[INFO] 17:36:12:593 gameBoy/(29563:29563): -----------------Leyendo archivo config-----------------
+[INFO] 17:36:12:593 gameBoy/(29563:29563): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:36:12:593 gameBoy/(29563:29563): 0
+[INFO] 17:36:12:593 gameBoy/(29563:29563): 1
+[INFO] 17:36:56:411 gameBoy/(29627:29627): -----------------Leyendo archivo config-----------------
+[INFO] 17:36:56:412 gameBoy/(29627:29627): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:36:56:412 gameBoy/(29627:29627): 1
+[INFO] 17:37:53:366 gameBoy/(29690:29690): -----------------Leyendo archivo config-----------------
+[INFO] 17:37:53:369 gameBoy/(29690:29690): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:37:53:369 gameBoy/(29690:29690): 0
+[INFO] 17:37:53:369 gameBoy/(29690:29690): 1
+[INFO] 17:38:52:37 gameBoy/(29744:29744): -----------------Leyendo archivo config-----------------
+[INFO] 17:38:52:37 gameBoy/(29744:29744): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:38:52:38 gameBoy/(29744:29744): 0
+[INFO] 17:38:52:38 gameBoy/(29744:29744): 1
+[INFO] 17:39:37:107 gameBoy/(29796:29796): -----------------Leyendo archivo config-----------------
+[INFO] 17:39:37:107 gameBoy/(29796:29796): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:39:37:108 gameBoy/(29796:29796): 0
+[INFO] 17:39:37:108 gameBoy/(29796:29796): 1
+[INFO] 17:51:04:816 gameBoy/(30099:30099): -----------------Leyendo archivo config-----------------
+[INFO] 17:51:04:822 gameBoy/(30099:30099): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:51:04:822 gameBoy/(30099:30099): 0
+[INFO] 17:51:04:822 gameBoy/(30099:30099): 1
+[INFO] 17:54:38:412 gameBoy/(30262:30262): -----------------Leyendo archivo config-----------------
+[INFO] 17:54:38:420 gameBoy/(30262:30262): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:55:44:511 gameBoy/(30332:30332): -----------------Leyendo archivo config-----------------
+[INFO] 17:55:44:517 gameBoy/(30332:30332): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:55:44:517 gameBoy/(30332:30332): 0
+[INFO] 17:55:44:517 gameBoy/(30332:30332): 1
+[INFO] 17:55:56:741 gameBoy/(30374:30374): -----------------Leyendo archivo config-----------------
+[INFO] 17:55:56:742 gameBoy/(30374:30374): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:55:56:742 gameBoy/(30374:30374): 0
+[INFO] 17:55:56:742 gameBoy/(30374:30374): 1
+[INFO] 17:59:06:556 gameBoy/(30632:30632): -----------------Leyendo archivo config-----------------
+[INFO] 17:59:06:557 gameBoy/(30632:30632): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:59:06:557 gameBoy/(30632:30632): 1
+[INFO] 18:03:43:725 gameBoy/(30781:30781): -----------------Leyendo archivo config-----------------
+[INFO] 18:03:43:730 gameBoy/(30781:30781): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:03:43:732 gameBoy/(30781:30781): 0
+[INFO] 18:03:43:732 gameBoy/(30781:30781): 1
+[INFO] 18:05:07:875 gameBoy/(30852:30852): -----------------Leyendo archivo config-----------------
+[INFO] 18:05:07:879 gameBoy/(30852:30852): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:05:07:879 gameBoy/(30852:30852): 1
+[INFO] 18:05:07:879 gameBoy/(30852:30852): 2
+[INFO] 18:05:26:420 gameBoy/(30892:30892): -----------------Leyendo archivo config-----------------
+[INFO] 18:05:26:424 gameBoy/(30892:30892): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:05:50:480 gameBoy/(30932:30932): -----------------Leyendo archivo config-----------------
+[INFO] 18:05:50:488 gameBoy/(30932:30932): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:05:50:488 gameBoy/(30932:30932): 1
+[INFO] 18:06:03:415 gameBoy/(30971:30971): -----------------Leyendo archivo config-----------------
+[INFO] 18:06:03:417 gameBoy/(30971:30971): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:06:30:903 gameBoy/(31024:31024): -----------------Leyendo archivo config-----------------
+[INFO] 18:06:30:908 gameBoy/(31024:31024): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:06:41:466 gameBoy/(31066:31066): -----------------Leyendo archivo config-----------------
+[INFO] 18:06:41:472 gameBoy/(31066:31066): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:06:41:472 gameBoy/(31066:31066): 0
+[INFO] 18:08:48:168 gameBoy/(31191:31191): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:48:174 gameBoy/(31191:31191): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:09:10:485 gameBoy/(31238:31238): -----------------Leyendo archivo config-----------------
+[INFO] 18:09:10:488 gameBoy/(31238:31238): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:09:10:488 gameBoy/(31238:31238): 0
+[INFO] 18:09:28:11 gameBoy/(31282:31282): -----------------Leyendo archivo config-----------------
+[INFO] 18:09:28:17 gameBoy/(31282:31282): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:09:28:17 gameBoy/(31282:31282): 0
+[INFO] 18:11:18:600 gameBoy/(31365:31365): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:18:607 gameBoy/(31365:31365): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:11:18:607 gameBoy/(31365:31365): 0
+[INFO] 18:23:08:594 gameBoy/(31680:31680): -----------------Leyendo archivo config-----------------
+[INFO] 18:23:08:606 gameBoy/(31680:31680): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:23:08:606 gameBoy/(31680:31680): 1
+[INFO] 18:23:08:606 gameBoy/(31680:31680): 1
+[INFO] 18:23:08:606 gameBoy/(31680:31680): 2
+[INFO] 18:23:08:606 gameBoy/(31680:31680): 3
+[INFO] 18:23:08:606 gameBoy/(31680:31680): 4
+[INFO] 18:23:08:606 gameBoy/(31680:31680): 1
+[INFO] 18:23:08:606 gameBoy/(31680:31680): -----------------Destruyendo archivo config-----------------
+[INFO] 18:26:41:363 gameBoy/(31817:31817): -----------------Leyendo archivo config-----------------
+[INFO] 18:26:41:372 gameBoy/(31817:31817): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:26:41:372 gameBoy/(31817:31817): 1
+[INFO] 18:26:41:372 gameBoy/(31817:31817): 1
+[INFO] 18:26:41:372 gameBoy/(31817:31817): 2
+[INFO] 18:26:41:375 gameBoy/(31817:31817): 3
+[INFO] 18:26:41:376 gameBoy/(31817:31817): 4
+[INFO] 18:26:41:376 gameBoy/(31817:31817): 1
+[INFO] 18:26:41:376 gameBoy/(31817:31817): -----------------Destruyendo archivo config-----------------
+[INFO] 18:27:45:442 gameBoy/(21401:21401): -----------------Leyendo archivo config-----------------
+[INFO] 18:27:45:450 gameBoy/(21401:21401): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:27:45:450 gameBoy/(21401:21401): 1
+[INFO] 18:27:45:450 gameBoy/(21401:21401): 1
+[INFO] 18:27:45:450 gameBoy/(21401:21401): 2
+[INFO] 18:27:45:450 gameBoy/(21401:21401): 3
+[INFO] 18:27:45:450 gameBoy/(21401:21401): 4
+[INFO] 18:27:45:450 gameBoy/(21401:21401): 1
+[INFO] 18:27:45:450 gameBoy/(21401:21401): -----------------Destruyendo archivo config-----------------
+[INFO] 18:30:28:536 gameBoy/(21569:21569): -----------------Leyendo archivo config-----------------
+[INFO] 18:30:28:543 gameBoy/(21569:21569): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:30:28:543 gameBoy/(21569:21569): 1
+[INFO] 18:30:28:543 gameBoy/(21569:21569): 1
+[INFO] 18:30:28:543 gameBoy/(21569:21569): 2
+[INFO] 18:30:28:543 gameBoy/(21569:21569): 3
+[INFO] 18:30:28:543 gameBoy/(21569:21569): 4
+[INFO] 18:30:28:543 gameBoy/(21569:21569): sizes: 20
+[INFO] 18:32:57:69 gameBoy/(21640:21640): -----------------Leyendo archivo config-----------------
+[INFO] 18:32:57:71 gameBoy/(21640:21640): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:32:57:71 gameBoy/(21640:21640): 1
+[INFO] 18:32:57:71 gameBoy/(21640:21640): 1
+[INFO] 18:32:57:71 gameBoy/(21640:21640): 2
+[INFO] 18:32:57:71 gameBoy/(21640:21640): 3
+[INFO] 18:32:57:71 gameBoy/(21640:21640): 4
+[INFO] 18:32:57:71 gameBoy/(21640:21640): sizes: 24
+[INFO] 18:32:57:71 gameBoy/(21640:21640): -----------------Destruyendo archivo config-----------------
+[INFO] 18:37:29:818 gameBoy/(21913:21913): -----------------Leyendo archivo config-----------------
+[INFO] 18:37:29:825 gameBoy/(21913:21913): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:37:29:825 gameBoy/(21913:21913): 1
+[INFO] 18:37:29:825 gameBoy/(21913:21913): 1
+[INFO] 18:37:29:825 gameBoy/(21913:21913): 2
+[INFO] 18:37:29:825 gameBoy/(21913:21913): 3
+[INFO] 18:37:29:825 gameBoy/(21913:21913): 4
+[INFO] 18:37:29:826 gameBoy/(21913:21913): sizes: 24
+[INFO] 18:37:29:826 gameBoy/(21913:21913): -----------------Destruyendo archivo config-----------------
+[INFO] 18:39:14:379 gameBoy/(22024:22024): -----------------Leyendo archivo config-----------------
+[INFO] 18:39:14:382 gameBoy/(22024:22024): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:39:14:382 gameBoy/(22024:22024): 1
+[INFO] 18:39:14:382 gameBoy/(22024:22024): 1
+[INFO] 18:39:14:382 gameBoy/(22024:22024): 2
+[INFO] 18:39:14:382 gameBoy/(22024:22024): 3
+[INFO] 18:39:14:382 gameBoy/(22024:22024): 4
+[INFO] 18:39:14:382 gameBoy/(22024:22024): sizes: 24
+[INFO] 18:39:32:964 gameBoy/(28267:28267): -----------------Leyendo archivo config-----------------
+[INFO] 18:39:32:973 gameBoy/(28267:28267): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:39:32:973 gameBoy/(28267:28267): 1
+[INFO] 18:39:32:974 gameBoy/(28267:28267): 1
+[INFO] 18:39:32:974 gameBoy/(28267:28267): 2
+[INFO] 18:39:32:974 gameBoy/(28267:28267): 3
+[INFO] 18:39:32:974 gameBoy/(28267:28267): 4
+[INFO] 18:39:32:974 gameBoy/(28267:28267): sizes: 24
+[INFO] 18:39:32:974 gameBoy/(28267:28267): -----------------Destruyendo archivo config-----------------
+[INFO] 18:43:49:710 gameBoy/(28470:28470): -----------------Leyendo archivo config-----------------
+[INFO] 18:43:49:721 gameBoy/(28470:28470): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:43:49:721 gameBoy/(28470:28470): sizes: 24
+[INFO] 18:43:49:721 gameBoy/(28470:28470): -----------------Destruyendo archivo config-----------------
+[INFO] 18:45:11:103 gameBoy/(28607:28607): -----------------Leyendo archivo config-----------------
+[INFO] 18:45:11:113 gameBoy/(28607:28607): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:45:11:113 gameBoy/(28607:28607): sizes: 24
+[INFO] 18:45:11:113 gameBoy/(28607:28607): -----------------Destruyendo archivo config-----------------
+[INFO] 18:50:00:716 gameBoy/(28701:28701): -----------------Leyendo archivo config-----------------
+[INFO] 18:50:00:717 gameBoy/(28701:28701): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:50:00:717 gameBoy/(28701:28701): sizes: 24
+[INFO] 18:50:00:717 gameBoy/(28701:28701): -----------------Destruyendo archivo config-----------------
+[INFO] 18:50:42:469 gameBoy/(28785:28785): -----------------Leyendo archivo config-----------------
+[INFO] 18:50:42:470 gameBoy/(28785:28785): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:50:42:470 gameBoy/(28785:28785): sizes: 24
+[INFO] 18:50:42:471 gameBoy/(28785:28785): -----------------Destruyendo archivo config-----------------
+[INFO] 18:52:06:921 gameBoy/(28885:28885): -----------------Leyendo archivo config-----------------
+[INFO] 18:52:06:923 gameBoy/(28885:28885): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:52:06:923 gameBoy/(28885:28885): sizes: 24
+[INFO] 18:52:06:923 gameBoy/(28885:28885): -----------------Destruyendo archivo config-----------------
+[INFO] 18:52:38:418 gameBoy/(1826:1826): -----------------Leyendo archivo config-----------------
+[INFO] 18:52:38:429 gameBoy/(1826:1826): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:52:38:429 gameBoy/(1826:1826): sizes: 24
+[INFO] 18:52:38:429 gameBoy/(1826:1826): -----------------Destruyendo archivo config-----------------
+[INFO] 18:56:19:25 gameBoy/(2004:2004): -----------------Leyendo archivo config-----------------
+[INFO] 18:56:19:25 gameBoy/(2004:2004): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:56:19:26 gameBoy/(2004:2004): sizes: 24
+[INFO] 18:56:19:26 gameBoy/(2004:2004): -----------------Destruyendo archivo config-----------------
+[INFO] 18:57:09:435 gameBoy/(2095:2095): -----------------Leyendo archivo config-----------------
+[INFO] 18:57:09:441 gameBoy/(2095:2095): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:57:09:442 gameBoy/(2095:2095): sizes: 24
+[INFO] 18:57:20:763 gameBoy/(2108:2108): -----------------Leyendo archivo config-----------------
+[INFO] 18:57:20:769 gameBoy/(2108:2108): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:57:20:769 gameBoy/(2108:2108): sizes: 24
+[INFO] 18:57:20:769 gameBoy/(2108:2108): -----------------Destruyendo archivo config-----------------
+[INFO] 18:59:16:78 gameBoy/(2224:2224): -----------------Leyendo archivo config-----------------
+[INFO] 18:59:16:81 gameBoy/(2224:2224): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:59:16:81 gameBoy/(2224:2224): sizes: 24
+[INFO] 18:59:16:81 gameBoy/(2224:2224): -----------------Destruyendo archivo config-----------------
+[INFO] 19:01:13:987 gameBoy/(2311:2311): -----------------Leyendo archivo config-----------------
+[INFO] 19:01:13:1 gameBoy/(2311:2311): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:01:13:1 gameBoy/(2311:2311): tamanio: 8
+[INFO] 19:01:13:1 gameBoy/(2311:2311): sizes: 24
+[INFO] 19:01:13:1 gameBoy/(2311:2311): -----------------Destruyendo archivo config-----------------
+[INFO] 19:03:07:762 gameBoy/(2442:2442): -----------------Leyendo archivo config-----------------
+[INFO] 19:03:07:762 gameBoy/(2442:2442): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:03:07:762 gameBoy/(2442:2442): sizes: 24
+[INFO] 19:03:07:762 gameBoy/(2442:2442): -----------------Destruyendo archivo config-----------------
+[INFO] 19:03:33:770 gameBoy/(2485:2485): -----------------Leyendo archivo config-----------------
+[INFO] 19:03:33:774 gameBoy/(2485:2485): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:03:33:774 gameBoy/(2485:2485): sizes: 24
+[INFO] 19:03:33:774 gameBoy/(2485:2485): -----------------Destruyendo archivo config-----------------
+[INFO] 19:03:44:968 gameBoy/(2521:2521): -----------------Leyendo archivo config-----------------
+[INFO] 19:03:44:977 gameBoy/(2521:2521): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:03:44:977 gameBoy/(2521:2521): sizes: 24
+[INFO] 19:03:44:977 gameBoy/(2521:2521): -----------------Destruyendo archivo config-----------------
+[INFO] 19:04:51:754 gameBoy/(2597:2597): -----------------Leyendo archivo config-----------------
+[INFO] 19:04:51:757 gameBoy/(2597:2597): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:04:51:757 gameBoy/(2597:2597): sizes: 24
+[INFO] 19:04:51:757 gameBoy/(2597:2597): -----------------Destruyendo archivo config-----------------
+[INFO] 19:05:59:649 gameBoy/(2699:2699): -----------------Leyendo archivo config-----------------
+[INFO] 19:05:59:655 gameBoy/(2699:2699): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:05:59:655 gameBoy/(2699:2699): sizes: 24
+[INFO] 19:05:59:655 gameBoy/(2699:2699): -----------------Destruyendo archivo config-----------------
+[INFO] 19:08:10:203 gameBoy/(6505:6505): -----------------Leyendo archivo config-----------------
+[INFO] 19:08:10:210 gameBoy/(6505:6505): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:08:10:211 gameBoy/(6505:6505): sizes: 24
+[INFO] 19:08:10:211 gameBoy/(6505:6505): -----------------Destruyendo archivo config-----------------
+[INFO] 19:09:10:433 gameBoy/(9820:9820): -----------------Leyendo archivo config-----------------
+[INFO] 19:09:10:434 gameBoy/(9820:9820): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:09:10:434 gameBoy/(9820:9820): sizes: 24
+[INFO] 19:09:10:434 gameBoy/(9820:9820): -----------------Destruyendo archivo config-----------------
+[INFO] 19:14:19:647 gameBoy/(10563:10563): -----------------Leyendo archivo config-----------------
+[INFO] 19:14:19:647 gameBoy/(10563:10563): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:14:19:647 gameBoy/(10563:10563): sizes: 24
+[INFO] 19:14:19:648 gameBoy/(10563:10563): -----------------Destruyendo archivo config-----------------
+[INFO] 19:14:55:564 gameBoy/(10607:10607): -----------------Leyendo archivo config-----------------
+[INFO] 19:14:55:565 gameBoy/(10607:10607): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:14:55:565 gameBoy/(10607:10607): sizes: 24
+[INFO] 19:14:55:565 gameBoy/(10607:10607): -----------------Destruyendo archivo config-----------------
+[INFO] 19:15:18:241 gameBoy/(10642:10642): -----------------Leyendo archivo config-----------------
+[INFO] 19:15:18:242 gameBoy/(10642:10642): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:15:18:242 gameBoy/(10642:10642): sizes: 24
+[INFO] 19:15:18:242 gameBoy/(10642:10642): -----------------Destruyendo archivo config-----------------
+[INFO] 19:16:07:43 gameBoy/(10750:10750): -----------------Leyendo archivo config-----------------
+[INFO] 19:16:07:44 gameBoy/(10750:10750): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:16:07:44 gameBoy/(10750:10750): -----------------Destruyendo archivo config-----------------
+[INFO] 19:22:30:557 gameBoy/(11054:11054): -----------------Leyendo archivo config-----------------
+[INFO] 19:22:30:561 gameBoy/(11054:11054): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:04:123 gameBoy/(11083:11083): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:04:123 gameBoy/(11083:11083): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:14:411 gameBoy/(11147:11147): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:14:417 gameBoy/(11147:11147): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:51:584 gameBoy/(11272:11272): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:51:584 gameBoy/(11272:11272): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:24:02:840 gameBoy/(11342:11342): -----------------Leyendo archivo config-----------------
+[INFO] 19:24:02:840 gameBoy/(11342:11342): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:26:11:950 gameBoy/(11416:11416): -----------------Leyendo archivo config-----------------
+[INFO] 19:26:11:950 gameBoy/(11416:11416): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:26:11:950 gameBoy/(11416:11416): CAUGHT_POKEMON
+[INFO] 19:26:11:950 gameBoy/(11416:11416): -----------------Destruyendo archivo config-----------------
+[INFO] 19:26:48:894 gameBoy/(11499:11499): -----------------Leyendo archivo config-----------------
+[INFO] 19:26:48:894 gameBoy/(11499:11499): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:26:48:894 gameBoy/(11499:11499): CAUGHT_POKEMON
+[INFO] 19:26:48:894 gameBoy/(11499:11499): -----------------Destruyendo archivo config-----------------
+[INFO] 19:28:05:823 gameBoy/(11591:11591): -----------------Leyendo archivo config-----------------
+[INFO] 19:28:05:824 gameBoy/(11591:11591): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:28:05:824 gameBoy/(11591:11591): CAUGHT_POKEMON
+[INFO] 19:28:05:824 gameBoy/(11591:11591): -1076502615
+[INFO] 19:28:05:824 gameBoy/(11591:11591): -----------------Destruyendo archivo config-----------------
+[INFO] 19:28:22:615 gameBoy/(11665:11665): -----------------Leyendo archivo config-----------------
+[INFO] 19:28:22:615 gameBoy/(11665:11665): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:28:22:615 gameBoy/(11665:11665): CAUGHT_POKEMON
+[INFO] 19:28:22:615 gameBoy/(11665:11665): 49
+[INFO] 19:28:22:615 gameBoy/(11665:11665): -----------------Destruyendo archivo config-----------------
+[INFO] 19:30:24:435 gameBoy/(11742:11742): -----------------Leyendo archivo config-----------------
+[INFO] 19:30:24:436 gameBoy/(11742:11742): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:30:24:436 gameBoy/(11742:11742): CAUGHT_POKEMON
+[INFO] 19:30:24:436 gameBoy/(11742:11742): 100
+[INFO] 19:30:24:436 gameBoy/(11742:11742): -----------------Destruyendo archivo config-----------------
+[INFO] 19:51:21:81 gameBoy/(12422:12422): -----------------Leyendo archivo config-----------------
+[INFO] 19:51:21:81 gameBoy/(12422:12422): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:51:21:82 gameBoy/(12422:12422): -----------------Destruyendo archivo config-----------------
+[INFO] 19:52:19:675 gameBoy/(12518:12518): -----------------Leyendo archivo config-----------------
+[ERROR] 19:52:19:676 gameBoy/(12518:12518): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:52:19:676 gameBoy/(12518:12518): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:52:19:676 gameBoy/(12518:12518): -----------------Destruyendo archivo config-----------------
+[INFO] 19:53:07:685 gameBoy/(12604:12604): -----------------Leyendo archivo config-----------------
+[ERROR] 19:53:07:685 gameBoy/(12604:12604): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:53:07:685 gameBoy/(12604:12604): -----------------Destruyendo archivo config-----------------
+[INFO] 19:53:24:880 gameBoy/(12641:12641): -----------------Leyendo archivo config-----------------
+[INFO] 19:53:24:881 gameBoy/(12641:12641): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:53:24:881 gameBoy/(12641:12641): -----------------Destruyendo archivo config-----------------
+[INFO] 19:53:42:1 gameBoy/(12704:12704): -----------------Leyendo archivo config-----------------
+[INFO] 19:53:43:9 gameBoy/(12704:12704): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:53:43:9 gameBoy/(12704:12704): sizes: 24
+[INFO] 19:57:58:384 gameBoy/(12889:12889): -----------------Leyendo archivo config-----------------
+[INFO] 19:57:58:384 gameBoy/(12889:12889): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:57:58:384 gameBoy/(12889:12889): sizes: 24
+[INFO] 19:57:58:384 gameBoy/(12889:12889): -----------------Destruyendo archivo config-----------------
+[INFO] 19:58:17:806 gameBoy/(12945:12945): -----------------Leyendo archivo config-----------------
+[INFO] 19:58:17:809 gameBoy/(12945:12945): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:58:17:809 gameBoy/(12945:12945): sizes: 24
+[INFO] 19:58:17:809 gameBoy/(12945:12945): -----------------Destruyendo archivo config-----------------
+[INFO] 20:00:38:928 gameBoy/(20860:20860): -----------------Leyendo archivo config-----------------
+[INFO] 20:00:38:928 gameBoy/(20860:20860): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:00:38:928 gameBoy/(20860:20860): -----------------Destruyendo archivo config-----------------
+[INFO] 23:04:34:997 gameBoy/(4184:4184): -----------------Leyendo archivo config-----------------
+[INFO] 23:04:35:18 gameBoy/(4184:4184): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:06:46:8 gameBoy/(4714:4714): -----------------Leyendo archivo config-----------------
+[INFO] 23:06:46:12 gameBoy/(4714:4714): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:06:46:12 gameBoy/(4714:4714): sizes: 24
+[INFO] 23:10:01:202 gameBoy/(4879:4879): -----------------Leyendo archivo config-----------------
+[INFO] 23:10:01:203 gameBoy/(4879:4879): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:10:01:203 gameBoy/(4879:4879): sizes: 26
+[INFO] 23:14:56:564 gameBoy/(5116:5116): -----------------Leyendo archivo config-----------------
+[INFO] 23:14:56:564 gameBoy/(5116:5116): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:14:56:564 gameBoy/(5116:5116): sizes: 26
+[INFO] 23:15:22:751 gameBoy/(5177:5177): -----------------Leyendo archivo config-----------------
+[INFO] 23:15:22:756 gameBoy/(5177:5177): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:15:22:759 gameBoy/(5177:5177): 7
+[INFO] 23:15:22:759 gameBoy/(5177:5177): sizes: 26
+[INFO] 23:16:29:654 gameBoy/(5255:5255): -----------------Leyendo archivo config-----------------
+[INFO] 23:16:29:656 gameBoy/(5255:5255): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:16:29:660 gameBoy/(5255:5255): 7
+[INFO] 23:16:29:660 gameBoy/(5255:5255): paquete buffer size 10
+[INFO] 23:16:29:661 gameBoy/(5255:5255): sizes: 26
+[INFO] 23:16:49:893 gameBoy/(5302:5302): -----------------Leyendo archivo config-----------------
+[INFO] 23:16:49:898 gameBoy/(5302:5302): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:16:49:898 gameBoy/(5302:5302): 7
+[INFO] 23:16:49:898 gameBoy/(5302:5302): paquete buffer size 4
+[INFO] 23:16:49:898 gameBoy/(5302:5302): sizes: 26
+[INFO] 23:18:14:546 gameBoy/(5449:5449): -----------------Leyendo archivo config-----------------
+[INFO] 23:18:14:564 gameBoy/(5449:5449): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:18:14:564 gameBoy/(5449:5449): 7
+[INFO] 23:18:14:564 gameBoy/(5449:5449): 12
+[INFO] 23:18:14:564 gameBoy/(5449:5449): sizes: 28
+[INFO] 23:18:27:152 gameBoy/(5490:5490): -----------------Leyendo archivo config-----------------
+[INFO] 23:18:27:153 gameBoy/(5490:5490): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:18:27:154 gameBoy/(5490:5490): 7
+[INFO] 23:18:27:154 gameBoy/(5490:5490): paquete->buffer->size 12
+[INFO] 23:18:27:154 gameBoy/(5490:5490): sizes: 28
+[INFO] 23:19:13:879 gameBoy/(5560:5560): -----------------Leyendo archivo config-----------------
+[INFO] 23:19:13:879 gameBoy/(5560:5560): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:19:13:880 gameBoy/(5560:5560): 7
+[INFO] 23:19:13:880 gameBoy/(5560:5560): paquete->buffer->size 12
+[INFO] 23:19:13:880 gameBoy/(5560:5560): sizes: 28
+[INFO] 23:20:55:674 gameBoy/(5669:5669): -----------------Leyendo archivo config-----------------
+[INFO] 23:20:55:675 gameBoy/(5669:5669): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:20:55:675 gameBoy/(5669:5669): 7
+[INFO] 23:20:55:675 gameBoy/(5669:5669): paquete->buffer->size 12
+[INFO] 23:20:55:675 gameBoy/(5669:5669): sizes: 28
+[INFO] 23:22:24:688 gameBoy/(5808:5808): -----------------Leyendo archivo config-----------------
+[INFO] 23:22:24:694 gameBoy/(5808:5808): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:22:24:694 gameBoy/(5808:5808): 7
+[INFO] 23:22:24:694 gameBoy/(5808:5808): paquete->buffer->size 12
+[INFO] 23:22:24:694 gameBoy/(5808:5808): sizes: 28
+[INFO] 23:26:52:900 gameBoy/(6075:6075): -----------------Leyendo archivo config-----------------
+[INFO] 23:26:52:910 gameBoy/(6075:6075): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:26:52:910 gameBoy/(6075:6075): 7
+[INFO] 23:26:52:910 gameBoy/(6075:6075): paquete->buffer->size 12
+[INFO] 23:26:52:910 gameBoy/(6075:6075): sizes: 28
+[INFO] 23:27:20:474 gameBoy/(6163:6163): -----------------Leyendo archivo config-----------------
+[INFO] 23:27:20:475 gameBoy/(6163:6163): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:27:20:475 gameBoy/(6163:6163): 7
+[INFO] 23:27:20:475 gameBoy/(6163:6163): paquete->buffer->size 12
+[INFO] 23:27:20:477 gameBoy/(6163:6163): sizes: 28
+[INFO] 23:28:56:127 gameBoy/(6314:6314): -----------------Leyendo archivo config-----------------
+[INFO] 23:28:56:127 gameBoy/(6314:6314): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:56:127 gameBoy/(6314:6314): 7
+[INFO] 23:28:56:127 gameBoy/(6314:6314): paquete->buffer->size 12
+[INFO] 23:28:56:127 gameBoy/(6314:6314): sizes: 28
+[INFO] 23:31:06:446 gameBoy/(14862:14862): -----------------Leyendo archivo config-----------------
+[INFO] 23:31:06:452 gameBoy/(14862:14862): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:06:452 gameBoy/(14862:14862): 7
+[INFO] 23:31:06:453 gameBoy/(14862:14862): paquete->buffer->size 12
+[INFO] 23:31:06:453 gameBoy/(14862:14862): sizes: 28
+[INFO] 23:31:17:969 gameBoy/(22945:22945): -----------------Leyendo archivo config-----------------
+[ERROR] 23:31:17:971 gameBoy/(22945:22945): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:17:971 gameBoy/(22945:22945): 7
+[INFO] 23:31:17:971 gameBoy/(22945:22945): paquete->buffer->size 12
+[INFO] 23:31:17:971 gameBoy/(22945:22945): sizes: 28
+[INFO] 23:31:29:577 gameBoy/(22959:22959): -----------------Leyendo archivo config-----------------
+[INFO] 23:31:29:589 gameBoy/(22959:22959): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:29:590 gameBoy/(22959:22959): 7
+[INFO] 23:31:29:590 gameBoy/(22959:22959): paquete->buffer->size 12
+[INFO] 23:31:29:590 gameBoy/(22959:22959): sizes: 28
+[INFO] 23:40:31:11 gameBoy/(23310:23310): -----------------Leyendo archivo config-----------------
+[INFO] 23:40:32:35 gameBoy/(23310:23310): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:40:32:35 gameBoy/(23310:23310): 7
+[INFO] 23:40:32:35 gameBoy/(23310:23310): paquete->buffer->size 12
+[INFO] 23:40:32:36 gameBoy/(23310:23310): sizes: 28
+[INFO] 23:43:33:599 gameBoy/(27372:27372): -----------------Leyendo archivo config-----------------
+[INFO] 23:43:33:624 gameBoy/(27372:27372): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:43:33:624 gameBoy/(27372:27372): 7
+[INFO] 23:43:33:624 gameBoy/(27372:27372): paquete->buffer->size 12
+[INFO] 23:43:33:624 gameBoy/(27372:27372): sizes: 28
+[INFO] 23:47:39:78 gameBoy/(27601:27601): -----------------Leyendo archivo config-----------------
+[INFO] 23:47:39:89 gameBoy/(27601:27601): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:47:39:89 gameBoy/(27601:27601): 7
+[INFO] 23:47:39:89 gameBoy/(27601:27601): paquete->buffer->size 12
+[INFO] 23:47:39:89 gameBoy/(27601:27601): sizes: 28
+[INFO] 23:49:11:181 gameBoy/(27712:27712): -----------------Leyendo archivo config-----------------
+[INFO] 23:49:11:181 gameBoy/(27712:27712): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:49:11:181 gameBoy/(27712:27712): 7
+[INFO] 23:49:11:181 gameBoy/(27712:27712): paquete->buffer->size 12
+[INFO] 23:49:11:181 gameBoy/(27712:27712): sizes: 28
+[INFO] 23:50:17:558 gameBoy/(27825:27825): -----------------Leyendo archivo config-----------------
+[INFO] 23:50:17:558 gameBoy/(27825:27825): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:50:17:558 gameBoy/(27825:27825): 7
+[INFO] 23:50:17:558 gameBoy/(27825:27825): paquete->buffer->size 12
+[INFO] 23:50:17:558 gameBoy/(27825:27825): sizes: 28
+[INFO] 23:51:25:807 gameBoy/(27914:27914): -----------------Leyendo archivo config-----------------
+[INFO] 23:51:25:808 gameBoy/(27914:27914): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:51:25:808 gameBoy/(27914:27914): 7
+[INFO] 23:51:25:808 gameBoy/(27914:27914): paquete->buffer->size 12
+[INFO] 23:51:25:808 gameBoy/(27914:27914): sizes: 28
+[INFO] 23:52:24:939 gameBoy/(27999:27999): -----------------Leyendo archivo config-----------------
+[ERROR] 23:52:24:947 gameBoy/(27999:27999): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:52:24:948 gameBoy/(27999:27999): largo nombre7
+[INFO] 23:52:24:948 gameBoy/(27999:27999): nombre Pikachu
+[INFO] 23:52:24:949 gameBoy/(27999:27999): paquete->buffer->size 12
+[INFO] 23:52:24:949 gameBoy/(27999:27999): sizes: 28
+[INFO] 23:53:35:347 gameBoy/(28106:28106): -----------------Leyendo archivo config-----------------
+[ERROR] 23:53:35:348 gameBoy/(28106:28106): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:53:35:348 gameBoy/(28106:28106): paquete->buffer->size 12
+[INFO] 23:53:35:349 gameBoy/(28106:28106): largo nombre 7
+[INFO] 23:53:35:349 gameBoy/(28106:28106): nombre Pikachu
+[INFO] 23:53:35:349 gameBoy/(28106:28106): sizes: 28
+[INFO] 23:55:27:992 gameBoy/(28503:28503): -----------------Leyendo archivo config-----------------
+[INFO] 23:55:27:993 gameBoy/(28503:28503): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:55:27:993 gameBoy/(28503:28503): paquete->buffer->size 12
+[INFO] 23:55:27:993 gameBoy/(28503:28503): largo nombre 7
+[INFO] 23:55:27:993 gameBoy/(28503:28503): nombre Pikachu
+[INFO] 23:55:27:993 gameBoy/(28503:28503): sizes: 28
+[INFO] 00:02:36:313 gameBoy/(372:372): -----------------Leyendo archivo config-----------------
+[INFO] 00:02:36:316 gameBoy/(372:372): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:02:36:318 gameBoy/(372:372): largo nombre7
+[INFO] 00:02:36:319 gameBoy/(372:372): 134523123
+[INFO] 00:02:36:319 gameBoy/(372:372): paquete->buffer->size 12
+[INFO] 00:02:36:319 gameBoy/(372:372): largo nombre 7
+[INFO] 00:02:36:320 gameBoy/(372:372): nombre Pikachu
+[INFO] 00:02:36:320 gameBoy/(372:372): sizes: 28
+[INFO] 00:04:07:118 gameBoy/(5648:5648): -----------------Leyendo archivo config-----------------
+[INFO] 00:04:07:121 gameBoy/(5648:5648): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:04:07:121 gameBoy/(5648:5648): largo nombre7
+[INFO] 00:04:07:121 gameBoy/(5648:5648): 134523123
+[INFO] 00:04:07:121 gameBoy/(5648:5648): paquete->buffer->size 12
+[INFO] 00:04:07:121 gameBoy/(5648:5648): largo nombre 7
+[INFO] 00:04:07:122 gameBoy/(5648:5648): nombre Pikachu
+[INFO] 00:04:07:122 gameBoy/(5648:5648): sizes: 28
+[INFO] 00:05:16:362 gameBoy/(19371:19371): -----------------Leyendo archivo config-----------------
+[INFO] 00:05:16:367 gameBoy/(19371:19371): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:05:16:367 gameBoy/(19371:19371): largo nombre7
+[INFO] 00:05:16:367 gameBoy/(19371:19371): 134523123
+[INFO] 00:05:16:367 gameBoy/(19371:19371): paquete->buffer->size 12
+[INFO] 00:05:16:367 gameBoy/(19371:19371): largo nombre 7
+[INFO] 00:05:16:367 gameBoy/(19371:19371): nombre Pikachu
+[INFO] 00:05:16:367 gameBoy/(19371:19371): sizes: 28
+[INFO] 00:08:51:961 gameBoy/(19586:19586): -----------------Leyendo archivo config-----------------
+[ERROR] 00:08:51:966 gameBoy/(19586:19586): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:08:51:966 gameBoy/(19586:19586): largo nombre7
+[INFO] 00:08:51:966 gameBoy/(19586:19586): 134523267
+[INFO] 00:08:51:966 gameBoy/(19586:19586): paquete->buffer->size 12
+[INFO] 00:08:51:966 gameBoy/(19586:19586): largo nombre 7
+[INFO] 00:08:51:966 gameBoy/(19586:19586): nombre Pikachu
+[INFO] 00:08:51:966 gameBoy/(19586:19586): sizes: 28
+[INFO] 00:08:59:488 gameBoy/(19598:19598): -----------------Leyendo archivo config-----------------
+[INFO] 00:08:59:489 gameBoy/(19598:19598): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:08:59:489 gameBoy/(19598:19598): largo nombre7
+[INFO] 00:08:59:489 gameBoy/(19598:19598): 134523267
+[INFO] 00:08:59:492 gameBoy/(19598:19598): paquete->buffer->size 12
+[INFO] 00:08:59:493 gameBoy/(19598:19598): largo nombre 7
+[INFO] 00:08:59:493 gameBoy/(19598:19598): nombre Pikachu
+[INFO] 00:08:59:493 gameBoy/(19598:19598): sizes: 28
+[INFO] 00:09:24:189 gameBoy/(29542:29542): -----------------Leyendo archivo config-----------------
+[ERROR] 00:09:24:208 gameBoy/(29542:29542): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:09:24:208 gameBoy/(29542:29542): largo nombre7
+[INFO] 00:09:24:208 gameBoy/(29542:29542): 134523267
+[INFO] 00:09:24:208 gameBoy/(29542:29542): paquete->buffer->size 12
+[INFO] 00:09:24:209 gameBoy/(29542:29542): largo nombre 7
+[INFO] 00:09:24:209 gameBoy/(29542:29542): nombre Pikachu
+[INFO] 00:09:24:209 gameBoy/(29542:29542): sizes: 28
+[INFO] 00:09:38:934 gameBoy/(5482:5482): -----------------Leyendo archivo config-----------------
+[ERROR] 00:09:38:940 gameBoy/(5482:5482): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:09:38:940 gameBoy/(5482:5482): largo nombre7
+[INFO] 00:09:38:940 gameBoy/(5482:5482): 134523267
+[INFO] 00:09:38:940 gameBoy/(5482:5482): paquete->buffer->size 12
+[INFO] 00:09:38:940 gameBoy/(5482:5482): largo nombre 7
+[INFO] 00:09:38:940 gameBoy/(5482:5482): nombre Pikachu
+[INFO] 00:09:38:940 gameBoy/(5482:5482): sizes: 28
+[INFO] 00:10:40:562 gameBoy/(6898:6898): -----------------Leyendo archivo config-----------------
+[INFO] 00:10:40:572 gameBoy/(6898:6898): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:10:40:572 gameBoy/(6898:6898): largo nombre7
+[INFO] 00:10:40:572 gameBoy/(6898:6898): 134523267
+[INFO] 00:10:40:572 gameBoy/(6898:6898): paquete->buffer->size 12
+[INFO] 00:10:40:572 gameBoy/(6898:6898): largo nombre 7
+[INFO] 00:10:40:572 gameBoy/(6898:6898): nombre Pikachu
+[INFO] 00:10:40:572 gameBoy/(6898:6898): sizes: 28
+[INFO] 00:11:59:130 gameBoy/(6970:6970): -----------------Leyendo archivo config-----------------
+[INFO] 00:11:59:144 gameBoy/(6970:6970): cant argumentos: 1
+[INFO] 00:11:59:145 gameBoy/(6970:6970): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:11:59:145 gameBoy/(6970:6970): largo nombre7
+[INFO] 00:11:59:145 gameBoy/(6970:6970): 134523319
+[INFO] 00:11:59:146 gameBoy/(6970:6970): paquete->buffer->size 12
+[INFO] 00:11:59:149 gameBoy/(6970:6970): largo nombre 7
+[INFO] 00:11:59:149 gameBoy/(6970:6970): nombre Pikachu
+[INFO] 00:11:59:149 gameBoy/(6970:6970): sizes: 28
+[INFO] 00:17:57:390 gameBoy/(7207:7207): -----------------Leyendo archivo config-----------------
+[INFO] 00:17:57:395 gameBoy/(7207:7207): cant argumentos: 1
+[INFO] 00:17:57:396 gameBoy/(7207:7207): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:17:57:396 gameBoy/(7207:7207): largo nombre7
+[INFO] 00:17:57:396 gameBoy/(7207:7207): 134523319
+[INFO] 00:17:57:397 gameBoy/(7207:7207): paquete->buffer->size 12
+[INFO] 00:17:57:397 gameBoy/(7207:7207): largo nombre 7
+[INFO] 00:17:57:398 gameBoy/(7207:7207): nombre Pikachu
+[INFO] 00:17:57:398 gameBoy/(7207:7207): sizes: 28
+[INFO] 00:18:55:661 gameBoy/(7288:7288): -----------------Leyendo archivo config-----------------
+[INFO] 00:18:55:662 gameBoy/(7288:7288): cant argumentos: 1
+[INFO] 00:18:55:662 gameBoy/(7288:7288): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:18:55:662 gameBoy/(7288:7288): largo nombre7
+[INFO] 00:18:55:663 gameBoy/(7288:7288): 134523379
+[INFO] 00:18:55:663 gameBoy/(7288:7288): paquete->buffer->size 12
+[INFO] 00:18:55:663 gameBoy/(7288:7288): largo nombre 7
+[INFO] 00:18:55:663 gameBoy/(7288:7288): nombre Pikachu
+[INFO] 00:18:55:663 gameBoy/(7288:7288): sizes: 28
+[INFO] 00:18:55:665 gameBoy/(7288:7288): envio: 28
+[INFO] 00:19:26:956 gameBoy/(7328:7328): -----------------Leyendo archivo config-----------------
+[INFO] 00:19:26:961 gameBoy/(7328:7328): cant argumentos: 1
+[INFO] 00:19:26:961 gameBoy/(7328:7328): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:19:26:961 gameBoy/(7328:7328): largo nombre7
+[INFO] 00:19:26:961 gameBoy/(7328:7328): 134523379
+[INFO] 00:19:26:961 gameBoy/(7328:7328): paquete->buffer->size 12
+[INFO] 00:19:26:961 gameBoy/(7328:7328): largo nombre 7
+[INFO] 00:19:26:961 gameBoy/(7328:7328): nombre Pikachu
+[INFO] 00:19:26:962 gameBoy/(7328:7328): sizes: 28
+[INFO] 00:19:26:962 gameBoy/(7328:7328): envio: 28
+[INFO] 00:19:26:962 gameBoy/(7328:7328): -----------------Destruyendo archivo config-----------------
+[INFO] 00:19:47:340 gameBoy/(7364:7364): -----------------Leyendo archivo config-----------------
+[INFO] 00:19:47:341 gameBoy/(7364:7364): cant argumentos: 1
+[INFO] 00:19:47:341 gameBoy/(7364:7364): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:19:47:342 gameBoy/(7364:7364): largo nombre7
+[INFO] 00:19:47:342 gameBoy/(7364:7364): 134523379
+[INFO] 00:19:47:342 gameBoy/(7364:7364): paquete->buffer->size 12
+[INFO] 00:19:47:342 gameBoy/(7364:7364): largo nombre 7
+[INFO] 00:19:47:342 gameBoy/(7364:7364): nombre Pikachu
+[INFO] 00:19:47:342 gameBoy/(7364:7364): sizes: 28
+[INFO] 00:19:47:343 gameBoy/(7364:7364): envio: 28
+[INFO] 00:19:47:343 gameBoy/(7364:7364): -----------------Destruyendo archivo config-----------------
+[INFO] 00:20:34:983 gameBoy/(7408:7408): -----------------Leyendo archivo config-----------------
+[INFO] 00:20:34:989 gameBoy/(7408:7408): cant argumentos: 1
+[INFO] 00:20:34:993 gameBoy/(7408:7408): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:20:34:993 gameBoy/(7408:7408): largo nombre7
+[INFO] 00:20:34:993 gameBoy/(7408:7408): 134523383
+[INFO] 00:20:34:993 gameBoy/(7408:7408): paquete->buffer->size 12
+[INFO] 00:20:34:993 gameBoy/(7408:7408): largo nombre 7
+[INFO] 00:20:34:993 gameBoy/(7408:7408): nombre Pikachu
+[INFO] 00:20:34:993 gameBoy/(7408:7408): sizes: 28
+[INFO] 00:20:34:993 gameBoy/(7408:7408): envio: 28
+[INFO] 00:20:34:994 gameBoy/(7408:7408): -----------------Destruyendo archivo config-----------------
+[INFO] 00:20:46:551 gameBoy/(7444:7444): -----------------Leyendo archivo config-----------------
+[INFO] 00:20:46:558 gameBoy/(7444:7444): cant argumentos: 1
+[INFO] 00:20:46:559 gameBoy/(7444:7444): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:20:46:559 gameBoy/(7444:7444): largo nombre7
+[INFO] 00:20:46:560 gameBoy/(7444:7444): 134523387
+[INFO] 00:20:46:560 gameBoy/(7444:7444): paquete->buffer->size 12
+[INFO] 00:20:46:560 gameBoy/(7444:7444): largo nombre 7
+[INFO] 00:20:46:560 gameBoy/(7444:7444): nombre Pikachu
+[INFO] 00:20:46:560 gameBoy/(7444:7444): sizes: 28
+[INFO] 00:20:46:560 gameBoy/(7444:7444): envio: 28
+[INFO] 00:20:46:561 gameBoy/(7444:7444): -----------------Destruyendo archivo config-----------------
+[INFO] 00:27:46:400 gameBoy/(7672:7672): -----------------Leyendo archivo config-----------------
+[INFO] 00:27:46:411 gameBoy/(7672:7672): cant argumentos: 1
+[INFO] 00:27:46:413 gameBoy/(7672:7672): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:27:46:413 gameBoy/(7672:7672): largo nombre7
+[INFO] 00:27:46:414 gameBoy/(7672:7672): 134523379
+[INFO] 00:27:46:414 gameBoy/(7672:7672): paquete->buffer->size 12
+[INFO] 00:27:46:414 gameBoy/(7672:7672): largo nombre 7
+[INFO] 00:27:46:418 gameBoy/(7672:7672): nombre Pikachu
+[INFO] 00:27:46:418 gameBoy/(7672:7672): sizes: 28
+[INFO] 00:27:46:418 gameBoy/(7672:7672): envio: 28
+[INFO] 00:27:46:418 gameBoy/(7672:7672): -----------------Destruyendo archivo config-----------------
+[INFO] 00:28:25:407 gameBoy/(7754:7754): -----------------Leyendo archivo config-----------------
+[INFO] 00:28:25:417 gameBoy/(7754:7754): cant argumentos: 1
+[INFO] 00:28:25:418 gameBoy/(7754:7754): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:28:25:418 gameBoy/(7754:7754): largo nombre7
+[INFO] 00:28:25:418 gameBoy/(7754:7754): 134523379
+[INFO] 00:28:25:418 gameBoy/(7754:7754): paquete->buffer->size 12
+[INFO] 00:28:25:418 gameBoy/(7754:7754): largo nombre 7
+[INFO] 00:28:25:418 gameBoy/(7754:7754): nombre Pikachu
+[INFO] 00:28:25:418 gameBoy/(7754:7754): sizes: 28
+[INFO] 00:28:25:419 gameBoy/(7754:7754): envio: 28
+[INFO] 00:28:25:419 gameBoy/(7754:7754): -----------------Destruyendo archivo config-----------------
+[INFO] 00:29:10:94 gameBoy/(7840:7840): -----------------Leyendo archivo config-----------------
+[INFO] 00:29:10:95 gameBoy/(7840:7840): cant argumentos: 1
+[INFO] 00:29:10:95 gameBoy/(7840:7840): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:29:10:95 gameBoy/(7840:7840): largo nombre7
+[INFO] 00:29:10:95 gameBoy/(7840:7840): 134523379
+[INFO] 00:29:10:95 gameBoy/(7840:7840): paquete->buffer->size 12
+[INFO] 00:29:10:96 gameBoy/(7840:7840): largo nombre 7
+[INFO] 00:29:10:98 gameBoy/(7840:7840): nombre Pikachu
+[INFO] 00:29:10:98 gameBoy/(7840:7840): sizes: 28
+[INFO] 00:29:10:98 gameBoy/(7840:7840): envio: 28
+[INFO] 00:29:10:98 gameBoy/(7840:7840): -----------------Destruyendo archivo config-----------------
+[INFO] 00:30:13:299 gameBoy/(7926:7926): -----------------Leyendo archivo config-----------------
+[INFO] 00:30:13:304 gameBoy/(7926:7926): cant argumentos: 1
+[INFO] 00:30:13:304 gameBoy/(7926:7926): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:30:13:305 gameBoy/(7926:7926): largo nombre7
+[INFO] 00:30:13:305 gameBoy/(7926:7926): 134523379
+[INFO] 00:30:13:305 gameBoy/(7926:7926): paquete->buffer->size 12
+[INFO] 00:30:13:305 gameBoy/(7926:7926): largo nombre 7
+[INFO] 00:30:13:305 gameBoy/(7926:7926): nombre Pikachu
+[INFO] 00:30:13:305 gameBoy/(7926:7926): sizes: 28
+[INFO] 00:30:13:305 gameBoy/(7926:7926): envio: 28
+[INFO] 00:30:13:305 gameBoy/(7926:7926): -----------------Destruyendo archivo config-----------------
+[INFO] 00:31:12:787 gameBoy/(8000:8000): -----------------Leyendo archivo config-----------------
+[INFO] 00:31:12:800 gameBoy/(8000:8000): cant argumentos: 1
+[INFO] 00:31:12:801 gameBoy/(8000:8000): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:31:12:801 gameBoy/(8000:8000): largo nombre7
+[INFO] 00:31:12:802 gameBoy/(8000:8000): 134523379
+[INFO] 00:31:12:804 gameBoy/(8000:8000): paquete->buffer->size 12
+[INFO] 00:31:12:804 gameBoy/(8000:8000): largo nombre 7
+[INFO] 00:31:12:805 gameBoy/(8000:8000): nombre Pikachu
+[INFO] 00:31:12:805 gameBoy/(8000:8000): sizes: 28
+[INFO] 00:31:12:808 gameBoy/(8000:8000): envio: 28
+[INFO] 00:31:12:808 gameBoy/(8000:8000): -----------------Destruyendo archivo config-----------------
+[INFO] 00:33:00:966 gameBoy/(8090:8090): -----------------Leyendo archivo config-----------------
+[INFO] 00:33:00:970 gameBoy/(8090:8090): cant argumentos: 1
+[INFO] 00:33:00:972 gameBoy/(8090:8090): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:33:00:972 gameBoy/(8090:8090): largo nombre: 7
+[INFO] 00:33:00:973 gameBoy/(8090:8090): nombre: Pikachu
+[INFO] 00:33:00:973 gameBoy/(8090:8090): paquete->buffer->size 12
+[INFO] 00:33:00:973 gameBoy/(8090:8090): largo nombre 7
+[INFO] 00:33:00:973 gameBoy/(8090:8090): nombre Pikachu
+[INFO] 00:33:00:973 gameBoy/(8090:8090): sizes: 28
+[INFO] 00:33:00:973 gameBoy/(8090:8090): envio: 28
+[INFO] 00:33:00:973 gameBoy/(8090:8090): -----------------Destruyendo archivo config-----------------
+[INFO] 00:33:49:451 gameBoy/(8179:8179): -----------------Leyendo archivo config-----------------
+[INFO] 00:33:49:461 gameBoy/(8179:8179): cant argumentos: 1
+[ERROR] 00:33:49:461 gameBoy/(8179:8179): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:33:49:461 gameBoy/(8179:8179): largo nombre: 7
+[INFO] 00:33:49:461 gameBoy/(8179:8179): nombre: Pikachu
+[INFO] 00:33:49:461 gameBoy/(8179:8179): paquete->buffer->size 12
+[INFO] 00:33:49:462 gameBoy/(8179:8179): largo nombre 7
+[INFO] 00:33:49:462 gameBoy/(8179:8179): nombre Pikachu
+[INFO] 00:33:49:462 gameBoy/(8179:8179): sizes: 28
+[INFO] 00:34:07:79 gameBoy/(8190:8190): -----------------Leyendo archivo config-----------------
+[INFO] 00:34:07:79 gameBoy/(8190:8190): cant argumentos: 1
+[INFO] 00:34:07:80 gameBoy/(8190:8190): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:34:07:80 gameBoy/(8190:8190): largo nombre: 7
+[INFO] 00:34:07:80 gameBoy/(8190:8190): nombre: Pikachu
+[INFO] 00:34:07:80 gameBoy/(8190:8190): paquete->buffer->size 12
+[INFO] 00:34:07:80 gameBoy/(8190:8190): largo nombre 7
+[INFO] 00:34:07:80 gameBoy/(8190:8190): nombre Pikachu
+[INFO] 00:34:07:80 gameBoy/(8190:8190): sizes: 28
+[INFO] 00:34:07:80 gameBoy/(8190:8190): envio: 28
+[INFO] 00:34:40:249 gameBoy/(8277:8277): -----------------Leyendo archivo config-----------------
+[INFO] 00:34:40:256 gameBoy/(8277:8277): cant argumentos: 1
+[ERROR] 00:34:40:256 gameBoy/(8277:8277): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:34:40:257 gameBoy/(8277:8277): largo nombre: 7
+[INFO] 00:34:40:257 gameBoy/(8277:8277): nombre: Pikachu
+[INFO] 00:34:40:257 gameBoy/(8277:8277): paquete->buffer->size 12
+[INFO] 00:34:40:259 gameBoy/(8277:8277): largo nombre 7
+[INFO] 00:34:40:260 gameBoy/(8277:8277): nombre Pikachu
+[INFO] 00:34:40:260 gameBoy/(8277:8277): sizes: 28
+[INFO] 00:34:46:876 gameBoy/(8290:8290): -----------------Leyendo archivo config-----------------
+[INFO] 00:34:46:885 gameBoy/(8290:8290): cant argumentos: 1
+[INFO] 00:34:46:885 gameBoy/(8290:8290): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:34:46:885 gameBoy/(8290:8290): largo nombre: 7
+[INFO] 00:34:46:885 gameBoy/(8290:8290): nombre: Pikachu
+[INFO] 00:34:46:885 gameBoy/(8290:8290): paquete->buffer->size 12
+[INFO] 00:34:46:885 gameBoy/(8290:8290): largo nombre 7
+[INFO] 00:34:46:885 gameBoy/(8290:8290): nombre Pikachu
+[INFO] 00:34:46:886 gameBoy/(8290:8290): sizes: 28
+[INFO] 00:34:46:886 gameBoy/(8290:8290): envio: 28
+[INFO] 00:34:46:886 gameBoy/(8290:8290): volvi
+[INFO] 00:35:15:384 gameBoy/(8379:8379): -----------------Leyendo archivo config-----------------
+[INFO] 00:35:15:386 gameBoy/(8379:8379): cant argumentos: 1
+[ERROR] 00:35:15:387 gameBoy/(8379:8379): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:35:15:387 gameBoy/(8379:8379): largo nombre: 7
+[INFO] 00:35:15:387 gameBoy/(8379:8379): nombre: Pikachu
+[INFO] 00:35:15:387 gameBoy/(8379:8379): paquete->buffer->size 12
+[INFO] 00:35:15:387 gameBoy/(8379:8379): largo nombre 7
+[INFO] 00:35:15:387 gameBoy/(8379:8379): nombre Pikachu
+[INFO] 00:35:15:387 gameBoy/(8379:8379): sizes: 28
+[INFO] 00:35:19:410 gameBoy/(8392:8392): -----------------Leyendo archivo config-----------------
+[INFO] 00:35:19:416 gameBoy/(8392:8392): cant argumentos: 1
+[INFO] 00:35:19:417 gameBoy/(8392:8392): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:35:19:417 gameBoy/(8392:8392): largo nombre: 7
+[INFO] 00:35:19:417 gameBoy/(8392:8392): nombre: Pikachu
+[INFO] 00:35:19:417 gameBoy/(8392:8392): paquete->buffer->size 12
+[INFO] 00:35:19:417 gameBoy/(8392:8392): largo nombre 7
+[INFO] 00:35:19:417 gameBoy/(8392:8392): nombre Pikachu
+[INFO] 00:35:19:417 gameBoy/(8392:8392): sizes: 28
+[INFO] 00:35:19:417 gameBoy/(8392:8392): envio: 28
+[INFO] 00:35:19:417 gameBoy/(8392:8392): volvi
+[INFO] 00:36:04:393 gameBoy/(8482:8482): -----------------Leyendo archivo config-----------------
+[INFO] 00:36:04:403 gameBoy/(8482:8482): cant argumentos: 1
+[INFO] 00:36:04:403 gameBoy/(8482:8482): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:36:04:404 gameBoy/(8482:8482): largo nombre: 7
+[INFO] 00:36:04:404 gameBoy/(8482:8482): nombre: Pikachu
+[INFO] 00:36:04:404 gameBoy/(8482:8482): paquete->buffer->size 12
+[INFO] 00:36:04:404 gameBoy/(8482:8482): largo nombre 7
+[INFO] 00:36:04:405 gameBoy/(8482:8482): nombre Pikachu
+[INFO] 00:36:04:408 gameBoy/(8482:8482): sizes: 28
+[INFO] 00:36:04:408 gameBoy/(8482:8482): envio: 28
+[INFO] 00:36:04:408 gameBoy/(8482:8482): volvi
+[INFO] 00:37:58:593 gameBoy/(8585:8585): -----------------Leyendo archivo config-----------------
+[INFO] 00:37:58:593 gameBoy/(8585:8585): cant argumentos: 1
+[INFO] 00:37:58:594 gameBoy/(8585:8585): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:37:58:594 gameBoy/(8585:8585): largo nombre: 7
+[INFO] 00:37:58:596 gameBoy/(8585:8585): nombre: Pikachu
+[INFO] 00:37:58:597 gameBoy/(8585:8585): paquete->buffer->size 12
+[INFO] 00:37:58:597 gameBoy/(8585:8585): largo nombre 7
+[INFO] 00:37:58:597 gameBoy/(8585:8585): nombre Pikachu
+[INFO] 00:37:58:597 gameBoy/(8585:8585): sizes: 28
+[INFO] 00:37:58:597 gameBoy/(8585:8585): envio: 28
+[INFO] 00:37:58:597 gameBoy/(8585:8585): volvi
+[INFO] 00:38:44:585 gameBoy/(8632:8632): -----------------Leyendo archivo config-----------------
+[INFO] 00:38:44:588 gameBoy/(8632:8632): cant argumentos: 1
+[INFO] 00:38:44:589 gameBoy/(8632:8632): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:38:44:589 gameBoy/(8632:8632): largo nombre: 7
+[INFO] 00:38:44:589 gameBoy/(8632:8632): nombre: Pikachu
+[INFO] 00:38:44:589 gameBoy/(8632:8632): paquete->buffer->size 12
+[INFO] 00:38:44:589 gameBoy/(8632:8632): largo nombre 7
+[INFO] 00:38:44:589 gameBoy/(8632:8632): nombre Pikachu
+[INFO] 00:38:44:589 gameBoy/(8632:8632): sizes: 28
+[INFO] 00:38:44:589 gameBoy/(8632:8632): envio: 28
+[INFO] 00:38:44:589 gameBoy/(8632:8632): volvi
+[INFO] 00:38:44:589 gameBoy/(8632:8632): -----------------Destruyendo archivo config-----------------
+[INFO] 00:39:10:629 gameBoy/(13842:13842): -----------------Leyendo archivo config-----------------
+[INFO] 00:39:10:629 gameBoy/(13842:13842): cant argumentos: 1
+[INFO] 00:39:10:630 gameBoy/(13842:13842): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:39:10:630 gameBoy/(13842:13842): largo nombre: 7
+[INFO] 00:39:10:630 gameBoy/(13842:13842): nombre: Pikachu
+[INFO] 00:39:10:630 gameBoy/(13842:13842): paquete->buffer->size 12
+[INFO] 00:39:10:630 gameBoy/(13842:13842): largo nombre 7
+[INFO] 00:39:10:630 gameBoy/(13842:13842): nombre Pikachu
+[INFO] 00:39:10:630 gameBoy/(13842:13842): sizes: 28
+[INFO] 00:39:10:630 gameBoy/(13842:13842): envio: 28
+[INFO] 00:39:10:630 gameBoy/(13842:13842): volvi
+[INFO] 00:39:10:630 gameBoy/(13842:13842): -----------------Destruyendo archivo config-----------------
+[INFO] 00:39:58:264 gameBoy/(13944:13944): -----------------Leyendo archivo config-----------------
+[INFO] 00:39:58:266 gameBoy/(13944:13944): cant argumentos: 1
+[INFO] 00:39:58:267 gameBoy/(13944:13944): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:39:58:267 gameBoy/(13944:13944): largo nombre: 7
+[INFO] 00:39:58:267 gameBoy/(13944:13944): nombre: Pikachu
+[INFO] 00:39:58:267 gameBoy/(13944:13944): paquete->buffer->size 12
+[INFO] 00:39:58:267 gameBoy/(13944:13944): largo nombre 7
+[INFO] 00:39:58:267 gameBoy/(13944:13944): nombre Pikachu
+[INFO] 00:39:58:267 gameBoy/(13944:13944): sizes: 28
+[INFO] 00:39:58:268 gameBoy/(13944:13944): envio: 28
+[INFO] 00:39:58:269 gameBoy/(13944:13944): volvi
+[INFO] 00:39:58:269 gameBoy/(13944:13944): -----------------Destruyendo archivo config-----------------
+[INFO] 00:40:16:168 gameBoy/(14018:14018): -----------------Leyendo archivo config-----------------
+[INFO] 00:40:16:168 gameBoy/(14018:14018): cant argumentos: 1
+[INFO] 00:40:16:169 gameBoy/(14018:14018): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:40:16:169 gameBoy/(14018:14018): largo nombre: 7
+[INFO] 00:40:16:178 gameBoy/(14018:14018): nombre: Pikachu
+[INFO] 00:40:16:178 gameBoy/(14018:14018): paquete->buffer->size 12
+[INFO] 00:40:16:178 gameBoy/(14018:14018): largo nombre 7
+[INFO] 00:40:16:178 gameBoy/(14018:14018): nombre Pikachu
+[INFO] 00:40:16:178 gameBoy/(14018:14018): sizes: 28
+[INFO] 00:40:16:178 gameBoy/(14018:14018): envio: 28
+[INFO] 00:40:16:178 gameBoy/(14018:14018): volvi
+[INFO] 00:40:16:178 gameBoy/(14018:14018): -----------------Destruyendo archivo config-----------------
+[INFO] 00:42:04:400 gameBoy/(14099:14099): -----------------Leyendo archivo config-----------------
+[INFO] 00:42:04:411 gameBoy/(14099:14099): cant argumentos: 1
+[INFO] 00:42:04:412 gameBoy/(14099:14099): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:42:04:412 gameBoy/(14099:14099): largo nombre: 7
+[INFO] 00:42:04:412 gameBoy/(14099:14099): nombre: Pikachu
+[INFO] 00:42:04:412 gameBoy/(14099:14099): paquete->buffer->size 12
+[INFO] 00:42:04:412 gameBoy/(14099:14099): largo nombre 7
+[INFO] 00:42:04:412 gameBoy/(14099:14099): nombre Pikachu
+[INFO] 00:42:04:412 gameBoy/(14099:14099): sizes: 28
+[INFO] 00:42:04:412 gameBoy/(14099:14099): envio: 28
+[INFO] 00:42:04:412 gameBoy/(14099:14099): volvi
+[INFO] 00:42:04:412 gameBoy/(14099:14099): -----------------Destruyendo archivo config-----------------
+[INFO] 00:45:31:561 gameBoy/(14190:14190): -----------------Leyendo archivo config-----------------
+[INFO] 00:45:31:562 gameBoy/(14190:14190): cant argumentos: 1
+[INFO] 00:45:31:562 gameBoy/(14190:14190): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:45:31:562 gameBoy/(14190:14190): largo nombre: 7
+[INFO] 00:45:31:562 gameBoy/(14190:14190): nombre: Pikachu
+[INFO] 00:45:31:564 gameBoy/(14190:14190): paquete->buffer->size 12
+[INFO] 00:45:31:564 gameBoy/(14190:14190): largo nombre 7
+[INFO] 00:45:31:564 gameBoy/(14190:14190): nombre Pikachu
+[INFO] 00:45:31:564 gameBoy/(14190:14190): nombre ƒª
+[INFO] 00:45:31:565 gameBoy/(14190:14190): sizes: 28
+[INFO] 00:45:31:565 gameBoy/(14190:14190): envio: 28
+[INFO] 00:45:31:565 gameBoy/(14190:14190): volvi
+[INFO] 00:45:31:565 gameBoy/(14190:14190): -----------------Destruyendo archivo config-----------------
+[INFO] 00:46:34:731 gameBoy/(14252:14252): -----------------Leyendo archivo config-----------------
+[INFO] 00:46:34:740 gameBoy/(14252:14252): cant argumentos: 1
+[INFO] 00:46:34:741 gameBoy/(14252:14252): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 00:46:34:741 gameBoy/(14252:14252): largo nombre: 7
+[INFO] 00:46:34:741 gameBoy/(14252:14252): nombre: Pikachu
+[INFO] 00:46:34:741 gameBoy/(14252:14252): paquete->buffer->size 12
+[INFO] 00:46:34:741 gameBoy/(14252:14252): largo nombre 7
+[INFO] 00:46:34:741 gameBoy/(14252:14252): nombre Pikachu
+[INFO] 00:46:34:741 gameBoy/(14252:14252): nombre ÆX
+[INFO] 00:46:34:743 gameBoy/(14252:14252): sizes: 28
+[INFO] 00:46:34:743 gameBoy/(14252:14252): envio: 28
+[INFO] 00:46:34:743 gameBoy/(14252:14252): volvi
+[INFO] 00:46:34:743 gameBoy/(14252:14252): -----------------Destruyendo archivo config-----------------
+[INFO] 15:58:18:829 gameBoy/(4495:4495): -----------------Leyendo archivo config-----------------
+[INFO] 15:58:18:840 gameBoy/(4495:4495): cant argumentos: 1
+[INFO] 15:58:18:840 gameBoy/(4495:4495): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 15:58:18:840 gameBoy/(4495:4495): largo nombre: 7
+[INFO] 15:58:18:840 gameBoy/(4495:4495): nombre: Pikachu
+[INFO] 15:58:18:840 gameBoy/(4495:4495): paquete->buffer->size 12
+[INFO] 15:58:18:840 gameBoy/(4495:4495): largo nombre 7
+[INFO] 15:58:18:840 gameBoy/(4495:4495): nombre Pikachu
+[INFO] 15:58:50:465 gameBoy/(4555:4555): -----------------Leyendo archivo config-----------------
+[INFO] 15:58:50:465 gameBoy/(4555:4555): cant argumentos: 1
+[INFO] 15:58:50:466 gameBoy/(4555:4555): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 15:58:50:466 gameBoy/(4555:4555): largo nombre: 7
+[INFO] 15:58:50:466 gameBoy/(4555:4555): nombre: Pikachu
+[INFO] 15:58:50:466 gameBoy/(4555:4555): paquete->buffer->size 12
+[INFO] 15:58:50:466 gameBoy/(4555:4555): largo nombre 7
+[INFO] 15:58:50:466 gameBoy/(4555:4555): nombre Pikachu
+[INFO] 15:59:14:566 gameBoy/(4629:4629): -----------------Leyendo archivo config-----------------
+[INFO] 15:59:14:567 gameBoy/(4629:4629): cant argumentos: 1
+[INFO] 15:59:14:567 gameBoy/(4629:4629): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 15:59:14:567 gameBoy/(4629:4629): largo nombre: 7
+[INFO] 15:59:14:567 gameBoy/(4629:4629): nombre: Pikachu
+[INFO] 15:59:14:567 gameBoy/(4629:4629): paquete->buffer->size 12
+[INFO] 15:59:14:567 gameBoy/(4629:4629): largo nombre 7
+[INFO] 15:59:14:567 gameBoy/(4629:4629): nombre Pikachu
+[INFO] 16:00:07:972 gameBoy/(4991:4991): -----------------Leyendo archivo config-----------------
+[INFO] 16:00:07:977 gameBoy/(4991:4991): cant argumentos: 1
+[INFO] 16:00:07:977 gameBoy/(4991:4991): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:00:07:978 gameBoy/(4991:4991): largo nombre: 7
+[INFO] 16:00:07:978 gameBoy/(4991:4991): nombre: Pikachu
+[INFO] 16:00:07:978 gameBoy/(4991:4991): paquete->buffer->size 12
+[INFO] 16:00:07:978 gameBoy/(4991:4991): largo nombre 7
+[INFO] 16:00:07:978 gameBoy/(4991:4991): nombre Pikachu
+[INFO] 16:00:07:978 gameBoy/(4991:4991): 1
+[INFO] 16:00:07:985 gameBoy/(4991:4991): 2
+[INFO] 16:00:33:103 gameBoy/(5037:5037): -----------------Leyendo archivo config-----------------
+[INFO] 16:00:33:107 gameBoy/(5037:5037): cant argumentos: 1
+[INFO] 16:00:33:108 gameBoy/(5037:5037): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:00:33:108 gameBoy/(5037:5037): largo nombre: 7
+[INFO] 16:00:33:108 gameBoy/(5037:5037): nombre: Pikachu
+[INFO] 16:00:33:108 gameBoy/(5037:5037): paquete->buffer->size 12
+[INFO] 16:00:33:108 gameBoy/(5037:5037): largo nombre 7
+[INFO] 16:00:33:108 gameBoy/(5037:5037): nombre Pikachu
+[INFO] 16:00:33:109 gameBoy/(5037:5037): 1
+[INFO] 16:00:33:109 gameBoy/(5037:5037): 2
+[INFO] 16:00:33:109 gameBoy/(5037:5037): 3
+[INFO] 16:00:33:109 gameBoy/(5037:5037): nombre 2 ˆ¬	 ¤	
+[INFO] 16:00:33:110 gameBoy/(5037:5037): sizes: 28
+[INFO] 16:00:33:110 gameBoy/(5037:5037): envio: 28
+[INFO] 16:00:33:110 gameBoy/(5037:5037): volvi
+[INFO] 16:00:33:111 gameBoy/(5037:5037): -----------------Destruyendo archivo config-----------------
+[INFO] 16:01:55:629 gameBoy/(5130:5130): -----------------Leyendo archivo config-----------------
+[INFO] 16:01:55:629 gameBoy/(5130:5130): cant argumentos: 1
+[INFO] 16:01:55:630 gameBoy/(5130:5130): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:01:55:630 gameBoy/(5130:5130): largo nombre: 7
+[INFO] 16:01:55:630 gameBoy/(5130:5130): nombre: Pikachu
+[INFO] 16:01:55:630 gameBoy/(5130:5130): paquete->buffer->size 12
+[INFO] 16:01:55:630 gameBoy/(5130:5130): largo nombre 7
+[INFO] 16:01:55:631 gameBoy/(5130:5130): nombre Pikachu
+[INFO] 16:01:55:631 gameBoy/(5130:5130): 1
+[INFO] 16:01:55:631 gameBoy/(5130:5130): 2
+[INFO] 16:01:55:631 gameBoy/(5130:5130): 3
+[INFO] 16:01:55:631 gameBoy/(5130:5130): nombre 2 ˆ\z›
+[INFO] 16:01:55:631 gameBoy/(5130:5130): sizes: 28
+[INFO] 16:01:55:631 gameBoy/(5130:5130): envio: 28
+[INFO] 16:01:55:632 gameBoy/(5130:5130): volvi
+[INFO] 16:01:55:633 gameBoy/(5130:5130): -----------------Destruyendo archivo config-----------------
+[INFO] 16:03:23:953 gameBoy/(5181:5181): -----------------Leyendo archivo config-----------------
+[INFO] 16:03:23:954 gameBoy/(5181:5181): cant argumentos: 1
+[INFO] 16:03:23:956 gameBoy/(5181:5181): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:03:23:956 gameBoy/(5181:5181): largo nombre: 7
+[INFO] 16:03:23:956 gameBoy/(5181:5181): nombre: Pikachu
+[INFO] 16:03:23:957 gameBoy/(5181:5181): paquete->buffer->size 12
+[INFO] 16:03:23:957 gameBoy/(5181:5181): largo nombre 7
+[INFO] 16:03:23:957 gameBoy/(5181:5181): nombre Pikachu
+[INFO] 16:03:23:957 gameBoy/(5181:5181): 1
+[INFO] 16:03:23:957 gameBoy/(5181:5181): 2
+[INFO] 16:03:23:957 gameBoy/(5181:5181): 3
+[INFO] 16:03:23:957 gameBoy/(5181:5181): nombre 2 
+[INFO] 16:03:23:957 gameBoy/(5181:5181): sizes: 28
+[INFO] 16:03:23:959 gameBoy/(5181:5181): envio: 28
+[INFO] 16:03:23:959 gameBoy/(5181:5181): volvi
+[INFO] 16:03:23:959 gameBoy/(5181:5181): -----------------Destruyendo archivo config-----------------
+[INFO] 16:04:29:157 gameBoy/(5611:5611): -----------------Leyendo archivo config-----------------
+[INFO] 16:04:29:158 gameBoy/(5611:5611): cant argumentos: 1
+[INFO] 16:04:29:158 gameBoy/(5611:5611): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:04:29:158 gameBoy/(5611:5611): largo nombre: 7
+[INFO] 16:04:29:158 gameBoy/(5611:5611): nombre: Pikachu
+[INFO] 16:04:29:158 gameBoy/(5611:5611): paquete->buffer->size 12
+[INFO] 16:04:29:158 gameBoy/(5611:5611): largo nombre 7
+[INFO] 16:04:29:158 gameBoy/(5611:5611): nombre Pikachu
+[INFO] 16:04:29:159 gameBoy/(5611:5611): 1
+[INFO] 16:04:29:159 gameBoy/(5611:5611): 2
+[INFO] 16:04:29:159 gameBoy/(5611:5611): 3
+[INFO] 16:05:06:302 gameBoy/(5687:5687): -----------------Leyendo archivo config-----------------
+[INFO] 16:05:06:309 gameBoy/(5687:5687): cant argumentos: 1
+[INFO] 16:05:06:310 gameBoy/(5687:5687): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:05:06:310 gameBoy/(5687:5687): largo nombre: 7
+[INFO] 16:05:06:310 gameBoy/(5687:5687): nombre: Pikachu
+[INFO] 16:05:06:310 gameBoy/(5687:5687): paquete->buffer->size 12
+[INFO] 16:05:06:310 gameBoy/(5687:5687): largo nombre 7
+[INFO] 16:05:06:310 gameBoy/(5687:5687): nombre Pikachu
+[INFO] 16:05:06:310 gameBoy/(5687:5687): 1
+[INFO] 16:05:06:310 gameBoy/(5687:5687): 2
+[INFO] 16:05:06:310 gameBoy/(5687:5687): 3
+[INFO] 16:05:06:310 gameBoy/(5687:5687): PRUEBA: 
+[INFO] 16:05:06:310 gameBoy/(5687:5687): sizes: 28
+[INFO] 16:05:06:310 gameBoy/(5687:5687): envio: 28
+[INFO] 16:05:06:310 gameBoy/(5687:5687): volvi
+[INFO] 16:05:06:311 gameBoy/(5687:5687): -----------------Destruyendo archivo config-----------------
+[INFO] 16:06:04:717 gameBoy/(5756:5756): -----------------Leyendo archivo config-----------------
+[INFO] 16:06:04:717 gameBoy/(5756:5756): cant argumentos: 1
+[INFO] 16:06:04:718 gameBoy/(5756:5756): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:06:04:720 gameBoy/(5756:5756): largo nombre: 7
+[INFO] 16:06:04:721 gameBoy/(5756:5756): nombre: Pikachu
+[INFO] 16:06:04:721 gameBoy/(5756:5756): paquete->buffer->size 12
+[INFO] 16:06:04:721 gameBoy/(5756:5756): largo nombre 7
+[INFO] 16:06:04:721 gameBoy/(5756:5756): nombre Pikachu
+[INFO] 16:06:04:721 gameBoy/(5756:5756): 1
+[INFO] 16:06:04:721 gameBoy/(5756:5756): 2
+[INFO] 16:06:04:725 gameBoy/(5756:5756): 3
+[INFO] 16:06:04:725 gameBoy/(5756:5756): PRUEBA: 
+[INFO] 16:06:04:725 gameBoy/(5756:5756): sizes: 28
+[INFO] 16:06:04:725 gameBoy/(5756:5756): envio: 28
+[INFO] 16:06:04:725 gameBoy/(5756:5756): volvi
+[INFO] 16:06:04:727 gameBoy/(5756:5756): -----------------Destruyendo archivo config-----------------
+[INFO] 16:06:25:21 gameBoy/(5793:5793): -----------------Leyendo archivo config-----------------
+[INFO] 16:06:25:21 gameBoy/(5793:5793): cant argumentos: 1
+[INFO] 16:06:25:22 gameBoy/(5793:5793): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:06:25:22 gameBoy/(5793:5793): largo nombre: 7
+[INFO] 16:06:25:23 gameBoy/(5793:5793): nombre: Pikachu
+[INFO] 16:06:25:23 gameBoy/(5793:5793): paquete->buffer->size 12
+[INFO] 16:06:25:23 gameBoy/(5793:5793): largo nombre 7
+[INFO] 16:06:25:23 gameBoy/(5793:5793): nombre Pikachu
+[INFO] 16:06:25:23 gameBoy/(5793:5793): 1
+[INFO] 16:06:25:23 gameBoy/(5793:5793): 2
+[INFO] 16:06:25:23 gameBoy/(5793:5793): 3
+[INFO] 16:06:25:23 gameBoy/(5793:5793): PRUEBA: 
+[INFO] 16:06:25:23 gameBoy/(5793:5793): sizes: 28
+[INFO] 16:06:25:24 gameBoy/(5793:5793): envio: 28
+[INFO] 16:06:25:24 gameBoy/(5793:5793): volvi
+[INFO] 16:06:25:24 gameBoy/(5793:5793): -----------------Destruyendo archivo config-----------------
+[INFO] 16:08:21:480 gameBoy/(5934:5934): -----------------Leyendo archivo config-----------------
+[INFO] 16:08:21:485 gameBoy/(5934:5934): cant argumentos: 1
+[INFO] 16:08:21:485 gameBoy/(5934:5934): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:08:21:485 gameBoy/(5934:5934): largo nombre: 7
+[INFO] 16:08:21:485 gameBoy/(5934:5934): nombre: Pikachu
+[INFO] 16:08:21:486 gameBoy/(5934:5934): paquete->buffer->size 12
+[INFO] 16:08:21:486 gameBoy/(5934:5934): largo nombre 7
+[INFO] 16:08:21:486 gameBoy/(5934:5934): nombre Pikachu
+[INFO] 16:08:21:486 gameBoy/(5934:5934): 1
+[INFO] 16:08:21:486 gameBoy/(5934:5934): 2
+[INFO] 16:08:21:486 gameBoy/(5934:5934): 3
+[INFO] 16:08:21:486 gameBoy/(5934:5934): PRUEBA: pikachu
+[INFO] 16:08:21:486 gameBoy/(5934:5934): sizes: 28
+[INFO] 16:08:21:486 gameBoy/(5934:5934): envio: 28
+[INFO] 16:08:21:486 gameBoy/(5934:5934): volvi
+[INFO] 16:08:21:486 gameBoy/(5934:5934): -----------------Destruyendo archivo config-----------------
+[INFO] 16:09:03:601 gameBoy/(6033:6033): -----------------Leyendo archivo config-----------------
+[INFO] 16:09:03:601 gameBoy/(6033:6033): cant argumentos: 1
+[INFO] 16:09:03:602 gameBoy/(6033:6033): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:09:03:602 gameBoy/(6033:6033): largo nombre: 7
+[INFO] 16:09:03:602 gameBoy/(6033:6033): nombre: Pikachu
+[INFO] 16:09:03:602 gameBoy/(6033:6033): paquete->buffer->size 12
+[INFO] 16:09:03:602 gameBoy/(6033:6033): largo nombre 7
+[INFO] 16:09:03:603 gameBoy/(6033:6033): nombre Pikachu
+[INFO] 16:09:03:603 gameBoy/(6033:6033): 1
+[INFO] 16:09:03:603 gameBoy/(6033:6033): 2
+[INFO] 16:09:03:603 gameBoy/(6033:6033): 3
+[INFO] 16:09:03:607 gameBoy/(6033:6033): PRUEBA: pikachu
+[INFO] 16:09:03:607 gameBoy/(6033:6033): sizes: 28
+[INFO] 16:09:03:607 gameBoy/(6033:6033): envio: 28
+[INFO] 16:09:03:608 gameBoy/(6033:6033): volvi
+[INFO] 16:09:03:608 gameBoy/(6033:6033): -----------------Destruyendo archivo config-----------------
+[INFO] 16:10:49:12 gameBoy/(6169:6169): -----------------Leyendo archivo config-----------------
+[INFO] 16:10:49:16 gameBoy/(6169:6169): cant argumentos: 1
+[INFO] 16:10:49:16 gameBoy/(6169:6169): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:10:49:16 gameBoy/(6169:6169): largo nombre: 7
+[INFO] 16:10:49:16 gameBoy/(6169:6169): nombre: Pikachu
+[INFO] 16:10:49:16 gameBoy/(6169:6169): paquete->buffer->size 12
+[INFO] 16:10:49:16 gameBoy/(6169:6169): largo nombre 7
+[INFO] 16:10:49:16 gameBoy/(6169:6169): nombre Pikachu
+[INFO] 16:10:49:16 gameBoy/(6169:6169): 1
+[INFO] 16:10:49:17 gameBoy/(6169:6169): 2
+[INFO] 16:10:49:17 gameBoy/(6169:6169): 3
+[INFO] 16:10:49:17 gameBoy/(6169:6169): PRUEBA: pikachu
+[INFO] 16:10:49:17 gameBoy/(6169:6169): sizes: 28
+[INFO] 16:10:49:17 gameBoy/(6169:6169): envio: 28
+[INFO] 16:10:49:17 gameBoy/(6169:6169): volvi
+[INFO] 16:10:49:17 gameBoy/(6169:6169): -----------------Destruyendo archivo config-----------------
+[INFO] 16:13:20:207 gameBoy/(6379:6379): -----------------Leyendo archivo config-----------------
+[INFO] 16:13:20:207 gameBoy/(6379:6379): cant argumentos: 1
+[INFO] 16:13:20:208 gameBoy/(6379:6379): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:13:20:208 gameBoy/(6379:6379): largo nombre: 7
+[INFO] 16:13:20:208 gameBoy/(6379:6379): nombre: Pikachu
+[INFO] 16:13:20:208 gameBoy/(6379:6379): paquete->buffer->size 12
+[INFO] 16:13:20:208 gameBoy/(6379:6379): largo nombre 7
+[INFO] 16:13:20:208 gameBoy/(6379:6379): nombre Pikachu
+[INFO] 16:13:20:208 gameBoy/(6379:6379): 1
+[INFO] 16:13:20:208 gameBoy/(6379:6379): 2
+[INFO] 16:13:20:208 gameBoy/(6379:6379): 3
+[INFO] 16:13:20:208 gameBoy/(6379:6379): PRUEBA: pikachu
+[INFO] 16:13:20:209 gameBoy/(6379:6379): sizes: 28
+[INFO] 16:13:20:209 gameBoy/(6379:6379): envio: 28
+[INFO] 16:13:20:209 gameBoy/(6379:6379): volvi
+[INFO] 16:13:20:209 gameBoy/(6379:6379): -----------------Destruyendo archivo config-----------------
+[INFO] 16:17:45:425 gameBoy/(7263:7263): -----------------Leyendo archivo config-----------------
+[INFO] 16:17:45:429 gameBoy/(7263:7263): cant argumentos: 1
+[INFO] 16:17:45:430 gameBoy/(7263:7263): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:17:45:430 gameBoy/(7263:7263): largo nombre: 7
+[INFO] 16:17:45:430 gameBoy/(7263:7263): nombre: Pikachu
+[INFO] 16:17:45:430 gameBoy/(7263:7263): paquete->buffer->size 102
+[INFO] 16:17:45:430 gameBoy/(7263:7263): largo nombre 7
+[INFO] 16:17:45:430 gameBoy/(7263:7263): nombre Pikachu
+[INFO] 16:17:45:431 gameBoy/(7263:7263): 1
+[INFO] 16:17:45:431 gameBoy/(7263:7263): 2
+[INFO] 16:17:45:431 gameBoy/(7263:7263): 3
+[INFO] 16:17:45:431 gameBoy/(7263:7263): PRUEBA: pikachu
+[INFO] 16:17:45:431 gameBoy/(7263:7263): sizes: 118
+[INFO] 16:17:45:431 gameBoy/(7263:7263): envio: 118
+[INFO] 16:17:45:431 gameBoy/(7263:7263): volvi
+[INFO] 16:17:45:431 gameBoy/(7263:7263): -----------------Destruyendo archivo config-----------------
+[INFO] 16:21:46:489 gameBoy/(7609:7609): -----------------Leyendo archivo config-----------------
+[INFO] 16:21:46:490 gameBoy/(7609:7609): cant argumentos: 1
+[INFO] 16:21:46:490 gameBoy/(7609:7609): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:21:46:493 gameBoy/(7609:7609): largo nombre: 7
+[INFO] 16:21:46:494 gameBoy/(7609:7609): nombre: Pikachu
+[INFO] 16:21:46:494 gameBoy/(7609:7609): paquete->buffer->size 12
+[INFO] 16:21:46:494 gameBoy/(7609:7609): largo nombre 7
+[INFO] 16:21:46:494 gameBoy/(7609:7609): nombre Pikachu
+[INFO] 16:21:46:494 gameBoy/(7609:7609): 1
+[INFO] 16:21:46:494 gameBoy/(7609:7609): 2
+[INFO] 16:21:46:494 gameBoy/(7609:7609): 3
+[INFO] 16:21:46:494 gameBoy/(7609:7609): PRUEBA: pikachu
+[INFO] 16:21:46:494 gameBoy/(7609:7609): sizes: 28
+[INFO] 16:21:46:494 gameBoy/(7609:7609): envio: 28
+[INFO] 16:21:46:495 gameBoy/(7609:7609): volvi
+[INFO] 16:21:46:495 gameBoy/(7609:7609): -----------------Destruyendo archivo config-----------------
+[INFO] 16:23:36:475 gameBoy/(7780:7780): -----------------Leyendo archivo config-----------------
+[INFO] 16:23:36:481 gameBoy/(7780:7780): cant argumentos: 1
+[INFO] 16:23:36:481 gameBoy/(7780:7780): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:23:36:482 gameBoy/(7780:7780): largo nombre: 7
+[INFO] 16:23:36:482 gameBoy/(7780:7780): nombre: Pikachu
+[INFO] 16:23:36:482 gameBoy/(7780:7780): paquete->buffer->size 12
+[INFO] 16:23:36:482 gameBoy/(7780:7780): largo nombre 7
+[INFO] 16:23:36:482 gameBoy/(7780:7780): nombre Pikachu
+[INFO] 16:23:36:482 gameBoy/(7780:7780): 1
+[INFO] 16:23:36:482 gameBoy/(7780:7780): 2
+[INFO] 16:23:36:484 gameBoy/(7780:7780): 3
+[INFO] 16:23:36:484 gameBoy/(7780:7780): PRUEBA: pikachu
+[INFO] 16:23:36:484 gameBoy/(7780:7780): sizes: 28
+[INFO] 16:23:36:484 gameBoy/(7780:7780): envio: 28
+[INFO] 16:23:36:484 gameBoy/(7780:7780): volvi
+[INFO] 16:23:36:484 gameBoy/(7780:7780): -----------------Destruyendo archivo config-----------------
+[INFO] 16:24:28:434 gameBoy/(7875:7875): -----------------Leyendo archivo config-----------------
+[INFO] 16:24:28:439 gameBoy/(7875:7875): cant argumentos: 1
+[INFO] 16:24:28:440 gameBoy/(7875:7875): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:24:28:441 gameBoy/(7875:7875): largo nombre: 7
+[INFO] 16:24:28:442 gameBoy/(7875:7875): nombre: Pikachu
+[INFO] 16:24:28:442 gameBoy/(7875:7875): paquete->buffer->size 12
+[INFO] 16:24:28:442 gameBoy/(7875:7875): largo nombre 7
+[INFO] 16:24:28:442 gameBoy/(7875:7875): nombre Pikachu
+[INFO] 16:24:28:442 gameBoy/(7875:7875): 1
+[INFO] 16:24:28:442 gameBoy/(7875:7875): 2
+[INFO] 16:24:28:442 gameBoy/(7875:7875): 3
+[INFO] 16:24:28:442 gameBoy/(7875:7875): PRUEBA: pikachu
+[INFO] 16:24:28:442 gameBoy/(7875:7875): sizes: 28
+[INFO] 16:24:28:442 gameBoy/(7875:7875): envio: 28
+[INFO] 16:24:28:443 gameBoy/(7875:7875): volvi
+[INFO] 16:24:28:443 gameBoy/(7875:7875): -----------------Destruyendo archivo config-----------------
+[INFO] 16:24:53:339 gameBoy/(7961:7961): -----------------Leyendo archivo config-----------------
+[INFO] 16:24:53:351 gameBoy/(7961:7961): cant argumentos: 1
+[INFO] 16:24:53:351 gameBoy/(7961:7961): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:24:53:351 gameBoy/(7961:7961): largo nombre: 7
+[INFO] 16:24:53:351 gameBoy/(7961:7961): nombre: Pikachu
+[INFO] 16:24:53:352 gameBoy/(7961:7961): paquete->buffer->size 12
+[INFO] 16:24:53:352 gameBoy/(7961:7961): largo nombre 7
+[INFO] 16:24:53:352 gameBoy/(7961:7961): nombre Pikachu
+[INFO] 16:24:53:352 gameBoy/(7961:7961): 1
+[INFO] 16:24:53:352 gameBoy/(7961:7961): 2
+[INFO] 16:24:53:352 gameBoy/(7961:7961): 3
+[INFO] 16:24:53:352 gameBoy/(7961:7961): PRUEBA: pikachu
+[INFO] 16:24:53:352 gameBoy/(7961:7961): sizes: 28
+[INFO] 16:24:53:352 gameBoy/(7961:7961): envio: 28
+[INFO] 16:24:53:352 gameBoy/(7961:7961): volvi
+[INFO] 16:24:53:352 gameBoy/(7961:7961): -----------------Destruyendo archivo config-----------------
+[INFO] 16:34:35:937 gameBoy/(8421:8421): -----------------Leyendo archivo config-----------------
+[INFO] 16:34:35:937 gameBoy/(8421:8421): cant argumentos: 1
+[INFO] 16:34:35:938 gameBoy/(8421:8421): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:34:35:938 gameBoy/(8421:8421): largo nombre: 7
+[INFO] 16:34:35:938 gameBoy/(8421:8421): nombre: Pikachu
+[INFO] 16:34:35:938 gameBoy/(8421:8421): paquete->buffer->size 12
+[INFO] 16:34:35:938 gameBoy/(8421:8421): largo nombre 7
+[INFO] 16:34:35:938 gameBoy/(8421:8421): nombre Pikachu
+[INFO] 16:34:35:938 gameBoy/(8421:8421): 1
+[INFO] 16:34:35:938 gameBoy/(8421:8421): 2
+[INFO] 16:34:35:938 gameBoy/(8421:8421): 3
+[INFO] 16:34:35:938 gameBoy/(8421:8421): PRUEBA: pikachu
+[INFO] 16:34:35:938 gameBoy/(8421:8421): sizes: 28
+[INFO] 16:34:35:938 gameBoy/(8421:8421): envio: 28
+[INFO] 16:34:35:938 gameBoy/(8421:8421): volvi
+[INFO] 16:34:35:939 gameBoy/(8421:8421): -----------------Destruyendo archivo config-----------------
+[INFO] 16:35:21:827 gameBoy/(8479:8479): -----------------Leyendo archivo config-----------------
+[INFO] 16:35:21:828 gameBoy/(8479:8479): cant argumentos: 1
+[ERROR] 16:35:21:828 gameBoy/(8479:8479): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:35:21:828 gameBoy/(8479:8479): largo nombre: 7
+[INFO] 16:35:21:828 gameBoy/(8479:8479): nombre: Pikachu
+[INFO] 16:35:21:828 gameBoy/(8479:8479): paquete->buffer->size 12
+[INFO] 16:35:21:828 gameBoy/(8479:8479): largo nombre 7
+[INFO] 16:35:21:829 gameBoy/(8479:8479): nombre Pikachu
+[INFO] 16:35:21:829 gameBoy/(8479:8479): 1
+[INFO] 16:35:21:829 gameBoy/(8479:8479): 2
+[INFO] 16:35:21:829 gameBoy/(8479:8479): 3
+[INFO] 16:35:21:829 gameBoy/(8479:8479): PRUEBA: pikachu
+[INFO] 16:35:21:829 gameBoy/(8479:8479): sizes: 28
+[INFO] 16:38:01:328 gameBoy/(8799:8799): -----------------Leyendo archivo config-----------------
+[INFO] 16:38:01:337 gameBoy/(8799:8799): cant argumentos: 1
+[INFO] 16:38:01:337 gameBoy/(8799:8799): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:38:01:337 gameBoy/(8799:8799): largo nombre: 7
+[INFO] 16:38:01:337 gameBoy/(8799:8799): nombre: Pikachu
+[INFO] 16:38:01:337 gameBoy/(8799:8799): paquete->buffer->size 12
+[INFO] 16:38:01:337 gameBoy/(8799:8799): largo nombre 7
+[INFO] 16:38:01:337 gameBoy/(8799:8799): nombre Pikachu
+[INFO] 16:38:01:337 gameBoy/(8799:8799): 1
+[INFO] 16:38:01:337 gameBoy/(8799:8799): 2
+[INFO] 16:39:17:12 gameBoy/(8869:8869): -----------------Leyendo archivo config-----------------
+[INFO] 16:39:17:12 gameBoy/(8869:8869): cant argumentos: 1
+[INFO] 16:39:17:13 gameBoy/(8869:8869): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:39:17:18 gameBoy/(8869:8869): largo nombre: 7
+[INFO] 16:39:17:18 gameBoy/(8869:8869): nombre: Pikachu
+[INFO] 16:39:17:18 gameBoy/(8869:8869): paquete->buffer->size 12
+[INFO] 16:39:17:18 gameBoy/(8869:8869): largo nombre 7
+[INFO] 16:39:17:18 gameBoy/(8869:8869): nombre Pikachu
+[INFO] 16:39:17:19 gameBoy/(8869:8869): 1
+[INFO] 16:39:17:19 gameBoy/(8869:8869): 2
+[INFO] 16:39:17:19 gameBoy/(8869:8869): 3
+[INFO] 16:39:17:19 gameBoy/(8869:8869): PRUEBA: pikachu
+[INFO] 16:39:17:19 gameBoy/(8869:8869): sizes: 28
+[INFO] 16:39:17:19 gameBoy/(8869:8869): envio: 28
+[INFO] 16:39:17:19 gameBoy/(8869:8869): volvi
+[INFO] 16:39:17:19 gameBoy/(8869:8869): -----------------Destruyendo archivo config-----------------
+[INFO] 16:43:22:181 gameBoy/(9065:9065): -----------------Leyendo archivo config-----------------
+[INFO] 16:43:22:181 gameBoy/(9065:9065): cant argumentos: 1
+[INFO] 16:43:22:182 gameBoy/(9065:9065): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:43:22:182 gameBoy/(9065:9065): largo nombre: 7
+[INFO] 16:43:22:182 gameBoy/(9065:9065): nombre: Pikachu
+[INFO] 16:43:22:182 gameBoy/(9065:9065): paquete->buffer->size 12
+[INFO] 16:43:22:182 gameBoy/(9065:9065): largo nombre 7
+[INFO] 16:43:22:182 gameBoy/(9065:9065): nombre Pikachu
+[INFO] 16:43:22:183 gameBoy/(9065:9065): 1
+[INFO] 16:43:22:183 gameBoy/(9065:9065): 2
+[INFO] 16:43:34:225 gameBoy/(9103:9103): -----------------Leyendo archivo config-----------------
+[INFO] 16:43:34:234 gameBoy/(9103:9103): cant argumentos: 1
+[INFO] 16:43:34:236 gameBoy/(9103:9103): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:43:34:236 gameBoy/(9103:9103): largo nombre: 7
+[INFO] 16:43:34:236 gameBoy/(9103:9103): nombre: Pikachu
+[INFO] 16:43:34:236 gameBoy/(9103:9103): paquete->buffer->size 12
+[INFO] 16:43:34:237 gameBoy/(9103:9103): largo nombre 7
+[INFO] 16:43:34:237 gameBoy/(9103:9103): nombre Pikachu
+[INFO] 16:43:34:237 gameBoy/(9103:9103): 1
+[INFO] 16:43:34:237 gameBoy/(9103:9103): 2
+[INFO] 16:43:34:237 gameBoy/(9103:9103): 3
+[INFO] 16:43:34:237 gameBoy/(9103:9103): PRUEBA: pikachu
+[INFO] 16:43:34:237 gameBoy/(9103:9103): sizes: 28
+[INFO] 16:43:34:237 gameBoy/(9103:9103): envio: 28
+[INFO] 16:43:34:237 gameBoy/(9103:9103): volvi
+[INFO] 16:43:34:237 gameBoy/(9103:9103): -----------------Destruyendo archivo config-----------------
+[INFO] 16:44:20:602 gameBoy/(9373:9373): -----------------Leyendo archivo config-----------------
+[INFO] 16:44:20:602 gameBoy/(9373:9373): cant argumentos: 1
+[INFO] 16:44:20:602 gameBoy/(9373:9373): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:44:20:602 gameBoy/(9373:9373): largo nombre: 7
+[INFO] 16:44:20:602 gameBoy/(9373:9373): nombre: Pikachu
+[INFO] 16:44:20:603 gameBoy/(9373:9373): paquete->buffer->size 12
+[INFO] 16:44:20:603 gameBoy/(9373:9373): largo nombre 7
+[INFO] 16:44:20:603 gameBoy/(9373:9373): nombre Pikachu
+[INFO] 16:44:20:603 gameBoy/(9373:9373): 1
+[INFO] 16:44:20:603 gameBoy/(9373:9373): 2
+[INFO] 16:44:20:603 gameBoy/(9373:9373): 3
+[INFO] 16:44:20:603 gameBoy/(9373:9373): PRUEBA: pikachu
+[INFO] 16:44:20:603 gameBoy/(9373:9373): sizes: 28
+[INFO] 16:44:20:603 gameBoy/(9373:9373): envio: 28
+[INFO] 16:44:20:603 gameBoy/(9373:9373): volvi
+[INFO] 16:44:20:603 gameBoy/(9373:9373): -----------------Destruyendo archivo config-----------------
+[INFO] 16:45:53:96 gameBoy/(9592:9592): -----------------Leyendo archivo config-----------------
+[INFO] 16:45:53:112 gameBoy/(9592:9592): cant argumentos: 1
+[INFO] 16:45:53:113 gameBoy/(9592:9592): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:45:53:113 gameBoy/(9592:9592): largo nombre: 7
+[INFO] 16:45:53:113 gameBoy/(9592:9592): nombre: Pikachu
+[INFO] 16:45:53:113 gameBoy/(9592:9592): paquete->buffer->size 12
+[INFO] 16:45:53:113 gameBoy/(9592:9592): largo nombre 7
+[INFO] 16:45:53:113 gameBoy/(9592:9592): nombre Pikachu
+[INFO] 16:45:53:113 gameBoy/(9592:9592): 1
+[INFO] 16:45:53:113 gameBoy/(9592:9592): 2
+[INFO] 16:45:53:113 gameBoy/(9592:9592): 3
+[INFO] 16:45:53:113 gameBoy/(9592:9592): PRUEBA: pikachu
+[INFO] 16:45:53:113 gameBoy/(9592:9592): sizes: 28
+[INFO] 16:45:53:113 gameBoy/(9592:9592): envio: 28
+[INFO] 16:45:53:113 gameBoy/(9592:9592): volvi
+[INFO] 16:45:53:113 gameBoy/(9592:9592): -----------------Destruyendo archivo config-----------------
+[INFO] 16:46:31:545 gameBoy/(9712:9712): -----------------Leyendo archivo config-----------------
+[INFO] 16:46:31:546 gameBoy/(9712:9712): cant argumentos: 1
+[INFO] 16:46:31:547 gameBoy/(9712:9712): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:46:31:547 gameBoy/(9712:9712): largo nombre: 7
+[INFO] 16:46:31:547 gameBoy/(9712:9712): nombre: Pikachu
+[INFO] 16:46:31:548 gameBoy/(9712:9712): paquete->buffer->size 12
+[INFO] 16:46:31:548 gameBoy/(9712:9712): largo nombre 7
+[INFO] 16:46:31:548 gameBoy/(9712:9712): nombre Pikachu
+[INFO] 16:46:31:548 gameBoy/(9712:9712): 1
+[INFO] 16:46:31:548 gameBoy/(9712:9712): 2
+[INFO] 16:46:31:548 gameBoy/(9712:9712): 3
+[INFO] 16:46:31:548 gameBoy/(9712:9712): PRUEBA: pikachu
+[INFO] 16:46:31:548 gameBoy/(9712:9712): sizes: 28
+[INFO] 16:46:31:548 gameBoy/(9712:9712): envio: 28
+[INFO] 16:46:31:548 gameBoy/(9712:9712): volvi
+[INFO] 16:46:31:548 gameBoy/(9712:9712): -----------------Destruyendo archivo config-----------------
+[INFO] 16:48:07:886 gameBoy/(9865:9865): -----------------Leyendo archivo config-----------------
+[INFO] 16:48:07:886 gameBoy/(9865:9865): cant argumentos: 1
+[INFO] 16:48:07:887 gameBoy/(9865:9865): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:48:07:887 gameBoy/(9865:9865): largo nombre: 7
+[INFO] 16:48:07:887 gameBoy/(9865:9865): nombre: Pikachu
+[INFO] 16:48:07:887 gameBoy/(9865:9865): paquete->buffer->size 12
+[INFO] 16:48:07:887 gameBoy/(9865:9865): largo nombre 7
+[INFO] 16:48:07:887 gameBoy/(9865:9865): nombre Pikachu
+[INFO] 16:48:07:887 gameBoy/(9865:9865): 1
+[INFO] 16:48:07:887 gameBoy/(9865:9865): 2
+[INFO] 16:48:07:887 gameBoy/(9865:9865): 3
+[INFO] 16:48:07:887 gameBoy/(9865:9865): PRUEBA: pikachu
+[INFO] 16:48:07:888 gameBoy/(9865:9865): sizes: 28
+[INFO] 16:48:07:888 gameBoy/(9865:9865): envio: 28
+[INFO] 16:48:07:888 gameBoy/(9865:9865): volvi
+[INFO] 16:48:07:888 gameBoy/(9865:9865): -----------------Destruyendo archivo config-----------------
+[INFO] 16:50:36:485 gameBoy/(9982:9982): -----------------Leyendo archivo config-----------------
+[INFO] 16:50:36:485 gameBoy/(9982:9982): cant argumentos: 1
+[INFO] 16:50:36:486 gameBoy/(9982:9982): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:50:36:486 gameBoy/(9982:9982): largo nombre: 7
+[INFO] 16:50:36:486 gameBoy/(9982:9982): nombre: Pikachu
+[INFO] 16:50:36:486 gameBoy/(9982:9982): paquete->buffer->size 12
+[INFO] 16:50:36:486 gameBoy/(9982:9982): largo nombre 7
+[INFO] 16:50:36:486 gameBoy/(9982:9982): nombre Pikachu
+[INFO] 16:50:36:486 gameBoy/(9982:9982): 1
+[INFO] 16:50:36:486 gameBoy/(9982:9982): 2
+[INFO] 16:50:36:486 gameBoy/(9982:9982): 3
+[INFO] 16:50:36:486 gameBoy/(9982:9982): PRUEBA: pikachu
+[INFO] 16:50:36:486 gameBoy/(9982:9982): sizes: 28
+[INFO] 16:50:36:486 gameBoy/(9982:9982): envio: 28
+[INFO] 16:50:36:489 gameBoy/(9982:9982): volvi
+[INFO] 16:50:36:489 gameBoy/(9982:9982): -----------------Destruyendo archivo config-----------------
+[INFO] 16:51:03:593 gameBoy/(10066:10066): -----------------Leyendo archivo config-----------------
+[INFO] 16:51:03:594 gameBoy/(10066:10066): cant argumentos: 1
+[INFO] 16:51:03:594 gameBoy/(10066:10066): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:03:595 gameBoy/(10066:10066): largo nombre: 7
+[INFO] 16:51:03:595 gameBoy/(10066:10066): nombre: Pikachu
+[INFO] 16:51:03:595 gameBoy/(10066:10066): paquete->buffer->size 12
+[INFO] 16:51:03:595 gameBoy/(10066:10066): largo nombre 7
+[INFO] 16:51:03:595 gameBoy/(10066:10066): nombre Pikachu
+[INFO] 16:51:03:595 gameBoy/(10066:10066): 1
+[INFO] 16:51:03:595 gameBoy/(10066:10066): 2
+[INFO] 16:51:03:595 gameBoy/(10066:10066): 3
+[INFO] 16:51:03:595 gameBoy/(10066:10066): PRUEBA: pikachu
+[INFO] 16:51:03:595 gameBoy/(10066:10066): sizes: 28
+[INFO] 16:51:03:595 gameBoy/(10066:10066): envio: 28
+[INFO] 16:51:03:595 gameBoy/(10066:10066): volvi
+[INFO] 16:51:03:595 gameBoy/(10066:10066): -----------------Destruyendo archivo config-----------------
+[INFO] 16:54:38:376 gameBoy/(10402:10402): -----------------Leyendo archivo config-----------------
+[INFO] 16:54:38:382 gameBoy/(10402:10402): cant argumentos: 1
+[INFO] 16:54:38:382 gameBoy/(10402:10402): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:54:38:382 gameBoy/(10402:10402): largo nombre: 7
+[INFO] 16:54:38:382 gameBoy/(10402:10402): nombre: Pikachu
+[INFO] 16:54:38:382 gameBoy/(10402:10402): paquete->buffer->size 12
+[INFO] 16:54:38:382 gameBoy/(10402:10402): largo nombre 7
+[INFO] 16:54:38:383 gameBoy/(10402:10402): nombre Pikachu
+[INFO] 16:54:38:383 gameBoy/(10402:10402): 1
+[INFO] 16:54:38:383 gameBoy/(10402:10402): 2
+[INFO] 16:54:38:383 gameBoy/(10402:10402): 3
+[INFO] 16:54:38:383 gameBoy/(10402:10402): PRUEBA: pikachu
+[INFO] 16:54:38:383 gameBoy/(10402:10402): sizes: 28
+[INFO] 16:54:38:383 gameBoy/(10402:10402): envio: 28
+[INFO] 16:54:38:383 gameBoy/(10402:10402): volvi
+[INFO] 16:54:38:383 gameBoy/(10402:10402): -----------------Destruyendo archivo config-----------------
+[INFO] 16:55:57:750 gameBoy/(10526:10526): -----------------Leyendo archivo config-----------------
+[INFO] 16:55:57:754 gameBoy/(10526:10526): cant argumentos: 1
+[INFO] 16:55:57:754 gameBoy/(10526:10526): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:55:57:754 gameBoy/(10526:10526): largo nombre: 7
+[INFO] 16:55:57:754 gameBoy/(10526:10526): nombre: Pikachu
+[INFO] 16:55:57:754 gameBoy/(10526:10526): paquete->buffer->size 12
+[INFO] 16:55:57:754 gameBoy/(10526:10526): largo nombre 7
+[INFO] 16:55:57:754 gameBoy/(10526:10526): nombre Pikachu
+[INFO] 16:55:57:754 gameBoy/(10526:10526): 1
+[INFO] 16:55:57:754 gameBoy/(10526:10526): 2
+[INFO] 16:55:57:754 gameBoy/(10526:10526): 3
+[INFO] 16:55:57:755 gameBoy/(10526:10526): PRUEBA: pikachu
+[INFO] 16:55:57:755 gameBoy/(10526:10526): sizes: 28
+[INFO] 16:55:57:755 gameBoy/(10526:10526): envio: 28
+[INFO] 16:55:57:755 gameBoy/(10526:10526): volvi
+[INFO] 16:55:57:755 gameBoy/(10526:10526): -----------------Destruyendo archivo config-----------------
+[INFO] 16:57:07:82 gameBoy/(10636:10636): -----------------Leyendo archivo config-----------------
+[INFO] 16:57:07:84 gameBoy/(10636:10636): cant argumentos: 1
+[INFO] 16:57:07:84 gameBoy/(10636:10636): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:57:07:84 gameBoy/(10636:10636): largo nombre: 7
+[INFO] 16:57:07:84 gameBoy/(10636:10636): nombre: Pikachu
+[INFO] 16:57:07:84 gameBoy/(10636:10636): paquete->buffer->size 12
+[INFO] 16:57:07:84 gameBoy/(10636:10636): largo nombre 7
+[INFO] 16:57:07:85 gameBoy/(10636:10636): nombre Pikachu
+[INFO] 16:57:07:85 gameBoy/(10636:10636): 1
+[INFO] 16:57:07:85 gameBoy/(10636:10636): 2
+[INFO] 16:57:07:85 gameBoy/(10636:10636): 3
+[INFO] 16:57:07:85 gameBoy/(10636:10636): PRUEBA: pikachu
+[INFO] 16:57:07:85 gameBoy/(10636:10636): sizes: 28
+[INFO] 16:57:07:85 gameBoy/(10636:10636): envio: 28
+[INFO] 16:57:07:85 gameBoy/(10636:10636): volvi
+[INFO] 16:57:07:85 gameBoy/(10636:10636): -----------------Destruyendo archivo config-----------------
+[INFO] 16:58:08:210 gameBoy/(10729:10729): -----------------Leyendo archivo config-----------------
+[INFO] 16:58:08:211 gameBoy/(10729:10729): cant argumentos: 1
+[INFO] 16:58:08:211 gameBoy/(10729:10729): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:58:08:211 gameBoy/(10729:10729): largo nombre: 7
+[INFO] 16:58:08:211 gameBoy/(10729:10729): nombre: Pikachu
+[INFO] 16:58:08:211 gameBoy/(10729:10729): paquete->buffer->size 12
+[INFO] 16:58:08:211 gameBoy/(10729:10729): largo nombre 7
+[INFO] 16:58:08:212 gameBoy/(10729:10729): nombre Pikachu
+[INFO] 16:58:08:212 gameBoy/(10729:10729): 1
+[INFO] 16:58:08:212 gameBoy/(10729:10729): 2
+[INFO] 16:58:08:212 gameBoy/(10729:10729): 3
+[INFO] 16:58:08:212 gameBoy/(10729:10729): PRUEBA: pikachu
+[INFO] 16:58:08:212 gameBoy/(10729:10729): sizes: 28
+[INFO] 16:58:08:212 gameBoy/(10729:10729): envio: 28
+[INFO] 16:58:08:212 gameBoy/(10729:10729): volvi
+[INFO] 16:58:08:212 gameBoy/(10729:10729): -----------------Destruyendo archivo config-----------------
+[INFO] 16:59:31:490 gameBoy/(10841:10841): -----------------Leyendo archivo config-----------------
+[INFO] 16:59:31:490 gameBoy/(10841:10841): cant argumentos: 1
+[INFO] 16:59:31:491 gameBoy/(10841:10841): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:59:31:491 gameBoy/(10841:10841): largo nombre: 7
+[INFO] 16:59:31:491 gameBoy/(10841:10841): nombre: Pikachu
+[INFO] 16:59:31:491 gameBoy/(10841:10841): paquete->buffer->size 12
+[INFO] 16:59:31:491 gameBoy/(10841:10841): largo nombre 7
+[INFO] 16:59:31:491 gameBoy/(10841:10841): nombre Pikachu
+[INFO] 16:59:31:491 gameBoy/(10841:10841): 1
+[INFO] 16:59:31:491 gameBoy/(10841:10841): 2
+[INFO] 16:59:31:491 gameBoy/(10841:10841): 3
+[INFO] 16:59:31:491 gameBoy/(10841:10841): PRUEBA: pikachu
+[INFO] 16:59:31:491 gameBoy/(10841:10841): sizes: 28
+[INFO] 16:59:31:491 gameBoy/(10841:10841): envio: 28
+[INFO] 16:59:31:491 gameBoy/(10841:10841): volvi
+[INFO] 16:59:31:491 gameBoy/(10841:10841): -----------------Destruyendo archivo config-----------------
+[INFO] 17:00:51:218 gameBoy/(10952:10952): -----------------Leyendo archivo config-----------------
+[INFO] 17:00:51:220 gameBoy/(10952:10952): cant argumentos: 1
+[INFO] 17:00:51:221 gameBoy/(10952:10952): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:00:51:221 gameBoy/(10952:10952): largo nombre: 7
+[INFO] 17:00:51:221 gameBoy/(10952:10952): nombre: Pikachu
+[INFO] 17:00:51:221 gameBoy/(10952:10952): paquete->buffer->size 12
+[INFO] 17:00:51:221 gameBoy/(10952:10952): largo nombre 7
+[INFO] 17:00:51:221 gameBoy/(10952:10952): nombre Pikachu
+[INFO] 17:00:51:221 gameBoy/(10952:10952): 1
+[INFO] 17:00:51:221 gameBoy/(10952:10952): 2
+[INFO] 17:00:51:221 gameBoy/(10952:10952): 3
+[INFO] 17:00:51:221 gameBoy/(10952:10952): PRUEBA: Pikachu
+[INFO] 17:00:51:222 gameBoy/(10952:10952): sizes: 28
+[INFO] 17:00:51:222 gameBoy/(10952:10952): envio: 28
+[INFO] 17:00:51:222 gameBoy/(10952:10952): volvi
+[INFO] 17:00:51:222 gameBoy/(10952:10952): -----------------Destruyendo archivo config-----------------
+[INFO] 17:01:35:875 gameBoy/(11048:11048): -----------------Leyendo archivo config-----------------
+[INFO] 17:01:35:875 gameBoy/(11048:11048): cant argumentos: 1
+[INFO] 17:01:35:875 gameBoy/(11048:11048): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:01:35:875 gameBoy/(11048:11048): largo nombre: 7
+[INFO] 17:01:35:875 gameBoy/(11048:11048): nombre: Pikachu
+[INFO] 17:01:35:876 gameBoy/(11048:11048): paquete->buffer->size 12
+[INFO] 17:01:35:876 gameBoy/(11048:11048): largo nombre 7
+[INFO] 17:01:35:876 gameBoy/(11048:11048): nombre Pikachu
+[INFO] 17:01:35:876 gameBoy/(11048:11048): sizes: 28
+[INFO] 17:01:35:876 gameBoy/(11048:11048): envio: 28
+[INFO] 17:01:35:876 gameBoy/(11048:11048): volvi
+[INFO] 17:01:35:876 gameBoy/(11048:11048): -----------------Destruyendo archivo config-----------------
+[INFO] 17:01:48:902 gameBoy/(11290:11290): -----------------Leyendo archivo config-----------------
+[INFO] 17:01:48:915 gameBoy/(11290:11290): cant argumentos: 1
+[INFO] 17:01:48:915 gameBoy/(11290:11290): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:01:48:915 gameBoy/(11290:11290): largo nombre: 7
+[INFO] 17:01:48:915 gameBoy/(11290:11290): nombre: Pikachu
+[INFO] 17:01:48:915 gameBoy/(11290:11290): paquete->buffer->size 12
+[INFO] 17:01:48:915 gameBoy/(11290:11290): largo nombre 7
+[INFO] 17:01:48:915 gameBoy/(11290:11290): nombre Pikachu
+[INFO] 17:01:48:915 gameBoy/(11290:11290): sizes: 28
+[INFO] 17:01:48:915 gameBoy/(11290:11290): envio: 28
+[INFO] 17:01:48:915 gameBoy/(11290:11290): volvi
+[INFO] 17:01:48:916 gameBoy/(11290:11290): -----------------Destruyendo archivo config-----------------
+[INFO] 17:02:08:408 gameBoy/(11364:11364): -----------------Leyendo archivo config-----------------
+[INFO] 17:02:08:409 gameBoy/(11364:11364): cant argumentos: 1
+[INFO] 17:02:08:410 gameBoy/(11364:11364): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:02:08:410 gameBoy/(11364:11364): largo nombre: 7
+[INFO] 17:02:08:410 gameBoy/(11364:11364): nombre: Pikachu
+[INFO] 17:02:08:410 gameBoy/(11364:11364): paquete->buffer->size 12
+[INFO] 17:02:08:410 gameBoy/(11364:11364): largo nombre 7
+[INFO] 17:02:08:410 gameBoy/(11364:11364): nombre Pikachu
+[INFO] 17:02:08:410 gameBoy/(11364:11364): sizes: 28
+[INFO] 17:02:08:410 gameBoy/(11364:11364): envio: 28
+[INFO] 17:02:08:410 gameBoy/(11364:11364): volvi
+[INFO] 17:02:08:410 gameBoy/(11364:11364): -----------------Destruyendo archivo config-----------------
+[INFO] 17:02:39:668 gameBoy/(11466:11466): -----------------Leyendo archivo config-----------------
+[INFO] 17:02:39:669 gameBoy/(11466:11466): cant argumentos: 1
+[INFO] 17:02:39:670 gameBoy/(11466:11466): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:02:39:670 gameBoy/(11466:11466): largo nombre: 7
+[INFO] 17:02:39:670 gameBoy/(11466:11466): nombre: Pikachu
+[INFO] 17:02:39:670 gameBoy/(11466:11466): paquete->buffer->size 12
+[INFO] 17:02:39:670 gameBoy/(11466:11466): largo nombre 7
+[INFO] 17:02:39:670 gameBoy/(11466:11466): nombre Pikachu
+[INFO] 17:02:39:670 gameBoy/(11466:11466): sizes: 28
+[INFO] 17:02:39:670 gameBoy/(11466:11466): envio: 28
+[INFO] 17:02:39:671 gameBoy/(11466:11466): volvi
+[INFO] 17:02:39:671 gameBoy/(11466:11466): -----------------Destruyendo archivo config-----------------
+[INFO] 17:03:10:95 gameBoy/(11551:11551): -----------------Leyendo archivo config-----------------
+[INFO] 17:03:10:102 gameBoy/(11551:11551): cant argumentos: 1
+[INFO] 17:03:10:103 gameBoy/(11551:11551): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:03:10:103 gameBoy/(11551:11551): largo nombre: 7
+[INFO] 17:03:10:103 gameBoy/(11551:11551): nombre: Pikachu
+[INFO] 17:03:10:103 gameBoy/(11551:11551): paquete->buffer->size 12
+[INFO] 17:03:10:103 gameBoy/(11551:11551): largo nombre 7
+[INFO] 17:03:10:103 gameBoy/(11551:11551): nombre Pikachu
+[INFO] 17:03:10:103 gameBoy/(11551:11551): sizes: 28
+[INFO] 17:03:10:103 gameBoy/(11551:11551): envio: 28
+[INFO] 17:03:10:103 gameBoy/(11551:11551): volvi
+[INFO] 17:03:10:104 gameBoy/(11551:11551): -----------------Destruyendo archivo config-----------------
+[INFO] 17:06:28:845 gameBoy/(11740:11740): -----------------Leyendo archivo config-----------------
+[INFO] 17:06:28:852 gameBoy/(11740:11740): cant argumentos: 1
+[INFO] 17:06:28:852 gameBoy/(11740:11740): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:06:28:853 gameBoy/(11740:11740): largo nombre: 7
+[INFO] 17:06:28:853 gameBoy/(11740:11740): nombre: Pikachu
+[INFO] 17:06:28:853 gameBoy/(11740:11740): paquete->buffer->size 12
+[INFO] 17:06:28:853 gameBoy/(11740:11740): largo nombre 7
+[INFO] 17:06:28:853 gameBoy/(11740:11740): nombre Pikachu
+[INFO] 17:06:28:853 gameBoy/(11740:11740): sizes: 28
+[INFO] 17:06:28:853 gameBoy/(11740:11740): envio: 28
+[INFO] 17:06:28:853 gameBoy/(11740:11740): volvi
+[INFO] 17:06:28:853 gameBoy/(11740:11740): -----------------Destruyendo archivo config-----------------
+[INFO] 17:09:19:129 gameBoy/(12053:12053): -----------------Leyendo archivo config-----------------
+[INFO] 17:09:19:129 gameBoy/(12053:12053): cant argumentos: 1
+[INFO] 17:09:19:130 gameBoy/(12053:12053): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:09:19:130 gameBoy/(12053:12053): largo nombre: 7
+[INFO] 17:09:19:130 gameBoy/(12053:12053): nombre: Pikachu
+[INFO] 17:09:19:130 gameBoy/(12053:12053): paquete->buffer->size 12
+[INFO] 17:09:19:130 gameBoy/(12053:12053): largo nombre 7
+[INFO] 17:09:19:130 gameBoy/(12053:12053): nombre Pikachu
+[INFO] 17:09:19:130 gameBoy/(12053:12053): sizes: 28
+[INFO] 17:09:19:130 gameBoy/(12053:12053): envio: 28
+[INFO] 17:09:19:130 gameBoy/(12053:12053): volvi
+[INFO] 17:09:19:130 gameBoy/(12053:12053): -----------------Destruyendo archivo config-----------------
+[INFO] 17:15:08:930 gameBoy/(12836:12836): -----------------Leyendo archivo config-----------------
+[INFO] 17:15:08:933 gameBoy/(12836:12836): cant argumentos: 1
+[INFO] 17:15:08:934 gameBoy/(12836:12836): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:15:08:934 gameBoy/(12836:12836): largo nombre: 7
+[INFO] 17:15:08:934 gameBoy/(12836:12836): nombre: Pikachu
+[INFO] 17:15:08:934 gameBoy/(12836:12836): paquete->buffer->size 12
+[INFO] 17:15:08:934 gameBoy/(12836:12836): largo nombre 7
+[INFO] 17:15:08:934 gameBoy/(12836:12836): nombre Pikachu
+[INFO] 17:15:08:934 gameBoy/(12836:12836): sizes: 28
+[INFO] 17:15:08:934 gameBoy/(12836:12836): envio: 28
+[INFO] 17:15:08:934 gameBoy/(12836:12836): volvi
+[INFO] 17:15:08:934 gameBoy/(12836:12836): -----------------Destruyendo archivo config-----------------
+[INFO] 17:16:32:250 gameBoy/(13192:13192): -----------------Leyendo archivo config-----------------
+[INFO] 17:16:32:250 gameBoy/(13192:13192): cant argumentos: 3
+[INFO] 17:16:32:251 gameBoy/(13192:13192): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:16:32:251 gameBoy/(13192:13192): largo nombre: 7
+[INFO] 17:16:32:251 gameBoy/(13192:13192): nombre: Pikachu
+[INFO] 17:16:32:251 gameBoy/(13192:13192): paquete->buffer->size 12
+[INFO] 17:16:32:251 gameBoy/(13192:13192): largo nombre 7
+[INFO] 17:16:32:251 gameBoy/(13192:13192): nombre Pikachu
+[INFO] 17:16:32:251 gameBoy/(13192:13192): sizes: 28
+[INFO] 17:16:32:251 gameBoy/(13192:13192): envio: 28
+[INFO] 17:16:32:252 gameBoy/(13192:13192): volvi
+[INFO] 17:16:51:284 gameBoy/(13264:13264): -----------------Leyendo archivo config-----------------
+[INFO] 17:16:51:285 gameBoy/(13264:13264): cant argumentos: 3
+[INFO] 17:16:51:285 gameBoy/(13264:13264): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:16:51:285 gameBoy/(13264:13264): largo nombre: 7
+[INFO] 17:16:51:285 gameBoy/(13264:13264): nombre: Pikachu
+[INFO] 17:16:51:285 gameBoy/(13264:13264): paquete->buffer->size 12
+[INFO] 17:16:51:285 gameBoy/(13264:13264): largo nombre 7
+[INFO] 17:16:51:286 gameBoy/(13264:13264): nombre Pikachu
+[INFO] 17:16:51:286 gameBoy/(13264:13264): sizes: 28
+[INFO] 17:16:51:286 gameBoy/(13264:13264): envio: 28
+[INFO] 17:16:51:286 gameBoy/(13264:13264): volvi
+[INFO] 17:20:03:976 gameBoy/(13501:13501): -----------------Leyendo archivo config-----------------
+[INFO] 17:20:03:976 gameBoy/(13501:13501): cant argumentos: 1
+[INFO] 17:20:03:977 gameBoy/(13501:13501): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:20:03:977 gameBoy/(13501:13501): largo nombre: 7
+[INFO] 17:20:03:977 gameBoy/(13501:13501): nombre: Pikachu
+[INFO] 17:20:03:977 gameBoy/(13501:13501): paquete->buffer->size 12
+[INFO] 17:20:03:977 gameBoy/(13501:13501): largo nombre 7
+[INFO] 17:20:03:977 gameBoy/(13501:13501): nombre Pikachu
+[INFO] 17:20:03:977 gameBoy/(13501:13501): sizes: 28
+[INFO] 17:20:03:977 gameBoy/(13501:13501): envio: 28
+[INFO] 17:20:03:977 gameBoy/(13501:13501): volvi
+[INFO] 17:20:03:977 gameBoy/(13501:13501): -----------------Destruyendo archivo config-----------------
+[INFO] 17:24:21:935 gameBoy/(13912:13912): -----------------Leyendo archivo config-----------------
+[INFO] 17:24:21:937 gameBoy/(13912:13912): cant argumentos: 1
+[INFO] 17:24:21:941 gameBoy/(13912:13912): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:24:21:943 gameBoy/(13912:13912): largo nombre: 7
+[INFO] 17:24:21:943 gameBoy/(13912:13912): nombre: Pikachu
+[INFO] 17:24:21:943 gameBoy/(13912:13912): paquete->buffer->size 12
+[INFO] 17:24:21:943 gameBoy/(13912:13912): largo nombre 7
+[INFO] 17:24:21:943 gameBoy/(13912:13912): nombre Pikachu
+[INFO] 17:24:21:943 gameBoy/(13912:13912): sizes: 28
+[INFO] 17:24:21:943 gameBoy/(13912:13912): envio: 28
+[INFO] 17:24:21:943 gameBoy/(13912:13912): volvi
+[INFO] 17:24:21:943 gameBoy/(13912:13912): -----------------Destruyendo archivo config-----------------
+[INFO] 17:30:36:134 gameBoy/(14372:14372): -----------------Leyendo archivo config-----------------
+[INFO] 17:30:36:135 gameBoy/(14372:14372): cant argumentos: 1
+[INFO] 17:30:36:136 gameBoy/(14372:14372): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:30:36:136 gameBoy/(14372:14372): largo nombre: 7
+[INFO] 17:30:36:136 gameBoy/(14372:14372): nombre: Pikachu
+[INFO] 17:30:36:136 gameBoy/(14372:14372): paquete->buffer->size 12
+[INFO] 17:30:36:136 gameBoy/(14372:14372): largo nombre 7
+[INFO] 17:30:36:136 gameBoy/(14372:14372): nombre Pikachu
+[INFO] 17:30:36:136 gameBoy/(14372:14372): sizes: 28
+[INFO] 17:30:36:136 gameBoy/(14372:14372): envio: 28
+[INFO] 17:30:36:136 gameBoy/(14372:14372): volvi
+[INFO] 17:30:36:136 gameBoy/(14372:14372): -----------------Destruyendo archivo config-----------------
+[INFO] 17:31:14:920 gameBoy/(14421:14421): -----------------Leyendo archivo config-----------------
+[INFO] 17:31:14:922 gameBoy/(14421:14421): cant argumentos: 1
+[INFO] 17:31:14:922 gameBoy/(14421:14421): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:31:14:922 gameBoy/(14421:14421): largo nombre: 7
+[INFO] 17:31:14:923 gameBoy/(14421:14421): nombre: Pikachu
+[INFO] 17:31:14:926 gameBoy/(14421:14421): paquete->buffer->size 12
+[INFO] 17:31:14:926 gameBoy/(14421:14421): largo nombre 7
+[INFO] 17:31:14:926 gameBoy/(14421:14421): nombre Pikachu
+[INFO] 17:31:14:926 gameBoy/(14421:14421): sizes: 28
+[INFO] 17:31:14:926 gameBoy/(14421:14421): envio: 28
+[INFO] 17:31:14:926 gameBoy/(14421:14421): volvi
+[INFO] 17:31:14:926 gameBoy/(14421:14421): -----------------Destruyendo archivo config-----------------
+[INFO] 17:32:48:445 gameBoy/(14655:14655): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:48:445 gameBoy/(14655:14655): cant argumentos: 3
+[INFO] 17:32:48:446 gameBoy/(14655:14655): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:32:48:446 gameBoy/(14655:14655): largo nombre: 7
+[INFO] 17:32:48:446 gameBoy/(14655:14655): nombre: Pikachu
+[INFO] 17:32:48:446 gameBoy/(14655:14655): paquete->buffer->size 12
+[INFO] 17:32:48:446 gameBoy/(14655:14655): largo nombre 7
+[INFO] 17:32:48:446 gameBoy/(14655:14655): nombre Pikachu
+[INFO] 17:32:48:446 gameBoy/(14655:14655): sizes: 28
+[INFO] 17:32:48:446 gameBoy/(14655:14655): envio: 28
+[INFO] 17:32:48:447 gameBoy/(14655:14655): volvi
+[INFO] 17:32:51:438 gameBoy/(14698:14698): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:51:438 gameBoy/(14698:14698): cant argumentos: 3
+[INFO] 17:32:51:439 gameBoy/(14698:14698): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:32:51:439 gameBoy/(14698:14698): largo nombre: 7
+[INFO] 17:32:51:439 gameBoy/(14698:14698): nombre: Pikachu
+[INFO] 17:32:51:439 gameBoy/(14698:14698): paquete->buffer->size 12
+[INFO] 17:32:51:439 gameBoy/(14698:14698): largo nombre 7
+[INFO] 17:32:51:439 gameBoy/(14698:14698): nombre Pikachu
+[INFO] 17:32:51:439 gameBoy/(14698:14698): sizes: 28
+[INFO] 17:32:51:439 gameBoy/(14698:14698): envio: 28
+[INFO] 17:32:51:440 gameBoy/(14698:14698): volvi
+[INFO] 17:32:52:52 gameBoy/(14734:14734): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:52:52 gameBoy/(14734:14734): cant argumentos: 3
+[INFO] 17:32:52:55 gameBoy/(14734:14734): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:32:52:55 gameBoy/(14734:14734): largo nombre: 7
+[INFO] 17:32:52:55 gameBoy/(14734:14734): nombre: Pikachu
+[INFO] 17:32:52:56 gameBoy/(14734:14734): paquete->buffer->size 12
+[INFO] 17:32:52:56 gameBoy/(14734:14734): largo nombre 7
+[INFO] 17:32:52:56 gameBoy/(14734:14734): nombre Pikachu
+[INFO] 17:32:52:56 gameBoy/(14734:14734): sizes: 28
+[INFO] 17:32:52:56 gameBoy/(14734:14734): envio: 28
+[INFO] 17:32:52:56 gameBoy/(14734:14734): volvi
+[INFO] 17:32:52:468 gameBoy/(14770:14770): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:52:468 gameBoy/(14770:14770): cant argumentos: 3
+[INFO] 17:32:52:468 gameBoy/(14770:14770): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:32:52:468 gameBoy/(14770:14770): largo nombre: 7
+[INFO] 17:32:52:469 gameBoy/(14770:14770): nombre: Pikachu
+[INFO] 17:32:52:469 gameBoy/(14770:14770): paquete->buffer->size 12
+[INFO] 17:32:52:469 gameBoy/(14770:14770): largo nombre 7
+[INFO] 17:32:52:469 gameBoy/(14770:14770): nombre Pikachu
+[INFO] 17:32:52:469 gameBoy/(14770:14770): sizes: 28
+[INFO] 17:32:52:469 gameBoy/(14770:14770): envio: 28
+[INFO] 17:32:52:469 gameBoy/(14770:14770): volvi
+[INFO] 17:32:52:831 gameBoy/(14806:14806): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:52:831 gameBoy/(14806:14806): cant argumentos: 3
+[INFO] 17:32:52:834 gameBoy/(14806:14806): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:32:52:834 gameBoy/(14806:14806): largo nombre: 7
+[INFO] 17:32:52:835 gameBoy/(14806:14806): nombre: Pikachu
+[INFO] 17:32:52:835 gameBoy/(14806:14806): paquete->buffer->size 12
+[INFO] 17:32:52:835 gameBoy/(14806:14806): largo nombre 7
+[INFO] 17:32:52:835 gameBoy/(14806:14806): nombre Pikachu
+[INFO] 17:32:52:835 gameBoy/(14806:14806): sizes: 28
+[INFO] 17:32:52:835 gameBoy/(14806:14806): envio: 28
+[INFO] 17:32:52:835 gameBoy/(14806:14806): volvi
+[INFO] 17:32:58:80 gameBoy/(14842:14842): -----------------Leyendo archivo config-----------------
+[INFO] 17:32:58:80 gameBoy/(14842:14842): cant argumentos: 3
+[INFO] 17:32:58:80 gameBoy/(14842:14842): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:32:58:81 gameBoy/(14842:14842): largo nombre: 7
+[INFO] 17:32:58:81 gameBoy/(14842:14842): nombre: Pikachu
+[INFO] 17:32:58:81 gameBoy/(14842:14842): paquete->buffer->size 12
+[INFO] 17:32:58:81 gameBoy/(14842:14842): largo nombre 7
+[INFO] 17:32:58:81 gameBoy/(14842:14842): nombre Pikachu
+[INFO] 17:32:58:81 gameBoy/(14842:14842): sizes: 28
+[INFO] 17:32:58:81 gameBoy/(14842:14842): envio: 28
+[INFO] 17:32:58:81 gameBoy/(14842:14842): volvi
+[INFO] 17:33:22:143 gameBoy/(14886:14886): -----------------Leyendo archivo config-----------------
+[INFO] 17:33:22:146 gameBoy/(14886:14886): cant argumentos: 3
+[INFO] 17:33:22:147 gameBoy/(14886:14886): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:33:22:147 gameBoy/(14886:14886): largo nombre: 7
+[INFO] 17:33:22:147 gameBoy/(14886:14886): nombre: Pikachu
+[INFO] 17:33:22:147 gameBoy/(14886:14886): paquete->buffer->size 12
+[INFO] 17:33:22:147 gameBoy/(14886:14886): largo nombre 7
+[INFO] 17:33:22:147 gameBoy/(14886:14886): nombre Pikachu
+[INFO] 17:33:22:147 gameBoy/(14886:14886): sizes: 28
+[INFO] 17:33:22:148 gameBoy/(14886:14886): envio: 28
+[INFO] 17:33:22:148 gameBoy/(14886:14886): volvi
+[INFO] 17:33:39:16 gameBoy/(14935:14935): -----------------Leyendo archivo config-----------------
+[INFO] 17:33:39:16 gameBoy/(14935:14935): cant argumentos: 3
+[INFO] 17:33:39:17 gameBoy/(14935:14935): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:33:39:17 gameBoy/(14935:14935): largo nombre: 7
+[INFO] 17:33:39:17 gameBoy/(14935:14935): nombre: Pikachu
+[INFO] 17:33:39:20 gameBoy/(14935:14935): paquete->buffer->size 12
+[INFO] 17:33:39:20 gameBoy/(14935:14935): largo nombre 7
+[INFO] 17:33:39:20 gameBoy/(14935:14935): nombre Pikachu
+[INFO] 17:33:39:20 gameBoy/(14935:14935): sizes: 28
+[INFO] 17:33:39:20 gameBoy/(14935:14935): envio: 28
+[INFO] 17:33:39:21 gameBoy/(14935:14935): volvi
+[INFO] 17:34:04:87 gameBoy/(14994:14994): -----------------Leyendo archivo config-----------------
+[INFO] 17:34:04:88 gameBoy/(14994:14994): cant argumentos: 3
+[INFO] 17:34:04:88 gameBoy/(14994:14994): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:34:42:786 gameBoy/(15090:15090): -----------------Leyendo archivo config-----------------
+[INFO] 17:34:42:791 gameBoy/(15090:15090): cant argumentos: 1
+[INFO] 17:34:42:791 gameBoy/(15090:15090): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:34:42:791 gameBoy/(15090:15090): largo nombre: 7
+[INFO] 17:34:42:791 gameBoy/(15090:15090): nombre: asgasgasgasg
+[INFO] 17:34:42:791 gameBoy/(15090:15090): paquete->buffer->size 12
+[INFO] 17:34:42:791 gameBoy/(15090:15090): largo nombre 7
+[INFO] 17:34:42:791 gameBoy/(15090:15090): nombre asgasgasgasg
+[INFO] 17:34:42:792 gameBoy/(15090:15090): sizes: 28
+[INFO] 17:34:42:792 gameBoy/(15090:15090): envio: 28
+[INFO] 17:35:20:474 gameBoy/(15135:15135): -----------------Leyendo archivo config-----------------
+[INFO] 17:35:20:487 gameBoy/(15135:15135): cant argumentos: 1
+[INFO] 17:35:20:488 gameBoy/(15135:15135): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:20:488 gameBoy/(15135:15135): largo nombre: 12
+[INFO] 17:35:20:488 gameBoy/(15135:15135): nombre: asgasgasgasg
+[INFO] 17:35:20:488 gameBoy/(15135:15135): paquete->buffer->size 17
+[INFO] 17:35:20:490 gameBoy/(15135:15135): largo nombre 12
+[INFO] 17:35:20:490 gameBoy/(15135:15135): nombre asgasgasgasg
+[INFO] 17:35:20:490 gameBoy/(15135:15135): sizes: 33
+[INFO] 17:35:20:490 gameBoy/(15135:15135): envio: 33
+[INFO] 17:35:20:491 gameBoy/(15135:15135): volvi
+[INFO] 17:35:20:491 gameBoy/(15135:15135): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:16:697 gameBoy/(15514:15514): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:16:697 gameBoy/(15514:15514): cant argumentos: 4
+[INFO] 17:41:16:698 gameBoy/(15514:15514): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:41:16:698 gameBoy/(15514:15514): largo nombre: 12
+[INFO] 17:41:16:698 gameBoy/(15514:15514): nombre: asgasgasgasg
+[INFO] 17:41:16:698 gameBoy/(15514:15514): paquete->buffer->size 17
+[INFO] 17:41:16:698 gameBoy/(15514:15514): largo nombre 12
+[INFO] 17:41:16:698 gameBoy/(15514:15514): nombre asgasgasgasg
+[INFO] 17:41:16:698 gameBoy/(15514:15514): sizes: 33
+[INFO] 17:41:16:698 gameBoy/(15514:15514): envio: 33
+[INFO] 17:41:16:699 gameBoy/(15514:15514): volvi
+[INFO] 17:43:16:407 gameBoy/(15797:15797): -----------------Leyendo archivo config-----------------
+[INFO] 17:43:16:407 gameBoy/(15797:15797): cant argumentos: 4
+[INFO] 17:43:16:408 gameBoy/(15797:15797): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:43:52:467 gameBoy/(15865:15865): -----------------Leyendo archivo config-----------------
+[INFO] 17:43:52:470 gameBoy/(15865:15865): cant argumentos: 4
+[INFO] 17:43:52:470 gameBoy/(15865:15865): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:43:52:470 gameBoy/(15865:15865): 1
+[INFO] 17:44:30:79 gameBoy/(15936:15936): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:30:79 gameBoy/(15936:15936): cant argumentos: 4
+[INFO] 17:45:00:178 gameBoy/(16035:16035): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:00:178 gameBoy/(16035:16035): cant argumentos: 4
+[INFO] 17:45:04:4 gameBoy/(16070:16070): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:04:5 gameBoy/(16070:16070): cant argumentos: 4
+[INFO] 17:45:05:544 gameBoy/(16105:16105): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:05:552 gameBoy/(16105:16105): cant argumentos: 4
+[INFO] 17:45:23:970 gameBoy/(16172:16172): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:23:971 gameBoy/(16172:16172): cant argumentos: 4
+[INFO] 17:45:23:971 gameBoy/(16172:16172): 0
+[INFO] 17:45:38:192 gameBoy/(16237:16237): -----------------Leyendo archivo config-----------------
+[INFO] 17:45:38:192 gameBoy/(16237:16237): cant argumentos: 4
+[INFO] 17:45:38:192 gameBoy/(16237:16237): 0
+[INFO] 17:46:19:905 gameBoy/(16335:16335): -----------------Leyendo archivo config-----------------
+[INFO] 17:46:19:905 gameBoy/(16335:16335): cant argumentos: 4
+[INFO] 17:46:19:905 gameBoy/(16335:16335): 0
+[INFO] 17:46:19:905 gameBoy/(16335:16335): 1
+[INFO] 17:46:58:50 gameBoy/(16414:16414): -----------------Leyendo archivo config-----------------
+[INFO] 17:46:58:50 gameBoy/(16414:16414): cant argumentos: 4
+[INFO] 17:46:58:53 gameBoy/(16414:16414): 0
+[INFO] 17:46:58:53 gameBoy/(16414:16414): 1
+[INFO] 17:47:29:37 gameBoy/(16519:16519): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:29:38 gameBoy/(16519:16519): cant argumentos: 4
+[INFO] 17:48:00:747 gameBoy/(16585:16585): -----------------Leyendo archivo config-----------------
+[INFO] 17:48:00:747 gameBoy/(16585:16585): cant argumentos: 4
+[INFO] 17:48:00:747 gameBoy/(16585:16585): -1
+[INFO] 17:48:53:482 gameBoy/(16696:16696): -----------------Leyendo archivo config-----------------
+[INFO] 17:48:53:483 gameBoy/(16696:16696): cant argumentos: 4
+[INFO] 17:48:53:483 gameBoy/(16696:16696): -1
+[INFO] 17:49:02:693 gameBoy/(16737:16737): -----------------Leyendo archivo config-----------------
+[INFO] 17:49:02:693 gameBoy/(16737:16737): cant argumentos: 4
+[INFO] 17:49:02:693 gameBoy/(16737:16737): -1
+[INFO] 17:50:13:768 gameBoy/(16842:16842): -----------------Leyendo archivo config-----------------
+[INFO] 17:50:13:768 gameBoy/(16842:16842): cant argumentos: 4
+[INFO] 17:50:13:768 gameBoy/(16842:16842): modulo BROKER
+[INFO] 17:50:51:717 gameBoy/(16907:16907): -----------------Leyendo archivo config-----------------
+[INFO] 17:50:51:717 gameBoy/(16907:16907): cant argumentos: 4
+[INFO] 17:50:51:717 gameBoy/(16907:16907): modulo BROKER
+[INFO] 17:55:20:874 gameBoy/(17234:17234): -----------------Leyendo archivo config-----------------
+[INFO] 17:55:20:876 gameBoy/(17234:17234): cant argumentos: 4
+[INFO] 17:55:20:876 gameBoy/(17234:17234): modulo BROKER
+[INFO] 17:57:07:730 gameBoy/(17317:17317): -----------------Leyendo archivo config-----------------
+[INFO] 17:57:07:730 gameBoy/(17317:17317): cant argumentos: 4
+[INFO] 17:57:25:871 gameBoy/(17378:17378): -----------------Leyendo archivo config-----------------
+[INFO] 17:57:25:871 gameBoy/(17378:17378): cant argumentos: 4
+[INFO] 17:57:50:454 gameBoy/(17723:17723): -----------------Leyendo archivo config-----------------
+[INFO] 17:57:50:454 gameBoy/(17723:17723): cant argumentos: 4
+[INFO] 17:58:52:472 gameBoy/(17836:17836): -----------------Leyendo archivo config-----------------
+[INFO] 17:58:52:474 gameBoy/(17836:17836): cant argumentos: 4
+[INFO] 18:02:13:459 gameBoy/(18210:18210): -----------------Leyendo archivo config-----------------
+[INFO] 18:02:13:459 gameBoy/(18210:18210): cant argumentos: 4
+[INFO] 18:02:13:460 gameBoy/(18210:18210): modulo (null)
+[INFO] 18:02:27:756 gameBoy/(18278:18278): -----------------Leyendo archivo config-----------------
+[INFO] 18:02:27:757 gameBoy/(18278:18278): cant argumentos: 4
+[INFO] 18:02:27:757 gameBoy/(18278:18278): modulo 0
+[INFO] 18:04:15:336 gameBoy/(18413:18413): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:15:336 gameBoy/(18413:18413): cant argumentos: 4
+[INFO] 18:06:22:598 gameBoy/(18693:18693): -----------------Leyendo archivo config-----------------
+[INFO] 18:06:22:598 gameBoy/(18693:18693): cant argumentos: 4
+[INFO] 18:07:14:771 gameBoy/(18794:18794): -----------------Leyendo archivo config-----------------
+[INFO] 18:07:14:771 gameBoy/(18794:18794): cant argumentos: 4
+[INFO] 18:08:10:110 gameBoy/(18863:18863): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:10:119 gameBoy/(18863:18863): cant argumentos: 1
+[INFO] 18:08:23:474 gameBoy/(18894:18894): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:23:477 gameBoy/(18894:18894): cant argumentos: 1
+[INFO] 18:08:23:480 gameBoy/(18894:18894): -----------------Destruyendo archivo config-----------------
+[INFO] 18:09:08:347 gameBoy/(18973:18973): -----------------Leyendo archivo config-----------------
+[INFO] 18:09:08:356 gameBoy/(18973:18973): cant argumentos: 1
+[INFO] 18:09:08:356 gameBoy/(18973:18973): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:09:08:356 gameBoy/(18973:18973): largo nombre: 7
+[INFO] 18:09:08:356 gameBoy/(18973:18973): nombre: ROBERTO
+[INFO] 18:09:08:356 gameBoy/(18973:18973): paquete->buffer->size 12
+[INFO] 18:09:08:356 gameBoy/(18973:18973): largo nombre 7
+[INFO] 18:09:08:356 gameBoy/(18973:18973): nombre ROBERTO
+[INFO] 18:09:08:357 gameBoy/(18973:18973): sizes: 28
+[INFO] 18:09:08:357 gameBoy/(18973:18973): envio: 28
+[INFO] 18:09:08:357 gameBoy/(18973:18973): volvi
+[INFO] 18:09:08:357 gameBoy/(18973:18973): -----------------Destruyendo archivo config-----------------
+[INFO] 18:09:22:465 gameBoy/(19013:19013): -----------------Leyendo archivo config-----------------
+[INFO] 18:09:22:468 gameBoy/(19013:19013): cant argumentos: 1
+[INFO] 18:09:22:469 gameBoy/(19013:19013): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:09:22:469 gameBoy/(19013:19013): largo nombre: 7
+[INFO] 18:09:22:469 gameBoy/(19013:19013): nombre: ROBERTO
+[INFO] 18:09:22:469 gameBoy/(19013:19013): paquete->buffer->size 12
+[INFO] 18:09:22:469 gameBoy/(19013:19013): largo nombre 7
+[INFO] 18:09:22:469 gameBoy/(19013:19013): nombre ROBERTO
+[INFO] 18:09:22:469 gameBoy/(19013:19013): sizes: 28
+[INFO] 18:09:22:469 gameBoy/(19013:19013): envio: 28
+[INFO] 18:09:22:469 gameBoy/(19013:19013): volvi
+[INFO] 18:09:22:469 gameBoy/(19013:19013): -----------------Destruyendo archivo config-----------------
+[INFO] 18:09:48:64 gameBoy/(19057:19057): -----------------Leyendo archivo config-----------------
+[INFO] 18:09:48:65 gameBoy/(19057:19057): cant argumentos: 1
+[INFO] 18:09:48:66 gameBoy/(19057:19057): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:09:48:66 gameBoy/(19057:19057): largo nombre: 7
+[INFO] 18:09:48:66 gameBoy/(19057:19057): nombre: ROBERTO
+[INFO] 18:09:48:66 gameBoy/(19057:19057): paquete->buffer->size 12
+[INFO] 18:10:08:904 gameBoy/(19131:19131): -----------------Leyendo archivo config-----------------
+[INFO] 18:10:08:908 gameBoy/(19131:19131): cant argumentos: 1
+[INFO] 18:10:08:908 gameBoy/(19131:19131): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:10:08:908 gameBoy/(19131:19131): largo nombre: 13
+[INFO] 18:10:08:908 gameBoy/(19131:19131): nombre: gonzalo miele
+[INFO] 18:10:08:908 gameBoy/(19131:19131): paquete->buffer->size 18
+[INFO] 18:10:08:908 gameBoy/(19131:19131): largo nombre 13
+[INFO] 18:10:08:908 gameBoy/(19131:19131): nombre gonzalo miele
+[INFO] 18:10:08:909 gameBoy/(19131:19131): sizes: 34
+[INFO] 18:10:08:909 gameBoy/(19131:19131): envio: 34
+[INFO] 18:10:08:909 gameBoy/(19131:19131): volvi
+[INFO] 18:10:08:909 gameBoy/(19131:19131): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:56:727 gameBoy/(19486:19486): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:56:727 gameBoy/(19486:19486): cant argumentos: 4
+[INFO] 18:17:26:612 gameBoy/(19587:19587): -----------------Leyendo archivo config-----------------
+[INFO] 18:17:26:612 gameBoy/(19587:19587): cant argumentos: 4
+[INFO] 18:17:28:236 gameBoy/(19622:19622): -----------------Leyendo archivo config-----------------
+[INFO] 18:17:28:237 gameBoy/(19622:19622): cant argumentos: 4
+[INFO] 18:17:35:610 gameBoy/(19663:19663): -----------------Leyendo archivo config-----------------
+[INFO] 18:17:35:610 gameBoy/(19663:19663): cant argumentos: 4
+[INFO] 18:20:49:806 gameBoy/(19791:19791): -----------------Leyendo archivo config-----------------
+[INFO] 18:20:49:806 gameBoy/(19791:19791): cant argumentos: 4
+[INFO] 18:20:49:807 gameBoy/(19791:19791): 0
+[INFO] 18:20:49:807 gameBoy/(19791:19791): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:20:49:807 gameBoy/(19791:19791): paquete->buffer->size 14
+[INFO] 18:20:49:807 gameBoy/(19791:19791): largo nombre 9
+[INFO] 18:20:49:807 gameBoy/(19791:19791): nombre aosjoasgj
+[INFO] 18:20:49:808 gameBoy/(19791:19791): sizes: 30
+[INFO] 18:20:49:808 gameBoy/(19791:19791): envio: 30
+[INFO] 18:32:36:489 gameBoy/(20599:20599): -----------------Leyendo archivo config-----------------
+[INFO] 18:32:36:490 gameBoy/(20599:20599): cant argumentos: 1
+[INFO] 18:32:36:490 gameBoy/(20599:20599): -----------------Destruyendo archivo config-----------------
+[INFO] 18:32:49:103 gameBoy/(20645:20645): -----------------Leyendo archivo config-----------------
+[INFO] 18:32:49:105 gameBoy/(20645:20645): cant argumentos: 1
+[INFO] 18:32:49:105 gameBoy/(20645:20645): masgoas
+[INFO] 18:32:49:105 gameBoy/(20645:20645): -----------------Destruyendo archivo config-----------------
+[INFO] 18:32:58:168 gameBoy/(20680:20680): -----------------Leyendo archivo config-----------------
+[INFO] 18:32:58:169 gameBoy/(20680:20680): cant argumentos: 1
+[INFO] 18:32:58:169 gameBoy/(20680:20680): -----------------Destruyendo archivo config-----------------
+[INFO] 18:39:09:845 gameBoy/(21191:21191): -----------------Leyendo archivo config-----------------
+[INFO] 18:39:09:845 gameBoy/(21191:21191): cant argumentos: 4
+[INFO] 18:39:09:845 gameBoy/(21191:21191): -----------------Destruyendo archivo config-----------------
+[INFO] 18:39:21:816 gameBoy/(21233:21233): -----------------Leyendo archivo config-----------------
+[INFO] 18:39:21:816 gameBoy/(21233:21233): cant argumentos: 4
+[INFO] 18:39:21:816 gameBoy/(21233:21233): -----------------Destruyendo archivo config-----------------
+[INFO] 18:39:41:264 gameBoy/(21292:21292): -----------------Leyendo archivo config-----------------
+[INFO] 18:39:41:264 gameBoy/(21292:21292): cant argumentos: 4
+[INFO] 18:39:41:265 gameBoy/(21292:21292): 0
+[INFO] 18:39:41:265 gameBoy/(21292:21292): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:39:41:265 gameBoy/(21292:21292): paquete->buffer->size 12
+[INFO] 18:39:41:265 gameBoy/(21292:21292): largo nombre 7
+[INFO] 18:39:41:265 gameBoy/(21292:21292): nombre roberto
+[INFO] 18:39:41:265 gameBoy/(21292:21292): sizes: 28
+[INFO] 18:39:41:266 gameBoy/(21292:21292): envio: 28
+[INFO] 18:39:58:71 gameBoy/(21355:21355): -----------------Leyendo archivo config-----------------
+[INFO] 18:39:58:72 gameBoy/(21355:21355): cant argumentos: 4
+[INFO] 18:39:58:72 gameBoy/(21355:21355): 0
+[INFO] 18:39:58:72 gameBoy/(21355:21355): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:39:58:72 gameBoy/(21355:21355): paquete->buffer->size 10
+[INFO] 18:39:58:73 gameBoy/(21355:21355): largo nombre 5
+[INFO] 18:39:58:73 gameBoy/(21355:21355): nombre Miele
+[INFO] 18:39:58:73 gameBoy/(21355:21355): sizes: 26
+[INFO] 18:39:58:73 gameBoy/(21355:21355): envio: 26
+[INFO] 18:48:26:897 gameBoy/(22150:22150): -----------------Leyendo archivo config-----------------
+[INFO] 18:48:26:898 gameBoy/(22150:22150): cant argumentos: 4
+[INFO] 18:48:26:898 gameBoy/(22150:22150): 0
+[INFO] 18:48:26:899 gameBoy/(22150:22150): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:48:26:900 gameBoy/(22150:22150): paquete->buffer->size 10
+[INFO] 18:48:26:900 gameBoy/(22150:22150): largo nombre 5
+[INFO] 18:48:26:900 gameBoy/(22150:22150): nombre Miele
+[INFO] 18:48:26:900 gameBoy/(22150:22150): sizes: 26
+[INFO] 18:48:26:900 gameBoy/(22150:22150): envio: 26
+[INFO] 18:48:40:75 gameBoy/(22186:22186): -----------------Leyendo archivo config-----------------
+[INFO] 18:48:40:76 gameBoy/(22186:22186): cant argumentos: 1
+[INFO] 18:48:40:76 gameBoy/(22186:22186): -----------------Destruyendo archivo config-----------------
+[INFO] 18:50:40:937 gameBoy/(22368:22368): -----------------Leyendo archivo config-----------------
+[INFO] 18:50:40:939 gameBoy/(22368:22368): cant argumentos: 1
+[INFO] 18:50:40:939 gameBoy/(22368:22368): -----------------Destruyendo archivo config-----------------
+[INFO] 18:50:45:543 gameBoy/(22373:22373): -----------------Leyendo archivo config-----------------
+[INFO] 18:50:45:543 gameBoy/(22373:22373): cant argumentos: 4
+[INFO] 18:50:45:544 gameBoy/(22373:22373): 0
+[INFO] 18:50:45:544 gameBoy/(22373:22373): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:50:45:544 gameBoy/(22373:22373): paquete->buffer->size 10
+[INFO] 18:50:45:544 gameBoy/(22373:22373): largo nombre 5
+[INFO] 18:50:45:544 gameBoy/(22373:22373): nombre Miele
+[INFO] 18:50:45:544 gameBoy/(22373:22373): sizes: 26
+[INFO] 18:50:45:545 gameBoy/(22373:22373): envio: 26
+[INFO] 18:52:13:243 gameBoy/(22668:22668): -----------------Leyendo archivo config-----------------
+[INFO] 18:52:13:243 gameBoy/(22668:22668): cant argumentos: 4
+[INFO] 18:52:13:243 gameBoy/(22668:22668): 0
+[INFO] 18:52:13:243 gameBoy/(22668:22668): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:52:13:243 gameBoy/(22668:22668): paquete->buffer->size 10
+[INFO] 18:52:13:243 gameBoy/(22668:22668): largo nombre 5
+[INFO] 18:52:13:244 gameBoy/(22668:22668): nombre Miele
+[INFO] 18:52:13:244 gameBoy/(22668:22668): sizes: 26
+[INFO] 18:52:13:244 gameBoy/(22668:22668): envio: 26
+[INFO] 18:54:55:445 gameBoy/(22911:22911): -----------------Leyendo archivo config-----------------
+[INFO] 18:54:55:455 gameBoy/(22911:22911): cant argumentos: 7
+[INFO] 18:55:49:742 gameBoy/(23022:23022): -----------------Leyendo archivo config-----------------
+[INFO] 18:55:49:743 gameBoy/(23022:23022): cant argumentos: 7
+[INFO] 18:55:49:743 gameBoy/(23022:23022): 1
+[INFO] 18:55:49:743 gameBoy/(23022:23022): 2
+[INFO] 18:56:06:959 gameBoy/(23087:23087): -----------------Leyendo archivo config-----------------
+[INFO] 18:56:06:959 gameBoy/(23087:23087): cant argumentos: 7
+[INFO] 18:56:06:959 gameBoy/(23087:23087): 1
+[INFO] 18:56:29:590 gameBoy/(23151:23151): -----------------Leyendo archivo config-----------------
+[INFO] 18:56:29:591 gameBoy/(23151:23151): cant argumentos: 7
+[INFO] 18:57:02:628 gameBoy/(23218:23218): -----------------Leyendo archivo config-----------------
+[INFO] 18:57:02:628 gameBoy/(23218:23218): cant argumentos: 7
+[INFO] 18:57:02:629 gameBoy/(23218:23218): 2
+[INFO] 18:57:02:629 gameBoy/(23218:23218): 3
+[INFO] 18:57:02:629 gameBoy/(23218:23218): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 18:57:12:726 gameBoy/(23288:23288): -----------------Leyendo archivo config-----------------
+[INFO] 18:57:12:726 gameBoy/(23288:23288): cant argumentos: 7
+[INFO] 18:57:12:726 gameBoy/(23288:23288): 2
+[INFO] 18:57:12:726 gameBoy/(23288:23288): 3
+[INFO] 18:57:12:727 gameBoy/(23288:23288): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:05:17:996 gameBoy/(23836:23836): -----------------Leyendo archivo config-----------------
+[INFO] 19:05:17:996 gameBoy/(23836:23836): cant argumentos: 7
+[INFO] 19:05:17:996 gameBoy/(23836:23836): 2
+[INFO] 19:05:17:996 gameBoy/(23836:23836): 3
+[INFO] 19:05:17:997 gameBoy/(23836:23836): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:05:17:997 gameBoy/(23836:23836): 1
+[INFO] 19:05:17:997 gameBoy/(23836:23836): sizes: 38
+[INFO] 19:05:57:489 gameBoy/(23933:23933): -----------------Leyendo archivo config-----------------
+[INFO] 19:05:57:489 gameBoy/(23933:23933): cant argumentos: 7
+[INFO] 19:05:57:489 gameBoy/(23933:23933): 2
+[INFO] 19:05:57:489 gameBoy/(23933:23933): 3
+[ERROR] 19:05:57:489 gameBoy/(23933:23933): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:05:57:489 gameBoy/(23933:23933): 1
+[INFO] 19:05:57:489 gameBoy/(23933:23933): sizes: 38
+[INFO] 19:06:06:716 gameBoy/(23968:23968): -----------------Leyendo archivo config-----------------
+[INFO] 19:06:06:716 gameBoy/(23968:23968): cant argumentos: 7
+[INFO] 19:06:06:716 gameBoy/(23968:23968): 2
+[INFO] 19:06:06:716 gameBoy/(23968:23968): 3
+[INFO] 19:06:06:716 gameBoy/(23968:23968): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:06:06:717 gameBoy/(23968:23968): 1
+[INFO] 19:06:06:717 gameBoy/(23968:23968): sizes: 38
+[INFO] 19:06:53:352 gameBoy/(24067:24067): -----------------Leyendo archivo config-----------------
+[INFO] 19:06:53:352 gameBoy/(24067:24067): cant argumentos: 7
+[INFO] 19:06:53:352 gameBoy/(24067:24067): 2
+[INFO] 19:06:53:352 gameBoy/(24067:24067): 3
+[INFO] 19:06:53:353 gameBoy/(24067:24067): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:06:53:353 gameBoy/(24067:24067): sizes: 38
+[INFO] 19:07:46:243 gameBoy/(24179:24179): -----------------Leyendo archivo config-----------------
+[INFO] 19:07:46:245 gameBoy/(24179:24179): cant argumentos: 7
+[INFO] 19:07:46:245 gameBoy/(24179:24179): 2
+[INFO] 19:07:46:247 gameBoy/(24179:24179): 3
+[INFO] 19:07:46:248 gameBoy/(24179:24179): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:07:46:248 gameBoy/(24179:24179): sizes: 38
+[INFO] 19:07:46:248 gameBoy/(24179:24179): 1
+[INFO] 19:08:53:942 gameBoy/(24348:24348): -----------------Leyendo archivo config-----------------
+[INFO] 19:08:53:942 gameBoy/(24348:24348): cant argumentos: 7
+[INFO] 19:08:53:942 gameBoy/(24348:24348): 2
+[INFO] 19:08:53:942 gameBoy/(24348:24348): 3
+[INFO] 19:08:53:943 gameBoy/(24348:24348): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:08:53:943 gameBoy/(24348:24348): sizes: 38
+[INFO] 19:08:53:943 gameBoy/(24348:24348): 1
+[INFO] 19:08:53:943 gameBoy/(24348:24348): 2
+[INFO] 19:08:59:550 gameBoy/(24551:24551): -----------------Leyendo archivo config-----------------
+[INFO] 19:08:59:550 gameBoy/(24551:24551): cant argumentos: 7
+[INFO] 19:08:59:550 gameBoy/(24551:24551): 2
+[INFO] 19:08:59:550 gameBoy/(24551:24551): 3
+[INFO] 19:08:59:551 gameBoy/(24551:24551): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:08:59:551 gameBoy/(24551:24551): sizes: 38
+[INFO] 19:08:59:551 gameBoy/(24551:24551): 1
+[INFO] 19:08:59:551 gameBoy/(24551:24551): 2
+[INFO] 19:09:54:927 gameBoy/(24654:24654): -----------------Leyendo archivo config-----------------
+[INFO] 19:09:54:928 gameBoy/(24654:24654): cant argumentos: 7
+[INFO] 19:09:54:928 gameBoy/(24654:24654): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:09:54:933 gameBoy/(24654:24654): sizes: 38
+[INFO] 19:09:54:937 gameBoy/(24654:24654): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 134519860
+[INFO] 19:10:26:585 gameBoy/(24726:24726): -----------------Leyendo archivo config-----------------
+[INFO] 19:10:26:585 gameBoy/(24726:24726): cant argumentos: 7
+[INFO] 19:10:26:586 gameBoy/(24726:24726): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:10:26:586 gameBoy/(24726:24726): sizes: 38
+[INFO] 19:10:26:586 gameBoy/(24726:24726): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:10:58:794 gameBoy/(24810:24810): -----------------Leyendo archivo config-----------------
+[INFO] 19:10:58:794 gameBoy/(24810:24810): cant argumentos: 4
+[INFO] 19:10:58:794 gameBoy/(24810:24810): 0
+[INFO] 19:10:58:794 gameBoy/(24810:24810): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:10:58:794 gameBoy/(24810:24810): paquete->buffer->size 12
+[INFO] 19:10:58:795 gameBoy/(24810:24810): largo nombre 7
+[INFO] 19:10:58:795 gameBoy/(24810:24810): nombre pikachu
+[INFO] 19:10:58:795 gameBoy/(24810:24810): sizes: 28
+[INFO] 19:10:58:795 gameBoy/(24810:24810): envio: 28
+[INFO] 19:11:10:881 gameBoy/(24846:24846): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:10:881 gameBoy/(24846:24846): cant argumentos: 7
+[INFO] 19:11:10:882 gameBoy/(24846:24846): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:10:882 gameBoy/(24846:24846): sizes: 38
+[INFO] 19:11:10:882 gameBoy/(24846:24846): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:13:293 gameBoy/(24882:24882): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:13:294 gameBoy/(24882:24882): cant argumentos: 7
+[INFO] 19:11:13:294 gameBoy/(24882:24882): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:13:294 gameBoy/(24882:24882): sizes: 38
+[INFO] 19:11:13:295 gameBoy/(24882:24882): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:15:443 gameBoy/(24918:24918): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:15:443 gameBoy/(24918:24918): cant argumentos: 7
+[INFO] 19:11:15:443 gameBoy/(24918:24918): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:15:443 gameBoy/(24918:24918): sizes: 38
+[INFO] 19:11:15:443 gameBoy/(24918:24918): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:16:456 gameBoy/(24954:24954): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:16:456 gameBoy/(24954:24954): cant argumentos: 7
+[INFO] 19:11:16:457 gameBoy/(24954:24954): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:16:457 gameBoy/(24954:24954): sizes: 38
+[INFO] 19:11:16:457 gameBoy/(24954:24954): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:17:346 gameBoy/(24990:24990): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:17:346 gameBoy/(24990:24990): cant argumentos: 7
+[INFO] 19:11:17:347 gameBoy/(24990:24990): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:17:347 gameBoy/(24990:24990): sizes: 38
+[INFO] 19:11:17:347 gameBoy/(24990:24990): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:17:915 gameBoy/(25026:25026): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:17:915 gameBoy/(25026:25026): cant argumentos: 7
+[INFO] 19:11:17:915 gameBoy/(25026:25026): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:17:915 gameBoy/(25026:25026): sizes: 38
+[INFO] 19:11:17:916 gameBoy/(25026:25026): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:18:695 gameBoy/(25062:25062): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:18:696 gameBoy/(25062:25062): cant argumentos: 7
+[INFO] 19:11:18:696 gameBoy/(25062:25062): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:18:696 gameBoy/(25062:25062): sizes: 38
+[INFO] 19:11:18:696 gameBoy/(25062:25062): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:19:671 gameBoy/(25098:25098): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:19:672 gameBoy/(25098:25098): cant argumentos: 7
+[INFO] 19:11:19:672 gameBoy/(25098:25098): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:19:672 gameBoy/(25098:25098): sizes: 38
+[INFO] 19:11:19:672 gameBoy/(25098:25098): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:20:433 gameBoy/(25134:25134): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:20:433 gameBoy/(25134:25134): cant argumentos: 7
+[INFO] 19:11:20:434 gameBoy/(25134:25134): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:20:434 gameBoy/(25134:25134): sizes: 38
+[INFO] 19:11:20:434 gameBoy/(25134:25134): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:21:655 gameBoy/(25170:25170): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:21:655 gameBoy/(25170:25170): cant argumentos: 7
+[INFO] 19:11:21:655 gameBoy/(25170:25170): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:21:655 gameBoy/(25170:25170): sizes: 38
+[INFO] 19:11:21:655 gameBoy/(25170:25170): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:22:445 gameBoy/(25206:25206): -----------------Leyendo archivo config-----------------
+[INFO] 19:11:22:445 gameBoy/(25206:25206): cant argumentos: 7
+[INFO] 19:11:22:445 gameBoy/(25206:25206): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:11:22:446 gameBoy/(25206:25206): sizes: 38
+[INFO] 19:11:22:446 gameBoy/(25206:25206): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:12:07:232 gameBoy/(25303:25303): -----------------Leyendo archivo config-----------------
+[INFO] 19:12:07:232 gameBoy/(25303:25303): cant argumentos: 7
+[INFO] 19:12:07:232 gameBoy/(25303:25303): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:12:07:233 gameBoy/(25303:25303): sizes: 38
+[INFO] 19:12:07:233 gameBoy/(25303:25303): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:13:16:123 gameBoy/(25370:25370): -----------------Leyendo archivo config-----------------
+[INFO] 19:13:16:124 gameBoy/(25370:25370): cant argumentos: 7
+[INFO] 19:13:24:250 gameBoy/(25405:25405): -----------------Leyendo archivo config-----------------
+[INFO] 19:13:24:250 gameBoy/(25405:25405): cant argumentos: 7
+[INFO] 19:13:25:157 gameBoy/(25440:25440): -----------------Leyendo archivo config-----------------
+[INFO] 19:13:25:157 gameBoy/(25440:25440): cant argumentos: 7
+[INFO] 19:13:25:624 gameBoy/(25475:25475): -----------------Leyendo archivo config-----------------
+[INFO] 19:13:25:624 gameBoy/(25475:25475): cant argumentos: 7
+[INFO] 19:13:25:960 gameBoy/(25510:25510): -----------------Leyendo archivo config-----------------
+[INFO] 19:13:25:960 gameBoy/(25510:25510): cant argumentos: 7
+[INFO] 19:13:27:631 gameBoy/(25545:25545): -----------------Leyendo archivo config-----------------
+[INFO] 19:13:27:631 gameBoy/(25545:25545): cant argumentos: 7
+[INFO] 19:15:12:123 gameBoy/(25645:25645): -----------------Leyendo archivo config-----------------
+[INFO] 19:15:12:123 gameBoy/(25645:25645): cant argumentos: 7
+[INFO] 19:15:12:983 gameBoy/(25680:25680): -----------------Leyendo archivo config-----------------
+[INFO] 19:15:12:984 gameBoy/(25680:25680): cant argumentos: 7
+[INFO] 19:15:40:874 gameBoy/(25747:25747): -----------------Leyendo archivo config-----------------
+[INFO] 19:15:40:875 gameBoy/(25747:25747): cant argumentos: 7
+[INFO] 19:16:06:600 gameBoy/(25832:25832): -----------------Leyendo archivo config-----------------
+[INFO] 19:16:06:600 gameBoy/(25832:25832): cant argumentos: 7
+[INFO] 19:16:06:600 gameBoy/(25832:25832): 1
+[INFO] 19:16:30:312 gameBoy/(25895:25895): -----------------Leyendo archivo config-----------------
+[INFO] 19:16:30:312 gameBoy/(25895:25895): cant argumentos: 7
+[INFO] 19:17:12:972 gameBoy/(25991:25991): -----------------Leyendo archivo config-----------------
+[INFO] 19:17:12:973 gameBoy/(25991:25991): cant argumentos: 7
+[INFO] 19:17:12:973 gameBoy/(25991:25991): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:17:12:973 gameBoy/(25991:25991): 1
+[INFO] 19:17:12:973 gameBoy/(25991:25991): sizes: 42
+[INFO] 19:17:40:493 gameBoy/(26040:26040): -----------------Leyendo archivo config-----------------
+[INFO] 19:17:40:493 gameBoy/(26040:26040): cant argumentos: 7
+[INFO] 19:17:40:493 gameBoy/(26040:26040): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:17:40:493 gameBoy/(26040:26040): 1
+[INFO] 19:17:40:493 gameBoy/(26040:26040): sizes: 42
+[INFO] 19:17:48:787 gameBoy/(26078:26078): -----------------Leyendo archivo config-----------------
+[INFO] 19:17:48:788 gameBoy/(26078:26078): cant argumentos: 7
+[INFO] 19:17:48:788 gameBoy/(26078:26078): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:17:48:788 gameBoy/(26078:26078): 1
+[INFO] 19:17:48:788 gameBoy/(26078:26078): sizes: 42
+[INFO] 19:17:55:690 gameBoy/(26114:26114): -----------------Leyendo archivo config-----------------
+[INFO] 19:17:55:690 gameBoy/(26114:26114): cant argumentos: 7
+[INFO] 19:17:55:690 gameBoy/(26114:26114): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:17:55:690 gameBoy/(26114:26114): 1
+[INFO] 19:17:59:48 gameBoy/(26150:26150): -----------------Leyendo archivo config-----------------
+[INFO] 19:17:59:48 gameBoy/(26150:26150): cant argumentos: 7
+[INFO] 19:17:59:48 gameBoy/(26150:26150): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:17:59:48 gameBoy/(26150:26150): 1
+[INFO] 19:18:09:507 gameBoy/(26186:26186): -----------------Leyendo archivo config-----------------
+[INFO] 19:18:09:507 gameBoy/(26186:26186): cant argumentos: 7
+[INFO] 19:18:09:507 gameBoy/(26186:26186): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:18:09:508 gameBoy/(26186:26186): 1
+[INFO] 19:18:09:508 gameBoy/(26186:26186): sizes: 42
+[INFO] 19:18:12:331 gameBoy/(26222:26222): -----------------Leyendo archivo config-----------------
+[INFO] 19:18:12:331 gameBoy/(26222:26222): cant argumentos: 7
+[INFO] 19:18:12:332 gameBoy/(26222:26222): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:18:12:332 gameBoy/(26222:26222): 1
+[INFO] 19:18:12:332 gameBoy/(26222:26222): sizes: 42
+[INFO] 19:18:15:947 gameBoy/(26273:26273): -----------------Leyendo archivo config-----------------
+[INFO] 19:18:15:947 gameBoy/(26273:26273): cant argumentos: 7
+[INFO] 19:18:15:947 gameBoy/(26273:26273): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:18:15:948 gameBoy/(26273:26273): 1
+[INFO] 19:18:15:948 gameBoy/(26273:26273): sizes: 42
+[INFO] 19:18:18:949 gameBoy/(26309:26309): -----------------Leyendo archivo config-----------------
+[INFO] 19:18:18:949 gameBoy/(26309:26309): cant argumentos: 7
+[INFO] 19:18:18:950 gameBoy/(26309:26309): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:18:18:950 gameBoy/(26309:26309): 1
+[INFO] 19:18:26:793 gameBoy/(26345:26345): -----------------Leyendo archivo config-----------------
+[INFO] 19:18:26:794 gameBoy/(26345:26345): cant argumentos: 4
+[INFO] 19:18:26:794 gameBoy/(26345:26345): 0
+[INFO] 19:18:26:797 gameBoy/(26345:26345): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:18:26:797 gameBoy/(26345:26345): paquete->buffer->size 20
+[INFO] 19:18:26:798 gameBoy/(26345:26345): largo nombre 15
+[INFO] 19:18:26:798 gameBoy/(26345:26345): nombre pikachuassfasgg
+[INFO] 19:18:26:798 gameBoy/(26345:26345): sizes: 36
+[INFO] 19:18:26:798 gameBoy/(26345:26345): envio: 36
+[INFO] 19:18:35:157 gameBoy/(26541:26541): -----------------Leyendo archivo config-----------------
+[INFO] 19:18:35:157 gameBoy/(26541:26541): cant argumentos: 7
+[INFO] 19:18:35:158 gameBoy/(26541:26541): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:18:35:158 gameBoy/(26541:26541): sizes: 38
+[INFO] 19:19:09:444 gameBoy/(26586:26586): -----------------Leyendo archivo config-----------------
+[INFO] 19:19:09:444 gameBoy/(26586:26586): cant argumentos: 7
+[INFO] 19:19:09:444 gameBoy/(26586:26586): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:09:444 gameBoy/(26586:26586): 1
+[INFO] 19:19:09:445 gameBoy/(26586:26586): sizes: 42
+[INFO] 19:19:12:263 gameBoy/(26622:26622): -----------------Leyendo archivo config-----------------
+[INFO] 19:19:12:263 gameBoy/(26622:26622): cant argumentos: 7
+[INFO] 19:19:12:263 gameBoy/(26622:26622): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:12:263 gameBoy/(26622:26622): 1
+[INFO] 19:19:12:263 gameBoy/(26622:26622): sizes: 42
+[INFO] 19:19:16:156 gameBoy/(26658:26658): -----------------Leyendo archivo config-----------------
+[INFO] 19:19:16:157 gameBoy/(26658:26658): cant argumentos: 7
+[INFO] 19:19:16:157 gameBoy/(26658:26658): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:16:157 gameBoy/(26658:26658): 1
+[INFO] 19:19:23:888 gameBoy/(26695:26695): -----------------Leyendo archivo config-----------------
+[INFO] 19:19:23:888 gameBoy/(26695:26695): cant argumentos: 7
+[INFO] 19:19:23:888 gameBoy/(26695:26695): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:23:888 gameBoy/(26695:26695): sizes: 38
+[INFO] 19:19:33:350 gameBoy/(26731:26731): -----------------Leyendo archivo config-----------------
+[INFO] 19:19:33:350 gameBoy/(26731:26731): cant argumentos: 7
+[INFO] 19:19:33:350 gameBoy/(26731:26731): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:33:350 gameBoy/(26731:26731): sizes: 38
+[INFO] 19:19:33:350 gameBoy/(26731:26731): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:36:110 gameBoy/(26767:26767): -----------------Leyendo archivo config-----------------
+[INFO] 19:19:36:110 gameBoy/(26767:26767): cant argumentos: 7
+[INFO] 19:19:36:111 gameBoy/(26767:26767): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:19:36:111 gameBoy/(26767:26767): sizes: 38
+[INFO] 19:19:36:111 gameBoy/(26767:26767): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:38:503 gameBoy/(26896:26896): -----------------Leyendo archivo config-----------------
+[INFO] 19:20:38:503 gameBoy/(26896:26896): cant argumentos: 7
+[INFO] 19:20:38:504 gameBoy/(26896:26896): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:38:504 gameBoy/(26896:26896): sizes: 38
+[INFO] 19:20:38:504 gameBoy/(26896:26896): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:41:186 gameBoy/(26932:26932): -----------------Leyendo archivo config-----------------
+[INFO] 19:20:41:187 gameBoy/(26932:26932): cant argumentos: 7
+[INFO] 19:20:41:187 gameBoy/(26932:26932): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:41:187 gameBoy/(26932:26932): sizes: 38
+[INFO] 19:20:41:188 gameBoy/(26932:26932): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:43:811 gameBoy/(26975:26975): -----------------Leyendo archivo config-----------------
+[INFO] 19:20:43:811 gameBoy/(26975:26975): cant argumentos: 7
+[INFO] 19:20:43:812 gameBoy/(26975:26975): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:43:812 gameBoy/(26975:26975): sizes: 38
+[INFO] 19:20:47:464 gameBoy/(27011:27011): -----------------Leyendo archivo config-----------------
+[INFO] 19:20:47:464 gameBoy/(27011:27011): cant argumentos: 7
+[INFO] 19:20:47:464 gameBoy/(27011:27011): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:47:464 gameBoy/(27011:27011): sizes: 38
+[INFO] 19:20:49:671 gameBoy/(27054:27054): -----------------Leyendo archivo config-----------------
+[INFO] 19:20:49:671 gameBoy/(27054:27054): cant argumentos: 7
+[INFO] 19:20:49:672 gameBoy/(27054:27054): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:20:49:672 gameBoy/(27054:27054): sizes: 38
+[INFO] 19:20:49:672 gameBoy/(27054:27054): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:36:451 gameBoy/(27144:27144): -----------------Leyendo archivo config-----------------
+[INFO] 19:21:36:451 gameBoy/(27144:27144): cant argumentos: 7
+[INFO] 19:21:36:451 gameBoy/(27144:27144): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:36:452 gameBoy/(27144:27144): sizes: 38
+[INFO] 19:21:36:452 gameBoy/(27144:27144): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:40:589 gameBoy/(27180:27180): -----------------Leyendo archivo config-----------------
+[INFO] 19:21:40:590 gameBoy/(27180:27180): cant argumentos: 7
+[INFO] 19:21:40:590 gameBoy/(27180:27180): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:40:590 gameBoy/(27180:27180): sizes: 38
+[INFO] 19:21:48:582 gameBoy/(27216:27216): -----------------Leyendo archivo config-----------------
+[INFO] 19:21:48:582 gameBoy/(27216:27216): cant argumentos: 7
+[INFO] 19:21:48:583 gameBoy/(27216:27216): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:48:583 gameBoy/(27216:27216): sizes: 38
+[INFO] 19:21:48:583 gameBoy/(27216:27216): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:50:542 gameBoy/(27254:27254): -----------------Leyendo archivo config-----------------
+[INFO] 19:21:50:542 gameBoy/(27254:27254): cant argumentos: 7
+[INFO] 19:21:50:543 gameBoy/(27254:27254): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:21:50:543 gameBoy/(27254:27254): sizes: 38
+[INFO] 19:23:03:442 gameBoy/(27386:27386): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:03:442 gameBoy/(27386:27386): cant argumentos: 7
+[INFO] 19:23:03:443 gameBoy/(27386:27386): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:03:443 gameBoy/(27386:27386): sizes: 49
+[INFO] 19:23:03:443 gameBoy/(27386:27386): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:08:428 gameBoy/(27422:27422): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:08:429 gameBoy/(27422:27422): cant argumentos: 7
+[INFO] 19:23:08:429 gameBoy/(27422:27422): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:08:429 gameBoy/(27422:27422): sizes: 40
+[INFO] 19:23:08:429 gameBoy/(27422:27422): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:10:230 gameBoy/(27458:27458): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:10:231 gameBoy/(27458:27458): cant argumentos: 7
+[INFO] 19:23:10:234 gameBoy/(27458:27458): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:10:234 gameBoy/(27458:27458): sizes: 40
+[INFO] 19:23:10:234 gameBoy/(27458:27458): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:28:989 gameBoy/(27529:27529): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:28:990 gameBoy/(27529:27529): cant argumentos: 7
+[INFO] 19:23:28:990 gameBoy/(27529:27529): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:28:990 gameBoy/(27529:27529): sizes: 46
+[INFO] 19:23:37:17 gameBoy/(27565:27565): -----------------Leyendo archivo config-----------------
+[INFO] 19:23:37:17 gameBoy/(27565:27565): cant argumentos: 7
+[INFO] 19:23:37:18 gameBoy/(27565:27565): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:23:37:18 gameBoy/(27565:27565): sizes: 52
+[INFO] 19:24:55:257 gameBoy/(27619:27619): -----------------Leyendo archivo config-----------------
+[INFO] 19:24:55:257 gameBoy/(27619:27619): cant argumentos: 6
+[INFO] 19:24:55:257 gameBoy/(27619:27619): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:15:21 gameBoy/(27656:27656): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:15:21 gameBoy/(27656:27656): cant argumentos: 6
+[INFO] 19:25:15:22 gameBoy/(27656:27656): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:15:648 gameBoy/(27692:27692): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:15:648 gameBoy/(27692:27692): cant argumentos: 6
+[INFO] 19:25:15:649 gameBoy/(27692:27692): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:16:149 gameBoy/(27728:27728): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:16:150 gameBoy/(27728:27728): cant argumentos: 6
+[INFO] 19:25:16:150 gameBoy/(27728:27728): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:16:498 gameBoy/(27764:27764): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:16:499 gameBoy/(27764:27764): cant argumentos: 6
+[INFO] 19:25:16:499 gameBoy/(27764:27764): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:16:847 gameBoy/(27800:27800): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:16:847 gameBoy/(27800:27800): cant argumentos: 6
+[INFO] 19:25:16:847 gameBoy/(27800:27800): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:18:224 gameBoy/(27836:27836): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:18:224 gameBoy/(27836:27836): cant argumentos: 6
+[INFO] 19:25:18:225 gameBoy/(27836:27836): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:57:48 gameBoy/(27920:27920): -----------------Leyendo archivo config-----------------
+[INFO] 19:25:57:48 gameBoy/(27920:27920): cant argumentos: 6
+[INFO] 19:25:57:48 gameBoy/(27920:27920): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:25:57:48 gameBoy/(27920:27920): 1
+[INFO] 19:25:57:48 gameBoy/(27920:27920): sizes: 38
+[INFO] 19:26:06:210 gameBoy/(27963:27963): -----------------Leyendo archivo config-----------------
+[INFO] 19:26:06:210 gameBoy/(27963:27963): cant argumentos: 6
+[INFO] 19:26:06:211 gameBoy/(27963:27963): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:26:06:211 gameBoy/(27963:27963): 1
+[INFO] 19:26:06:211 gameBoy/(27963:27963): sizes: 45
+[INFO] 19:26:20:270 gameBoy/(28025:28025): -----------------Leyendo archivo config-----------------
+[INFO] 19:26:20:271 gameBoy/(28025:28025): cant argumentos: 6
+[INFO] 19:26:20:271 gameBoy/(28025:28025): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 19:26:20:271 gameBoy/(28025:28025): sizes: 45
+[INFO] 19:26:36:910 gameBoy/(28091:28091): -----------------Leyendo archivo config-----------------
+[INFO] 19:26:36:910 gameBoy/(28091:28091): cant argumentos: 4
+[INFO] 19:26:36:910 gameBoy/(28091:28091): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
