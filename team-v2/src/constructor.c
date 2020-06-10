@@ -15,7 +15,10 @@ void iniciar_variables_globales() {
 	pthread_mutex_lock(&lock_de_planificacion);
 	pthread_mutex_lock(&lock_de_entrenador_disponible);
 
-	funciona_broker=0;
+	conexion_appeared = -1;
+	conexion_localized = -1;
+	conexion_caught = -1;
+	funciona_broker=1;
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales

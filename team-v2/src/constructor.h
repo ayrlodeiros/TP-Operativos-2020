@@ -32,7 +32,6 @@ pthread_mutex_t mutex_entrenadores;
 
 t_log* logger;
 t_log* nuestro_log;
-int funciona_broker;
 
 t_list* entrenadores;
 t_dictionary* objetivo_global;
@@ -89,6 +88,12 @@ typedef struct
 } entrenador;
 
 //CONEXIONES
+int conexion_appeared;
+int conexion_localized;
+int conexion_caught;
+int funciona_broker;
+
+
 t_list* lista_ids_localized;
 pthread_mutex_t mutex_lista_ids_localized;
 

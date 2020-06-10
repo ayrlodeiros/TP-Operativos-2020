@@ -9,17 +9,20 @@ pokemon* pokemon_para_planificar;
 
 //CONEXIONES
 t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffer* buffer);
-void* serializar_paquete(t_paquete* paquete, int bytes);
+t_paquete* crear_paquete_sin_buffer(codigo_operacion cod_op, codigo_accion cod_acc);
+void* serializar_paquete(t_paquete* paquete, int tamanio_a_enviar);
+void* serializar_paquete_sin_buffer(t_paquete* paquete, int tamanio_a_enviar);
 int obtener_tamanio_de_paquete(t_paquete* paquete);
 void destruir_paquete(t_paquete* paquete);
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
-void intentar_conectar_al_broker(int conexion);
-void suscribirse_a_cola_appeared();
-void suscribirse_a_cola_localized();
-void suscribirse_a_cola_caught();
+int intentar_conectar_al_broker();
 void levantar_conexiones_al_broker();
+void esperar_mensaje_appeared();
+void esperar_mensaje_localized();
+void esperar_mensaje_caught();
+void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir);
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);

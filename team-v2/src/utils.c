@@ -10,6 +10,13 @@ t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffe
 	paquete->buffer = buffer;
 	return paquete;
 }
+t_paquete* crear_paquete_sin_buffer(codigo_operacion cod_op, codigo_accion cod_acc) {
+	t_paquete* paquete = malloc(sizeof(t_paquete));
+	paquete->numero_de_modulo = NUMERO_MODULO;
+	paquete->codigo_de_operacion = cod_op;
+	paquete->codigo_de_accion = cod_acc;
+	return paquete;
+}
 void* serializar_paquete(t_paquete* paquete, int tamanio_a_enviar){
 	void * a_enviar = malloc(tamanio_a_enviar);
 	int offset = 0;
@@ -23,6 +30,19 @@ void* serializar_paquete(t_paquete* paquete, int tamanio_a_enviar){
 	memcpy(a_enviar + offset,&(paquete->buffer->tamanio),sizeof(int));
 	offset += sizeof(int);
 	memcpy(a_enviar + offset,paquete->buffer->stream, paquete->buffer->tamanio);
+
+	return a_enviar;
+}
+
+void* serializar_paquete_sin_buffer(t_paquete* paquete, int tamanio_a_enviar){
+	void * a_enviar = malloc(tamanio_a_enviar);
+	int offset = 0;
+
+	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(int));
+	offset += sizeof(int);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_operacion),sizeof(int));
+	offset += sizeof(int);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_accion),sizeof(int));
 
 	return a_enviar;
 }
@@ -98,9 +118,10 @@ int levantar_servidor(char* ip, char* puerto) {
 	return socket_servidor;
 }
 
-void intentar_conectar_al_broker(int conexion) {
+int intentar_conectar_al_broker() {
 	char* ip_broker = leer_ip_broker();
 	char* puerto_broker = leer_puerto_broker();
+	int conexion = -1;
 
 	while(conexion == -1) {
 		log_info(nuestro_log, string_from_format("Intentando conectar con broker en IP: %s y PUERTO: %s", ip_broker, puerto_broker));
@@ -115,46 +136,84 @@ void intentar_conectar_al_broker(int conexion) {
 			log_info(logger, "11. Intento de conexion con el broker exitosa.");
 		}
 	}
-}
-
-void suscribirse_a_cola_appeared() {
-	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-	if(conexion_a_broker == -1) {
-		intentar_conectar_al_broker(conexion_a_broker);
-	}
-}
-
-void suscribirse_a_cola_localized() {
-	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-	if(conexion_a_broker == -1) {
-		intentar_conectar_al_broker(conexion_a_broker);
-	}
-}
-
-void suscribirse_a_cola_caught() {
-	int conexion_a_broker = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-	if(conexion_a_broker == -1) {
-		intentar_conectar_al_broker(conexion_a_broker);
-	}
+	return conexion;
 }
 
 void levantar_conexiones_al_broker() {
-	int primera_conexion = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-	if(primera_conexion == -1) {
-		funciona_broker = 0;
+	conexion_appeared = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	while(1) {
+		if(funciona_broker == 1 && todas_las_conexiones_funcionan()) {
 
-		intentar_conectar_al_broker(primera_conexion);
+			//TODO HACER QUE CADA MENSAJE SE QUEDE ESPERANDO UN RECV
+			pthread_mutex_lock(&lock_de_planificacion);
+		}
 
-		funciona_broker = 1;
+		if(conexion_appeared == -1 || funciona_broker == 0) {
+
+			conexion_appeared = intentar_conectar_al_broker();
+
+			conexion_localized = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+
+			conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+
+			if(conexion_appeared == -1 || conexion_localized == -1 || conexion_caught == -1) {
+				funciona_broker = 0;
+			} else {
+				funciona_broker = 1;
+			}
+		}
+
 	}
-	pthread_t* cola_appeared = pthread_create(&cola_appeared,NULL,suscribirse_a_cola_appeared, NULL);
-	pthread_t* cola_localized = pthread_create(&cola_localized,NULL,suscribirse_a_cola_localized, NULL);
-	pthread_t* cola_caught = pthread_create(&cola_caught,NULL,suscribirse_a_cola_caught, NULL);
+}
 
-	pthread_detach(cola_appeared);
-	pthread_detach(cola_localized);
-	pthread_detach(cola_caught);
+void esperar_mensaje_appeared() {
+	while(funciona_broker == 1) {
+		suscribirse_a_cola(conexion_appeared, APPEARED);
+		int asd;
+		if(recv(conexion_appeared, &asd, sizeof(int), 0) > 0){
 
+		} else {
+			log_info(nuestro_log, "Se perdio la conexion con el broker");
+			funciona_broker = 0;
+		}
+	}
+}
+void esperar_mensaje_localized() {
+	while(funciona_broker == 1) {
+		suscribirse_a_cola(conexion_localized, LOCALIZED);
+		int asd;
+		if(recv(conexion_localized, &asd, sizeof(int), 0) > 0){
+
+		} else {
+			log_info(nuestro_log, "Se perdio la conexion con el broker");
+			funciona_broker = 0;
+		}
+	}
+}
+void esperar_mensaje_caught() {
+	while(funciona_broker == 1) {
+		suscribirse_a_cola(conexion_caught, CAUGHT);
+		int asd;
+		if(recv(conexion_caught, &asd, sizeof(int), 0) > 0){
+
+		} else {
+			log_info(nuestro_log, "Se perdio la conexion con el broker");
+			funciona_broker = 0;
+		}
+	}
+}
+
+void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir) {
+	t_paquete* paquete = crear_paquete_sin_buffer(SUSCRIPCION, cola_a_suscribir);
+	int tamanio_paquete = 3*sizeof(int);
+	void* a_enviar = serializar_paquete_sin_buffer(paquete, tamanio_paquete);
+	if(send(conexion_broker, a_enviar, tamanio_paquete, 0) > 0){
+		log_info(nuestro_log, "Suscripcion exitosa a la cola");
+	} else {
+		log_info(nuestro_log, "No se pudo realizar la suscripcion, el broker no funciona");
+		funciona_broker = 0;
+	}
+	free(paquete);
 }
 
 //FIN DE CONEXIONES
