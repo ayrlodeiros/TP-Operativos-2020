@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/config-reader.c \
 ../src/gamecard-v2.c 
 
 OBJS += \
+./src/config-reader.o \
 ./src/gamecard-v2.o 
 
 C_DEPS += \
+./src/config-reader.d \
 ./src/gamecard-v2.d 
 
 

@@ -1,0 +1,9 @@
+[INFO] 16:39:50:29 gamecard/(7812:7812): tiempo_de_reintento_conexion : 10
+[INFO] 16:39:50:31 gamecard/(7812:7812): tiempo_de_reintento_operacion : 5
+[INFO] 16:39:50:32 gamecard/(7812:7812): tiempo_retardo_operacion : 0
+[INFO] 16:43:08:218 gamecard/(7953:7953): tiempo_de_reintento_conexion : 10
+[INFO] 16:43:08:234 gamecard/(7953:7953): tiempo_de_reintento_operacion : 5
+[INFO] 16:43:08:234 gamecard/(7953:7953): tiempo_retardo_operacion : 5
+[INFO] 16:43:08:234 gamecard/(7953:7953): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 16:43:08:236 gamecard/(7953:7953): ip_broker : 127.0.0.1
+[INFO] 16:43:08:236 gamecard/(7953:7953): leer_puerto_broker : 6009
