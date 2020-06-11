@@ -64,10 +64,12 @@ void fifo(){
 			ejecutar(entrenador_a_ejecutar);
 		}
 
-		printf("\n CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_con_block_deadlock()));
+		log_info(nuestro_log,"CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_con_block_deadlock()));
 
 		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
+
+	terminar_team();
 }
 
 /*
@@ -134,6 +136,7 @@ void round_robin(){
 
 	}
 
+	terminar_team();
 }
 
 void sjf_sin_desalojo(){
@@ -174,7 +177,8 @@ void sjf_sin_desalojo(){
 		}
 	}
 
-	//list_destroy(entrenadores_con_rafagas_estimadas);
+	list_destroy(entrenadores_con_rafagas_estimadas);
+	terminar_team();
 
 }
 
@@ -211,5 +215,6 @@ void sjf_con_desalojo(){
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
+	terminar_team();
 }
 

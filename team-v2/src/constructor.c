@@ -97,14 +97,6 @@ void armar_objetivo_global() {
 			agregar_objetivo_a_objetivo_global(list_get(entrenador_aux->pokemons_objetivo, j));
 		}
 	}
-
-	//Recorro los adquiridos de los entrenadores para restarlos del objetivo global
-	for(int i = 0; i<list_size(entrenadores); i++) {
-		entrenador* entrenador_aux = list_get(entrenadores, i);
-		for(int j = 0; j<list_size(entrenador_aux->pokemons_adquiridos); j++) {
-			restar_adquirido_a_objetivo_global(list_get(entrenador_aux->pokemons_adquiridos, j));
-		}
-	}
 }
 
 //Se deberia usar solo en armar_objetivo_global y cuando se captura un pokemon

@@ -48,7 +48,6 @@ int el_entrenador_cumplio_su_objetivo(entrenador* entrenador);
 int el_entrenador_esta_block_deadlock(entrenador* entrenador);
 int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,char* pokemon);
 int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos, t_list* pokemons_objetivo, char* pokemon);
-int es_el_pokemon_buscado(entrenador* entrenador1, char* pokemon_a_eliminar);
 int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, intercambio* un_intercambio);
 void planear_intercambio(entrenador* entrenador1);
 int el_otro_entrenador_tiene_el_pokemon_que_necesito(entrenador* entrenador1,entrenador* entrenador_a_evaluar);
@@ -62,7 +61,6 @@ int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador);
 void intercambiar(entrenador* entrenador1);
 void realizar_intercambio(entrenador* entrenador1, entrenador* entrenador_a_negociar);
 intercambio* buscar_intercambio_correspondiente_al_entrenador(entrenador* entrenador);
-int posicion_del_pokemon_en_la_lista(t_list* lista,char* pokemon);
 
 //FIN DE DEADLOCK
 
@@ -75,6 +73,7 @@ void esperar_id_localized(int socket_get);
 void catch_pokemon(entrenador* entrenador);
 void esperar_id_caught(int socket_catch);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
+void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador);
 void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido);
 void destruir_pokemon(pokemon* pokemon);
 

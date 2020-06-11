@@ -20,11 +20,11 @@ int main(void){
 	for(int i = 0; i < list_size(entrenador1->pokemons_objetivo); i++) {
 			log_info(nuestro_log, string_from_format("\nPokemon OBJETIVO %d: %s", i, list_get(entrenador1->pokemons_objetivo, i)));
 		}
-
+/*
 	pthread_t* hilo_reintento_conexion_broker;
 	pthread_create(&hilo_reintento_conexion_broker,NULL,levantar_conexiones_al_broker, NULL);
 	pthread_detach(hilo_reintento_conexion_broker);
-
+*/
 
 	get_pokemon();
 
@@ -78,9 +78,11 @@ void iniciar_team() {
 }
 
 void terminar_team() {
+	log_info(nuestro_log,string_from_format("TERMINO EL PROCESO TEAM"));
 	destruir_config();
 	log_destroy(logger);
 	log_destroy(nuestro_log);
+
 }
 
 
