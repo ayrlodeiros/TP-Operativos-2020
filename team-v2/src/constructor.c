@@ -7,6 +7,8 @@ void iniciar_variables_globales() {
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
 	lista_ids_localized = list_create();
+	lista_ids_caught = list_create();
+	intercambios = list_create();
 	pthread_mutex_init(&lock_de_planificacion, NULL);
 	pthread_mutex_init(&lock_de_entrenador_disponible, NULL);
 	pthread_mutex_init(&mutex_entrenadores, NULL);
@@ -30,17 +32,18 @@ void armar_entrenadores() {
 	t_list* objetivos = leer_objetivos_entrenadores();
 
 	for(int i=0; i< list_size(posiciones);i++){
-		list_add(entrenadores, armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i)));
+		list_add(entrenadores, armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i), i));
 	}
 
 }
 
 //Se deberia usar solo en armar_entrenadores
-entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos){
+entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, int id){
 	entrenador* un_entrenador = malloc(sizeof(entrenador));
 	t_list* lista_pokemons_adquiridos = crear_t_list(string_split(pokemons,"|"));
 	t_list* lista_pokemons_objetivo = crear_t_list(string_split(objetivos,"|"));
 
+	un_entrenador->id = id;
 	un_entrenador->posicion = armar_posicion(posicion);
 	un_entrenador->estado = NEW;
 	un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;

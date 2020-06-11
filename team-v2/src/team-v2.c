@@ -21,12 +21,12 @@ int main(void){
 			log_info(nuestro_log, string_from_format("\nPokemon OBJETIVO %d: %s", i, list_get(entrenador1->pokemons_objetivo, i)));
 		}
 
-	/*pthread_t* hilo_reintento_conexion_broker;
+	pthread_t* hilo_reintento_conexion_broker;
 	pthread_create(&hilo_reintento_conexion_broker,NULL,levantar_conexiones_al_broker, NULL);
-	pthread_detach(hilo_reintento_conexion_broker);*/
+	pthread_detach(hilo_reintento_conexion_broker);
 
 
-	/*get_pokemon();
+	get_pokemon();
 
 	pthread_t* hilo_planificacion;
 	pthread_create(&hilo_planificacion,NULL, planificar, NULL);
@@ -51,10 +51,10 @@ int main(void){
 		}
 	}*/
 
-/*
+
 	pthread_t* hilo_de_espera;
 	pthread_create(&hilo_de_espera,NULL, while_uno, NULL);
-	pthread_join(hilo_de_espera, NULL);*/
+	pthread_join(hilo_de_espera, NULL);
 
 	return 0;
 }

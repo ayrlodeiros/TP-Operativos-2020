@@ -38,6 +38,7 @@ t_dictionary* objetivo_global;
 //TODO VER MAS ADELANTE EL CASO EN EL QUE LOS ENTRENADORES ESTEN OCUPADOS Y NINGUNO PUEDA IR A BUSCARLO
 t_queue* pokemons_sin_entrenador;
 t_list* entrenadores_ready;
+t_list* intercambios;
 
 
 typedef struct
@@ -54,7 +55,7 @@ typedef enum
 	BLOCK_READY = 3,
 	BLOCK_CATCHING = 4,
 	BLOCK_DEADLOCK = 5,
-	BLOCK = 6,
+	INTERCAMBIO = 6,
 	EXIT = 7
 
 }estado_entrenador;
@@ -72,6 +73,7 @@ typedef struct
 
 typedef struct
 {
+	int id;
 	pthread_t* hilo;
 	estado_entrenador estado;
 	int cpu_usado;
@@ -86,6 +88,14 @@ typedef struct
 	pokemon* pokemon_en_busqueda;
 	t_queue* acciones;
 } entrenador;
+
+typedef struct
+{
+	entrenador* entrenador1;
+	entrenador* entrenador2;
+	char* pokemon1;
+	char* pokemon2;
+} intercambio;
 
 //CONEXIONES
 int conexion_appeared;
@@ -135,7 +145,7 @@ typedef struct
 void iniciar_variables_globales();
 
 void armar_entrenadores();
-entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos);
+entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, int id);
 void actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(entrenador* entrenador);
 void actualizar_objetivo_y_sobrante_del_entrenador(entrenador* entrenador, char* pokemon_adquirido);
 int devolver_posicion_en_la_lista_del_pokemon(t_list* lista_pokemons, char* pokemon_a_buscar);

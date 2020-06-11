@@ -142,7 +142,7 @@ int intentar_conectar_al_broker() {
 void levantar_conexiones_al_broker() {
 	conexion_appeared = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 	while(1) {
-		if(funciona_broker == 1 && todas_las_conexiones_funcionan()) {
+		if(funciona_broker == 1 /*&& todas_las_conexiones_funcionan()*/) {
 
 			//TODO HACER QUE CADA MENSAJE SE QUEDE ESPERANDO UN RECV
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -347,111 +347,138 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 
 void planear_intercambio(entrenador* entrenador1){
 	log_info(nuestro_log,"Entre a planear el intercambio");
+	intercambio* un_intercambio = malloc(sizeof(intercambio));
 
-	cambiar_estado_entrenador(entrenador1, BLOCK);
+	cambiar_estado_entrenador(entrenador1, INTERCAMBIO);
 
-	t_list* entrenadores_para_intercambio = obtener_entrenadores_para_intercambiar(entrenador1);
+	if(se_encontraron_entrenadores_para_intercambio(entrenador1, un_intercambio)){
 
-	/*if(list_size(entrenadores_para_intercambio) == 2){
-		entrenador1->entrenador_en_busqueda = list_get(entrenadores_para_intercambio, 1);
-		cambiar_estado_entrenador(entrenador1->entrenador_en_busqueda, BLOCK);
-		log_info(nuestro_log,"Estoy en el principio de planear el intercambio");
-		calcular_distancia_en_x_del_entrenador_a_la_posicion(entrenador1, entrenador1->entrenador_en_busqueda->posicion);
-		calcular_distancia_en_y_del_entrenador_a_la_posicion(entrenador1, entrenador1->entrenador_en_busqueda->posicion);
+		list_add(intercambios, un_intercambio);
+
+		cambiar_estado_entrenador(un_intercambio->entrenador2, INTERCAMBIO);
+
+		calcular_distancia_en_x_del_entrenador_a_la_posicion(entrenador1, un_intercambio->entrenador2->posicion);
+		calcular_distancia_en_y_del_entrenador_a_la_posicion(entrenador1, un_intercambio->entrenador2->posicion);
+
 		log_info(nuestro_log,"Estoy en el medio de planear el intercambio");
 		agregar_accion(entrenador1, intercambiar, 5);
 		cambiar_estado_entrenador(entrenador1, READY);
 		list_add(entrenadores_ready, entrenador1);
 	} else {
 		cambiar_estado_entrenador(entrenador1, BLOCK_DEADLOCK);
-	}*/
+		free (un_intercambio);
+	}
+
 	log_info(nuestro_log,"Sali de planear el intercambio");
 
 }
 
-t_list* obtener_entrenadores_para_intercambiar(entrenador* entrenador1){
-	int se_encontro_entrenador_ideal = 0;
-	entrenador* entrenador_ideal;
-	entrenador* entrenador_util;
-
-	t_list* entrenadores_del_intercambio = list_create();
-	list_add(entrenadores_del_intercambio, entrenador1);
+int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, intercambio* un_intercambio){
+	int se_encontro_entrenador = 0;
+	entrenador* entrenador_a_intercambiar;
 
 	t_list* entrenadores_en_deadlock = entrenadores_con_block_deadlock();
+
 	for(int i = 0; i < list_size(entrenadores_en_deadlock); i++){
 
-		if(obtener_pokemons_que_necesito(entrenador1) == obtener_pokemons_que_me_sobran(list_get(entrenadores_en_deadlock,i))){
+		if(el_otro_entrenador_tiene_el_pokemon_que_necesito(entrenador1, list_get(entrenadores_en_deadlock,i))){
 
-			if(obtener_pokemons_que_me_sobran(entrenador1) == obtener_pokemons_que_necesito(list_get(entrenadores_en_deadlock,i))){
-				entrenador_ideal = list_get(entrenadores_en_deadlock,i);
+			if(el_otro_entrenador_tiene_el_pokemon_que_necesito(list_get(entrenadores_en_deadlock,i),entrenador1)){
+				entrenador_a_intercambiar = list_get(entrenadores_en_deadlock,i);
 				log_info(nuestro_log,string_from_format("HAY UN ENTRENADOR PARA INTERCAMBIAR PARTE 2"));
-				se_encontro_entrenador_ideal = 1;
+				un_intercambio->entrenador1 = entrenador1;
+				un_intercambio->entrenador2 = entrenador_a_intercambiar;
+
+				t_list* pokemons_que_necesito_para_intercambiar = pokemons_a_intercambiar_ideal(entrenador1,entrenador_a_intercambiar);
+
+				un_intercambio->pokemon1 = list_get(pokemons_que_necesito_para_intercambiar,0);
+				un_intercambio->pokemon2 = list_get(pokemons_que_necesito_para_intercambiar,1);
+
+				list_destroy(pokemons_que_necesito_para_intercambiar);
+				list_destroy(entrenadores_en_deadlock);
+
+				//CALCULAR POKEMON A INTERCAMBIAR ENTRE AMBAS PARTES
+
+				return 1;
+			} else {
+				entrenador_a_intercambiar = list_get(entrenadores_en_deadlock,i);
+				se_encontro_entrenador = 1;
 			}
+		}
+	}
 
-			else{
-				entrenador_util = list_get(entrenadores_en_deadlock,i);
+	if(se_encontro_entrenador == 1){
+		un_intercambio->entrenador1 = entrenador1;
+		un_intercambio->entrenador2 = entrenador_a_intercambiar;
+
+		//CALCULAR POKEMON A INTERCAMBIAR QUE LE SIRVA AL ENTRENADOR1 SOLAMENTE
+		t_list* pokemons_que_necesito_para_intercambiar = pokemons_a_intercambiar(entrenador1,entrenador_a_intercambiar);
+		un_intercambio->pokemon1 = list_get(pokemons_que_necesito_para_intercambiar,0);
+		un_intercambio->pokemon2 = list_get(pokemons_que_necesito_para_intercambiar,1);
+
+		list_destroy(pokemons_que_necesito_para_intercambiar);
+		list_destroy(entrenadores_en_deadlock);
+		return 1;
+	} else {
+		list_destroy(entrenadores_en_deadlock);
+		return 0;
+	}
+}
+
+int el_otro_entrenador_tiene_el_pokemon_que_necesito(entrenador* entrenador1,entrenador* entrenador_a_evaluar){
+	for(int i = 0; i< list_size(entrenador1->pokemons_objetivo);i++){
+		for(int j=0; j< list_size(entrenador_a_evaluar->pokemons_sobrantes);j++){
+			if(string_equals_ignore_case(list_get(entrenador1->pokemons_objetivo,i),list_get(entrenador_a_evaluar->pokemons_sobrantes,j))){
+				return 1;
 			}
 		}
 	}
 
-	if(se_encontro_entrenador_ideal == 1){
-		log_info(nuestro_log,string_from_format("HAY UN ENTRENADOR PARA INTERCAMBIAR PARTE 3"));
-		list_add(entrenadores_del_intercambio, entrenador_ideal);
-		return entrenadores_del_intercambio;
-	}
-	else{
-		list_add(entrenadores_del_intercambio, entrenador_util);
-		return entrenadores_del_intercambio;
-	}
-
-	return entrenadores_del_intercambio;
-}
-
-t_list* obtener_pokemons_que_me_sobran(entrenador* entrenador){
-	t_list* pokemons_que_me_sobran = list_create();
-
-
-	for(int i=0;i<list_size(entrenador->pokemons_adquiridos);i++){
-
-		if(tiene_mas_cantidad_de_ese_pokemon(entrenador->pokemons_adquiridos,entrenador->pokemons_objetivo,list_get(entrenador->pokemons_adquiridos,i))){
-			return list_get(entrenador->pokemons_adquiridos,i);
-		}
-	}
-	return NULL;
-}
-
-t_list* obtener_pokemons_que_necesito(entrenador* entrenador){
-	t_list* pokemons_que_necesito = list_create();
-
-	for(int i=0;i<list_size(entrenador->pokemons_objetivo);i++){
-		if(!tiene_mas_cantidad_de_ese_pokemon(entrenador->pokemons_adquiridos, entrenador->pokemons_objetivo,list_get(entrenador->pokemons_adquiridos,i))){
-			return list_get(entrenador->pokemons_objetivo,i);
-		}
-	}
-	return NULL;
-
-}
-
-int necesito_mas_pokemons(){
-	int i=0;
-
-	while(i<dictionary_size(objetivo_global)){
-		if((int)dictionary_get(objetivo_global,i) > 0){
-			return 1;
-		}
-	}
 	return 0;
+}
+
+//Devuelve un pokemon que el entrenador 1 necesita, sin importar lo que necesite el entrenador 2.
+char* pokemon_que_sirven_para_intercambiar(entrenador* entrenador1, entrenador* entrenador2){
+	for(int i = 0; i< list_size(entrenador1->pokemons_objetivo);i++){
+		for(int j=0; j< list_size(entrenador2->pokemons_sobrantes);j++){
+			if(string_equals_ignore_case(list_get(entrenador1->pokemons_objetivo,i),list_get(entrenador2->pokemons_sobrantes,j))){
+				return list_get(entrenador1->pokemons_objetivo,i);
+			}
+		}
+	}
+}
+
+t_list* pokemons_a_intercambiar(entrenador* entrenador1,entrenador* entrenador2){
+
+	t_list* pokemons_a_intercambiar = list_create();
+
+	//Agrego a la lista de intercambiar al pokemon que el entrenador 1 necesita
+	list_add(pokemons_a_intercambiar,pokemon_que_sirven_para_intercambiar(entrenador1,entrenador2));
+
+	//Agrego a la lista de intercambiar a cualquier pokemon que le sobre al entrenador 1.
+	list_add(pokemons_a_intercambiar,entrenador1->pokemons_sobrantes);
+
+	return pokemons_a_intercambiar;
+
+}
+
+t_list* pokemons_a_intercambiar_ideal(entrenador* entrenador1,entrenador* entrenador2){
+
+	t_list* pokemons_a_intercambiar = list_create();
+
+	//Agrego a la lista de intercambiar al pokemon que el entrenador 1 necesita
+	list_add(pokemons_a_intercambiar,pokemon_que_sirven_para_intercambiar(entrenador1,entrenador2));
+
+	//Agrego a la lista de intercambiar al pokemon que el entrenador 2 necesita
+	list_add(pokemons_a_intercambiar,pokemon_que_sirven_para_intercambiar(entrenador2,entrenador1));
+
+	return pokemons_a_intercambiar;
+
 }
 
 int el_entrenador_cumplio_su_objetivo(entrenador* entrenador){
 	return list_is_empty(entrenador->pokemons_objetivo);
 }
-
-
-int hay_deadlock(){
-	return !(necesito_mas_pokemons() || list_all_satisfy(entrenadores,el_entrenador_cumplio_su_objetivo));
-}
-
 
 int el_entrenador_esta_block_deadlock(entrenador* entrenador){
 	return entrenador->estado == BLOCK_DEADLOCK;
@@ -500,7 +527,32 @@ int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador){
 void intercambiar(entrenador* entrenador1) {
 	log_info(nuestro_log,string_from_format("Empezando la accion de intercambio"));
 
-	//realizar_intercambio(entrenador1, entrenador1->entrenador_en_busqueda);
+	intercambio* intercambio_a_realizar = buscar_intercambio_correspondiente_al_entrenador(entrenador1);
+
+	list_add(entrenador1->pokemons_adquiridos,intercambio_a_realizar->pokemon1);
+	int posicion_pokemon_a_eliminar = posicion_del_pokemon_en_la_lista(intercambio_a_realizar->entrenador2->pokemons_sobrantes,intercambio_a_realizar->pokemon1);
+	char* pokemon_a_eliminar = list_remove(intercambio_a_realizar->entrenador2,posicion_pokemon_a_eliminar);
+
+	list_add(intercambio_a_realizar->entrenador2->pokemons_adquiridos,intercambio_a_realizar->pokemon2);
+	posicion_pokemon_a_eliminar = posicion_del_pokemon_en_la_lista(intercambio_a_realizar->entrenador1->pokemons_sobrantes,intercambio_a_realizar->pokemon2);
+	pokemon_a_eliminar = list_remove(intercambio_a_realizar->entrenador1,posicion_pokemon_a_eliminar);
+
+	free(pokemon_a_eliminar);
+	free(intercambio_a_realizar);
+
+	//TODO REVISAR ESTO DE DEADLOCK
+	/*if(devolver_posicion_en_la_lista_del_pokemon(entrenador1, pokemon_que_no_necesito) != -1){
+		int posicion = devolver_posicion_en_la_lista_del_pokemon(entrenador1, pokemon_que_no_necesito);
+		char* pokemon_a_intercambiar = list_remove(entrenador1->pokemons_adquiridos, posicion);
+		list_add(entrenador_a_negociar->pokemons_adquiridos, pokemon_a_intercambiar);
+	}
+
+	if(devolver_posicion_en_la_lista_del_pokemon(entrenador_a_negociar,pokemon_que_no_necesito) != -1){
+		int posicion = devolver_posicion_en_la_lista_del_pokemon(entrenador_a_negociar, pokemon_que_requiero);
+		char* pokemon_a_intercambiar2 = list_remove(entrenador_a_negociar->pokemons_adquiridos, posicion);
+		list_remove(entrenador_a_negociar->pokemons_adquiridos, posicion);
+		list_add(entrenador1->pokemons_adquiridos, pokemon_a_intercambiar2);
+	}*/
 
 	log_info(nuestro_log,string_from_format("Terminando la accion de intercambio"));
 
@@ -515,33 +567,23 @@ void intercambiar(entrenador* entrenador1) {
 	//Uno de los casos en el que se va a llamar es cuando un entrenador pase a BLOCK_DEADLOCK y ya haya alguno en ese estado tambien
 }
 
-void realizar_intercambio(entrenador* entrenador1, entrenador* entrenador_a_negociar){
-
-	log_info(nuestro_log,string_from_format("Entrando a realizar Intercambio"));
-
-	//char* pokemon_que_requiero = pokemon_que_necesito(entrenador1);
-	//char* pokemon_que_no_necesito = pokemon_que_me_sobra(entrenador1);
-
-	log_info(nuestro_log,string_from_format("Estoy en el medio de realizar Intercambio"));
-
-	 //TODO REVISAR ESTO DE DEADLOCK
-	/*if(devolver_posicion_en_la_lista_del_pokemon(entrenador1, pokemon_que_no_necesito) != -1){
-		int posicion = devolver_posicion_en_la_lista_del_pokemon(entrenador1, pokemon_que_no_necesito);
-		char* pokemon_a_intercambiar = list_remove(entrenador1->pokemons_adquiridos, posicion);
-		list_add(entrenador_a_negociar->pokemons_adquiridos, pokemon_a_intercambiar);
+intercambio* buscar_intercambio_correspondiente_al_entrenador(entrenador* entrenador){
+	for(int i = 0; i< list_size(intercambios);i++){
+		intercambio* intercambio_a_evaluar = list_get(intercambios,i);
+		if(entrenador->id == intercambio_a_evaluar->entrenador1->id){
+			return intercambio_a_evaluar;
+		}
 	}
-
-	if(devolver_posicion_en_la_lista_del_pokemon(entrenador_a_negociar,pokemon_que_no_necesito) != -1){
-		int posicion = devolver_posicion_en_la_lista_del_pokemon(entrenador_a_negociar, pokemon_que_requiero);
-		char* pokemon_a_intercambiar2 = list_remove(entrenador_a_negociar->pokemons_adquiridos, posicion);
-		list_remove(entrenador_a_negociar->pokemons_adquiridos, posicion);
-		list_add(entrenador1->pokemons_adquiridos, pokemon_a_intercambiar2);
-	}*/
-
-	log_info(nuestro_log,string_from_format("Estoy en el medio parte 2 de realizar Intercambio"));
-
 }
 
+int posicion_del_pokemon_en_la_lista(t_list* lista,char* pokemon){
+	for(int i = 0; i< list_size(lista);i++){
+		if(string_equals_ignore_case(list_get(lista,i),pokemon)){
+			return i;
+		}
+	}
+	return 0;
+}
 // FIN PARTE DEADLOCK
 //
 //
