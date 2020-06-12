@@ -3,14 +3,15 @@
 void crear_archivo_metadata(int block_size, int blocks){
 
 	char* punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
+
 	char* path_directorio_metadata = strcat(punto_montaje_tallgrass,"/Metadata");
-	char* path_archivo_metadata = strcat(path_directorio_metadata,"/Metadata.bin");
 
 	if(!existe_el_directorio(path_directorio_metadata)){
 		log_info(nuestro_log,"ENTRE");
 		crear_directorio(path_directorio_metadata);
 	}
 
+	char* path_archivo_metadata = strcat(path_directorio_metadata,"/Metadata.bin");
 
 	log_info(nuestro_log,"path : %s ", path_archivo_metadata);
 
@@ -22,7 +23,7 @@ void crear_archivo_metadata(int block_size, int blocks){
 	dato->blocks = blocks;
 	dato->magic_number = "TALL_GRASS";
 
-	fwrite(&dato,sizeof(dato_metadata),1,archivo_metadata);
+	fwrite(&dato,sizeof(dato_metadata*),1,archivo_metadata);
 
 	fclose(archivo_metadata);
 }
