@@ -22,6 +22,7 @@ void iniciar_gamecard() {
 	iniciar_config();
 	logger = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/logger.txt", "gamecard", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log.txt", "gamecard", true, LOG_LEVEL_INFO);
+	crear_directorio("/home/utnso/Escritorio/tall-grass");
 	//Iniciamos las variables globales del constructor
 }
 

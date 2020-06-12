@@ -21,8 +21,16 @@
 t_log* logger;
 t_log* nuestro_log;
 
+
+typedef struct
+{
+	int block_size;
+	int blocks;
+	char* magic_number;
+} dato_metadata;
+
 void crear_archivo_metadata(int block_size, int blocks);
-void crear_directorio(char* nombre_directorio,char* path_directorio);
-int existe_el_directorio(char* nombre_directorio,char* path_directorio);
+void crear_directorio(char* path_directorio);
+int existe_el_directorio(char* path_directorio);
 
 #endif /* UTILS_H_ */

@@ -78,3 +78,235 @@
 [INFO] 23:54:24:102 gamecard/(7997:7997): El directorio NO existe. Se creara a continuacion
 [INFO] 23:54:24:102 gamecard/(7997:7997): ENTRE
 [INFO] 23:54:24:102 gamecard/(7997:7997): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 13:47:10:862 gamecard/(5880:5880): El directorio NO existe. Se creara a continuacion
+[INFO] 13:47:10:865 gamecard/(5880:5880): tiempo_de_reintento_conexion : 10
+[INFO] 13:47:10:865 gamecard/(5880:5880): tiempo_de_reintento_operacion : 5
+[INFO] 13:47:10:865 gamecard/(5880:5880): tiempo_retardo_operacion : 5
+[INFO] 13:47:10:865 gamecard/(5880:5880): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 13:47:10:865 gamecard/(5880:5880): ip_broker : 127.0.0.1
+[INFO] 13:47:10:865 gamecard/(5880:5880): leer_puerto_broker : 6009
+[INFO] 13:47:10:865 gamecard/(5880:5880): El directorio NO existe. Se creara a continuacion
+[INFO] 13:47:10:865 gamecard/(5880:5880): ENTRE
+[INFO] 13:47:10:865 gamecard/(5880:5880): El directorio NO existe. Se creara a continuacion
+[INFO] 13:47:10:865 gamecard/(5880:5880): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 13:47:54:827 gamecard/(5941:5941): El directorio YA existe.
+[INFO] 13:47:54:827 gamecard/(5941:5941): tiempo_de_reintento_conexion : 10
+[INFO] 13:47:54:827 gamecard/(5941:5941): tiempo_de_reintento_operacion : 5
+[INFO] 13:47:54:827 gamecard/(5941:5941): tiempo_retardo_operacion : 5
+[INFO] 13:47:54:827 gamecard/(5941:5941): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 13:47:54:827 gamecard/(5941:5941): ip_broker : 127.0.0.1
+[INFO] 13:47:54:827 gamecard/(5941:5941): leer_puerto_broker : 6009
+[INFO] 13:47:54:827 gamecard/(5941:5941): El directorio NO existe. Se creara a continuacion
+[INFO] 13:47:54:827 gamecard/(5941:5941): ENTRE
+[INFO] 13:47:54:827 gamecard/(5941:5941): El directorio NO existe. Se creara a continuacion
+[INFO] 13:47:54:827 gamecard/(5941:5941): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 13:48:16:607 gamecard/(5985:5985): El directorio NO existe. Se creara a continuacion
+[INFO] 13:48:16:608 gamecard/(5985:5985): tiempo_de_reintento_conexion : 10
+[INFO] 13:48:16:608 gamecard/(5985:5985): tiempo_de_reintento_operacion : 5
+[INFO] 13:48:16:608 gamecard/(5985:5985): tiempo_retardo_operacion : 5
+[INFO] 13:48:16:608 gamecard/(5985:5985): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 13:48:16:608 gamecard/(5985:5985): ip_broker : 127.0.0.1
+[INFO] 13:48:16:608 gamecard/(5985:5985): leer_puerto_broker : 6009
+[INFO] 13:48:16:608 gamecard/(5985:5985): El directorio NO existe. Se creara a continuacion
+[INFO] 13:48:16:608 gamecard/(5985:5985): ENTRE
+[INFO] 13:48:16:608 gamecard/(5985:5985): El directorio NO existe. Se creara a continuacion
+[INFO] 13:48:16:608 gamecard/(5985:5985): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 13:58:59:62 gamecard/(6184:6184): El directorio NO existe.
+[INFO] 13:58:59:63 gamecard/(6184:6184): Creo el directorio : tall-grass.
+[INFO] 13:58:59:63 gamecard/(6184:6184): tiempo_de_reintento_conexion : 10
+[INFO] 13:58:59:63 gamecard/(6184:6184): tiempo_de_reintento_operacion : 5
+[INFO] 13:58:59:63 gamecard/(6184:6184): tiempo_retardo_operacion : 5
+[INFO] 13:58:59:63 gamecard/(6184:6184): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 13:58:59:63 gamecard/(6184:6184): ip_broker : 127.0.0.1
+[INFO] 13:58:59:64 gamecard/(6184:6184): leer_puerto_broker : 6009
+[INFO] 13:58:59:64 gamecard/(6184:6184): El directorio NO existe.
+[INFO] 13:58:59:64 gamecard/(6184:6184): ENTRE
+[INFO] 13:58:59:64 gamecard/(6184:6184): El directorio NO existe.
+[INFO] 13:58:59:64 gamecard/(6184:6184): Creo el directorio : /Makefile.
+[INFO] 13:58:59:64 gamecard/(6184:6184): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 13:59:39:712 gamecard/(6229:6229): El directorio NO existe.
+[INFO] 13:59:39:712 gamecard/(6229:6229): Creo el directorio : tall-grass en el path : /home/utnso/Escritorio/tall-grass.
+[INFO] 13:59:39:712 gamecard/(6229:6229): tiempo_de_reintento_conexion : 10
+[INFO] 13:59:39:712 gamecard/(6229:6229): tiempo_de_reintento_operacion : 5
+[INFO] 13:59:39:712 gamecard/(6229:6229): tiempo_retardo_operacion : 5
+[INFO] 13:59:39:712 gamecard/(6229:6229): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 13:59:39:713 gamecard/(6229:6229): ip_broker : 127.0.0.1
+[INFO] 13:59:39:713 gamecard/(6229:6229): leer_puerto_broker : 6009
+[INFO] 13:59:39:713 gamecard/(6229:6229): El directorio NO existe.
+[INFO] 13:59:39:713 gamecard/(6229:6229): ENTRE
+[INFO] 13:59:39:713 gamecard/(6229:6229): El directorio NO existe.
+[INFO] 13:59:39:713 gamecard/(6229:6229): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 13:59:39:713 gamecard/(6229:6229): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 14:00:35:277 gamecard/(6273:6273): El directorio NO existe.
+[INFO] 14:00:35:277 gamecard/(6273:6273): Creo el directorio : tall-grass en el path : /home/utnso/Escritorio/tall-grass.
+[INFO] 14:00:35:277 gamecard/(6273:6273): tiempo_de_reintento_conexion : 10
+[INFO] 14:00:35:277 gamecard/(6273:6273): tiempo_de_reintento_operacion : 5
+[INFO] 14:00:35:277 gamecard/(6273:6273): tiempo_retardo_operacion : 5
+[INFO] 14:00:35:277 gamecard/(6273:6273): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 14:00:35:277 gamecard/(6273:6273): ip_broker : 127.0.0.1
+[INFO] 14:00:35:277 gamecard/(6273:6273): leer_puerto_broker : 6009
+[INFO] 14:00:35:277 gamecard/(6273:6273): El directorio NO existe.
+[INFO] 14:00:35:277 gamecard/(6273:6273): ENTRE
+[INFO] 14:00:35:277 gamecard/(6273:6273): El directorio NO existe.
+[INFO] 14:00:35:277 gamecard/(6273:6273): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 14:00:35:278 gamecard/(6273:6273): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 14:01:19:739 gamecard/(6327:6327): El directorio YA existe.
+[INFO] 14:01:19:739 gamecard/(6327:6327): tiempo_de_reintento_conexion : 10
+[INFO] 14:01:19:739 gamecard/(6327:6327): tiempo_de_reintento_operacion : 5
+[INFO] 14:01:19:739 gamecard/(6327:6327): tiempo_retardo_operacion : 5
+[INFO] 14:01:19:739 gamecard/(6327:6327): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 14:01:19:739 gamecard/(6327:6327): ip_broker : 127.0.0.1
+[INFO] 14:01:19:739 gamecard/(6327:6327): leer_puerto_broker : 6009
+[INFO] 14:01:19:739 gamecard/(6327:6327): El directorio NO existe.
+[INFO] 14:01:19:740 gamecard/(6327:6327): ENTRE
+[INFO] 14:01:19:740 gamecard/(6327:6327): El directorio NO existe.
+[INFO] 14:01:19:740 gamecard/(6327:6327): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 14:01:19:740 gamecard/(6327:6327): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 14:01:48:198 gamecard/(6364:6364): El directorio NO existe.
+[INFO] 14:01:48:198 gamecard/(6364:6364): Creo el directorio : tall-grass en el path : /home/utnso/Escritorio/tall-grass.
+[INFO] 14:01:48:198 gamecard/(6364:6364): tiempo_de_reintento_conexion : 10
+[INFO] 14:01:48:198 gamecard/(6364:6364): tiempo_de_reintento_operacion : 5
+[INFO] 14:01:48:201 gamecard/(6364:6364): tiempo_retardo_operacion : 5
+[INFO] 14:01:48:201 gamecard/(6364:6364): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 14:01:48:201 gamecard/(6364:6364): ip_broker : 127.0.0.1
+[INFO] 14:01:48:205 gamecard/(6364:6364): leer_puerto_broker : 6009
+[INFO] 14:01:48:205 gamecard/(6364:6364): El directorio NO existe.
+[INFO] 14:01:48:205 gamecard/(6364:6364): ENTRE
+[INFO] 14:01:48:205 gamecard/(6364:6364): El directorio NO existe.
+[INFO] 14:01:48:205 gamecard/(6364:6364): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 14:01:48:205 gamecard/(6364:6364): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 14:03:16:9 gamecard/(6424:6424): El directorio NO existe.
+[INFO] 14:03:16:10 gamecard/(6424:6424): Creo el directorio : /tall-grass en el path : /home/utnso/Escritorio/tall-grass.
+[INFO] 14:03:16:10 gamecard/(6424:6424): tiempo_de_reintento_conexion : 10
+[INFO] 14:03:16:10 gamecard/(6424:6424): tiempo_de_reintento_operacion : 5
+[INFO] 14:03:16:17 gamecard/(6424:6424): tiempo_retardo_operacion : 5
+[INFO] 14:03:16:17 gamecard/(6424:6424): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 14:03:16:17 gamecard/(6424:6424): ip_broker : 127.0.0.1
+[INFO] 14:03:16:17 gamecard/(6424:6424): leer_puerto_broker : 6009
+[INFO] 14:03:16:17 gamecard/(6424:6424): El directorio NO existe.
+[INFO] 14:03:16:17 gamecard/(6424:6424): ENTRE
+[INFO] 14:03:16:17 gamecard/(6424:6424): El directorio NO existe.
+[INFO] 14:03:16:17 gamecard/(6424:6424): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 14:03:16:17 gamecard/(6424:6424): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 15:27:27:908 gamecard/(7322:7322): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:27:27:913 gamecard/(7322:7322): El directorio NO existe.
+[INFO] 15:27:27:913 gamecard/(7322:7322): Creo el directorio : tall-grass en el path : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:27:27:913 gamecard/(7322:7322): tiempo_de_reintento_conexion : 10
+[INFO] 15:27:27:913 gamecard/(7322:7322): tiempo_de_reintento_operacion : 5
+[INFO] 15:27:27:913 gamecard/(7322:7322): tiempo_retardo_operacion : 5
+[INFO] 15:27:27:913 gamecard/(7322:7322): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 15:27:27:913 gamecard/(7322:7322): ip_broker : 127.0.0.1
+[INFO] 15:27:27:914 gamecard/(7322:7322): leer_puerto_broker : 6009
+[INFO] 15:27:27:914 gamecard/(7322:7322): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata.
+[INFO] 15:27:27:914 gamecard/(7322:7322): El directorio NO existe.
+[INFO] 15:27:27:915 gamecard/(7322:7322): ENTRE
+[INFO] 15:27:27:915 gamecard/(7322:7322): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 15:27:27:915 gamecard/(7322:7322): El directorio NO existe.
+[INFO] 15:27:27:915 gamecard/(7322:7322): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 15:27:27:915 gamecard/(7322:7322): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 15:31:10:149 gamecard/(7401:7401): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:31:10:153 gamecard/(7401:7401): El directorio NO existe.
+[INFO] 15:31:10:155 gamecard/(7401:7401): Creo el directorio : tall-grass en el path : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:31:10:155 gamecard/(7401:7401): tiempo_de_reintento_conexion : 10
+[INFO] 15:31:10:155 gamecard/(7401:7401): tiempo_de_reintento_operacion : 5
+[INFO] 15:31:10:156 gamecard/(7401:7401): tiempo_retardo_operacion : 5
+[INFO] 15:31:10:156 gamecard/(7401:7401): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 15:31:10:156 gamecard/(7401:7401): ip_broker : 127.0.0.1
+[INFO] 15:31:10:156 gamecard/(7401:7401): leer_puerto_broker : 6009
+[INFO] 15:31:10:156 gamecard/(7401:7401): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata.
+[INFO] 15:31:10:161 gamecard/(7401:7401): El directorio NO existe.
+[INFO] 15:31:10:161 gamecard/(7401:7401): ENTRE
+[INFO] 15:31:10:161 gamecard/(7401:7401): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 15:31:10:161 gamecard/(7401:7401): El directorio NO existe.
+[INFO] 15:31:10:161 gamecard/(7401:7401): Creo el directorio : /Makefile en el path : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 15:31:10:161 gamecard/(7401:7401): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 15:36:08:391 gamecard/(7592:7592): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:36:08:402 gamecard/(7592:7592): El directorio YA existe.
+[INFO] 15:36:08:403 gamecard/(7592:7592): tiempo_de_reintento_conexion : 10
+[INFO] 15:36:08:403 gamecard/(7592:7592): tiempo_de_reintento_operacion : 5
+[INFO] 15:36:08:403 gamecard/(7592:7592): tiempo_retardo_operacion : 5
+[INFO] 15:36:08:403 gamecard/(7592:7592): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 15:36:08:403 gamecard/(7592:7592): ip_broker : 127.0.0.1
+[INFO] 15:36:08:403 gamecard/(7592:7592): leer_puerto_broker : 6009
+[INFO] 15:36:08:403 gamecard/(7592:7592): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata.
+[INFO] 15:36:08:403 gamecard/(7592:7592): El directorio NO existe.
+[INFO] 15:36:08:404 gamecard/(7592:7592): ENTRE
+[INFO] 15:36:08:404 gamecard/(7592:7592): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 15:36:08:404 gamecard/(7592:7592): El directorio NO existe.
+[INFO] 15:36:08:404 gamecard/(7592:7592): Creo el directorio : /home/utnso/desktop/tall-grass/Metadata/Metadata.
+[INFO] 15:36:08:404 gamecard/(7592:7592): path : /home/utnso/desktop/tall-grass/Metadata/Metadata/Metadata/Metadata.bin 
+[INFO] 15:38:04:181 gamecard/(7655:7655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:38:04:181 gamecard/(7655:7655): El directorio YA existe.
+[INFO] 15:38:04:181 gamecard/(7655:7655): tiempo_de_reintento_conexion : 10
+[INFO] 15:38:04:181 gamecard/(7655:7655): tiempo_de_reintento_operacion : 5
+[INFO] 15:38:04:181 gamecard/(7655:7655): tiempo_retardo_operacion : 5
+[INFO] 15:38:04:182 gamecard/(7655:7655): leer_punto_montaje_tallgrass : /home/utnso/desktop/tall-grass
+[INFO] 15:38:04:182 gamecard/(7655:7655): ip_broker : 127.0.0.1
+[INFO] 15:38:04:182 gamecard/(7655:7655): leer_puerto_broker : 6009
+[INFO] 15:38:04:182 gamecard/(7655:7655): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata.
+[INFO] 15:38:04:182 gamecard/(7655:7655): El directorio NO existe.
+[INFO] 15:38:04:182 gamecard/(7655:7655): ENTRE
+[INFO] 15:38:04:182 gamecard/(7655:7655): PATH DIRECTORIO a buscar : /home/utnso/desktop/tall-grass/Metadata.
+[INFO] 15:38:04:182 gamecard/(7655:7655): El directorio NO existe.
+[INFO] 15:38:04:182 gamecard/(7655:7655): Creo el directorio : /home/utnso/desktop/tall-grass/Metadata.
+[INFO] 15:38:04:182 gamecard/(7655:7655): path : /home/utnso/desktop/tall-grass/Metadata 
+[INFO] 15:40:04:577 gamecard/(7704:7704): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:40:04:578 gamecard/(7704:7704): El directorio YA existe.
+[INFO] 15:40:04:578 gamecard/(7704:7704): tiempo_de_reintento_conexion : 10
+[INFO] 15:40:04:578 gamecard/(7704:7704): tiempo_de_reintento_operacion : 5
+[INFO] 15:40:04:579 gamecard/(7704:7704): tiempo_retardo_operacion : 5
+[INFO] 15:40:04:579 gamecard/(7704:7704): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:40:04:579 gamecard/(7704:7704): ip_broker : 127.0.0.1
+[INFO] 15:40:04:582 gamecard/(7704:7704): leer_puerto_broker : 6009
+[INFO] 15:40:04:582 gamecard/(7704:7704): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:40:04:583 gamecard/(7704:7704): El directorio NO existe.
+[INFO] 15:40:04:583 gamecard/(7704:7704): ENTRE
+[INFO] 15:40:04:583 gamecard/(7704:7704): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:40:04:583 gamecard/(7704:7704): El directorio NO existe.
+[INFO] 15:40:04:583 gamecard/(7704:7704): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:40:04:584 gamecard/(7704:7704): path : /home/utnso/Escritorio/tall-grass/Metadata 
+[INFO] 15:42:46:77 gamecard/(7804:7804): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:42:46:81 gamecard/(7804:7804): El directorio YA existe.
+[INFO] 15:42:46:81 gamecard/(7804:7804): tiempo_de_reintento_conexion : 10
+[INFO] 15:42:46:81 gamecard/(7804:7804): tiempo_de_reintento_operacion : 5
+[INFO] 15:42:46:81 gamecard/(7804:7804): tiempo_retardo_operacion : 5
+[INFO] 15:42:46:81 gamecard/(7804:7804): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:42:46:81 gamecard/(7804:7804): ip_broker : 127.0.0.1
+[INFO] 15:42:46:81 gamecard/(7804:7804): leer_puerto_broker : 6009
+[INFO] 15:42:46:81 gamecard/(7804:7804): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin.
+[INFO] 15:42:46:81 gamecard/(7804:7804): El directorio NO existe.
+[INFO] 15:42:46:81 gamecard/(7804:7804): ENTRE
+[INFO] 15:42:46:81 gamecard/(7804:7804): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin.
+[INFO] 15:42:46:81 gamecard/(7804:7804): El directorio NO existe.
+[INFO] 15:42:46:81 gamecard/(7804:7804): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin.
+[INFO] 15:42:46:82 gamecard/(7804:7804): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:44:17:372 gamecard/(7876:7876): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:44:17:377 gamecard/(7876:7876): El directorio YA existe.
+[INFO] 15:44:17:377 gamecard/(7876:7876): tiempo_de_reintento_conexion : 10
+[INFO] 15:44:17:377 gamecard/(7876:7876): tiempo_de_reintento_operacion : 5
+[INFO] 15:44:17:377 gamecard/(7876:7876): tiempo_retardo_operacion : 5
+[INFO] 15:44:17:377 gamecard/(7876:7876): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:44:17:377 gamecard/(7876:7876): ip_broker : 127.0.0.1
+[INFO] 15:44:17:377 gamecard/(7876:7876): leer_puerto_broker : 6009
+[INFO] 15:44:17:377 gamecard/(7876:7876): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/MetadataMetadata.bin.
+[INFO] 15:44:17:377 gamecard/(7876:7876): El directorio NO existe.
+[INFO] 15:44:17:377 gamecard/(7876:7876): ENTRE
+[INFO] 15:44:17:377 gamecard/(7876:7876): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/MetadataMetadata.bin.
+[INFO] 15:44:17:378 gamecard/(7876:7876): El directorio NO existe.
+[INFO] 15:44:17:378 gamecard/(7876:7876): Creo el directorio : /home/utnso/Escritorio/tall-grass/MetadataMetadata.bin.
+[INFO] 15:44:17:378 gamecard/(7876:7876): path : /home/utnso/Escritorio/tall-grass/MetadataMetadata.bin 
+[INFO] 16:22:09:389 gamecard/(8470:8470): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 16:22:09:389 gamecard/(8470:8470): El directorio YA existe.
+[INFO] 16:22:09:389 gamecard/(8470:8470): tiempo_de_reintento_conexion : 10
+[INFO] 16:22:09:390 gamecard/(8470:8470): tiempo_de_reintento_operacion : 5
+[INFO] 16:22:09:390 gamecard/(8470:8470): tiempo_retardo_operacion : 5
+[INFO] 16:22:09:390 gamecard/(8470:8470): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 16:22:09:390 gamecard/(8470:8470): ip_broker : 127.0.0.1
+[INFO] 16:22:09:390 gamecard/(8470:8470): leer_puerto_broker : 6009
+[INFO] 16:22:09:390 gamecard/(8470:8470): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin.
+[INFO] 16:22:09:390 gamecard/(8470:8470): El directorio NO existe.
+[INFO] 16:22:09:390 gamecard/(8470:8470): ENTRE
+[INFO] 16:22:09:390 gamecard/(8470:8470): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin.
+[INFO] 16:22:09:390 gamecard/(8470:8470): El directorio NO existe.
+[INFO] 16:22:09:390 gamecard/(8470:8470): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin.
+[INFO] 16:22:09:390 gamecard/(8470:8470): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
