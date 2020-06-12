@@ -3,7 +3,6 @@
 int main(int argc, char *argv[])
 {
 	iniciar_gameBoy();
-	log_info(mi_log, string_from_format("cant argumentos: %d",argc));
 	char* tipo_mensaje = argv[2];
 
 	if(argc > 1){
@@ -20,20 +19,6 @@ int main(int argc, char *argv[])
 		}
 		log_info(mi_log,"mensaje enviado");
 	}
-
-	/*int socket_prueba = conectarse_a(BROKER);
-	t_get_pokemon *aget_pokemon = malloc (sizeof(t_get_pokemon));
-	aget_pokemon->nombre_pokemon = "gonzalo miele";
-	aget_pokemon->largo_nombre_pokemon = strlen(aget_pokemon->nombre_pokemon);
-	log_info(mi_log,string_from_format("largo nombre: %d",   aget_pokemon->largo_nombre_pokemon));
-	log_info(mi_log,string_from_format("nombre: %s",   aget_pokemon->nombre_pokemon));
-	enviar_mensaje_get(*aget_pokemon, socket_prueba,leer_puerto_broker(), 100);
-	log_info(mi_log,"volvi");
-	free(aget_pokemon); */
-
-	/*if(argc > 1){
-		switch_envio_mensaje(*argv);
-	}*/
 
 	terminar_gameBoy();
 
@@ -73,7 +58,8 @@ void gestionar_envio_appeared(char* argv[]){
 		enviar_mensaje_appeared(*appeared_pokemon, socket,5002,0);
 	}
 
-	free(appeared_pokemon->nombre_pokemon);
+	//ESTE FREE PROVOCA EL SEG F
+	//free(appeared_pokemon->nombre_pokemon);
 	free(appeared_pokemon);
 }
 
@@ -85,7 +71,6 @@ void gestionar_envio_get(char* argv[]){
 	get_pokemon->largo_nombre_pokemon = strlen(get_pokemon->nombre_pokemon);
 
 	if(!strcmp(tipo_modulo,"BROKER")){
-		log_info(mi_log,"0");
 		socket = conectarse_a(BROKER);
 			enviar_mensaje_get(*get_pokemon, socket,leer_puerto_broker(),0);
 	}else if(!strcmp(tipo_modulo,"GAMECARD")){
@@ -93,7 +78,6 @@ void gestionar_envio_get(char* argv[]){
 		enviar_mensaje_get(*get_pokemon, socket,leer_puerto_gamecard(),atoi(argv[3]));
 	}
 
-	free(get_pokemon->nombre_pokemon);
 	free(get_pokemon);
 }
 
@@ -115,7 +99,6 @@ void gestionar_envio_new(char* argv[]){
 		enviar_mensaje_new(*new_pokemon, socket,5001,atoi(argv[6]));
 	}
 
-	free(new_pokemon->nombre_pokemon);
 	free(new_pokemon);
 }
 
@@ -136,7 +119,6 @@ void gestionar_envio_catch(char* argv[]){
 		enviar_mensaje_catch(*catch_pokemon, socket,5001,atoi(argv[6]));
 	}
 
-	free(catch_pokemon->nombre_pokemon);
 	free(catch_pokemon);
 }
 
@@ -147,5 +129,6 @@ void gestionar_envio_caught(char* argv[]){
 	caught_pokemon->atrapado = argv[4];
 	socket = conectarse_a(BROKER);
 	enviar_mensaje_caught(*caught_pokemon, socket,atoi(*argv[3]));
+
 	free(caught_pokemon);
 }

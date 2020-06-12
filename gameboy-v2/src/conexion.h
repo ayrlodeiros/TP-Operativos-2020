@@ -91,12 +91,12 @@ typedef struct{
 
 int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
 void liberar_conexion(int socket);
+void* serializar_paquete(t_paquete* paquete, int size_serializado);
 void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket_team,int puerto, int id_mensaje_correlativo);
 void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket_broker,int puerto, int id_mensaje);
 void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket_broker,int puerto, int id_mensaje);
 void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,int id_mensaje_correlativo);
 void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket_broker,int puerto, int id_mensaje);
-void* serializar_paquete(t_paquete* paquete, int size_serializado);
 void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker);
 
 #endif /* CONEXION_H_ */
