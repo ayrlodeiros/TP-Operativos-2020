@@ -5,15 +5,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/config-reader.c \
-../src/gamecard-v2.c 
+../src/gamecard-v2.c \
+../src/utils.c 
 
 OBJS += \
 ./src/config-reader.o \
-./src/gamecard-v2.o 
+./src/gamecard-v2.o \
+./src/utils.o 
 
 C_DEPS += \
 ./src/config-reader.d \
-./src/gamecard-v2.d 
+./src/gamecard-v2.d \
+./src/utils.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

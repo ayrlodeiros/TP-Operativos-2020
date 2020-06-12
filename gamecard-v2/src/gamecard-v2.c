@@ -12,6 +12,8 @@ int main(void)
 	log_info(nuestro_log,"ip_broker : %s", leer_ip_broker());
 	log_info(nuestro_log,"leer_puerto_broker : %d", leer_puerto_broker());
 
+	crear_archivo_metadata(64,5192);
+
 	return EXIT_SUCCESS;
 }
 
