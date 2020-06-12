@@ -110,6 +110,9 @@ pthread_mutex_t mutex_lista_ids_localized;
 t_list* lista_ids_caught;
 pthread_mutex_t mutex_lista_ids_caught;
 
+pthread_mutex_t mutex_funciona_broker;
+pthread_mutex_t lock_reintento_broker;
+
 typedef enum
 {
 	MENSAJE = 1,

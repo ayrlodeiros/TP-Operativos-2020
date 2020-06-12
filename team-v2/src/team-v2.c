@@ -12,19 +12,18 @@ int main(void){
 	entrenador* entrenador1 = list_get(entrenadores, 0);
 
 	for(int i = 0; i < list_size(entrenador1->pokemons_adquiridos); i++) {
-		log_info(nuestro_log, string_from_format("\nPokemon ADQUIRIDO %d: %s", i, list_get(entrenador1->pokemons_adquiridos, i)));
+		log_info(nuestro_log, string_from_format("Pokemon ADQUIRIDO %d: %s", i, list_get(entrenador1->pokemons_adquiridos, i)));
 	}
 	for(int i = 0; i < list_size(entrenador1->pokemons_sobrantes); i++) {
-			log_info(nuestro_log, string_from_format("\nPokemon SOBRANTES %d: %s", i, list_get(entrenador1->pokemons_sobrantes, i)));
-		}
+		log_info(nuestro_log, string_from_format("Pokemon SOBRANTES %d: %s", i, list_get(entrenador1->pokemons_sobrantes, i)));
+	}
 	for(int i = 0; i < list_size(entrenador1->pokemons_objetivo); i++) {
-			log_info(nuestro_log, string_from_format("\nPokemon OBJETIVO %d: %s", i, list_get(entrenador1->pokemons_objetivo, i)));
-		}
-/*
+		log_info(nuestro_log, string_from_format("Pokemon OBJETIVO %d: %s", i, list_get(entrenador1->pokemons_objetivo, i)));
+	}
+
 	pthread_t* hilo_reintento_conexion_broker;
 	pthread_create(&hilo_reintento_conexion_broker,NULL,levantar_conexiones_al_broker, NULL);
 	pthread_detach(hilo_reintento_conexion_broker);
-*/
 
 	get_pokemon();
 
@@ -37,9 +36,9 @@ int main(void){
 	pthread_detach(hilo_entrenador_disponible);
 
 	//AGREGO MANUALMENTE A UN POKEMON PARA PROBAR
-	manejar_aparicion_de_pokemon("Pikachu", 15, 0);
-	manejar_aparicion_de_pokemon("Squirtle", 5, 0);
-	manejar_aparicion_de_pokemon("Pikachu", 10, 0);
+	//manejar_aparicion_de_pokemon("Pikachu", 15, 0);
+	//manejar_aparicion_de_pokemon("Squirtle", 5, 0);
+	//manejar_aparicion_de_pokemon("Pikachu", 10, 0);
 	//manejar_aparicion_de_pokemon("Pikachu", 10, 15);
 
 	/*for(int i = 0; i < list_size(entrenadores_ready); i++){

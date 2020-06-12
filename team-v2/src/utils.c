@@ -124,7 +124,7 @@ int intentar_conectar_al_broker() {
 	int conexion = -1;
 
 	while(conexion == -1) {
-		//log_info(nuestro_log, string_from_format("Intentando conectar con broker en IP: %s y PUERTO: %s", ip_broker, puerto_broker));
+		log_info(nuestro_log, string_from_format("Intentando conectar con broker en IP: %s y PUERTO: %s", ip_broker, puerto_broker));
 		log_info(logger, "10. Inicio de proceso de intento de comunicación con el Broker.");
 
 		conexion = crear_conexion_como_cliente(ip_broker, puerto_broker);
@@ -140,15 +140,28 @@ int intentar_conectar_al_broker() {
 }
 
 void levantar_conexiones_al_broker() {
-	conexion_appeared = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+	pthread_t* hilo_appeared;
+	pthread_t* hilo_localized;
+	pthread_t* hilo_caught;
 	while(1) {
-		if(funciona_broker == 1 /*&& todas_las_conexiones_funcionan()*/) {
+		if(funciona_broker == 1) {
+			log_info(nuestro_log, "Funciona broker, activando las tres colas...");
 
-			//TODO HACER QUE CADA MENSAJE SE QUEDE ESPERANDO UN RECV
-			pthread_mutex_lock(&lock_de_planificacion);
-		}
+			pthread_create(&hilo_appeared,NULL, esperar_mensaje_appeared, NULL);
+			pthread_detach(hilo_appeared);
+			pthread_create(&hilo_localized,NULL, esperar_mensaje_localized, NULL);
+			pthread_detach(hilo_localized);
+			pthread_create(&hilo_caught,NULL, esperar_mensaje_caught, NULL);
+			pthread_detach(hilo_caught);
 
-		if(conexion_appeared == -1 || funciona_broker == 0) {
+			log_info(nuestro_log, "Bloqueo de conexiones al broker");
+
+			pthread_mutex_lock(&lock_reintento_broker);
+
+			log_info(nuestro_log, "Desbloqueo de conexiones al broker");
+		} else {
+
+			log_info(nuestro_log, "El broker no esta conectado...");
 
 			conexion_appeared = intentar_conectar_al_broker();
 
@@ -157,9 +170,9 @@ void levantar_conexiones_al_broker() {
 			conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 
 			if(conexion_appeared == -1 || conexion_localized == -1 || conexion_caught == -1) {
-				funciona_broker = 0;
+				cambiar_valor_de_funciona_broker(0);
 			} else {
-				funciona_broker = 1;
+				cambiar_valor_de_funciona_broker(1);
 			}
 		}
 
@@ -167,38 +180,45 @@ void levantar_conexiones_al_broker() {
 }
 
 void esperar_mensaje_appeared() {
+	suscribirse_a_cola(conexion_appeared, APPEARED);
 	while(funciona_broker == 1) {
-		suscribirse_a_cola(conexion_appeared, APPEARED);
+		log_info(nuestro_log, "Estoy esperando mensaje APPEARED");
 		int asd;
 		if(recv(conexion_appeared, &asd, sizeof(int), 0) > 0){
 
 		} else {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
-			funciona_broker = 0;
+			cambiar_valor_de_funciona_broker(0);
+			desbloquear_lock_reintento();
 		}
 	}
 }
+
 void esperar_mensaje_localized() {
+	suscribirse_a_cola(conexion_localized, LOCALIZED);
 	while(funciona_broker == 1) {
-		suscribirse_a_cola(conexion_localized, LOCALIZED);
+		log_info(nuestro_log, "Estoy esperando mensaje LOCALIZED");
 		int asd;
 		if(recv(conexion_localized, &asd, sizeof(int), 0) > 0){
 
 		} else {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
-			funciona_broker = 0;
+			cambiar_valor_de_funciona_broker(0);
+			desbloquear_lock_reintento();
 		}
 	}
 }
 void esperar_mensaje_caught() {
+	suscribirse_a_cola(conexion_caught, CAUGHT);
 	while(funciona_broker == 1) {
-		suscribirse_a_cola(conexion_caught, CAUGHT);
+		log_info(nuestro_log, "Estoy esperando mensaje CAUGHT");
 		int asd;
 		if(recv(conexion_caught, &asd, sizeof(int), 0) > 0){
 
 		} else {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
-			funciona_broker = 0;
+			cambiar_valor_de_funciona_broker(0);
+			desbloquear_lock_reintento();
 		}
 	}
 }
@@ -211,9 +231,24 @@ void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir) {
 		log_info(nuestro_log, "Suscripcion exitosa a la cola");
 	} else {
 		log_info(nuestro_log, "No se pudo realizar la suscripcion, el broker no funciona");
-		funciona_broker = 0;
+		cambiar_valor_de_funciona_broker(0);
+		desbloquear_lock_reintento();
 	}
 	free(paquete);
+}
+
+void cambiar_valor_de_funciona_broker(int new_value) {
+	if(new_value != funciona_broker) {
+		pthread_mutex_lock(&mutex_funciona_broker);
+		funciona_broker = new_value;
+		pthread_mutex_unlock(&mutex_funciona_broker);
+	}
+}
+
+void desbloquear_lock_reintento() {
+	if(funciona_broker == 0) {
+		pthread_mutex_unlock(&lock_reintento_broker);
+	}
 }
 
 //FIN DE CONEXIONES
@@ -242,7 +277,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 void buscar_entrenador_disponible(){
 	while(1){
 		if(!list_any_satisfy(entrenadores, el_entrenador_se_puede_planificar) || queue_size(pokemons_sin_entrenador)==0) {
-			log_info(nuestro_log, "Esperando a que algun entrenador se libere");
+			log_info(nuestro_log, "Esperando alguna accion");
 			pthread_mutex_lock(&lock_de_entrenador_disponible);
 		}
 
@@ -608,6 +643,7 @@ void realizar_get(char* key, void* value) {
 
 			free(a_enviar);
 			destruir_paquete(paquete);
+			liberar_conexion(socket_get);
 		}
 	}
 }
@@ -634,7 +670,7 @@ void esperar_id_localized(int socket_get) {
 void catch_pokemon(entrenador* entrenador) {
 	cambiar_estado_entrenador(entrenador, BLOCK_READY);
 	int socket_catch = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-	if(socket_catch == -1) {
+	if(funciona_broker == 0 || socket_catch == -1) {
 		//ACCION POR DEFAULT
 		log_info(logger, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
 		log_info(logger, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");

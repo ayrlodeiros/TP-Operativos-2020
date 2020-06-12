@@ -9,18 +9,23 @@ void iniciar_variables_globales() {
 	lista_ids_localized = list_create();
 	lista_ids_caught = list_create();
 	intercambios = list_create();
+
 	pthread_mutex_init(&lock_de_planificacion, NULL);
 	pthread_mutex_init(&lock_de_entrenador_disponible, NULL);
+	pthread_mutex_init(&lock_reintento_broker, NULL);
 	pthread_mutex_init(&mutex_entrenadores, NULL);
 	pthread_mutex_init(&mutex_lista_ids_localized, NULL);
+	pthread_mutex_init(&mutex_lista_ids_caught, NULL);
+	pthread_mutex_init(&mutex_funciona_broker, NULL);
 
 	pthread_mutex_lock(&lock_de_planificacion);
 	pthread_mutex_lock(&lock_de_entrenador_disponible);
+	pthread_mutex_lock(&lock_reintento_broker);
 
 	conexion_appeared = -1;
 	conexion_localized = -1;
 	conexion_caught = -1;
-	funciona_broker=1;
+	funciona_broker=0;
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales

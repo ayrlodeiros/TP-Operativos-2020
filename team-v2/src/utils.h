@@ -23,6 +23,8 @@ void esperar_mensaje_appeared();
 void esperar_mensaje_localized();
 void esperar_mensaje_caught();
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir);
+void cambiar_valor_de_funciona_broker(int new_value);
+void desbloquear_lock_reintento();
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
