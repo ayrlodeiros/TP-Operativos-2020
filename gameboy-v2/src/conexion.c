@@ -53,7 +53,7 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket, in
 	memcpy(stream + bytes_escritos, &appeared_pokemon.posicionY, sizeof(uint32_t));
 	bytes_escritos += sizeof(uint32_t);
 	int cero = 0;
-	if(puerto == 4444){
+	if(puerto == leer_puerto_broker()){
 		memcpy(stream + bytes_escritos, &id_mensaje_correlativo, sizeof(uint32_t));
 	}else{
 		memcpy(stream + bytes_escritos, &cero, sizeof(uint32_t));
@@ -64,7 +64,7 @@ void enviar_mensaje_appeared(t_appeared_pokemon appeared_pokemon, int socket, in
 	int size_serializados = paquete->buffer->size + 4*sizeof(int);
 
 	//void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
-	void *mensaje_a_enviar = malloc(paquete->buffer->size + sizeof(int)*2);
+	void *mensaje_a_enviar = malloc(size_serializados);
 	mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
 	//log_info(mi_log,string_from_format("sizes: %d",size_serializados));
@@ -110,7 +110,7 @@ void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket,int puerto, int id
 	bytes_escritos += sizeof(uint32_t);
 
 	int cero = 0;
-	if(puerto == 5001){
+	if(puerto == leer_puerto_gamecard()){
 		memcpy(stream + bytes_escritos, &id_mensaje, sizeof(uint32_t));
 	}else{
 		memcpy(stream + bytes_escritos, &cero, sizeof(uint32_t));
@@ -159,7 +159,7 @@ void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket,int puerto, 
 	memcpy(stream + bytes_escritos, &catch_pokemon.posicionY, sizeof(uint32_t));
 	bytes_escritos += sizeof(uint32_t);
 
-	if(puerto == 5001){
+	if(puerto == leer_puerto_gamecard()){
 			memcpy(stream + bytes_escritos, &id_mensaje, sizeof(uint32_t));
 		}
 
@@ -235,7 +235,7 @@ void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket,int puerto, int id
 	memcpy(stream + bytes_escritos,  get_pokemon.nombre_pokemon, strlen(get_pokemon.nombre_pokemon)+1);
 	bytes_escritos += strlen(get_pokemon.nombre_pokemon)+1;
 
-	if(puerto == 5002){
+	if(puerto == leer_puerto_team()){
 		memcpy(stream + bytes_escritos, &id_mensaje, sizeof(int));
 	}
 	paquete->buffer->stream = stream;
