@@ -5,9 +5,9 @@ void switch_cola(int cod_op, int socket_cliente, modulo_code modulo){
 	int cola;
 	recv(socket_cliente,&cola,sizeof(int),MSG_WAITALL);
 	switch (cola){
-			case GET:
+			/*case GET:
 				switch_operacion(cod_op,get_mq,socket_cliente,modulo);
-				break;
+				break;*/
 			case LOCALIZED:
 				switch_operacion(cod_op,localized_mq,socket_cliente,modulo);
 				break;
