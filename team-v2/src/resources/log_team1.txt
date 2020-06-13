@@ -6358,3 +6358,9 @@
 [INFO] 17:05:49:883 team/(10131:10136): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
 [INFO] 17:05:54:884 team/(10131:10136): 10. Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 17:05:54:885 team/(10131:10136): 11. Intento de conexion con el broker exitosa.
+[INFO] 15:09:15:352 team/(6434:6434): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:15:353 team/(6434:6434): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:15:360 team/(6434:6439): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:15:361 team/(6434:6439): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:20:365 team/(6434:6439): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:20:365 team/(6434:6439): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
