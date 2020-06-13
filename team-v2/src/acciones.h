@@ -9,7 +9,6 @@ void moverse_izquierda(entrenador* entrenador);
 void moverse_derecha(entrenador* entrenador);
 void registrar_movimiento(entrenador* entrenador);
 void loggear_movimiento(entrenador* entrenador);
-void intercambiar(entrenador* entrenador1);
 void ejecutar(entrenador* entrenador);
 int cpu_restante_entrenador (entrenador* entrenador_a_ejecutar);
 void sumar_cpu_usado(entrenador* entrenador, int cantidad);

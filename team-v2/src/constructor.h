@@ -32,13 +32,14 @@ pthread_mutex_t mutex_entrenadores;
 
 t_log* logger;
 t_log* nuestro_log;
-int funciona_broker;
 
 t_list* entrenadores;
 t_dictionary* objetivo_global;
 //TODO VER MAS ADELANTE EL CASO EN EL QUE LOS ENTRENADORES ESTEN OCUPADOS Y NINGUNO PUEDA IR A BUSCARLO
 t_queue* pokemons_sin_entrenador;
 t_list* entrenadores_ready;
+t_list* intercambios;
+
 
 typedef struct
 {
@@ -54,7 +55,8 @@ typedef enum
 	BLOCK_READY = 3,
 	BLOCK_CATCHING = 4,
 	BLOCK_DEADLOCK = 5,
-	EXIT = 6
+	INTERCAMBIO = 6,
+	EXIT = 7
 
 }estado_entrenador;
 
@@ -71,6 +73,7 @@ typedef struct
 
 typedef struct
 {
+	int id;
 	pthread_t* hilo;
 	estado_entrenador estado;
 	int cpu_usado;
@@ -81,16 +84,34 @@ typedef struct
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;
 	t_list* pokemons_objetivo;
+	t_list* pokemons_sobrantes;
 	pokemon* pokemon_en_busqueda;
 	t_queue* acciones;
 } entrenador;
 
+typedef struct
+{
+	entrenador* entrenador1;
+	entrenador* entrenador2;
+	char* pokemon1;
+	char* pokemon2;
+} intercambio;
+
 //CONEXIONES
+int conexion_appeared;
+int conexion_localized;
+int conexion_caught;
+int funciona_broker;
+
+
 t_list* lista_ids_localized;
 pthread_mutex_t mutex_lista_ids_localized;
 
 t_list* lista_ids_caught;
 pthread_mutex_t mutex_lista_ids_caught;
+
+pthread_mutex_t mutex_funciona_broker;
+pthread_mutex_t lock_reintento_broker;
 
 typedef enum
 {
@@ -127,7 +148,10 @@ typedef struct
 void iniciar_variables_globales();
 
 void armar_entrenadores();
-entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos);
+entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, int id);
+void actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(entrenador* entrenador);
+void actualizar_objetivo_y_sobrante_del_entrenador(entrenador* entrenador, char* pokemon_adquirido);
+int devolver_posicion_en_la_lista_del_pokemon(t_list* lista_pokemons, char* pokemon_a_buscar);
 void armar_objetivo_global();
 
 void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo);

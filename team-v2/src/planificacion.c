@@ -64,24 +64,12 @@ void fifo(){
 			ejecutar(entrenador_a_ejecutar);
 		}
 
-
-		if(el_entrenador_no_puede_capturar_mas_pokemons(entrenador_a_ejecutar) && !el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar) && !el_entrenador_esta_block_deadlock(entrenador_a_ejecutar)){
-			cambiar_estado_entrenador(entrenador_a_ejecutar,BLOCK_DEADLOCK);
-
-		}
-
-		printf("\n CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_con_block_deadlock()));
-		if(list_size(entrenadores_con_block_deadlock()) >=2 ){ // Esto lo hice para que el entrenador no tenga la accion de intercambiar y no halla ningun otro entrenador para intercambiar ,y por eso pierda la accion
-
-			planear_intercambio(entrenador_a_ejecutar);
-		}
-
-		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-			salida_entrenador(entrenador_a_ejecutar);
-		}
+		log_info(nuestro_log,"CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_con_block_deadlock()));
 
 		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
+
+	terminar_team();
 }
 
 /*
@@ -139,23 +127,16 @@ void round_robin(){
 			printf("\n QUANTUM CONSUMIDO : %d", quantum_consumido);
 			printf("\n CPU TIEMPO : %d", tiempo);
 		}
-			if(cpu_restante_entrenador(entrenador_a_ejecutar)){
-				list_add(entrenadores_ready,entrenador_a_ejecutar);
-			}
+		if(cpu_restante_entrenador(entrenador_a_ejecutar)){
+			list_add(entrenadores_ready,entrenador_a_ejecutar);
+		}
 
-			if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-				salida_entrenador(entrenador_a_ejecutar);
-			}
-			else{
-				if(cpu_restante_entrenador(entrenador_a_ejecutar)){
-					list_add(entrenadores_ready,entrenador_a_ejecutar);
-				}
-			}
 
 		quantum_consumido = 0;
 
 	}
 
+	terminar_team();
 }
 
 void sjf_sin_desalojo(){
@@ -194,13 +175,10 @@ void sjf_sin_desalojo(){
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
-
-		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-			salida_entrenador(entrenador_a_ejecutar);
-		}
 	}
 
-	//list_destroy(entrenadores_con_rafagas_estimadas);
+	list_destroy(entrenadores_con_rafagas_estimadas);
+	terminar_team();
 
 }
 
@@ -234,12 +212,9 @@ void sjf_con_desalojo(){
 
 		ejecutar(entrenador_a_ejecutar);
 		entrenador_a_ejecutar->cpu_estimado_restante -= 1;
-
-		if(el_entrenador_cumplio_su_objetivo(entrenador_a_ejecutar)){
-			salida_entrenador(entrenador_a_ejecutar);
-		}
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
+	terminar_team();
 }
 
