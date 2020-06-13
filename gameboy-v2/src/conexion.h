@@ -97,6 +97,6 @@ void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket_broker,int puerto,
 void enviar_mensaje_new(t_new_pokemon new_pokemon, int socket_broker,int puerto, int id_mensaje);
 void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,int id_mensaje_correlativo);
 void enviar_mensaje_catch(t_catch_pokemon catch_pokemon, int socket_broker,int puerto, int id_mensaje);
-void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker);
+void suscribirse_a_cola(int cola, int tiempo, int socket_broker);
 
 #endif /* CONEXION_H_ */

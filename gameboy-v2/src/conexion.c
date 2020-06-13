@@ -206,7 +206,7 @@ void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,in
 	log_info(mi_log,string_from_format("sizes: %d",size_serializados));
 
 	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje CAUGHT: %s y PUERTO: %s",leer_ip_broker(), leer_puerto_broker));
+		log_info(logger, string_from_format("Se envio el mensaje CAUGHT: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker() ));
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje CAUGHT.");
 	}
@@ -258,19 +258,22 @@ void enviar_mensaje_get(t_get_pokemon get_pokemon, int socket,int puerto, int id
 }
 
 
-void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker){
+void suscribirse_a_cola(int cola, int tiempo, int socket_broker){
+
+	log_info(mi_log,"0");
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->modulo = GAMEBOY;
 	paquete->cod_op = SUSCRIPCION;
-	paquete->mensaje = cola_de_mensajes.nombre;
+	paquete->mensaje = cola;
 
+	log_info(mi_log,"1");
 	paquete->buffer = malloc(sizeof(t_buffer));
-	paquete->buffer->size = sizeof(mq_nombre) + sizeof(uint32_t);
+	paquete->buffer->size = sizeof(uint32_t);
 
 	void* stream = malloc(paquete->buffer->size);
 	int bytes_escritos = 0;
 
-	memcpy(stream + bytes_escritos, tiempo,sizeof(uint32_t));
+	memcpy(stream + bytes_escritos, &tiempo,sizeof(uint32_t));
 
 	paquete->buffer->stream = stream;
 	int size_serializados = paquete->buffer->size + 4*sizeof(int);
@@ -278,9 +281,9 @@ void suscribirse_a_cola(t_mq cola_de_mensajes, int tiempo, int socket_broker){
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
 	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se suscribio correctamente a la cola %s", &cola_de_mensajes.nombre));
+		log_info(logger, string_from_format("Se suscribio correctamente a la cola %d", cola));
 	}else{
-		log_error(logger, string_from_format("No se pudo suscribir a la cola %s",&cola_de_mensajes.nombre));
+		log_error(logger, string_from_format("No se pudo suscribir a la cola %d",cola));
 	}
 
 
