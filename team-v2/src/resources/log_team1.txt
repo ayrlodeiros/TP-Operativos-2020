@@ -6960,3 +6960,95 @@
 [INFO] 15:47:14:710 team/(7981:7982): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
 [INFO] 15:47:19:710 team/(7981:7982): 10. Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 15:47:19:710 team/(7981:7982): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:57:37:844 team/(21951:21951): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:57:37:844 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:57:37:846 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:57:37:852 team/(21951:21951): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:57:42:847 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:57:42:848 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:57:47:849 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:57:47:849 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:57:52:850 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:57:52:850 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:57:57:851 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:57:57:851 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:02:856 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:02:857 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:07:861 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:07:862 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:12:866 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:12:867 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:17:867 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:17:888 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:22:889 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:22:889 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:27:890 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:27:890 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:32:892 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:32:892 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:37:893 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:37:893 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:42:897 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:42:897 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:47:901 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:47:903 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:52:904 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:52:904 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:58:57:906 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:57:907 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:02:908 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:02:908 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:07:912 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:07:912 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:12:913 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:12:913 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:17:916 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:17:916 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:22:917 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:22:917 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:27:923 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:27:924 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:32:926 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:32:926 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:37:932 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:37:932 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:42:933 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:42:933 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:47:938 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:47:938 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:52:939 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:52:939 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:59:57:940 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:57:940 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:02:941 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:02:941 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:07:948 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:07:948 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:12:950 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:12:950 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:17:952 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:17:952 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:22:954 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:22:955 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:27:956 team/(21951:21957): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:27:956 team/(21951:21957): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:38:167 team/(22287:22287): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:00:38:167 team/(22287:22287): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:00:38:172 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:38:172 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:43:183 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:43:183 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:48:187 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:48:187 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:53:188 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:53:189 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:00:58:208 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:00:58:208 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:01:03:209 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:01:03:209 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:01:08:210 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:01:08:210 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:01:13:211 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:01:13:211 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 17:01:18:212 team/(22287:22293): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:01:18:212 team/(22287:22293): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

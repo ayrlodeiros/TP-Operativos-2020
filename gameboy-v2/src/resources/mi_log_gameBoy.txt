@@ -2567,3 +2567,13 @@
 [INFO] 19:26:36:910 gameBoy/(28091:28091): -----------------Leyendo archivo config-----------------
 [INFO] 19:26:36:910 gameBoy/(28091:28091): cant argumentos: 4
 [INFO] 19:26:36:910 gameBoy/(28091:28091): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:59:29:141 gameBoy/(22206:22206): -----------------Leyendo archivo config-----------------
+[INFO] 16:59:29:142 gameBoy/(22206:22206): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 16:59:29:142 gameBoy/(22206:22206): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:59:29:143 gameBoy/(22206:22206): mensaje enviado
+[INFO] 16:59:29:143 gameBoy/(22206:22206): -----------------Destruyendo archivo config-----------------
+[INFO] 17:00:44:68 gameBoy/(22300:22300): -----------------Leyendo archivo config-----------------
+[INFO] 17:00:44:73 gameBoy/(22300:22300): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:00:44:74 gameBoy/(22300:22300): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:00:44:74 gameBoy/(22300:22300): mensaje enviado
+[INFO] 17:00:44:74 gameBoy/(22300:22300): -----------------Destruyendo archivo config-----------------

@@ -17,6 +17,10 @@ void destruir_paquete(t_paquete* paquete);
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
+	//PARA GAMEBOY
+void atender_conexion_gameboy();
+	//FIN DE PARA GAMEBOY
+	//PARA BROKER
 int intentar_conectar_al_broker();
 void levantar_conexiones_al_broker();
 void esperar_mensaje_appeared();
@@ -25,6 +29,7 @@ void esperar_mensaje_caught();
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir);
 void cambiar_valor_de_funciona_broker(int new_value);
 void desbloquear_lock_reintento();
+	//FIN DE PARA BROKER
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);

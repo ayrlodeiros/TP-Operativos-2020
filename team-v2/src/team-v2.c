@@ -9,9 +9,9 @@ int main(void){
 	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
 	dictionary_iterator(objetivo_global, mostrar_objetivo_global);
 
-	/*pthread_t* hilo_conexion_gameboy;
-	pthread_create(&hilo_conexion_gameboy,NULL,levantar_conexiones_al_broker, NULL);
-	pthread_detach(hilo_conexion_gameboy);*/
+	pthread_t* hilo_conexion_gameboy;
+	pthread_create(&hilo_conexion_gameboy,NULL, atender_conexion_gameboy, NULL);
+	pthread_detach(hilo_conexion_gameboy);
 
 	pthread_t* hilo_reintento_conexion_broker;
 	pthread_create(&hilo_reintento_conexion_broker,NULL,levantar_conexiones_al_broker, NULL);

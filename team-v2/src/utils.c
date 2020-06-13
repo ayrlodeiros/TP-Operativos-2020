@@ -118,6 +118,77 @@ int levantar_servidor(char* ip, char* puerto) {
 	return socket_servidor;
 }
 
+	//PARA GAMEBOY
+void atender_conexion_gameboy() {
+	int servidor_para_gameboy = levantar_servidor("127.0.0.2", "5002");
+
+	while (1) {
+		struct sockaddr_in dir_cliente;
+
+		int tam_direccion = sizeof(struct sockaddr_in);
+
+		log_info(nuestro_log, "Listo para recibir conexion de GAMEBOY");
+		int socket_cliente = accept(servidor_para_gameboy, (void*) &dir_cliente, &tam_direccion);
+
+		log_info(nuestro_log, "SE CONECTO EL GAMEBOY");
+
+		int cod_modulo;
+		if(recv(socket_cliente, &cod_modulo, sizeof(int), MSG_WAITALL) == -1) {
+			cod_modulo = -1;
+		}
+		log_info(nuestro_log, string_from_format("El codigo de modulo es %d", cod_modulo));
+
+		int cod_op;
+		if(recv(socket_cliente, &cod_op, sizeof(int), MSG_WAITALL) == -1) {
+			cod_op = -1;
+		}
+		log_info(nuestro_log, string_from_format("El codigo de operacion es %d", cod_op));
+
+		int cod_acc;
+		if(recv(socket_cliente, &cod_acc, sizeof(int), MSG_WAITALL) == -1) {
+			cod_acc = -1;
+		}
+		log_info(nuestro_log, string_from_format("El codigo de accion es %d", cod_acc));
+
+		int tamanio_stream;
+		if(recv(socket_cliente, &tamanio_stream, sizeof(int), MSG_WAITALL) == -1) {
+			tamanio_stream = -1;
+		}
+		log_info(nuestro_log, string_from_format("El tamanio del stream es %d", tamanio_stream));
+
+		void* stream;
+		if(recv(socket_cliente, &stream, sizeof(tamanio_stream), MSG_WAITALL) == -1) {
+			log_info(nuestro_log, "No se puedo recibir el stream");
+		}
+		log_info(nuestro_log, "Se recibio el stream");
+
+		int largo_nombre_pokemon;
+		if(recv(socket_cliente, &largo_nombre_pokemon, sizeof(int), MSG_WAITALL) == -1) {
+			log_info(nuestro_log, "No se puedo recibir el largo");
+		}
+		log_info(nuestro_log, string_from_format("El tamanio del pokemon es %d", largo_nombre_pokemon));
+
+		char* nombre_pokemon = (char*) malloc(largo_nombre_pokemon + 1);
+		int posicionX;
+		int posicionY;
+		if(recv(socket_cliente, &nombre_pokemon, largo_nombre_pokemon + 1, MSG_WAITALL) == -1) {
+			log_info(nuestro_log, "No se puedo recibir");
+		}
+		if(recv(socket_cliente, &posicionX, sizeof(int), MSG_WAITALL) == -1) {
+			log_info(nuestro_log, "No se puedo recibir");
+		}
+		if(recv(socket_cliente, &posicionY, sizeof(int), MSG_WAITALL) == -1) {
+			log_info(nuestro_log, "No se puedo recibir");
+		}
+
+		manejar_aparicion_de_pokemon(nombre_pokemon, posicionX, posicionY);
+	}
+}
+	//FIN DE PARA GAMEBOY
+	//
+	//
+
+	//PARA BROKER
 int intentar_conectar_al_broker() {
 	char* ip_broker = leer_ip_broker();
 	char* puerto_broker = leer_puerto_broker();
@@ -250,9 +321,11 @@ void desbloquear_lock_reintento() {
 		pthread_mutex_unlock(&lock_reintento_broker);
 	}
 }
+	//FIN PARA BROKER
+	//
+	//
 
 //FIN DE CONEXIONES
-//
 //
 //
 
@@ -270,6 +343,8 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
 
 		buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
+	} else {
+		log_info(nuestro_log, string_from_format("El pokemon %s no es requerido", nombre));
 	}
 }
 
