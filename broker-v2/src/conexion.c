@@ -75,7 +75,7 @@ void esperar_cliente(int socket_servidor,t_log* logger)
 
 	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
 
-	log_info(mi_log,string_from_format("Estableci una conexion con un modulo de socket: %s\n",socket_cliente));
+	log_info(mi_log,string_from_format("Estableci una conexion con un modulo de socket: %d\n",socket_cliente));
 	//log_info(logger,"Estableci una conexion con un modulo\n");
 
 	err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
@@ -92,11 +92,13 @@ void servir_cliente(int* socket)
 	int cod_modulo;
 	if(recv(*socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
 		cod_modulo = -1;
+	log_info(mi_log, string_from_format("El codigo de modulo es %d", cod_modulo));
 	process_request(cod_modulo, *socket);
 }
 
 void process_request(int cod_modulo, int socket_cliente) {
 	int cod_op;
 	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
+	log_info(mi_log, string_from_format("El codigo de operacion es %d", cod_op));
 	switch_cola(cod_op,socket_cliente,cod_modulo);
 }

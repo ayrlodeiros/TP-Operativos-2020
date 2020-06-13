@@ -5,7 +5,7 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 	int tamanio_anterior = list_size(cola->suscriptores);
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
-			log_info(mi_log,string_from_format("Se agrego el suscriptor %s a la cola %s correctamente\n",suscriptor->conexion,cola->nombre)); /** Por ahora le paso la conexion
+			log_info(mi_log,string_from_format("Se agrego el suscriptor %d a la cola %d correctamente\n",suscriptor->conexion,cola->nombre)); /** Por ahora le paso la conexion
 			 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	como nombre puede que cambie a futuro*/
 	}
 	/* Falta que al agregar un suscriptor se le envien todos los mensajes de la cola que esten en la cache
@@ -20,7 +20,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		recv(socket_cliente, tamanio, sizeof(int), MSG_WAITALL);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
-		log_info(mi_log, string_from_format("Se recibio el mensaje: %s\n", (char*) buffer));
+		log_info(mi_log, "Se recibio el mensaje\n");
 
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre);
 		agregar_msj_cola(queue,mensaje);
@@ -46,7 +46,7 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 
 	queue_push(queue->cola,mensaje);
 	if(queue_size(queue->cola) > tamanio_previo)
-		log_info(mi_log,string_from_format("Se agrego correctamente el mensaje a la cola %s",queue->nombre));
+		log_info(mi_log,string_from_format("Se agrego correctamente el mensaje a la cola %d",queue->nombre));
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
