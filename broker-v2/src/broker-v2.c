@@ -25,7 +25,7 @@ void iniciar_broker(){
 	printf("-----------------Iniciando archivo config-----------------\n");
 	iniciar_config();
 	inicializar_message_queues();
-	logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
+	//logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
 	mi_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt","broker",true,LOG_LEVEL_INFO);
 
 }

@@ -52,10 +52,12 @@ void* serializar_paquete(t_paquete* paquete, int bytes);
 
 void enviar_id_msj_cliente(int socket_cliente,t_mq* mq,int id_msj);
 
+/*Se podria hacer tal vez de una mejor manera hago esta forma como prueba*/
+int asignar_id_univoco();
 /* Falta definir los siguientes metodos */
 
 void recibir_ACK(suscriptor_t* socket_cliente,t_mensaje* mensaje);
-int asignar_id_univoco();
+
 /*Al suscribirse un modulo, se le tienen que mandar todos los mensajes correspondientes */
 void mandar_mensajes_cache();
 void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);

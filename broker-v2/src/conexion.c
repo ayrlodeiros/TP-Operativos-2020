@@ -60,8 +60,9 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 	printf("Esperando conexiones\n");
 	pthread_t* prueba;
 
-	while(1)
+	while(1){
 	esperar_cliente(socket_servidor,logger);
+	}
 }
 
 void esperar_cliente(int socket_servidor,t_log* logger)
@@ -74,8 +75,8 @@ void esperar_cliente(int socket_servidor,t_log* logger)
 
 	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
 
-	log_info(mi_log,"Estableci una conexion con un modulo de socket\n");
-	log_info(logger,"Estableci una conexion con un modulo\n");
+	log_info(mi_log,string_from_format("Estableci una conexion con un modulo de socket: %s\n",socket_cliente));
+	//log_info(logger,"Estableci una conexion con un modulo\n");
 
 	err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
 	if( err != 0){

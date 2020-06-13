@@ -5,9 +5,12 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 	int tamanio_anterior = list_size(cola->suscriptores);
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
-			log_info(mi_log,"Se agrego el suscriptor a la cola correctamente");
+			log_info(mi_log,string_from_format("Se agrego el suscriptor %s a la cola %s correctamente\n",suscriptor->conexion,cola->nombre)); /** Por ahora le paso la conexion
+			 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	como nombre puede que cambie a futuro*/
 	}
-
+	/* Falta que al agregar un suscriptor se le envien todos los mensajes de la cola que esten en la cache
+	enviar_msjs_cola_suscriptor();
+	*/
 }
 
 void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
@@ -43,7 +46,7 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 
 	queue_push(queue->cola,mensaje);
 	if(queue_size(queue->cola) > tamanio_previo)
-		log_info(mi_log,"Se agrego correctamente el mensaje a la cola");
+		log_info(mi_log,string_from_format("Se agrego correctamente el mensaje a la cola %s",queue->nombre));
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
@@ -53,15 +56,14 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
-		enviar_mensaje(mensaje,suscriptor);
-		if(pthread_create(&ack,NULL,(void*)recibir_ACK,&suscriptor,&mensaje) != 0)
+
+		if(pthread_create(&ack,NULL,(void*)enviar_mensaje,&mensaje,&suscriptor) != 0)
 		{
 			log_info(mi_log,"Hubo un error al intentar crear el thread");
 		}
 		pthread_detach(ack);
 	}
 	log_info(mi_log,"Se envio el mensaje a todos los suscriptores \n");
-
 }
 
 void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* cliente)
@@ -80,15 +82,18 @@ void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* cliente)
 
 	if(send(cliente->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,cliente);
-		log_info(mi_log,"Se envio correctamente el mensaje\n");
+		log_info(mi_log,"Se envio correctamente el mensaje al suscriptor\n");
 	}
 	else
-		log_info(mi_log,"NO se envio correctamente el mensaje\n");
+		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor\n");
 
 	free(a_enviar);
 	free(paquete->buffer->stream);
 	free(paquete->buffer);
 	free(paquete);
+
+	/* Chequear si conviene llamar esta funcion por separado */
+	recibir_ACK(cliente,mensaje);
 }
 
 void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
