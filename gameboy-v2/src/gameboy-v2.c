@@ -3,10 +3,13 @@
 int main(int argc, char *argv[])
 {
 	iniciar_gameBoy();
+	char* primer_argumento = argv[1];
 	char* tipo_mensaje = argv[2];
 
 	if(argc > 1){
-		if(!strcmp(tipo_mensaje,"APPEARED_POKEMON")){
+		if(!strcmp(primer_argumento,"SUSCRIPTOR")){
+			gestionar_suscriptor(argv);
+		} else if(!strcmp(tipo_mensaje,"APPEARED_POKEMON")){
 			gestionar_envio_appeared(argv);
 		} else if(!strcmp(tipo_mensaje,"GET_POKEMON")){
 			gestionar_envio_get(argv);
@@ -17,6 +20,7 @@ int main(int argc, char *argv[])
 		}else if(!strcmp(tipo_mensaje,"CAUGHT_POKEMON")){
 			gestionar_envio_caught(argv);
 		}
+
 		log_info(mi_log,"mensaje enviado");
 	}
 
@@ -52,10 +56,10 @@ void gestionar_envio_appeared(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-		enviar_mensaje_appeared(*appeared_pokemon, socket,4444,atoi(argv[6]));
+		enviar_mensaje_appeared(*appeared_pokemon, socket,leer_puerto_broker(),atoi(argv[6]));
 	}else if(!strcmp(tipo_modulo,"TEAM")){
 		socket = conectarse_a(TEAM);
-		enviar_mensaje_appeared(*appeared_pokemon, socket,5002,0);
+		enviar_mensaje_appeared(*appeared_pokemon, socket,leer_puerto_team(),0);
 	}
 
 	//ESTE FREE PROVOCA EL SEG F
@@ -93,10 +97,10 @@ void gestionar_envio_new(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-		enviar_mensaje_new(*new_pokemon, socket,4444,0);
+		enviar_mensaje_new(*new_pokemon, socket,leer_puerto_broker(),0);
 	}else if(!strcmp(tipo_modulo,"GAMECARD")){
 		socket= conectarse_a(GAMECARD);
-		enviar_mensaje_new(*new_pokemon, socket,5001,atoi(argv[6]));
+		enviar_mensaje_new(*new_pokemon, socket,leer_puerto_gamecard(),atoi(argv[6]));
 	}
 
 	free(new_pokemon);
@@ -113,22 +117,51 @@ void gestionar_envio_catch(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-		enviar_mensaje_catch(*catch_pokemon, socket,4444,0);
+		enviar_mensaje_catch(*catch_pokemon, socket,leer_puerto_broker(),0);
 	}else if(!strcmp(tipo_modulo,"GAMECARD")){
 		socket= conectarse_a(GAMECARD);
-		enviar_mensaje_catch(*catch_pokemon, socket,5001,atoi(argv[6]));
+		enviar_mensaje_catch(*catch_pokemon, socket,leer_puerto_gamecard(),atoi(argv[6]));
 	}
 
 	free(catch_pokemon);
 }
 
 void gestionar_envio_caught(char* argv[]){
-	const char* tipo_modulo = argv[1];
 	t_caught_pokemon *caught_pokemon = malloc (sizeof(caught_pokemon));
 	int socket;
-	caught_pokemon->atrapado = argv[4];
+	if(!strcmp(argv[4],"OK")){
+		caught_pokemon->atrapado = 1;
+	}else if(!strcmp(argv[4],"FAIL")){
+		caught_pokemon->atrapado = 0;
+	}
 	socket = conectarse_a(BROKER);
-	enviar_mensaje_caught(*caught_pokemon, socket,atoi(*argv[3]));
+	enviar_mensaje_caught(*caught_pokemon, socket,atoi(argv[3]));
 
 	free(caught_pokemon);
+}
+
+
+void gestionar_suscriptor(char* argv[]){
+	int socket;
+	socket = conectarse_a(BROKER);
+	int cola = cola_mensajes(argv[2]);
+
+	log_info(mi_log,string_from_format("cola: %d",cola));
+	suscribirse_a_cola(cola, atoi(argv[3]),socket);
+}
+
+int cola_mensajes(char* nombre_cola){
+	if(!strcmp(nombre_cola,"GET_POKEMON")){
+		return GET;
+	}else if(!strcmp(nombre_cola,"APPEARED_POKEMON")){
+		return APPEARED;
+	}else if(!strcmp(nombre_cola,"NEW_POKEMON")){
+		return NEW;
+	}else if(!strcmp(nombre_cola,"CAUGHT_POKEMON")){
+		return CAUGHT;
+	}else if(!strcmp(nombre_cola,"CATCH_POKEMON")){
+		return CATCH;
+	}else if(!strcmp(nombre_cola,"LOCALIZED_POKEMON")){
+		return LOCALIZED;
+	}
 }
