@@ -2,34 +2,67 @@
 
 void crear_archivo_metadata(int block_size, int blocks){
 
-	char* punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
+	char* path_archivo_metadata = devolver_path_archivo_metadata();
+	char* block_size_aux = string_itoa(block_size);
+	char* blocks_aux = string_itoa(blocks);
 
-	char* path_directorio_metadata = strcat(punto_montaje_tallgrass,"/Metadata");
+	log_info(nuestro_log,"path : %s ", path_archivo_metadata);
+
+
+	FILE* archivo_metadata  = fopen( path_archivo_metadata , "wb+");
+	fclose(archivo_metadata);
+	metadata_config = config_create(path_archivo_metadata);
+
+	config_set_value(metadata_config,"BLOCK_SIZE", block_size_aux);
+	config_set_value(metadata_config, "BLOCKS", blocks_aux);
+	config_set_value(metadata_config, "MAGIC_NUMBER", "TALL_GRASS");
+
+	config_save(metadata_config);
+	config_destroy(metadata_config);
+
+}
+
+char* obtener_magic_number(){
+	metadata_config = config_create (devolver_path_archivo_metadata());
+	return config_get_string_value(metadata_config, "MAGIC_NUMBER");
+
+}
+
+int obtener_blocks(){
+	metadata_config = config_create (devolver_path_archivo_metadata());
+	return config_get_int_value(metadata_config, "BLOCKS");
+}
+
+int obtener_block_size(){
+	metadata_config = config_create (devolver_path_archivo_metadata());
+	return config_get_int_value(metadata_config, "BLOCK_SIZE");
+}
+
+
+char* devolver_path_archivo_metadata(){
+
+	char* path_archivo_metadata = string_new();
+
+	string_append(&path_archivo_metadata, devolver_path_metadata());
+	string_append(&path_archivo_metadata, "/Metadata.bin");
+
+
+	return path_archivo_metadata;
+}
+
+char* devolver_path_metadata(){
+
+	char* path_directorio_metadata = string_new();
+
+	string_append(&path_directorio_metadata, punto_montaje_tallgrass);
+	string_append(&path_directorio_metadata, "/Metadata");
 
 	if(!existe_el_directorio(path_directorio_metadata)){
 		log_info(nuestro_log,"ENTRE");
 		crear_directorio(path_directorio_metadata);
 	}
 
-	char* path_archivo_metadata = strcat(path_directorio_metadata,"/Metadata.bin");
-
-	log_info(nuestro_log,"path : %s ", path_archivo_metadata);
-
-
-	FILE* archivo_metadata  = fopen( path_archivo_metadata , "wb");
-	dato_metadata* dato = malloc(sizeof(dato_metadata));
-
-	dato->block_size = block_size;
-	dato->blocks = blocks;
-	dato->magic_number = "TALL_GRASS";
-
-	fwrite(&dato,sizeof(dato_metadata*),1,archivo_metadata);
-
-	fclose(archivo_metadata);
-}
-
-void crear_archivo(char* path_archivo){
-
+	return path_directorio_metadata;
 }
 
 // CREAR DIRECTORIOS
