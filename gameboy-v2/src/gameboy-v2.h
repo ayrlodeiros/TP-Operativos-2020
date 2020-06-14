@@ -19,5 +19,7 @@ void gestionar_envio_get(char* argv[]);
 void gestionar_envio_new(char* argv[]);
 void gestionar_envio_catch(char* argv[]);
 void gestionar_envio_caught(char* argv[]);
+void gestionar_suscriptor(char* argv[]);
+int cola_mensajes(char* nombre_cola);
 
 #endif /* GAMEBOY_H_ */

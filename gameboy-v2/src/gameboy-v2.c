@@ -56,10 +56,10 @@ void gestionar_envio_appeared(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-		enviar_mensaje_appeared(*appeared_pokemon, socket,leer_puerto_broker(),atoi(argv[6]));
+		enviar_mensaje_appeared_broker(*appeared_pokemon, socket,atoi(argv[6]));
 	}else if(!strcmp(tipo_modulo,"TEAM")){
 		socket = conectarse_a(TEAM);
-		enviar_mensaje_appeared(*appeared_pokemon, socket,leer_puerto_team(),0);
+		enviar_mensaje_appeared_team(*appeared_pokemon, socket,0);
 	}
 
 	//ESTE FREE PROVOCA EL SEG F
@@ -76,10 +76,10 @@ void gestionar_envio_get(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-			enviar_mensaje_get(*get_pokemon, socket,leer_puerto_broker(),0);
+			enviar_mensaje_get_broker(*get_pokemon,socket);
 	}else if(!strcmp(tipo_modulo,"GAMECARD")){
 		socket = conectarse_a(GAMECARD);
-		enviar_mensaje_get(*get_pokemon, socket,leer_puerto_gamecard(),atoi(argv[3]));
+		enviar_mensaje_get_gamecard(*get_pokemon, socket,atoi(argv[3]));
 	}
 
 	free(get_pokemon);
@@ -97,14 +97,16 @@ void gestionar_envio_new(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-		enviar_mensaje_new(*new_pokemon, socket,leer_puerto_broker(),0);
+		enviar_mensaje_new_broker(*new_pokemon, socket);
 	}else if(!strcmp(tipo_modulo,"GAMECARD")){
 		socket= conectarse_a(GAMECARD);
-		enviar_mensaje_new(*new_pokemon, socket,leer_puerto_gamecard(),atoi(argv[6]));
+		enviar_mensaje_new_gamecard(*new_pokemon, socket,atoi(argv[6]));
 	}
 
 	free(new_pokemon);
 }
+
+
 
 void gestionar_envio_catch(char* argv[]){
 	const char* tipo_modulo = argv[1];
@@ -117,10 +119,10 @@ void gestionar_envio_catch(char* argv[]){
 
 	if(!strcmp(tipo_modulo,"BROKER")){
 		socket = conectarse_a(BROKER);
-		enviar_mensaje_catch(*catch_pokemon, socket,leer_puerto_broker(),0);
+		enviar_mensaje_catch_broker(*catch_pokemon, socket);
 	}else if(!strcmp(tipo_modulo,"GAMECARD")){
 		socket= conectarse_a(GAMECARD);
-		enviar_mensaje_catch(*catch_pokemon, socket,leer_puerto_gamecard(),atoi(argv[6]));
+		enviar_mensaje_catch_gamecard(*catch_pokemon, socket,atoi(argv[6]));
 	}
 
 	free(catch_pokemon);
