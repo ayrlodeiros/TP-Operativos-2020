@@ -25,16 +25,9 @@ t_log* logger;
 t_log* nuestro_log;
 char* punto_montaje_tallgrass;
 
-
-typedef struct
-{
-	int block_size;
-	int blocks;
-	char* magic_number;
-} dato_metadata;
-
 void crear_archivo_metadata(int block_size, int blocks);
 void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size, t_list* blocks,char* open);
+void creacion_archivo_files_metadata(char* path, char* directory,char* size, char* blocks,char* open);
 void crear_directorio(char* path_directorio);
 void crear_dato(int numero);
 char* devolver_path_directorio(char* path);
@@ -44,6 +37,7 @@ char* devolver_path_dato(char* numero);
 char* obtener_magic_number();
 int obtener_blocks();
 int obtener_block_size();
+char* devolver_path_directorio_files();
 int existe_el_directorio(char* path_directorio);
 
 #endif /* UTILS_H_ */
