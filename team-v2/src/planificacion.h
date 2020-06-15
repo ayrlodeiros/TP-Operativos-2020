@@ -25,7 +25,7 @@ void round_robin();
 void sjf_sin_desalojo();
 void sjf_con_desalojo();
 
-void evaluar_y_atacar_deadlock()();
+void evaluar_y_atacar_deadlock();
 
 
 #endif /* PLANIFICACION_H_ */
