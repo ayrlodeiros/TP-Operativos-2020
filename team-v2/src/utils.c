@@ -132,56 +132,63 @@ void atender_conexion_gameboy() {
 
 		log_info(nuestro_log, "SE CONECTO EL GAMEBOY");
 
-		int cod_modulo;
-		if(recv(socket_cliente, &cod_modulo, sizeof(int), MSG_WAITALL) == -1) {
-			cod_modulo = -1;
-		}
-		log_info(nuestro_log, string_from_format("El codigo de modulo es %d", cod_modulo));
+		pthread_t* hilo_conexion_gameboy;
+		pthread_create(&hilo_conexion_gameboy,NULL, recibir_mensaje_de_gameboy, socket_cliente);
+		pthread_detach(hilo_conexion_gameboy);
+	}
+}
 
-		int cod_op;
-		if(recv(socket_cliente, &cod_op, sizeof(int), MSG_WAITALL) == -1) {
-			cod_op = -1;
-		}
-		log_info(nuestro_log, string_from_format("El codigo de operacion es %d", cod_op));
+void recibir_mensaje_de_gameboy(int socket_gameboy) {
+	int hubo_error = 0;
 
-		int cod_acc;
-		if(recv(socket_cliente, &cod_acc, sizeof(int), MSG_WAITALL) == -1) {
-			cod_acc = -1;
-		}
-		log_info(nuestro_log, string_from_format("El codigo de accion es %d", cod_acc));
+	int cod_modulo;
+	if(recv(socket_gameboy, &cod_modulo, sizeof(int), MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir el codigo de modulo");
+	}
+	codigo_operacion cod_op;
+	if(recv(socket_gameboy, &cod_op, sizeof(codigo_operacion), MSG_WAITALL) == -1) {
+		hubo_error = 1;;
+		log_info(nuestro_log, "No se puedo recibir el codigo de operacion");
+	}
+	codigo_accion cod_acc;
+	if(recv(socket_gameboy, &cod_acc, sizeof(codigo_accion), MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir el codigo de accion");
+	}
 
-		int tamanio_stream;
-		if(recv(socket_cliente, &tamanio_stream, sizeof(int), MSG_WAITALL) == -1) {
-			tamanio_stream = -1;
-		}
-		log_info(nuestro_log, string_from_format("El tamanio del stream es %d", tamanio_stream));
+	int tamanio_stream;
+	if(recv(socket_gameboy, &tamanio_stream, sizeof(int), MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir el tamanio del stream");
+	}
 
-		void* stream;
-		if(recv(socket_cliente, &stream, sizeof(tamanio_stream), MSG_WAITALL) == -1) {
-			log_info(nuestro_log, "No se puedo recibir el stream");
-		}
-		log_info(nuestro_log, "Se recibio el stream");
+	int largo_nombre_pokemon;
+	if(recv(socket_gameboy, &largo_nombre_pokemon, sizeof(int), MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir el largo del nombre del pokemon");
+	}
 
-		int largo_nombre_pokemon;
-		if(recv(socket_cliente, &largo_nombre_pokemon, sizeof(int), MSG_WAITALL) == -1) {
-			log_info(nuestro_log, "No se puedo recibir el largo");
-		}
-		log_info(nuestro_log, string_from_format("El tamanio del pokemon es %d", largo_nombre_pokemon));
+	char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+	int posicionX;
+	int posicionY;
+	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon + 1, MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir el nombre del pokemon");
+	}
+	if(recv(socket_gameboy, &posicionX, sizeof(int), MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir la posicion en X");
+	}
+	if(recv(socket_gameboy, &posicionY, sizeof(int), MSG_WAITALL) == -1) {
+		hubo_error = 1;
+		log_info(nuestro_log, "No se puedo recibir la posicion en Y");
+	}
 
-		char* nombre_pokemon = (char*) malloc(largo_nombre_pokemon + 1);
-		int posicionX;
-		int posicionY;
-		if(recv(socket_cliente, &nombre_pokemon, largo_nombre_pokemon + 1, MSG_WAITALL) == -1) {
-			log_info(nuestro_log, "No se puedo recibir");
-		}
-		if(recv(socket_cliente, &posicionX, sizeof(int), MSG_WAITALL) == -1) {
-			log_info(nuestro_log, "No se puedo recibir");
-		}
-		if(recv(socket_cliente, &posicionY, sizeof(int), MSG_WAITALL) == -1) {
-			log_info(nuestro_log, "No se puedo recibir");
-		}
-
+	if(hubo_error == 0) {
 		manejar_aparicion_de_pokemon(nombre_pokemon, posicionX, posicionY);
+	} else {
+		log_info(nuestro_log, "No se pudo recibir el mensaje del Gameboy");
 	}
 }
 	//FIN DE PARA GAMEBOY
@@ -364,10 +371,14 @@ void buscar_entrenador_disponible(){
 }
 
 void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
+	pthread_mutex_lock(&mutex_entrenadores);
+	pthread_mutex_lock(&mutex_pokemon_para_planificar);
 	//Seteo la variable global del utils para poder manejarla en los distintos metodos que me filtran al entrenador mas cerca
 	pokemon_para_planificar = pokemon_objetivo;
 	//Filtro entrenadores en estado NEW o BLOCK_READY, luego ordeno la lista para obtener al primero mas cercano y despues lo agrego a la lista de entredores ready
 	t_list* entrenadores_mas_cercanos = list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca);
+	pthread_mutex_unlock(&mutex_pokemon_para_planificar);
+
 	if(list_size(entrenadores_mas_cercanos) == 0) {
 		queue_push(pokemons_sin_entrenador, pokemon_objetivo);
 		log_info(nuestro_log,"No hay entrenadores disponibles en este momento, cuando alguno finalice el hilo de entrenadores disponibles se encargara de la asignacion.");
@@ -376,6 +387,7 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);
 	}
 	list_destroy(entrenadores_mas_cercanos);
+	pthread_mutex_unlock(&mutex_entrenadores);
 }
 
 void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto) {
@@ -386,8 +398,14 @@ void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokem
 	agregar_accion(entrenador_listo, catch_pokemon, 1);
 
 	cambiar_estado_entrenador(entrenador_listo, READY);
-	list_add(entrenadores_ready, entrenador_listo);
+	agregar_entrenador_a_lista_entrenadores_ready(entrenador_listo);
 	pthread_mutex_unlock(&lock_de_planificacion);
+}
+
+void agregar_entrenador_a_lista_entrenadores_ready(entrenador* entrenador_listo) {
+	pthread_mutex_lock(&mutex_entrenadores_ready);
+	list_add(entrenadores_ready, entrenador_listo);
+	pthread_mutex_unlock(&mutex_entrenadores_ready);
 }
 
 void agregar_movimientos_en_x(entrenador* entrenador_listo, int diferencia_en_x) {
@@ -443,8 +461,7 @@ void calcular_distancia_en_y_del_entrenador_a_la_posicion(entrenador* entrenador
 
 
 int el_pokemon_es_requerido(char* nombre_pokemon){
-	return dictionary_has_key(objetivo_global,nombre_pokemon)
-			&& necesito_mas_de_ese_pokemon(nombre_pokemon);
+	return dictionary_has_key(objetivo_global,nombre_pokemon) && necesito_mas_de_ese_pokemon(nombre_pokemon);
 }
 
 //Si encuentra en el objetivo global, una cantidad mayor a 0 de ese pokemon, entonces lo necesitamos. Al devolver un numero mayor a 0 -> True
@@ -454,17 +471,18 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 
 
 //PARTE DE DETECCION DEADLOCK (FALTA TERMINAR)
-
 void planear_intercambio(entrenador* entrenador1){
 	log_info(nuestro_log,"Entre a planear el intercambio");
 	intercambio* un_intercambio = malloc(sizeof(intercambio));
 
 	cambiar_estado_entrenador(entrenador1, INTERCAMBIO);
 
+	pthread_mutex_lock(&mutex_intercambio);
 	if(se_encontraron_entrenadores_para_intercambio(entrenador1, un_intercambio)){
 
 		list_add(intercambios, un_intercambio);
 
+		//Este cambio se hace simplemente para que si hay muchos entrenadores con estado BLOCK_DEADLOCK, no se los agarre en distintos intercambios
 		cambiar_estado_entrenador(un_intercambio->entrenador2, INTERCAMBIO);
 
 		calcular_distancia_en_x_del_entrenador_a_la_posicion(entrenador1, un_intercambio->entrenador2->posicion);
@@ -472,11 +490,12 @@ void planear_intercambio(entrenador* entrenador1){
 
 		agregar_accion(entrenador1, intercambiar, 5);
 		cambiar_estado_entrenador(entrenador1, READY);
-		list_add(entrenadores_ready, entrenador1);
+		agregar_entrenador_a_lista_entrenadores_ready(entrenador1);
 	} else {
 		cambiar_estado_entrenador(entrenador1, BLOCK_DEADLOCK);
 		free (un_intercambio);
 	}
+	pthread_mutex_unlock(&mutex_intercambio);
 
 	log_info(nuestro_log,"Sali de planear el intercambio");
 
@@ -620,13 +639,14 @@ int terminaron_todos_los_entrenadores(){
 }
 
 int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador){
-	return (list_size(entrenador->pokemons_adquiridos)) == entrenador->cant_maxima_pokemons;
+	return (list_size(entrenador->pokemons_adquiridos)) >= entrenador->cant_maxima_pokemons;
 }
 
 //Realiza un intercambio entre dos entrenadores que estaban bloqueados
 void intercambiar(entrenador* entrenador1) {
 	log_info(nuestro_log,string_from_format("Empezando la accion de intercambio"));
-	char* pokemon_a_eliminar;
+	char* pokemon_a_eliminar_en_1;
+	char* pokemon_a_eliminar_en_2;
 	int posicion_pokemon_a_eliminar;
 
 
@@ -635,18 +655,19 @@ void intercambiar(entrenador* entrenador1) {
 	log_info(nuestro_log,string_from_format("Identificador de los entrenadores involucrados, Entrenador principal : %d | Otro entrenador : %d ",entrenador1->id,intercambio_a_realizar->entrenador2->id));
 	log_info(logger,string_from_format("Identificador de los entrenadores involucrados, Entrenador principal : %d | Otro entrenador : %d ",entrenador1->id,intercambio_a_realizar->entrenador2->id));
 
-	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_objetivo,intercambio_a_realizar->pokemon1);
-	pokemon_a_eliminar = list_remove(entrenador1->pokemons_objetivo,posicion_pokemon_a_eliminar);
 
-	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(intercambio_a_realizar->entrenador2->pokemons_sobrantes,intercambio_a_realizar->pokemon1);
-	pokemon_a_eliminar = list_remove(intercambio_a_realizar->entrenador2->pokemons_sobrantes,posicion_pokemon_a_eliminar);
-	log_info(nuestro_log,string_from_format("Pokemon a borrar = %s",pokemon_a_eliminar));
+	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_adquiridos,intercambio_a_realizar->pokemon2);
+	pokemon_a_eliminar_en_1 = list_remove(entrenador1->pokemons_adquiridos, posicion_pokemon_a_eliminar);
+	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_sobrantes,intercambio_a_realizar->pokemon2);
+	pokemon_a_eliminar_en_1 = list_remove(entrenador1->pokemons_sobrantes, posicion_pokemon_a_eliminar);
 
-	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(intercambio_a_realizar->entrenador2->pokemons_objetivo,intercambio_a_realizar->pokemon2);
-	pokemon_a_eliminar = list_remove(intercambio_a_realizar->entrenador2->pokemons_objetivo,posicion_pokemon_a_eliminar);
-	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(intercambio_a_realizar->entrenador1->pokemons_sobrantes,intercambio_a_realizar->pokemon2);
-	pokemon_a_eliminar = list_remove(intercambio_a_realizar->entrenador1->pokemons_sobrantes,posicion_pokemon_a_eliminar);
-	log_info(nuestro_log,string_from_format("Pokemon a borrar = %s",pokemon_a_eliminar));
+	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(intercambio_a_realizar->entrenador2->pokemons_adquiridos, intercambio_a_realizar->pokemon1);
+	pokemon_a_eliminar_en_2 = list_remove(intercambio_a_realizar->entrenador2->pokemons_adquiridos,posicion_pokemon_a_eliminar);
+	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_sobrantes,intercambio_a_realizar->pokemon1);
+	pokemon_a_eliminar_en_2 = list_remove(intercambio_a_realizar->entrenador2->pokemons_sobrantes, posicion_pokemon_a_eliminar);
+
+	agregar_pokemon_a_adquirido(entrenador1, pokemon_a_eliminar_en_2);
+	agregar_pokemon_a_adquirido(intercambio_a_realizar->entrenador2, pokemon_a_eliminar_en_1);
 
 	accionar_en_funcion_del_estado_del_entrenador(entrenador1);
 	accionar_en_funcion_del_estado_del_entrenador(intercambio_a_realizar->entrenador2);
@@ -810,20 +831,16 @@ void esperar_id_caught(int socket_catch) {
 void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 
 	if(el_entrenador_cumplio_su_objetivo(entrenador)) {
-		log_info(nuestro_log,string_from_format("Termino el entrenador : %d", entrenador->id));
+		log_info(nuestro_log,string_from_format("El entrenador %d cumplio su objetivo y queda en estado EXIT", entrenador->id));
 		cambiar_estado_entrenador(entrenador, EXIT);
 	} else if (el_entrenador_no_puede_capturar_mas_pokemons(entrenador)) {
-		log_info(nuestro_log,string_from_format("El entrenador con ID sigue en deadlock : %d", entrenador->id));
+		log_info(nuestro_log,string_from_format("El entrenador %d se bloquea quedando en estado DEADLOCK", entrenador->id));
 		cambiar_estado_entrenador(entrenador, BLOCK_DEADLOCK);
-		// Esto lo hice para que el entrenador no tenga la accion de intercambiar y no halla ningun otro entrenador para intercambiar ,y por eso pierda la accion
-		if(list_size(entrenadores_con_block_deadlock()) >= 2 ){
-			planear_intercambio(entrenador);
-		}
-
 	} else {
-		log_info(nuestro_log,string_from_format("El entrenador : %d  vuelve  a la cola de READY", entrenador->id));
-		cambiar_estado_entrenador(entrenador, READY);
-		list_add(entrenadores_ready, entrenador);
+		log_info(nuestro_log,string_from_format("El entrenador %d queda en BLOCK_READY", entrenador->id));
+		cambiar_estado_entrenador(entrenador, BLOCK_READY);
+		//Mando señal de que hay entrenador disponible
+		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 }
 
@@ -831,14 +848,11 @@ void manejar_la_captura_del_pokemon(entrenador* entrenador) {
 	pokemon* pokemon_en_captura = entrenador->pokemon_en_busqueda;
 	log_info(logger, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
 	log_info(nuestro_log, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
-	agregar_objetivo_a_objetivo_global(pokemon_en_captura->nombre);
+	restar_adquirido_a_objetivo_global(pokemon_en_captura->nombre);
 	agregar_pokemon_a_adquirido(entrenador, pokemon_en_captura->nombre);
 	destruir_pokemon(pokemon_en_captura);
 
 	accionar_en_funcion_del_estado_del_entrenador(entrenador);
-
-	log_info(nuestro_log,"3. Se realiza la captura del pokemon");
-
 }
 
 void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido) {

@@ -19,6 +19,7 @@ void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
 	//PARA GAMEBOY
 void atender_conexion_gameboy();
+void recibir_mensaje_de_gameboy(int socket_gameboy);
 	//FIN DE PARA GAMEBOY
 	//PARA BROKER
 int intentar_conectar_al_broker();
@@ -38,6 +39,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y);
 void buscar_entrenador_disponible();
 void buscar_entrenador_a_planificar_para_moverse();
 void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto);
+void agregar_entrenador_a_lista_entrenadores_ready(entrenador* entrenador_listo);
 void agregar_movimientos_en_x(entrenador* entrenador_listo, int diferencia_en_x);
 void agregar_movimientos_en_y(entrenador* entrenador_listo, int diferencia_en_y);
 void agregar_accion(entrenador* entrenador_listo, void* movimiento, int cpu_requerido);
