@@ -64,9 +64,8 @@ void fifo(){
 			ejecutar(entrenador_a_ejecutar);
 		}
 
-		log_info(nuestro_log,"CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_con_block_deadlock()));
+		evaluar_y_atacar_deadlock();
 
-		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 
 	terminar_team();
@@ -131,9 +130,9 @@ void round_robin(){
 			list_add(entrenadores_ready,entrenador_a_ejecutar);
 		}
 
-
 		quantum_consumido = 0;
 
+		evaluar_y_atacar_deadlock();
 	}
 
 	terminar_team();
@@ -175,6 +174,8 @@ void sjf_sin_desalojo(){
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
+
+		evaluar_y_atacar_deadlock();
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
@@ -212,9 +213,23 @@ void sjf_con_desalojo(){
 
 		ejecutar(entrenador_a_ejecutar);
 		entrenador_a_ejecutar->cpu_estimado_restante -= 1;
+
+		evaluar_y_atacar_deadlock();
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
 	terminar_team();
+}
+
+void evaluar_y_atacar_deadlock() {
+	t_list* entrenadores_en_deadlock = entrenadores_con_block_deadlock();
+	if(list_size(entrenadores_en_deadlock) >= 2 ){
+		log_info(nuestro_log,"CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_en_deadlock));
+		pthread_t* hilo_deadlock;
+		//Siempre le paso el primer entrenador en deadlock, no importan los demas, en algun momento se va a solucionar (PEOR CASO: cuando todos lleguen a estado BLOCK_DEADLOCK)
+		pthread_create(&hilo_deadlock, NULL, planear_intercambio, list_get(entrenadores_en_deadlock, 0));
+		pthread_detach(hilo_deadlock);
+	}
+	list_destroy(entrenadores_en_deadlock);
 }
 

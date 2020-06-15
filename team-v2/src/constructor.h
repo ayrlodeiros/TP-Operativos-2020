@@ -29,6 +29,9 @@
 pthread_mutex_t lock_de_planificacion;
 pthread_mutex_t lock_de_entrenador_disponible;
 pthread_mutex_t mutex_entrenadores;
+pthread_mutex_t mutex_pokemon_para_planificar;
+pthread_mutex_t mutex_entrenadores_ready;
+pthread_mutex_t mutex_intercambio;
 
 t_log* logger;
 t_log* nuestro_log;
