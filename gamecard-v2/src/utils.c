@@ -22,6 +22,65 @@ void crear_archivo_metadata(int block_size, int blocks){
 
 }
 
+void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size, t_list* blocks,char* open){
+	char* path_archivo_files_metadata = devolver_path_files_metadata(nombre_archivo);
+	char* size_aux = string_itoa(size);
+	char* blocks_aux = string_new();
+	string_append(&blocks_aux,"[");
+	log_info(nuestro_log,"prueba : %s ", blocks_aux);
+
+	for(int i = 0; i<list_size(blocks);i++){
+		string_append(&blocks_aux,string_itoa(list_get(blocks,i)));
+		if(i+1 < list_size(blocks)){
+			string_append(&blocks_aux,",");
+		}
+	}
+	string_append(&blocks_aux,"]");
+	log_info(nuestro_log,"prueba 2: %s ", blocks_aux);
+
+
+
+	log_info(nuestro_log,"path : %s ", path_archivo_files_metadata);
+
+	FILE* archivo_files_metadata  = fopen(path_archivo_files_metadata, "wb+");
+
+	log_info(nuestro_log,"prueba 3-0: %s ", blocks_aux);
+	fclose(archivo_files_metadata);
+	log_info(nuestro_log,"prueba 3a: %s ", blocks_aux);
+	files_metadata_config = config_create(path_archivo_files_metadata);
+	log_info(nuestro_log,"prueba 3b: %s ", blocks_aux);
+
+	config_set_value(files_metadata_config,"DIRECTORY", directory);
+	config_set_value(files_metadata_config, "SIZE", size_aux);
+	config_set_value(files_metadata_config, "BLOCKS", blocks_aux);
+	config_set_value(files_metadata_config, "OPEN", open);
+	log_info(nuestro_log,"prueba 4: %s ", blocks_aux);
+	config_save(files_metadata_config);
+	config_destroy(files_metadata_config);
+
+}
+
+void crear_dato(int numero){
+	char* numero_aux = string_itoa(numero);
+	char* path_dato = devolver_path_dato(numero_aux);
+
+	FILE* archivo_dato  = fopen( path_dato , "w+");
+	fclose(archivo_dato);
+}
+
+char* devolver_path_dato(char* numero){
+	char* path_archivo_dato = string_new();
+
+	string_append(&path_archivo_dato, devolver_path_directorio("/Blocks"));
+	string_append(&path_archivo_dato, "/");
+	string_append(&path_archivo_dato, numero);
+	string_append(&path_archivo_dato, ".bin");
+
+	log_info(nuestro_log,"path datos metadata: %s ", path_archivo_dato);
+
+	return path_archivo_dato;
+}
+
 char* obtener_magic_number(){
 	metadata_config = config_create (devolver_path_archivo_metadata());
 	return config_get_string_value(metadata_config, "MAGIC_NUMBER");
@@ -43,26 +102,39 @@ char* devolver_path_archivo_metadata(){
 
 	char* path_archivo_metadata = string_new();
 
-	string_append(&path_archivo_metadata, devolver_path_metadata());
+	string_append(&path_archivo_metadata, devolver_path_directorio("/Metadata"));
 	string_append(&path_archivo_metadata, "/Metadata.bin");
 
 
 	return path_archivo_metadata;
 }
 
-char* devolver_path_metadata(){
+char* devolver_path_files_metadata(char* nombre_archivo){
 
-	char* path_directorio_metadata = string_new();
+	char* path_archivo_files = string_new();
 
-	string_append(&path_directorio_metadata, punto_montaje_tallgrass);
-	string_append(&path_directorio_metadata, "/Metadata");
+	string_append(&path_archivo_files, devolver_path_directorio("/Files"));
+	string_append(&path_archivo_files, nombre_archivo);
+	string_append(&path_archivo_files, "/Metadata.bin");
 
-	if(!existe_el_directorio(path_directorio_metadata)){
+	log_info(nuestro_log,"path files metadata: %s ", path_archivo_files);
+
+	return path_archivo_files;
+}
+
+char* devolver_path_directorio(char* path){
+
+	char* path_directorio_files = string_new();
+
+	string_append(&path_directorio_files, punto_montaje_tallgrass);
+	string_append(&path_directorio_files, path);
+
+	if(!existe_el_directorio(path_directorio_files)){
 		log_info(nuestro_log,"ENTRE");
-		crear_directorio(path_directorio_metadata);
+		crear_directorio(path_directorio_files);
 	}
 
-	return path_directorio_metadata;
+	return path_directorio_files;
 }
 
 // CREAR DIRECTORIOS

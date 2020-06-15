@@ -702,3 +702,634 @@
 [INFO] 13:15:26:247 gamecard/(5881:5881): BLOCKS : 5192
 [INFO] 13:15:26:248 gamecard/(5881:5881): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
 [INFO] 13:15:26:249 gamecard/(5881:5881): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:32:32:997 gamecard/(12339:12339): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:32:33:3 gamecard/(12339:12339): El directorio NO existe.
+[INFO] 15:32:33:3 gamecard/(12339:12339): Creo el directorio : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:32:33:7 gamecard/(12339:12339): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:32:33:7 gamecard/(12339:12339): El directorio NO existe.
+[INFO] 15:32:33:7 gamecard/(12339:12339): ENTRE
+[INFO] 15:32:33:8 gamecard/(12339:12339): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:32:33:8 gamecard/(12339:12339): El directorio NO existe.
+[INFO] 15:32:33:8 gamecard/(12339:12339): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:32:33:8 gamecard/(12339:12339): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:32:33:9 gamecard/(12339:12339): tiempo_de_reintento_conexion : 10
+[INFO] 15:32:33:9 gamecard/(12339:12339): tiempo_de_reintento_operacion : 5
+[INFO] 15:32:33:9 gamecard/(12339:12339): tiempo_retardo_operacion : 5
+[INFO] 15:32:33:10 gamecard/(12339:12339): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:32:33:10 gamecard/(12339:12339): ip_broker : 127.0.0.1
+[INFO] 15:32:33:14 gamecard/(12339:12339): leer_puerto_broker : 6009
+[INFO] 15:32:33:14 gamecard/(12339:12339): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:32:33:15 gamecard/(12339:12339): BLOCK_SIZE : 64
+[INFO] 15:32:33:15 gamecard/(12339:12339): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:32:33:15 gamecard/(12339:12339): BLOCKS : 5192
+[INFO] 15:32:33:15 gamecard/(12339:12339): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:32:33:16 gamecard/(12339:12339): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:47:09:888 gamecard/(13183:13183): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:47:09:890 gamecard/(13183:13183): El directorio YA existe.
+[INFO] 15:47:09:890 gamecard/(13183:13183): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:47:09:894 gamecard/(13183:13183): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:47:09:895 gamecard/(13183:13183): tiempo_de_reintento_conexion : 10
+[INFO] 15:47:09:901 gamecard/(13183:13183): tiempo_de_reintento_operacion : 5
+[INFO] 15:47:09:902 gamecard/(13183:13183): tiempo_retardo_operacion : 5
+[INFO] 15:47:09:902 gamecard/(13183:13183): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:47:09:902 gamecard/(13183:13183): ip_broker : 127.0.0.1
+[INFO] 15:47:09:902 gamecard/(13183:13183): leer_puerto_broker : 6009
+[INFO] 15:47:09:902 gamecard/(13183:13183): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:47:09:903 gamecard/(13183:13183): BLOCK_SIZE : 64
+[INFO] 15:47:09:905 gamecard/(13183:13183): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:47:09:905 gamecard/(13183:13183): BLOCKS : 5192
+[INFO] 15:47:09:906 gamecard/(13183:13183): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:47:09:906 gamecard/(13183:13183): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:51:16:43 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:51:16:43 gamecard/(13540:13540): El directorio YA existe.
+[INFO] 15:51:16:43 gamecard/(13540:13540): tiempo_de_reintento_conexion : 10
+[INFO] 15:51:16:43 gamecard/(13540:13540): tiempo_de_reintento_operacion : 5
+[INFO] 15:51:16:43 gamecard/(13540:13540): tiempo_retardo_operacion : 5
+[INFO] 15:51:16:43 gamecard/(13540:13540): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:51:16:44 gamecard/(13540:13540): ip_broker : 127.0.0.1
+[INFO] 15:51:16:44 gamecard/(13540:13540): leer_puerto_broker : 6009
+[INFO] 15:51:16:44 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:51:16:47 gamecard/(13540:13540): BLOCK_SIZE : 64
+[INFO] 15:51:16:47 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:51:16:47 gamecard/(13540:13540): BLOCKS : 5192
+[INFO] 15:51:16:47 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:51:16:47 gamecard/(13540:13540): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:51:16:47 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:51:16:47 gamecard/(13540:13540): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:51:16:48 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:51:16:50 gamecard/(13540:13540): El directorio NO existe.
+[INFO] 15:51:16:50 gamecard/(13540:13540): ENTRE
+[INFO] 15:51:16:50 gamecard/(13540:13540): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:51:16:50 gamecard/(13540:13540): El directorio NO existe.
+[INFO] 15:51:16:50 gamecard/(13540:13540): Creo el directorio : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:53:10:496 gamecard/(13659:13659): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:53:10:507 gamecard/(13659:13659): El directorio YA existe.
+[INFO] 15:53:10:507 gamecard/(13659:13659): tiempo_de_reintento_conexion : 10
+[INFO] 15:53:10:509 gamecard/(13659:13659): tiempo_de_reintento_operacion : 5
+[INFO] 15:53:10:509 gamecard/(13659:13659): tiempo_retardo_operacion : 5
+[INFO] 15:53:10:509 gamecard/(13659:13659): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:53:10:509 gamecard/(13659:13659): ip_broker : 127.0.0.1
+[INFO] 15:53:10:509 gamecard/(13659:13659): leer_puerto_broker : 6009
+[INFO] 15:53:10:509 gamecard/(13659:13659): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:53:10:509 gamecard/(13659:13659): BLOCK_SIZE : 64
+[INFO] 15:53:10:510 gamecard/(13659:13659): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:53:10:510 gamecard/(13659:13659): BLOCKS : 5192
+[INFO] 15:53:10:510 gamecard/(13659:13659): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:53:10:510 gamecard/(13659:13659): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:53:10:510 gamecard/(13659:13659): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:53:10:510 gamecard/(13659:13659): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:53:10:510 gamecard/(13659:13659): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:54:09:717 gamecard/(13748:13748): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:54:09:718 gamecard/(13748:13748): El directorio YA existe.
+[INFO] 15:54:09:718 gamecard/(13748:13748): tiempo_de_reintento_conexion : 10
+[INFO] 15:54:09:718 gamecard/(13748:13748): tiempo_de_reintento_operacion : 5
+[INFO] 15:54:09:718 gamecard/(13748:13748): tiempo_retardo_operacion : 5
+[INFO] 15:54:09:718 gamecard/(13748:13748): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:54:09:718 gamecard/(13748:13748): ip_broker : 127.0.0.1
+[INFO] 15:54:09:718 gamecard/(13748:13748): leer_puerto_broker : 6009
+[INFO] 15:54:09:718 gamecard/(13748:13748): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:09:719 gamecard/(13748:13748): BLOCK_SIZE : 64
+[INFO] 15:54:09:719 gamecard/(13748:13748): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:09:719 gamecard/(13748:13748): BLOCKS : 5192
+[INFO] 15:54:09:719 gamecard/(13748:13748): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:09:719 gamecard/(13748:13748): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:54:09:719 gamecard/(13748:13748): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:09:719 gamecard/(13748:13748): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:54:09:719 gamecard/(13748:13748): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:54:09:720 gamecard/(13748:13748): path : /home/utnso/Escritorio/tall-grass/FilesPikachu/Metadata.bin 
+[INFO] 15:54:31:935 gamecard/(13780:13780): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:54:31:935 gamecard/(13780:13780): El directorio YA existe.
+[INFO] 15:54:31:935 gamecard/(13780:13780): tiempo_de_reintento_conexion : 10
+[INFO] 15:54:31:935 gamecard/(13780:13780): tiempo_de_reintento_operacion : 5
+[INFO] 15:54:31:935 gamecard/(13780:13780): tiempo_retardo_operacion : 5
+[INFO] 15:54:31:935 gamecard/(13780:13780): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:54:31:936 gamecard/(13780:13780): ip_broker : 127.0.0.1
+[INFO] 15:54:31:936 gamecard/(13780:13780): leer_puerto_broker : 6009
+[INFO] 15:54:31:939 gamecard/(13780:13780): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:31:939 gamecard/(13780:13780): BLOCK_SIZE : 64
+[INFO] 15:54:31:939 gamecard/(13780:13780): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:31:942 gamecard/(13780:13780): BLOCKS : 5192
+[INFO] 15:54:31:942 gamecard/(13780:13780): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:31:942 gamecard/(13780:13780): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:54:31:942 gamecard/(13780:13780): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:54:31:942 gamecard/(13780:13780): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:54:31:943 gamecard/(13780:13780): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:54:31:943 gamecard/(13780:13780): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 15:56:05:558 gamecard/(13861:13861): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 15:56:05:570 gamecard/(13861:13861): El directorio YA existe.
+[INFO] 15:56:05:570 gamecard/(13861:13861): tiempo_de_reintento_conexion : 10
+[INFO] 15:56:05:570 gamecard/(13861:13861): tiempo_de_reintento_operacion : 5
+[INFO] 15:56:05:570 gamecard/(13861:13861): tiempo_retardo_operacion : 5
+[INFO] 15:56:05:570 gamecard/(13861:13861): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 15:56:05:570 gamecard/(13861:13861): ip_broker : 127.0.0.1
+[INFO] 15:56:05:570 gamecard/(13861:13861): leer_puerto_broker : 6009
+[INFO] 15:56:05:570 gamecard/(13861:13861): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:56:05:570 gamecard/(13861:13861): BLOCK_SIZE : 64
+[INFO] 15:56:05:570 gamecard/(13861:13861): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:56:05:571 gamecard/(13861:13861): BLOCKS : 5192
+[INFO] 15:56:05:571 gamecard/(13861:13861): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:56:05:571 gamecard/(13861:13861): MAGIC_NUMBER : TALL_GRASS
+[INFO] 15:56:05:571 gamecard/(13861:13861): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 15:56:05:571 gamecard/(13861:13861): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 15:56:05:571 gamecard/(13861:13861): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 15:56:05:571 gamecard/(13861:13861): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 15:56:05:571 gamecard/(13861:13861): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 18:44:44:138 gamecard/(4200:4200): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 18:44:44:145 gamecard/(4200:4200): El directorio YA existe.
+[INFO] 18:44:44:145 gamecard/(4200:4200): tiempo_de_reintento_conexion : 10
+[INFO] 18:44:44:145 gamecard/(4200:4200): tiempo_de_reintento_operacion : 5
+[INFO] 18:44:44:146 gamecard/(4200:4200): tiempo_retardo_operacion : 5
+[INFO] 18:44:44:146 gamecard/(4200:4200): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 18:44:44:146 gamecard/(4200:4200): ip_broker : 127.0.0.1
+[INFO] 18:44:44:146 gamecard/(4200:4200): leer_puerto_broker : 6009
+[INFO] 18:44:44:146 gamecard/(4200:4200): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:44:44:203 gamecard/(4200:4200): BLOCK_SIZE : 64
+[INFO] 18:44:44:203 gamecard/(4200:4200): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:44:44:203 gamecard/(4200:4200): BLOCKS : 5192
+[INFO] 18:44:44:203 gamecard/(4200:4200): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:44:44:203 gamecard/(4200:4200): MAGIC_NUMBER : TALL_GRASS
+[INFO] 18:44:44:203 gamecard/(4200:4200): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:44:44:205 gamecard/(4200:4200): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 18:44:44:205 gamecard/(4200:4200): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 18:44:44:205 gamecard/(4200:4200): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 18:44:44:205 gamecard/(4200:4200): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 18:48:38:947 gamecard/(4422:4422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 18:48:38:949 gamecard/(4422:4422): El directorio NO existe.
+[INFO] 18:48:38:949 gamecard/(4422:4422): Creo el directorio : /home/utnso/Escritorio/tall-grass.
+[INFO] 18:48:38:949 gamecard/(4422:4422): tiempo_de_reintento_conexion : 10
+[INFO] 18:48:38:949 gamecard/(4422:4422): tiempo_de_reintento_operacion : 5
+[INFO] 18:48:38:949 gamecard/(4422:4422): tiempo_retardo_operacion : 5
+[INFO] 18:48:38:949 gamecard/(4422:4422): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 18:48:38:950 gamecard/(4422:4422): ip_broker : 127.0.0.1
+[INFO] 18:48:38:950 gamecard/(4422:4422): leer_puerto_broker : 6009
+[INFO] 18:48:38:950 gamecard/(4422:4422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:48:38:950 gamecard/(4422:4422): El directorio NO existe.
+[INFO] 18:48:38:950 gamecard/(4422:4422): ENTRE
+[INFO] 18:48:38:950 gamecard/(4422:4422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:48:38:950 gamecard/(4422:4422): El directorio NO existe.
+[INFO] 18:48:38:950 gamecard/(4422:4422): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:49:32:874 gamecard/(4468:4468): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 18:49:32:874 gamecard/(4468:4468): El directorio YA existe.
+[INFO] 18:49:32:874 gamecard/(4468:4468): tiempo_de_reintento_conexion : 10
+[INFO] 18:49:32:874 gamecard/(4468:4468): tiempo_de_reintento_operacion : 5
+[INFO] 18:49:32:874 gamecard/(4468:4468): tiempo_retardo_operacion : 5
+[INFO] 18:49:32:874 gamecard/(4468:4468): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 18:49:32:874 gamecard/(4468:4468): ip_broker : 127.0.0.1
+[INFO] 18:49:32:874 gamecard/(4468:4468): leer_puerto_broker : 6009
+[INFO] 18:49:32:874 gamecard/(4468:4468): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:57:06:571 gamecard/(4964:4964): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 18:57:06:593 gamecard/(4964:4964): El directorio YA existe.
+[INFO] 18:57:06:593 gamecard/(4964:4964): tiempo_de_reintento_conexion : 10
+[INFO] 18:57:06:593 gamecard/(4964:4964): tiempo_de_reintento_operacion : 5
+[INFO] 18:57:06:594 gamecard/(4964:4964): tiempo_retardo_operacion : 5
+[INFO] 18:57:06:594 gamecard/(4964:4964): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 18:57:06:594 gamecard/(4964:4964): ip_broker : 127.0.0.1
+[INFO] 18:57:06:594 gamecard/(4964:4964): leer_puerto_broker : 6009
+[INFO] 18:57:06:594 gamecard/(4964:4964): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 18:57:33:869 gamecard/(5002:5002): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 18:57:33:876 gamecard/(5002:5002): El directorio YA existe.
+[INFO] 18:57:33:876 gamecard/(5002:5002): tiempo_de_reintento_conexion : 10
+[INFO] 18:57:33:876 gamecard/(5002:5002): tiempo_de_reintento_operacion : 5
+[INFO] 18:57:33:877 gamecard/(5002:5002): tiempo_retardo_operacion : 5
+[INFO] 18:57:33:877 gamecard/(5002:5002): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 18:57:33:877 gamecard/(5002:5002): ip_broker : 127.0.0.1
+[INFO] 18:57:33:877 gamecard/(5002:5002): leer_puerto_broker : 6009
+[INFO] 18:57:33:877 gamecard/(5002:5002): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:04:47:636 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:04:47:636 gamecard/(5366:5366): El directorio YA existe.
+[INFO] 19:04:47:636 gamecard/(5366:5366): tiempo_de_reintento_conexion : 10
+[INFO] 19:04:47:636 gamecard/(5366:5366): tiempo_de_reintento_operacion : 5
+[INFO] 19:04:47:636 gamecard/(5366:5366): tiempo_retardo_operacion : 5
+[INFO] 19:04:47:636 gamecard/(5366:5366): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:04:47:636 gamecard/(5366:5366): ip_broker : 127.0.0.1
+[INFO] 19:04:47:636 gamecard/(5366:5366): leer_puerto_broker : 6009
+[INFO] 19:04:47:636 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:04:47:636 gamecard/(5366:5366): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:04:47:638 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:04:47:638 gamecard/(5366:5366): BLOCK_SIZE : 64
+[INFO] 19:04:47:638 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:04:47:638 gamecard/(5366:5366): BLOCKS : 5192
+[INFO] 19:04:47:638 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:04:47:638 gamecard/(5366:5366): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:04:47:638 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:04:47:638 gamecard/(5366:5366): El directorio NO existe.
+[INFO] 19:04:47:638 gamecard/(5366:5366): ENTRE
+[INFO] 19:04:47:638 gamecard/(5366:5366): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:04:47:638 gamecard/(5366:5366): El directorio NO existe.
+[INFO] 19:04:47:638 gamecard/(5366:5366): Creo el directorio : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:04:47:638 gamecard/(5366:5366): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:06:04:544 gamecard/(5422:5422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:06:04:554 gamecard/(5422:5422): El directorio YA existe.
+[INFO] 19:06:04:554 gamecard/(5422:5422): tiempo_de_reintento_conexion : 10
+[INFO] 19:06:04:554 gamecard/(5422:5422): tiempo_de_reintento_operacion : 5
+[INFO] 19:06:04:554 gamecard/(5422:5422): tiempo_retardo_operacion : 5
+[INFO] 19:06:04:554 gamecard/(5422:5422): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:06:04:558 gamecard/(5422:5422): ip_broker : 127.0.0.1
+[INFO] 19:06:04:558 gamecard/(5422:5422): leer_puerto_broker : 6009
+[INFO] 19:06:04:558 gamecard/(5422:5422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:04:558 gamecard/(5422:5422): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:06:04:559 gamecard/(5422:5422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:04:562 gamecard/(5422:5422): BLOCK_SIZE : 64
+[INFO] 19:06:04:562 gamecard/(5422:5422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:04:566 gamecard/(5422:5422): BLOCKS : 5192
+[INFO] 19:06:04:566 gamecard/(5422:5422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:04:566 gamecard/(5422:5422): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:06:04:566 gamecard/(5422:5422): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:06:04:566 gamecard/(5422:5422): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:06:04:566 gamecard/(5422:5422): prueba : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:06:28:439 gamecard/(5457:5457): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:06:28:439 gamecard/(5457:5457): El directorio YA existe.
+[INFO] 19:06:28:439 gamecard/(5457:5457): tiempo_de_reintento_conexion : 10
+[INFO] 19:06:28:439 gamecard/(5457:5457): tiempo_de_reintento_operacion : 5
+[INFO] 19:06:28:439 gamecard/(5457:5457): tiempo_retardo_operacion : 5
+[INFO] 19:06:28:439 gamecard/(5457:5457): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:06:28:439 gamecard/(5457:5457): ip_broker : 127.0.0.1
+[INFO] 19:06:28:439 gamecard/(5457:5457): leer_puerto_broker : 6009
+[INFO] 19:06:28:439 gamecard/(5457:5457): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:28:439 gamecard/(5457:5457): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:06:28:439 gamecard/(5457:5457): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:28:439 gamecard/(5457:5457): BLOCK_SIZE : 64
+[INFO] 19:06:28:439 gamecard/(5457:5457): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:28:439 gamecard/(5457:5457): BLOCKS : 5192
+[INFO] 19:06:28:439 gamecard/(5457:5457): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:28:440 gamecard/(5457:5457): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:06:28:440 gamecard/(5457:5457): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:06:28:440 gamecard/(5457:5457): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:06:28:440 gamecard/(5457:5457): prueba : [ 
+[INFO] 19:06:46:94 gamecard/(5490:5490): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:06:46:94 gamecard/(5490:5490): El directorio YA existe.
+[INFO] 19:06:46:95 gamecard/(5490:5490): tiempo_de_reintento_conexion : 10
+[INFO] 19:06:46:96 gamecard/(5490:5490): tiempo_de_reintento_operacion : 5
+[INFO] 19:06:46:96 gamecard/(5490:5490): tiempo_retardo_operacion : 5
+[INFO] 19:06:46:96 gamecard/(5490:5490): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:06:46:96 gamecard/(5490:5490): ip_broker : 127.0.0.1
+[INFO] 19:06:46:96 gamecard/(5490:5490): leer_puerto_broker : 6009
+[INFO] 19:06:46:96 gamecard/(5490:5490): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:46:97 gamecard/(5490:5490): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:06:46:97 gamecard/(5490:5490): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:46:97 gamecard/(5490:5490): BLOCK_SIZE : 64
+[INFO] 19:06:46:98 gamecard/(5490:5490): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:46:98 gamecard/(5490:5490): BLOCKS : 5192
+[INFO] 19:06:46:98 gamecard/(5490:5490): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:06:46:98 gamecard/(5490:5490): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:06:46:98 gamecard/(5490:5490): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:06:46:102 gamecard/(5490:5490): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:06:46:102 gamecard/(5490:5490): prueba : [ 
+[INFO] 19:07:43:653 gamecard/(5541:5541): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:07:43:653 gamecard/(5541:5541): El directorio YA existe.
+[INFO] 19:07:43:653 gamecard/(5541:5541): tiempo_de_reintento_conexion : 10
+[INFO] 19:07:43:653 gamecard/(5541:5541): tiempo_de_reintento_operacion : 5
+[INFO] 19:07:43:654 gamecard/(5541:5541): tiempo_retardo_operacion : 5
+[INFO] 19:07:43:654 gamecard/(5541:5541): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:07:43:654 gamecard/(5541:5541): ip_broker : 127.0.0.1
+[INFO] 19:07:43:654 gamecard/(5541:5541): leer_puerto_broker : 6009
+[INFO] 19:07:43:654 gamecard/(5541:5541): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:07:43:654 gamecard/(5541:5541): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:07:43:654 gamecard/(5541:5541): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:07:43:654 gamecard/(5541:5541): BLOCK_SIZE : 64
+[INFO] 19:07:43:654 gamecard/(5541:5541): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:07:43:654 gamecard/(5541:5541): BLOCKS : 5192
+[INFO] 19:07:43:654 gamecard/(5541:5541): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:07:43:654 gamecard/(5541:5541): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:07:43:654 gamecard/(5541:5541): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:07:43:654 gamecard/(5541:5541): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:07:43:654 gamecard/(5541:5541): prueba : [ 
+[INFO] 19:08:40:406 gamecard/(5596:5596): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:08:40:410 gamecard/(5596:5596): El directorio YA existe.
+[INFO] 19:08:40:410 gamecard/(5596:5596): tiempo_de_reintento_conexion : 10
+[INFO] 19:08:40:410 gamecard/(5596:5596): tiempo_de_reintento_operacion : 5
+[INFO] 19:08:40:410 gamecard/(5596:5596): tiempo_retardo_operacion : 5
+[INFO] 19:08:40:410 gamecard/(5596:5596): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:08:40:410 gamecard/(5596:5596): ip_broker : 127.0.0.1
+[INFO] 19:08:40:410 gamecard/(5596:5596): leer_puerto_broker : 6009
+[INFO] 19:08:40:410 gamecard/(5596:5596): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:08:40:410 gamecard/(5596:5596): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:08:40:411 gamecard/(5596:5596): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:08:40:411 gamecard/(5596:5596): BLOCK_SIZE : 64
+[INFO] 19:08:40:411 gamecard/(5596:5596): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:08:40:411 gamecard/(5596:5596): BLOCKS : 5192
+[INFO] 19:08:40:413 gamecard/(5596:5596): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:08:40:414 gamecard/(5596:5596): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:08:40:414 gamecard/(5596:5596): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:08:40:414 gamecard/(5596:5596): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:08:40:414 gamecard/(5596:5596): prueba : [ 
+[INFO] 19:08:40:414 gamecard/(5596:5596): prueba 2: [40,21,82,3,] 
+[INFO] 19:08:40:415 gamecard/(5596:5596): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:09:35:312 gamecard/(5655:5655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:09:35:313 gamecard/(5655:5655): El directorio YA existe.
+[INFO] 19:09:35:313 gamecard/(5655:5655): tiempo_de_reintento_conexion : 10
+[INFO] 19:09:35:313 gamecard/(5655:5655): tiempo_de_reintento_operacion : 5
+[INFO] 19:09:35:314 gamecard/(5655:5655): tiempo_retardo_operacion : 5
+[INFO] 19:09:35:318 gamecard/(5655:5655): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:09:35:318 gamecard/(5655:5655): ip_broker : 127.0.0.1
+[INFO] 19:09:35:318 gamecard/(5655:5655): leer_puerto_broker : 6009
+[INFO] 19:09:35:318 gamecard/(5655:5655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:09:35:318 gamecard/(5655:5655): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:09:35:318 gamecard/(5655:5655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:09:35:321 gamecard/(5655:5655): BLOCK_SIZE : 64
+[INFO] 19:09:35:321 gamecard/(5655:5655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:09:35:321 gamecard/(5655:5655): BLOCKS : 5192
+[INFO] 19:09:35:321 gamecard/(5655:5655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:09:35:321 gamecard/(5655:5655): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:09:35:321 gamecard/(5655:5655): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:09:35:321 gamecard/(5655:5655): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:09:35:321 gamecard/(5655:5655): prueba : [ 
+[INFO] 19:09:35:321 gamecard/(5655:5655): prueba 2: [40,21,82,3] 
+[INFO] 19:09:35:321 gamecard/(5655:5655): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:13:33:450 gamecard/(5797:5797): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:13:33:454 gamecard/(5797:5797): El directorio YA existe.
+[INFO] 19:13:33:455 gamecard/(5797:5797): tiempo_de_reintento_conexion : 10
+[INFO] 19:13:33:455 gamecard/(5797:5797): tiempo_de_reintento_operacion : 5
+[INFO] 19:13:33:455 gamecard/(5797:5797): tiempo_retardo_operacion : 5
+[INFO] 19:13:33:455 gamecard/(5797:5797): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:13:33:455 gamecard/(5797:5797): ip_broker : 127.0.0.1
+[INFO] 19:13:33:455 gamecard/(5797:5797): leer_puerto_broker : 6009
+[INFO] 19:13:33:455 gamecard/(5797:5797): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:13:33:455 gamecard/(5797:5797): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:13:33:456 gamecard/(5797:5797): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:13:33:456 gamecard/(5797:5797): BLOCK_SIZE : 64
+[INFO] 19:13:33:456 gamecard/(5797:5797): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:13:33:456 gamecard/(5797:5797): BLOCKS : 5192
+[INFO] 19:13:33:456 gamecard/(5797:5797): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:13:33:456 gamecard/(5797:5797): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:13:33:456 gamecard/(5797:5797): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:13:33:457 gamecard/(5797:5797): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:13:33:457 gamecard/(5797:5797): prueba : [ 
+[INFO] 19:13:33:457 gamecard/(5797:5797): prueba 2: [40,21,82,3] 
+[INFO] 19:13:33:457 gamecard/(5797:5797): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:35:40:551 gamecard/(6609:6609): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:35:40:564 gamecard/(6609:6609): El directorio YA existe.
+[INFO] 19:35:40:564 gamecard/(6609:6609): tiempo_de_reintento_conexion : 10
+[INFO] 19:35:40:564 gamecard/(6609:6609): tiempo_de_reintento_operacion : 5
+[INFO] 19:35:40:564 gamecard/(6609:6609): tiempo_retardo_operacion : 5
+[INFO] 19:35:40:564 gamecard/(6609:6609): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:35:40:564 gamecard/(6609:6609): ip_broker : 127.0.0.1
+[INFO] 19:35:40:564 gamecard/(6609:6609): leer_puerto_broker : 6009
+[INFO] 19:35:40:565 gamecard/(6609:6609): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:35:40:565 gamecard/(6609:6609): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:35:40:565 gamecard/(6609:6609): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:35:40:565 gamecard/(6609:6609): BLOCK_SIZE : 64
+[INFO] 19:35:40:565 gamecard/(6609:6609): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:35:40:566 gamecard/(6609:6609): BLOCKS : 5192
+[INFO] 19:35:40:569 gamecard/(6609:6609): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:35:40:569 gamecard/(6609:6609): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:35:40:569 gamecard/(6609:6609): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:35:40:569 gamecard/(6609:6609): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:35:40:572 gamecard/(6609:6609): prueba : [ 
+[INFO] 19:35:40:572 gamecard/(6609:6609): prueba 2: [40,21,82,3] 
+[INFO] 19:35:40:572 gamecard/(6609:6609): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:46:04:603 gamecard/(7238:7238): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:46:04:613 gamecard/(7238:7238): El directorio YA existe.
+[INFO] 19:46:04:613 gamecard/(7238:7238): tiempo_de_reintento_conexion : 10
+[INFO] 19:46:04:613 gamecard/(7238:7238): tiempo_de_reintento_operacion : 5
+[INFO] 19:46:04:613 gamecard/(7238:7238): tiempo_retardo_operacion : 5
+[INFO] 19:46:04:613 gamecard/(7238:7238): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:46:04:617 gamecard/(7238:7238): ip_broker : 127.0.0.1
+[INFO] 19:46:04:618 gamecard/(7238:7238): leer_puerto_broker : 6009
+[INFO] 19:46:04:618 gamecard/(7238:7238): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:04:618 gamecard/(7238:7238): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:46:04:619 gamecard/(7238:7238): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:04:619 gamecard/(7238:7238): BLOCK_SIZE : 64
+[INFO] 19:46:04:619 gamecard/(7238:7238): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:04:619 gamecard/(7238:7238): BLOCKS : 5192
+[INFO] 19:46:04:619 gamecard/(7238:7238): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:04:620 gamecard/(7238:7238): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:46:04:620 gamecard/(7238:7238): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:46:04:620 gamecard/(7238:7238): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:46:04:620 gamecard/(7238:7238): prueba : [ 
+[INFO] 19:46:04:620 gamecard/(7238:7238): prueba 2: [40,21,82,3] 
+[INFO] 19:46:04:620 gamecard/(7238:7238): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:46:36:664 gamecard/(7279:7279): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:46:36:678 gamecard/(7279:7279): El directorio YA existe.
+[INFO] 19:46:36:678 gamecard/(7279:7279): tiempo_de_reintento_conexion : 10
+[INFO] 19:46:36:678 gamecard/(7279:7279): tiempo_de_reintento_operacion : 5
+[INFO] 19:46:36:678 gamecard/(7279:7279): tiempo_retardo_operacion : 5
+[INFO] 19:46:36:678 gamecard/(7279:7279): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:46:36:678 gamecard/(7279:7279): ip_broker : 127.0.0.1
+[INFO] 19:46:36:678 gamecard/(7279:7279): leer_puerto_broker : 6009
+[INFO] 19:46:36:679 gamecard/(7279:7279): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:36:679 gamecard/(7279:7279): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:46:36:679 gamecard/(7279:7279): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:36:681 gamecard/(7279:7279): BLOCK_SIZE : 64
+[INFO] 19:46:36:681 gamecard/(7279:7279): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:36:681 gamecard/(7279:7279): BLOCKS : 5192
+[INFO] 19:46:36:682 gamecard/(7279:7279): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:46:36:682 gamecard/(7279:7279): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:46:36:682 gamecard/(7279:7279): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:46:36:682 gamecard/(7279:7279): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:46:36:682 gamecard/(7279:7279): prueba : [ 
+[INFO] 19:46:36:688 gamecard/(7279:7279): prueba 2: [40,21,82,3] 
+[INFO] 19:46:36:688 gamecard/(7279:7279): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:46:36:688 gamecard/(7279:7279): prueba 3-0: [40,21,82,3] 
+[INFO] 19:55:37:582 gamecard/(7562:7562): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:55:37:582 gamecard/(7562:7562): El directorio YA existe.
+[INFO] 19:55:37:582 gamecard/(7562:7562): tiempo_de_reintento_conexion : 10
+[INFO] 19:55:37:583 gamecard/(7562:7562): tiempo_de_reintento_operacion : 5
+[INFO] 19:55:37:583 gamecard/(7562:7562): tiempo_retardo_operacion : 5
+[INFO] 19:55:37:583 gamecard/(7562:7562): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:55:37:583 gamecard/(7562:7562): ip_broker : 127.0.0.1
+[INFO] 19:55:37:583 gamecard/(7562:7562): leer_puerto_broker : 6009
+[INFO] 19:55:37:583 gamecard/(7562:7562): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:55:37:583 gamecard/(7562:7562): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:55:37:583 gamecard/(7562:7562): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:55:37:583 gamecard/(7562:7562): BLOCK_SIZE : 64
+[INFO] 19:55:37:583 gamecard/(7562:7562): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:55:37:584 gamecard/(7562:7562): BLOCKS : 5192
+[INFO] 19:55:37:584 gamecard/(7562:7562): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:55:37:584 gamecard/(7562:7562): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:55:37:584 gamecard/(7562:7562): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:55:37:584 gamecard/(7562:7562): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:55:37:584 gamecard/(7562:7562): prueba : [ 
+[INFO] 19:55:37:584 gamecard/(7562:7562): prueba 2: [40,21,82,3] 
+[INFO] 19:55:37:584 gamecard/(7562:7562): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:55:37:584 gamecard/(7562:7562): prueba 3-0: [40,21,82,3] 
+[INFO] 19:56:38:498 gamecard/(7774:7774): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:56:38:506 gamecard/(7774:7774): El directorio YA existe.
+[INFO] 19:56:38:506 gamecard/(7774:7774): tiempo_de_reintento_conexion : 10
+[INFO] 19:56:38:506 gamecard/(7774:7774): tiempo_de_reintento_operacion : 5
+[INFO] 19:56:38:506 gamecard/(7774:7774): tiempo_retardo_operacion : 5
+[INFO] 19:56:38:506 gamecard/(7774:7774): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:56:38:506 gamecard/(7774:7774): ip_broker : 127.0.0.1
+[INFO] 19:56:38:506 gamecard/(7774:7774): leer_puerto_broker : 6009
+[INFO] 19:56:38:507 gamecard/(7774:7774): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:56:38:507 gamecard/(7774:7774): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:56:38:507 gamecard/(7774:7774): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:56:38:507 gamecard/(7774:7774): BLOCK_SIZE : 64
+[INFO] 19:56:38:508 gamecard/(7774:7774): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:56:38:508 gamecard/(7774:7774): BLOCKS : 5192
+[INFO] 19:56:38:508 gamecard/(7774:7774): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:56:38:508 gamecard/(7774:7774): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:56:38:508 gamecard/(7774:7774): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:56:38:508 gamecard/(7774:7774): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:56:38:508 gamecard/(7774:7774): prueba : [ 
+[INFO] 19:56:38:508 gamecard/(7774:7774): prueba 2: [40,21,82,3] 
+[INFO] 19:56:38:509 gamecard/(7774:7774): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:58:46:670 gamecard/(7896:7896): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 19:58:46:675 gamecard/(7896:7896): El directorio YA existe.
+[INFO] 19:58:46:675 gamecard/(7896:7896): tiempo_de_reintento_conexion : 10
+[INFO] 19:58:46:675 gamecard/(7896:7896): tiempo_de_reintento_operacion : 5
+[INFO] 19:58:46:675 gamecard/(7896:7896): tiempo_retardo_operacion : 5
+[INFO] 19:58:46:676 gamecard/(7896:7896): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 19:58:46:676 gamecard/(7896:7896): ip_broker : 127.0.0.1
+[INFO] 19:58:46:676 gamecard/(7896:7896): leer_puerto_broker : 6009
+[INFO] 19:58:46:676 gamecard/(7896:7896): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:58:46:676 gamecard/(7896:7896): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 19:58:46:679 gamecard/(7896:7896): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:58:46:679 gamecard/(7896:7896): BLOCK_SIZE : 64
+[INFO] 19:58:46:679 gamecard/(7896:7896): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:58:46:679 gamecard/(7896:7896): BLOCKS : 5192
+[INFO] 19:58:46:679 gamecard/(7896:7896): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 19:58:46:679 gamecard/(7896:7896): MAGIC_NUMBER : TALL_GRASS
+[INFO] 19:58:46:679 gamecard/(7896:7896): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 19:58:46:679 gamecard/(7896:7896): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 19:58:46:680 gamecard/(7896:7896): prueba : [ 
+[INFO] 19:58:46:680 gamecard/(7896:7896): prueba 2: [40,21,82,3] 
+[INFO] 19:58:46:680 gamecard/(7896:7896): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 20:34:24:717 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 20:34:24:717 gamecard/(9244:9244): El directorio YA existe.
+[INFO] 20:34:24:717 gamecard/(9244:9244): tiempo_de_reintento_conexion : 10
+[INFO] 20:34:24:717 gamecard/(9244:9244): tiempo_de_reintento_operacion : 5
+[INFO] 20:34:24:717 gamecard/(9244:9244): tiempo_retardo_operacion : 5
+[INFO] 20:34:24:717 gamecard/(9244:9244): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 20:34:24:717 gamecard/(9244:9244): ip_broker : 127.0.0.1
+[INFO] 20:34:24:717 gamecard/(9244:9244): leer_puerto_broker : 6009
+[INFO] 20:34:24:717 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:34:24:717 gamecard/(9244:9244): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:34:24:718 gamecard/(9244:9244): El directorio NO existe.
+[INFO] 20:34:24:718 gamecard/(9244:9244): ENTRE
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:34:24:718 gamecard/(9244:9244): El directorio NO existe.
+[INFO] 20:34:24:718 gamecard/(9244:9244): Creo el directorio : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:34:24:718 gamecard/(9244:9244): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks1.bin 
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:34:24:718 gamecard/(9244:9244): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks2.bin 
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:34:24:718 gamecard/(9244:9244): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks3.bin 
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:34:24:718 gamecard/(9244:9244): BLOCK_SIZE : 64
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:34:24:718 gamecard/(9244:9244): BLOCKS : 5192
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:34:24:718 gamecard/(9244:9244): MAGIC_NUMBER : TALL_GRASS
+[INFO] 20:34:24:718 gamecard/(9244:9244): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 20:34:24:718 gamecard/(9244:9244): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 20:34:24:718 gamecard/(9244:9244): prueba : [ 
+[INFO] 20:34:24:718 gamecard/(9244:9244): prueba 2: [40,21,82,3] 
+[INFO] 20:34:24:719 gamecard/(9244:9244): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 20:34:24:719 gamecard/(9244:9244): prueba 3-0: [40,21,82,3] 
+[INFO] 20:34:24:719 gamecard/(9244:9244): prueba 3a: [40,21,82,3] 
+[INFO] 20:34:24:719 gamecard/(9244:9244): prueba 3b: [40,21,82,3] 
+[INFO] 20:35:58:148 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 20:35:58:149 gamecard/(9316:9316): El directorio YA existe.
+[INFO] 20:35:58:149 gamecard/(9316:9316): tiempo_de_reintento_conexion : 10
+[INFO] 20:35:58:149 gamecard/(9316:9316): tiempo_de_reintento_operacion : 5
+[INFO] 20:35:58:149 gamecard/(9316:9316): tiempo_retardo_operacion : 5
+[INFO] 20:35:58:149 gamecard/(9316:9316): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 20:35:58:149 gamecard/(9316:9316): ip_broker : 127.0.0.1
+[INFO] 20:35:58:149 gamecard/(9316:9316): leer_puerto_broker : 6009
+[INFO] 20:35:58:149 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:35:58:149 gamecard/(9316:9316): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 20:35:58:149 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:35:58:150 gamecard/(9316:9316): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 20:35:58:150 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:35:58:150 gamecard/(9316:9316): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 20:35:58:150 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:35:58:150 gamecard/(9316:9316): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 20:35:58:150 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:35:58:150 gamecard/(9316:9316): BLOCK_SIZE : 64
+[INFO] 20:35:58:150 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:35:58:150 gamecard/(9316:9316): BLOCKS : 5192
+[INFO] 20:35:58:150 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:35:58:150 gamecard/(9316:9316): MAGIC_NUMBER : TALL_GRASS
+[INFO] 20:35:58:150 gamecard/(9316:9316): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 20:35:58:150 gamecard/(9316:9316): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 20:35:58:150 gamecard/(9316:9316): prueba : [ 
+[INFO] 20:35:58:150 gamecard/(9316:9316): prueba 2: [40,21,82,3] 
+[INFO] 20:35:58:150 gamecard/(9316:9316): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 20:36:09:690 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 20:36:09:695 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:695 gamecard/(9330:9330): Creo el directorio : /home/utnso/Escritorio/tall-grass.
+[INFO] 20:36:09:703 gamecard/(9330:9330): tiempo_de_reintento_conexion : 10
+[INFO] 20:36:09:703 gamecard/(9330:9330): tiempo_de_reintento_operacion : 5
+[INFO] 20:36:09:703 gamecard/(9330:9330): tiempo_retardo_operacion : 5
+[INFO] 20:36:09:703 gamecard/(9330:9330): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 20:36:09:711 gamecard/(9330:9330): ip_broker : 127.0.0.1
+[INFO] 20:36:09:711 gamecard/(9330:9330): leer_puerto_broker : 6009
+[INFO] 20:36:09:711 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:36:09:711 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:711 gamecard/(9330:9330): ENTRE
+[INFO] 20:36:09:712 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:36:09:712 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:712 gamecard/(9330:9330): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:36:09:712 gamecard/(9330:9330): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 20:36:09:712 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:36:09:712 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:713 gamecard/(9330:9330): ENTRE
+[INFO] 20:36:09:713 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:36:09:713 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:713 gamecard/(9330:9330): Creo el directorio : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:36:09:713 gamecard/(9330:9330): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 20:36:09:713 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:36:09:714 gamecard/(9330:9330): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 20:36:09:715 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 20:36:09:715 gamecard/(9330:9330): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 20:36:09:715 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:36:09:715 gamecard/(9330:9330): BLOCK_SIZE : 64
+[INFO] 20:36:09:715 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:36:09:715 gamecard/(9330:9330): BLOCKS : 5192
+[INFO] 20:36:09:715 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 20:36:09:715 gamecard/(9330:9330): MAGIC_NUMBER : TALL_GRASS
+[INFO] 20:36:09:715 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 20:36:09:715 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:716 gamecard/(9330:9330): ENTRE
+[INFO] 20:36:09:716 gamecard/(9330:9330): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 20:36:09:720 gamecard/(9330:9330): El directorio NO existe.
+[INFO] 20:36:09:721 gamecard/(9330:9330): Creo el directorio : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 20:36:09:721 gamecard/(9330:9330): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 20:36:09:721 gamecard/(9330:9330): prueba : [ 
+[INFO] 20:36:09:721 gamecard/(9330:9330): prueba 2: [40,21,82,3] 
+[INFO] 20:36:09:721 gamecard/(9330:9330): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 21:30:44:259 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass.
+[INFO] 21:30:44:260 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:260 gamecard/(11278:11278): Creo el directorio : /home/utnso/Escritorio/tall-grass.
+[INFO] 21:30:44:260 gamecard/(11278:11278): tiempo_de_reintento_conexion : 10
+[INFO] 21:30:44:261 gamecard/(11278:11278): tiempo_de_reintento_operacion : 5
+[INFO] 21:30:44:261 gamecard/(11278:11278): tiempo_retardo_operacion : 5
+[INFO] 21:30:44:261 gamecard/(11278:11278): leer_punto_montaje_tallgrass : /home/utnso/Escritorio/tall-grass
+[INFO] 21:30:44:261 gamecard/(11278:11278): ip_broker : 127.0.0.1
+[INFO] 21:30:44:261 gamecard/(11278:11278): leer_puerto_broker : 6009
+[INFO] 21:30:44:261 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 21:30:44:261 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:261 gamecard/(11278:11278): ENTRE
+[INFO] 21:30:44:261 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 21:30:44:261 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:262 gamecard/(11278:11278): Creo el directorio : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 21:30:44:262 gamecard/(11278:11278): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 21:30:44:263 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 21:30:44:263 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:263 gamecard/(11278:11278): ENTRE
+[INFO] 21:30:44:263 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 21:30:44:263 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:263 gamecard/(11278:11278): Creo el directorio : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 21:30:44:263 gamecard/(11278:11278): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 21:30:44:263 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 21:30:44:263 gamecard/(11278:11278): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 21:30:44:263 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks.
+[INFO] 21:30:44:265 gamecard/(11278:11278): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 21:30:44:265 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 21:30:44:265 gamecard/(11278:11278): BLOCK_SIZE : 64
+[INFO] 21:30:44:265 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 21:30:44:265 gamecard/(11278:11278): BLOCKS : 5192
+[INFO] 21:30:44:265 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata.
+[INFO] 21:30:44:265 gamecard/(11278:11278): MAGIC_NUMBER : TALL_GRASS
+[INFO] 21:30:44:265 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 21:30:44:265 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:265 gamecard/(11278:11278): ENTRE
+[INFO] 21:30:44:265 gamecard/(11278:11278): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 21:30:44:265 gamecard/(11278:11278): El directorio NO existe.
+[INFO] 21:30:44:265 gamecard/(11278:11278): Creo el directorio : /home/utnso/Escritorio/tall-grass/Files.
+[INFO] 21:30:44:265 gamecard/(11278:11278): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 21:30:44:265 gamecard/(11278:11278): prueba : [ 
+[INFO] 21:30:44:265 gamecard/(11278:11278): prueba 2: [40,21,82,3] 
+[INFO] 21:30:44:266 gamecard/(11278:11278): path : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 

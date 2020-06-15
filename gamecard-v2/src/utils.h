@@ -20,6 +20,7 @@
 #include<commons/string.h>
 
 t_config* metadata_config;
+t_config* files_metadata_config;
 t_log* logger;
 t_log* nuestro_log;
 char* punto_montaje_tallgrass;
@@ -33,9 +34,13 @@ typedef struct
 } dato_metadata;
 
 void crear_archivo_metadata(int block_size, int blocks);
+void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size, t_list* blocks,char* open);
 void crear_directorio(char* path_directorio);
-char* devolver_path_metadata();
+void crear_dato(int numero);
+char* devolver_path_directorio(char* path);
 char* devolver_path_archivo_metadata();
+char* devolver_path_files_metadata(char* nombre_archivo);
+char* devolver_path_dato(char* numero);
 char* obtener_magic_number();
 int obtener_blocks();
 int obtener_block_size();
