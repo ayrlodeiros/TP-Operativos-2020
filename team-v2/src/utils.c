@@ -477,7 +477,6 @@ void planear_intercambio(entrenador* entrenador1){
 
 	cambiar_estado_entrenador(entrenador1, INTERCAMBIO);
 
-	pthread_mutex_lock(&mutex_intercambio);
 	if(se_encontraron_entrenadores_para_intercambio(entrenador1, un_intercambio)){
 
 		list_add(intercambios, un_intercambio);
@@ -494,7 +493,6 @@ void planear_intercambio(entrenador* entrenador1){
 		cambiar_estado_entrenador(entrenador1, BLOCK_DEADLOCK);
 		free (un_intercambio);
 	}
-	pthread_mutex_unlock(&mutex_intercambio);
 
 	log_info(nuestro_log,"Sali de planear el intercambio");
 
@@ -540,7 +538,8 @@ int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, interc
 		//CALCULAR POKEMON A INTERCAMBIAR QUE LE SIRVA AL ENTRENADOR1 SOLAMENTE
 		t_list* pokemons_que_necesito_para_intercambiar = pokemons_a_intercambiar(entrenador1,entrenador_a_intercambiar);
 		un_intercambio->pokemon1 = list_get(pokemons_que_necesito_para_intercambiar,0);
-		un_intercambio->pokemon2 = list_get(pokemons_que_necesito_para_intercambiar,1);
+		//EN POKEMON2 VOY A PONER A POKEMON SOBRANTE DEL ENTRENADOR1
+		un_intercambio->pokemon2 = list_get(entrenador1->pokemons_sobrantes,0);
 
 		list_destroy(pokemons_que_necesito_para_intercambiar);
 		list_destroy(entrenadores_en_deadlock);
@@ -850,8 +849,6 @@ void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 	} else {
 		log_info(nuestro_log,string_from_format("El entrenador %d queda en BLOCK_READY", entrenador->id));
 		cambiar_estado_entrenador(entrenador, BLOCK_READY);
-		//Mando señal de que hay entrenador disponible
-		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 }
 

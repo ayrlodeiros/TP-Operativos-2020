@@ -16,7 +16,6 @@ void iniciar_variables_globales() {
 	pthread_mutex_init(&mutex_entrenadores, NULL);
 	pthread_mutex_init(&mutex_pokemon_para_planificar, NULL);
 	pthread_mutex_init(&mutex_entrenadores_ready, NULL);
-	pthread_mutex_init(&mutex_intercambio, NULL);
 	pthread_mutex_init(&mutex_lista_ids_localized, NULL);
 	pthread_mutex_init(&mutex_lista_ids_caught, NULL);
 	pthread_mutex_init(&mutex_funciona_broker, NULL);

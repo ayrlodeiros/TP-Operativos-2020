@@ -58,10 +58,17 @@ void fifo(){
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
 		}
+		pthread_mutex_lock(&mutex_entrenadores_ready);
 		entrenador* entrenador_a_ejecutar = list_remove(entrenadores_ready, 0);
+		pthread_mutex_unlock(&mutex_entrenadores_ready);
 
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
+		}
+
+		if(entrenador_a_ejecutar->estado == BLOCK_READY) {
+			//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
+			pthread_mutex_unlock(&lock_de_entrenador_disponible);
 		}
 
 		evaluar_y_atacar_deadlock();
@@ -225,10 +232,9 @@ void evaluar_y_atacar_deadlock() {
 	t_list* entrenadores_en_deadlock = entrenadores_con_block_deadlock();
 	if(list_size(entrenadores_en_deadlock) >= 2 ){
 		log_info(nuestro_log,"CANTIDAD DE ENTRENADORES EN DEADLOCK: %d", list_size(entrenadores_en_deadlock));
-		pthread_t* hilo_deadlock;
-		//Siempre le paso el primer entrenador en deadlock, no importan los demas, en algun momento se va a solucionar (PEOR CASO: cuando todos lleguen a estado BLOCK_DEADLOCK)
-		pthread_create(&hilo_deadlock, NULL, planear_intercambio, list_get(entrenadores_en_deadlock, 0));
-		pthread_detach(hilo_deadlock);
+		entrenador* ultimo_entrenador_en_deadlock = list_get(entrenadores_en_deadlock, (list_size(entrenadores_en_deadlock) - 1));
+
+		planear_intercambio(ultimo_entrenador_en_deadlock);
 	}
 	list_destroy(entrenadores_en_deadlock);
 }
