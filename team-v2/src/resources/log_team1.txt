@@ -7510,3 +7510,682 @@
 [INFO] 16:54:18:356 team/(7972:8192): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
 [INFO] 16:54:18:356 team/(7972:8192): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
 [INFO] 16:54:18:356 team/(7972:8192): 3. Se realiza la captura del pokemon Pidgey, en la posicion 2|3 exitosamente.
+[INFO] 14:57:06:295 team/(18956:18956): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:57:06:297 team/(18956:18956): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:57:06:297 team/(18956:18956): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:57:06:297 team/(18956:18956): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:57:06:312 team/(18956:18963): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:57:06:312 team/(18956:18963): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:57:11:313 team/(18956:18963): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:57:11:313 team/(18956:18963): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:57:16:314 team/(18956:18963): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:57:16:315 team/(18956:18963): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:57:21:316 team/(18956:18963): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:57:21:316 team/(18956:18963): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:57:26:319 team/(18956:18963): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:57:26:319 team/(18956:18963): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:57:31:321 team/(18956:18963): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:57:31:321 team/(18956:18963): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:00:452 team/(19003:19003): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:58:00:452 team/(19003:19003): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:58:00:452 team/(19003:19003): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:58:00:452 team/(19003:19003): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:58:00:456 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:00:456 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:05:458 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:05:458 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:10:459 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:10:459 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:15:460 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:15:460 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:20:461 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:20:461 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:25:462 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:25:462 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:30:464 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:30:465 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:35:466 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:35:466 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:40:469 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:40:469 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:43:10 team/(19003:19102): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 14:58:45:24 team/(19003:19135): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 14:58:45:471 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:45:471 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:47:27 team/(19003:19136): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 14:58:49:35 team/(19003:19137): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 14:58:50:472 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:50:473 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:58:51:40 team/(19003:19138): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 14:58:53:44 team/(19003:19139): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:58:53:44 team/(19003:19139): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:58:53:44 team/(19003:19139): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 14:58:55:477 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:58:55:477 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:00:479 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:00:479 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:05:480 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:05:480 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:10:482 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:10:482 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:15:483 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:15:483 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:18:385 team/(19003:19143): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 14:59:20:392 team/(19003:19176): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 14:59:20:485 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:20:485 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:22:396 team/(19003:19177): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:59:22:396 team/(19003:19177): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:59:22:396 team/(19003:19177): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 14:59:25:487 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:25:487 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:30:488 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:30:488 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:35:489 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:35:489 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:40:490 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:40:490 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:45:491 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:45:491 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:50:494 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:50:494 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:51:502 team/(19003:19183): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 14:59:53:508 team/(19003:19216): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:59:53:508 team/(19003:19216): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 14:59:53:508 team/(19003:19216): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 14:59:55:495 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:59:55:495 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:59:58:138 team/(19003:19221): 2. Entrenador moviendose a la posicion: 2|1.
+[INFO] 15:00:00:144 team/(19003:19254): 2. Entrenador moviendose a la posicion: 3|1.
+[INFO] 15:00:00:497 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:00:00:497 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:00:02:148 team/(19003:19255): 2. Entrenador moviendose a la posicion: 4|1.
+[INFO] 15:00:04:152 team/(19003:19256): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:00:05:499 team/(19003:19009): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:00:05:499 team/(19003:19009): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:18:273 team/(19275:19275): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:18:273 team/(19275:19275): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:18:273 team/(19275:19275): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:18:273 team/(19275:19275): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:18:277 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:18:277 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:23:280 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:23:284 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:25:708 team/(19275:19291): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:02:27:712 team/(19275:19324): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:02:28:285 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:28:286 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:29:716 team/(19275:19325): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:02:31:720 team/(19275:19326): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:02:33:286 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:33:287 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:33:724 team/(19275:19327): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:02:35:728 team/(19275:19328): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:35:728 team/(19275:19328): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:35:728 team/(19275:19328): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:02:38:292 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:38:292 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:41:840 team/(19275:19332): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:02:43:293 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:43:293 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:43:844 team/(19275:19365): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:02:45:849 team/(19275:19366): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:45:849 team/(19275:19366): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:45:849 team/(19275:19366): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:02:48:294 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:48:294 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:53:296 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:53:296 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:02:53:495 team/(19275:19375): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:02:55:500 team/(19275:19408): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:55:500 team/(19275:19408): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:02:55:500 team/(19275:19408): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:02:58:305 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:02:58:305 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:03:306 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:03:306 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:08:308 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:08:309 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:13:310 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:13:310 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:18:312 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:18:312 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:23:313 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:23:314 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:28:315 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:28:315 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:33:318 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:33:318 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:38:320 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:38:320 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:43:321 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:43:321 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:48:326 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:48:326 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:53:331 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:53:332 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:03:58:333 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:03:58:333 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:03:334 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:03:335 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:08:338 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:08:338 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:13:339 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:13:339 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:18:341 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:18:341 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:23:342 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:23:343 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:28:343 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:28:344 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:33:345 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:33:345 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:38:347 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:38:347 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:43:349 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:43:349 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:44:316 team/(19452:19452): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:44:316 team/(19452:19452): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:44:316 team/(19452:19452): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:44:316 team/(19452:19452): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:44:320 team/(19452:19458): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:44:325 team/(19452:19458): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:48:350 team/(19275:19282): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:48:350 team/(19275:19282): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:04:57:335 team/(19693:19693): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:57:335 team/(19693:19693): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:57:336 team/(19693:19693): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:57:336 team/(19693:19693): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:04:57:340 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:04:57:340 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:02:341 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:02:341 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:07:342 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:07:343 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:08:391 team/(19693:19706): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:05:10:396 team/(19693:19746): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:05:12:344 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:12:344 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:12:408 team/(19693:19747): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:05:14:412 team/(19693:19751): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:05:16:421 team/(19693:19752): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:05:17:345 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:17:346 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:18:428 team/(19693:19754): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:05:18:428 team/(19693:19754): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:05:18:428 team/(19693:19754): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:05:22:346 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:22:347 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:24:376 team/(19693:19760): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:05:26:384 team/(19693:19793): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:05:27:347 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:27:347 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:28:387 team/(19693:19794): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:05:28:387 team/(19693:19794): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:05:28:387 team/(19693:19794): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:05:32:348 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:32:348 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:37:351 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:37:351 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:38:360 team/(19693:19798): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:05:40:365 team/(19693:19831): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:05:40:365 team/(19693:19831): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:05:40:365 team/(19693:19831): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:05:42:352 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:42:352 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:47:357 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:47:357 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:52:359 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:52:359 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:05:57:361 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:05:57:361 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:02:362 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:02:362 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:07:363 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:07:363 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:12:364 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:12:364 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:17:365 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:17:366 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:22:367 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:22:367 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:27:368 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:27:368 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:32:369 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:32:369 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:37:373 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:37:373 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:42:374 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:42:374 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:47:377 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:47:377 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:52:378 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:52:378 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:06:57:379 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:06:57:379 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:02:381 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:02:381 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:07:388 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:07:388 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:12:390 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:12:390 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:17:391 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:17:391 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:22:392 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:22:392 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:27:393 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:27:394 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:32:395 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:32:395 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:37:396 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:37:396 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:42:397 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:42:397 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:47:399 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:47:399 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:52:400 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:52:400 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:07:57:402 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:07:57:403 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:02:403 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:02:403 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:07:406 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:07:406 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:12:412 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:12:412 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:17:413 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:17:414 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:22:415 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:22:416 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:27:417 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:27:417 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:32:418 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:32:418 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:37:419 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:37:419 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:42:420 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:42:420 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:47:426 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:47:426 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:52:427 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:52:427 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:08:57:429 team/(19693:19699): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:08:57:429 team/(19693:19699): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:08:302 team/(19921:19921): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:08:302 team/(19921:19921): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:08:302 team/(19921:19921): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:08:302 team/(19921:19921): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:08:305 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:08:305 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:13:306 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:13:306 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:16:828 team/(19921:19935): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:09:18:307 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:18:307 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:18:832 team/(19921:19972): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:09:20:836 team/(19921:19973): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:09:22:840 team/(19921:19974): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:09:23:308 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:23:308 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:24:845 team/(19921:19977): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:09:26:850 team/(19921:19978): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:26:850 team/(19921:19978): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:26:850 team/(19921:19978): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:09:28:309 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:28:310 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:32:323 team/(19921:19982): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:09:33:311 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:33:311 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:34:328 team/(19921:20015): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:09:36:332 team/(19921:20016): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:36:332 team/(19921:20016): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:36:332 team/(19921:20016): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:09:38:312 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:38:312 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:43:313 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:43:313 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:46:350 team/(19921:20025): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:09:48:315 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:48:315 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:48:352 team/(19921:20058): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:48:352 team/(19921:20058): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:09:48:352 team/(19921:20058): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:09:48:356 team/(19921:20060): 2. Entrenador moviendose a la posicion: 2|1.
+[INFO] 15:09:50:360 team/(19921:20066): 2. Entrenador moviendose a la posicion: 3|1.
+[INFO] 15:09:52:364 team/(19921:20067): 2. Entrenador moviendose a la posicion: 4|1.
+[INFO] 15:09:53:316 team/(19921:19927): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:09:53:317 team/(19921:19927): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:09:54:368 team/(19921:20068): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:12:20:320 team/(20118:20118): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:20:320 team/(20118:20118): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:20:321 team/(20118:20118): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:20:321 team/(20118:20118): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:20:324 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:20:324 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:25:328 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:25:328 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:30:329 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:30:329 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:30:805 team/(20118:20144): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:12:32:824 team/(20118:20183): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:12:34:843 team/(20118:20185): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:12:35:330 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:35:330 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:36:868 team/(20118:20189): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:12:38:893 team/(20118:20190): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:12:40:332 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:40:332 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:40:917 team/(20118:20191): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:40:917 team/(20118:20191): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:40:917 team/(20118:20191): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:12:44:105 team/(20118:20195): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:12:45:333 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:45:333 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:46:119 team/(20118:20228): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:12:48:137 team/(20118:20229): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:48:137 team/(20118:20229): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:48:137 team/(20118:20229): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:12:50:335 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:50:335 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:50:377 team/(20118:20239): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:12:52:395 team/(20118:20272): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:52:396 team/(20118:20272): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:12:52:396 team/(20118:20272): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:12:52:405 team/(20118:20274): 2. Entrenador moviendose a la posicion: 2|1.
+[INFO] 15:12:54:421 team/(20118:20275): 2. Entrenador moviendose a la posicion: 3|1.
+[INFO] 15:12:55:337 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:12:55:337 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:12:56:445 team/(20118:20276): 2. Entrenador moviendose a la posicion: 4|1.
+[INFO] 15:12:58:471 team/(20118:20277): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:13:00:338 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:13:00:339 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:13:31:29 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:13:31:32 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:16:21:666 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:16:21:666 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:16:28:813 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:16:28:813 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:16:54:989 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:16:54:989 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:17:02:625 team/(20118:20134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:17:02:625 team/(20118:20134): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:17:56:395 team/(20356:20356): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:17:56:396 team/(20356:20356): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:17:56:396 team/(20356:20356): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:17:56:396 team/(20356:20356): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:17:56:400 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:17:56:400 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:01:402 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:01:402 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:02:887 team/(20356:20370): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:18:04:892 team/(20356:20412): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:18:06:404 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:06:405 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:06:896 team/(20356:20414): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:18:08:900 team/(20356:20415): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:18:10:904 team/(20356:20416): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:18:11:406 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:11:406 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:12:909 team/(20356:20417): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:18:12:909 team/(20356:20417): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:18:12:909 team/(20356:20417): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:18:16:407 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:16:407 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:20:6 team/(20356:20421): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:18:21:410 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:21:410 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:22:8 team/(20356:20454): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:18:24:12 team/(20356:20457): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:18:24:12 team/(20356:20457): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:18:24:12 team/(20356:20457): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:18:26:355 team/(20356:20461): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:18:26:411 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:26:411 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:28:360 team/(20356:20494): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:18:28:360 team/(20356:20494): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:18:28:360 team/(20356:20494): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:18:28:363 team/(20356:20496): 2. Entrenador moviendose a la posicion: 2|1.
+[INFO] 15:18:30:368 team/(20356:20497): 2. Entrenador moviendose a la posicion: 3|1.
+[INFO] 15:18:31:412 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:31:412 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:32:372 team/(20356:20498): 2. Entrenador moviendose a la posicion: 4|1.
+[INFO] 15:18:34:384 team/(20356:20499): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:18:36:414 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:36:414 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:41:415 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:41:415 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:46:417 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:46:417 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:51:425 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:51:426 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:18:56:427 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:18:56:427 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:01:429 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:19:01:429 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:06:430 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:19:06:430 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:08:850 team/(20356:20505): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 15:19:10:855 team/(20356:20538): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:19:11:431 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:19:11:431 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:12:860 team/(20356:20539): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 15:19:14:863 team/(20356:20540): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 15:19:16:433 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:19:16:433 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:16:866 team/(20356:20542): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:19:18:872 team/(20356:20543): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:19:20:880 team/(20356:20544): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:19:20:880 team/(20356:20544): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:19:20:880 team/(20356:20544): 3. Se realiza la captura del pokemon Pidgey, en la posicion 0|0 exitosamente.
+[INFO] 15:19:20:884 team/(20356:20546): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 15:19:21:434 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:19:21:434 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:22:890 team/(20356:20547): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 15:19:24:894 team/(20356:20550): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:19:26:435 team/(20356:20362): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:19:26:435 team/(20356:20362): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:19:26:900 team/(20356:20551): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:30:22:862 team/(20869:20869): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:22:863 team/(20869:20869): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:22:863 team/(20869:20869): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:22:863 team/(20869:20869): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:22:864 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:22:864 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:27:865 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:27:865 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:30:141 team/(20869:20891): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:30:32:156 team/(20869:20931): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:30:32:866 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:32:866 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:34:173 team/(20869:20935): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:30:36:194 team/(20869:20936): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:30:37:869 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:37:869 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:38:217 team/(20869:20937): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:30:40:232 team/(20869:20938): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:40:232 team/(20869:20938): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:40:232 team/(20869:20938): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:30:42:871 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:42:871 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:46:548 team/(20869:20942): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:30:47:872 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:47:872 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:48:565 team/(20869:20975): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:30:50:581 team/(20869:20976): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:50:581 team/(20869:20976): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:50:581 team/(20869:20976): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:30:52:873 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:52:874 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:57:415 team/(20869:20980): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:30:57:876 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:30:57:876 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:30:59:433 team/(20869:21013): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:59:433 team/(20869:21013): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:30:59:433 team/(20869:21013): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:30:59:445 team/(20869:21015): 2. Entrenador moviendose a la posicion: 2|1.
+[INFO] 15:31:01:455 team/(20869:21016): 2. Entrenador moviendose a la posicion: 3|1.
+[INFO] 15:31:02:877 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:02:877 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:03:468 team/(20869:21017): 2. Entrenador moviendose a la posicion: 4|1.
+[INFO] 15:31:05:488 team/(20869:21018): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:31:12:558 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:12:558 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:19:4 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:19:4 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:24:236 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:24:236 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:31:336 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:31:336 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:37:696 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:37:696 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:49:428 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:49:428 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:31:57:272 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:31:57:273 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:32:03:545 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:32:03:545 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:32:17:575 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:32:17:576 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:32:56:846 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:32:56:847 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:20:9 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:20:9 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:25:788 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:25:789 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:30:790 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:30:790 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:35:793 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:35:793 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:35:798 team/(20869:21066): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 15:33:37:820 team/(20869:21099): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:33:39:838 team/(20869:21100): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 15:33:40:794 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:40:794 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:41:851 team/(20869:21101): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 15:33:43:880 team/(20869:21102): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:33:45:795 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:45:795 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:45:890 team/(20869:21103): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:33:47:907 team/(20869:21104): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:33:47:907 team/(20869:21104): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:33:47:907 team/(20869:21104): 3. Se realiza la captura del pokemon Pidgey, en la posicion 0|0 exitosamente.
+[INFO] 15:33:47:913 team/(20869:21106): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 15:33:49:928 team/(20869:21107): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 15:33:50:797 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:50:797 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:33:51:942 team/(20869:21108): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:33:53:957 team/(20869:21109): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:33:55:798 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:33:55:798 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:08:637 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:08:638 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:22:724 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:22:724 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:28:76 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:28:77 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:34:20 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:34:20 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:40:666 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:40:667 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:46:429 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:46:429 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:34:54:337 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:34:54:337 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:04:925 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:04:925 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:11:816 team/(20869:20881): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:11:816 team/(20869:20881): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:38:90 team/(21149:21149): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:35:38:90 team/(21149:21149): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:35:38:91 team/(21149:21149): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:35:38:92 team/(21149:21149): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:35:38:96 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:38:96 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:43:97 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:43:97 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:47:459 team/(21149:21163): 2. Entrenador moviendose a la posicion: 1|3.
+[INFO] 15:35:48:99 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:48:99 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:49:464 team/(21149:21203): 2. Entrenador moviendose a la posicion: 0|3.
+[INFO] 15:35:51:468 team/(21149:21207): 2. Entrenador moviendose a la posicion: 0|2.
+[INFO] 15:35:53:100 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:53:100 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:35:53:471 team/(21149:21208): 2. Entrenador moviendose a la posicion: 0|1.
+[INFO] 15:35:55:476 team/(21149:21209): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:35:57:480 team/(21149:21211): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:35:57:480 team/(21149:21211): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:35:57:480 team/(21149:21211): 3. Se realiza la captura del pokemon Charmander, en la posicion 0|0 exitosamente.
+[INFO] 15:35:58:101 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:35:58:102 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:03:102 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:03:103 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:06:776 team/(21149:21215): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:36:08:105 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:08:105 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:08:780 team/(21149:21248): 2. Entrenador moviendose a la posicion: 1|1.
+[INFO] 15:36:10:784 team/(21149:21249): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:36:10:784 team/(21149:21249): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:36:10:784 team/(21149:21249): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 15:36:13:106 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:13:106 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:15:697 team/(21149:21253): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:36:17:700 team/(21149:21286): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:36:17:700 team/(21149:21286): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:36:17:700 team/(21149:21286): 3. Se realiza la captura del pokemon Pikachu, en la posicion 4|0 exitosamente.
+[INFO] 15:36:17:704 team/(21149:21288): 2. Entrenador moviendose a la posicion: 2|1.
+[INFO] 15:36:18:107 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:18:107 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:19:709 team/(21149:21289): 2. Entrenador moviendose a la posicion: 3|1.
+[INFO] 15:36:21:712 team/(21149:21290): 2. Entrenador moviendose a la posicion: 4|1.
+[INFO] 15:36:23:108 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:23:108 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:23:716 team/(21149:21291): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:36:28:110 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:28:110 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:30:901 team/(21149:21298): 2. Entrenador moviendose a la posicion: 5|0.
+[INFO] 15:36:32:908 team/(21149:21331): 2. Entrenador moviendose a la posicion: 4|0.
+[INFO] 15:36:33:111 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:33:111 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:34:916 team/(21149:21332): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 15:36:36:920 team/(21149:21333): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 15:36:38:112 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:38:112 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:38:924 team/(21149:21334): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:36:40:930 team/(21149:21335): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:36:42:936 team/(21149:21336): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:36:42:936 team/(21149:21336): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:36:42:936 team/(21149:21336): 3. Se realiza la captura del pokemon Pidgey, en la posicion 0|0 exitosamente.
+[INFO] 15:36:42:940 team/(21149:21338): 2. Entrenador moviendose a la posicion: 3|0.
+[INFO] 15:36:43:114 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:43:114 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:44:947 team/(21149:21339): 2. Entrenador moviendose a la posicion: 2|0.
+[INFO] 15:36:46:952 team/(21149:21340): 2. Entrenador moviendose a la posicion: 1|0.
+[INFO] 15:36:48:116 team/(21149:21155): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:48:116 team/(21149:21155): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:36:48:956 team/(21149:21341): 2. Entrenador moviendose a la posicion: 0|0.
+[INFO] 15:45:12:532 team/(21771:21771): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:12:532 team/(21771:21771): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:12:533 team/(21771:21771): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:12:536 team/(21771:21771): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:12:536 team/(21771:21777): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:45:12:540 team/(21771:21777): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:45:17:637 team/(21771:21777): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:45:17:637 team/(21771:21777): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:45:22:639 team/(21771:21777): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:45:22:639 team/(21771:21777): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:45:58:984 team/(28439:28439): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:58:984 team/(28439:28439): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:58:985 team/(28439:28439): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:58:985 team/(28439:28439): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:45:58:985 team/(28439:28445): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:45:58:985 team/(28439:28445): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:46:04:659 team/(28439:28445): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:46:04:659 team/(28439:28445): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:49:21:756 team/(30590:30590): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:49:21:756 team/(30590:30590): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:49:21:757 team/(30590:30590): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:49:21:760 team/(30590:30590): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 15:49:21:764 team/(30590:30596): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:49:21:764 team/(30590:30596): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 15:49:26:794 team/(30590:30596): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:49:26:794 team/(30590:30596): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

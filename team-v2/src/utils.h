@@ -68,6 +68,7 @@ int el_entrenador_esta_en_exit(entrenador* entrenador);
 int terminaron_todos_los_entrenadores();
 int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador);
 void intercambiar(entrenador* entrenador1);
+void destruir_intercambio(intercambio* intercambio_realizado);
 void realizar_intercambio(entrenador* entrenador1, entrenador* entrenador_a_negociar);
 intercambio* buscar_intercambio_correspondiente_al_entrenador(entrenador* entrenador);
 

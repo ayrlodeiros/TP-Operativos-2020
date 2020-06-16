@@ -399,13 +399,13 @@ void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokem
 
 	cambiar_estado_entrenador(entrenador_listo, READY);
 	agregar_entrenador_a_lista_entrenadores_ready(entrenador_listo);
-	pthread_mutex_unlock(&lock_de_planificacion);
 }
 
 void agregar_entrenador_a_lista_entrenadores_ready(entrenador* entrenador_listo) {
 	pthread_mutex_lock(&mutex_entrenadores_ready);
 	list_add(entrenadores_ready, entrenador_listo);
 	pthread_mutex_unlock(&mutex_entrenadores_ready);
+	pthread_mutex_unlock(&lock_de_planificacion);
 }
 
 void agregar_movimientos_en_x(entrenador* entrenador_listo, int diferencia_en_x) {
@@ -481,7 +481,6 @@ void planear_intercambio(entrenador* entrenador1){
 	if(se_encontraron_entrenadores_para_intercambio(entrenador1, un_intercambio)){
 
 		list_add(intercambios, un_intercambio);
-
 		//Este cambio se hace simplemente para que si hay muchos entrenadores con estado BLOCK_DEADLOCK, no se los agarre en distintos intercambios
 		cambiar_estado_entrenador(un_intercambio->entrenador2, INTERCAMBIO);
 
@@ -652,10 +651,6 @@ void intercambiar(entrenador* entrenador1) {
 
 	intercambio* intercambio_a_realizar = buscar_intercambio_correspondiente_al_entrenador(entrenador1);
 
-	log_info(nuestro_log,string_from_format("Identificador de los entrenadores involucrados, Entrenador principal : %d | Otro entrenador : %d ",entrenador1->id,intercambio_a_realizar->entrenador2->id));
-	log_info(logger,string_from_format("Identificador de los entrenadores involucrados, Entrenador principal : %d | Otro entrenador : %d ",entrenador1->id,intercambio_a_realizar->entrenador2->id));
-
-
 	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_adquiridos,intercambio_a_realizar->pokemon2);
 	pokemon_a_eliminar_en_1 = list_remove(entrenador1->pokemons_adquiridos, posicion_pokemon_a_eliminar);
 	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_sobrantes,intercambio_a_realizar->pokemon2);
@@ -663,8 +658,12 @@ void intercambiar(entrenador* entrenador1) {
 
 	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(intercambio_a_realizar->entrenador2->pokemons_adquiridos, intercambio_a_realizar->pokemon1);
 	pokemon_a_eliminar_en_2 = list_remove(intercambio_a_realizar->entrenador2->pokemons_adquiridos,posicion_pokemon_a_eliminar);
-	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(entrenador1->pokemons_sobrantes,intercambio_a_realizar->pokemon1);
+	posicion_pokemon_a_eliminar = devolver_posicion_en_la_lista_del_pokemon(intercambio_a_realizar->entrenador2->pokemons_sobrantes,intercambio_a_realizar->pokemon1);
 	pokemon_a_eliminar_en_2 = list_remove(intercambio_a_realizar->entrenador2->pokemons_sobrantes, posicion_pokemon_a_eliminar);
+
+
+	log_info(nuestro_log, string_from_format("Entrenador %d dando %s", entrenador1->id, pokemon_a_eliminar_en_1));
+	log_info(nuestro_log, string_from_format("Entrenador %d dando %s", intercambio_a_realizar->entrenador2->id, pokemon_a_eliminar_en_2));
 
 	agregar_pokemon_a_adquirido(entrenador1, pokemon_a_eliminar_en_2);
 	agregar_pokemon_a_adquirido(intercambio_a_realizar->entrenador2, pokemon_a_eliminar_en_1);
@@ -672,9 +671,21 @@ void intercambiar(entrenador* entrenador1) {
 	accionar_en_funcion_del_estado_del_entrenador(entrenador1);
 	accionar_en_funcion_del_estado_del_entrenador(intercambio_a_realizar->entrenador2);
 
-	free(intercambio_a_realizar);
+	destruir_intercambio(intercambio_a_realizar);
 
 	log_info(nuestro_log,string_from_format("Terminando la accion de intercambio"));
+}
+
+void destruir_intercambio(intercambio* intercambio_realizado) {
+	for(int i = 0; i < list_size(intercambios); i++) {
+		intercambio* intercambio_aux = list_get(intercambios, i);
+		if(intercambio_aux->entrenador1->id == intercambio_realizado->entrenador1->id) {
+			intercambio_realizado = list_remove(intercambios, i);
+			free(intercambio_realizado);
+			break;
+		}
+	}
+
 }
 
 intercambio* buscar_intercambio_correspondiente_al_entrenador(entrenador* entrenador){
