@@ -405,6 +405,8 @@ void agregar_entrenador_a_lista_entrenadores_ready(entrenador* entrenador_listo)
 	pthread_mutex_lock(&mutex_entrenadores_ready);
 	list_add(entrenadores_ready, entrenador_listo);
 	pthread_mutex_unlock(&mutex_entrenadores_ready);
+
+	//Aviso al hilo de planificacion que hay un entrenador en ready
 	pthread_mutex_unlock(&lock_de_planificacion);
 }
 
@@ -435,7 +437,7 @@ void agregar_movimientos_en_y(entrenador* entrenador_listo, int diferencia_en_y)
 void agregar_accion(entrenador* entrenador_listo, void* movimiento, int cpu_requerido) {
 	accion* accion_entrenador = armar_accion(movimiento, cpu_requerido);
 	entrenador_listo->cpu_disponible += cpu_requerido;
-	queue_push(entrenador_listo->acciones, accion_entrenador);
+	list_add(entrenador_listo->acciones, accion_entrenador);
 }
 
 
@@ -478,6 +480,7 @@ void planear_intercambio(entrenador* entrenador1){
 	cambiar_estado_entrenador(entrenador1, INTERCAMBIO);
 
 	if(se_encontraron_entrenadores_para_intercambio(entrenador1, un_intercambio)){
+		log_info(nuestro_log,"Se movera al entrenador %d para hacer intercambio", entrenador1->id);
 
 		list_add(intercambios, un_intercambio);
 		//Este cambio se hace simplemente para que si hay muchos entrenadores con estado BLOCK_DEADLOCK, no se los agarre en distintos intercambios
@@ -490,6 +493,7 @@ void planear_intercambio(entrenador* entrenador1){
 		cambiar_estado_entrenador(entrenador1, READY);
 		agregar_entrenador_a_lista_entrenadores_ready(entrenador1);
 	} else {
+		log_info(nuestro_log,"No se encontro intercambio beneficioso para entrenador %d", entrenador1->id);
 		cambiar_estado_entrenador(entrenador1, BLOCK_DEADLOCK);
 		free (un_intercambio);
 	}

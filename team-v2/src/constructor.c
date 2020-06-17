@@ -59,9 +59,11 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, in
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
 	un_entrenador->cpu_usado = 0;
 	un_entrenador->cpu_disponible = 0;
+	un_entrenador->cpu_rr_anterior = 0;
 	un_entrenador->cpu_estimado_anterior = leer_estimacion_inicial();
 	un_entrenador->cpu_estimado_restante = un_entrenador->cpu_estimado_anterior;
-	un_entrenador->acciones = queue_create();
+	un_entrenador->cpu_sjf_anterior = 1;
+	un_entrenador->acciones = list_create();
 
 	actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(un_entrenador);
 

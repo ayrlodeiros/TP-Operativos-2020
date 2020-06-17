@@ -36,7 +36,7 @@ void loggear_movimiento(entrenador* entrenador) {
 
 void ejecutar(entrenador* entrenador){
 
-	accion* accion_a_ejecutar = queue_pop(entrenador->acciones);
+	accion* accion_a_ejecutar = list_remove(entrenador->acciones, 0);
 
 	sumar_cpu_usado(entrenador, accion_a_ejecutar->cpu_requerido);
 
