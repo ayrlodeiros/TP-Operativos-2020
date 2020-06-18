@@ -29,31 +29,59 @@ void crear_bitmap(){
 
 
 }
-/*
-void escribir_bitmap(){
 
-	int file_descriptor = open(devolver_path_bitmap(),O_WRONLY,S_IRUSR | S_IWUSR);
+// si no hay bloques libres devuelve -1
+//devuelve un boque libre y lo marca como usado en el bitarray
+int obtener_nuevo_bloque(){
 
-	struct stat sb;
-	fstat(file_descriptor,&sb);
-	//ftruncate()
-
-	bitmap = bitarray_create(bitmap,obtener_blocks()/8+1);
-
-	log_info(nuestro_log,"sb size %d",obtener_blocks()/8+1);
-	char* file_in_memory = mmap(NULL,obtener_blocks() * obtener_block_size(),PROT_WRITE,MAP_SHARED,file_descriptor,0);
-	log_info(nuestro_log,"PRUEBA");
-	for(int i = 0; i < sb.st_size;i++){
-		log_info(nuestro_log,"PRUEBA : %d",i);
-		memset(file_in_memory,0,obtener_blocks()/8);
-
-	}
-	log_info(nuestro_log,"FILE MEMORY");
-	for(int i = 0; i < 10;i++){
-		log_info(nuestro_log,"VALOR BIT :%d",(int)bitarray_test_bit(file_in_memory,i));
-	}
-
-	munmap(file_in_memory,sb.st_size);
-
+if(!flag_bloques_libres){ //si no hay bloques libres ni busca
+	return -1;
 }
-*/
+
+//pthread_mutex_lock(&MUTEX_BITARRAY);
+
+int bloques = obtener_blocks();
+int bloque_aux = ultimo_bloque_asignado;
+int i;
+
+for(i = ultimo_bloque_asignado; i < bloques; i++){
+	if(!bitarray_test_bit(bitmap,bloque_aux)){
+		bitarray_set_bit(bitmap,bloque_aux);
+		ultimo_bloque_asignado = bloque_aux;
+		escribir_bloque_asignado(bloque_aux);
+		msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
+		//pthread_mutex_unlock(&MUTEX_BITARRAY);
+		return bloque_aux;
+	}
+	else bloque_aux++;//vas al proximo bloque
+}
+
+bloque_aux = 0;
+//	i=0;
+while(bloque_aux < ultimo_bloque_asignado){
+	if(!bitarray_test_bit(bitmap,bloque_aux)){
+		bitarray_set_bit(bitmap,bloque_aux);
+		ultimo_bloque_asignado = bloque_aux;
+		msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
+		//pthread_mutex_unlock(&MUTEX_BITARRAY);
+		return bloque_aux;
+	}
+	else bloque_aux++;
+//		i++;
+}
+flag_bloques_libres = 0; // 0 si no hay libres, 1 si los hay
+//pthread_mutex_unlock(&MUTEX_BITARRAY);
+return -1; // salio del while, por lo que no hay bloque libres/
+}
+
+void escribir_bloque_asignado(int bloque)
+{
+	char* path_bloque = devolver_path_dato(bloque);
+
+	FILE* archivo = txt_open_for_append(path_bloque);
+	txt_write_in_file(archivo,"&");
+	txt_close_file(archivo);
+
+	free(path_bloque);
+}
+
