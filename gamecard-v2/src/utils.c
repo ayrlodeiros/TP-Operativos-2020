@@ -183,6 +183,14 @@ char* devolver_path_dato(char* numero){
 	return path_archivo_dato;
 }
 
+char* devolver_path_bitmap(){
+	char* path_archivo_bitmap = string_new();
+	string_append(&path_archivo_bitmap, devolver_path_directorio("/Metadata"));
+	string_append(&path_archivo_bitmap,"/Bitmap.bin");
+
+	return path_archivo_bitmap;
+}
+
 // CREAR DIRECTORIOS
 void crear_directorio(char* path_directorio){
 
@@ -210,25 +218,6 @@ int existe_el_directorio(char* path_directorio){
 	}
 	closedir(directorio_a_buscar);
 	return 0;
-}
-
-void crear_bitmap(){
-	int bytes_totales = obtener_blocks() * obtener_block_size();
-	void* puntero_a_bits = bitarray_create(puntero_a_bits,bytes_totales);
-
-	log_info(nuestro_log,"path pruebaasd ");
-	char* path_archivo_bitmap = string_new();
-	string_append(&path_archivo_bitmap, devolver_path_directorio("/Metadata"));
-	log_info(nuestro_log,"path 1: %s ", path_archivo_bitmap);
-	string_append(&path_archivo_bitmap,"/Bitmap.bin");
-
-	log_info(nuestro_log,"path 2: %s ", path_archivo_bitmap);
-
-
-	FILE* archivo_bitmap  = fopen( path_archivo_bitmap , "wb+");
-	fwrite(puntero_a_bits,bytes_totales,1,archivo_bitmap);
-	fclose(archivo_bitmap);
-
 }
 
 

@@ -14,11 +14,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
+#include <sys/mman.h>
+#include <sys/types.h>
+#include <fcntl.h>
 #include <dirent.h>
+#include <unistd.h>
 #include <commons/config.h>
 #include <commons/log.h>
-#include<commons/string.h>
-#include<commons/bitarray.h>
+#include <commons/string.h>
+#include <commons/bitarray.h>
 
 t_config* metadata_config;
 t_config* files_metadata_config;
@@ -41,6 +45,7 @@ char* devolver_path_directorio(char* path);
 char* devolver_path_archivo_metadata();
 char* devolver_path_files_metadata(char* nombre_archivo);
 char* devolver_path_dato(char* numero);
+char* devolver_path_bitmap();
 char* obtener_magic_number();
 int obtener_blocks();
 int obtener_block_size();
@@ -51,6 +56,5 @@ t_list* crear_t_list(char** array);
 char* obtener_directory_archivo_metadata_pokemon(char* nombre);
 char* devolver_path_directorio_files();
 int existe_el_directorio(char* path_directorio);
-void crear_bitmap();
 
 #endif /* UTILS_H_ */
