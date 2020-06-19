@@ -7,8 +7,7 @@ C_SRCS += \
 ../src/broker-v2.c \
 ../src/conexion.c \
 ../src/config-reader.c \
-../src/memoria.c \
-../src/message-queue.c \
+../src/constructor.c \
 ../src/protocolo.c \
 ../src/suscriptores.c \
 ../src/utils.c 
@@ -17,8 +16,7 @@ OBJS += \
 ./src/broker-v2.o \
 ./src/conexion.o \
 ./src/config-reader.o \
-./src/memoria.o \
-./src/message-queue.o \
+./src/constructor.o \
 ./src/protocolo.o \
 ./src/suscriptores.o \
 ./src/utils.o 
@@ -27,8 +25,7 @@ C_DEPS += \
 ./src/broker-v2.d \
 ./src/conexion.d \
 ./src/config-reader.d \
-./src/memoria.d \
-./src/message-queue.d \
+./src/constructor.d \
 ./src/protocolo.d \
 ./src/suscriptores.d \
 ./src/utils.d 

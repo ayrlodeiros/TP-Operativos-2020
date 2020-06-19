@@ -20,7 +20,6 @@
 #include<commons/string.h>
 #include"protocolo.h"
 
-pthread_t* espera;
 
 /* crear_conexion_del_cliente:
  * Recibe como parametros la ip y el puerto del servidor a conectarse

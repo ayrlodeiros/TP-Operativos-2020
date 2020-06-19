@@ -6,9 +6,8 @@
 #include<string.h>
 #include<commons/log.h>
 #include<commons/config.h>
-#include "utils.h"
 #include "conexion.h"
-#include "message-queue.h"
+#include "constructor.h"
 
 void iniciar_broker(void);
 void terminar_broker(void);

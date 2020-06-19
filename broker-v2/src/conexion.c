@@ -58,7 +58,6 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 	freeaddrinfo(servinfo);
 
 	printf("Esperando conexiones\n");
-	pthread_t* prueba;
 
 	while(1){
 	esperar_cliente(socket_servidor,logger);
@@ -67,6 +66,8 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 
 void esperar_cliente(int socket_servidor,t_log* logger)
 {
+
+	pthread_t* espera;
 	int err;
 
 	struct sockaddr_in dir_cliente;

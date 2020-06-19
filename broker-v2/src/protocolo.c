@@ -27,20 +27,6 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		enviar_id_msj_cliente(socket_cliente,queue,mensaje->id);
 }
 
-/*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
-t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola){
-
-	t_mensaje* mensaje  = malloc(sizeof(t_mensaje));
-	mensaje->buffer = malloc(sizeof(t_buffer));
-	mensaje->id = asignar_id_univoco();
-	mensaje->cola = cola;
-	mensaje->buffer->size = tamanio;
-	mensaje->buffer->stream = malloc(mensaje->buffer->size);
-	memcpy(mensaje->buffer->stream,buffer,mensaje->buffer->size);
-
-	return mensaje;
-}
-
 void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	int tamanio_previo = queue_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
 
@@ -50,6 +36,7 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
+	pthread_t* ack;
 	t_mensaje* mensaje = queue_pop(cola->cola);
 	suscriptor_t* suscriptor;
 	int i;
