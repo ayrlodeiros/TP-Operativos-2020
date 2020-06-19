@@ -28,6 +28,7 @@ int main(void)
 	list_add(blocks,21);
 	list_add(blocks,82);
 	list_add(blocks,3);
+
 	crear_archivo_files_metadata("/Pikachu","N",250,blocks,"Y");
 
 	log_info(nuestro_log,"Directory : %s", obtener_directory_archivo_metadata_pokemon("/Pikachu"));

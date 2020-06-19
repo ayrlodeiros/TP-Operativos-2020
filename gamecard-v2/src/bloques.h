@@ -10,4 +10,7 @@
 
 #include "utils.h"
 
+void modificar_tamanio_bloque(char* path_bloque,int tamanio);
+char* devolver_lista_de_bloques(char* path_particion);
+
 #endif /* BLOQUES_H_ */
