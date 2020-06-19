@@ -29,6 +29,8 @@
 pthread_mutex_t lock_de_planificacion;
 pthread_mutex_t lock_de_entrenador_disponible;
 pthread_mutex_t mutex_entrenadores;
+pthread_mutex_t mutex_pokemon_para_planificar;
+pthread_mutex_t mutex_entrenadores_ready;
 
 t_log* logger;
 t_log* nuestro_log;
@@ -78,15 +80,17 @@ typedef struct
 	estado_entrenador estado;
 	int cpu_usado;
 	int cpu_disponible;
+	int cpu_rr_anterior;
 	double cpu_estimado_anterior;
 	double cpu_estimado_restante;
+	int cpu_sjf_anterior;
 	posicion* posicion;
 	int cant_maxima_pokemons;
 	t_list* pokemons_adquiridos;
 	t_list* pokemons_objetivo;
 	t_list* pokemons_sobrantes;
 	pokemon* pokemon_en_busqueda;
-	t_queue* acciones;
+	t_list* acciones;
 } entrenador;
 
 typedef struct

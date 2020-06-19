@@ -471,3 +471,7 @@
 [INFO] 19:26:20:271 gameBoy/(28025:28025): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
 [INFO] 19:26:20:272 gameBoy/(28025:28025): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134519904
 [INFO] 19:26:36:910 gameBoy/(28091:28091): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:59:29:142 gameBoy/(22206:22206): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 16:59:29:142 gameBoy/(22206:22206): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:00:44:73 gameBoy/(22300:22300): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:00:44:74 gameBoy/(22300:22300): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444

@@ -17,6 +17,11 @@ void destruir_paquete(t_paquete* paquete);
 int crear_conexion_como_cliente(char *ip, char* puerto);
 void liberar_conexion(int socket);
 int levantar_servidor(char* ip, char* puerto);
+	//PARA GAMEBOY
+void atender_conexion_gameboy();
+void recibir_mensaje_de_gameboy(int socket_gameboy);
+	//FIN DE PARA GAMEBOY
+	//PARA BROKER
 int intentar_conectar_al_broker();
 void levantar_conexiones_al_broker();
 void esperar_mensaje_appeared();
@@ -25,6 +30,7 @@ void esperar_mensaje_caught();
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir);
 void cambiar_valor_de_funciona_broker(int new_value);
 void desbloquear_lock_reintento();
+	//FIN DE PARA BROKER
 //FIN DE CONEXIONES
 
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
@@ -33,6 +39,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y);
 void buscar_entrenador_disponible();
 void buscar_entrenador_a_planificar_para_moverse();
 void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto);
+void agregar_entrenador_a_lista_entrenadores_ready(entrenador* entrenador_listo);
 void agregar_movimientos_en_x(entrenador* entrenador_listo, int diferencia_en_x);
 void agregar_movimientos_en_y(entrenador* entrenador_listo, int diferencia_en_y);
 void agregar_accion(entrenador* entrenador_listo, void* movimiento, int cpu_requerido);
@@ -61,6 +68,7 @@ int el_entrenador_esta_en_exit(entrenador* entrenador);
 int terminaron_todos_los_entrenadores();
 int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador);
 void intercambiar(entrenador* entrenador1);
+void destruir_intercambio(intercambio* intercambio_realizado);
 void realizar_intercambio(entrenador* entrenador1, entrenador* entrenador_a_negociar);
 intercambio* buscar_intercambio_correspondiente_al_entrenador(entrenador* entrenador);
 
