@@ -294,4 +294,47 @@ char* devolver_lista_de_bloques(char* path_particion){
 }
 
 
+void empezar_file_metadata(char* path_archivo_files_metadata,char* es_directorio,int bloque, int tamanio, char* esta_abierto){
+	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
+	char *dato_a_guardar = string_new();
+
+	string_append(&dato_a_guardar,"DIRECTORY=");
+	string_append(&dato_a_guardar,es_directorio);
+	string_append(&dato_a_guardar,"SIZE=");
+	char* string_tamanio = string_itoa(tamanio);
+	string_append(&dato_a_guardar,string_tamanio);
+	string_append(&dato_a_guardar,"\n");
+	string_append(&dato_a_guardar,"BLOCKS=[");
+	char* string_bloque = string_itoa(bloque);
+	string_append(&dato_a_guardar,bloque);
+	free(string_bloque);
+	string_append(&dato_a_guardar,"]\n");
+	string_append(&dato_a_guardar,"OPEN=");
+	string_append(&dato_a_guardar,esta_abierto);
+
+	FILE* archivo = txt_open_for_append(path_archivo_files_metadata);
+	txt_write_in_file(archivo,dato_a_guardar);
+	txt_close_file(archivo);
+	free(dato_a_guardar);
+	free(string_tamanio);
+	//pthread_mutex_unlock(&MUTEX_ELSOLUCIONADOR);
+}
+
+void cargar_datos_del_file_metadata (char* path_pokemon){
+
+	char* path;
+
+	path = devolver_path_files_metadata(path_pokemon);
+	string_append(&path,"/Metadata.bin");
+
+	asignar_tamanio_y_bloque(path,0);
+
+	free(path);
+}
+
+void asignar_tamanio_y_bloque (char* path,int tamanio){
+	int bloque = obtener_nuevo_bloque();
+
+	empezar_file_metadata(path,"N",bloque,0,"N");
+}
 
