@@ -31,6 +31,12 @@ t_log* logger;
 t_log* nuestro_log;
 char* punto_montaje_tallgrass;
 
+t_bitarray* bitmap;
+int bitmap_file_descriptor;
+int flag_bloques_libres;
+int ultimo_bloque_asignado;
+pthread_mutex_t Mutex_Bitmap;
+
 typedef struct
 {
 	int posicion_x;
@@ -41,11 +47,11 @@ void crear_archivo_metadata(int block_size, int blocks);
 void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size, t_list* blocks,char* open);
 void creacion_archivo_files_metadata(char* path, char* directory,char* size, char* blocks,char* open);
 void crear_directorio(char* path_directorio);
-void crear_dato(int numero);
+void crear_dato(char* numero);
 char* devolver_path_directorio(char* path);
 char* devolver_path_archivo_metadata();
 char* devolver_path_files_metadata(char* nombre_archivo);
-char* devolver_path_dato(int numero);
+char* devolver_path_dato(char* numero);
 char* devolver_path_bitmap();
 char* obtener_magic_number();
 int obtener_blocks();

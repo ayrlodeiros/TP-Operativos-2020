@@ -11,10 +11,10 @@ int main(void)
 	list_add(blocks,3);
 	crear_archivo_files_metadata("/Pikachu","N",250,blocks,"Y");
 
-	t_list* lista = obtener_blocks_archivo_metadata_pokemon("/Pikachu");
-	for(int i = 0; i< list_size(lista);i++){
-		int bloque = atoi(list_get(lista,i));
-		escribir_bloque(devolver_path_files_metadata("/Pikachu/Metadata.bin"),bloque);
+	guardar_informacion("/Pikachu",1,5,10);
+
+	for(int j = 0;j<100;j++){
+		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
 	}
 
 /*
@@ -40,6 +40,7 @@ int main(void)
 	//log_info(nuestro_log,"Open : %s", obtener_open_archivo_metadata_pokemon("/Pikachu"));
 
 	log_info(nuestro_log,"Termine");
+	log_info(nuestro_log,config_get_string_value(config,"miele"));
 	return EXIT_SUCCESS;
 }
 
@@ -51,7 +52,7 @@ void iniciar_gamecard() {
 	crear_directorio("/home/utnso/Escritorio/tall-grass");
 	punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
 	crear_archivo_metadata(64,5192);
-	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y",0,"","N");
+	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y","0","","N");
 
 	pthread_mutex_init(&Mutex_Bitmap,NULL);
 

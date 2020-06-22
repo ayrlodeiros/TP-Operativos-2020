@@ -1,29 +1,23 @@
 #include "bloques.h"
 
 //guarda la data en el archivo del path
-void escribir_bloque(char* path_config,int dato){
-	log_info(nuestro_log,"Prueba 4-0");
+void escribir_bloque(char* path_config,char* dato){
 
 	char* path_bloque;
-	char* string_dato = string_itoa(dato);
 	char* path_directorio_bloque = devolver_path_directorio("/Blocks");
-	log_info(nuestro_log,"Prueba 4-0.1");
+
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
 
-	log_info(nuestro_log,"Prueba 4-1");
-	log_info(nuestro_log,"TAMAÑO DISPONIBLE : %d",tamanio_disponible_del_ultimo_bloque);
-	log_info(nuestro_log,"STRLEN DATO : %d",strlen(string_dato));
 	//en el ultimo bloque -NO- hay espacio para guardar toda la info
-	if(! (tamanio_disponible_del_ultimo_bloque >= strlen(string_dato))){
-		log_info(nuestro_log,"Prueba 4-2");
+	if(! (tamanio_disponible_del_ultimo_bloque >= strlen(dato))){
 		int bloques_necesarios;
 
 		if( ((strlen(dato)-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
 			//si entra justo le doy los bloques justos
-			bloques_necesarios = (strlen(string_dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size();
+			bloques_necesarios = (strlen(dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size();
 		}else{
 			//si no entra justo le doy un bloque demas
-			bloques_necesarios = (strlen(string_dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
+			bloques_necesarios = (strlen(dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
 		}
 
 		//le asigno todos los bloques que necesita
@@ -34,12 +28,9 @@ void escribir_bloque(char* path_config,int dato){
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
-		log_info(nuestro_log,"Prueba 4-3");
 		path_bloque = devolver_path_dato(dato);
-		guardar_en_bloque(path_bloque,string_dato);
-		log_info(nuestro_log,"Prueba 4-3.0");
+		guardar_en_bloque(path_bloque,dato);
 		actualizar_tamanio_bloque(path_config);
-		log_info(nuestro_log,"Prueba 4-3.1");
 		free(path_bloque);
 		free(path_directorio_bloque);
 		return;
@@ -47,12 +38,11 @@ void escribir_bloque(char* path_config,int dato){
 	//aca llega solo si no entro en el "else" de arriba
 	int flag = 1;
 	int ultima_posicion_insertada = 0;
-	log_info(nuestro_log,"Prueba 4-4");
 
 	path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
 
 	//lleno el bloque que estaba semicompleto
-	char* a_escribir = string_substring(string_dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
+	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
 	guardar_en_bloque(path_bloque,a_escribir);
 	free(a_escribir);
 
@@ -60,8 +50,8 @@ void escribir_bloque(char* path_config,int dato){
 
 	while(flag){
 		a_escribir = string_new();
-		if( (strlen(string_dato)-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
-			a_escribir = string_substring(string_dato, ultima_posicion_insertada,obtener_block_size());
+		if( (strlen(dato)-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
+			a_escribir = string_substring(dato, ultima_posicion_insertada,obtener_block_size());
 
 			path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
 
@@ -73,7 +63,7 @@ void escribir_bloque(char* path_config,int dato){
 
 		}
 		else{// si lo que queda entra en un bloque
-			a_escribir = string_substring_from(string_dato, ultima_posicion_insertada);
+			a_escribir = string_substring_from(dato, ultima_posicion_insertada);
 
 			path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
 
@@ -93,6 +83,8 @@ free(path_directorio_bloque);
 
 void escribir_bloque_asignado(int bloque){
 	char* path_bloque = devolver_path_dato(bloque);
+	bitarray_set_bit(bitmap,bloque);
+
 
 	FILE* archivo = txt_open_for_append(path_bloque);
 	txt_write_in_file(archivo,"&");
@@ -132,7 +124,7 @@ void crear_bloque(){ //ANDA BIEN
 	char* path_bloque;
 
 	for(int i = 0; i < obtener_blocks(); i++){
-		path_bloque = devolver_path_dato(i);
+		path_bloque = devolver_path_dato(string_itoa(i));
 		FILE* archivo = fopen(path_bloque,"w");
 		fclose(archivo);
 		free(path_bloque);
@@ -315,31 +307,22 @@ int el_bloque_esta_vacio(int bloque){
 
 int tamanio_libre_del_ultimo_bloque(char* path){
 	int ultimo_bloque = devolver_ultimo_bloque(path);
-	log_info(nuestro_log,"Prueba 4-0-1");
 	return tamanio_libre_del_bloque(ultimo_bloque);
 }
 
 //devuelve el ultimo bloque, osea el que tiene espacio probablemente
 int devolver_ultimo_bloque(char* path){
 	//falta hacer la funcion para que arranque la particion
-	log_info(nuestro_log,"Prueba 4-0-0.0");
-	log_info(nuestro_log,"Path del bloque a buscar : %s",path);
 
 	char* bloques = devolver_lista_de_bloques(path);
-	log_info(nuestro_log,"Prueba 4-0-0.05");
 	char** lista_bloques = string_get_string_as_array(bloques);
-	log_info(nuestro_log,"Prueba 4-0-0.1");
-
 	free(bloques);
 
 	int posicion_ultimo_bloque = tamanio_de_lista (lista_bloques) - 1;
-	log_info(nuestro_log,"Prueba 4-0-0.2");
 	char* ultimo_bloque = string_duplicate(lista_bloques[posicion_ultimo_bloque]);
-	log_info(nuestro_log,"Prueba 4-0-0.3");
 	int numero_ultimo_bloque = atoi(ultimo_bloque);
 
 	free(ultimo_bloque);
-	log_info(nuestro_log,"Prueba 4-0-0.4");
 	for(int i = 0; i < tamanio_de_lista(lista_bloques); i++){
 		free(lista_bloques[i]);
 	}
@@ -366,11 +349,8 @@ int tamanio_de_lista(char** un_array){
 char* devolver_lista_de_bloques(char* path_files_config){
 	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
 	t_config* config_file = config_create(path_files_config);
-	log_info(nuestro_log,"Prueba 4-0-0.0- 0");
 	char* bloques = string_duplicate(config_get_string_value(config_file,"BLOCKS"));
-	log_info(nuestro_log,"Prueba 4-0-0.0- 1");
 	config_destroy(config_file);
-	log_info(nuestro_log,"Prueba 4-0-0.0- 2");
 	//pthread_mutex_unlock(&MUTEX_ELSOLUCIONADOR);
 	return bloques;
 }
