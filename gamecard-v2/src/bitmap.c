@@ -74,17 +74,7 @@ flag_bloques_libres = 0; // 0 si no hay libres, 1 si los hay
 return -1; // salio del while, por lo que no hay bloque libres/
 }
 
-void escribir_bloque_asignado(int bloque){
-	char* path_bloque = devolver_path_dato(bloque);
-
-	FILE* archivo = txt_open_for_append(path_bloque);
-	txt_write_in_file(archivo,"&");
-	txt_close_file(archivo);
-
-	free(path_bloque);
-}
-
-void destruir_bloque(){
+void destruir_bitmap(){
 	msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
 	bitarray_destroy(bitmap);
 }

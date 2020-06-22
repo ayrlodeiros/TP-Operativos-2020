@@ -39,7 +39,7 @@ int main(void)
 	blocks_a_leer = obtener_blocks_archivo_metadata_pokemon("/Pikachu");
 
 	for(int i = 0; i<list_size(blocks_a_leer);i++){
-		log_info(nuestro_log,"Blocks Pos : %d",string_from_format(list_get(blocks_a_leer,i)));
+		log_info(nuestro_log,"Blocks Pos : %s",string_from_format(list_get(blocks_a_leer,i)));
 	}
 	crear_bitmap();
 	return EXIT_SUCCESS;

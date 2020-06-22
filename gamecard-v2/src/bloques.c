@@ -89,6 +89,57 @@ void escribir_bloque(char* path_dato,char* dato){
 free(path_directorio_bloque);
 }
 
+void escribir_bloque_asignado(int bloque){
+	char* path_bloque = devolver_path_dato(bloque);
+
+	FILE* archivo = txt_open_for_append(path_bloque);
+	txt_write_in_file(archivo,"&");
+	txt_close_file(archivo);
+
+	free(path_bloque);
+}
+
+//limpio el contenido del bloque y lo libero en el bitarray
+void limpiar_bloque(int bloque){
+	char* path_bloque = devolver_path_dato(bloque);
+
+	FILE *archivo = fopen(path_bloque,"w"); //limpio el archivo
+	fclose(archivo);
+
+	liberar_bloque(bloque); //libero en bitarray
+
+	free(path_bloque);
+}
+
+
+int se_creo_el_bloque(){
+	char* path_bloque = devolver_path_directorio("/Blocks");
+	string_append(&path_bloque,"0.bin");
+
+	if(access(path_bloque,F_OK) != -1){
+		free(path_bloque);
+		return true;
+	}
+	else {
+		free(path_bloque);
+		return false;
+	}
+}
+
+void crear_bloque(){
+	char* path_bloque;
+
+	for(int i = 0; i < obtener_blocks(); i++){
+		path_bloque = devolver_path_dato(i);
+
+		FILE* archivo = fopen(path_bloque,"w");
+		fclose(archivo);
+
+		free(path_bloque);
+	}
+
+}
+
 void modificar_tamanio_bloque(char* path_bloque,int tamanio){
 	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
 	t_config* config = config_create(path_bloque);
@@ -141,6 +192,19 @@ void guardar_en_bloque(char* path_bloque,char* dato){
 	txt_write_in_file(archivo2, dato);
 	txt_close_file(archivo2);
 	free(pivot);
+}
+
+int tamanio_libre_real(int bloque){
+	char* path_bloque = devolver_path_dato(bloque);
+
+		struct stat st;
+		stat(path_bloque,&st);
+
+		int tamanio_actual = st.st_size;
+
+		free(path_bloque);
+		return (obtener_block_size() - tamanio_actual);
+
 }
 
 int tamanio_libre_del_bloque(int bloque){
@@ -200,6 +264,8 @@ void agregar_bloque(char* path_bloque){
 	free(lista_de_string);
 }
 
+
+
 //pisa el valor de BLOCKS por el de listBlocks
 void modificar_bloque(char* path_particion, char* lista_bloques){
 	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
@@ -241,6 +307,11 @@ int obtener_primer_bloque_libre(char* path_bloque){
 int el_bloque_esta_lleno(int bloque){
 	return tamanio_libre_del_bloque(bloque) == 0;
 }
+
+int el_bloque_esta_vacio(int bloque){
+	return tamanio_libre_real(bloque) == obtener_block_size();
+}
+
 int tamanio_libre_del_ultimo_bloque(char* path){
 	int ultimo_bloque = devolver_ultimo_bloque(path);
 	return tamanio_libre_del_bloque(ultimo_bloque);
@@ -322,9 +393,7 @@ void empezar_file_metadata(char* path_archivo_files_metadata,char* es_directorio
 
 void cargar_datos_del_file_metadata (char* path_pokemon){
 
-	char* path;
-
-	path = devolver_path_files_metadata(path_pokemon);
+	char* path = devolver_path_files_metadata(path_pokemon);
 	string_append(&path,"/Metadata.bin");
 
 	asignar_tamanio_y_bloque(path,0);

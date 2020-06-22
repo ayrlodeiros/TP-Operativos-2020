@@ -5188,3 +5188,310 @@
 [INFO] 13:57:14:742 gamecard/(6248:6248): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
 [INFO] 13:57:14:742 gamecard/(6248:6248): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
 [INFO] 13:57:14:742 gamecard/(6248:6248): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:40:49:453 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass
+[INFO] 09:40:49:459 gamecard/(6595:6595): El directorio YA existe.
+[INFO] 09:40:49:460 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:460 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:460 gamecard/(6595:6595): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:40:49:460 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:40:49:461 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:40:49:461 gamecard/(6595:6595): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:40:49:461 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:40:49:461 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:40:49:461 gamecard/(6595:6595): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 09:40:49:461 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:40:49:461 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:40:49:461 gamecard/(6595:6595): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 09:40:49:461 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:40:49:461 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:40:49:461 gamecard/(6595:6595): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 09:40:49:461 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:461 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:461 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:40:49:461 gamecard/(6595:6595): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:40:49:472 gamecard/(6595:6595): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:40:49:472 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:472 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:473 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:40:49:473 gamecard/(6595:6595): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:40:49:476 gamecard/(6595:6595): Directory : N
+[INFO] 09:40:49:477 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:477 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:477 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:40:49:477 gamecard/(6595:6595): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:40:49:477 gamecard/(6595:6595): Size : 250
+[INFO] 09:40:49:477 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:477 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:477 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:40:49:477 gamecard/(6595:6595): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:40:49:477 gamecard/(6595:6595): Open : Y
+[INFO] 09:40:49:477 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:477 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:40:49:477 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:40:49:478 gamecard/(6595:6595): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:40:49:478 gamecard/(6595:6595): Blocks Pos : 145068184
+[INFO] 09:40:49:478 gamecard/(6595:6595): Blocks Pos : 145533264
+[INFO] 09:40:49:478 gamecard/(6595:6595): Blocks Pos : 145533312
+[INFO] 09:40:49:478 gamecard/(6595:6595): Blocks Pos : 145533360
+[INFO] 09:40:49:478 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:40:49:478 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:40:49:478 gamecard/(6595:6595): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:40:49:478 gamecard/(6595:6595): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:46:09:24 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass
+[INFO] 09:46:09:25 gamecard/(6700:6700): El directorio YA existe.
+[INFO] 09:46:09:26 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:26 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:27 gamecard/(6700:6700): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:46:09:27 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:46:09:27 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:46:09:27 gamecard/(6700:6700): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:46:09:30 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:46:09:31 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:46:09:31 gamecard/(6700:6700): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 09:46:09:31 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:46:09:31 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:46:09:37 gamecard/(6700:6700): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 09:46:09:37 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:46:09:37 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:46:09:37 gamecard/(6700:6700): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 09:46:09:38 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:38 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:38 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:46:09:38 gamecard/(6700:6700): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:46:09:40 gamecard/(6700:6700): Valor de la pos : 40
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos (EN STRING): 40
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos : 21
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos (EN STRING): 21
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos : 82
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos (EN STRING): 82
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos : 3
+[INFO] 09:46:09:41 gamecard/(6700:6700): Valor de la pos (EN STRING): 3
+[INFO] 09:46:09:41 gamecard/(6700:6700): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:46:09:42 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:49 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:50 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:46:09:50 gamecard/(6700:6700): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:46:09:50 gamecard/(6700:6700): Directory : N
+[INFO] 09:46:09:50 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:51 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:51 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:46:09:51 gamecard/(6700:6700): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:46:09:51 gamecard/(6700:6700): Size : 250
+[INFO] 09:46:09:52 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:52 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:52 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:46:09:52 gamecard/(6700:6700): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:46:09:52 gamecard/(6700:6700): Open : Y
+[INFO] 09:46:09:52 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:52 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:46:09:52 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:46:09:53 gamecard/(6700:6700): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:46:09:53 gamecard/(6700:6700): Blocks Pos : 164277960
+[INFO] 09:46:09:53 gamecard/(6700:6700): Blocks Pos : 164743432
+[INFO] 09:46:09:53 gamecard/(6700:6700): Blocks Pos : 164743592
+[INFO] 09:46:09:53 gamecard/(6700:6700): Blocks Pos : 164743640
+[INFO] 09:46:09:53 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:46:09:54 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:46:09:54 gamecard/(6700:6700): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:46:09:54 gamecard/(6700:6700): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:47:30:49 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass
+[INFO] 09:47:30:49 gamecard/(6770:6770): El directorio YA existe.
+[INFO] 09:47:30:49 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:49 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:49 gamecard/(6770:6770): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:47:30:49 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:47:30:49 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:47:30:49 gamecard/(6770:6770): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:47:30:49 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:47:30:50 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:47:30:50 gamecard/(6770:6770): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 09:47:30:50 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:47:30:50 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:47:30:50 gamecard/(6770:6770): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 09:47:30:50 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:47:30:50 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:47:30:50 gamecard/(6770:6770): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 09:47:30:50 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:50 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:50 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:47:30:50 gamecard/(6770:6770): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:47:30:50 gamecard/(6770:6770): BLOCKS : [40,21,82,3]
+[INFO] 09:47:30:50 gamecard/(6770:6770): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:47:30:50 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:50 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:50 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:47:30:50 gamecard/(6770:6770): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:47:30:51 gamecard/(6770:6770): Directory : N
+[INFO] 09:47:30:51 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:51 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:51 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:47:30:51 gamecard/(6770:6770): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:47:30:52 gamecard/(6770:6770): Size : 250
+[INFO] 09:47:30:52 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:52 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:55 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:47:30:57 gamecard/(6770:6770): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:47:30:57 gamecard/(6770:6770): Open : Y
+[INFO] 09:47:30:57 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:57 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:47:30:57 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:47:30:57 gamecard/(6770:6770): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:47:30:58 gamecard/(6770:6770): Blocks Pos : 135045288
+[INFO] 09:47:30:60 gamecard/(6770:6770): Blocks Pos : 135510352
+[INFO] 09:47:30:60 gamecard/(6770:6770): Blocks Pos : 135510400
+[INFO] 09:47:30:61 gamecard/(6770:6770): Blocks Pos : 135510448
+[INFO] 09:47:30:61 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:47:30:61 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:47:30:61 gamecard/(6770:6770): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:47:30:61 gamecard/(6770:6770): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:50:21:438 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass
+[INFO] 09:50:21:445 gamecard/(6883:6883): El directorio YA existe.
+[INFO] 09:50:21:445 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:446 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:453 gamecard/(6883:6883): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:50:21:453 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:50:21:460 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:50:21:461 gamecard/(6883:6883): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:50:21:461 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:50:21:461 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:50:21:462 gamecard/(6883:6883): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 09:50:21:463 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:50:21:463 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:50:21:464 gamecard/(6883:6883): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 09:50:21:464 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:50:21:464 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:50:21:464 gamecard/(6883:6883): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 09:50:21:464 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:464 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:464 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:50:21:464 gamecard/(6883:6883): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:50:21:465 gamecard/(6883:6883): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:50:21:465 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:465 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:465 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:50:21:465 gamecard/(6883:6883): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:50:21:465 gamecard/(6883:6883): Directory : N
+[INFO] 09:50:21:465 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:466 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:466 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:50:21:466 gamecard/(6883:6883): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:50:21:466 gamecard/(6883:6883): Size : 250
+[INFO] 09:50:21:466 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:466 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:466 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:50:21:466 gamecard/(6883:6883): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:50:21:467 gamecard/(6883:6883): Open : Y
+[INFO] 09:50:21:467 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:467 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:50:21:473 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:50:21:473 gamecard/(6883:6883): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:50:21:473 gamecard/(6883:6883): VALOR EN LA POS : 40
+[INFO] 09:50:21:473 gamecard/(6883:6883): VALOR EN LA POS : 21
+[INFO] 09:50:21:473 gamecard/(6883:6883): VALOR EN LA POS : 82
+[INFO] 09:50:21:473 gamecard/(6883:6883): VALOR EN LA POS : 3
+[INFO] 09:50:21:473 gamecard/(6883:6883): Blocks Pos : 146450840
+[INFO] 09:50:21:473 gamecard/(6883:6883): Blocks Pos : 146450888
+[INFO] 09:50:21:474 gamecard/(6883:6883): Blocks Pos : 146450936
+[INFO] 09:50:21:474 gamecard/(6883:6883): Blocks Pos : 146451400
+[INFO] 09:50:21:474 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:50:21:474 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:50:21:474 gamecard/(6883:6883): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:50:21:476 gamecard/(6883:6883): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:34:897 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass
+[INFO] 09:53:34:897 gamecard/(6957:6957): El directorio YA existe.
+[INFO] 09:53:34:897 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:897 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:897 gamecard/(6957:6957): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:53:34:899 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:34:902 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:34:902 gamecard/(6957:6957): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:53:34:902 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:34:903 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:34:903 gamecard/(6957:6957): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 09:53:34:903 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:34:903 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:34:903 gamecard/(6957:6957): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 09:53:34:904 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:34:909 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:34:909 gamecard/(6957:6957): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 09:53:34:909 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:909 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:909 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:34:909 gamecard/(6957:6957): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:34:909 gamecard/(6957:6957): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:53:34:909 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:909 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:909 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:34:909 gamecard/(6957:6957): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:34:917 gamecard/(6957:6957): Directory : N
+[INFO] 09:53:34:920 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:920 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:920 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:34:920 gamecard/(6957:6957): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:34:922 gamecard/(6957:6957): Size : 250
+[INFO] 09:53:34:922 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:922 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:922 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:34:922 gamecard/(6957:6957): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:34:922 gamecard/(6957:6957): Open : Y
+[INFO] 09:53:34:922 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:923 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:34:925 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:34:925 gamecard/(6957:6957): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:34:925 gamecard/(6957:6957): Blocks Pos : 40
+[INFO] 09:53:34:925 gamecard/(6957:6957): Blocks Pos : 21
+[INFO] 09:53:34:925 gamecard/(6957:6957): Blocks Pos : 82
+[INFO] 09:53:34:925 gamecard/(6957:6957): Blocks Pos : 3
+[INFO] 09:53:34:925 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:34:925 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:34:925 gamecard/(6957:6957): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:34:925 gamecard/(6957:6957): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:36:881 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass
+[INFO] 09:53:36:881 gamecard/(6967:6967): El directorio YA existe.
+[INFO] 09:53:36:881 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:881 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:881 gamecard/(6967:6967): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:53:36:882 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:36:882 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:36:882 gamecard/(6967:6967): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:53:36:882 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:36:882 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:36:882 gamecard/(6967:6967): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/1.bin 
+[INFO] 09:53:36:882 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:36:882 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:36:882 gamecard/(6967:6967): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/2.bin 
+[INFO] 09:53:36:882 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:36:882 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Blocks
+[INFO] 09:53:36:882 gamecard/(6967:6967): path datos metadata: /home/utnso/Escritorio/tall-grass/Blocks/3.bin 
+[INFO] 09:53:36:882 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:882 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:882 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:36:882 gamecard/(6967:6967): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:36:882 gamecard/(6967:6967): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:36:883 gamecard/(6967:6967): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:36:883 gamecard/(6967:6967): Directory : N
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:36:883 gamecard/(6967:6967): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:36:883 gamecard/(6967:6967): Size : 250
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:36:883 gamecard/(6967:6967): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:36:883 gamecard/(6967:6967): Open : Y
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Files
+[INFO] 09:53:36:883 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Files/Pikachu
+[INFO] 09:53:36:883 gamecard/(6967:6967): path files metadata: /home/utnso/Escritorio/tall-grass/Files/Pikachu 
+[INFO] 09:53:36:883 gamecard/(6967:6967): Blocks Pos : 40
+[INFO] 09:53:36:883 gamecard/(6967:6967): Blocks Pos : 21
+[INFO] 09:53:36:883 gamecard/(6967:6967): Blocks Pos : 82
+[INFO] 09:53:36:884 gamecard/(6967:6967): Blocks Pos : 3
+[INFO] 09:53:36:884 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:36:884 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:36:884 gamecard/(6967:6967): PATH DIRECTORIO a buscar : /home/utnso/Escritorio/tall-grass/Metadata
+[INFO] 09:53:36:884 gamecard/(6967:6967): Existe el directorio : /home/utnso/Escritorio/tall-grass/Metadata
