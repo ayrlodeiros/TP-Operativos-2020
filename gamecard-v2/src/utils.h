@@ -45,7 +45,7 @@ void crear_dato(int numero);
 char* devolver_path_directorio(char* path);
 char* devolver_path_archivo_metadata();
 char* devolver_path_files_metadata(char* nombre_archivo);
-char* devolver_path_dato(char* numero);
+char* devolver_path_dato(int numero);
 char* devolver_path_bitmap();
 char* obtener_magic_number();
 int obtener_blocks();

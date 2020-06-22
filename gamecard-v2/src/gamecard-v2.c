@@ -11,7 +11,11 @@ int main(void)
 	list_add(blocks,3);
 	crear_archivo_files_metadata("/Pikachu","N",250,blocks,"Y");
 
-	escribir_bloque(devolver_path_files_metadata("/Pikachu/Metadata.bin"),"1");
+	t_list* lista = obtener_blocks_archivo_metadata_pokemon("/Pikachu");
+	for(int i = 0; i< list_size(lista);i++){
+		int bloque = atoi(list_get(lista,i));
+		escribir_bloque(devolver_path_files_metadata("/Pikachu/Metadata.bin"),bloque);
+	}
 
 /*
 	log_info(nuestro_log,"tiempo_de_reintento_conexion : %d", leer_tiempo_de_reintento_conexion());

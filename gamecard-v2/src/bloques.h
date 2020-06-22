@@ -10,7 +10,7 @@
 
 #include "utils.h"
 
-void escribir_bloque(char* path_dato,char* dato);
+void escribir_bloque(char* path_config,int dato);
 void escribir_bloque_asignado(int bloque);
 void limpiar_bloque(int bloque);
 int se_creo_el_bloque();

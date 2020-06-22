@@ -170,7 +170,7 @@ char* devolver_path_directorio(char* path){
 	return path_directorio;
 }
 
-char* devolver_path_dato(char* numero){
+char* devolver_path_dato(int numero){
 	char* path_archivo_dato = string_new();
 	char* numero_a_string = string_itoa(numero);
 	string_append(&path_archivo_dato, devolver_path_directorio("/Blocks"));
