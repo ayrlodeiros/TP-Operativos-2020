@@ -2,6 +2,9 @@
 
 void crear_bitmap(){
 
+	log_info(nuestro_log,"Entre al crear bitmap");
+	pthread_mutex_lock(&Mutex_Bitmap);
+	log_info(nuestro_log,"Pase el semaforo de crear bitmap");
 	int bloques = obtener_blocks();
 
 	char* path_bitmap = devolver_path_bitmap();
@@ -27,7 +30,9 @@ void crear_bitmap(){
 
 	msync(bitmap->bitarray,bitmap_file_descriptor,MS_SYNC);
 
+	log_info(nuestro_log,"TERMINE DE REAR BITMAP");
 
+	pthread_mutex_unlock(&Mutex_Bitmap);
 }
 
 // si no hay bloques libres devuelve -1

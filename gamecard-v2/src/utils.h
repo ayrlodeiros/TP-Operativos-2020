@@ -23,6 +23,7 @@
 #include <commons/log.h>
 #include <commons/string.h>
 #include <commons/bitarray.h>
+#include <semaphore.h>
 
 t_config* metadata_config;
 t_config* files_metadata_config;

@@ -172,10 +172,10 @@ char* devolver_path_directorio(char* path){
 
 char* devolver_path_dato(char* numero){
 	char* path_archivo_dato = string_new();
-
+	char* numero_a_string = string_itoa(numero);
 	string_append(&path_archivo_dato, devolver_path_directorio("/Blocks"));
 	string_append(&path_archivo_dato, "/");
-	string_append(&path_archivo_dato, numero);
+	string_append(&path_archivo_dato, numero_a_string);
 	string_append(&path_archivo_dato, ".bin");
 
 	log_info(nuestro_log,"path datos metadata: %s ", path_archivo_dato);
