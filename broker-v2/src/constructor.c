@@ -108,16 +108,14 @@ void liberar_appeared_mq(){
 /*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
 t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola){
 
+	int posicion;
 	t_mensaje* mensaje  = malloc(sizeof(t_mensaje));
-	/*Esta linea tiene que ir   */
-	mensaje->buffer = malloc(sizeof(t_buffer));
-
-
+	/*todo Modificar la funcion para que se adapte a la memoria*/
+	guardar_mensaje_en_memoria(void* msj,&posicion,tamanio);
 	mensaje->id = asignar_id_univoco();
 	mensaje->cola = cola;
-	mensaje->buffer->size = tamanio;
-	mensaje->buffer->stream = malloc(mensaje->buffer->size);
-	memcpy(mensaje->buffer->stream,buffer,mensaje->buffer->size);
+	mensaje->pos_en_memoria->tamanio = tamanio;
+	mensaje->pos_en_memoria->pos = posicion;
 
 	return mensaje;
 }
@@ -126,4 +124,35 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola){
 /*todo IDS MENSAJES */
 void iniciar_contador_ids_mensaje(){
 	contador_ids_mensaje = 1;
+}
+
+int asignar_id_univoco(){
+	int valor = contador_ids_mensaje;
+	contador_ids_mensaje++;
+	return valor;
+}
+
+void iniciar_memoria_principal(){
+	memoria_principal = malloc(leer_memoria_principal());
+	ultima_pos = 0;
+}
+
+void guardar_mensaje_en_memoria(int tamanio,void* buffer,int* posicion){
+
+	switch(leer_algoritmo_principal()){
+		case PARTICIONES:
+			break;
+		case BS:
+			break;
+		case NORMAL:
+			/*todo si hay error puede que sea q falta el * en posicion */
+				guardar_mensaje_normal(tamanio,buffer,posicion);
+			break;
+	}
+}
+
+void guardar_mensaje_normal(int tamanio,void* buffer,int*posicion){
+
+	*posicion = ultima_pos;
+	memcpy();
 }

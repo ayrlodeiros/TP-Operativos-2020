@@ -4,12 +4,32 @@
 #include<commons/config.h>
 #include<commons/collections/list.h>
 
+typedef enum{
+	PARTICIONES = 1,
+	BS = 2,
+	/*todo Al finalizar los otros dos eliminar */
+	NORMAL = 3
+}
+algoritmo_memoria;
+
+typedef enum{
+	FIFO = 1,
+	LRU = 2
+}
+algoritmo_reemplazo;
+
+typedef enum{
+	FF = 1,
+	BF = 2
+}
+algoritmo_particion_libre;
+
 t_config* config;
 int TAMANO_MEMORIA;
 int TAMANO_MINIMO_PARTICION;
-char* ALGORITMO_MEMORIA;
-char* ALGORITMO_REEMPLAZO;
-char* ALGORITMO_PARTICION_LIBRE;
+algoritmo_memoria ALGORITMO_MEMORIA;
+algoritmo_reemplazo ALGORITMO_REEMPLAZO;
+algoritmo_particion_libre ALGORITMO_PARTICION_LIBRE;
 char* IP_BROKER;
 int PUERTO_BROKER;
 int FRECUENCIA_COMPACTACION;
@@ -30,9 +50,9 @@ void setear_log_file(void);
 
 int leer_tamano_memoria(void);
 int leer_tamano_minimo_particion(void);
-char* leer_algoritmo_memoria(void);
-char* leer_algoritmo_reemplazo(void);
-char* leer_algoritmo_particion_libre(void);
+algoritmo_memoria leer_algoritmo_memoria(void);
+algoritmo_reemplazo leer_algoritmo_reemplazo(void);
+algoritmo_particion_libre leer_algoritmo_particion_libre(void);
 char* leer_ip_broker(void);
 int leer_puerto_broker(void);
 int leer_frecuencia_compactacion(void);

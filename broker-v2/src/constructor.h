@@ -13,6 +13,11 @@
 #include<commons/collections/queue.h>
 #include<commons/collections/list.h>
 
+/* Memoria principal */
+void* memoria_principal;
+
+int ultima_pos;
+
 /** VG Para manejar ids mensajes */
 int contador_ids_mensaje;
 
@@ -46,6 +51,12 @@ typedef struct
 }
 t_buffer;
 
+typedef struct{
+	uint32_t pos;
+	uint32_t tamanio;
+}
+t_pos_memoria;
+
 /** Es la estructura con la que se va a guardar los mensajes en la memoria interna del broker, contiene mas informacion */
 /** todo ESTRUCTURA MENSAJE */
 typedef struct{
@@ -56,8 +67,8 @@ typedef struct{
 	o una sola lista de una estrucutura que tenga el sucriptor y su estado */
 	t_list* suscriptores_env;
 	t_list* suscriptores_conf;
-	t_buffer* buffer;
-
+	t_pos_memoria pos_en_memoria;
+	//t_buffer* buffer;
 }
 t_mensaje;
 
@@ -105,6 +116,10 @@ t_mq* caught_mq;
 t_mq* new_mq;
 t_mq* appeared_mq;
 
+/** Semaforos **/
+pthread_mutex_t mutex_memoria_principal;
+pthread_mutex_t mutex_id;
+
 
 /** Metodos para crear las colas de mensajes */
 void inicializar_message_queues(void);
@@ -123,6 +138,13 @@ void liberar_caught_mq(void);
 void liberar_new_mq(void);
 void liberar_appeared_mq(void);
 
+/* iniciar memoria principal */
+void iniciar_memoria_principal();
+
+void guardar_mensaje_en_memoria(int tamanio, void*buffer, int* posicion);
+
+
+
 /* Metodos estructura de mensajes */
 
 t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola);
@@ -132,5 +154,9 @@ suscriptor_t* crear_suscriptor(int conexion_suscriptor,modulo_code codigo_suscri
 
 /* Metodos IDs Mensajes */
 void iniciar_contador_ids_mensaje();
+// Aumenta el valor de la variable global en 1 y devuelve eso
+int asignar_id_univoco();
+
+
 
 #endif CONSTRUCTOR_H_
