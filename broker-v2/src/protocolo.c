@@ -15,12 +15,14 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 
 void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 
+		/*todo adaptar a distintos tipos de mensajes */
 		int tamanio;
 		void* buffer;
 		recv(socket_cliente, tamanio, sizeof(int), MSG_WAITALL);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
 		log_info(mi_log, "Se recibio el mensaje\n");
+
 
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre);
 		agregar_msj_cola(queue,mensaje);
@@ -59,9 +61,9 @@ void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* cliente)
 
 	paquete->id = mensaje->id;
 	paquete->buffer = malloc(sizeof(t_buffer));
-	paquete->buffer->size = mensaje->buffer->size;
+	//paquete->buffer->size = mensaje->buffer->size;
 	paquete->buffer->stream = malloc(paquete->buffer->size);
-	memcpy(paquete->buffer->stream, mensaje->buffer->stream, paquete->buffer->size);
+	//memcpy(paquete->buffer->stream, mensaje->buffer->stream, paquete->buffer->size);
 
 	int bytes = paquete->buffer->size + 3*sizeof(int);
 
@@ -110,11 +112,6 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 	return magic;
 }
 
-int asignar_id_univoco(){
-	int valor = contador_ids_mensaje;
-	contador_ids_mensaje++;
-	return valor;
-}
 
 void enviar_id_msj_cliente(int socket_cliente,t_mq* cola,int id_msj){
 	if(send(socket_cliente,id_msj, sizeof(int), 0) > 0){

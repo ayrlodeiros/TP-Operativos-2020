@@ -26,13 +26,23 @@ void setear_tamano_minimo_particion(void){
 	TAMANO_MINIMO_PARTICION = config_get_int_value(config, "TAMANO_MINIMO_PARTICION");
 }
 void setear_algoritmo_memoria(void){
-	ALGORITMO_MEMORIA = config_get_string_value(config,"ALGORITMO_MEMORIA");
+	char* algoritmo = config_get_string_value(config,"ALGORITMO_MEMORIA");
+	if(string_equals_ignore_case(algoritmo,"NORMAL")) ALGORITMO_MEMORIA = 3;
+	else if(string_equals_ignore_case(algoritmo,"PARTICIONES")) ALGORITMO_MEMORIA = 1;
+		else
+		ALGORITMO_MEMORIA = 2;
 }
 void setear_algoritmo_reemplazo(void){
-	ALGORITMO_REEMPLAZO = config_get_string_value(config,"ALGORITMO_REEMPLAZO");
+	char* algoritmo = config_get_string_value(config,"ALGORITMO_REEMPLAZO");
+		if(string_equals_ignore_case(algoritmo,"FIFO")) ALGORITMO_REEMPLAZO = 1;
+		else
+			ALGORITMO_REEMPLAZO = 2;
 }
 void setear_algoritmo_particion_libre(void){
-	ALGORITMO_PARTICION_LIBRE = config_get_string_value(config,"ALGORITMO_PARTICION_LIBRE");
+	char* algoritmo = config_get_string_value(config,"ALGORITMO_PARTICION_LIBRE");
+			if(string_equals_ignore_case(algoritmo,"FF")) ALGORITMO_PARTICION_LIBRE = 1;
+			else
+				ALGORITMO_PARTICION_LIBRE = 2;
 }
 void setear_ip_broker(void){
 	IP_BROKER = config_get_string_value(config,"IP_BROKER");
@@ -53,13 +63,13 @@ int leer_tamano_memoria(void){
 int leer_tamano_minimo_particion(void){
 	return TAMANO_MINIMO_PARTICION;
 }
-char* leer_algoritmo_memoria(void){
+algoritmo_memoria leer_algoritmo_memoria(void){
 	return ALGORITMO_MEMORIA;
 }
-char* leer_algoritmo_reemplazo(void){
+algoritmo_reemplazo leer_algoritmo_reemplazo(void){
 	return ALGORITMO_REEMPLAZO;
 }
-char* leer_algoritmo_particion_libre(void){
+algoritmo_particion_libre leer_algoritmo_particion_libre(void){
 	return ALGORITMO_PARTICION_LIBRE;
 }
 char* leer_ip_broker(void){
