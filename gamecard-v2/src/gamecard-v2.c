@@ -5,9 +5,9 @@ int main(void)
 	iniciar_gamecard();
 
 	t_list* blocks = list_create();
-	list_add(blocks,40);
-	list_add(blocks,21);
-	list_add(blocks,82);
+	//list_add(blocks,40);
+	//list_add(blocks,21);
+	//list_add(blocks,82);
 	list_add(blocks,3);
 	crear_archivo_files_metadata("/Pikachu","N",250,blocks,"Y");
 
@@ -61,16 +61,10 @@ void iniciar_gamecard() {
 	flag_bloques_libres = 1; //hay bloques libres
 	ultimo_bloque_asignado = 0; //inicio como ultimo bloque asignado el primero
 
-	log_info(nuestro_log,"Prueba 0");
-
 	if(!se_creo_el_bloque()){
-		log_info(nuestro_log,"Prueba 1");
 		crear_bloque();
-		log_info(nuestro_log,"Prueba 2");
 	}
-	log_info(nuestro_log,"Prueba 3");
-	crear_bitmap(); //levanto el bitarray
-	log_info(nuestro_log,"Prueba 4");
+	crear_bitmap(); //levanto el bitarray;
 }
 
 void terminar_gamecard() {

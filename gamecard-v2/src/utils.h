@@ -64,5 +64,7 @@ char* obtener_directory_archivo_metadata_pokemon(char* nombre);
 char* devolver_path_directorio_files();
 int existe_el_directorio(char* path_directorio);
 int encontrar_cantidad_en_posicion(int posicion_x,int posicion_y,char* nombre_pokemon);
-
+int existe_el_pokemon(char* nombre_pokemon);
+int se_puede_abrir_el_archivo(char* nombre_pokemon);
+int la_posicion_ya_existe_dentro_del_archivo(int posicion_x,int posicion_y, char* nombre_pokemon);
 #endif /* UTILS_H_ */
