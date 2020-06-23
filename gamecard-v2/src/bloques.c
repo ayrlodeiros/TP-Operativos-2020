@@ -5,11 +5,12 @@ void escribir_bloque(char* path_config,char* dato){
 
 	char* path_bloque;
 	char* path_directorio_bloque = devolver_path_directorio("/Blocks");
-
+	log_info(nuestro_log,"ESCRIBIR 0.0.0");
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
-
+	log_info(nuestro_log,"ESCRIBIR 0.0");
 	//en el ultimo bloque -NO- hay espacio para guardar toda la info
 	if(! (tamanio_disponible_del_ultimo_bloque >= strlen(dato))){
+		log_info(nuestro_log,"ESCRIBIR 0.1");
 		int bloques_necesarios;
 
 		if( ((strlen(dato)-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
@@ -19,6 +20,7 @@ void escribir_bloque(char* path_config,char* dato){
 			//si no entra justo le doy un bloque demas
 			bloques_necesarios = (strlen(dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
 		}
+		log_info(nuestro_log,"ESCRIBIR 0.2");
 
 		//le asigno todos los bloques que necesita
 		for(int i = 0; i < bloques_necesarios; i++){
@@ -28,9 +30,13 @@ void escribir_bloque(char* path_config,char* dato){
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
+		log_info(nuestro_log,"ESCRIBIR 1.0");
 		path_bloque = devolver_path_dato(dato);
+		log_info(nuestro_log,"ESCRIBIR 1.1");
 		guardar_en_bloque(path_bloque,dato);
+		log_info(nuestro_log,"ESCRIBIR 1.2");
 		actualizar_tamanio_bloque(path_config);
+		log_info(nuestro_log,"ESCRIBIR 1.3");
 		free(path_bloque);
 		free(path_directorio_bloque);
 		return;
@@ -45,7 +51,7 @@ void escribir_bloque(char* path_config,char* dato){
 	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
 	guardar_en_bloque(path_bloque,a_escribir);
 	free(a_escribir);
-
+	log_info(nuestro_log,"ESCRIBIR 2");
 	ultima_posicion_insertada = tamanio_disponible_del_ultimo_bloque;
 
 	while(flag){
@@ -75,7 +81,7 @@ void escribir_bloque(char* path_config,char* dato){
 		}//else
 
 	}//while
-
+	log_info(nuestro_log,"ESCRIBIR 3");
 	actualizar_tamanio_bloque(path_bloque);
 
 free(path_directorio_bloque);
@@ -201,7 +207,8 @@ int tamanio_libre_real(int bloque){
 }
 
 int tamanio_libre_del_bloque(int bloque){
-	char* path = devolver_path_dato(bloque);
+	char* bloque_aux = string_itoa(bloque);
+	char* path = devolver_path_dato(bloque_aux);
 
 		struct stat st;
 		stat(path,&st);

@@ -231,11 +231,12 @@ char* devolver_posicion_concatenada (int posicion_x,int posicion_y){
 }
 
 void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int cantidad){
-	t_config* archivo_pokemon;
 	t_list* bloques = obtener_blocks_archivo_metadata_pokemon(nombre_pokemon);
 	char* informacion_a_guardar = string_new();
+	log_info(nuestro_log,"GUARDAR 0");
 
 	char* key_a_guardar = devolver_posicion_concatenada(posicion_x,posicion_y);
+	log_info(nuestro_log,"GUARDAR 1");
 
 	/*if(la_posicion_ya_existe_dentro_del_archivo(posicion_x,posicion_y,nombre_pokemon)){
 		int nueva_cantidad = encontrar_cantidad_en_posicion(posicion_x,posicion_y,nombre_pokemon) + cantidad;
@@ -249,19 +250,32 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 
 	//string_append(&informacion_a_guardar,pos_y_aux);
 
+	log_info(nuestro_log,"GUARDAR 2");
 	char* path_nombre_metadata = string_new();
 	string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon));
 	string_append(&path_nombre_metadata, "/Metadata.bin");
+	log_info(nuestro_log,"GUARDAR 3");
 
-	/*char* dato_a_escribir = string_new();
+	char* dato_a_escribir = string_new();
 	dato_a_escribir = key_a_guardar;
-	string_append(&dato_a_escribir,informacion_a_guardar);*/
+	string_append(&dato_a_escribir,informacion_a_guardar);
 
+	log_info(nuestro_log,"GUARDAR 4");
+	log_info(nuestro_log,"PATH A ESCRIBIR : %s",path_nombre_metadata);
+
+	int posicion;
 
 	for(int i = 0; i< list_size(bloques);i++){
-		escribir_bloque(path_nombre_metadata,list_get(bloques,i));
-		bitarray_set_bit(bitmap,list_get(bloques,i));
+		posicion = atoi(list_get(bloques,i));
+		log_info(nuestro_log,"GUARDAR 4.1");
+		t_config* archivo_pokemon = config_create(devolver_path_dato(list_get(bloques,i)));
+		log_info(nuestro_log,"GUARDAR 4.2");
+		escribir_bloque(path_nombre_metadata,dato_a_escribir);
+		log_info(nuestro_log,"GUARDAR 4.5");
+		bitarray_set_bit(bitmap,posicion);
+		config_destroy(archivo_pokemon);
 	}
+	log_info(nuestro_log,"GUARDAR 5");
 }
 
 int encontrar_cantidad_en_posicion(int posicion_x,int posicion_y,char* nombre_pokemon){

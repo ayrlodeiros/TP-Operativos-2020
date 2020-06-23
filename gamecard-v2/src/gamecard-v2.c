@@ -11,6 +11,7 @@ int main(void)
 	list_add(blocks,3);
 	crear_archivo_files_metadata("/Pikachu","N",250,blocks,"Y");
 
+
 	guardar_informacion("/Pikachu",1,5,10);
 
 	for(int j = 0;j<100;j++){
@@ -40,7 +41,7 @@ int main(void)
 	//log_info(nuestro_log,"Open : %s", obtener_open_archivo_metadata_pokemon("/Pikachu"));
 
 	log_info(nuestro_log,"Termine");
-	log_info(nuestro_log,config_get_string_value(config,"miele"));
+	//log_info(nuestro_log,config_get_string_value(config,"miele"));
 	return EXIT_SUCCESS;
 }
 
