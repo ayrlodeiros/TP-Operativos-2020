@@ -8,27 +8,21 @@ C_SRCS += \
 ../src/conexion.c \
 ../src/config-reader.c \
 ../src/constructor.c \
-../src/protocolo.c \
-../src/suscriptores.c \
-../src/utils.c 
+../src/protocolo.c 
 
 OBJS += \
 ./src/broker-v2.o \
 ./src/conexion.o \
 ./src/config-reader.o \
 ./src/constructor.o \
-./src/protocolo.o \
-./src/suscriptores.o \
-./src/utils.o 
+./src/protocolo.o 
 
 C_DEPS += \
 ./src/broker-v2.d \
 ./src/conexion.d \
 ./src/config-reader.d \
 ./src/constructor.d \
-./src/protocolo.d \
-./src/suscriptores.d \
-./src/utils.d 
+./src/protocolo.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

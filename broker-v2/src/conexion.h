@@ -8,16 +8,7 @@
 #ifndef CONEXION_H_
 #define CONEXION_H_
 
-#include<sys/socket.h>
-#include<netdb.h>
-#include<signal.h>
-#include<unistd.h>
-#include<commons/log.h>
-#include<commons/string.h>
-#include<stdio.h>
-#include<stdlib.h>
-#include<pthread.h>
-#include<commons/string.h>
+
 #include"protocolo.h"
 
 

@@ -24,19 +24,27 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		log_info(mi_log, "Se recibio el mensaje\n");
 
 
+		//Crea el mensaje y ya lo guarda en memoria
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre);
+
 		agregar_msj_cola(queue,mensaje);
 		enviar_id_msj_cliente(socket_cliente,queue,mensaje->id);
+
+		pthread_mutex_unlock(&queue->lock);
 }
 
 void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
-	int tamanio_previo = queue_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
+	pthread_mutex_lock(&mutex_agregar_msj_a_cola);
 
+	int tamanio_previo = queue_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
 	queue_push(queue->cola,mensaje);
 	if(queue_size(queue->cola) > tamanio_previo)
 		log_info(mi_log,string_from_format("Se agrego correctamente el mensaje a la cola %d",queue->nombre));
+
+	pthread_mutex_unlock(&mutex_agregar_msj_a_cola);
 }
 
+/*
 void enviar_mensaje_suscriptores(t_mq* cola){
 	pthread_t* ack;
 	t_mensaje* mensaje = queue_pop(cola->cola);
@@ -53,7 +61,7 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 		pthread_detach(ack);
 	}
 	log_info(mi_log,"Se envio el mensaje a todos los suscriptores \n");
-}
+}*/
 
 void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* cliente)
 {
@@ -128,4 +136,45 @@ void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor_t* suscriptor){
 
 void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 	list_add(mensaje->suscriptores_env,suscriptor);
+}
+
+void switch_cola(int cod_op, int socket_cliente, modulo_code modulo){
+	int cola;
+	recv(socket_cliente,&cola,sizeof(int),MSG_WAITALL);
+	switch (cola){
+			/*case GET:
+				switch_operacion(cod_op,get_mq,socket_cliente,modulo);
+				break;*/
+			case LOCALIZED:
+				switch_operacion(cod_op,localized_mq,socket_cliente,modulo);
+				break;
+			case CATCH:
+				switch_operacion(cod_op,catch_mq,socket_cliente,modulo);
+				break;
+			case CAUGHT:
+				switch_operacion(cod_op,caught_mq,socket_cliente,modulo);
+				break;
+			case NEW:
+				switch_operacion(cod_op,new_mq,socket_cliente,modulo);
+				break;
+			case APPEARED:
+				switch_operacion(cod_op,appeared_mq,socket_cliente,modulo);
+				break;
+			default:
+				log_info(mi_log,"HUbo un error al tratar de recibir el mensaje\n");
+				pthread_exit(NULL);
+	}
+}
+
+void switch_operacion (op_code operacion, t_mq* cola,int conexion, modulo_code modulo){
+	suscriptor_t* suscriptor;
+	switch(operacion){
+	case MENSAJE:
+		recibir_y_guardar_mensaje(conexion, cola);
+		break;
+	case SUSCRIPCION:
+		suscriptor = crear_suscriptor(conexion,modulo);
+		agregar_suscriptor_cola(cola, suscriptor);
+		break;
+	}
 }

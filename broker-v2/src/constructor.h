@@ -7,11 +7,14 @@
 #include<unistd.h>
 #include<sys/socket.h>
 #include<netdb.h>
+#include<pthread.h>
 #include<string.h>
 #include<commons/log.h>
 #include<commons/config.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/list.h>
+#include<commons/string.h>
+#include "config-reader.h"
 
 /* Memoria principal */
 void* memoria_principal;
@@ -38,7 +41,7 @@ typedef struct{
 	mq_nombre nombre;
 	t_queue* cola;
 	t_list* suscriptores; /** Lo cambie a una estructura suscriptor definida en protocolo.h*/
-
+	pthread_mutex_t lock;
 }t_mq;
 
 /***********************************/
@@ -67,8 +70,7 @@ typedef struct{
 	o una sola lista de una estrucutura que tenga el sucriptor y su estado */
 	t_list* suscriptores_env;
 	t_list* suscriptores_conf;
-	t_pos_memoria pos_en_memoria;
-	//t_buffer* buffer;
+	t_pos_memoria* pos_en_memoria;
 }
 t_mensaje;
 
@@ -120,9 +122,16 @@ t_mq* appeared_mq;
 pthread_mutex_t mutex_memoria_principal;
 pthread_mutex_t mutex_id;
 
+//Por ahora queda uno generico, dsp seguramente hay que hacer 6 (GET,NEW,APPEARED,LOCALIZED,CAUGHT,CATCH)
+pthread_mutex_t mutex_agregar_msj_a_cola;
+
+
+void iniciar_funcionalidades();
 
 /** Metodos para crear las colas de mensajes */
+void inicializar_semaforos();
 void inicializar_message_queues(void);
+void esperar_mensaje_en_cola(t_mq* t_mq);
 void liberar_message_queues(void);
 void crear_get_mq(void);
 void crear_localized_mq(void);
@@ -131,6 +140,7 @@ void crear_caught_mq(void);
 void crear_new_mq(void);
 void crear_appeared_mq(void);
 
+void liberar_mq(t_mq* mq);
 void liberar_get_mq(void);
 void liberar_localized_mq(void);
 void liberar_catch_mq(void);
@@ -138,11 +148,18 @@ void liberar_caught_mq(void);
 void liberar_new_mq(void);
 void liberar_appeared_mq(void);
 
-/* iniciar memoria principal */
+/* memoria principal */
 void iniciar_memoria_principal();
 
 void guardar_mensaje_en_memoria(int tamanio, void*buffer, int* posicion);
 
+void almacenar_en_memoria(int tamanio, void* buffer, int posicion);
+
+void obtener_posicion_particiones(int tamanio, int* posicion);
+
+void obtener_posicion_bs(int tamanio, int* posicion);
+
+void obtener_posicion_normal(int tamanio, int* posicion);
 
 
 /* Metodos estructura de mensajes */
@@ -156,6 +173,10 @@ suscriptor_t* crear_suscriptor(int conexion_suscriptor,modulo_code codigo_suscri
 void iniciar_contador_ids_mensaje();
 // Aumenta el valor de la variable global en 1 y devuelve eso
 int asignar_id_univoco();
+
+
+/* Crea al suscriptor */
+suscriptor_t* crear_suscriptor(int conexion_suscriptor, modulo_code codigo_suscriptor);
 
 
 

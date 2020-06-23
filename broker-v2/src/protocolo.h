@@ -30,4 +30,9 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 
 
+/*Switchs*/
+void switch_mensaje(int codigo_cola,int conexion);
+void switch_suscripcion(int codigo_cola,int conexion,modulo_code id_modulo);
+
+
 #endif PROTOCOLO_H_

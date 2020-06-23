@@ -6,6 +6,10 @@ struct mesg_buffer {
     char mesg_text[100];
 } message;
 
+void while_infinito() {
+	while(1){}
+}
+
 int main(void)
 {
 	//pthread_t* conexion_team;
@@ -16,6 +20,8 @@ int main(void)
 
 	terminar_broker();
 
+	//pthread_t* hilo_infinito;
+
 	return EXIT_SUCCESS;
 
 }
@@ -23,10 +29,9 @@ int main(void)
 void iniciar_broker(){
 
 	printf("-----------------Iniciando archivo config-----------------\n");
-	iniciar_config();
-	inicializar_message_queues();
 	//logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
 	mi_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt","broker",true,LOG_LEVEL_INFO);
+	iniciar_funcionalidades();
 
 }
 

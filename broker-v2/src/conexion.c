@@ -46,21 +46,25 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 
 	    if (bind(socket_servidor, p->ai_addr, p->ai_addrlen) == -1) {
 	        close(socket_servidor);
+	        socket_servidor = -1;
 	        continue;
 	    }
 	    break;
 	}
 
-	log_info(logger, string_from_format("Servidor levantado en IP: %s y PUERTO: %s", ip, puerto));
+	if(socket_servidor == -1) {
+		log_error(mi_log, "La IP o el PUERTO estan ocupados");
+	} else {
+		log_info(logger, string_from_format("Servidor levantado en IP: %s y PUERTO: %s", ip, puerto));
 
-	listen(socket_servidor, SOMAXCONN);
+		listen(socket_servidor, SOMAXCONN);
+		freeaddrinfo(servinfo);
 
-	freeaddrinfo(servinfo);
+		log_info(mi_log, "Esperando conexiones");
 
-	printf("Esperando conexiones\n");
-
-	while(1){
-	esperar_cliente(socket_servidor,logger);
+		while(1){
+			esperar_cliente(socket_servidor,logger);
+		}
 	}
 }
 
@@ -76,16 +80,18 @@ void esperar_cliente(int socket_servidor,t_log* logger)
 
 	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
 
-	log_info(mi_log,string_from_format("Estableci una conexion con un modulo de socket: %d\n",socket_cliente));
-	//log_info(logger,"Estableci una conexion con un modulo\n");
+	if(socket_cliente == -1) {
+		log_error(mi_log, "Hubo un error en la conexion con el cliente");
+	} else {
+		log_info(mi_log,string_from_format("Estableci una conexion con un modulo de socket: %d\n",socket_cliente));
+		//log_info(logger,"Estableci una conexion con un modulo\n");
 
-	err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
-	if( err != 0){
-		log_info(logger,string_from_format("Hubo un error al intentar crear el thread: %s",strerror(err)));
+		err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
+		if( err != 0){
+			log_info(logger,string_from_format("Hubo un error al intentar crear el thread: %s",strerror(err)));
+		}
+		pthread_detach(espera);
 	}
-	pthread_detach(espera);
-
-
 }
 
 void servir_cliente(int* socket)
