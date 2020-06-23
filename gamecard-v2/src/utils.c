@@ -223,7 +223,7 @@ char* devolver_posicion_concatenada (int posicion_x,int posicion_y){
 
 	char* pos_x_aux = string_itoa(posicion_x);
 	char* pos_y_aux = string_itoa(posicion_y);
-	tring_append(&key_a_guardar,pos_x_aux);
+	string_append(&key_a_guardar,pos_x_aux);
 	string_append(&key_a_guardar,"-");
 	string_append(&key_a_guardar,pos_y_aux);
 
@@ -231,28 +231,52 @@ char* devolver_posicion_concatenada (int posicion_x,int posicion_y){
 }
 
 void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int cantidad){
-	t_config* archivo_pokemon = config_create()
-	t_list* lista = obtener_blocks_archivo_metadata_pokemon(nombre_pokemon);
+	t_config* archivo_pokemon;
+	t_list* bloques = obtener_blocks_archivo_metadata_pokemon(nombre_pokemon);
 	char* informacion_a_guardar = string_new();
 
 	char* key_a_guardar = devolver_posicion_concatenada(posicion_x,posicion_y);
 
-	if(la_posicion_ya_existe_dentro_del_archivo(posicion_x,posicion_y,nombre_pokemon)){
-		config_get_int_value()
-	}
-
+	/*if(la_posicion_ya_existe_dentro_del_archivo(posicion_x,posicion_y,nombre_pokemon)){
+		int nueva_cantidad = encontrar_cantidad_en_posicion(posicion_x,posicion_y,nombre_pokemon) + cantidad;
+		for(int i = 0; i< list_size(bloques);i++){
+			archivo_pokemon = config_create(devolver_path_dato(list_get(bloques,i)));
+			config_set_value(archivo_pokemon,key_a_guardar,string_itoa(nueva_cantidad));
+			config_save(archivo_pokemon);
+			config_destroy(archivo_pokemon);
+		}
+	}*/
 
 	//string_append(&informacion_a_guardar,pos_y_aux);
 
 	char* path_nombre_metadata = string_new();
 	string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon));
 	string_append(&path_nombre_metadata, "/Metadata.bin");
-	for(int i = 0; i< list_size(lista);i++){
-		escribir_bloque(path_nombre_metadata,list_get(lista,i));
-		bitarray_set_bit(bitmap,list_get(lista,i));
+
+	/*char* dato_a_escribir = string_new();
+	dato_a_escribir = key_a_guardar;
+	string_append(&dato_a_escribir,informacion_a_guardar);*/
+
+
+	for(int i = 0; i< list_size(bloques);i++){
+		escribir_bloque(path_nombre_metadata,list_get(bloques,i));
+		bitarray_set_bit(bitmap,list_get(bloques,i));
 	}
 }
 
+int encontrar_cantidad_en_posicion(int posicion_x,int posicion_y,char* nombre_pokemon){
+	t_config* archivo_pokemon;
+	char* key_a_buscar = devolver_posicion_concatenada(posicion_x,posicion_y);
+	t_list* bloques = obtener_blocks_archivo_metadata_pokemon(nombre_pokemon);
+
+	for(int i = 0; i< list_size(bloques);i++){
+		archivo_pokemon = config_create(devolver_path_dato(list_get(bloques,i)));
+		if(config_has_property(archivo_pokemon,key_a_buscar)){
+			return config_get_int_value(archivo_pokemon,key_a_buscar);
+		}
+		config_destroy(archivo_pokemon);
+	}
+}
 
 int existe_el_pokemon(char* nombre_pokemon){
 	char* path_archivo_files = string_new();
@@ -269,17 +293,18 @@ int se_puede_abrir_el_archivo(char* nombre_pokemon){
 }
 
 int la_posicion_ya_existe_dentro_del_archivo(int posicion_x,int posicion_y, char* nombre_pokemon){
-	t_config* archivo_pokemon = config_create();
+	t_config* archivo_pokemon;
 	char* key_a_buscar = devolver_posicion_concatenada(posicion_x,posicion_y);
-	int tiene_posicion = 0;
 	t_list* bloques = obtener_blocks_archivo_metadata_pokemon(nombre_pokemon);
+
 	for(int i = 0; i< list_size(bloques);i++){
-		archivo_pokemon = devolver_path_dato(list_get(bloques,i));
+		archivo_pokemon = config_create(devolver_path_dato(list_get(bloques,i)));
 		if(config_has_property(archivo_pokemon,key_a_buscar)){
-			tiene_posicion = 1;
+			return 1;
 		}
+		config_destroy(archivo_pokemon);
 	}
-	return tiene_posicion;
+	return 0;
 }
 
 

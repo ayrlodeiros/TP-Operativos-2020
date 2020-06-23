@@ -29,7 +29,7 @@ void crear_bitmap(){
 */
 	msync(bitmap->bitarray,bitmap_file_descriptor,MS_SYNC);
 
-	log_info(nuestro_log,"TERMINE DE REAR BITMAP");
+	log_info(nuestro_log,"TERMINE DE CREAR BITMAP");
 
 	pthread_mutex_unlock(&Mutex_Bitmap);
 }
