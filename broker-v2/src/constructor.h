@@ -173,7 +173,7 @@ void enviar_mensaje_suscriptores(t_mq* cola);
 suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo);
 
 /* Verifico para una lista de suscriptores si el msj ya fue enviado */
-bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf)
+bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf);
 
 /* Metodos IDs Mensajes */
 void iniciar_contador_ids_mensaje();

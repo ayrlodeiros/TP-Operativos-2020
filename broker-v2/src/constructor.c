@@ -79,16 +79,19 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 		suscriptor = list_get(cola->suscriptores,i);
 
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
-			pthread_create(&ack,NULL,(void*)enviar_mensaje,&mensaje,&suscriptor) != 0;
+			/*
+			 pthread_create(&ack,NULL,(void*)enviar_mensaje,&mensaje,&suscriptor) != 0;
 			pthread_detach(ack);
+			*/
 		}
 	}
 }
 
 bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
-
+	int suscriptor_conf;
 	for(int i=0;i<list_size(suscriptores_conf);i++){
-		if(id_suscriptor == list_get(suscriptores_conf,i)) return true;
+		suscriptor_conf = (int) list_get(suscriptores_conf,i);
+		if(id_suscriptor == suscriptor_conf) return true;
 	}
 	return false;
 }
