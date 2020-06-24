@@ -70,15 +70,15 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 
 void esperar_cliente(int socket_servidor,t_log* logger)
 {
-
-	pthread_t* espera;
+	/* Le saque el puntero para que deje de tirar warnings  */
+	pthread_t espera;
 	int err;
 
 	struct sockaddr_in dir_cliente;
 
 	int tam_direccion = sizeof(struct sockaddr_in);
 
-	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
+	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente,&tam_direccion);
 
 	if(socket_cliente == -1) {
 		log_error(mi_log, "Hubo un error en la conexion con el cliente");
@@ -103,9 +103,9 @@ void servir_cliente(int* socket)
 	process_request(cod_modulo, *socket);
 }
 
-void process_request(int cod_modulo, int socket_cliente) {
+void process_request(int id_modulo, int socket_cliente) {
 	int cod_op;
 	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
 	log_info(mi_log, string_from_format("El codigo de operacion es %d", cod_op));
-	switch_cola(cod_op,socket_cliente,cod_modulo);
+	switch_cola(cod_op,socket_cliente,id_modulo);
 }

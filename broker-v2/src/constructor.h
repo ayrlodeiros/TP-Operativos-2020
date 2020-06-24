@@ -92,8 +92,8 @@ modulo_code;
 
 /**  Estructura de suscriptor*/
 typedef struct{
+	int identificador;
 	int conexion;
-	modulo_code modulo;
 }
 suscriptor_t;
 
@@ -167,7 +167,7 @@ void obtener_posicion_normal(int tamanio, int* posicion);
 t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola);
 
 /* Metodos estructura suscriptores */
-suscriptor_t* crear_suscriptor(int conexion_suscriptor,modulo_code codigo_suscriptor);
+suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo);
 
 /* Metodos IDs Mensajes */
 void iniciar_contador_ids_mensaje();
@@ -175,9 +175,5 @@ void iniciar_contador_ids_mensaje();
 int asignar_id_univoco();
 
 
-/* Crea al suscriptor */
-suscriptor_t* crear_suscriptor(int conexion_suscriptor, modulo_code codigo_suscriptor);
 
-
-
-#endif CONSTRUCTOR_H_
+#endif //CONSTRUCTOR_H_

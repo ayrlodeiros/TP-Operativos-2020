@@ -18,7 +18,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		/*todo adaptar a distintos tipos de mensajes */
 		int tamanio;
 		void* buffer;
-		recv(socket_cliente, tamanio, sizeof(int), MSG_WAITALL);
+		recv(socket_cliente,(int) tamanio, sizeof(int), MSG_WAITALL);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
 		log_info(mi_log, "Se recibio el mensaje\n");
@@ -138,27 +138,27 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 	list_add(mensaje->suscriptores_env,suscriptor);
 }
 
-void switch_cola(int cod_op, int socket_cliente, modulo_code modulo){
+void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 	int cola;
 	recv(socket_cliente,&cola,sizeof(int),MSG_WAITALL);
 	switch (cola){
-			/*case GET:
-				switch_operacion(cod_op,get_mq,socket_cliente,modulo);
-				break;*/
+			case GET:
+				switch_operacion(cod_op,get_mq,socket_cliente,id_modulo);
+				break;
 			case LOCALIZED:
-				switch_operacion(cod_op,localized_mq,socket_cliente,modulo);
+				switch_operacion(cod_op,localized_mq,socket_cliente,id_modulo);
 				break;
 			case CATCH:
-				switch_operacion(cod_op,catch_mq,socket_cliente,modulo);
+				switch_operacion(cod_op,catch_mq,socket_cliente,id_modulo);
 				break;
 			case CAUGHT:
-				switch_operacion(cod_op,caught_mq,socket_cliente,modulo);
+				switch_operacion(cod_op,caught_mq,socket_cliente,id_modulo);
 				break;
 			case NEW:
-				switch_operacion(cod_op,new_mq,socket_cliente,modulo);
+				switch_operacion(cod_op,new_mq,socket_cliente,id_modulo);
 				break;
 			case APPEARED:
-				switch_operacion(cod_op,appeared_mq,socket_cliente,modulo);
+				switch_operacion(cod_op,appeared_mq,socket_cliente,id_modulo);
 				break;
 			default:
 				log_info(mi_log,"HUbo un error al tratar de recibir el mensaje\n");

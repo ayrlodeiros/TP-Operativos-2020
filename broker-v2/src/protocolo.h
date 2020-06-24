@@ -31,8 +31,8 @@ void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 
 
 /*Switchs*/
-void switch_mensaje(int codigo_cola,int conexion);
-void switch_suscripcion(int codigo_cola,int conexion,modulo_code id_modulo);
+void switch_cola(int cod_op, int socket_cliente, int id_modulo);
+void switch_operacion (op_code operacion, t_mq* cola,int conexion, modulo_code modulo);
 
 
-#endif PROTOCOLO_H_
+#endif // PROTOCOLO_H_

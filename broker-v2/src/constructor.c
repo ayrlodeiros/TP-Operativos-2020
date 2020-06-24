@@ -255,9 +255,9 @@ void obtener_posicion_normal(int tamanio, int* posicion) {
 	*posicion = ultima_pos;
 }
 
-suscriptor_t* crear_suscriptor(int conexion_suscriptor, modulo_code codigo_suscriptor){
+suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo){
 	suscriptor_t* suscriptor = malloc(sizeof(suscriptor));
+	suscriptor->identificador = id_modulo;
 	suscriptor->conexion = conexion_suscriptor;
-	suscriptor->modulo = codigo_suscriptor;
 	return suscriptor;
 }

@@ -40,5 +40,6 @@ void esperar_cliente(int socket_servidor, t_log* logger);
 
 void servir_cliente(int* socket);
 
+void process_request(int id_modulo, int socket_cliente);
 
 #endif /* CONEXION_H_ */
