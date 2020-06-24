@@ -162,18 +162,23 @@ void obtener_posicion_bs(int tamanio, int* posicion);
 void obtener_posicion_normal(int tamanio, int* posicion);
 
 
+
 /* Metodos estructura de mensajes */
 
 t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola);
 
+void enviar_mensaje_suscriptores(t_mq* cola);
+
 /* Metodos estructura suscriptores */
 suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo);
+
+/* Verifico para una lista de suscriptores si el msj ya fue enviado */
+bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf)
 
 /* Metodos IDs Mensajes */
 void iniciar_contador_ids_mensaje();
 // Aumenta el valor de la variable global en 1 y devuelve eso
 int asignar_id_univoco();
-
 
 
 #endif //CONSTRUCTOR_H_

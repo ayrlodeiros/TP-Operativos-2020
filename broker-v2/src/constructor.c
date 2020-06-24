@@ -54,28 +54,43 @@ void inicializar_message_queues(){
 void esperar_mensaje_en_cola(t_mq* mq) {
 
 	while(1) {
-		if(queue_size(mq->cola) == 0) {
+		if(queue_is_empty(mq)) {
 			log_info(mi_log, "Se bloquea la cola %d", mq->nombre);
 			pthread_mutex_lock(&mq->lock);
 		}
 
 		log_info(mi_log, "Se desbloqueo la cola %d por la aparicion de un mensaje", mq->nombre);
 
+		enviar_mensaje_suscriptores(mq);
 		//TODO implementar codigo cuando tenes mensaje para enviar de la cola
 	}
 
 }
 
-void liberar_message_queues(){
+void enviar_mensaje_suscriptores(t_mq* cola){
+	pthread_t* ack;
 
-	liberar_mq(get_mq);
-	liberar_mq(localized_mq);
-	liberar_mq(catch_mq);
-	liberar_mq(caught_mq);
-	liberar_mq(new_mq);
-	liberar_mq(appeared_mq);
+	/*todo Por lo que estuve viendo en el foro, no es necesario que haya que sacar el msj de la cola, ya que puede que pasar que no lo hayan recibido todos los suscriptores */
+	t_mensaje* mensaje = queue_pop(cola->cola);
+	suscriptor_t* suscriptor;
+	int i;
 
-	printf("Se libero la memoria de los mq correctamente\n");
+	for(i=0;i<list_size(cola->suscriptores);i++){
+		suscriptor = list_get(cola->suscriptores,i);
+
+		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
+			pthread_create(&ack,NULL,(void*)enviar_mensaje,&mensaje,&suscriptor) != 0;
+			pthread_detach(ack);
+		}
+	}
+}
+
+bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
+
+	for(int i=0;i<list_size(suscriptores_conf);i++){
+		if(id_suscriptor == list_get(suscriptores_conf,i)) return true;
+	}
+	return false;
 }
 
 void crear_get_mq(){
@@ -128,6 +143,18 @@ void crear_appeared_mq(){
 	appeared_mq->suscriptores = list_create();
 	pthread_mutex_init(&appeared_mq->lock, NULL);
 	pthread_mutex_lock(&appeared_mq->lock);
+}
+
+void liberar_message_queues(){
+
+	liberar_mq(get_mq);
+	liberar_mq(localized_mq);
+	liberar_mq(catch_mq);
+	liberar_mq(caught_mq);
+	liberar_mq(new_mq);
+	liberar_mq(appeared_mq);
+
+	printf("Se libero la memoria de los mq correctamente\n");
 }
 
 void liberar_mq(t_mq* mq){
@@ -230,6 +257,7 @@ void guardar_mensaje_en_memoria(int tamanio, void* buffer, int* posicion){
 void almacenar_en_memoria(int tamanio, void* buffer, int posicion) {
 	pthread_mutex_lock(&mutex_memoria_principal);
 	memcpy(memoria_principal+posicion, buffer, tamanio);
+	ultima_pos += tamanio;
 	pthread_mutex_unlock(&mutex_memoria_principal);
 }
 
