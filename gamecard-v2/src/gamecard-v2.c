@@ -13,10 +13,20 @@ int main(void)
 
 
 	guardar_informacion("/Pikachu",1,5,10);
+	guardar_informacion("/Pikachu",5,3,17);
+	guardar_informacion("/Pikachu",6,5,10);
+	guardar_informacion("/Pikachu",1,2,17);
+	guardar_informacion("/Pikachu",12,3,10);
+	guardar_informacion("/Pikachu",1,5,17);
+	guardar_informacion("/Pikachu",4,7,10);
+	guardar_informacion("/Pikachu",9,12,18);
 
-	for(int j = 0;j<100;j++){
+	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
 	}
+
+	//t_config* archivo_pokemon = config_create(devolver_path_dato(list_get(blocks,0)));
+	//log_info(nuestro_log,"1-5 :&d",config_get_int_value(archivo_pokemon,"1-5"));
 
 /*
 	log_info(nuestro_log,"tiempo_de_reintento_conexion : %d", leer_tiempo_de_reintento_conexion());
@@ -30,11 +40,6 @@ int main(void)
 	log_info(nuestro_log,"BLOCKS : %d", obtener_blocks());
 	log_info(nuestro_log,"MAGIC_NUMBER : %s", obtener_magic_number());
 */
-
-
-
-
-
 
 	//log_info(nuestro_log,"Directory : %s", obtener_directory_archivo_metadata_pokemon("/Pikachu"));
 	//log_info(nuestro_log,"Size : %d", obtener_size_archivo_metadata_pokemon("/Pikachu"));
