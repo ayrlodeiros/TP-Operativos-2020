@@ -9,17 +9,17 @@ int main(void)
 	//list_add(blocks,21);
 	//list_add(blocks,82);
 	list_add(blocks,3);
-	crear_archivo_files_metadata("/Pikachu","N",250,blocks,"Y");
+	crear_archivo_files_metadata("Pikachu","N",250,blocks,"N");
 
 
-	guardar_informacion("/Pikachu",1,5,10);
-	guardar_informacion("/Pikachu",5,3,17);
-	guardar_informacion("/Pikachu",6,5,10);
-	guardar_informacion("/Pikachu",1,2,17);
-	guardar_informacion("/Pikachu",12,3,10);
-	guardar_informacion("/Pikachu",1,5,17);
-	guardar_informacion("/Pikachu",4,7,10);
-	guardar_informacion("/Pikachu",9,12,18);
+	guardar_informacion("Pikachu",1,5,10);
+	guardar_informacion("Pikachu",5,3,17);
+	guardar_informacion("Pikachu",6,5,10);
+	guardar_informacion("Pikachu",1,2,17);
+	guardar_informacion("Pikachu",12,3,10);
+	guardar_informacion("Pikachu",1,5,17);
+	guardar_informacion("Pikachu",4,7,1);
+	guardar_informacion("Pikachu",9,12,18);
 
 	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));

@@ -1,0 +1,1007 @@
+[INFO] 08:50:21:525 gamecard/(4460:4460): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 08:50:21:531 gamecard/(4460:4460): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 08:50:22:940 gamecard/(4460:4460): CREE EL BLOQUE
+[INFO] 08:50:22:995 gamecard/(4460:4460): TERMINE DE CREAR BITMAP
+[INFO] 08:50:22:997 gamecard/(4460:4460): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 08:50:22:997 gamecard/(4460:4460): DATO A ESCRIBIR : 1-5
+[INFO] 08:50:22:997 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:22:997 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:22:998 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:22:998 gamecard/(4460:4460): KEY A BUSCAR :1-5
+[INFO] 08:50:22:998 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:22:998 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:22:998 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:22:998 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:22:998 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:22:998 gamecard/(4460:4460): DATO A ESCRIBIR : 5-3
+[INFO] 08:50:22:999 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:22:999 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:22:999 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:22:999 gamecard/(4460:4460): KEY A BUSCAR :5-3
+[INFO] 08:50:22:999 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:22:999 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:22:999 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:22:999 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:22:999 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:22:0 gamecard/(4460:4460): DATO A ESCRIBIR : 6-5
+[INFO] 08:50:22:1 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:22:1 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:22:1 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:22:1 gamecard/(4460:4460): KEY A BUSCAR :6-5
+[INFO] 08:50:22:1 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:22:1 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:22:2 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:22:2 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:22:2 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:22:2 gamecard/(4460:4460): DATO A ESCRIBIR : 1-2
+[INFO] 08:50:22:2 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:22:2 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:22:2 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:22:3 gamecard/(4460:4460): KEY A BUSCAR :1-2
+[INFO] 08:50:22:3 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:22:3 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:22:3 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:22:3 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:22:3 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:22:3 gamecard/(4460:4460): DATO A ESCRIBIR : 12-3
+[INFO] 08:50:23:5 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:23:5 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:23:5 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:23:5 gamecard/(4460:4460): KEY A BUSCAR :12-3
+[INFO] 08:50:23:5 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:23:5 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:23:5 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:23:6 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:23:6 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:23:6 gamecard/(4460:4460): DATO A ESCRIBIR : 1-5
+[INFO] 08:50:23:6 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:23:6 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:23:7 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:23:7 gamecard/(4460:4460): KEY A BUSCAR :1-5
+[INFO] 08:50:23:7 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:23:7 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:23:7 gamecard/(4460:4460): CONFIG HAS PROPERTY : 1
+[INFO] 08:50:23:7 gamecard/(4460:4460): ENTRE SI EXISTE UNA POSICION
+[INFO] 08:50:23:7 gamecard/(4460:4460): DATO A ESCRIBIR : 4-7
+[INFO] 08:50:23:13 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:23:13 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:23:13 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:23:13 gamecard/(4460:4460): KEY A BUSCAR :4-7
+[INFO] 08:50:23:13 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:23:13 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:23:13 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:23:13 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:23:13 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:23:14 gamecard/(4460:4460): DATO A ESCRIBIR : 9-12
+[INFO] 08:50:23:15 gamecard/(4460:4460): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 08:50:23:15 gamecard/(4460:4460): PRUEBA 0
+[INFO] 08:50:23:16 gamecard/(4460:4460): PRUEBA 1
+[INFO] 08:50:23:16 gamecard/(4460:4460): KEY A BUSCAR :9-12
+[INFO] 08:50:23:16 gamecard/(4460:4460): PRUEBA 2
+[INFO] 08:50:23:16 gamecard/(4460:4460): PRUEBA 3
+[INFO] 08:50:23:16 gamecard/(4460:4460): CONFIG HAS PROPERTY : 0
+[INFO] 08:50:23:16 gamecard/(4460:4460): PRUEBA 4
+[INFO] 08:50:23:16 gamecard/(4460:4460): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 08:50:23:17 gamecard/(4460:4460): VALOR DEL BITMAP 0: 0
+[INFO] 08:50:23:17 gamecard/(4460:4460): VALOR DEL BITMAP 1: 0
+[INFO] 08:50:23:17 gamecard/(4460:4460): VALOR DEL BITMAP 2: 0
+[INFO] 08:50:23:17 gamecard/(4460:4460): VALOR DEL BITMAP 3: 1
+[INFO] 08:50:23:17 gamecard/(4460:4460): VALOR DEL BITMAP 4: 0
+[INFO] 08:50:23:18 gamecard/(4460:4460): VALOR DEL BITMAP 5: 0
+[INFO] 08:50:23:18 gamecard/(4460:4460): VALOR DEL BITMAP 6: 0
+[INFO] 08:50:23:18 gamecard/(4460:4460): VALOR DEL BITMAP 7: 0
+[INFO] 08:50:23:18 gamecard/(4460:4460): VALOR DEL BITMAP 8: 0
+[INFO] 08:50:23:18 gamecard/(4460:4460): VALOR DEL BITMAP 9: 0
+[INFO] 08:50:23:18 gamecard/(4460:4460): Termine
+[INFO] 09:13:10:424 gamecard/(5693:5693): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:13:10:429 gamecard/(5693:5693): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:13:12:630 gamecard/(5693:5693): CREE EL BLOQUE
+[INFO] 09:13:12:632 gamecard/(5693:5693): TERMINE DE CREAR BITMAP
+[INFO] 09:13:12:632 gamecard/(5693:5693): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:13:12:647 gamecard/(5693:5693): DATO A ESCRIBIR : 1-5
+[INFO] 09:13:12:647 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:647 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:648 gamecard/(5693:5693): DATO A ESCRIBIR : 5-3
+[INFO] 09:13:12:654 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:657 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:657 gamecard/(5693:5693): DATO A ESCRIBIR : 6-5
+[INFO] 09:13:12:657 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:658 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:658 gamecard/(5693:5693): DATO A ESCRIBIR : 1-2
+[INFO] 09:13:12:658 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:658 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:659 gamecard/(5693:5693): DATO A ESCRIBIR : 12-3
+[INFO] 09:13:12:659 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:659 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:660 gamecard/(5693:5693): DATO A ESCRIBIR : 1-5
+[INFO] 09:13:12:660 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:660 gamecard/(5693:5693): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:13:12:667 gamecard/(5693:5693): DATO A ESCRIBIR : 4-7
+[INFO] 09:13:12:669 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:669 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:672 gamecard/(5693:5693): DATO A ESCRIBIR : 9-12
+[INFO] 09:13:12:672 gamecard/(5693:5693): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:13:12:673 gamecard/(5693:5693): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:13:12:674 gamecard/(5693:5693): DATO A LLER : 1-5
+[INFO] 09:13:12:676 gamecard/(5693:5693): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:13:12:677 gamecard/(5693:5693): Cantidad de Pokemons en 1-5  :27
+[INFO] 09:13:12:677 gamecard/(5693:5693): VALOR DEL BITMAP 0: 0
+[INFO] 09:13:12:677 gamecard/(5693:5693): VALOR DEL BITMAP 1: 0
+[INFO] 09:13:12:677 gamecard/(5693:5693): VALOR DEL BITMAP 2: 0
+[INFO] 09:13:12:677 gamecard/(5693:5693): VALOR DEL BITMAP 3: 1
+[INFO] 09:13:12:679 gamecard/(5693:5693): VALOR DEL BITMAP 4: 0
+[INFO] 09:13:12:679 gamecard/(5693:5693): VALOR DEL BITMAP 5: 0
+[INFO] 09:13:12:679 gamecard/(5693:5693): VALOR DEL BITMAP 6: 0
+[INFO] 09:13:12:679 gamecard/(5693:5693): VALOR DEL BITMAP 7: 0
+[INFO] 09:13:12:679 gamecard/(5693:5693): VALOR DEL BITMAP 8: 0
+[INFO] 09:13:12:681 gamecard/(5693:5693): VALOR DEL BITMAP 9: 0
+[INFO] 09:13:12:681 gamecard/(5693:5693): Termine
+[INFO] 09:17:17:900 gamecard/(5891:5891): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:17:17:902 gamecard/(5891:5891): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:17:18:974 gamecard/(5891:5891): CREE EL BLOQUE
+[INFO] 09:17:18:991 gamecard/(5891:5891): TERMINE DE CREAR BITMAP
+[INFO] 09:17:18:991 gamecard/(5891:5891): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:17:18:991 gamecard/(5891:5891): DATO A ESCRIBIR : 1-5
+[INFO] 09:17:18:991 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:992 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:992 gamecard/(5891:5891): DATO A ESCRIBIR : 5-3
+[INFO] 09:17:18:992 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:992 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:993 gamecard/(5891:5891): DATO A ESCRIBIR : 6-5
+[INFO] 09:17:18:993 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:993 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:994 gamecard/(5891:5891): DATO A ESCRIBIR : 1-2
+[INFO] 09:17:18:994 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:994 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:994 gamecard/(5891:5891): DATO A ESCRIBIR : 12-3
+[INFO] 09:17:18:994 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:994 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:995 gamecard/(5891:5891): DATO A ESCRIBIR : 1-5
+[INFO] 09:17:18:995 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:995 gamecard/(5891:5891): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:17:18:995 gamecard/(5891:5891): DATO A ESCRIBIR : 4-7
+[INFO] 09:17:18:996 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:996 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:997 gamecard/(5891:5891): DATO A ESCRIBIR : 9-12
+[INFO] 09:17:18:997 gamecard/(5891:5891): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:17:18:997 gamecard/(5891:5891): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:17:18:998 gamecard/(5891:5891): DATO A LLER : 1-5
+[INFO] 09:17:18:1 gamecard/(5891:5891): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:17:18:1 gamecard/(5891:5891): Cantidad de Pokemons en 1-5: 27
+[INFO] 09:17:18:1 gamecard/(5891:5891): VALOR DEL BITMAP 0: 0
+[INFO] 09:17:18:1 gamecard/(5891:5891): VALOR DEL BITMAP 1: 0
+[INFO] 09:17:18:3 gamecard/(5891:5891): VALOR DEL BITMAP 2: 0
+[INFO] 09:17:19:5 gamecard/(5891:5891): VALOR DEL BITMAP 3: 1
+[INFO] 09:17:19:6 gamecard/(5891:5891): VALOR DEL BITMAP 4: 0
+[INFO] 09:17:19:6 gamecard/(5891:5891): VALOR DEL BITMAP 5: 0
+[INFO] 09:17:19:6 gamecard/(5891:5891): VALOR DEL BITMAP 6: 0
+[INFO] 09:17:19:6 gamecard/(5891:5891): VALOR DEL BITMAP 7: 0
+[INFO] 09:17:19:6 gamecard/(5891:5891): VALOR DEL BITMAP 8: 0
+[INFO] 09:17:19:6 gamecard/(5891:5891): VALOR DEL BITMAP 9: 0
+[INFO] 09:17:19:6 gamecard/(5891:5891): Termine
+[INFO] 09:38:37:956 gamecard/(7097:7097): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:38:37:965 gamecard/(7097:7097): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:38:39:381 gamecard/(7097:7097): CREE EL BLOQUE
+[INFO] 09:38:39:383 gamecard/(7097:7097): TERMINE DE CREAR BITMAP
+[INFO] 09:38:39:383 gamecard/(7097:7097): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:38:39:383 gamecard/(7097:7097): DATO A ESCRIBIR : 1-5
+[INFO] 09:38:39:383 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:383 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:384 gamecard/(7097:7097): DATO A ESCRIBIR : 5-3
+[INFO] 09:38:39:384 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:384 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:384 gamecard/(7097:7097): DATO A ESCRIBIR : 6-5
+[INFO] 09:38:39:384 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:385 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:385 gamecard/(7097:7097): DATO A ESCRIBIR : 1-2
+[INFO] 09:38:39:385 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:385 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:386 gamecard/(7097:7097): DATO A ESCRIBIR : 12-3
+[INFO] 09:38:39:386 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:386 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:386 gamecard/(7097:7097): DATO A ESCRIBIR : 1-5
+[INFO] 09:38:39:387 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:387 gamecard/(7097:7097): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:38:39:387 gamecard/(7097:7097): DATO A ESCRIBIR : 4-7
+[INFO] 09:38:39:387 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:388 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:389 gamecard/(7097:7097): DATO A ESCRIBIR : 9-12
+[INFO] 09:38:39:389 gamecard/(7097:7097): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:38:39:389 gamecard/(7097:7097): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:38:39:390 gamecard/(7097:7097): Cantidad de Pokemons en 1-5: 27
+[INFO] 09:38:39:390 gamecard/(7097:7097): VALOR DEL BITMAP 0: 0
+[INFO] 09:38:39:393 gamecard/(7097:7097): VALOR DEL BITMAP 1: 0
+[INFO] 09:38:39:393 gamecard/(7097:7097): VALOR DEL BITMAP 2: 0
+[INFO] 09:38:39:393 gamecard/(7097:7097): VALOR DEL BITMAP 3: 1
+[INFO] 09:38:39:393 gamecard/(7097:7097): VALOR DEL BITMAP 4: 0
+[INFO] 09:38:39:403 gamecard/(7097:7097): VALOR DEL BITMAP 5: 0
+[INFO] 09:38:39:403 gamecard/(7097:7097): VALOR DEL BITMAP 6: 0
+[INFO] 09:38:39:404 gamecard/(7097:7097): VALOR DEL BITMAP 7: 0
+[INFO] 09:38:39:404 gamecard/(7097:7097): VALOR DEL BITMAP 8: 0
+[INFO] 09:38:39:404 gamecard/(7097:7097): VALOR DEL BITMAP 9: 0
+[INFO] 09:38:39:404 gamecard/(7097:7097): Termine
+[INFO] 09:39:09:422 gamecard/(7181:7181): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:39:09:425 gamecard/(7181:7181): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:39:11:122 gamecard/(7181:7181): CREE EL BLOQUE
+[INFO] 09:39:11:124 gamecard/(7181:7181): TERMINE DE CREAR BITMAP
+[INFO] 09:39:11:124 gamecard/(7181:7181): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:39:11:124 gamecard/(7181:7181): DATO A ESCRIBIR : 1-5
+[INFO] 09:39:11:125 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:125 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:125 gamecard/(7181:7181): DATO A ESCRIBIR : 5-3
+[INFO] 09:39:11:125 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:125 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:129 gamecard/(7181:7181): DATO A ESCRIBIR : 6-5
+[INFO] 09:39:11:129 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:129 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:130 gamecard/(7181:7181): DATO A ESCRIBIR : 1-2
+[INFO] 09:39:11:133 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:133 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:133 gamecard/(7181:7181): DATO A ESCRIBIR : 12-3
+[INFO] 09:39:11:133 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:134 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:134 gamecard/(7181:7181): DATO A ESCRIBIR : 1-5
+[INFO] 09:39:11:134 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:134 gamecard/(7181:7181): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:39:11:135 gamecard/(7181:7181): DATO A ESCRIBIR : 4-7
+[INFO] 09:39:11:135 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:135 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:141 gamecard/(7181:7181): DATO A ESCRIBIR : 9-12
+[INFO] 09:39:11:141 gamecard/(7181:7181): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:11:141 gamecard/(7181:7181): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:11:142 gamecard/(7181:7181): Cantidad de Pokemons en 1-5: 27
+[INFO] 09:39:11:146 gamecard/(7181:7181): Cantidad de Pokemons despues de disminuir en 1-5: 26
+[INFO] 09:39:11:146 gamecard/(7181:7181): VALOR DEL BITMAP 0: 0
+[INFO] 09:39:11:146 gamecard/(7181:7181): VALOR DEL BITMAP 1: 0
+[INFO] 09:39:11:146 gamecard/(7181:7181): VALOR DEL BITMAP 2: 0
+[INFO] 09:39:11:149 gamecard/(7181:7181): VALOR DEL BITMAP 3: 1
+[INFO] 09:39:11:150 gamecard/(7181:7181): VALOR DEL BITMAP 4: 0
+[INFO] 09:39:11:150 gamecard/(7181:7181): VALOR DEL BITMAP 5: 0
+[INFO] 09:39:11:152 gamecard/(7181:7181): VALOR DEL BITMAP 6: 0
+[INFO] 09:39:11:153 gamecard/(7181:7181): VALOR DEL BITMAP 7: 0
+[INFO] 09:39:11:153 gamecard/(7181:7181): VALOR DEL BITMAP 8: 0
+[INFO] 09:39:11:153 gamecard/(7181:7181): VALOR DEL BITMAP 9: 0
+[INFO] 09:39:11:153 gamecard/(7181:7181): Termine
+[INFO] 09:39:41:228 gamecard/(7249:7249): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:39:41:231 gamecard/(7249:7249): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:39:42:662 gamecard/(7249:7249): CREE EL BLOQUE
+[INFO] 09:39:42:663 gamecard/(7249:7249): TERMINE DE CREAR BITMAP
+[INFO] 09:39:42:664 gamecard/(7249:7249): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:39:42:664 gamecard/(7249:7249): DATO A ESCRIBIR : 1-5
+[INFO] 09:39:42:664 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:664 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:664 gamecard/(7249:7249): DATO A ESCRIBIR : 5-3
+[INFO] 09:39:42:665 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:665 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:665 gamecard/(7249:7249): DATO A ESCRIBIR : 6-5
+[INFO] 09:39:42:669 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:669 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:669 gamecard/(7249:7249): DATO A ESCRIBIR : 1-2
+[INFO] 09:39:42:669 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:669 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:670 gamecard/(7249:7249): DATO A ESCRIBIR : 12-3
+[INFO] 09:39:42:670 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:670 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:670 gamecard/(7249:7249): DATO A ESCRIBIR : 1-5
+[INFO] 09:39:42:671 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:671 gamecard/(7249:7249): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:39:42:671 gamecard/(7249:7249): DATO A ESCRIBIR : 4-7
+[INFO] 09:39:42:671 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:671 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:672 gamecard/(7249:7249): DATO A ESCRIBIR : 9-12
+[INFO] 09:39:42:672 gamecard/(7249:7249): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:39:42:672 gamecard/(7249:7249): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:39:42:673 gamecard/(7249:7249): Cantidad de Pokemons en 4-7: 27
+[INFO] 09:39:42:673 gamecard/(7249:7249): Cantidad de Pokemons despues de disminuir en 4-7: 26
+[INFO] 09:39:42:673 gamecard/(7249:7249): VALOR DEL BITMAP 0: 0
+[INFO] 09:39:42:673 gamecard/(7249:7249): VALOR DEL BITMAP 1: 0
+[INFO] 09:39:42:673 gamecard/(7249:7249): VALOR DEL BITMAP 2: 0
+[INFO] 09:39:42:674 gamecard/(7249:7249): VALOR DEL BITMAP 3: 1
+[INFO] 09:39:42:674 gamecard/(7249:7249): VALOR DEL BITMAP 4: 0
+[INFO] 09:39:42:682 gamecard/(7249:7249): VALOR DEL BITMAP 5: 0
+[INFO] 09:39:42:682 gamecard/(7249:7249): VALOR DEL BITMAP 6: 0
+[INFO] 09:39:42:682 gamecard/(7249:7249): VALOR DEL BITMAP 7: 0
+[INFO] 09:39:42:682 gamecard/(7249:7249): VALOR DEL BITMAP 8: 0
+[INFO] 09:39:42:682 gamecard/(7249:7249): VALOR DEL BITMAP 9: 0
+[INFO] 09:39:42:683 gamecard/(7249:7249): Termine
+[INFO] 09:40:01:219 gamecard/(7307:7307): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:40:01:224 gamecard/(7307:7307): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:40:03:542 gamecard/(7307:7307): CREE EL BLOQUE
+[INFO] 09:40:03:572 gamecard/(7307:7307): TERMINE DE CREAR BITMAP
+[INFO] 09:40:03:572 gamecard/(7307:7307): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:40:03:572 gamecard/(7307:7307): DATO A ESCRIBIR : 1-5
+[INFO] 09:40:03:572 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:572 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:573 gamecard/(7307:7307): DATO A ESCRIBIR : 5-3
+[INFO] 09:40:03:573 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:573 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:585 gamecard/(7307:7307): DATO A ESCRIBIR : 6-5
+[INFO] 09:40:03:586 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:586 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:586 gamecard/(7307:7307): DATO A ESCRIBIR : 1-2
+[INFO] 09:40:03:586 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:586 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:587 gamecard/(7307:7307): DATO A ESCRIBIR : 12-3
+[INFO] 09:40:03:587 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:587 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:587 gamecard/(7307:7307): DATO A ESCRIBIR : 1-5
+[INFO] 09:40:03:589 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:590 gamecard/(7307:7307): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:40:03:590 gamecard/(7307:7307): DATO A ESCRIBIR : 4-7
+[INFO] 09:40:03:597 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:597 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:598 gamecard/(7307:7307): DATO A ESCRIBIR : 9-12
+[INFO] 09:40:03:598 gamecard/(7307:7307): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:03:598 gamecard/(7307:7307): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:03:599 gamecard/(7307:7307): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:40:03:601 gamecard/(7307:7307): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:40:03:605 gamecard/(7307:7307): VALOR DEL BITMAP 0: 0
+[INFO] 09:40:03:605 gamecard/(7307:7307): VALOR DEL BITMAP 1: 0
+[INFO] 09:40:03:605 gamecard/(7307:7307): VALOR DEL BITMAP 2: 0
+[INFO] 09:40:03:605 gamecard/(7307:7307): VALOR DEL BITMAP 3: 1
+[INFO] 09:40:03:605 gamecard/(7307:7307): VALOR DEL BITMAP 4: 0
+[INFO] 09:40:03:608 gamecard/(7307:7307): VALOR DEL BITMAP 5: 0
+[INFO] 09:40:03:608 gamecard/(7307:7307): VALOR DEL BITMAP 6: 0
+[INFO] 09:40:03:608 gamecard/(7307:7307): VALOR DEL BITMAP 7: 0
+[INFO] 09:40:03:608 gamecard/(7307:7307): VALOR DEL BITMAP 8: 0
+[INFO] 09:40:03:608 gamecard/(7307:7307): VALOR DEL BITMAP 9: 0
+[INFO] 09:40:03:608 gamecard/(7307:7307): Termine
+[INFO] 09:40:52:292 gamecard/(7382:7382): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:40:52:292 gamecard/(7382:7382): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:40:53:666 gamecard/(7382:7382): CREE EL BLOQUE
+[INFO] 09:40:53:686 gamecard/(7382:7382): TERMINE DE CREAR BITMAP
+[INFO] 09:40:53:688 gamecard/(7382:7382): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:40:53:688 gamecard/(7382:7382): DATO A ESCRIBIR : 1-5
+[INFO] 09:40:53:688 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:688 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:688 gamecard/(7382:7382): DATO A ESCRIBIR : 5-3
+[INFO] 09:40:53:689 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:689 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:689 gamecard/(7382:7382): DATO A ESCRIBIR : 6-5
+[INFO] 09:40:53:689 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:689 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:690 gamecard/(7382:7382): DATO A ESCRIBIR : 1-2
+[INFO] 09:40:53:690 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:690 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:690 gamecard/(7382:7382): DATO A ESCRIBIR : 12-3
+[INFO] 09:40:53:690 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:690 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:691 gamecard/(7382:7382): DATO A ESCRIBIR : 1-5
+[INFO] 09:40:53:691 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:691 gamecard/(7382:7382): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:40:53:692 gamecard/(7382:7382): DATO A ESCRIBIR : 4-7
+[INFO] 09:40:53:692 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:692 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:693 gamecard/(7382:7382): DATO A ESCRIBIR : 9-12
+[INFO] 09:40:53:693 gamecard/(7382:7382): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:40:53:716 gamecard/(7382:7382): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:40:53:717 gamecard/(7382:7382): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:40:53:718 gamecard/(7382:7382): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 0: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 1: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 2: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 3: 1
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 4: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 5: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 6: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 7: 0
+[INFO] 09:40:53:718 gamecard/(7382:7382): VALOR DEL BITMAP 8: 0
+[INFO] 09:40:53:719 gamecard/(7382:7382): VALOR DEL BITMAP 9: 0
+[INFO] 09:40:53:719 gamecard/(7382:7382): Termine
+[INFO] 09:41:57:353 gamecard/(7465:7465): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:41:57:381 gamecard/(7465:7465): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:41:59:573 gamecard/(7465:7465): CREE EL BLOQUE
+[INFO] 09:41:59:587 gamecard/(7465:7465): TERMINE DE CREAR BITMAP
+[INFO] 09:41:59:587 gamecard/(7465:7465): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:41:59:587 gamecard/(7465:7465): DATO A ESCRIBIR : 1-5
+[INFO] 09:41:59:587 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:588 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:588 gamecard/(7465:7465): DATO A ESCRIBIR : 5-3
+[INFO] 09:41:59:588 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:588 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:589 gamecard/(7465:7465): DATO A ESCRIBIR : 6-5
+[INFO] 09:41:59:589 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:589 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:590 gamecard/(7465:7465): DATO A ESCRIBIR : 1-2
+[INFO] 09:41:59:590 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:590 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:590 gamecard/(7465:7465): DATO A ESCRIBIR : 12-3
+[INFO] 09:41:59:590 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:590 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:591 gamecard/(7465:7465): DATO A ESCRIBIR : 1-5
+[INFO] 09:41:59:597 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:598 gamecard/(7465:7465): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:41:59:598 gamecard/(7465:7465): DATO A ESCRIBIR : 4-7
+[INFO] 09:41:59:598 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:599 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:607 gamecard/(7465:7465): DATO A ESCRIBIR : 9-12
+[INFO] 09:41:59:607 gamecard/(7465:7465): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:41:59:608 gamecard/(7465:7465): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:41:59:608 gamecard/(7465:7465): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:41:59:609 gamecard/(7465:7465): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 0: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 1: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 2: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 3: 1
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 4: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 5: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 6: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 7: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 8: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): VALOR DEL BITMAP 9: 0
+[INFO] 09:41:59:615 gamecard/(7465:7465): Termine
+[INFO] 09:43:33:72 gamecard/(7570:7570): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:43:33:87 gamecard/(7570:7570): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:43:34:891 gamecard/(7570:7570): CREE EL BLOQUE
+[INFO] 09:43:34:892 gamecard/(7570:7570): TERMINE DE CREAR BITMAP
+[INFO] 09:43:34:892 gamecard/(7570:7570): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:43:34:892 gamecard/(7570:7570): DATO A ESCRIBIR : 1-5
+[INFO] 09:43:34:892 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:892 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:893 gamecard/(7570:7570): DATO A ESCRIBIR : 5-3
+[INFO] 09:43:34:893 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:893 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:894 gamecard/(7570:7570): DATO A ESCRIBIR : 6-5
+[INFO] 09:43:34:894 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:894 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:894 gamecard/(7570:7570): DATO A ESCRIBIR : 1-2
+[INFO] 09:43:34:894 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:895 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:895 gamecard/(7570:7570): DATO A ESCRIBIR : 12-3
+[INFO] 09:43:34:895 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:895 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:896 gamecard/(7570:7570): DATO A ESCRIBIR : 1-5
+[INFO] 09:43:34:897 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:897 gamecard/(7570:7570): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:43:34:898 gamecard/(7570:7570): DATO A ESCRIBIR : 4-7
+[INFO] 09:43:34:898 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:898 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:898 gamecard/(7570:7570): DATO A ESCRIBIR : 9-12
+[INFO] 09:43:34:899 gamecard/(7570:7570): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:43:34:899 gamecard/(7570:7570): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:43:34:899 gamecard/(7570:7570): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:43:34:906 gamecard/(7570:7570): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 0: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 1: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 2: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 3: 1
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 4: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 5: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 6: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 7: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 8: 0
+[INFO] 09:43:34:910 gamecard/(7570:7570): VALOR DEL BITMAP 9: 0
+[INFO] 09:43:34:911 gamecard/(7570:7570): Termine
+[INFO] 09:44:06:712 gamecard/(7661:7661): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:44:06:713 gamecard/(7661:7661): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:44:08:774 gamecard/(7661:7661): CREE EL BLOQUE
+[INFO] 09:44:08:776 gamecard/(7661:7661): TERMINE DE CREAR BITMAP
+[INFO] 09:44:08:776 gamecard/(7661:7661): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:44:08:786 gamecard/(7661:7661): DATO A ESCRIBIR : 1-5
+[INFO] 09:44:08:786 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:786 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:787 gamecard/(7661:7661): DATO A ESCRIBIR : 5-3
+[INFO] 09:44:08:787 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:787 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:787 gamecard/(7661:7661): DATO A ESCRIBIR : 6-5
+[INFO] 09:44:08:787 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:788 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:788 gamecard/(7661:7661): DATO A ESCRIBIR : 1-2
+[INFO] 09:44:08:789 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:792 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:793 gamecard/(7661:7661): DATO A ESCRIBIR : 12-3
+[INFO] 09:44:08:793 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:793 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:793 gamecard/(7661:7661): DATO A ESCRIBIR : 1-5
+[INFO] 09:44:08:793 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:794 gamecard/(7661:7661): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:44:08:794 gamecard/(7661:7661): DATO A ESCRIBIR : 4-7
+[INFO] 09:44:08:795 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:795 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:796 gamecard/(7661:7661): DATO A ESCRIBIR : 9-12
+[INFO] 09:44:08:796 gamecard/(7661:7661): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:08:796 gamecard/(7661:7661): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:08:796 gamecard/(7661:7661): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:44:08:800 gamecard/(7661:7661): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:44:08:800 gamecard/(7661:7661): VALOR DEL BITMAP 0: 0
+[INFO] 09:44:08:800 gamecard/(7661:7661): VALOR DEL BITMAP 1: 0
+[INFO] 09:44:08:801 gamecard/(7661:7661): VALOR DEL BITMAP 2: 0
+[INFO] 09:44:08:801 gamecard/(7661:7661): VALOR DEL BITMAP 3: 1
+[INFO] 09:44:08:801 gamecard/(7661:7661): VALOR DEL BITMAP 4: 0
+[INFO] 09:44:08:801 gamecard/(7661:7661): VALOR DEL BITMAP 5: 0
+[INFO] 09:44:08:809 gamecard/(7661:7661): VALOR DEL BITMAP 6: 0
+[INFO] 09:44:08:809 gamecard/(7661:7661): VALOR DEL BITMAP 7: 0
+[INFO] 09:44:08:810 gamecard/(7661:7661): VALOR DEL BITMAP 8: 0
+[INFO] 09:44:08:810 gamecard/(7661:7661): VALOR DEL BITMAP 9: 0
+[INFO] 09:44:08:812 gamecard/(7661:7661): Termine
+[INFO] 09:44:48:157 gamecard/(7754:7754): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:44:48:158 gamecard/(7754:7754): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:44:49:541 gamecard/(7754:7754): CREE EL BLOQUE
+[INFO] 09:44:49:543 gamecard/(7754:7754): TERMINE DE CREAR BITMAP
+[INFO] 09:44:49:543 gamecard/(7754:7754): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:44:49:543 gamecard/(7754:7754): DATO A ESCRIBIR : 1-5
+[INFO] 09:44:49:543 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:543 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:544 gamecard/(7754:7754): DATO A ESCRIBIR : 5-3
+[INFO] 09:44:49:544 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:544 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:544 gamecard/(7754:7754): DATO A ESCRIBIR : 6-5
+[INFO] 09:44:49:544 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:544 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:545 gamecard/(7754:7754): DATO A ESCRIBIR : 1-2
+[INFO] 09:44:49:545 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:545 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:546 gamecard/(7754:7754): DATO A ESCRIBIR : 12-3
+[INFO] 09:44:49:546 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:546 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:546 gamecard/(7754:7754): DATO A ESCRIBIR : 1-5
+[INFO] 09:44:49:551 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:552 gamecard/(7754:7754): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:44:49:552 gamecard/(7754:7754): DATO A ESCRIBIR : 4-7
+[INFO] 09:44:49:552 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:552 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:553 gamecard/(7754:7754): DATO A ESCRIBIR : 9-12
+[INFO] 09:44:49:553 gamecard/(7754:7754): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:44:49:554 gamecard/(7754:7754): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:44:49:556 gamecard/(7754:7754): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:44:49:556 gamecard/(7754:7754): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:44:49:556 gamecard/(7754:7754): VALOR DEL BITMAP 0: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 1: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 2: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 3: 1
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 4: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 5: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 6: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 7: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 8: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): VALOR DEL BITMAP 9: 0
+[INFO] 09:44:49:557 gamecard/(7754:7754): Termine
+[INFO] 09:48:39:329 gamecard/(7940:7940): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:48:39:338 gamecard/(7940:7940): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:48:41:270 gamecard/(7940:7940): CREE EL BLOQUE
+[INFO] 09:48:41:277 gamecard/(7940:7940): TERMINE DE CREAR BITMAP
+[INFO] 09:48:41:278 gamecard/(7940:7940): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:48:41:278 gamecard/(7940:7940): DATO A ESCRIBIR : 1-5
+[INFO] 09:48:41:278 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:279 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:279 gamecard/(7940:7940): DATO A ESCRIBIR : 5-3
+[INFO] 09:48:41:279 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:279 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:281 gamecard/(7940:7940): DATO A ESCRIBIR : 6-5
+[INFO] 09:48:41:281 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:281 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:282 gamecard/(7940:7940): DATO A ESCRIBIR : 1-2
+[INFO] 09:48:41:282 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:282 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:283 gamecard/(7940:7940): DATO A ESCRIBIR : 12-3
+[INFO] 09:48:41:283 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:283 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:283 gamecard/(7940:7940): DATO A ESCRIBIR : 1-5
+[INFO] 09:48:41:283 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:285 gamecard/(7940:7940): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:48:41:285 gamecard/(7940:7940): DATO A ESCRIBIR : 4-7
+[INFO] 09:48:41:285 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:285 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:286 gamecard/(7940:7940): DATO A ESCRIBIR : 9-12
+[INFO] 09:48:41:289 gamecard/(7940:7940): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:48:41:289 gamecard/(7940:7940): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:48:41:290 gamecard/(7940:7940): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:48:41:290 gamecard/(7940:7940): Entre a disminuir
+[INFO] 09:48:41:291 gamecard/(7940:7940): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 0: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 1: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 2: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 3: 1
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 4: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 5: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 6: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 7: 0
+[INFO] 09:48:41:291 gamecard/(7940:7940): VALOR DEL BITMAP 8: 0
+[INFO] 09:48:41:292 gamecard/(7940:7940): VALOR DEL BITMAP 9: 0
+[INFO] 09:48:41:292 gamecard/(7940:7940): Termine
+[INFO] 09:49:41:457 gamecard/(8030:8030): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:49:41:461 gamecard/(8030:8030): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:49:43:442 gamecard/(8030:8030): CREE EL BLOQUE
+[INFO] 09:49:43:446 gamecard/(8030:8030): TERMINE DE CREAR BITMAP
+[INFO] 09:49:43:446 gamecard/(8030:8030): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:49:43:446 gamecard/(8030:8030): DATO A ESCRIBIR : 1-5
+[INFO] 09:49:43:446 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:446 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:446 gamecard/(8030:8030): DATO A ESCRIBIR : 5-3
+[INFO] 09:49:43:447 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:447 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:453 gamecard/(8030:8030): DATO A ESCRIBIR : 6-5
+[INFO] 09:49:43:453 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:453 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:453 gamecard/(8030:8030): DATO A ESCRIBIR : 1-2
+[INFO] 09:49:43:453 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:454 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:454 gamecard/(8030:8030): DATO A ESCRIBIR : 12-3
+[INFO] 09:49:43:454 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:454 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:455 gamecard/(8030:8030): DATO A ESCRIBIR : 1-5
+[INFO] 09:49:43:455 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:455 gamecard/(8030:8030): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:49:43:457 gamecard/(8030:8030): DATO A ESCRIBIR : 4-7
+[INFO] 09:49:43:457 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:458 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:461 gamecard/(8030:8030): DATO A ESCRIBIR : 9-12
+[INFO] 09:49:43:461 gamecard/(8030:8030): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:49:43:470 gamecard/(8030:8030): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:49:43:471 gamecard/(8030:8030): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:49:43:471 gamecard/(8030:8030): Entre a disminuir
+[INFO] 09:49:43:471 gamecard/(8030:8030): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:49:43:471 gamecard/(8030:8030): VALOR DEL BITMAP 0: 0
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 1: 0
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 2: 0
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 3: 1
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 4: 0
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 5: 0
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 6: 0
+[INFO] 09:49:43:472 gamecard/(8030:8030): VALOR DEL BITMAP 7: 0
+[INFO] 09:49:43:473 gamecard/(8030:8030): VALOR DEL BITMAP 8: 0
+[INFO] 09:49:43:473 gamecard/(8030:8030): VALOR DEL BITMAP 9: 0
+[INFO] 09:49:43:473 gamecard/(8030:8030): Termine
+[INFO] 09:51:29:94 gamecard/(8138:8138): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:51:29:101 gamecard/(8138:8138): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:51:31:123 gamecard/(8138:8138): CREE EL BLOQUE
+[INFO] 09:51:31:129 gamecard/(8138:8138): TERMINE DE CREAR BITMAP
+[INFO] 09:51:31:130 gamecard/(8138:8138): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:51:31:130 gamecard/(8138:8138): DATO A ESCRIBIR : 1-5
+[INFO] 09:51:31:130 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:130 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:131 gamecard/(8138:8138): DATO A ESCRIBIR : 5-3
+[INFO] 09:51:31:131 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:131 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:131 gamecard/(8138:8138): DATO A ESCRIBIR : 6-5
+[INFO] 09:51:31:131 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:131 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:132 gamecard/(8138:8138): DATO A ESCRIBIR : 1-2
+[INFO] 09:51:31:132 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:132 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:133 gamecard/(8138:8138): DATO A ESCRIBIR : 12-3
+[INFO] 09:51:31:133 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:133 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:134 gamecard/(8138:8138): DATO A ESCRIBIR : 1-5
+[INFO] 09:51:31:139 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:146 gamecard/(8138:8138): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:51:31:147 gamecard/(8138:8138): DATO A ESCRIBIR : 4-7
+[INFO] 09:51:31:147 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:147 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:147 gamecard/(8138:8138): DATO A ESCRIBIR : 9-12
+[INFO] 09:51:31:147 gamecard/(8138:8138): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:51:31:148 gamecard/(8138:8138): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:51:31:148 gamecard/(8138:8138): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:51:31:148 gamecard/(8138:8138): Entre a disminuir
+[INFO] 09:51:31:153 gamecard/(8138:8138): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:51:31:153 gamecard/(8138:8138): VALOR DEL BITMAP 0: 0
+[INFO] 09:51:31:153 gamecard/(8138:8138): VALOR DEL BITMAP 1: 0
+[INFO] 09:51:31:153 gamecard/(8138:8138): VALOR DEL BITMAP 2: 0
+[INFO] 09:51:31:153 gamecard/(8138:8138): VALOR DEL BITMAP 3: 1
+[INFO] 09:51:31:153 gamecard/(8138:8138): VALOR DEL BITMAP 4: 0
+[INFO] 09:51:31:154 gamecard/(8138:8138): VALOR DEL BITMAP 5: 0
+[INFO] 09:51:31:154 gamecard/(8138:8138): VALOR DEL BITMAP 6: 0
+[INFO] 09:51:31:154 gamecard/(8138:8138): VALOR DEL BITMAP 7: 0
+[INFO] 09:51:31:154 gamecard/(8138:8138): VALOR DEL BITMAP 8: 0
+[INFO] 09:51:31:154 gamecard/(8138:8138): VALOR DEL BITMAP 9: 0
+[INFO] 09:51:31:154 gamecard/(8138:8138): Termine
+[INFO] 09:52:14:582 gamecard/(8222:8222): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:52:14:585 gamecard/(8222:8222): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:52:16:121 gamecard/(8222:8222): CREE EL BLOQUE
+[INFO] 09:52:16:124 gamecard/(8222:8222): TERMINE DE CREAR BITMAP
+[INFO] 09:52:16:124 gamecard/(8222:8222): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:52:16:124 gamecard/(8222:8222): DATO A ESCRIBIR : 1-5
+[INFO] 09:52:16:125 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:125 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:125 gamecard/(8222:8222): DATO A ESCRIBIR : 5-3
+[INFO] 09:52:16:125 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:125 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:126 gamecard/(8222:8222): DATO A ESCRIBIR : 6-5
+[INFO] 09:52:16:126 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:126 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:126 gamecard/(8222:8222): DATO A ESCRIBIR : 1-2
+[INFO] 09:52:16:126 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:126 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:127 gamecard/(8222:8222): DATO A ESCRIBIR : 12-3
+[INFO] 09:52:16:128 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:128 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:133 gamecard/(8222:8222): DATO A ESCRIBIR : 1-5
+[INFO] 09:52:16:134 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:134 gamecard/(8222:8222): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:52:16:135 gamecard/(8222:8222): DATO A ESCRIBIR : 4-7
+[INFO] 09:52:16:135 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:135 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:136 gamecard/(8222:8222): DATO A ESCRIBIR : 9-12
+[INFO] 09:52:16:137 gamecard/(8222:8222): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:52:16:137 gamecard/(8222:8222): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:52:16:138 gamecard/(8222:8222): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:52:16:138 gamecard/(8222:8222): Entre a disminuir
+[INFO] 09:52:21:139 gamecard/(8222:8222): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:52:21:142 gamecard/(8222:8222): VALOR DEL BITMAP 0: 0
+[INFO] 09:52:21:142 gamecard/(8222:8222): VALOR DEL BITMAP 1: 0
+[INFO] 09:52:21:142 gamecard/(8222:8222): VALOR DEL BITMAP 2: 0
+[INFO] 09:52:21:142 gamecard/(8222:8222): VALOR DEL BITMAP 3: 1
+[INFO] 09:52:21:145 gamecard/(8222:8222): VALOR DEL BITMAP 4: 0
+[INFO] 09:52:21:145 gamecard/(8222:8222): VALOR DEL BITMAP 5: 0
+[INFO] 09:52:21:145 gamecard/(8222:8222): VALOR DEL BITMAP 6: 0
+[INFO] 09:52:21:145 gamecard/(8222:8222): VALOR DEL BITMAP 7: 0
+[INFO] 09:52:21:145 gamecard/(8222:8222): VALOR DEL BITMAP 8: 0
+[INFO] 09:52:21:145 gamecard/(8222:8222): VALOR DEL BITMAP 9: 0
+[INFO] 09:52:21:145 gamecard/(8222:8222): Termine
+[INFO] 09:54:28:500 gamecard/(8357:8357): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:54:28:502 gamecard/(8357:8357): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:54:30:128 gamecard/(8357:8357): CREE EL BLOQUE
+[INFO] 09:54:30:139 gamecard/(8357:8357): TERMINE DE CREAR BITMAP
+[INFO] 09:54:30:139 gamecard/(8357:8357): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:54:30:140 gamecard/(8357:8357): DATO A ESCRIBIR : 1-5
+[INFO] 09:54:30:140 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:140 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:140 gamecard/(8357:8357): DATO A ESCRIBIR : 5-3
+[INFO] 09:54:30:140 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:140 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:141 gamecard/(8357:8357): DATO A ESCRIBIR : 6-5
+[INFO] 09:54:30:141 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:141 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:146 gamecard/(8357:8357): DATO A ESCRIBIR : 1-2
+[INFO] 09:54:30:146 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:147 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:147 gamecard/(8357:8357): DATO A ESCRIBIR : 12-3
+[INFO] 09:54:30:147 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:147 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:148 gamecard/(8357:8357): DATO A ESCRIBIR : 1-5
+[INFO] 09:54:30:148 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:148 gamecard/(8357:8357): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:54:30:148 gamecard/(8357:8357): Valor config_has_property(archivo_pokemon,key_a_buscar) : 1
+[INFO] 09:54:30:149 gamecard/(8357:8357): DATO A ESCRIBIR : 4-7
+[INFO] 09:54:30:149 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:149 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:154 gamecard/(8357:8357): DATO A ESCRIBIR : 9-12
+[INFO] 09:54:30:154 gamecard/(8357:8357): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:54:30:154 gamecard/(8357:8357): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:54:30:155 gamecard/(8357:8357): Valor config_has_property(archivo_pokemon,key_a_buscar) : 1
+[INFO] 09:54:30:155 gamecard/(8357:8357): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:54:30:155 gamecard/(8357:8357): Valor config_has_property(archivo_pokemon,key_a_buscar) : 1
+[INFO] 09:54:30:155 gamecard/(8357:8357): Entre a disminuir
+[INFO] 09:54:30:155 gamecard/(8357:8357): Valor config_has_property(archivo_pokemon,key_a_buscar) : 0
+[INFO] 09:54:30:155 gamecard/(8357:8357): Cantidad de Pokemons despues de disminuir en 4-7: 1
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 0: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 1: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 2: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 3: 1
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 4: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 5: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 6: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 7: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 8: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): VALOR DEL BITMAP 9: 0
+[INFO] 09:54:30:156 gamecard/(8357:8357): Termine
+[INFO] 09:55:44:642 gamecard/(8451:8451): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:55:44:653 gamecard/(8451:8451): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:55:46:809 gamecard/(8451:8451): CREE EL BLOQUE
+[INFO] 09:55:46:819 gamecard/(8451:8451): TERMINE DE CREAR BITMAP
+[INFO] 09:55:46:821 gamecard/(8451:8451): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:55:46:822 gamecard/(8451:8451): DATO A ESCRIBIR : 1-5
+[INFO] 09:55:46:822 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:822 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:822 gamecard/(8451:8451): DATO A ESCRIBIR : 5-3
+[INFO] 09:55:46:826 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:826 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:826 gamecard/(8451:8451): DATO A ESCRIBIR : 6-5
+[INFO] 09:55:46:829 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:829 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:830 gamecard/(8451:8451): DATO A ESCRIBIR : 1-2
+[INFO] 09:55:46:834 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:837 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:838 gamecard/(8451:8451): DATO A ESCRIBIR : 12-3
+[INFO] 09:55:46:838 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:838 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:845 gamecard/(8451:8451): DATO A ESCRIBIR : 1-5
+[INFO] 09:55:46:849 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:849 gamecard/(8451:8451): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:55:46:864 gamecard/(8451:8451): Valor config_has_property(archivo_pokemon,key_a_buscar) : 1
+[INFO] 09:55:46:866 gamecard/(8451:8451): DATO A ESCRIBIR : 4-7
+[INFO] 09:55:46:866 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:866 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:867 gamecard/(8451:8451): DATO A ESCRIBIR : 9-12
+[INFO] 09:55:46:869 gamecard/(8451:8451): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:55:46:869 gamecard/(8451:8451): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:55:46:875 gamecard/(8451:8451): Valor config_has_property(archivo_pokemon,key_a_buscar) : 1
+[INFO] 09:55:46:875 gamecard/(8451:8451): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:55:46:875 gamecard/(8451:8451): Valor config_has_property(archivo_pokemon,key_a_buscar) : 1
+[INFO] 09:55:46:875 gamecard/(8451:8451): Entre a disminuir
+[INFO] 09:55:46:876 gamecard/(8451:8451): Valor config_has_property(archivo_pokemon,key_a_buscar) : 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): Cantidad de Pokemons despues de disminuir en 4-7: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 0: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 1: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 2: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 3: 1
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 4: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 5: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 6: 0
+[INFO] 09:55:46:876 gamecard/(8451:8451): VALOR DEL BITMAP 7: 0
+[INFO] 09:55:46:877 gamecard/(8451:8451): VALOR DEL BITMAP 8: 0
+[INFO] 09:55:46:877 gamecard/(8451:8451): VALOR DEL BITMAP 9: 0
+[INFO] 09:55:46:877 gamecard/(8451:8451): Termine
+[INFO] 09:56:30:628 gamecard/(8521:8521): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 09:56:30:630 gamecard/(8521:8521): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 09:56:32:59 gamecard/(8521:8521): CREE EL BLOQUE
+[INFO] 09:56:32:61 gamecard/(8521:8521): TERMINE DE CREAR BITMAP
+[INFO] 09:56:32:61 gamecard/(8521:8521): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 09:56:32:61 gamecard/(8521:8521): DATO A ESCRIBIR : 1-5
+[INFO] 09:56:32:61 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:62 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:62 gamecard/(8521:8521): DATO A ESCRIBIR : 5-3
+[INFO] 09:56:32:62 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:62 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:63 gamecard/(8521:8521): DATO A ESCRIBIR : 6-5
+[INFO] 09:56:32:63 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:63 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:63 gamecard/(8521:8521): DATO A ESCRIBIR : 1-2
+[INFO] 09:56:32:63 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:63 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:64 gamecard/(8521:8521): DATO A ESCRIBIR : 12-3
+[INFO] 09:56:32:64 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:64 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:64 gamecard/(8521:8521): DATO A ESCRIBIR : 1-5
+[INFO] 09:56:32:65 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:65 gamecard/(8521:8521): ENTRE SI EXISTE UNA POSICION
+[INFO] 09:56:32:72 gamecard/(8521:8521): DATO A ESCRIBIR : 4-7
+[INFO] 09:56:32:72 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:72 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:73 gamecard/(8521:8521): DATO A ESCRIBIR : 9-12
+[INFO] 09:56:32:73 gamecard/(8521:8521): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 09:56:32:73 gamecard/(8521:8521): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 09:56:32:74 gamecard/(8521:8521): Cantidad de Pokemons en 4-7: 1
+[INFO] 09:56:32:74 gamecard/(8521:8521): Entre a disminuir
+[INFO] 09:56:32:75 gamecard/(8521:8521): Cantidad de Pokemons despues de disminuir en 4-7: 0
+[INFO] 09:56:32:75 gamecard/(8521:8521): VALOR DEL BITMAP 0: 0
+[INFO] 09:56:32:75 gamecard/(8521:8521): VALOR DEL BITMAP 1: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 2: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 3: 1
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 4: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 5: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 6: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 7: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 8: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): VALOR DEL BITMAP 9: 0
+[INFO] 09:56:32:77 gamecard/(8521:8521): Termine
+[INFO] 10:27:58:564 gamecard/(9502:9502): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 10:27:58:569 gamecard/(9502:9502): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 10:28:00:339 gamecard/(9502:9502): CREE EL BLOQUE
+[INFO] 10:28:00:366 gamecard/(9502:9502): TERMINE DE CREAR BITMAP
+[INFO] 10:28:00:366 gamecard/(9502:9502): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 10:28:00:367 gamecard/(9502:9502): Cantidad de Pokemons en 4-7: 0
+[ERROR] 10:28:00:367 gamecard/(9502:9502): No se encontro pokemons en la posicion
+[INFO] 10:28:00:367 gamecard/(9502:9502): Cantidad de Pokemons despues de disminuir en 4-7: 0
+[INFO] 10:28:00:367 gamecard/(9502:9502): VALOR DEL BITMAP 0: 0
+[INFO] 10:28:00:367 gamecard/(9502:9502): VALOR DEL BITMAP 1: 0
+[INFO] 10:28:00:367 gamecard/(9502:9502): VALOR DEL BITMAP 2: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 3: 1
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 4: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 5: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 6: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 7: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 8: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): VALOR DEL BITMAP 9: 0
+[INFO] 10:28:00:368 gamecard/(9502:9502): Termine
+[INFO] 10:40:08:632 gamecard/(9891:9891): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 10:40:08:632 gamecard/(9891:9891): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 10:40:10:731 gamecard/(9891:9891): CREE EL BLOQUE
+[INFO] 10:40:10:740 gamecard/(9891:9891): TERMINE DE CREAR BITMAP
+[INFO] 10:40:10:741 gamecard/(9891:9891): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 10:40:10:741 gamecard/(9891:9891): VALOR DEL BITMAP 0: 0
+[INFO] 10:40:10:741 gamecard/(9891:9891): VALOR DEL BITMAP 1: 0
+[INFO] 10:40:10:741 gamecard/(9891:9891): VALOR DEL BITMAP 2: 0
+[INFO] 10:40:10:741 gamecard/(9891:9891): VALOR DEL BITMAP 3: 1
+[INFO] 10:40:10:741 gamecard/(9891:9891): VALOR DEL BITMAP 4: 0
+[INFO] 10:40:10:742 gamecard/(9891:9891): VALOR DEL BITMAP 5: 0
+[INFO] 10:40:10:742 gamecard/(9891:9891): VALOR DEL BITMAP 6: 0
+[INFO] 10:40:10:742 gamecard/(9891:9891): VALOR DEL BITMAP 7: 0
+[INFO] 10:40:10:742 gamecard/(9891:9891): VALOR DEL BITMAP 8: 0
+[INFO] 10:40:10:742 gamecard/(9891:9891): VALOR DEL BITMAP 9: 0
+[INFO] 10:40:10:742 gamecard/(9891:9891): Termine
+[INFO] 10:40:32:573 gamecard/(9960:9960): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 10:40:32:589 gamecard/(9960:9960): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 10:40:34:676 gamecard/(9960:9960): CREE EL BLOQUE
+[INFO] 10:40:34:689 gamecard/(9960:9960): TERMINE DE CREAR BITMAP
+[INFO] 10:40:34:690 gamecard/(9960:9960): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 0: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 1: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 2: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 3: 1
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 4: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 5: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 6: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 7: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 8: 0
+[INFO] 10:40:34:691 gamecard/(9960:9960): VALOR DEL BITMAP 9: 0
+[INFO] 10:40:34:692 gamecard/(9960:9960): Termine
+[INFO] 10:41:57:850 gamecard/(10082:10082): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 10:41:57:851 gamecard/(10082:10082): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 10:41:59:354 gamecard/(10082:10082): CREE EL BLOQUE
+[INFO] 10:41:59:375 gamecard/(10082:10082): TERMINE DE CREAR BITMAP
+[INFO] 10:41:59:375 gamecard/(10082:10082): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): Prueba 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 0: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 1: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 2: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 3: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 4: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 5: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 6: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 7: 0
+[INFO] 10:41:59:375 gamecard/(10082:10082): VALOR DEL BITMAP 8: 0
+[INFO] 10:41:59:376 gamecard/(10082:10082): VALOR DEL BITMAP 9: 0
+[INFO] 10:41:59:376 gamecard/(10082:10082): Termine
+[INFO] 10:42:49:584 gamecard/(10146:10146): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 10:42:49:585 gamecard/(10146:10146): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 10:42:50:469 gamecard/(10146:10146): CREE EL BLOQUE
+[INFO] 10:42:50:469 gamecard/(10146:10146): TERMINE DE CREAR BITMAP
+[INFO] 10:42:50:469 gamecard/(10146:10146): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 10:42:50:470 gamecard/(10146:10146): DATO A ESCRIBIR : 1-5
+[INFO] 10:42:50:470 gamecard/(10146:10146): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:42:50:470 gamecard/(10146:10146): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:02:772 gamecard/(10207:10207): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 10:44:02:773 gamecard/(10207:10207): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 10:44:03:643 gamecard/(10207:10207): CREE EL BLOQUE
+[INFO] 10:44:03:671 gamecard/(10207:10207): TERMINE DE CREAR BITMAP
+[INFO] 10:44:03:671 gamecard/(10207:10207): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 10:44:03:672 gamecard/(10207:10207): DATO A ESCRIBIR : 1-5
+[INFO] 10:44:03:672 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:03:672 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:08:673 gamecard/(10207:10207): DATO A ESCRIBIR : 5-3
+[INFO] 10:44:08:673 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:08:673 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:13:674 gamecard/(10207:10207): DATO A ESCRIBIR : 6-5
+[INFO] 10:44:13:674 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:13:674 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:18:682 gamecard/(10207:10207): DATO A ESCRIBIR : 1-2
+[INFO] 10:44:18:683 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:18:683 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:23:684 gamecard/(10207:10207): DATO A ESCRIBIR : 12-3
+[INFO] 10:44:23:684 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:23:684 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:28:685 gamecard/(10207:10207): DATO A ESCRIBIR : 1-5
+[INFO] 10:44:28:685 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:28:685 gamecard/(10207:10207): ENTRE SI EXISTE UNA POSICION
+[INFO] 10:44:33:686 gamecard/(10207:10207): DATO A ESCRIBIR : 4-7
+[INFO] 10:44:33:686 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:33:686 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:38:687 gamecard/(10207:10207): DATO A ESCRIBIR : 9-12
+[INFO] 10:44:38:687 gamecard/(10207:10207): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 10:44:38:687 gamecard/(10207:10207): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 0: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 1: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 2: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 3: 1
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 4: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 5: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 6: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 7: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 8: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): VALOR DEL BITMAP 9: 0
+[INFO] 10:44:43:688 gamecard/(10207:10207): Termine
+[INFO] 11:53:46:966 gamecard/(11338:11338): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 11:53:46:970 gamecard/(11338:11338): path a crear : /home/utnso/Escritorio/tall-grass/Files/Metadata.bin 
+[INFO] 11:53:47:837 gamecard/(11338:11338): CREE EL BLOQUE
+[INFO] 11:53:47:859 gamecard/(11338:11338): TERMINE DE CREAR BITMAP
+[INFO] 11:53:47:859 gamecard/(11338:11338): path a crear : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin 
+[INFO] 11:53:47:859 gamecard/(11338:11338): DATO A ESCRIBIR : 1-5
+[INFO] 11:53:47:859 gamecard/(11338:11338): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 11:53:47:859 gamecard/(11338:11338): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 11:53:52:860 gamecard/(11338:11338): DATO A ESCRIBIR : 5-3
+[INFO] 11:53:52:860 gamecard/(11338:11338): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 11:53:52:860 gamecard/(11338:11338): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 11:53:57:864 gamecard/(11338:11338): DATO A ESCRIBIR : 6-5
+[INFO] 11:53:57:865 gamecard/(11338:11338): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 11:53:57:865 gamecard/(11338:11338): ENTRE SI NO EXISTE UNA POSICION
+[INFO] 11:54:02:866 gamecard/(11338:11338): DATO A ESCRIBIR : 1-2
+[INFO] 11:54:02:866 gamecard/(11338:11338): PATH A ESCRIBIR : /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 11:54:02:866 gamecard/(11338:11338): ENTRE SI NO EXISTE UNA POSICION

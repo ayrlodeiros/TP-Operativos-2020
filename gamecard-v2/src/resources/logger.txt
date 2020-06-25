@@ -1,0 +1,1 @@
+[ERROR] 10:28:00:367 gamecard/(9502:9502): No se encontro pokemons en la posicion
