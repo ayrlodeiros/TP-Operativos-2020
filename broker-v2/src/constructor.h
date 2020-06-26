@@ -60,6 +60,7 @@ typedef struct{
 }
 t_pos_memoria;
 
+
 /** Es la estructura con la que se va a guardar los mensajes en la memoria interna del broker, contiene mas informacion */
 /** todo ESTRUCTURA MENSAJE */
 typedef struct{
@@ -82,6 +83,20 @@ typedef struct{
 }
 t_paquete;
 
+/**  Estructura de suscriptor*/
+typedef struct{
+	int identificador;
+	int conexion;
+}
+suscriptor_t;
+
+/* Estructura para hilo enviar_mensaje */
+typedef struct{
+	t_mensaje* mensaje;
+	suscriptor_t* suscriptor;
+}
+aux_msj_susc;
+
 /** Define el identificador del modulo*/
 typedef enum{
 	TEAM = 1,
@@ -90,13 +105,6 @@ typedef enum{
 }
 modulo_code;
 
-/**  Estructura de suscriptor*/
-typedef struct{
-	int identificador;
-	int conexion;
-}
-suscriptor_t;
-
 /** Define el identificador de la operacion  */
 typedef enum
 {
@@ -104,6 +112,11 @@ typedef enum
 	SUSCRIPCION=2
 }
 op_code;
+
+/*Lista global de mensajes, tendria las estructuras de todos los mensajes */
+t_list* lista_global_msjs;
+pthread_mutex_t mutex_lista_msjs;
+
 
 /** LOGS */
 t_log* logger;
@@ -162,10 +175,12 @@ void obtener_posicion_bs(int tamanio, int* posicion);
 void obtener_posicion_normal(int tamanio, int* posicion);
 
 
+/* Lista GLobal de mensajes */
+void agregar_a_lista_global(t_mensaje* mensaje);
 
 /* Metodos estructura de mensajes */
 
-t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola);
+t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlativo);
 
 void enviar_mensaje_suscriptores(t_mq* cola);
 
@@ -180,5 +195,10 @@ void iniciar_contador_ids_mensaje();
 // Aumenta el valor de la variable global en 1 y devuelve eso
 int asignar_id_univoco();
 
+/* Inicia la lista de msjs global*/
+void iniciar_list_global();
+
+/** Crea el paquete para manda en funcion del mensaje */
+void enviar_mensaje(aux_msj_susc* aux);
 
 #endif //CONSTRUCTOR_H_

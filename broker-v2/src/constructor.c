@@ -6,12 +6,14 @@ void iniciar_funcionalidades() {
 	inicializar_message_queues();
 	iniciar_memoria_principal();
 	iniciar_contador_ids_mensaje();
+	iniciar_list_global();
 }
 
 void inicializar_semaforos() {
 	pthread_mutex_init(&mutex_id, NULL);
 	pthread_mutex_init(&mutex_memoria_principal, NULL);
 	pthread_mutex_init(&mutex_agregar_msj_a_cola, NULL);
+	pthread_mutex_init(&mutex_lista_msjs,NULL);
 }
 
 void inicializar_message_queues(){
@@ -51,6 +53,10 @@ void inicializar_message_queues(){
 
 }
 
+void iniciar_list_global(){
+	lista_global_msjs = list_create();
+}
+
 void esperar_mensaje_en_cola(t_mq* mq) {
 
 	while(1) {
@@ -64,12 +70,43 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 		enviar_mensaje_suscriptores(mq);
 		//TODO implementar codigo cuando tenes mensaje para enviar de la cola
 	}
+}
 
+void enviar_mensaje(aux_msj_susc* msj_susc)
+{
+	t_mensaje* mensaje = msj_susc->mensaje;
+	suscriptor_t* suscriptor = msj_susc->suscriptor;
+	t_paquete* paquete= malloc(sizeof(t_paquete));
+
+	paquete->id = mensaje->id;
+	paquete->id_cor = mensaje->id_cor;
+	paquete->buffer = malloc(sizeof(t_buffer));
+	paquete->buffer->size = mensaje->pos_en_memoria->tamanio;
+	paquete->buffer->stream = malloc(paquete->buffer->size);
+	//TODO abstraer en otra funcion la busqueda del stream en la memoria principal
+	memcpy(paquete->buffer->stream, memoria_principal + mensaje->pos_en_memoria->pos, paquete->buffer->size);
+
+	int bytes = paquete->buffer->size + 3*sizeof(int);
+
+	void* a_enviar = serializar_paquete(paquete, bytes);
+
+	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
+		add_sub_lista_env_msj(mensaje,suscriptor);
+		log_info(mi_log,"Se envio correctamente el mensaje al suscriptor\n");
+	}
+	else
+		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor\n");
+
+	free(a_enviar);
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
+
+	recibir_ACK(suscriptor,mensaje);
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
-	pthread_t* ack;
-
+	aux_msj_susc* aux = malloc(sizeof(aux_msj_susc));
 	/*todo Por lo que estuve viendo en el foro, no es necesario que haya que sacar el msj de la cola, ya que puede que pasar que no lo hayan recibido todos los suscriptores */
 	t_mensaje* mensaje = queue_pop(cola->cola);
 	suscriptor_t* suscriptor;
@@ -79,12 +116,15 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 		suscriptor = list_get(cola->suscriptores,i);
 
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
-			/*
-			 pthread_create(&ack,NULL,(void*)enviar_mensaje,&mensaje,&suscriptor) != 0;
+			pthread_t* ack;
+			aux->mensaje = mensaje;
+			aux->suscriptor = suscriptor;
+			pthread_create(&ack,NULL,(void*)enviar_mensaje,aux);
 			pthread_detach(ack);
-			*/
+
 		}
 	}
+	free(aux);
 }
 
 bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
@@ -95,6 +135,7 @@ bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
 	}
 	return false;
 }
+
 
 void crear_get_mq(){
 	get_mq = malloc(sizeof(t_mq));
@@ -199,14 +240,14 @@ void liberar_appeared_mq(){
 }
 
 /*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
-t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola){
+t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlativo){
 
 	int posicion;
 	t_mensaje* mensaje  = malloc(sizeof(t_mensaje));
 
 	guardar_mensaje_en_memoria(tamanio, buffer, &posicion);
 	mensaje->id = asignar_id_univoco();
-	mensaje->id_cor = -1;
+	mensaje->id_cor = id_correlativo;
 	mensaje->cola = cola;
 	mensaje->suscriptores_env = list_create();
 	mensaje->suscriptores_conf = list_create();
@@ -291,4 +332,10 @@ suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo){
 	suscriptor->identificador = id_modulo;
 	suscriptor->conexion = conexion_suscriptor;
 	return suscriptor;
+}
+
+void agregar_a_lista_global(t_mensaje* mensaje){
+	pthread_mutex_lock(&mutex_lista_msjs);
+	list_add(lista_global_msjs,mensaje);
+	pthread_mutex_unlock(&mutex_lista_msjs);
 }
