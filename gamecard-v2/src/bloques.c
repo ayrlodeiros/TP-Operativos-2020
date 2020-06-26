@@ -38,7 +38,7 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
-		char* string_dato = string_itoa(devolver_ultimo_bloque(path_config));
+		char* string_dato = string_itoa(obtener_primer_bloque_libre(path_config));
 		path_bloque = devolver_path_dato(string_dato);
 		agregar_bloque(path_config); //REVISAR ESTO
 		guardar_en_bloque(atoi(string_dato),posicion, cantidad);
@@ -90,7 +90,7 @@ free(path_directorio_bloque);
 }
 
 void escribir_bloque_asignado(int bloque){
-	char* path_bloque = devolver_path_dato(string_itoa(bloque));
+	/*char* path_bloque = devolver_path_dato(string_itoa(bloque));
 	bitarray_set_bit(bitmap,bloque);
 
 
@@ -99,6 +99,7 @@ void escribir_bloque_asignado(int bloque){
 	txt_close_file(archivo);
 
 	free(path_bloque);
+	*/
 }
 
 //limpio el contenido del bloque y lo libero en el bitarray
