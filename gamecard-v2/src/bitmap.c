@@ -43,19 +43,18 @@ if(!flag_bloques_libres){ //si no hay bloques libres ni busca
 }
 
 
-//pthread_mutex_lock(&MUTEX_BITARRAY);
+pthread_mutex_lock(&Mutex_Bitmap);
 
 int bloques = obtener_blocks();
 int bloque_aux = ultimo_bloque_asignado;
 int i;
-
 for(i = ultimo_bloque_asignado; i < bloques; i++){
 	if(!bitarray_test_bit(bitmap,bloque_aux)){
 		bitarray_set_bit(bitmap,bloque_aux);
 		ultimo_bloque_asignado = bloque_aux;
 		escribir_bloque_asignado(bloque_aux);
 		msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
-		//pthread_mutex_unlock(&MUTEX_BITARRAY);
+		pthread_mutex_unlock(&Mutex_Bitmap);
 		return bloque_aux;
 	}
 	else bloque_aux++;//vas al proximo bloque
@@ -68,14 +67,14 @@ while(bloque_aux < ultimo_bloque_asignado){
 		bitarray_set_bit(bitmap,bloque_aux);
 		ultimo_bloque_asignado = bloque_aux;
 		msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
-		//pthread_mutex_unlock(&MUTEX_BITARRAY);
+		pthread_mutex_unlock(&Mutex_Bitmap);
 		return bloque_aux;
 	}
 	else bloque_aux++;
 //		i++;
 }
 flag_bloques_libres = 0; // 0 si no hay libres, 1 si los hay
-//pthread_mutex_unlock(&MUTEX_BITARRAY);
+pthread_mutex_unlock(&Mutex_Bitmap);
 return -1; // salio del while, por lo que no hay bloque libres/
 }
 

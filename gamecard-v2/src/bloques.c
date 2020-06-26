@@ -1,14 +1,25 @@
 #include "bloques.h"
 
 //guarda la data en el archivo del path
-void escribir_bloque(char* path_config,char* dato){
+void escribir_bloque(char* path_config,char* posicion,char* cantidad){
+
+	char* dato = string_new();
+	string_append(&dato,posicion);
+	string_append(&dato,"=");
+	string_append(&dato,cantidad);
 
 	char* path_bloque;
 	char* path_directorio_bloque = devolver_path_directorio("/Blocks");
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
+/*
+	t_config* config_pokemon = config_create(path_config);
 
+	if(list_is_empty(obtener_blocks_archivo_metadata_pokemon("Pikachu"))){
+		guardar_en_bloque(obtener_primer_bloque_libre("kgaas"),posicion,cantidad);
+	}
+*/
 	//en el ultimo bloque -NO- hay espacio para guardar toda la info
-	if(! (tamanio_disponible_del_ultimo_bloque >= strlen(dato))){
+	if(tamanio_disponible_del_ultimo_bloque < strlen(dato)){
 		int bloques_necesarios;
 
 		if( ((strlen(dato)-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
@@ -29,9 +40,8 @@ void escribir_bloque(char* path_config,char* dato){
 	else{
 		char* string_dato = string_itoa(devolver_ultimo_bloque(path_config));
 		path_bloque = devolver_path_dato(string_dato);
-
-
-		guardar_en_bloque(path_bloque,dato);
+		agregar_bloque(path_config); //REVISAR ESTO
+		guardar_en_bloque(atoi(string_dato),posicion, cantidad);
 		actualizar_tamanio_bloque(path_config);
 		free(path_bloque);
 		free(path_directorio_bloque);
@@ -42,13 +52,11 @@ void escribir_bloque(char* path_config,char* dato){
 	int ultima_posicion_insertada = 0;
 
 	path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
-
 	//lleno el bloque que estaba semicompleto
 	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
-	guardar_en_bloque(path_bloque,a_escribir);
+	guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
 	free(a_escribir);
 	ultima_posicion_insertada = tamanio_disponible_del_ultimo_bloque;
-
 	while(flag){
 		a_escribir = string_new();
 		if( (strlen(dato)-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
@@ -56,7 +64,7 @@ void escribir_bloque(char* path_config,char* dato){
 
 			path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
 
-			guardar_en_bloque(path_bloque,a_escribir);
+			guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
 
 			ultima_posicion_insertada += obtener_block_size();
 			free(a_escribir);
@@ -68,7 +76,7 @@ void escribir_bloque(char* path_config,char* dato){
 
 			path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
 
-			guardar_en_bloque(path_bloque, a_escribir);
+			guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
 
 			free(path_bloque);
 			free(a_escribir);
@@ -82,7 +90,7 @@ free(path_directorio_bloque);
 }
 
 void escribir_bloque_asignado(int bloque){
-	char* path_bloque = devolver_path_dato(bloque);
+	char* path_bloque = devolver_path_dato(string_itoa(bloque));
 	bitarray_set_bit(bitmap,bloque);
 
 
@@ -107,7 +115,7 @@ void limpiar_bloque(int bloque){
 
 
 int se_creo_el_bloque(){
-	char* path_bloque = devolver_path_directorio("/Blocks");
+	/*char* path_bloque = devolver_path_directorio("/Blocks");
 	string_append(&path_bloque,"0.bin");
 
 	if(access(path_bloque,F_OK) != -1){
@@ -117,7 +125,7 @@ int se_creo_el_bloque(){
 	else {
 		free(path_bloque);
 		return false;
-	}
+	}*/
 }
 
 void crear_bloque(){ //ANDA BIEN
@@ -163,8 +171,17 @@ void actualizar_tamanio_bloque(char* path_bloque){
 
 //guarda en el path del bloque lo que se le pasa por parametro
 //esta funcion no deberia romper nunca por overflow de tamano de bloque porquese cheuquea antes de usarla
-void guardar_en_bloque(char* path_bloque,char* dato){
-	char* pivot = malloc(3);
+void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad){
+
+	char* path_bloque = devolver_path_dato(string_itoa(bloque));
+	t_config* archivo_pokemon = config_create(path_bloque);
+	config_set_value(archivo_pokemon,key_a_guardar,nueva_cantidad);
+	config_save(archivo_pokemon);
+	bitarray_set_bit(bitmap,bloque);
+
+	config_destroy(archivo_pokemon);
+
+	/*char* pivot = malloc(3);
 	struct stat st;
 	FILE* archivo;
 	stat(path_bloque,&st);
@@ -185,6 +202,7 @@ void guardar_en_bloque(char* path_bloque,char* dato){
 	txt_write_in_file(archivo2, dato);
 	txt_close_file(archivo2);
 	free(pivot);
+	*/
 }
 
 int tamanio_libre_real(int bloque){
@@ -296,6 +314,14 @@ int obtener_primer_bloque_libre(char* path_bloque){
 	free(lista_de_bloques);
 
 	return -1;
+	/*
+	for(int i= 0; i< obtener_blocks();i++){
+		if(!bitarray_test_bit(bitmap,i)){
+			return i;
+		}
+		log_error(nuestro_log,"no hay bloques libres");
+		return -1;
+	}*/
 }
 
 int el_bloque_esta_lleno(int bloque){
@@ -313,23 +339,22 @@ int tamanio_libre_del_ultimo_bloque(char* path){
 
 //devuelve el ultimo bloque, osea el que tiene espacio probablemente
 int devolver_ultimo_bloque(char* path){
-	//falta hacer la funcion para que arranque la particion
-
 	char* bloques = devolver_lista_de_bloques(path);
 	char** lista_bloques = string_get_string_as_array(bloques);
 	free(bloques);
-
-	int posicion_ultimo_bloque = tamanio_de_lista (lista_bloques) - 1;
-	char* ultimo_bloque = string_duplicate(lista_bloques[posicion_ultimo_bloque]);
-	int numero_ultimo_bloque = atoi(ultimo_bloque);
-
-	free(ultimo_bloque);
-	for(int i = 0; i < tamanio_de_lista(lista_bloques); i++){
-		free(lista_bloques[i]);
+	if(string_length(lista_bloques) > 0){
+		int posicion_ultimo_bloque = tamanio_de_lista (lista_bloques) - 1;
+		char* ultimo_bloque = string_duplicate(lista_bloques[posicion_ultimo_bloque]);
+		int numero_ultimo_bloque = atoi(ultimo_bloque);
+		free(ultimo_bloque);
+		for(int i = 0; i < tamanio_de_lista(lista_bloques); i++){
+			free(lista_bloques[i]);
+		}
+		free(lista_bloques);
+		return numero_ultimo_bloque;
+	}else{
+		return obtener_primer_bloque_libre(path);
 	}
-	free(lista_bloques);
-
-	return numero_ultimo_bloque;
 }
 
 int tamanio_de_lista(char** un_array){
