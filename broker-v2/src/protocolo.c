@@ -8,30 +8,45 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 			log_info(mi_log,string_from_format("Se agrego el suscriptor %d a la cola %d correctamente\n",suscriptor->conexion,cola->nombre)); /** Por ahora le paso la conexion
 			 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	como nombre puede que cambie a futuro*/
 	}
-	/* Falta que al agregar un suscriptor se le envien todos los mensajes de la cola que esten en la cache
-	enviar_msjs_cola_suscriptor();
-	*/
+
+	mandar_mensajes_cache(cola);
 }
+
+
+void mandar_mensajes_cache(t_mq* cola){
+
+	pthread_mutex_lock(&mutex_lista_msjs);
+	for(int i=0; i<list_size(lista_global_msjs); i++) {
+		t_mensaje* mensaje = list_get(lista_global_msjs, i);
+		if(mensaje->cola == cola->nombre) {
+			agregar_msj_cola(cola, mensaje);
+		}
+	}
+	pthread_mutex_unlock(&mutex_lista_msjs);
+}
+
 
 void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 
 		/*todo adaptar a distintos tipos de mensajes */
 		int tamanio;
+		int id_correlativo;
 		void* buffer;
+		recv(socket_cliente,(int) id_correlativo, sizeof(int), MSG_WAITALL);
 		recv(socket_cliente,(int) tamanio, sizeof(int), MSG_WAITALL);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
-		log_info(mi_log, "Se recibio el mensaje\n");
-
+		log_info(mi_log, "Se recibio el mensaje correctamente\n");
 
 		//Crea el mensaje y ya lo guarda en memoria
-		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre);
-
-		agregar_msj_cola(queue,mensaje);
+		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre,id_correlativo);
+		agregar_a_lista_global(mensaje);
+		if(!list_is_empty(queue->suscriptores)){
+			agregar_msj_cola(queue,mensaje);
+		}
 		enviar_id_msj_cliente(socket_cliente,queue,mensaje->id);
-
-		pthread_mutex_unlock(&queue->lock);
 }
+
 
 void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	pthread_mutex_lock(&mutex_agregar_msj_a_cola);
@@ -42,6 +57,8 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 		log_info(mi_log,string_from_format("Se agrego correctamente el mensaje a la cola %d",queue->nombre));
 
 	pthread_mutex_unlock(&mutex_agregar_msj_a_cola);
+
+	pthread_mutex_unlock(&queue->lock);
 }
 
 /*
@@ -63,35 +80,7 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 	log_info(mi_log,"Se envio el mensaje a todos los suscriptores \n");
 }*/
 
-void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* cliente)
-{
-	t_paquete* paquete= malloc(sizeof(paquete));
 
-	paquete->id = mensaje->id;
-	paquete->buffer = malloc(sizeof(t_buffer));
-	//paquete->buffer->size = mensaje->buffer->size;
-	paquete->buffer->stream = malloc(paquete->buffer->size);
-	//memcpy(paquete->buffer->stream, mensaje->buffer->stream, paquete->buffer->size);
-
-	int bytes = paquete->buffer->size + 3*sizeof(int);
-
-	void* a_enviar = serializar_paquete(paquete, bytes);
-
-	if(send(cliente->conexion, a_enviar, bytes, 0) > 0){
-		add_sub_lista_env_msj(mensaje,cliente);
-		log_info(mi_log,"Se envio correctamente el mensaje al suscriptor\n");
-	}
-	else
-		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor\n");
-
-	free(a_enviar);
-	free(paquete->buffer->stream);
-	free(paquete->buffer);
-	free(paquete);
-
-	/* Chequear si conviene llamar esta funcion por separado */
-	recibir_ACK(cliente,mensaje);
-}
 
 void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
 	int valor;
@@ -122,20 +111,19 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 
 
 void enviar_id_msj_cliente(int socket_cliente,t_mq* cola,int id_msj){
+	//todo Implementar caso que el send falle
 	if(send(socket_cliente,id_msj, sizeof(int), 0) > 0){
 			log_info(mi_log,"Se envio el id del mensaje correctamente\n");
 		}
 }
 
-void mandar_mensajes_cache();
-
 
 void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor_t* suscriptor){
-	list_add(mensaje->suscriptores_conf,suscriptor);
+	list_add(mensaje->suscriptores_conf,suscriptor->identificador);
 }
 
 void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
-	list_add(mensaje->suscriptores_env,suscriptor);
+	list_add(mensaje->suscriptores_env,suscriptor->identificador);
 }
 
 void switch_cola(int cod_op, int socket_cliente, int id_modulo){
@@ -166,15 +154,43 @@ void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 	}
 }
 
-void switch_operacion (op_code operacion, t_mq* cola,int conexion, modulo_code modulo){
+void switch_operacion (op_code operacion, t_mq* cola,int conexion, int id_modulo){
 	suscriptor_t* suscriptor;
 	switch(operacion){
 	case MENSAJE:
 		recibir_y_guardar_mensaje(conexion, cola);
 		break;
 	case SUSCRIPCION:
-		suscriptor = crear_suscriptor(conexion,modulo);
-		agregar_suscriptor_cola(cola, suscriptor);
+		recibir_suscriptor(conexion, id_modulo, cola);
+		//TODO ver como manejar la llegada de un nuevo suscriptor para enviarle los mensajes de cache
 		break;
 	}
+}
+
+void recibir_suscriptor(int conexion, int id_modulo, t_mq* cola){
+	int posicion = chequear_si_ya_existe_suscriptor(cola->suscriptores,id_modulo);
+
+	suscriptor_t* suscriptor;
+
+	if(posicion > -1){
+		suscriptor = list_get(cola->suscriptores, posicion);
+		suscriptor->conexion = conexion;
+	} else {
+		suscriptor = crear_suscriptor(conexion,id_modulo);
+		agregar_suscriptor_cola(cola, suscriptor);
+	}
+
+}
+
+int chequear_si_ya_existe_suscriptor(t_list* suscriptores,int id_nuevo){
+
+	for(int i = 0; i<list_size(suscriptores);i++){
+		suscriptor_t* suscriptor = list_get(suscriptores,i);
+		if(id_nuevo == suscriptor->identificador){
+			return i;
+		}
+	}
+
+	return -1;
+
 }
