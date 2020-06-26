@@ -3,12 +3,13 @@
 int main(void)
 {
 	iniciar_gamecard();
-
 	t_list* blocks = list_create();
+
 	list_add(blocks,82);
 	list_add(blocks,21);
 	list_add(blocks,3);
 	list_add(blocks,40);
+
 
 	crear_archivo_files_metadata("Pikachu","N",250,blocks,"N");
 
@@ -32,6 +33,14 @@ int main(void)
 	guardar_informacion("Pikachu",10,4,17);
 	guardar_informacion("Pikachu",10,5,17);
 	guardar_informacion("Pikachu",10,6,17);
+	guardar_informacion("Pikachu",55,6,17);
+	guardar_informacion("Pikachu",51,6,17);
+	guardar_informacion("Pikachu",52,6,17);
+	guardar_informacion("Pikachu",1,5,10);
+	guardar_informacion("Pikachu",52,65,17);
+	guardar_informacion("Pikachu",52,61,17);
+	guardar_informacion("Pikachu",52,22,17);
+	guardar_informacion("Pikachu",52,13,17);
 
 	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));

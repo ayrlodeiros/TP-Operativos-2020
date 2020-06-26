@@ -11,6 +11,7 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 	char* path_bloque;
 	char* path_directorio_bloque = devolver_path_directorio("/Blocks");
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
+
 /*
 	t_config* config_pokemon = config_create(path_config);
 
@@ -19,50 +20,55 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 	}
 */
 	//en el ultimo bloque -NO- hay espacio para guardar toda la info
-	if(tamanio_disponible_del_ultimo_bloque < strlen(dato)){
+	int tamanio_dato = strlen(dato);
+	if(tamanio_disponible_del_ultimo_bloque < tamanio_dato){
 		int bloques_necesarios;
-
-		if( ((strlen(dato)-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
+		if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
 			//si entra justo le doy los bloques justos
-			bloques_necesarios = (strlen(dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size();
+			bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size();
 		}else{
 			//si no entra justo le doy un bloque demas
-			bloques_necesarios = (strlen(dato)-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
+			bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
 		}
-
 		//le asigno todos los bloques que necesita
 		for(int i = 0; i < bloques_necesarios; i++){
 			agregar_bloque(path_config);
 		}
-
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
-		char* string_dato = string_itoa(obtener_primer_bloque_libre(path_config));
+		char* string_dato = string_itoa(devolver_ultimo_bloque(path_config));
 		path_bloque = devolver_path_dato(string_dato);
-		agregar_bloque(path_config); //REVISAR ESTO
+		//agregar_bloque(path_config); //REVISAR ESTO
 		guardar_en_bloque(atoi(string_dato),posicion, cantidad);
 		actualizar_tamanio_bloque(path_config);
 		free(path_bloque);
 		free(path_directorio_bloque);
 		return;
 	}
+	/*
 	//aca llega solo si no entro en el "else" de arriba
 	int flag = 1;
 	int ultima_posicion_insertada = 0;
-
-	path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
+	log_info(nuestro_log,"Prueba 0");
+	path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
 	//lleno el bloque que estaba semicompleto
+	log_info(nuestro_log,"Prueba 0.0");
 	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
+	log_info(nuestro_log,"Prueba 0.1");
 	guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
+	log_info(nuestro_log,"Prueba 0.2");
 	free(a_escribir);
 	ultima_posicion_insertada = tamanio_disponible_del_ultimo_bloque;
+	log_info(nuestro_log,"Prueba 1");
 	while(flag){
 		a_escribir = string_new();
+		log_info(nuestro_log,"Prueba 2");
 		if( (strlen(dato)-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
+			log_info(nuestro_log,"Prueba 3");
 			a_escribir = string_substring(dato, ultima_posicion_insertada,obtener_block_size());
 
-			path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
+			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
 
 			guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
 
@@ -72,9 +78,10 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 
 		}
 		else{// si lo que queda entra en un bloque
+			log_info(nuestro_log,"Prueba 4");
 			a_escribir = string_substring_from(dato, ultima_posicion_insertada);
 
-			path_bloque = devolver_path_dato(obtener_primer_bloque_libre(path_config));
+			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
 
 			guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
 
@@ -84,7 +91,10 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 		}//else
 
 	}//while
+	log_info(nuestro_log,"Prueba 5");
 	actualizar_tamanio_bloque(path_bloque);
+	log_info(nuestro_log,"Prueba 6");
+	*/
 
 free(path_directorio_bloque);
 }
@@ -182,7 +192,7 @@ void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad){
 
 	config_destroy(archivo_pokemon);
 
-	/*char* pivot = malloc(3);
+	char* pivot = malloc(3);
 	struct stat st;
 	FILE* archivo;
 	stat(path_bloque,&st);
@@ -198,7 +208,10 @@ void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad){
 			fclose(archivo);
 		}
 	}
+	free(pivot);
 
+
+/*
 	FILE* archivo2 = txt_open_for_append(path_bloque);
 	txt_write_in_file(archivo2, dato);
 	txt_close_file(archivo2);
@@ -207,7 +220,7 @@ void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad){
 }
 
 int tamanio_libre_real(int bloque){
-	char* path_bloque = devolver_path_dato(bloque);
+	char* path_bloque = devolver_path_dato(string_itoa(bloque));
 
 		struct stat st;
 		stat(path_bloque,&st);
@@ -241,7 +254,7 @@ int tamanio_libre_del_bloque(int bloque){
 
 		free(path);
 
-		return (obtener_block_size() - tamanio_actual);
+		return (obtener_block_size() - tamanio_actual) - 1; //Aca agregue un -1
 }
 
 //al archivo le agrego un nuevo bloque a la lista de bloques
@@ -343,19 +356,19 @@ int devolver_ultimo_bloque(char* path){
 	char* bloques = devolver_lista_de_bloques(path);
 	char** lista_bloques = string_get_string_as_array(bloques);
 	free(bloques);
-	if(string_length(lista_bloques) > 0){
+	//if(string_length(lista_bloques) > 0){
 		int posicion_ultimo_bloque = tamanio_de_lista (lista_bloques) - 1;
 		char* ultimo_bloque = string_duplicate(lista_bloques[posicion_ultimo_bloque]);
-		int numero_ultimo_bloque = atoi(ultimo_bloque);
+		int numero_ultimo_bloque = strtol(ultimo_bloque,NULL,10);
 		free(ultimo_bloque);
 		for(int i = 0; i < tamanio_de_lista(lista_bloques); i++){
 			free(lista_bloques[i]);
 		}
 		free(lista_bloques);
 		return numero_ultimo_bloque;
-	}else{
-		return obtener_primer_bloque_libre(path);
-	}
+	//}else{
+	//	return obtener_primer_bloque_libre(path);
+	//}
 }
 
 int tamanio_de_lista(char** un_array){
@@ -368,7 +381,6 @@ int tamanio_de_lista(char** un_array){
 	while(un_array[i] != NULL){
 		i++;
 	}
-
 	return i;
 }
 
