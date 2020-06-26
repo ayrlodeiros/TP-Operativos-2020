@@ -54,7 +54,7 @@ void inicializar_message_queues(){
 void esperar_mensaje_en_cola(t_mq* mq) {
 
 	while(1) {
-		if(queue_is_empty(mq)) {
+		if(queue_is_empty(mq->cola)) {
 			log_info(mi_log, "Se bloquea la cola %d", mq->nombre);
 			pthread_mutex_lock(&mq->lock);
 		}

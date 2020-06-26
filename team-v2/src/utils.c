@@ -4,7 +4,7 @@
 //CONEXIONES
 t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffer* buffer) {
 	t_paquete* paquete = malloc(sizeof(t_paquete));
-	paquete->numero_de_modulo = NUMERO_MODULO;
+	paquete->numero_de_modulo = leer_id_modulo();
 	paquete->codigo_de_operacion = cod_op;
 	paquete->codigo_de_accion = cod_acc;
 	paquete->buffer = buffer;
@@ -12,7 +12,7 @@ t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, t_buffe
 }
 t_paquete* crear_paquete_sin_buffer(codigo_operacion cod_op, codigo_accion cod_acc) {
 	t_paquete* paquete = malloc(sizeof(t_paquete));
-	paquete->numero_de_modulo = NUMERO_MODULO;
+	paquete->numero_de_modulo = leer_id_modulo();
 	paquete->codigo_de_operacion = cod_op;
 	paquete->codigo_de_accion = cod_acc;
 	return paquete;

@@ -11,6 +11,7 @@ void iniciar_config(void){
 	setear_ip_broker();
 	setear_puerto_broker();
 	setear_log_file();
+	setear_id_modulo();
 }
 
 void destruir_config(void) {
@@ -99,6 +100,10 @@ char* leer_log_file(void){
 	return log_file;
 }
 
+int leer_id_modulo(void) {
+	return id_modulo;
+}
+
 //SOLO SE EJECUTAN UNA VEZ
 //
 void setear_tiempo_reconexion(void){
@@ -150,4 +155,8 @@ void setear_puerto_broker(void){
 
 void setear_log_file(void){
 	log_file = config_get_string_value(config, "LOG_FILE");
+}
+
+void setear_id_modulo(void){
+	id_modulo = config_get_int_value(config, "ID_MODULO");
 }

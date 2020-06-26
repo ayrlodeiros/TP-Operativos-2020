@@ -26,6 +26,7 @@ double estimacion_inicial;
 char* ip_broker;
 char* puerto_broker;
 char* log_file;
+int id_modulo;
 
 void iniciar_config(void);
 void destruir_config(void);
@@ -45,6 +46,7 @@ double leer_estimacion_inicial(void);
 char* leer_ip_broker(void);
 char* leer_puerto_broker(void);
 char* leer_log_file(void);
+int leer_id_modulo(void);
 
 void setear_tiempo_reconexion(void);
 void setear_retardo_ciclo_cpu(void);
@@ -55,5 +57,6 @@ void setear_estimacion_inicial(void);
 void setear_ip_broker(void);
 void setear_puerto_broker(void);
 void setear_log_file(void);
+void setear_id_modulo(void);
 
 #endif /* CONFIGREADER_H_ */

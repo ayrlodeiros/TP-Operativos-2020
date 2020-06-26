@@ -24,7 +24,6 @@
 #include<commons/collections/list.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/dictionary.h>
-#define NUMERO_MODULO 1
 
 pthread_mutex_t lock_de_planificacion;
 pthread_mutex_t lock_de_entrenador_disponible;
