@@ -10,14 +10,14 @@
 
 #include "utils.h"
 
-void escribir_bloque(char* path_config,char* posicion,char* cantidad);
+void escribir_bloque(char* path_config,char* dato);
 void escribir_bloque_asignado(int bloque);
 void limpiar_bloque(int bloque);
 int se_creo_el_bloque();
 void crear_bloque();
 void modificar_tamanio_bloque(char* path_bloque,int tamanio);
 void actualizar_tamanio_bloque(char* path_bloque);
-void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad);
+void guardar_en_bloque(char* path_bloque, char* dato);
 int tamanio_libre_real(int bloque);
 int tamanio_libre_del_bloque(int bloque);
 void agregar_bloque(char* path_bloque);

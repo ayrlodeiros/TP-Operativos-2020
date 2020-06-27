@@ -1,16 +1,12 @@
 #include "bloques.h"
 
 //guarda la data en el archivo del path
-void escribir_bloque(char* path_config,char* posicion,char* cantidad){
-
-	char* dato = string_new();
-	string_append(&dato,posicion);
-	string_append(&dato,"=");
-	string_append(&dato,cantidad);
+void escribir_bloque(char* path_config,char* dato){
 
 	char* path_bloque;
 	char* path_directorio_bloque = devolver_path_directorio("/Blocks");
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
+	log_info(nuestro_log,"Tamanio Disponible:%d",tamanio_disponible_del_ultimo_bloque);
 
 /*
 	t_config* config_pokemon = config_create(path_config);
@@ -21,7 +17,9 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 */
 	//en el ultimo bloque -NO- hay espacio para guardar toda la info
 	int tamanio_dato = strlen(dato);
-	if(tamanio_disponible_del_ultimo_bloque < tamanio_dato){
+	log_info(nuestro_log,"Tamaño dato :%d",tamanio_dato);
+	log_info(nuestro_log,"Tamaño disponible :%d",tamanio_disponible_del_ultimo_bloque);
+	if(tamanio_disponible_del_ultimo_bloque <= tamanio_dato){
 		int bloques_necesarios;
 		if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
 			//si entra justo le doy los bloques justos
@@ -30,6 +28,7 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 			//si no entra justo le doy un bloque demas
 			bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
 		}
+		log_info(nuestro_log,"Bloques Necesarios :%d",bloques_necesarios);
 		//le asigno todos los bloques que necesita
 		for(int i = 0; i < bloques_necesarios; i++){
 			agregar_bloque(path_config);
@@ -37,40 +36,45 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
+		int ultimo_bloque = devolver_ultimo_bloque(path_config);
+		escribir_bloque_asignado(ultimo_bloque);
 		char* string_dato = string_itoa(devolver_ultimo_bloque(path_config));
 		path_bloque = devolver_path_dato(string_dato);
 		//agregar_bloque(path_config); //REVISAR ESTO
-		guardar_en_bloque(atoi(string_dato),posicion, cantidad);
+		guardar_en_bloque(path_bloque,dato);
 		actualizar_tamanio_bloque(path_config);
 		free(path_bloque);
 		free(path_directorio_bloque);
 		return;
 	}
-	/*
+
 	//aca llega solo si no entro en el "else" de arriba
 	int flag = 1;
 	int ultima_posicion_insertada = 0;
-	log_info(nuestro_log,"Prueba 0");
-	path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
+
+	int bloque_a_escribir = obtener_nuevo_bloque_libre();
+	log_info(nuestro_log,"Bloque a escribir:%d",bloque_a_escribir);
+	path_bloque = devolver_path_dato(string_itoa(bloque_a_escribir));
 	//lleno el bloque que estaba semicompleto
-	log_info(nuestro_log,"Prueba 0.0");
 	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
-	log_info(nuestro_log,"Prueba 0.1");
-	guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
-	log_info(nuestro_log,"Prueba 0.2");
+	log_info(nuestro_log,"Sub String:%s",a_escribir);
+	log_info(nuestro_log,"Ultima pos:%d",ultima_posicion_insertada);
+
+	guardar_en_bloque(path_bloque,a_escribir);
 	free(a_escribir);
-	ultima_posicion_insertada = tamanio_disponible_del_ultimo_bloque;
-	log_info(nuestro_log,"Prueba 1");
+	ultima_posicion_insertada = obtener_block_size() - tamanio_libre_del_ultimo_bloque(path_config);
 	while(flag){
 		a_escribir = string_new();
-		log_info(nuestro_log,"Prueba 2");
-		if( (strlen(dato)-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
-			log_info(nuestro_log,"Prueba 3");
+		tamanio_dato = strlen(dato);
+
+		log_info(nuestro_log,"tamanio dato :%d",tamanio_dato);
+		log_info(nuestro_log,"Ultima posicion insertada :%d",ultima_posicion_insertada);
+		if( (tamanio_dato-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
 			a_escribir = string_substring(dato, ultima_posicion_insertada,obtener_block_size());
 
 			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
 
-			guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
+			guardar_en_bloque(path_bloque,a_escribir);
 
 			ultima_posicion_insertada += obtener_block_size();
 			free(a_escribir);
@@ -78,29 +82,31 @@ void escribir_bloque(char* path_config,char* posicion,char* cantidad){
 
 		}
 		else{// si lo que queda entra en un bloque
-			log_info(nuestro_log,"Prueba 4");
+			log_info(nuestro_log,"Entre al else");
+			log_info(nuestro_log,"Ultima posicion insertada :%d",ultima_posicion_insertada);
 			a_escribir = string_substring_from(dato, ultima_posicion_insertada);
-
+			log_info(nuestro_log,"Entre al else 1");
 			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
+			log_info(nuestro_log,"Entre al else 2");
 
-			guardar_en_bloque(obtener_primer_bloque_libre(path_config),posicion, cantidad);
+			guardar_en_bloque(path_bloque,a_escribir);
 
 			free(path_bloque);
 			free(a_escribir);
 			flag = 0; //condicion de corte, porque no queda mas nada que agregar
+			log_info(nuestro_log,"Sali del else");
 		}//else
 
 	}//while
-	log_info(nuestro_log,"Prueba 5");
-	actualizar_tamanio_bloque(path_bloque);
-	log_info(nuestro_log,"Prueba 6");
-	*/
+	log_info(nuestro_log,"Actualizo");
+	actualizar_tamanio_bloque(path_config);
+	log_info(nuestro_log,"No Actualizo");
 
 free(path_directorio_bloque);
 }
 
 void escribir_bloque_asignado(int bloque){
-	/*char* path_bloque = devolver_path_dato(string_itoa(bloque));
+	char* path_bloque = devolver_path_dato(string_itoa(bloque));
 	bitarray_set_bit(bitmap,bloque);
 
 
@@ -109,7 +115,7 @@ void escribir_bloque_asignado(int bloque){
 	txt_close_file(archivo);
 
 	free(path_bloque);
-	*/
+
 }
 
 //limpio el contenido del bloque y lo libero en el bitarray
@@ -148,7 +154,6 @@ void crear_bloque(){ //ANDA BIEN
 		fclose(archivo);
 		free(path_bloque);
 	}
-	log_info(nuestro_log,"CREE EL BLOQUE");
 
 }
 
@@ -165,13 +170,13 @@ void modificar_tamanio_bloque(char* path_bloque,int tamanio){
 
 //actualiza el tamano
 void actualizar_tamanio_bloque(char* path_bloque){
+	log_info(nuestro_log,"Path_bloque :%s",path_bloque);
 	char* string_lista_bloques = devolver_lista_de_bloques(path_bloque);
 	char** lista_de_bloques = string_get_string_as_array(string_lista_bloques);
 	free(string_lista_bloques);
 
 	int tamanio = (tamanio_de_lista(lista_de_bloques) - 1) * obtener_block_size(); //no deberia llegarle nunca un array tam 0
 	tamanio += (obtener_block_size() - tamanio_libre_del_ultimo_bloque(path_bloque));
-
 	modificar_tamanio_bloque(path_bloque,tamanio);
 
 	for(int i = 0; i < tamanio_de_lista(lista_de_bloques); i++){
@@ -182,16 +187,15 @@ void actualizar_tamanio_bloque(char* path_bloque){
 
 //guarda en el path del bloque lo que se le pasa por parametro
 //esta funcion no deberia romper nunca por overflow de tamano de bloque porquese cheuquea antes de usarla
-void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad){
+void guardar_en_bloque(char* path_bloque, char* dato){
 
+	/*
 	char* path_bloque = devolver_path_dato(string_itoa(bloque));
 	t_config* archivo_pokemon = config_create(path_bloque);
 	config_set_value(archivo_pokemon,key_a_guardar,nueva_cantidad);
 	config_save(archivo_pokemon);
 	bitarray_set_bit(bitmap,bloque);
-
-	config_destroy(archivo_pokemon);
-
+	*/
 	char* pivot = malloc(3);
 	struct stat st;
 	FILE* archivo;
@@ -208,15 +212,12 @@ void guardar_en_bloque(int bloque,char* key_a_guardar, char* nueva_cantidad){
 			fclose(archivo);
 		}
 	}
-	free(pivot);
 
-
-/*
 	FILE* archivo2 = txt_open_for_append(path_bloque);
 	txt_write_in_file(archivo2, dato);
 	txt_close_file(archivo2);
 	free(pivot);
-	*/
+
 }
 
 int tamanio_libre_real(int bloque){
@@ -254,13 +255,13 @@ int tamanio_libre_del_bloque(int bloque){
 
 		free(path);
 
-		return (obtener_block_size() - tamanio_actual) - 1; //Aca agregue un -1
+		return (obtener_block_size() - tamanio_actual);
 }
 
 //al archivo le agrego un nuevo bloque a la lista de bloques
 void agregar_bloque(char* path_bloque){
 
-	int nuevo_bloque = obtener_nuevo_bloque();
+	int nuevo_bloque = obtener_nuevo_bloque_libre();
 	char* lista_bloques_string = devolver_lista_de_bloques(path_bloque);
 	char** lista_bloques = string_get_string_as_array(lista_bloques_string);
 
@@ -432,7 +433,7 @@ void cargar_datos_del_file_metadata (char* path_pokemon){
 }
 
 void asignar_tamanio_y_bloque (char* path,int tamanio){
-	int bloque = obtener_nuevo_bloque();
+	int bloque = obtener_nuevo_bloque_libre();
 
 	empezar_file_metadata(path,"N",bloque,0,"N");
 }

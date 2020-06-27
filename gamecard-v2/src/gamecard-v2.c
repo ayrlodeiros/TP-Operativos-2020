@@ -5,23 +5,25 @@ int main(void)
 	iniciar_gamecard();
 	t_list* blocks = list_create();
 
-	list_add(blocks,82);
-	list_add(blocks,21);
-	list_add(blocks,3);
-	list_add(blocks,40);
+	//list_add(blocks,82);
+	//list_add(blocks,21);
+	//list_add(blocks,3);
+	list_add(blocks,0);
 
 
 	crear_archivo_files_metadata("Pikachu","N",250,blocks,"N");
 
-
+	log_info(nuestro_log,"prox bloque libre: %d",obtener_nuevo_bloque_libre());
 
 	guardar_informacion("Pikachu",1,5,10);
+	log_info(nuestro_log,"prox bloque libre: %d",obtener_nuevo_bloque_libre());
+
 	guardar_informacion("Pikachu",5,3,17);
 	guardar_informacion("Pikachu",6,5,10);
 	guardar_informacion("Pikachu",1,2,17);
 	guardar_informacion("Pikachu",12,3,10);
 	guardar_informacion("Pikachu",1,5,17);
-	guardar_informacion("Pikachu",4,7,1);
+	guardar_informacion("Pikachu",4,7,100);
 	guardar_informacion("Pikachu",9,12,18);
 	guardar_informacion("Pikachu",5,3,17);
 	guardar_informacion("Pikachu",6,5,10);
