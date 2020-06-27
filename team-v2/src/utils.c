@@ -305,6 +305,33 @@ void esperar_mensaje_appeared() {
 		} else {
 
 			//TODO implementar funcion para deserializar payload en funcion de appeared
+			void* payload = msj_broker->payload;
+			int offset = 0;
+
+			int largo_nombre_pokemon;
+			memcpy(&largo_nombre_pokemon, payload+offset, sizeof(uint32_t));
+			offset+=sizeof(uint32_t);
+
+			char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+			memcpy(nombre_pokemon, payload+offset, largo_nombre_pokemon+1);
+			offset+=(largo_nombre_pokemon+1);
+
+			actualizar_pokemon_como_recibido(nombre_pokemon);
+
+			int posicion_x;
+			memcpy(&posicion_x, payload+offset, sizeof(uint32_t));
+			offset+=sizeof(uint32_t);
+
+			int posicion_y;
+			memcpy(&posicion_y, payload+offset, sizeof(uint32_t));
+			offset+=sizeof(uint32_t);
+
+			if(el_pokemon_es_requerido(nombre_pokemon)) {
+				manejar_aparicion_de_pokemon(nombre_pokemon, posicion_x, posicion_y);
+			} else {
+				free(nombre_pokemon);
+			}
+
 
 			free(msj_broker->payload);
 			free(msj_broker);
@@ -321,12 +348,55 @@ void esperar_mensaje_localized() {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
 		} else {
 			if(id_esta_en_lista_ids_localized(msj_broker->id) == 1) {
-				int largo_nombre_pokemon;
-				char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
 
 				//TODO implementar funcion para deserializar payload en funcion de localized
+				void* payload = msj_broker->payload;
+				int offset = 0;
+
+				int largo_nombre_pokemon;
+				memcpy(&largo_nombre_pokemon, payload+offset, sizeof(uint32_t));
+				offset+=sizeof(uint32_t);
+
+				char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+				memcpy(nombre_pokemon, payload+offset, largo_nombre_pokemon+1);
+				offset+=(largo_nombre_pokemon+1);
+
+				if(pokemon_ya_fue_recibido(nombre_pokemon) == 1) {
+					log_info(nuestro_log, "El LOCALIZED de %s no será tenido en cuenta porque, previamente, ya se recibio un mensaje de su aparicion");
+					free(nombre_pokemon);
+				} else {
+
+					actualizar_pokemon_como_recibido(nombre_pokemon);
+
+					int cantidad;
+					memcpy(&cantidad, payload+offset, sizeof(uint32_t));
+					offset+=sizeof(uint32_t);
+
+					t_list* posiciones = list_create();
+					for(int i = 0; i<cantidad; i++) {
+						posicion* pos = malloc(sizeof(posicion));
+
+						memcpy(&(pos->posicion_x), payload+offset, sizeof(uint32_t));
+						offset+=sizeof(uint32_t);
+
+						memcpy(&(pos->posicion_y), payload+offset, sizeof(uint32_t));
+						offset+=sizeof(uint32_t);
+
+					}
+					//TERMINA DESERIALIZACION
 
 
+					//TODO REVISAR EL ISSUE PARA SABER SI TOMO TODOS LOS QUE APARECEN EN EL LOCALIZED
+					int cantidad_en_objetivo = *(int*) dictionary_get(objetivo_global, nombre_pokemon);
+
+					for(int i=0; i<cantidad_en_objetivo && i<cantidad; i++) {
+						posicion* pos = list_get(posiciones, i);
+
+						manejar_aparicion_de_pokemon(nombre_pokemon, pos->posicion_x, pos->posicion_y);
+					}
+
+					list_destroy_and_destroy_elements(posiciones, limpiar_posicion);
+				}
 			}
 			free(msj_broker->payload);
 			free(msj_broker);
@@ -334,10 +404,39 @@ void esperar_mensaje_localized() {
 	}
 }
 
+void limpiar_posicion(posicion* pos) {
+	free(pos);
+}
+
+int pokemon_ya_fue_recibido(char* pokemon) {
+	pthread_mutex_lock(&mutex_pokemons_recibidos);
+	for(int i=0; i<list_size(pokemons_recibidos); i++) {
+		recepcion_pokemon* pokemon_y_recepcion = list_get(pokemons_recibidos, i);
+		if(string_equals_ignore_case(pokemon_y_recepcion->pokemon, pokemon)) {
+			pthread_mutex_unlock(&mutex_pokemons_recibidos);
+			return pokemon_y_recepcion->fue_recibido_un_msj;
+		}
+	}
+	pthread_mutex_unlock(&mutex_pokemons_recibidos);
+	return 1;
+}
+
+void actualizar_pokemon_como_recibido(char* pokemon) {
+	pthread_mutex_lock(&mutex_pokemons_recibidos);
+	for(int i=0; i<list_size(pokemons_recibidos); i++) {
+		recepcion_pokemon* pokemon_y_recepcion = list_get(pokemons_recibidos, i);
+		if(string_equals_ignore_case(pokemon_y_recepcion->pokemon, pokemon)) {
+			pokemon_y_recepcion->fue_recibido_un_msj = 1;
+			break;
+		}
+	}
+	pthread_mutex_unlock(&mutex_pokemons_recibidos);
+}
+
 int id_esta_en_lista_ids_localized(int id) {
 	pthread_mutex_lock(&mutex_lista_ids_localized);
 
-	for(int i = 0; i<list_size(mutex_lista_ids_localized); i++) {
+	for(int i = 0; i<list_size(lista_ids_localized); i++) {
 		int id_localized = *(int*) list_get(lista_ids_localized, i);
 
 		if(id_localized == id) {
@@ -439,7 +538,7 @@ void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estad
 //Manejo la llegada de un nuevo pokemon (LOCALIZED O APPEARED)
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) {
 	if(el_pokemon_es_requerido(nombre)) {
-		log_info(nuestro_log, string_from_format("Aparecio un %s, el cual es requerido", nombre));
+		log_info(nuestro_log, string_from_format("Aparecio un %s en %d|%d, el cual es requerido", nombre, posicion_x, posicion_y));
 
 		//Se hace aca para que dos entrenadores no esten buscando al mismo pokemon
 		restar_adquirido_a_objetivo_global(nombre);

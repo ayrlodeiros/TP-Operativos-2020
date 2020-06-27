@@ -4,6 +4,7 @@
 void iniciar_variables_globales() {
 	armar_entrenadores();
 	armar_objetivo_global();
+	armar_pokemons_para_recibir();
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
 	lista_ids_localized = list_create();
@@ -20,6 +21,7 @@ void iniciar_variables_globales() {
 	pthread_mutex_init(&mutex_lista_ids_caught, NULL);
 	pthread_mutex_init(&mutex_funciona_broker, NULL);
 	pthread_mutex_init(&mutex_objetivo_global, NULL);
+	pthread_mutex_init(&mutex_pokemons_recibidos, NULL);
 
 	pthread_mutex_lock(&lock_de_planificacion);
 	pthread_mutex_lock(&lock_de_entrenador_disponible);
@@ -149,4 +151,21 @@ accion* armar_accion(void(*funcion)(void*), int cpu_requerido){
 	nueva_accion->cpu_requerido = cpu_requerido;
 
 	return nueva_accion;
+}
+
+void armar_pokemons_para_recibir() {
+	pokemons_recibidos = list_create();
+
+	dictionary_iterator(objetivo_global, evaluar_pokemon_para_recibir);
+
+}
+
+void evaluar_pokemon_para_recibir(char* key, void* value) {
+	if(value > 0) {
+		recepcion_pokemon* rec_pok = malloc(sizeof(recepcion_pokemon));
+		rec_pok->pokemon = key;
+		rec_pok->fue_recibido_un_msj = 0;
+
+		list_add(pokemons_recibidos, rec_pok);
+	}
 }

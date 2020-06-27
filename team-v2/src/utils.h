@@ -27,6 +27,9 @@ void levantar_conexiones_al_broker();
 mensaje_broker* recibir_msj_broker(int conexion_broker);
 void esperar_mensaje_appeared();
 void esperar_mensaje_localized();
+void limpiar_posicion(posicion* pos);
+int pokemon_ya_fue_recibido(char* pokemon);
+void actualizar_pokemon_como_recibido(char* pokemon);
 int id_esta_en_lista_ids_localized(int id);
 void esperar_mensaje_caught();
 int obtener_posicion_en_lista_de_id_caught(int id_caught);
@@ -84,7 +87,7 @@ void realizar_get(char* key, void* value);
 void esperar_id_localized(int socket_get);
 
 void catch_pokemon(entrenador* entrenador);
-void esperar_id_caught(int socket_catch);
+void esperar_id_caught(socket_y_entrenador* sye);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
 void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador);
 void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido);
