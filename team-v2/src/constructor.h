@@ -30,6 +30,7 @@ pthread_mutex_t lock_de_entrenador_disponible;
 pthread_mutex_t mutex_entrenadores;
 pthread_mutex_t mutex_pokemon_para_planificar;
 pthread_mutex_t mutex_entrenadores_ready;
+pthread_mutex_t mutex_objetivo_global;
 
 t_log* logger;
 t_log* nuestro_log;
@@ -106,10 +107,14 @@ int conexion_localized;
 int conexion_caught;
 int funciona_broker;
 
+t_list* pokemons_recibidos;
+pthread_mutex_t mutex_pokemons_recibidos;
 
+//Lista de int (ids)
 t_list* lista_ids_localized;
 pthread_mutex_t mutex_lista_ids_localized;
 
+//Lista de id_y_entrenador
 t_list* lista_ids_caught;
 pthread_mutex_t mutex_lista_ids_caught;
 
@@ -146,7 +151,31 @@ typedef struct
 	t_buffer* buffer;
 } t_paquete;
 
+typedef struct
+{
+	int id;
+	int id_correlativo; //El team no lo usa
+	int tamanio;
+	void* payload;
+} mensaje_broker;
 
+typedef struct
+{
+	int socket;
+	entrenador* entrenador;
+} socket_y_entrenador;
+
+typedef struct
+{
+	int id;
+	entrenador* entrenador;
+}id_y_entrenador;
+
+typedef struct
+{
+	char* pokemon;
+	int fue_recibido_un_msj;
+}recepcion_pokemon;
 
 void iniciar_variables_globales();
 
@@ -162,6 +191,9 @@ void restar_adquirido_a_objetivo_global(char* pokemon_adquirido);
 
 posicion* armar_posicion(char* posicion_a_armar);
 accion* armar_accion(void(*funcion)(void*), int cpu_requerido);
+
+void armar_pokemons_para_recibir();
+void evaluar_pokemon_para_recibir(char* key, void* value);
 
 
 

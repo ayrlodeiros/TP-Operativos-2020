@@ -4,6 +4,7 @@
 void iniciar_variables_globales() {
 	armar_entrenadores();
 	armar_objetivo_global();
+	armar_pokemons_para_recibir();
 	pokemons_sin_entrenador = queue_create();
 	entrenadores_ready = list_create();
 	lista_ids_localized = list_create();
@@ -19,6 +20,8 @@ void iniciar_variables_globales() {
 	pthread_mutex_init(&mutex_lista_ids_localized, NULL);
 	pthread_mutex_init(&mutex_lista_ids_caught, NULL);
 	pthread_mutex_init(&mutex_funciona_broker, NULL);
+	pthread_mutex_init(&mutex_objetivo_global, NULL);
+	pthread_mutex_init(&mutex_pokemons_recibidos, NULL);
 
 	pthread_mutex_lock(&lock_de_planificacion);
 	pthread_mutex_lock(&lock_de_entrenador_disponible);
@@ -108,9 +111,9 @@ void armar_objetivo_global() {
 	}
 }
 
-//Se deberia usar solo en armar_objetivo_global y cuando se captura un pokemon
+//Se deberia usar solo en armar_objetivo_global y cuando no se pudo capturar un pokemon
 void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
-
+	pthread_mutex_lock(&mutex_objetivo_global);
 	//Si el pokemon ya existia en el objetivo global, obtengo el valor que tenia y le sumo uno
 	if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
 		dictionary_put(objetivo_global, pokemon_objetivo, (void*) (dictionary_get(objetivo_global, pokemon_objetivo) + 1));
@@ -120,11 +123,14 @@ void agregar_objetivo_a_objetivo_global(char* pokemon_objetivo) {
 		int valor_inicial = 1;
 		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
 	}
+	pthread_mutex_unlock(&mutex_objetivo_global);
 }
 
-//Resto el pokemon atrapado del objetivo global
+//Resto el pokemon atrapado del objetivo global y cuando se captura un pokemon
 void restar_adquirido_a_objetivo_global(char* pokemon_adquirido) {
+	pthread_mutex_lock(&mutex_objetivo_global);
 	dictionary_put(objetivo_global, pokemon_adquirido, (void*) (dictionary_get(objetivo_global, pokemon_adquirido) - 1));
+	pthread_mutex_unlock(&mutex_objetivo_global);
 }
 
 posicion* armar_posicion(char* posicion_a_armar) {
@@ -145,4 +151,21 @@ accion* armar_accion(void(*funcion)(void*), int cpu_requerido){
 	nueva_accion->cpu_requerido = cpu_requerido;
 
 	return nueva_accion;
+}
+
+void armar_pokemons_para_recibir() {
+	pokemons_recibidos = list_create();
+
+	dictionary_iterator(objetivo_global, evaluar_pokemon_para_recibir);
+
+}
+
+void evaluar_pokemon_para_recibir(char* key, void* value) {
+	if(value > 0) {
+		recepcion_pokemon* rec_pok = malloc(sizeof(recepcion_pokemon));
+		rec_pok->pokemon = key;
+		rec_pok->fue_recibido_un_msj = 0;
+
+		list_add(pokemons_recibidos, rec_pok);
+	}
 }
