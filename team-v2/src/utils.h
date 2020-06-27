@@ -24,9 +24,12 @@ void recibir_mensaje_de_gameboy(int socket_gameboy);
 	//PARA BROKER
 int intentar_conectar_al_broker();
 void levantar_conexiones_al_broker();
+mensaje_broker* recibir_msj_broker(int conexion_broker);
 void esperar_mensaje_appeared();
 void esperar_mensaje_localized();
+int id_esta_en_lista_ids_localized(int id);
 void esperar_mensaje_caught();
+int obtener_posicion_en_lista_de_id_caught(int id_caught);
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir);
 void cambiar_valor_de_funciona_broker(int new_value);
 void desbloquear_lock_reintento();

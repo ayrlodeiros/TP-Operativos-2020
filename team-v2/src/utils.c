@@ -257,17 +257,57 @@ void levantar_conexiones_al_broker() {
 	}
 }
 
+mensaje_broker* recibir_msj_broker(int conexion_broker) {
+	int hubo_error = 0;
+	int id;
+	int id_cor;
+	int tamanio;
+	void* payload;
+	if(recv(conexion_broker, &id, sizeof(uint32_t), 0) == -1) {
+		hubo_error = 1;
+	} else {
+		if(recv(conexion_broker, &id_cor, sizeof(uint32_t), 0) == -1) {
+			hubo_error = 1;
+		} else {
+			if(recv(conexion_broker, &tamanio, sizeof(uint32_t), 0) == -1) {
+				hubo_error = 1;
+			} else {
+				payload = malloc(tamanio);
+				if(recv(conexion_broker, payload, sizeof(tamanio), 0) == -1) {
+					hubo_error = 1;
+				}
+			}
+		}
+	}
+
+	if(hubo_error) {
+		log_info(nuestro_log, "No se pudo recibir el mensaje del broker, se perdio la conexion");
+		cambiar_valor_de_funciona_broker(0);
+		desbloquear_lock_reintento();
+		return NULL;
+	} else {
+		mensaje_broker* msj_broker = malloc(sizeof(mensaje_broker));
+		msj_broker->id = id;
+		msj_broker->id_correlativo = id_cor;
+		msj_broker->tamanio = tamanio;
+		msj_broker->payload = payload;
+		return msj_broker;
+	}
+}
+
 void esperar_mensaje_appeared() {
 	suscribirse_a_cola(conexion_appeared, APPEARED);
 	while(funciona_broker == 1) {
 		log_info(nuestro_log, "Estoy esperando mensaje APPEARED");
-		int asd;
-		if(recv(conexion_appeared, &asd, sizeof(int), 0) > 0){
-
-		} else {
+		mensaje_broker* msj_broker = recibir_msj_broker(conexion_appeared);
+		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
-			cambiar_valor_de_funciona_broker(0);
-			desbloquear_lock_reintento();
+		} else {
+
+			//TODO implementar funcion para deserializar payload en funcion de appeared
+
+			free(msj_broker->payload);
+			free(msj_broker);
 		}
 	}
 }
@@ -276,29 +316,85 @@ void esperar_mensaje_localized() {
 	suscribirse_a_cola(conexion_localized, LOCALIZED);
 	while(funciona_broker == 1) {
 		log_info(nuestro_log, "Estoy esperando mensaje LOCALIZED");
-		int asd;
-		if(recv(conexion_localized, &asd, sizeof(int), 0) > 0){
-
-		} else {
+		mensaje_broker* msj_broker = recibir_msj_broker(conexion_appeared);
+		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
-			cambiar_valor_de_funciona_broker(0);
-			desbloquear_lock_reintento();
+		} else {
+			if(id_esta_en_lista_ids_localized(msj_broker->id) == 1) {
+				int largo_nombre_pokemon;
+				char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+
+				//TODO implementar funcion para deserializar payload en funcion de localized
+
+
+			}
+			free(msj_broker->payload);
+			free(msj_broker);
 		}
 	}
 }
+
+int id_esta_en_lista_ids_localized(int id) {
+	pthread_mutex_lock(&mutex_lista_ids_localized);
+
+	for(int i = 0; i<list_size(mutex_lista_ids_localized); i++) {
+		int id_localized = *(int*) list_get(lista_ids_localized, i);
+
+		if(id_localized == id) {
+			list_remove(lista_ids_localized, i);
+			pthread_mutex_unlock(&mutex_lista_ids_localized);
+			return 1;
+		}
+	}
+
+	pthread_mutex_unlock(&mutex_lista_ids_localized);
+	return 0;
+}
+
 void esperar_mensaje_caught() {
 	suscribirse_a_cola(conexion_caught, CAUGHT);
 	while(funciona_broker == 1) {
 		log_info(nuestro_log, "Estoy esperando mensaje CAUGHT");
-		int asd;
-		if(recv(conexion_caught, &asd, sizeof(int), 0) > 0){
-
-		} else {
+		mensaje_broker* msj_broker = recibir_msj_broker(conexion_appeared);
+		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
-			cambiar_valor_de_funciona_broker(0);
-			desbloquear_lock_reintento();
+		} else {
+			int posicion_en_lista = obtener_posicion_en_lista_de_id_caught(msj_broker->id);
+			if(posicion_en_lista != -1) {
+				log_info(nuestro_log, "El mensaje CAUGHT corresponde a un ID que se estaba esperando");
+				pthread_mutex_lock(&mutex_lista_ids_caught);
+				id_y_entrenador* iye = list_remove(lista_ids_caught, posicion_en_lista);
+				pthread_mutex_unlock(&mutex_lista_ids_caught);
+
+				int respuesta_caught = *(int*) msj_broker->payload;
+
+				if(respuesta_caught == 1) {
+					manejar_la_captura_del_pokemon(iye->entrenador);
+				} else {
+					manejar_la_no_captura_del_pokemon(iye->entrenador);
+				}
+
+			}
+
+			free(msj_broker->payload);
+			free(msj_broker);
 		}
 	}
+}
+
+int obtener_posicion_en_lista_de_id_caught(int id_caught) {
+	pthread_mutex_lock(&mutex_lista_ids_caught);
+
+	for(int i = 0; i<list_size(lista_ids_caught); i++) {
+		id_y_entrenador* iye = list_get(lista_ids_caught, i);
+		if(iye->id == id_caught) {
+			pthread_mutex_unlock(&mutex_lista_ids_caught);
+			return i;
+
+		}
+	}
+	pthread_mutex_unlock(&mutex_lista_ids_caught);
+	return -1;
 }
 
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir) {
@@ -344,6 +440,9 @@ void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estad
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) {
 	if(el_pokemon_es_requerido(nombre)) {
 		log_info(nuestro_log, string_from_format("Aparecio un %s, el cual es requerido", nombre));
+
+		//Se hace aca para que dos entrenadores no esten buscando al mismo pokemon
+		restar_adquirido_a_objetivo_global(nombre);
 
 		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
 		nuevo_pokemon->nombre = nombre;
@@ -814,8 +913,12 @@ void catch_pokemon(entrenador* entrenador) {
 		if(send(socket_catch, a_enviar, bytes ,0) > 0){
 			log_info(nuestro_log, "Se realizo el envio de CATCH correctamente");
 
+			socket_y_entrenador* s_y_e = malloc(sizeof(socket_y_entrenador));
+			s_y_e->socket = socket_catch;
+			s_y_e->entrenador = entrenador;
+
 			pthread_t* hilo_espera_catch;
-			pthread_create(&hilo_espera_catch,NULL, esperar_id_caught, socket_catch);
+			pthread_create(&hilo_espera_catch,NULL, esperar_id_caught, s_y_e);
 			pthread_detach(hilo_espera_catch);
 		} else{
 			log_info(logger, "9. No se pudo realizar el envio del CATCH al broker, se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
@@ -828,19 +931,29 @@ void catch_pokemon(entrenador* entrenador) {
 	}
 }
 
-void esperar_id_caught(int socket_catch) {
+void esperar_id_caught(socket_y_entrenador* sye) {
 	int id_caught;
 
-	if(recv(socket_catch,&id_caught, sizeof(int), 0) > 0){
+	int socket = sye->socket;
+	entrenador* entr = sye->entrenador;
+	free(sye);
+
+	if(recv(socket, &id_caught, sizeof(int), 0) > 0){
 		log_info(nuestro_log, string_from_format("Se recibio correctamente el ID: %d, para esperar en CAUGHT", id_caught));
 
+		id_y_entrenador* iye = malloc(sizeof(id_y_entrenador));
+		iye->id = id_caught;
+		iye->entrenador = entr;
+
 		pthread_mutex_lock(&mutex_lista_ids_caught);
-		list_add(lista_ids_caught, &id_caught);
+		list_add(lista_ids_caught, iye);
 		pthread_mutex_unlock(&mutex_lista_ids_caught);
 	} else {
-		log_info(nuestro_log, "No se pudo recibir el ID de CAUGHT");
+		log_info(logger, "9. No se pudo recibir el ID de CAUGHT, se realizará el CATCH por DEFAUL");
+		log_info(nuestro_log, "9. No se pudo recibir el ID de CAUGHT, se realizará el CATCH por DEFAUL");
+		manejar_la_captura_del_pokemon(entr);
 	}
-	liberar_conexion(socket_catch);
+	liberar_conexion(socket);
 }
 void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 
@@ -856,11 +969,23 @@ void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 	}
 }
 
+void manejar_la_no_captura_del_pokemon(entrenador* entrenador) {
+	pokemon* pokemon_en_captura = entrenador->pokemon_en_busqueda;
+	log_info(nuestro_log, string_from_format("3. No se pudo realizar la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
+
+	agregar_objetivo_a_objetivo_global(pokemon_en_captura->nombre);
+	destruir_pokemon(pokemon_en_captura);
+
+	accionar_en_funcion_del_estado_del_entrenador(entrenador);
+}
+
 void manejar_la_captura_del_pokemon(entrenador* entrenador) {
 	pokemon* pokemon_en_captura = entrenador->pokemon_en_busqueda;
 	log_info(logger, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
 	log_info(nuestro_log, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
-	restar_adquirido_a_objetivo_global(pokemon_en_captura->nombre);
+
+
+	//restar_adquirido_a_objetivo_global(pokemon_en_captura->nombre); ESTO SE HACE CUANDO SE VA A BUSCAR AL POKEMON
 	agregar_pokemon_a_adquirido(entrenador, pokemon_en_captura->nombre);
 	destruir_pokemon(pokemon_en_captura);
 
