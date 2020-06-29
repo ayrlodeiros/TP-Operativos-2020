@@ -1,5 +1,6 @@
 #include "bloques.h"
 
+/*
 //guarda la data en el archivo del path
 void escribir_bloque(char* path_config,char* dato){
 
@@ -8,13 +9,13 @@ void escribir_bloque(char* path_config,char* dato){
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
 	log_info(nuestro_log,"Tamanio Disponible:%d",tamanio_disponible_del_ultimo_bloque);
 
-/*
+
 	t_config* config_pokemon = config_create(path_config);
 
 	if(list_is_empty(obtener_blocks_archivo_metadata_pokemon("Pikachu"))){
 		guardar_en_bloque(obtener_primer_bloque_libre("kgaas"),posicion,cantidad);
 	}
-*/
+
 	//en el ultimo bloque -NO- hay espacio para guardar toda la info
 	int tamanio_dato = strlen(dato);
 	log_info(nuestro_log,"Tamaño dato :%d",tamanio_dato);
@@ -106,7 +107,7 @@ void escribir_bloque(char* path_config,char* dato){
 
 free(path_directorio_bloque);
 }
-
+*/
 void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int tamanio_disponible_del_ultimo_bloque){
 	int bloques_necesarios;
 	if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
@@ -155,12 +156,17 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato){
 		char* dato_a_escribir_restante = string_new();
 		dato_a_escribir_restante = string_substring_from(dato_a_escribir, strlen(a_escribir));
 		int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
-		int bloque_nuevo_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
-		char* path_bloque_nuevo_a_escribir = devolver_path_dato(string_itoa(bloque_nuevo_a_escribir));
+		if(obtener_primer_bloque_libre(path_nombre_metadata) != -1){
+			int bloque_nuevo_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
+			log_info(nuestro_log,"BLoque :%d",bloque_nuevo_a_escribir);
+			char* path_bloque_nuevo_a_escribir = devolver_path_dato(string_itoa(bloque_nuevo_a_escribir));
 
-		guardar_en_bloque(path_bloque_nuevo_a_escribir,dato_a_escribir_restante);
+			guardar_en_bloque(path_bloque_nuevo_a_escribir,dato_a_escribir_restante);
 
-		actualizar_tamanio_bloque(path_nombre_metadata);
+			actualizar_tamanio_bloque(path_nombre_metadata);
+		}
+
+
 		free(a_escribir);
 		free(dato_a_escribir_restante);
 	}
@@ -236,7 +242,6 @@ void modificar_tamanio_bloque(char* path_bloque,int tamanio){
 
 //actualiza el tamano
 void actualizar_tamanio_bloque(char* path_bloque){
-	log_info(nuestro_log,"Path_bloque :%s",path_bloque);
 	char* string_lista_bloques = devolver_lista_de_bloques(path_bloque);
 	char** lista_de_bloques = string_get_string_as_array(string_lista_bloques);
 	free(string_lista_bloques);
