@@ -19,7 +19,7 @@ void escribir_bloque(char* path_config,char* dato){
 	int tamanio_dato = strlen(dato);
 	log_info(nuestro_log,"Tamaño dato :%d",tamanio_dato);
 	log_info(nuestro_log,"Tamaño disponible :%d",tamanio_disponible_del_ultimo_bloque);
-	if(tamanio_disponible_del_ultimo_bloque <= tamanio_dato){
+	if(tamanio_disponible_del_ultimo_bloque < tamanio_dato){
 		int bloques_necesarios;
 		if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
 			//si entra justo le doy los bloques justos
@@ -32,6 +32,7 @@ void escribir_bloque(char* path_config,char* dato){
 		//le asigno todos los bloques que necesita
 		for(int i = 0; i < bloques_necesarios; i++){
 			agregar_bloque(path_config);
+
 		}
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
@@ -47,62 +48,127 @@ void escribir_bloque(char* path_config,char* dato){
 		free(path_directorio_bloque);
 		return;
 	}
+	log_info(nuestro_log,"PRUEBA 1");
 
 	//aca llega solo si no entro en el "else" de arriba
 	int flag = 1;
 	int ultima_posicion_insertada = 0;
-
-	int bloque_a_escribir = obtener_nuevo_bloque_libre();
-	log_info(nuestro_log,"Bloque a escribir:%d",bloque_a_escribir);
+	log_info(nuestro_log,"PRUEBA 2");
+	log_info(nuestro_log,"Bloques : %s",devolver_lista_de_bloques(path_config));
+	int bloque_a_escribir = obtener_primer_bloque_libre(path_config);
 	path_bloque = devolver_path_dato(string_itoa(bloque_a_escribir));
 	//lleno el bloque que estaba semicompleto
 	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
-	log_info(nuestro_log,"Sub String:%s",a_escribir);
-	log_info(nuestro_log,"Ultima pos:%d",ultima_posicion_insertada);
+	char* restante = string_substring_from(dato, strlen(a_escribir));
+	log_info(nuestro_log,"DATO :%s",dato);
+	log_info(nuestro_log,"A_escribir :%s",a_escribir);
+	log_info(nuestro_log,"Restante :%s",restante);
+
+
 
 	guardar_en_bloque(path_bloque,a_escribir);
 	free(a_escribir);
-	ultima_posicion_insertada = obtener_block_size() - tamanio_libre_del_ultimo_bloque(path_config);
+	ultima_posicion_insertada = tamanio_disponible_del_ultimo_bloque;
 	while(flag){
-		a_escribir = string_new();
+
 		tamanio_dato = strlen(dato);
 
-		log_info(nuestro_log,"tamanio dato :%d",tamanio_dato);
-		log_info(nuestro_log,"Ultima posicion insertada :%d",ultima_posicion_insertada);
-		if( (tamanio_dato-ultima_posicion_insertada) > obtener_block_size() ){ //si lo que queda no entra en un bloque
-			a_escribir = string_substring(dato, ultima_posicion_insertada,obtener_block_size());
+		if(tamanio_dato >= tamanio_disponible_del_ultimo_bloque){ //si lo que queda no entra en un bloque
 
+			a_escribir = string_new();
+			a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
+			log_info(nuestro_log,"Agregue bloque asd");
+			log_info(nuestro_log,"Agregue bloque 0-0");
 			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
-
-			guardar_en_bloque(path_bloque,a_escribir);
+			log_info(nuestro_log,"Agregue bloque 0");
+			guardar_en_bloque(path_bloque,restante);
 
 			ultima_posicion_insertada += obtener_block_size();
-			free(a_escribir);
+			free(restante);
 			free(path_bloque);
+			log_info(nuestro_log,"Agregue bloque 1");
 
 		}
 		else{// si lo que queda entra en un bloque
-			log_info(nuestro_log,"Entre al else");
-			log_info(nuestro_log,"Ultima posicion insertada :%d",ultima_posicion_insertada);
-			a_escribir = string_substring_from(dato, ultima_posicion_insertada);
-			log_info(nuestro_log,"Entre al else 1");
-			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
-			log_info(nuestro_log,"Entre al else 2");
 
-			guardar_en_bloque(path_bloque,a_escribir);
+			restante = string_substring_from(dato, strlen(a_escribir));
+			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
+
+			guardar_en_bloque(path_bloque,restante);
 
 			free(path_bloque);
 			free(a_escribir);
 			flag = 0; //condicion de corte, porque no queda mas nada que agregar
-			log_info(nuestro_log,"Sali del else");
 		}//else
 
 	}//while
-	log_info(nuestro_log,"Actualizo");
 	actualizar_tamanio_bloque(path_config);
-	log_info(nuestro_log,"No Actualizo");
 
 free(path_directorio_bloque);
+}
+
+void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int tamanio_disponible_del_ultimo_bloque){
+	int bloques_necesarios;
+	if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
+	//si entra justo le doy los bloques justos
+	bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size();
+	}else{
+	//si no entra justo le doy un bloque demas
+	bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
+	}
+	//le asigno todos los bloques que necesita
+	for(int i = 0; i < bloques_necesarios; i++){
+		agregar_bloque(path_nombre_metadata);
+		bitarray_set_bit(bitmap,i);
+	}
+}
+
+void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir){
+	int ultimo_bloque = devolver_ultimo_bloque(path_nombre_metadata);
+	bitarray_set_bit(bitmap,ultimo_bloque);
+	char* string_dato = string_itoa(devolver_ultimo_bloque(path_nombre_metadata));
+	char* path_bloque = devolver_path_dato(string_dato);
+	guardar_en_bloque(path_bloque,dato_a_escribir);
+	actualizar_tamanio_bloque(path_nombre_metadata);
+	free(path_bloque);
+}
+
+void escribir_bloque_v2(char* path_nombre_metadata,char* dato){
+	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_nombre_metadata);
+	char* dato_a_escribir = string_new();
+	string_append(&dato_a_escribir,dato);
+	string_append(&dato_a_escribir,"/");
+	int tamanio_dato = strlen(dato_a_escribir);
+
+	//Si el dato no entra en el bloque
+	if(tamanio_dato > tamanio_disponible_del_ultimo_bloque - 1){
+		agregar_bloques_al_metadata(path_nombre_metadata,tamanio_dato,tamanio_disponible_del_ultimo_bloque);
+
+		int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
+		char* path_bloque_a_escribir = devolver_path_dato(string_itoa(bloque_a_escribir));
+		char* a_escribir = string_new();
+		a_escribir = string_substring(dato_a_escribir, 0, tamanio_disponible_del_ultimo_bloque);
+		guardar_en_bloque(path_bloque_a_escribir,a_escribir);
+
+		actualizar_tamanio_bloque(path_nombre_metadata);
+
+		char* dato_a_escribir_restante = string_new();
+		dato_a_escribir_restante = string_substring_from(dato_a_escribir, strlen(a_escribir));
+		int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
+		int bloque_nuevo_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
+		char* path_bloque_nuevo_a_escribir = devolver_path_dato(string_itoa(bloque_nuevo_a_escribir));
+
+		guardar_en_bloque(path_bloque_nuevo_a_escribir,dato_a_escribir_restante);
+
+		actualizar_tamanio_bloque(path_nombre_metadata);
+		free(a_escribir);
+		free(dato_a_escribir_restante);
+	}
+	//en el ultimo bloque hay espacio suficiente para guardar la info completa
+	else{
+		agregar_dato_al_bloque(path_nombre_metadata,dato_a_escribir);
+	}
+	free(dato_a_escribir);
 }
 
 void escribir_bloque_asignado(int bloque){

@@ -242,7 +242,7 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 					//config_save(archivo_pokemon);
 					//posicion = atoi(list_get(bloques,i));
 					dato_a_escribir = armar_dato_bloque(posicion,string_itoa(nueva_cantidad));
-					escribir_bloque(path_nombre_metadata,dato_a_escribir);
+					escribir_bloque_v2(path_nombre_metadata,dato_a_escribir);
 					//bitarray_set_bit(bitmap,posicion);
 					//config_destroy(archivo_pokemon);
 				//}
@@ -253,7 +253,7 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 					//config_save(archivo_pokemon);
 					//posicion = atoi(list_get(bloques,i));
 					dato_a_escribir = armar_dato_bloque(posicion,string_itoa(cantidad));
-					escribir_bloque(path_nombre_metadata,dato_a_escribir);
+					escribir_bloque_v2(path_nombre_metadata,dato_a_escribir);
 					//bitarray_set_bit(bitmap,posicion);
 					//config_destroy(archivo_pokemon);
 				//}
