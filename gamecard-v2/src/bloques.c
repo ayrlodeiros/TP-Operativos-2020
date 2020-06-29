@@ -134,11 +134,10 @@ void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir){
 	free(path_bloque);
 }
 
-void escribir_bloque_v2(char* path_nombre_metadata,char* dato){
+void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
+
 	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_nombre_metadata);
-	char* dato_a_escribir = string_new();
-	string_append(&dato_a_escribir,dato);
-	string_append(&dato_a_escribir,"/");
+
 	int tamanio_dato = strlen(dato_a_escribir);
 
 	//Si el dato no entra en el bloque
@@ -174,8 +173,107 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato){
 	else{
 		agregar_dato_al_bloque(path_nombre_metadata,dato_a_escribir);
 	}
-	free(dato_a_escribir);
 }
+
+//trae todas los inserts de esa url, que es la particion.bin o el .tmp
+void leer_datos(char* path_metadata_config, t_list* lista_de_datos){
+	FILE *archivo;
+	int tamanio_archivo;
+	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
+	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+	free(lista_de_bloques_string);
+	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
+
+	char* datos = string_new();
+	char* path_bloque; // url de cada block particular
+	char* pivot;
+	struct stat st;
+	for(int i = 0; i<size; i++)
+	{
+		path_bloque = devolver_path_dato(string_itoa(i));
+		stat(path_bloque,&st);
+		tamanio_archivo = st.st_size;
+
+		pivot = malloc(tamanio_archivo+1);
+
+		archivo = fopen(path_bloque,"r");
+		fread(pivot,tamanio_archivo,1,archivo);
+		fclose(archivo);
+		pivot[tamanio_archivo] = '\0';
+
+		if(strcmp(pivot,"&")) //si no es igual a "&" lo agrego a la lista de inserts
+			string_append(&datos,pivot);
+
+		free(lista_de_bloques[i]);
+		free(pivot);
+	}
+
+	agregar_datos_a_la_lista(datos,lista_de_datos); //parsea el char *inserts por \n y los mete en la lista
+	free(datos);
+
+	free(lista_de_bloques);
+}
+
+int se_encontro_la_posicion(char* path_metadata_config, char* posicion_a_buscar){
+	FILE *archivo;
+	int tamanio_archivo;
+	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
+	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+	free(lista_de_bloques_string);
+	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
+
+	log_info(nuestro_log,"PRUEBA 3");
+	char* path_bloque; // url de cada block particular
+	char* pivot = string_new();
+	struct stat st;
+	for(int i = 0; i<size; i++)
+	{
+		path_bloque = devolver_path_dato(string_itoa(i));
+		stat(path_bloque,&st);
+		tamanio_archivo = st.st_size;
+
+		pivot = malloc(tamanio_archivo+1);
+
+		archivo = fopen(path_bloque,"r");
+		fread(pivot,tamanio_archivo,1,archivo);
+		char* posicion = string_split(pivot,"=");
+		fclose(archivo);
+		pivot[tamanio_archivo] = '\0';
+
+		if(!strcmp(posicion,posicion_a_buscar)){
+			free(lista_de_bloques[i]);
+			free(pivot);
+			free(posicion);
+			return 1;
+		}
+
+
+		free(lista_de_bloques[i]);
+		free(pivot);
+		free(posicion);
+	}
+	log_info(nuestro_log,"PRUEBA 4");
+	free(pivot);
+
+	free(lista_de_bloques);
+	log_info(nuestro_log,"PRUEBA 5");
+	return 0;
+}
+
+void agregar_datos_a_la_lista(char *datos, t_list* lista){
+	if(!strcmp(datos,"")) return; //si viene vacio no agrego nada
+
+	char** lista_de_datos = string_split(datos,"\n");
+	char* pivot;
+	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
+	{
+		pivot = string_duplicate(lista_de_datos[i]);
+		list_add(lista,pivot);
+		free(lista_de_datos[i]);
+	}
+	free(lista_de_datos);
+}
+
 
 void escribir_bloque_asignado(int bloque){
 	char* path_bloque = devolver_path_dato(string_itoa(bloque));

@@ -49,6 +49,17 @@ int main(void)
 	guardar_informacion("Pikachu",52,22,17);
 	guardar_informacion("Pikachu",52,13,17);
 
+	char* path_nombre_metadata = string_new();
+	string_append(&path_nombre_metadata, devolver_path_files_metadata("Pikachu"));
+	string_append(&path_nombre_metadata, "/Metadata.bin");
+	t_list* unalista = list_create();
+	leer_datos(path_nombre_metadata,unalista);
+
+	for(int i = 0; i< list_size(unalista);i++){
+		log_info(nuestro_log,"DATO DE LA LISTA :%s",list_get(unalista,i));
+	}
+
+
 	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
 	}

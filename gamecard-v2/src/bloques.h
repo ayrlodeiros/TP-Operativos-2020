@@ -10,12 +10,14 @@
 
 #include "utils.h"
 
-void escribir_bloque(char* path_config,char* dato);
+//void escribir_bloque(char* path_config,char* dato);
 
 void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int tamanio_disponible_del_ultimo_bloque);
 void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir);
 void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir);
-
+void leer_datos(char* path_metadata_config, t_list* lista_de_datos);
+int se_encontro_la_posicion(char* path_metadata_config, char* posicion_a_buscar);
+void agregar_datos_a_la_lista(char *datos, t_list* lista);
 void escribir_bloque_asignado(int bloque);
 void limpiar_bloque(int bloque);
 int se_creo_el_bloque();
