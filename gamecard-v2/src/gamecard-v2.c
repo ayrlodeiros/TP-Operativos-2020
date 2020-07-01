@@ -52,17 +52,26 @@ int main(void)
 	char* path_nombre_metadata = string_new();
 	string_append(&path_nombre_metadata, devolver_path_files_metadata("Pikachu"));
 	string_append(&path_nombre_metadata, "/Metadata.bin");
-	t_list* unalista = list_create();
-	leer_datos(path_nombre_metadata,unalista);
-
-	for(int i = 0; i< list_size(unalista);i++){
-		log_info(nuestro_log,"DATO DE LA LISTA :%s",list_get(unalista,i));
-	}
-
 
 	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
 	}
+
+	t_dictionary* diccionario = leer_datos(path_nombre_metadata);
+
+	void mostrar_datos(char* key, int valor){
+		//log_info(nuestro_log,"Valor Key: %s",key);
+		//log_info(nuestro_log,"Valor Cantidad: %d",valor);
+	}
+	log_info(nuestro_log,"Valor Tamaño: %d",dictionary_size(diccionario));
+	//dictionary_iterator(diccionario,mostrar_datos);
+
+	/*
+	for(int i = 0; i < list_size(lista_de_posiciones);i++){
+		log_info(nuestro_log,"Valor Posiciones : %s", list_get(lista_de_posiciones,i));
+	}
+*/
+
 
 	//t_config* archivo_pokemon = config_create(devolver_path_dato(list_get(blocks,0)));
 	//log_info(nuestro_log,"1-5 :&d",config_get_int_value(archivo_pokemon,"1-5"));
@@ -86,6 +95,7 @@ int main(void)
 
 	log_info(nuestro_log,"Termine");
 	//log_info(nuestro_log,config_get_string_value(config,"miele"));
+	terminar_gamecard();
 	return EXIT_SUCCESS;
 }
 
@@ -113,6 +123,7 @@ void iniciar_gamecard() {
 
 void terminar_gamecard() {
 	destruir_config();
+	bitarray_destroy(bitmap);
 	log_destroy(logger);
 	log_destroy(nuestro_log);
 }

@@ -157,17 +157,18 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 		int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
 		if(obtener_primer_bloque_libre(path_nombre_metadata) != -1){
 			int bloque_nuevo_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
-			log_info(nuestro_log,"BLoque :%d",bloque_nuevo_a_escribir);
 			char* path_bloque_nuevo_a_escribir = devolver_path_dato(string_itoa(bloque_nuevo_a_escribir));
 
 			guardar_en_bloque(path_bloque_nuevo_a_escribir,dato_a_escribir_restante);
 
 			actualizar_tamanio_bloque(path_nombre_metadata);
+			free(path_bloque_nuevo_a_escribir);
 		}
 
 
 		free(a_escribir);
 		free(dato_a_escribir_restante);
+		free(path_bloque_a_escribir);
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
@@ -176,7 +177,7 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 }
 
 //trae todas los inserts de esa url, que es la particion.bin o el .tmp
-void leer_datos(char* path_metadata_config, t_list* lista_de_datos){
+t_dictionary* leer_datos(char* path_metadata_config){
 	FILE *archivo;
 	int tamanio_archivo;
 	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
@@ -184,7 +185,7 @@ void leer_datos(char* path_metadata_config, t_list* lista_de_datos){
 	free(lista_de_bloques_string);
 	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
 
-	char* datos = string_new();
+	char* dato = string_new();
 	char* path_bloque; // url de cada block particular
 	char* pivot;
 	struct stat st;
@@ -202,76 +203,111 @@ void leer_datos(char* path_metadata_config, t_list* lista_de_datos){
 		pivot[tamanio_archivo] = '\0';
 
 		if(strcmp(pivot,"&")) //si no es igual a "&" lo agrego a la lista de inserts
-			string_append(&datos,pivot);
+			string_append(&dato,pivot);
 
 		free(lista_de_bloques[i]);
 		free(pivot);
+		free(path_bloque);
 	}
 
-	agregar_datos_a_la_lista(datos,lista_de_datos); //parsea el char *inserts por \n y los mete en la lista
-	free(datos);
-
+	t_dictionary* un_diccionario = dictionary_create();
+	agregar_datos_al_diccionario(dato,un_diccionario);
+	 //parsea el char *inserts por \n y los mete en la lista
+	free(dato);
 	free(lista_de_bloques);
+	return un_diccionario;
 }
 
-int se_encontro_la_posicion(char* path_metadata_config, char* posicion_a_buscar){
+void buscar_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_buscar){
 	FILE *archivo;
-	int tamanio_archivo;
-	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
-	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
-	free(lista_de_bloques_string);
-	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
+		int tamanio_archivo;
+		char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
+		char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+		free(lista_de_bloques_string);
+		int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
 
-	log_info(nuestro_log,"PRUEBA 3");
-	char* path_bloque; // url de cada block particular
-	char* pivot = string_new();
-	struct stat st;
-	for(int i = 0; i<size; i++)
-	{
-		path_bloque = devolver_path_dato(string_itoa(i));
-		stat(path_bloque,&st);
-		tamanio_archivo = st.st_size;
+		char* dato = string_new();
+		char* path_bloque; // url de cada block particular
+		char* pivot;
+		struct stat st;
+		for(int i = 0; i<size; i++)
+		{
+			path_bloque = devolver_path_dato(string_itoa(i));
+			stat(path_bloque,&st);
+			tamanio_archivo = st.st_size;
 
-		pivot = malloc(tamanio_archivo+1);
+			pivot = malloc(tamanio_archivo+1);
 
-		archivo = fopen(path_bloque,"r");
-		fread(pivot,tamanio_archivo,1,archivo);
-		char* posicion = string_split(pivot,"=");
-		fclose(archivo);
-		pivot[tamanio_archivo] = '\0';
+			archivo = fopen(path_bloque,"r");
+			fread(pivot,tamanio_archivo,1,archivo);
+			fclose(archivo);
+			pivot[tamanio_archivo] = '\0';
 
-		if(!strcmp(posicion,posicion_a_buscar)){
+			if(strcmp(pivot,"&")) //si no es igual a "&" lo agrego a la lista de inserts
+				string_append(&dato,pivot);
+
 			free(lista_de_bloques[i]);
 			free(pivot);
-			free(posicion);
-			return 1;
+			free(path_bloque);
 		}
 
+		las_posiciones_son_iguales(dato,posicion_a_buscar);
+		 //parsea el char *inserts por \n y los mete en la lista
+		free(dato);
+		free(lista_de_bloques);
 
-		free(lista_de_bloques[i]);
-		free(pivot);
-		free(posicion);
-	}
-	log_info(nuestro_log,"PRUEBA 4");
-	free(pivot);
-
-	free(lista_de_bloques);
-	log_info(nuestro_log,"PRUEBA 5");
-	return 0;
 }
 
-void agregar_datos_a_la_lista(char *datos, t_list* lista){
-	if(!strcmp(datos,"")) return; //si viene vacio no agrego nada
+int las_posiciones_son_iguales(char *dato,char* posicion_a_buscar){
 
-	char** lista_de_datos = string_split(datos,"\n");
+
+
+	char** lista_de_datos = string_split(dato,"\n");
 	char* pivot;
 	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
 	{
 		pivot = string_duplicate(lista_de_datos[i]);
-		list_add(lista,pivot);
+		char** pivot_partido = string_split(pivot,"=");
+		char* posicion = pivot_partido[0];
+
+		if(string_equals_ignore_case(posicion,posicion_a_buscar)){
+
+		}
+
 		free(lista_de_datos[i]);
 	}
 	free(lista_de_datos);
+
+
+}
+
+t_dictionary* agregar_datos_al_diccionario(char *dato,t_dictionary* un_diccionario){
+
+
+
+	char** lista_de_datos = string_split(dato,"\n");
+	char* pivot;
+	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
+	{
+		pivot = string_duplicate(lista_de_datos[i]);
+		char** pivot_partido = string_split(pivot,"=");
+		char* posicion = pivot_partido[0];
+		int cantidad = atoi(pivot_partido[1]);
+		dictionary_put(un_diccionario,posicion,cantidad);
+		free(lista_de_datos[i]);
+	}
+	free(lista_de_datos);
+	return un_diccionario;
+
+	/*
+	 * if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
+		dictionary_put(objetivo_global, pokemon_objetivo, (void*) (dictionary_get(objetivo_global, pokemon_objetivo) + 1));
+	}
+	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
+	else {
+		int valor_inicial = 1;
+		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
+	 */
 }
 
 
