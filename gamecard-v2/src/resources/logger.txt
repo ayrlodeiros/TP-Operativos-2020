@@ -1,0 +1,3 @@
+[ERROR] 10:28:00:367 gamecard/(9502:9502): No se encontro pokemons en la posicion
+[INFO] 19:40:57:681 gamecard/(8191:8191): No se encontro al Pokemon
+[INFO] 19:41:31:152 gamecard/(8229:8229): No se encontro al Pokemon
