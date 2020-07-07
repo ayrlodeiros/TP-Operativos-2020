@@ -1,10 +1,10 @@
 src/gameboy-v2.o: ../src/gameboy-v2.c ../src/gameboy-v2.h \
- ../src/config-reader.h ../src/conexion.h ../src/message-queue.h
+ ../src/conexion.h ../src/message-queue.h ../src/config-reader.h
 
 ../src/gameboy-v2.h:
-
-../src/config-reader.h:
 
 ../src/conexion.h:
 
 ../src/message-queue.h:
+
+../src/config-reader.h:

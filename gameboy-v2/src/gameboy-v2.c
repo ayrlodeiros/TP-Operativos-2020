@@ -59,7 +59,7 @@ void gestionar_envio_appeared(char* argv[]){
 		enviar_mensaje_appeared_broker(*appeared_pokemon, socket,atoi(argv[6]));
 	}else if(!strcmp(tipo_modulo,"TEAM")){
 		socket = conectarse_a(TEAM);
-		enviar_mensaje_appeared_team(*appeared_pokemon, socket,0);
+		enviar_mensaje_appeared_team(*appeared_pokemon, socket);
 	}
 
 	//ESTE FREE PROVOCA EL SEG F
@@ -166,4 +166,5 @@ int cola_mensajes(char* nombre_cola){
 	}else if(!strcmp(nombre_cola,"LOCALIZED_POKEMON")){
 		return LOCALIZED;
 	}
+	return -1;
 }
