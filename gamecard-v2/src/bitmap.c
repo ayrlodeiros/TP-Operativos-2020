@@ -84,12 +84,10 @@ int obtener_nuevo_bloque_libre(){
 
 	//libera el bloque
 	void liberar_bloque(int bloque){
-		//pthread_mutex_lock(&MUTEX_BITARRAY);
-
+		pthread_mutex_lock(&Mutex_Bitmap);
 		bitarray_clean_bit(bitmap,bloque);
 		flag_bloques_libres = 1;
-
-		//pthread_mutex_unlock(&MUTEX_BITARRAY);
+		pthread_mutex_unlock(&Mutex_Bitmap);
 }
 
 

@@ -31,7 +31,6 @@ t_config* metadata_config;
 t_config* files_metadata_config;
 t_log* logger;
 t_log* nuestro_log;
-t_list* lista_de_posiciones;
 char* punto_montaje_tallgrass;
 
 t_bitarray* bitmap;
@@ -39,6 +38,8 @@ int bitmap_file_descriptor;
 int flag_bloques_libres;
 int ultimo_bloque_asignado;
 pthread_mutex_t Mutex_Bitmap;
+pthread_mutex_t asignar_bloque;
+pthread_mutex_t mutex_reescribir_bloques;
 
 typedef struct
 {
@@ -47,7 +48,7 @@ typedef struct
 } posicion;
 
 void crear_archivo_metadata(int block_size, int blocks);
-void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size, t_list* blocks,char* open);
+void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size,char* open);
 void creacion_archivo_files_metadata(char* path, char* directory,char* size, char* blocks,char* open);
 void crear_directorio(char* path_directorio);
 void crear_dato(char* numero);
@@ -67,9 +68,13 @@ char* obtener_directory_archivo_metadata_pokemon(char* nombre);
 char* devolver_path_directorio_files();
 int existe_el_directorio(char* path_directorio);
 int existe_el_pokemon(char* nombre_pokemon);
-char* armar_dato_bloque(char* posicion,char* cantidad);
+char* armar_dato_bloque(char* posicion,int cantidad);
 int se_puede_abrir_el_archivo(char* nombre_pokemon);
-int la_posicion_ya_existe_dentro_del_archivo(int posicion_x,int posicion_y, char* nombre_pokemon);
+int la_posicion_ya_existe_dentro_del_archivo(char* posicion_a_buscar,char* nombre_pokemon);
 void crear_lista_posiciones(char* key, int value);
-t_list* posiciones_del_pokemon(char* nombre_pokemon);
+t_list* posiciones_del_pokemon(char* path_nombre_metadata);
+void abrir_archivo(char* nombre_pokemon);
+void cerrar_archivo(char* nombre_pokemon);
+void resetear_bloques_metadata_pokemon(char* path_nombre_metadata);
+
 #endif /* UTILS_H_ */

@@ -140,10 +140,17 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 
 	int tamanio_dato = strlen(dato_a_escribir);
 
+	char* lista_de_bloques_string = devolver_lista_de_bloques(path_nombre_metadata);
+	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+	free(lista_de_bloques_string);
+	t_list* bloques_del_metadata = crear_t_list(lista_de_bloques);
+	list_destroy(bloques_del_metadata);
+	free(lista_de_bloques);
+	//free(lista_de_bloques_string);
+
 	//Si el dato no entra en el bloque
 	if(tamanio_dato > tamanio_disponible_del_ultimo_bloque - 1){
 		agregar_bloques_al_metadata(path_nombre_metadata,tamanio_dato,tamanio_disponible_del_ultimo_bloque);
-
 		int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
 		char* path_bloque_a_escribir = devolver_path_dato(string_itoa(bloque_a_escribir));
 		char* a_escribir = string_new();
@@ -151,7 +158,6 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 		guardar_en_bloque(path_bloque_a_escribir,a_escribir);
 
 		actualizar_tamanio_bloque(path_nombre_metadata);
-
 		char* dato_a_escribir_restante = string_new();
 		dato_a_escribir_restante = string_substring_from(dato_a_escribir, strlen(a_escribir));
 		int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
@@ -165,7 +171,6 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 			free(path_bloque_nuevo_a_escribir);
 		}
 
-
 		free(a_escribir);
 		free(dato_a_escribir_restante);
 		free(path_bloque_a_escribir);
@@ -177,31 +182,31 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 }
 
 //trae todas los inserts de esa url, que es la particion.bin o el .tmp
-t_dictionary* leer_datos(char* path_metadata_config){
+t_list* leer_datos(char* path_metadata_config){
 	FILE *archivo;
 	int tamanio_archivo;
 	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
 	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+	for(int i = 0 ; i< tamanio_de_lista(lista_de_bloques);i++){
+		log_info(nuestro_log,"Bloque de leer datos %d: %s de pokemon %s",i,lista_de_bloques[i],path_metadata_config);
+	}
 	free(lista_de_bloques_string);
 	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
-
 	char* dato = string_new();
 	char* path_bloque; // url de cada block particular
 	char* pivot;
 	struct stat st;
 	for(int i = 0; i<size; i++)
 	{
-		path_bloque = devolver_path_dato(string_itoa(i));
+		path_bloque = devolver_path_dato(lista_de_bloques[i]);
 		stat(path_bloque,&st);
 		tamanio_archivo = st.st_size;
 
 		pivot = malloc(tamanio_archivo+1);
-
 		archivo = fopen(path_bloque,"r");
 		fread(pivot,tamanio_archivo,1,archivo);
 		fclose(archivo);
 		pivot[tamanio_archivo] = '\0';
-
 		if(strcmp(pivot,"&")) //si no es igual a "&" lo agrego a la lista de inserts
 			string_append(&dato,pivot);
 
@@ -209,16 +214,144 @@ t_dictionary* leer_datos(char* path_metadata_config){
 		free(pivot);
 		free(path_bloque);
 	}
+	t_list* lista_de_posiciones = list_create();
 
-	t_dictionary* un_diccionario = dictionary_create();
-	agregar_datos_al_diccionario(dato,un_diccionario);
+	agregar_datos_a_la_lista(dato,lista_de_posiciones,path_metadata_config);
 	 //parsea el char *inserts por \n y los mete en la lista
 	free(dato);
 	free(lista_de_bloques);
-	return un_diccionario;
+	return lista_de_posiciones;
 }
 
-void buscar_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_buscar){
+int cantidad_en_posicion(t_list* lista_de_posiciones,char* posicion_a_buscar){
+
+	int posicion_encontrada = posicion_en_la_lista_de_posiciones_pokemon_a_buscar(lista_de_posiciones,posicion_a_buscar);
+	char* aux = string_new();
+	char* pivot_aux = list_get(lista_de_posiciones,posicion_encontrada);
+	string_append(&aux,pivot_aux);
+	char** aux_partido = string_split(aux,"=");
+	char* cantidad_encontrada_string = aux_partido[1];
+	int cantidad_encontrada = atoi(cantidad_encontrada_string);
+	free(aux);
+	free(aux_partido);
+
+	return cantidad_encontrada;
+
+
+}
+
+int se_encuentra_la_posicion_en_la_lista(t_list* lista_de_posiciones,char* posicion_a_buscar){
+	char* posicion;
+	if(list_is_empty(lista_de_posiciones)){
+		return 0;
+	}
+
+	for(int i = 0; i< list_size(lista_de_posiciones);i++){
+		posicion = list_get(lista_de_posiciones,i);
+		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			return 1;
+		}
+	}
+	return 0;
+}
+
+int se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons(t_list* lista_de_posiciones,char* posicion_a_buscar){
+	char* posicion;
+	if(list_is_empty(lista_de_posiciones)){
+		return 0;
+	}
+
+	for(int i = 0; i< list_size(lista_de_posiciones);i++){
+		char* aux = string_new();
+		char* pivot_aux = list_get(lista_de_posiciones,i);
+		string_append(&aux,pivot_aux);
+		char** aux_partido = string_split(aux,"=");
+		posicion = aux_partido[0];
+		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			return 1;
+		}
+
+		free(aux_partido);
+		free(aux);
+	}
+	return 0;
+}
+
+int posicion_en_la_lista_de_la_posicion_a_buscar(t_list* lista_de_posiciones,char* posicion_a_buscar){
+	char* posicion;
+	for(int i = 0; i< list_size(lista_de_posiciones);i++){
+		posicion = list_get(lista_de_posiciones,i);
+		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			return i;
+		}
+	}
+	return 0;
+}
+
+int posicion_en_la_lista_de_posiciones_pokemon_a_buscar(t_list* lista_de_posiciones,char* posicion_a_buscar){
+	char* posicion;
+	for(int i = 0; i< list_size(lista_de_posiciones);i++){
+		posicion = obtener_posicion_del_dato(list_get(lista_de_posiciones,i));
+		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			return i;
+		}
+	}
+	return 0;
+}
+
+
+void agregar_datos_a_la_lista(char *dato,t_list* lista_de_posiciones,char* path_nombre_metadata){
+
+	char** lista_de_datos = string_split(dato,"\n");
+	char* pivot;
+	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
+	{
+		pivot = string_duplicate(lista_de_datos[i]);
+		char** pivot_partido = string_split(pivot,"=");
+		char* posicion = pivot_partido[0];
+		char* cantidad_string = pivot_partido[1];
+		int cantidad = atoi(cantidad_string);
+		char* dato_a_guardar;
+		/*
+		int posicion_encontrada = posicion_en_la_lista_de_posiciones_pokemon_a_buscar(lista_de_posiciones,posicion);
+		if(se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons(lista_de_posiciones,posicion)){
+			log_info(nuestro_log,"ENTRE AL IF");
+			char* aux = string_new();
+			char* pivot_aux = list_remove(lista_de_posiciones,posicion_encontrada);
+			string_append(&aux,pivot_aux);
+			char** aux_partido = string_split(aux,"=");
+			int cantidad_encontrada = atoi(aux[1]);
+			int nueva_cantidad = cantidad + cantidad_encontrada;
+
+			dato_a_guardar = armar_dato_bloque(posicion,string_itoa(nueva_cantidad));
+			log_info(nuestro_log,"DATO A GUARDAR : %s",dato_a_guardar);
+			list_add(lista_de_posiciones,dato_a_guardar);
+			free(aux);
+			free(aux_partido);
+
+		}else{*/
+			dato_a_guardar = armar_dato_bloque(posicion,cantidad);
+			list_add(lista_de_posiciones,dato_a_guardar);
+		//}
+
+		free(lista_de_datos[i]);
+		//free(pivot_partido);
+		free(pivot);
+	}
+	free(lista_de_datos);
+
+	/*
+	 * if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
+		dictionary_put(objetivo_global, pokemon_objetivo, (void*) (dictionary_get(objetivo_global, pokemon_objetivo) + 1));
+	}
+	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
+	else {
+		int valor_inicial = 1;
+		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
+	 */
+}
+/*
+void reemplazar_cantidad_en_la_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_buscar,char* nuevo_cantidad){
 	FILE *archivo;
 		int tamanio_archivo;
 		char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
@@ -251,64 +384,108 @@ void buscar_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_b
 			free(path_bloque);
 		}
 
-		las_posiciones_son_iguales(dato,posicion_a_buscar);
+		las_posiciones_son_iguales(dato,posicion_a_buscar,nuevo_cantidad);
 		 //parsea el char *inserts por \n y los mete en la lista
 		free(dato);
 		free(lista_de_bloques);
 
 }
+*/
 
-int las_posiciones_son_iguales(char *dato,char* posicion_a_buscar){
+void borrar_posicion(t_list* lista_de_posiciones, char* dato_a_escribir){
+	char* posicion_nueva = obtener_posicion_del_dato(dato_a_escribir);
+	int indice = posicion_en_la_lista_de_posiciones_pokemon_a_buscar(lista_de_posiciones,posicion_nueva);
+	free(list_remove(lista_de_posiciones,indice));
+	return;
+}
 
+char* obtener_posicion_del_dato(char* dato_a_escribir){
+	char* aux;
+	char** aux_partido;
+	aux = string_new();
+	string_append(&aux,dato_a_escribir);
+	aux_partido = string_split(aux,"=");
+	char* posicion = aux_partido[0];
+	free(aux);
+	free(aux_partido);
+	return posicion;
+}
 
+int obtener_cantidad_del_dato(char* dato_a_escribir){
+	char* aux;
+	char** aux_partido;
+	aux = string_new();
+	string_append(&aux,dato_a_escribir);
+	aux_partido = string_split(aux,"=");
+	int cantidad = atoi(aux_partido[1]);
+	free(aux);
+	free(aux_partido);
+	return cantidad;
+}
+
+void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
+
+	pthread_mutex_lock(&mutex_reescribir_bloques);
+	char* lista_de_bloques_string = devolver_lista_de_bloques(path_nombre_metadata);
+	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+	free(lista_de_bloques_string);
+	int size = tamanio_de_lista(lista_de_bloques);
+	t_list* bloques = crear_t_list(lista_de_bloques);
+	t_list* lista_de_posiciones = leer_datos(path_nombre_metadata);
+	borrar_posicion(lista_de_posiciones,dato_a_escribir);
+
+	if(obtener_cantidad_del_dato(dato_a_escribir) != 0){
+		list_add(lista_de_posiciones,dato_a_escribir);
+	}
+	for(int i = 0; i < size; i++){
+		int bloque_a_limpiar = atoi(lista_de_bloques[i]);
+		limpiar_bloque(bloque_a_limpiar);
+	}
+	resetear_bloques_metadata_pokemon(path_nombre_metadata);
+	for(int j = 0 ; j < list_size(lista_de_posiciones); j++){
+		escribir_bloque_v2(path_nombre_metadata,list_get(lista_de_posiciones,j));
+	}
+
+	pthread_mutex_unlock(&mutex_reescribir_bloques);
+	//free(path_nombre_metadata);
+
+}
+
+/*
+void las_posiciones_son_iguales(char *dato,char* posicion_a_buscar,char* nuevo_cantidad){
 
 	char** lista_de_datos = string_split(dato,"\n");
 	char* pivot;
 	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
 	{
+
 		pivot = string_duplicate(lista_de_datos[i]);
 		char** pivot_partido = string_split(pivot,"=");
 		char* posicion = pivot_partido[0];
+		char* cantidad = pivot_partido[1];
+
+		log_info(nuestro_log,"Posicion a buscar : %s",posicion_a_buscar);
+		log_info(nuestro_log,"Posicion : %s",posicion);
 
 		if(string_equals_ignore_case(posicion,posicion_a_buscar)){
+			int largo_cantidad = strlen(cantidad);
+			int largo_nueva_cantidad = strlen(nuevo_cantidad);
 
+			if(largo_cantidad == largo_nueva_cantidad){
+
+			}
+
+
+			log_info(nuestro_log,"Se encontro la posicion : %s", posicion_a_buscar);
+			free(lista_de_datos[i]);
+			return;
 		}
-
-		free(lista_de_datos[i]);
 	}
 	free(lista_de_datos);
-
+	log_info(nuestro_log,"NO se encontro la posicion : %s", posicion_a_buscar);
 
 }
-
-t_dictionary* agregar_datos_al_diccionario(char *dato,t_dictionary* un_diccionario){
-
-
-
-	char** lista_de_datos = string_split(dato,"\n");
-	char* pivot;
-	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
-	{
-		pivot = string_duplicate(lista_de_datos[i]);
-		char** pivot_partido = string_split(pivot,"=");
-		char* posicion = pivot_partido[0];
-		int cantidad = atoi(pivot_partido[1]);
-		dictionary_put(un_diccionario,posicion,cantidad);
-		free(lista_de_datos[i]);
-	}
-	free(lista_de_datos);
-	return un_diccionario;
-
-	/*
-	 * if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
-		dictionary_put(objetivo_global, pokemon_objetivo, (void*) (dictionary_get(objetivo_global, pokemon_objetivo) + 1));
-	}
-	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
-	else {
-		int valor_inicial = 1;
-		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
-	 */
-}
+*/
 
 
 void escribir_bloque_asignado(int bloque){
@@ -326,11 +503,10 @@ void escribir_bloque_asignado(int bloque){
 
 //limpio el contenido del bloque y lo libero en el bitarray
 void limpiar_bloque(int bloque){
-	char* path_bloque = devolver_path_dato(bloque);
+	char* path_bloque = devolver_path_dato(string_itoa(bloque));
 
 	FILE *archivo = fopen(path_bloque,"w"); //limpio el archivo
 	fclose(archivo);
-
 	liberar_bloque(bloque); //libero en bitarray
 
 	free(path_bloque);
@@ -338,7 +514,7 @@ void limpiar_bloque(int bloque){
 
 
 int se_creo_el_bloque(){
-	/*char* path_bloque = devolver_path_directorio("/Blocks");
+	char* path_bloque = devolver_path_directorio("/Blocks");
 	string_append(&path_bloque,"0.bin");
 
 	if(access(path_bloque,F_OK) != -1){
@@ -348,7 +524,7 @@ int se_creo_el_bloque(){
 	else {
 		free(path_bloque);
 		return false;
-	}*/
+	}
 }
 
 void crear_bloque(){ //ANDA BIEN
@@ -512,8 +688,8 @@ void modificar_bloque(char* path_particion, char* lista_bloques){
 //no deberia salir del for, osea tiene que tener siempre asignado un bloque libre al menos
 //-1 si sale del for, pero nodeberia pasar
 //te devuelve el primer bloque libre de la tabla
-int obtener_primer_bloque_libre(char* path_bloque){
-	char* lista_bloques_string = devolver_lista_de_bloques(path_bloque);
+int obtener_primer_bloque_libre(char* path_nombre_metadata){
+	char* lista_bloques_string = devolver_lista_de_bloques(path_nombre_metadata);
 	char** lista_de_bloques = string_get_string_as_array(lista_bloques_string);
 	int valor_en_int;
 	free(lista_bloques_string);

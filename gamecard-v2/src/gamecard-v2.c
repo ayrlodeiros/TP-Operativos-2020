@@ -3,18 +3,11 @@
 int main(void)
 {
 	iniciar_gamecard();
-	t_list* blocks = list_create();
-
-	//list_add(blocks,82);
-	//list_add(blocks,21);
-	//list_add(blocks,3);
-	list_add(blocks,0);
 
 
-	crear_archivo_files_metadata("Pikachu","N",250,blocks,"N");
-
-	//guardar_informacion("Pikachu",10,50,22);
-	guardar_informacion("Pikachu",10,50,1111);
+	guardar_informacion("Pikachu",105,50,22);
+	guardar_informacion("Squirtle",105,50,10);
+	guardar_informacion("Pikachu",105,50,1111);
 	guardar_informacion("Pikachu",11,51,1111);
 	guardar_informacion("Pikachu",12,52,1111);
 	guardar_informacion("Pikachu",13,53,1111);
@@ -22,7 +15,7 @@ int main(void)
 	guardar_informacion("Pikachu",15,55,1111);
 	guardar_informacion("Pikachu",155,555,1111);
 	guardar_informacion("Pikachu",17,57,1111);
-	guardar_informacion("Pikachu",1,5,10);
+	guardar_informacion("Pikachu",19,5,10);
 	guardar_informacion("Pikachu",5,3,17);
 	guardar_informacion("Pikachu",60,5,10);
 	guardar_informacion("Pikachu",1,2,17);
@@ -30,7 +23,7 @@ int main(void)
 	guardar_informacion("Pikachu",1,5,17);
 	guardar_informacion("Pikachu",4,7,100);
 	guardar_informacion("Pikachu",9,12,18);
-	guardar_informacion("Pikachu",5,3,17);
+	guardar_informacion("Pikachu",5,3,17); // => ROMPE CON ESTE GUARDAR
 	guardar_informacion("Pikachu",6,5,10);
 	guardar_informacion("Pikachu",1,2,17);
 	guardar_informacion("Pikachu",12,3,10);
@@ -48,50 +41,18 @@ int main(void)
 	guardar_informacion("Pikachu",52,61,17);
 	guardar_informacion("Pikachu",52,22,17);
 	guardar_informacion("Pikachu",52,13,17);
+	guardar_informacion("Pikachu",1,5,1000);
+	guardar_informacion("Pikachu",512,621,17);
+	guardar_informacion("Pikachu",100,12,18);
 
-	char* path_nombre_metadata = string_new();
-	string_append(&path_nombre_metadata, devolver_path_files_metadata("Pikachu"));
-	string_append(&path_nombre_metadata, "/Metadata.bin");
+
+
+
+	//buscar_posicion_en_el_archivo(path_nombre_metadata,"52-13");
 
 	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
 	}
-
-	t_dictionary* diccionario = leer_datos(path_nombre_metadata);
-
-	void mostrar_datos(char* key, int valor){
-		//log_info(nuestro_log,"Valor Key: %s",key);
-		//log_info(nuestro_log,"Valor Cantidad: %d",valor);
-	}
-	log_info(nuestro_log,"Valor Tamaño: %d",dictionary_size(diccionario));
-	//dictionary_iterator(diccionario,mostrar_datos);
-
-	/*
-	for(int i = 0; i < list_size(lista_de_posiciones);i++){
-		log_info(nuestro_log,"Valor Posiciones : %s", list_get(lista_de_posiciones,i));
-	}
-*/
-
-
-	//t_config* archivo_pokemon = config_create(devolver_path_dato(list_get(blocks,0)));
-	//log_info(nuestro_log,"1-5 :&d",config_get_int_value(archivo_pokemon,"1-5"));
-
-/*
-	log_info(nuestro_log,"tiempo_de_reintento_conexion : %d", leer_tiempo_de_reintento_conexion());
-	log_info(nuestro_log,"tiempo_de_reintento_operacion : %d", leer_tiempo_de_reintento_operacion());
-	log_info(nuestro_log,"tiempo_retardo_operacion : %d", leer_tiempo_retardo_operacion());
-	log_info(nuestro_log,"leer_punto_montaje_tallgrass : %s", leer_punto_montaje_tallgrass());
-	log_info(nuestro_log,"ip_broker : %s", leer_ip_broker());
-	log_info(nuestro_log,"leer_puerto_broker : %d", leer_puerto_broker());
-
-	log_info(nuestro_log,"BLOCK_SIZE : %d", obtener_block_size());
-	log_info(nuestro_log,"BLOCKS : %d", obtener_blocks());
-	log_info(nuestro_log,"MAGIC_NUMBER : %s", obtener_magic_number());
-*/
-
-	//log_info(nuestro_log,"Directory : %s", obtener_directory_archivo_metadata_pokemon("/Pikachu"));
-	//log_info(nuestro_log,"Size : %d", obtener_size_archivo_metadata_pokemon("/Pikachu"));
-	//log_info(nuestro_log,"Open : %s", obtener_open_archivo_metadata_pokemon("/Pikachu"));
 
 	log_info(nuestro_log,"Termine");
 	//log_info(nuestro_log,config_get_string_value(config,"miele"));
@@ -110,6 +71,8 @@ void iniciar_gamecard() {
 	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y","0","","N");
 
 	pthread_mutex_init(&Mutex_Bitmap,NULL);
+	pthread_mutex_init(&asignar_bloque,NULL);
+	pthread_mutex_init(&mutex_reescribir_bloques,NULL);
 
 	//Iniciamos las variables globales del constructor
 	flag_bloques_libres = 1; //hay bloques libres
@@ -119,6 +82,7 @@ void iniciar_gamecard() {
 		crear_bloque();
 	}
 	crear_bitmap(); //levanto el bitarray;
+
 }
 
 void terminar_gamecard() {
