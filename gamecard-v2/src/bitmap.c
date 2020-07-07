@@ -47,6 +47,16 @@ int obtener_nuevo_bloque_libre(){
 	int bloques = obtener_blocks();
 	int bloque_aux = ultimo_bloque_asignado;
 	int i;
+
+	for(i = 0; i < bloques; i++){
+		if(!bitarray_test_bit(bitmap,i)){
+			msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
+			pthread_mutex_unlock(&Mutex_Bitmap);
+			return i;
+		}
+		//else bloque_aux++;//vas al proximo bloque
+	}
+	/*
 	for(i = ultimo_bloque_asignado; i < bloques; i++){
 		if(!bitarray_test_bit(bitmap,bloque_aux)){
 			//bitarray_set_bit(bitmap,bloque_aux);
@@ -72,6 +82,7 @@ int obtener_nuevo_bloque_libre(){
 		else bloque_aux++;
 	//		i++;
 	}
+	*/
 	flag_bloques_libres = 0; // 0 si no hay libres, 1 si los hay
 	pthread_mutex_unlock(&Mutex_Bitmap);
 	return -1; // salio del while, por lo que no hay bloque libres/

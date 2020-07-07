@@ -1,0 +1,507 @@
+[INFO] 20:21:11:82 gamecard/(16825:16825): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 20:21:11:868 gamecard/(16825:16825): TERMINE DE CREAR BITMAP
+[INFO] 20:21:11:870 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:870 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:871 gamecard/(16825:16825): termine de escribir el dato: 105-50=22
+ en pokemon Pikachu
+[INFO] 20:21:11:874 gamecard/(16825:16825): Bloque 1: 1 del pokemon Squirtle
+[INFO] 20:21:11:874 gamecard/(16825:16825): Bloque de leer datos 0: 1 de pokemon /home/utnso/Escritorio/tall-grass/Files/Squirtle/Metadata.bin
+[INFO] 20:21:11:874 gamecard/(16825:16825): termine de escribir el dato: 105-50=10
+ en pokemon Squirtle
+[INFO] 20:21:11:875 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:875 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:875 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:875 gamecard/(16825:16825): Dato de la posicion 0: 105-50=22
+
+[INFO] 20:21:11:875 gamecard/(16825:16825): posicion de cant sumada :105-50
+[INFO] 20:21:11:875 gamecard/(16825:16825): Cantidad sumada :1133
+[INFO] 20:21:11:876 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:877 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:877 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:878 gamecard/(16825:16825): termine de escribir el dato: 11-51=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:878 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:879 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:879 gamecard/(16825:16825): termine de escribir el dato: 12-52=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:880 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:880 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:883 gamecard/(16825:16825): termine de escribir el dato: 13-53=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:883 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:883 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:884 gamecard/(16825:16825): termine de escribir el dato: 14-54=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:884 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:885 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:890 gamecard/(16825:16825): termine de escribir el dato: 15-55=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:890 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:890 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:890 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:890 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:891 gamecard/(16825:16825): termine de escribir el dato: 155-555=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:895 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:895 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:895 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:895 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:896 gamecard/(16825:16825): termine de escribir el dato: 17-57=1111
+ en pokemon Pikachu
+[INFO] 20:21:11:896 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:896 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:896 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:896 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:897 gamecard/(16825:16825): termine de escribir el dato: 19-5=10
+ en pokemon Pikachu
+[INFO] 20:21:11:897 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:897 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:897 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:897 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:898 gamecard/(16825:16825): termine de escribir el dato: 5-3=17
+ en pokemon Pikachu
+[INFO] 20:21:11:898 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:898 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:898 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:898 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:899 gamecard/(16825:16825): termine de escribir el dato: 60-5=10
+ en pokemon Pikachu
+[INFO] 20:21:11:899 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:900 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:900 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:900 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:900 gamecard/(16825:16825): termine de escribir el dato: 1-2=17
+ en pokemon Pikachu
+[INFO] 20:21:11:904 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:904 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:904 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:904 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:918 gamecard/(16825:16825): termine de escribir el dato: 12-3=100
+ en pokemon Pikachu
+[INFO] 20:21:11:919 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:919 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:919 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:11:919 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:919 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:919 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:920 gamecard/(16825:16825): termine de escribir el dato: 1-5=17
+ en pokemon Pikachu
+[INFO] 20:21:11:923 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:923 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:923 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:11:923 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:924 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:924 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:924 gamecard/(16825:16825): termine de escribir el dato: 4-7=100
+ en pokemon Pikachu
+[INFO] 20:21:11:924 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:924 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:925 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:11:925 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:925 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:925 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:925 gamecard/(16825:16825): termine de escribir el dato: 9-12=18
+ en pokemon Pikachu
+[INFO] 20:21:11:926 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:927 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 0: 105-50=1133
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 1: 11-51=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 2: 12-52=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 3: 13-53=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 4: 14-54=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 5: 15-55=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 6: 155-555=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 7: 17-57=1111
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 8: 19-5=10
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 9: 5-3=17
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 10: 60-5=10
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 11: 1-2=17
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 12: 12-3=100
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 13: 1-5=17
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 14: 4-7=100
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): Dato de la posicion 15: 9-12=18
+
+[INFO] 20:21:11:928 gamecard/(16825:16825): posicion de cant sumada :5-3
+[INFO] 20:21:11:931 gamecard/(16825:16825): Cantidad sumada :34
+[INFO] 20:21:11:931 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:931 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:931 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:974 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:980 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:980 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:11:980 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:980 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:980 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:981 gamecard/(16825:16825): termine de escribir el dato: 6-5=10
+ en pokemon Pikachu
+[INFO] 20:21:11:985 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:11:985 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:11:985 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:11:985 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:985 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:985 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:986 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:987 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:993 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 0: 105-50=1133
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 1: 11-51=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 2: 12-52=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 3: 13-53=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 4: 14-54=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 5: 15-55=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 6: 155-555=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 7: 17-57=1111
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 8: 19-5=10
+
+[INFO] 20:21:11:994 gamecard/(16825:16825): Dato de la posicion 9: 60-5=10
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 10: 1-2=17
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 11: 12-3=100
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 12: 1-5=17
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 13: 4-7=100
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 14: 9-12=18
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 15: 5-3=34
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): Dato de la posicion 16: 6-5=10
+
+[INFO] 20:21:11:995 gamecard/(16825:16825): posicion de cant sumada :1-2
+[INFO] 20:21:11:995 gamecard/(16825:16825): Cantidad sumada :34
+[INFO] 20:21:11:995 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:995 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:995 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:51 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:53 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:54 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:54 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:54 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:54 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:55 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:55 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:55 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 0: 105-50=1133
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 1: 11-51=1111
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 2: 12-52=1111
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 3: 13-53=1111
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 4: 14-54=1111
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 5: 15-55=1111
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 6: 155-555=1111
+
+[INFO] 20:21:12:56 gamecard/(16825:16825): Dato de la posicion 7: 17-57=1111
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 8: 19-5=10
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 9: 60-5=10
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 10: 12-3=100
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 11: 1-5=17
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 12: 4-7=100
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 13: 9-12=18
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 14: 5-3=34
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 15: 6-5=10
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): Dato de la posicion 16: 1-2=34
+
+[INFO] 20:21:12:57 gamecard/(16825:16825): posicion de cant sumada :12-3
+[INFO] 20:21:12:57 gamecard/(16825:16825): Cantidad sumada :110
+[INFO] 20:21:12:58 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:58 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:58 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:144 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:147 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:147 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:147 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:147 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:147 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:148 gamecard/(16825:16825): termine de escribir el dato: 10-1=17
+ en pokemon Pikachu
+[INFO] 20:21:12:149 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:149 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:149 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:149 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:149 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:149 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:150 gamecard/(16825:16825): termine de escribir el dato: 10-2=1
+ en pokemon Pikachu
+[INFO] 20:21:12:152 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:152 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:152 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:152 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:155 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:155 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:156 gamecard/(16825:16825): termine de escribir el dato: 10-3=17
+ en pokemon Pikachu
+[INFO] 20:21:12:156 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:156 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:156 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:156 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:156 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:156 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:157 gamecard/(16825:16825): termine de escribir el dato: 10-4=17
+ en pokemon Pikachu
+[INFO] 20:21:12:157 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:158 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:158 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:158 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:158 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:158 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:177 gamecard/(16825:16825): termine de escribir el dato: 10-5=17
+ en pokemon Pikachu
+[INFO] 20:21:12:177 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:177 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:177 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:178 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:178 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:178 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:178 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:178 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:183 gamecard/(16825:16825): termine de escribir el dato: 10-6=17
+ en pokemon Pikachu
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:184 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:185 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:185 gamecard/(16825:16825): termine de escribir el dato: 55-6=17
+ en pokemon Pikachu
+[INFO] 20:21:12:186 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:186 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:186 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:186 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:186 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:186 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:187 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:187 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:188 gamecard/(16825:16825): termine de escribir el dato: 51-6=17
+ en pokemon Pikachu
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:193 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:194 gamecard/(16825:16825): termine de escribir el dato: 52-6=17
+ en pokemon Pikachu
+[INFO] 20:21:12:195 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:195 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:195 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:195 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:198 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:201 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:201 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:201 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:202 gamecard/(16825:16825): termine de escribir el dato: 1-555=10
+ en pokemon Pikachu
+[INFO] 20:21:12:204 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:207 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:208 gamecard/(16825:16825): termine de escribir el dato: 52-65=17
+ en pokemon Pikachu
+[INFO] 20:21:12:208 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:208 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:208 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:209 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:209 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:209 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:209 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:209 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:218 gamecard/(16825:16825): termine de escribir el dato: 52-61=17
+ en pokemon Pikachu
+[INFO] 20:21:12:220 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:220 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:220 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque 5: 5 del pokemon Pikachu
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:223 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:224 gamecard/(16825:16825): termine de escribir el dato: 52-22=17
+ en pokemon Pikachu
+[INFO] 20:21:12:225 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:225 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:225 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:225 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:225 gamecard/(16825:16825): Bloque 5: 5 del pokemon Pikachu
+[INFO] 20:21:12:228 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:229 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:229 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:229 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:229 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:230 gamecard/(16825:16825): termine de escribir el dato: 52-13=17
+ en pokemon Pikachu
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque 5: 5 del pokemon Pikachu
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:232 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:233 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:233 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:233 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:233 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:233 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:233 gamecard/(16825:16825): Dato de la posicion 0: 105-50=1133
+
+[INFO] 20:21:12:235 gamecard/(16825:16825): Dato de la posicion 1: 11-51=1111
+
+[INFO] 20:21:12:235 gamecard/(16825:16825): Dato de la posicion 2: 12-52=1111
+
+[INFO] 20:21:12:235 gamecard/(16825:16825): Dato de la posicion 3: 13-53=1111
+
+[INFO] 20:21:12:235 gamecard/(16825:16825): Dato de la posicion 4: 14-54=1111
+
+[INFO] 20:21:12:235 gamecard/(16825:16825): Dato de la posicion 5: 15-55=1111
+
+[INFO] 20:21:12:235 gamecard/(16825:16825): Dato de la posicion 6: 155-555=1111
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 7: 17-57=1111
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 8: 19-5=10
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 9: 60-5=10
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 10: 1-5=17
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 11: 4-7=100
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 12: 9-12=18
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 13: 5-3=34
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 14: 6-5=10
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 15: 1-2=34
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 16: 12-3=110
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 17: 10-1=17
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 18: 10-2=1
+
+[INFO] 20:21:12:236 gamecard/(16825:16825): Dato de la posicion 19: 10-3=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 20: 10-4=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 21: 10-5=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 22: 10-6=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 23: 55-6=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 24: 51-6=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 25: 52-6=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 26: 1-555=10
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 27: 52-65=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 28: 52-61=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 29: 52-22=17
+
+[INFO] 20:21:12:237 gamecard/(16825:16825): Dato de la posicion 30: 52-13=17
+
+[INFO] 20:21:12:238 gamecard/(16825:16825): posicion de cant sumada :1-5
+[INFO] 20:21:12:238 gamecard/(16825:16825): Cantidad sumada :1017
+[INFO] 20:21:12:238 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:238 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:238 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:238 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:238 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:324 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque 5: 5 del pokemon Pikachu
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:327 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:328 gamecard/(16825:16825): termine de escribir el dato: 512-621=17
+ en pokemon Pikachu
+[INFO] 20:21:12:328 gamecard/(16825:16825): Bloque 1: 0 del pokemon Pikachu
+[INFO] 20:21:12:329 gamecard/(16825:16825): Bloque 2: 2 del pokemon Pikachu
+[INFO] 20:21:12:329 gamecard/(16825:16825): Bloque 3: 3 del pokemon Pikachu
+[INFO] 20:21:12:329 gamecard/(16825:16825): Bloque 4: 4 del pokemon Pikachu
+[INFO] 20:21:12:329 gamecard/(16825:16825): Bloque 5: 5 del pokemon Pikachu
+[INFO] 20:21:12:329 gamecard/(16825:16825): Bloque de leer datos 0: 0 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:329 gamecard/(16825:16825): Bloque de leer datos 1: 2 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:331 gamecard/(16825:16825): Bloque de leer datos 2: 3 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:331 gamecard/(16825:16825): Bloque de leer datos 3: 4 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:331 gamecard/(16825:16825): Bloque de leer datos 4: 5 de pokemon /home/utnso/Escritorio/tall-grass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:12:332 gamecard/(16825:16825): termine de escribir el dato: 100-12=18
+ en pokemon Pikachu
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 0: 1
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 1: 1
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 2: 1
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 3: 1
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 4: 1
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 5: 1
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 6: 0
+[INFO] 20:21:12:332 gamecard/(16825:16825): VALOR DEL BITMAP 7: 0
+[INFO] 20:21:12:333 gamecard/(16825:16825): VALOR DEL BITMAP 8: 0
+[INFO] 20:21:12:333 gamecard/(16825:16825): VALOR DEL BITMAP 9: 0
+[INFO] 20:21:12:333 gamecard/(16825:16825): Termine

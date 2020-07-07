@@ -23,7 +23,7 @@ int main(void)
 	guardar_informacion("Pikachu",1,5,17);
 	guardar_informacion("Pikachu",4,7,100);
 	guardar_informacion("Pikachu",9,12,18);
-	guardar_informacion("Pikachu",5,3,17); // => ROMPE CON ESTE GUARDAR
+	guardar_informacion("Pikachu",5,3,17);
 	guardar_informacion("Pikachu",6,5,10);
 	guardar_informacion("Pikachu",1,2,17);
 	guardar_informacion("Pikachu",12,3,10);
