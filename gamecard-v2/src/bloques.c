@@ -109,6 +109,7 @@ free(path_directorio_bloque);
 }
 */
 void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int tamanio_disponible_del_ultimo_bloque){
+	//pthread_mutex_lock(&Mutex_Bitmap);
 	int bloques_necesarios;
 	if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
 	//si entra justo le doy los bloques justos
@@ -120,8 +121,8 @@ void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int
 	//le asigno todos los bloques que necesita
 	for(int i = 0; i < bloques_necesarios; i++){
 		agregar_bloque(path_nombre_metadata);
-		bitarray_set_bit(bitmap,i);
 	}
+	//pthread_mutex_unlock(&Mutex_Bitmap);
 }
 
 void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir){
@@ -149,7 +150,9 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 	//free(lista_de_bloques_string);
 
 	//Si el dato no entra en el bloque
-	if(tamanio_dato > tamanio_disponible_del_ultimo_bloque - 1){
+	// DATO = 111111111-55555555 = 999999
+	// TAM = 8 => 1111111"\n" 11-55555"\n"
+	if(tamanio_dato > tamanio_disponible_del_ultimo_bloque){
 		agregar_bloques_al_metadata(path_nombre_metadata,tamanio_dato,tamanio_disponible_del_ultimo_bloque);
 		int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
 		char* path_bloque_a_escribir = devolver_path_dato(string_itoa(bloque_a_escribir));
@@ -160,7 +163,10 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 		actualizar_tamanio_bloque(path_nombre_metadata);
 		char* dato_a_escribir_restante = string_new();
 		dato_a_escribir_restante = string_substring_from(dato_a_escribir, strlen(a_escribir));
-		int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
+
+		escribir_bloque_sin_asignar(path_nombre_metadata,dato_a_escribir_restante);
+
+		/*int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
 		if(obtener_primer_bloque_libre(path_nombre_metadata) != -1){
 			int bloque_nuevo_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
 			char* path_bloque_nuevo_a_escribir = devolver_path_dato(string_itoa(bloque_nuevo_a_escribir));
@@ -169,7 +175,7 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 
 			actualizar_tamanio_bloque(path_nombre_metadata);
 			free(path_bloque_nuevo_a_escribir);
-		}
+		}*/
 
 		free(a_escribir);
 		free(dato_a_escribir_restante);
@@ -181,15 +187,31 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 	}
 }
 
+void escribir_bloque_sin_asignar(char* path_nombre_metadata,char* dato_a_escribir_restante){
+
+
+	int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
+	char* path_bloque_a_escribir = devolver_path_dato(string_itoa(bloque_a_escribir));
+	char* a_escribir = string_new();
+	a_escribir = string_substring(dato_a_escribir_restante, 0, tamanio_libre_del_bloque(bloque_a_escribir));
+	guardar_en_bloque(path_bloque_a_escribir,a_escribir);
+	actualizar_tamanio_bloque(path_nombre_metadata);
+
+	if(string_length(dato_a_escribir_restante) > obtener_block_size()){
+		char* a_escribir_restante = string_new();
+		a_escribir_restante = string_substring_from(dato_a_escribir_restante, obtener_block_size());
+		escribir_bloque_sin_asignar(path_nombre_metadata,a_escribir_restante);
+	}
+
+
+}
+
 //trae todas los inserts de esa url, que es la particion.bin o el .tmp
 t_list* leer_datos(char* path_metadata_config){
 	FILE *archivo;
 	int tamanio_archivo;
 	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
 	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
-	for(int i = 0 ; i< tamanio_de_lista(lista_de_bloques);i++){
-		log_info(nuestro_log,"Bloque de leer datos %d: %s de pokemon %s",i,lista_de_bloques[i],path_metadata_config);
-	}
 	free(lista_de_bloques_string);
 	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
 	char* dato = string_new();
@@ -425,7 +447,7 @@ int obtener_cantidad_del_dato(char* dato_a_escribir){
 
 void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 
-	pthread_mutex_lock(&mutex_reescribir_bloques);
+	//pthread_mutex_lock(&Mutex_Bitmap);
 	char* lista_de_bloques_string = devolver_lista_de_bloques(path_nombre_metadata);
 	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
 	free(lista_de_bloques_string);
@@ -442,11 +464,12 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 		limpiar_bloque(bloque_a_limpiar);
 	}
 	resetear_bloques_metadata_pokemon(path_nombre_metadata);
+	log_info(nuestro_log,"reescribo posicion: %s",obtener_posicion_del_dato(dato_a_escribir));
 	for(int j = 0 ; j < list_size(lista_de_posiciones); j++){
 		escribir_bloque_v2(path_nombre_metadata,list_get(lista_de_posiciones,j));
 	}
 
-	pthread_mutex_unlock(&mutex_reescribir_bloques);
+	//pthread_mutex_unlock(&Mutex_Bitmap);
 	//free(path_nombre_metadata);
 
 }
@@ -540,14 +563,14 @@ void crear_bloque(){ //ANDA BIEN
 }
 
 void modificar_tamanio_bloque(char* path_bloque,int tamanio){
-	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
+	pthread_mutex_lock(&mutex_facu);
 	t_config* config = config_create(path_bloque);
 	char* tamanio_string = string_itoa(tamanio);
 	config_set_value(config,"SIZE",tamanio_string);
 	config_save(config);
 	config_destroy(config);
 	free(tamanio_string);
-	//pthread_mutex_unlock(&MUTEX_ELSOLUCIONADOR);
+	pthread_mutex_unlock(&mutex_facu);
 }
 
 //actualiza el tamano
@@ -643,6 +666,7 @@ int tamanio_libre_del_bloque(int bloque){
 void agregar_bloque(char* path_bloque){
 
 	int nuevo_bloque = obtener_nuevo_bloque_libre();
+	bitarray_set_bit(bitmap,nuevo_bloque);
 	char* lista_bloques_string = devolver_lista_de_bloques(path_bloque);
 	char** lista_bloques = string_get_string_as_array(lista_bloques_string);
 

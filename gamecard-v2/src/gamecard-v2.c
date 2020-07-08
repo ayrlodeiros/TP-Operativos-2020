@@ -5,7 +5,7 @@ int main(void)
 	iniciar_gamecard();
 
 
-	guardar_informacion("Pikachu",105,50,22);
+	guardar_informacion("Pikachu",105,50,226);
 	guardar_informacion("Squirtle",105,50,10);
 	guardar_informacion("Pikachu",105,50,1111);
 	guardar_informacion("Pikachu",11,51,1111);
@@ -27,7 +27,7 @@ int main(void)
 	guardar_informacion("Pikachu",6,5,10);
 	guardar_informacion("Pikachu",1,2,17);
 	guardar_informacion("Pikachu",12,3,10);
-	guardar_informacion("Pikachu",10,1,17);
+	guardar_informacion("Pikachu",10,1,17); // ACA ROMPE -> LA POSICION 12-3 = 10 la guarda bien
 	guardar_informacion("Pikachu",10,2,1);
 	guardar_informacion("Pikachu",10,3,17);
 	guardar_informacion("Pikachu",10,4,17);
@@ -45,8 +45,47 @@ int main(void)
 	guardar_informacion("Pikachu",512,621,17);
 	guardar_informacion("Pikachu",100,12,18);
 
+	guardar_informacion("Squirtle",1,1,10);
+	guardar_informacion("Squirtle",2,2,20);
+	guardar_informacion("Squirtle",3,3,30);
+	guardar_informacion("Squirtle",5,5,50);
 
 
+	t_list* posiciones = armar_mensaje_get("Pikachu");
+	if(!list_is_empty(posiciones)){
+		for(int i = 0; i<list_size(posiciones);i++ ){
+			log_info(nuestro_log,"Posicion %d : %s",i,list_get(posiciones,i));
+		}
+	}
+
+	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
+	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
+	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",100,202);
+	log_info(nuestro_log,"PRUEBA 0.0");
+	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",105,50);
+	log_info(nuestro_log,"PRUEBA 0.1");
+	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",105,50);
+	log_info(nuestro_log,"PRUEBA 0.2");
+	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",105,50);
+	log_info(nuestro_log,"PRUEBA 0.3");
+
+	posiciones = armar_mensaje_get("Pikachu");
+	if(!list_is_empty(posiciones)){
+		for(int i = 0; i<list_size(posiciones);i++ ){
+			log_info(nuestro_log,"Posicion %d : %s",i,list_get(posiciones,i));
+		}
+	}
+
+	log_info(nuestro_log,"PRUEBA 1");
+
+	disminuir_cantidad_de_pokemon_en_la_posicion("PokemonInexistente",105,50);
+
+	posiciones = armar_mensaje_get("Squirtle");
+	if(!list_is_empty(posiciones)){
+		for(int i = 0; i<list_size(posiciones);i++ ){
+			log_info(nuestro_log,"Posicion %d : %s",i,list_get(posiciones,i));
+		}
+	}
 
 	//buscar_posicion_en_el_archivo(path_nombre_metadata,"52-13");
 
@@ -67,12 +106,13 @@ void iniciar_gamecard() {
 	nuestro_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log.txt", "gamecard", true, LOG_LEVEL_INFO);
 	punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
 	crear_directorio(punto_montaje_tallgrass);
-	crear_archivo_metadata(64,5192);
+	crear_archivo_metadata(1,1000);
 	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y","0","","N");
 
 	pthread_mutex_init(&Mutex_Bitmap,NULL);
 	pthread_mutex_init(&asignar_bloque,NULL);
-	pthread_mutex_init(&mutex_reescribir_bloques,NULL);
+	pthread_mutex_init(&mutex_liberar_bloque,NULL);
+	pthread_mutex_init(&mutex_facu,NULL);
 
 	//Iniciamos las variables globales del constructor
 	flag_bloques_libres = 1; //hay bloques libres

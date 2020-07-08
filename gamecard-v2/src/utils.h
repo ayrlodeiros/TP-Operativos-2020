@@ -39,7 +39,8 @@ int flag_bloques_libres;
 int ultimo_bloque_asignado;
 pthread_mutex_t Mutex_Bitmap;
 pthread_mutex_t asignar_bloque;
-pthread_mutex_t mutex_reescribir_bloques;
+pthread_mutex_t mutex_liberar_bloque;
+pthread_mutex_t mutex_facu;
 
 typedef struct
 {
@@ -58,6 +59,7 @@ char* devolver_path_files_metadata(char* nombre_archivo);
 char* devolver_path_dato(char* numero);
 char* devolver_path_bitmap();
 char* obtener_magic_number();
+t_list* armar_mensaje_get(char* nombre_pokemon);
 int obtener_blocks();
 int obtener_block_size();
 char* obtener_open_archivo_metadata_pokemon(char* nombre);
