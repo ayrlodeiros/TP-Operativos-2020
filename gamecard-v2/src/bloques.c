@@ -433,6 +433,36 @@ char* obtener_posicion_del_dato(char* dato_a_escribir){
 	return posicion;
 }
 
+int obtener_posicion_x_del_dato(char* dato_a_escribir){
+
+	char* aux;
+	char* posicion = obtener_posicion_del_dato(dato_a_escribir);
+	char** posicion_partida;
+	aux = string_new();
+	string_append(&aux,posicion);
+	posicion_partida = string_split(aux,"-");
+	char* posicion_en_x = posicion_partida[0];
+	free(aux);
+	free(posicion_partida);
+	free(posicion);
+	return atoi(posicion_en_x);
+}
+
+int obtener_posicion_y_del_dato(char* dato_a_escribir){
+
+	char* aux;
+	char* posicion = obtener_posicion_del_dato(dato_a_escribir);
+	char** posicion_partida;
+	aux = string_new();
+	string_append(&aux,posicion);
+	posicion_partida = string_split(aux,"-");
+	char* posicion_en_y = posicion_partida[1];
+	free(aux);
+	free(posicion_partida);
+	free(posicion);
+	return atoi(posicion_en_y);
+}
+
 int obtener_cantidad_del_dato(char* dato_a_escribir){
 	char* aux;
 	char** aux_partido;

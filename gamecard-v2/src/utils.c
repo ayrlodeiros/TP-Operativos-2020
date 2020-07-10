@@ -229,6 +229,7 @@ int existe_el_directorio(char* path_directorio){
 
 	DIR* directorio_a_buscar = opendir(path_directorio);
 	if(directorio_a_buscar){
+		closedir(directorio_a_buscar);
 		return 1;
 	}
 	closedir(directorio_a_buscar);
@@ -277,7 +278,7 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 						dato_a_escribir = armar_dato_bloque(posicion,cantidad);
 						escribir_bloque_v2(path_nombre_metadata,dato_a_escribir);
 				}
-				sleep(leer_tiempo_retardo_operacion());
+				//sleep(leer_tiempo_retardo_operacion());
 				log_info(nuestro_log, "guarde informacion: %s de pokemon %s",dato_a_escribir,nombre_pokemon);
 				cerrar_archivo(nombre_pokemon);
 				free(dato_a_escribir);
@@ -392,7 +393,7 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 					log_error(logger,"No se encontro pokemons en la posicion");
 					log_error(nuestro_log,"No se encontro pokemons en la posicion");
 				}
-				sleep(leer_tiempo_retardo_operacion());
+				//sleep(leer_tiempo_retardo_operacion());
 				cerrar_archivo(nombre_pokemon);
 				list_destroy(bloques);
 			}

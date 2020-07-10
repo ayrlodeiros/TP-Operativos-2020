@@ -2,8 +2,17 @@
 
 int main(void)
 {
-	iniciar_gamecard();
 
+	//DATO = POSICION_X-POSICION_Y=CANTIDAD
+	//char* obtener_posicion_del_dato(char* dato_a_escribir) -> POSICION_X-POSICION_Y
+	//int obtener_cantidad_del_dato(char* dato_a_escribir) -> CANTIDAD
+
+	//disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2); -> CATCH
+	//NEW => void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int cantidad)
+	//GET => t_list* armar_mensaje_get(char* nombre_pokemon) => Devuelve una lista de DATOS
+
+
+	iniciar_gamecard();
 
 	guardar_informacion("Pikachu",105,50,226);
 	guardar_informacion("Squirtle",105,50,10);

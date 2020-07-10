@@ -21,6 +21,8 @@ int posicion_en_la_lista_de_posiciones_pokemon_a_buscar(t_list* lista_de_posicio
 int posicion_en_la_lista_de_la_posicion_a_buscar(t_list* lista_de_posiciones,char* posicion_a_buscar);
 int cantidad_en_posicion(t_list* lista_de_posiciones,char* posicion_a_buscar);
 char* obtener_posicion_del_dato(char* dato_a_escribir);
+int obtener_posicion_x_del_dato(char* dato_a_escribir);
+int obtener_posicion_y_del_dato(char* dato_a_escribir);
 int obtener_cantidad_del_dato(char* dato_a_escribir);
 void agregar_datos_a_la_lista(char *dato,t_list* lista_de_posiciones,char* path_nombre_metadata);
 void reemplazar_cantidad_en_la_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_buscar,char* nuevo_cantidad);
