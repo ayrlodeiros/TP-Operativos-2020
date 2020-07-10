@@ -1,113 +1,5 @@
 #include "bloques.h"
 
-/*
-//guarda la data en el archivo del path
-void escribir_bloque(char* path_config,char* dato){
-
-	char* path_bloque;
-	char* path_directorio_bloque = devolver_path_directorio("/Blocks");
-	int tamanio_disponible_del_ultimo_bloque = tamanio_libre_del_ultimo_bloque(path_config);
-	log_info(nuestro_log,"Tamanio Disponible:%d",tamanio_disponible_del_ultimo_bloque);
-
-
-	t_config* config_pokemon = config_create(path_config);
-
-	if(list_is_empty(obtener_blocks_archivo_metadata_pokemon("Pikachu"))){
-		guardar_en_bloque(obtener_primer_bloque_libre("kgaas"),posicion,cantidad);
-	}
-
-	//en el ultimo bloque -NO- hay espacio para guardar toda la info
-	int tamanio_dato = strlen(dato);
-	log_info(nuestro_log,"Tamaño dato :%d",tamanio_dato);
-	log_info(nuestro_log,"Tamaño disponible :%d",tamanio_disponible_del_ultimo_bloque);
-	if(tamanio_disponible_del_ultimo_bloque < tamanio_dato){
-		int bloques_necesarios;
-		if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
-			//si entra justo le doy los bloques justos
-			bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size();
-		}else{
-			//si no entra justo le doy un bloque demas
-			bloques_necesarios = (tamanio_dato-tamanio_disponible_del_ultimo_bloque) / obtener_block_size() + 1;
-		}
-		log_info(nuestro_log,"Bloques Necesarios :%d",bloques_necesarios);
-		//le asigno todos los bloques que necesita
-		for(int i = 0; i < bloques_necesarios; i++){
-			agregar_bloque(path_config);
-
-		}
-	}
-	//en el ultimo bloque hay espacio suficiente para guardar la info completa
-	else{
-		int ultimo_bloque = devolver_ultimo_bloque(path_config);
-		escribir_bloque_asignado(ultimo_bloque);
-		char* string_dato = string_itoa(devolver_ultimo_bloque(path_config));
-		path_bloque = devolver_path_dato(string_dato);
-		//agregar_bloque(path_config); //REVISAR ESTO
-		guardar_en_bloque(path_bloque,dato);
-		actualizar_tamanio_bloque(path_config);
-		free(path_bloque);
-		free(path_directorio_bloque);
-		return;
-	}
-	log_info(nuestro_log,"PRUEBA 1");
-
-	//aca llega solo si no entro en el "else" de arriba
-	int flag = 1;
-	int ultima_posicion_insertada = 0;
-	log_info(nuestro_log,"PRUEBA 2");
-	log_info(nuestro_log,"Bloques : %s",devolver_lista_de_bloques(path_config));
-	int bloque_a_escribir = obtener_primer_bloque_libre(path_config);
-	path_bloque = devolver_path_dato(string_itoa(bloque_a_escribir));
-	//lleno el bloque que estaba semicompleto
-	char* a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
-	char* restante = string_substring_from(dato, strlen(a_escribir));
-	log_info(nuestro_log,"DATO :%s",dato);
-	log_info(nuestro_log,"A_escribir :%s",a_escribir);
-	log_info(nuestro_log,"Restante :%s",restante);
-
-
-
-	guardar_en_bloque(path_bloque,a_escribir);
-	free(a_escribir);
-	ultima_posicion_insertada = tamanio_disponible_del_ultimo_bloque;
-	while(flag){
-
-		tamanio_dato = strlen(dato);
-
-		if(tamanio_dato >= tamanio_disponible_del_ultimo_bloque){ //si lo que queda no entra en un bloque
-
-			a_escribir = string_new();
-			a_escribir = string_substring(dato, ultima_posicion_insertada, tamanio_disponible_del_ultimo_bloque);
-			log_info(nuestro_log,"Agregue bloque asd");
-			log_info(nuestro_log,"Agregue bloque 0-0");
-			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
-			log_info(nuestro_log,"Agregue bloque 0");
-			guardar_en_bloque(path_bloque,restante);
-
-			ultima_posicion_insertada += obtener_block_size();
-			free(restante);
-			free(path_bloque);
-			log_info(nuestro_log,"Agregue bloque 1");
-
-		}
-		else{// si lo que queda entra en un bloque
-
-			restante = string_substring_from(dato, strlen(a_escribir));
-			path_bloque = devolver_path_dato(string_itoa(obtener_primer_bloque_libre(path_config)));
-
-			guardar_en_bloque(path_bloque,restante);
-
-			free(path_bloque);
-			free(a_escribir);
-			flag = 0; //condicion de corte, porque no queda mas nada que agregar
-		}//else
-
-	}//while
-	actualizar_tamanio_bloque(path_config);
-
-free(path_directorio_bloque);
-}
-*/
 void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int tamanio_disponible_del_ultimo_bloque){
 	//pthread_mutex_lock(&Mutex_Bitmap);
 	int bloques_necesarios;
@@ -130,6 +22,7 @@ void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir){
 	bitarray_set_bit(bitmap,ultimo_bloque);
 	char* string_dato = string_itoa(devolver_ultimo_bloque(path_nombre_metadata));
 	char* path_bloque = devolver_path_dato(string_dato);
+	free(string_dato);
 	guardar_en_bloque(path_bloque,dato_a_escribir);
 	actualizar_tamanio_bloque(path_nombre_metadata);
 	free(path_bloque);
@@ -247,9 +140,11 @@ int cantidad_en_posicion(t_list* lista_de_posiciones,char* posicion_a_buscar){
 	string_append(&aux,pivot_aux);
 	char** aux_partido = string_split(aux,"=");
 	char* cantidad_encontrada_string = aux_partido[1];
+	char* posicion = aux_partido[0];
 	int cantidad_encontrada = atoi(cantidad_encontrada_string);
 	free(aux);
 	free(aux_partido);
+	free(posicion);
 
 	return cantidad_encontrada;
 
@@ -339,47 +234,6 @@ void agregar_datos_a_la_lista(char *dato,t_list* lista_de_posiciones,char* path_
 	free(lista_de_datos);
 
 }
-/*
-void reemplazar_cantidad_en_la_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_buscar,char* nuevo_cantidad){
-	FILE *archivo;
-		int tamanio_archivo;
-		char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
-		char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
-		free(lista_de_bloques_string);
-		int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
-
-		char* dato = string_new();
-		char* path_bloque; // url de cada block particular
-		char* pivot;
-		struct stat st;
-		for(int i = 0; i<size; i++)
-		{
-			path_bloque = devolver_path_dato(string_itoa(i));
-			stat(path_bloque,&st);
-			tamanio_archivo = st.st_size;
-
-			pivot = malloc(tamanio_archivo+1);
-
-			archivo = fopen(path_bloque,"r");
-			fread(pivot,tamanio_archivo,1,archivo);
-			fclose(archivo);
-			pivot[tamanio_archivo] = '\0';
-
-			if(strcmp(pivot,"&")) //si no es igual a "&" lo agrego a la lista de inserts
-				string_append(&dato,pivot);
-
-			free(lista_de_bloques[i]);
-			free(pivot);
-			free(path_bloque);
-		}
-
-		las_posiciones_son_iguales(dato,posicion_a_buscar,nuevo_cantidad);
-		 //parsea el char *inserts por \n y los mete en la lista
-		free(dato);
-		free(lista_de_bloques);
-
-}
-*/
 
 void borrar_posicion(t_list* lista_de_posiciones, char* dato_a_escribir){
 	char* posicion_nueva = obtener_posicion_del_dato(dato_a_escribir);
@@ -394,6 +248,8 @@ char* obtener_posicion_del_dato(char* dato_a_escribir){
 	aux = string_new();
 	string_append(&aux,dato_a_escribir);
 	aux_partido = string_split(aux,"=");
+	char* cantidad = aux_partido[1];
+	free(cantidad);
 	char* posicion = aux_partido[0];
 	free(aux);
 	free(aux_partido);
@@ -466,6 +322,9 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 		escribir_bloque_v2(path_nombre_metadata,list_get(lista_de_posiciones,j));
 	}
 
+	free(lista_de_bloques);
+	list_destroy(bloques);
+	list_destroy(lista_de_posiciones);
 	//pthread_mutex_unlock(&Mutex_Bitmap);
 
 }
@@ -485,13 +344,15 @@ void escribir_bloque_asignado(int bloque){
 
 //limpio el contenido del bloque y lo libero en el bitarray
 void limpiar_bloque(int bloque){
-	char* path_bloque = devolver_path_dato(string_itoa(bloque));
+	char* string_bloque = string_itoa(bloque);
+	char* path_bloque = devolver_path_dato(string_bloque);
 
 	FILE *archivo = fopen(path_bloque,"w"); //limpio el archivo
 	fclose(archivo);
 	liberar_bloque(bloque); //libero en bitarray
 
 	free(path_bloque);
+	free(string_bloque);
 }
 
 
@@ -611,9 +472,9 @@ int tamanio_libre_del_bloque(int bloque){
 			free(pivot);
 		}
 
-		free(path);
-
-		return (obtener_block_size() - tamanio_actual);
+	free(path);
+	free(bloque_aux);
+	return (obtener_block_size() - tamanio_actual);
 }
 
 //al archivo le agrego un nuevo bloque a la lista de bloques

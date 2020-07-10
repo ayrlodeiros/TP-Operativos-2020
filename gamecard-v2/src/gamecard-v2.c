@@ -12,17 +12,47 @@ int main(void)
 	//GET => t_list* armar_mensaje_get(char* nombre_pokemon) => Devuelve una lista de DATOS
 
 	/*LISTA DE FREES :
+	 *
+	 * IMPORTANTE ALAN => Cuando uses la lista de armar_mensaje_get, acordate de destruirla despues de usarla, asi evitamos memory leaks.
+	 *
+	 * BLOQUES-C
+	 *
+	 * 1) Agregue 1 free en bitmap.c linea 17 y anda
+	 * 2) Agregue 1 free en bitmap.c linea 24 y anda
+	 * 3) Bloques.c linea 187, puse 1 free y anda [free(path_bloque_a_escribir);]
+	 * 4) Bloques.c linea 192, puse 1 free y anda [free(dato_a_escribir_restante);]
+	 * 5) Bloques.c linea 186, puse 1 free y anda [free(a_escribir);]
+	 * 6) Bloques.c linea 195, puse 1 free y anda [free(a_escribir_restante);]
+	 * 7) Bloques.c linea 195, puse 1 free y anda [free(string_bloque_a_escribir);]
+	 * 8) Bloques.c linea 335, puse 1 free y anda [free(pivot_partido);]
+	 * 9) Bloques.c linea 172, puse 1 free y anda [free(string_bloque_a_escribir);]
+	 * 10) Bloques.c linea 518, puse 1 free y anda [free(string_i);]
+	 * 11) Bloques.c linea 133, puse 1 free y anda [free(string_dato);]
+	 * 12) Bloques.c linea 147, puse 1 free y anda [free(posicion);]
+	 * 13) Bloques.c linea 252, puse 1 free y anda [free(cantidad);]
+	 * 14) Bloques.c linea 352, puse 1 free y anda [free(string_bloque);]
+	 * 15) Bloques.c linea 473, puse 1 free y anda [free(bloque_aux);]
+	 * 16) Bloques.c linea 325, puse 1 free y anda [free(lista_de_bloques);]
+	 * 16) Bloques.c linea 325, puse 1 list_destroy y anda [list_destroy(bloques);]
+	 * 16) Bloques.c linea 325, puse 1 list_destroy y anda [list_destroy(lista_de_posiciones);]
+	 *
+	 * UTILS.C
+	 *
 	 * 1) Agregue en utils,c (linea 247) 2 frees y anda bien
-	 * 2) Agregue 1 free en bitmap.c linea 17 y anda
-	 * 3) Agregue 1 free en bitmap.c linea 24 y anda
-	 * 4) Bloques.c linea 187, puse 1 free y anda [free(path_bloque_a_escribir);]
-	 * 5) Bloques.c linea 192, puse 1 free y anda [free(dato_a_escribir_restante);]
-	 * 6) Bloques.c linea 186, puse 1 free y anda [free(a_escribir);]
-	 * 7) Bloques.c linea 195, puse 1 free y anda [free(a_escribir_restante);]
-	 * 8) Bloques.c linea 195, puse 1 free y anda [free(string_bloque_a_escribir);]
-	 * 9) Bloques.c linea 335, puse 1 free y anda [free(pivot_partido);]
-	 * 10) Bloques.c linea 172, puse 1 free y anda [free(string_bloque_a_escribir);]
-	 * 11) Bloques.c linea 518, puse 1 free y anda [free(string_i);]
+	 * 2) Utils.c [obtener_blocks_archivo_metadata_pokemon] 1 free [free(lista);]
+	 * 3) Utils.c [resetear_bloques_metadata_pokemon] 1 free [free(string_nuevo_bloque);]
+	 * 4) Utils.c [armar_dato_bloque] 1 free [free(string_cantidad);]
+	 * 5) Agregue 1 config_Destroy en abrir y otro en cerrar archivo.
+	 * 6) Utils.c [devolver_path_directorio_files] 1 free [free(path_aux);]
+	 * 7) Utils.c [devolver_path_archivo_metadata] 1 free [free(path_aux);]
+	 * 8) Utils.c [devolver_path_files_metadata] 1 free [free(path_aux);]
+	 * 9) Utils.c [devolver_path_dato] 1 free [free(path_aux);]
+	 * 10) Utils.c [devolver_path_bitmap] 1 free [free(path_aux);]
+	 * 11) Utils.c [guardar_informacion] 2 free [free(path_aux);]
+	 * 12) Utils.c [armar_mensaje_get] 1 free [free(path_aux);]
+	 *
+	 *
+	 *
 	 */
 
 

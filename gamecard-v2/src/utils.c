@@ -112,7 +112,9 @@ t_list* obtener_blocks_archivo_metadata_pokemon(char* nombre){
 	char** lista = config_get_array_value(metadata_config, "BLOCKS");
 	free(path);
 	config_destroy(metadata_config);
-	return crear_t_list(lista);
+	t_list* nueva_lista = crear_t_list(lista);
+	free(lista);
+	return nueva_lista;
 }
 
 char* obtener_directory_archivo_metadata_pokemon(char* nombre){
@@ -156,7 +158,9 @@ int obtener_block_size(){
 
 char* devolver_path_directorio_files(){
 	char* path_directorio_files = string_new();
-	string_append(&path_directorio_files, devolver_path_directorio("/Files"));
+	char* path_aux = devolver_path_directorio("/Files");
+	string_append(&path_directorio_files,path_aux);
+	free(path_aux);
 	return path_directorio_files;
 }
 
@@ -164,7 +168,9 @@ char* devolver_path_archivo_metadata(){
 
 	char* path_archivo_metadata = string_new();
 
-	string_append(&path_archivo_metadata, devolver_path_directorio("/Metadata"));
+	char* path_aux = devolver_path_directorio("/Metadata");
+	string_append(&path_archivo_metadata,path_aux);
+	free(path_aux);
 	string_append(&path_archivo_metadata, "/Metadata.bin");
 
 
@@ -175,7 +181,9 @@ char* devolver_path_files_metadata(char* nombre_archivo){
 
 	char* path_archivo_files = string_new();
 
-	string_append(&path_archivo_files, devolver_path_directorio("/Files"));
+	char* path_aux = devolver_path_directorio("/Files");
+	string_append(&path_archivo_files,path_aux);
+	free(path_aux);
 	string_append(&path_archivo_files,"/");
 	string_append(&path_archivo_files,nombre_archivo);
 	if(!existe_el_directorio(path_archivo_files)){
@@ -199,7 +207,9 @@ char* devolver_path_directorio(char* path){
 
 char* devolver_path_dato(char* numero){
 	char* path_archivo_dato = string_new();
-	string_append(&path_archivo_dato, devolver_path_directorio("/Blocks"));
+	char* path_aux = devolver_path_directorio("/Blocks");
+	string_append(&path_archivo_dato,path_aux);
+	free(path_aux);
 	string_append(&path_archivo_dato, "/");
 	string_append(&path_archivo_dato, numero);
 	string_append(&path_archivo_dato, ".bin");
@@ -209,7 +219,9 @@ char* devolver_path_dato(char* numero){
 
 char* devolver_path_bitmap(){
 	char* path_archivo_bitmap = string_new();
-	string_append(&path_archivo_bitmap, devolver_path_directorio("/Metadata"));
+	char* path_aux = devolver_path_directorio("/Metadata");
+	string_append(&path_archivo_bitmap,path_aux);
+	free(path_aux);
 	string_append(&path_archivo_bitmap,"/Bitmap.bin");
 
 	return path_archivo_bitmap;
@@ -258,7 +270,9 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 	//string_append(&informacion_a_guardar,pos_y_aux);
 	if(existe_el_pokemon(nombre_pokemon)){
 		char* path_nombre_metadata = string_new();
-		string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon)); //Devolver_path_files_metadata ya verifica si existe o no el pokemon, no hace falta hacer un if
+		char* path_aux = devolver_path_files_metadata(nombre_pokemon);
+		string_append(&path_nombre_metadata,path_aux);
+		free(path_aux);
 		string_append(&path_nombre_metadata, "/Metadata.bin");
 		int pude_abrir_el_archivo = 0;
 
@@ -294,7 +308,10 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 		}
 	}else{
 		char* path_nombre_metadata = string_new();
-		string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon)); //Devolver_path_files_metadata ya verifica si existe o no el pokemon, no hace falta hacer un if
+
+		char* path_aux = devolver_path_files_metadata(nombre_pokemon);
+		string_append(&path_nombre_metadata, path_aux);
+		free(path_aux);
 		string_append(&path_nombre_metadata, "/Metadata.bin");
 
 		crear_archivo_files_metadata(nombre_pokemon,"N",250,"N");
@@ -309,11 +326,13 @@ void resetear_bloques_metadata_pokemon(char* path_nombre_metadata){
 	bitarray_set_bit(bitmap,nuevo_bloque);
 	char* bloque_vacio = string_new();
 	string_append(&bloque_vacio,"[");
-	string_append(&bloque_vacio,string_itoa(nuevo_bloque));
+	char* string_nuevo_bloque = string_itoa(nuevo_bloque);
+	string_append(&bloque_vacio,string_nuevo_bloque);
 	string_append(&bloque_vacio,"]");
 
 	config_set_value(config,"BLOCKS",bloque_vacio);
 	free(bloque_vacio);
+	free(string_nuevo_bloque);
 	config_save(config);
 	config_destroy(config);
 }
@@ -324,7 +343,9 @@ t_list* armar_mensaje_get(char* nombre_pokemon){
 	t_list* lista_de_posiciones_get = list_create();
 	if(existe_el_pokemon(nombre_pokemon)){
 		char* path_nombre_metadata = string_new();
-		string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon)); //Devolver_path_files_metadata ya verifica si existe o no el pokemon, no hace falta hacer un if
+		char* path_aux = devolver_path_files_metadata(nombre_pokemon);
+		string_append(&path_nombre_metadata,path_aux);
+		free(path_aux);
 		string_append(&path_nombre_metadata, "/Metadata.bin");
 		while(pude_abrir_el_archivo == 0){
 
@@ -356,8 +377,11 @@ char* armar_dato_bloque(char* posicion,int cantidad){
 	char* dato = string_new();
 	string_append(&dato,posicion);
 	string_append(&dato,"=");
-	string_append(&dato,string_itoa(cantidad));
+	char* string_cantidad = string_itoa(cantidad);
+	string_append(&dato,string_cantidad);
 	string_append(&dato,"\n");
+
+	free(string_cantidad);
 
 	return dato;
 }
@@ -427,6 +451,7 @@ void abrir_archivo(char* nombre_pokemon){
 
 	metadata_config = config_create(path);
 	config_set_value(metadata_config,"OPEN","Y");
+	config_destroy(metadata_config);
 	free(path);
 }
 
@@ -436,6 +461,7 @@ void cerrar_archivo(char* nombre_pokemon){
 
 	metadata_config = config_create(path);
 	config_set_value(metadata_config,"OPEN","N");
+	config_destroy(metadata_config);
 	free(path);
 }
 

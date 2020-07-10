@@ -714,3 +714,101 @@
 [INFO] 20:39:07:882 team/(9028:9147): El entrenador 0 cumplio su objetivo y queda en estado EXIT
 [INFO] 20:39:07:883 team/(9028:9147): Terminando la accion de intercambio
 [INFO] 20:39:07:883 team/(9028:9037): TERMINO EL PROCESO TEAM
+[INFO] 23:27:49:741 team/(6058:6058): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 23:27:49:804 team/(6058:6058): Necesito 1 pokemons Pidgey
+[INFO] 23:27:49:808 team/(6058:6058): Necesito 1 pokemons Squirtle
+[INFO] 23:27:49:809 team/(6058:6058): Necesito 1 pokemons Pikachu
+[INFO] 23:27:49:809 team/(6058:6058): Necesito 1 pokemons Charmander
+[INFO] 23:27:49:878 team/(6058:6064): El broker no esta conectado...
+[INFO] 23:27:49:888 team/(6058:6063): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 23:27:49:901 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:27:49:903 team/(6058:6063): Listo para recibir conexion de GAMEBOY
+[INFO] 23:27:49:912 team/(6058:6058): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 23:27:49:919 team/(6058:6058): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 23:27:49:920 team/(6058:6058): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 23:27:49:925 team/(6058:6058): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 23:27:49:949 team/(6058:6065): Esperando alguna accion
+[INFO] 23:27:49:964 team/(6058:6066): Estoy en el planificador
+[INFO] 23:27:49:990 team/(6058:6066): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 23:27:54:926 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:27:59:929 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:04:932 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:09:935 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:14:937 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:19:941 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:24:943 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:29:946 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:34:949 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:39:952 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:44:954 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:49:959 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:54:962 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:28:59:964 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:04:966 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:09:968 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:14:971 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:19:974 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:24:977 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:29:979 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:34:980 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:39:983 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:44:993 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:49:996 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:54:998 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:29:59:1 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:05:3 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:09:5 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:15:8 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:20:10 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:25:14 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:30:16 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:35:18 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:40:20 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:45:27 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:50:29 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:55:31 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:30:59:792 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:04:794 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:09:796 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:14:798 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:19:800 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:24:803 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:29:805 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:34:807 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:39:809 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:44:812 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:49:814 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:54:817 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:31:59:820 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:04:822 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:09:826 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:14:828 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:19:830 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:24:833 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:29:835 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:34:838 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:39:840 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:44:842 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:49:846 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:54:849 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:32:59:851 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:04:853 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:09:857 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:14:859 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:19:861 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:24:863 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:29:865 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:34:868 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:39:870 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:44:872 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:49:878 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:54:881 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:33:59:883 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:04:885 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:09:890 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:14:895 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:19:897 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:24:899 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:29:901 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:34:905 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:34:39:911 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
