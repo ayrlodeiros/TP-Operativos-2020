@@ -176,3 +176,78 @@
 [ERROR] 21:37:25:860 gamecard/(28217:28217): No se encontro pokemons en la posicion
 [ERROR] 21:37:25:872 gamecard/(28217:28217): No se encontro pokemons en la posicion
 [ERROR] 21:37:48:598 gamecard/(28217:28217): No existe ese pokemon
+[ERROR] 22:27:19:260 gamecard/(28933:28933): No se encontro pokemons en la posicion
+[ERROR] 22:27:19:261 gamecard/(28933:28933): No se encontro pokemons en la posicion
+[ERROR] 22:27:19:524 gamecard/(28933:28933): No existe ese pokemon
+[ERROR] 22:29:42:57 gamecard/(29041:29041): No se encontro pokemons en la posicion
+[ERROR] 22:29:42:58 gamecard/(29041:29041): No se encontro pokemons en la posicion
+[ERROR] 22:29:42:379 gamecard/(29041:29041): No existe ese pokemon
+[ERROR] 22:31:09:393 gamecard/(29192:29192): No se encontro pokemons en la posicion
+[ERROR] 22:31:09:399 gamecard/(29192:29192): No se encontro pokemons en la posicion
+[ERROR] 22:31:09:640 gamecard/(29192:29192): No existe ese pokemon
+[ERROR] 22:33:58:225 gamecard/(29277:29277): No se encontro pokemons en la posicion
+[ERROR] 22:33:58:226 gamecard/(29277:29277): No se encontro pokemons en la posicion
+[ERROR] 22:33:58:382 gamecard/(29277:29277): No existe ese pokemon
+[ERROR] 22:36:03:920 gamecard/(29331:29331): No se encontro pokemons en la posicion
+[ERROR] 22:36:03:922 gamecard/(29331:29331): No se encontro pokemons en la posicion
+[ERROR] 22:36:04:176 gamecard/(29331:29331): No existe ese pokemon
+[ERROR] 22:39:46:406 gamecard/(29491:29491): No se encontro pokemons en la posicion
+[ERROR] 22:39:46:414 gamecard/(29491:29491): No se encontro pokemons en la posicion
+[ERROR] 22:39:46:714 gamecard/(29491:29491): No existe ese pokemon
+[ERROR] 22:41:16:34 gamecard/(29537:29537): No se encontro pokemons en la posicion
+[ERROR] 22:41:16:38 gamecard/(29537:29537): No se encontro pokemons en la posicion
+[ERROR] 22:41:16:270 gamecard/(29537:29537): No existe ese pokemon
+[ERROR] 22:43:26:501 gamecard/(29638:29638): No se encontro pokemons en la posicion
+[ERROR] 22:43:26:501 gamecard/(29638:29638): No se encontro pokemons en la posicion
+[ERROR] 22:43:26:695 gamecard/(29638:29638): No existe ese pokemon
+[ERROR] 22:45:16:587 gamecard/(29705:29705): No se encontro pokemons en la posicion
+[ERROR] 22:45:16:589 gamecard/(29705:29705): No se encontro pokemons en la posicion
+[ERROR] 22:45:16:759 gamecard/(29705:29705): No existe ese pokemon
+[ERROR] 22:47:27:269 gamecard/(29773:29773): No se encontro pokemons en la posicion
+[ERROR] 22:47:27:270 gamecard/(29773:29773): No se encontro pokemons en la posicion
+[ERROR] 22:47:27:464 gamecard/(29773:29773): No existe ese pokemon
+[ERROR] 22:50:18:679 gamecard/(29869:29869): No se encontro pokemons en la posicion
+[ERROR] 22:50:18:686 gamecard/(29869:29869): No se encontro pokemons en la posicion
+[ERROR] 22:50:18:871 gamecard/(29869:29869): No existe ese pokemon
+[ERROR] 22:51:05:329 gamecard/(29892:29892): No se encontro pokemons en la posicion
+[ERROR] 22:51:05:330 gamecard/(29892:29892): No se encontro pokemons en la posicion
+[ERROR] 22:51:05:460 gamecard/(29892:29892): No existe ese pokemon
+[ERROR] 22:53:59:236 gamecard/(29977:29977): No se encontro pokemons en la posicion
+[ERROR] 22:53:59:238 gamecard/(29977:29977): No se encontro pokemons en la posicion
+[ERROR] 22:53:59:371 gamecard/(29977:29977): No existe ese pokemon
+[ERROR] 22:55:56:858 gamecard/(30050:30050): No se encontro pokemons en la posicion
+[ERROR] 22:55:56:861 gamecard/(30050:30050): No se encontro pokemons en la posicion
+[ERROR] 22:55:57:104 gamecard/(30050:30050): No existe ese pokemon
+[ERROR] 22:56:10:509 gamecard/(30081:30081): No se encontro pokemons en la posicion
+[ERROR] 22:56:10:510 gamecard/(30081:30081): No se encontro pokemons en la posicion
+[ERROR] 22:56:10:647 gamecard/(30081:30081): No existe ese pokemon
+[ERROR] 22:57:19:309 gamecard/(30120:30120): No se encontro pokemons en la posicion
+[ERROR] 22:57:19:310 gamecard/(30120:30120): No se encontro pokemons en la posicion
+[ERROR] 22:57:19:527 gamecard/(30120:30120): No existe ese pokemon
+[ERROR] 22:58:02:46 gamecard/(30187:30187): No se encontro pokemons en la posicion
+[ERROR] 22:58:02:51 gamecard/(30187:30187): No se encontro pokemons en la posicion
+[ERROR] 22:58:02:276 gamecard/(30187:30187): No existe ese pokemon
+[ERROR] 22:59:23:653 gamecard/(30242:30242): No se encontro pokemons en la posicion
+[ERROR] 22:59:23:654 gamecard/(30242:30242): No se encontro pokemons en la posicion
+[ERROR] 22:59:23:899 gamecard/(30242:30242): No existe ese pokemon
+[ERROR] 23:00:30:508 gamecard/(30313:30313): No se encontro pokemons en la posicion
+[ERROR] 23:00:30:510 gamecard/(30313:30313): No se encontro pokemons en la posicion
+[ERROR] 23:00:30:759 gamecard/(30313:30313): No existe ese pokemon
+[ERROR] 23:04:03:219 gamecard/(30444:30444): No se encontro pokemons en la posicion
+[ERROR] 23:04:03:296 gamecard/(30444:30444): No se encontro pokemons en la posicion
+[ERROR] 23:04:06:427 gamecard/(30444:30444): No existe ese pokemon
+[ERROR] 23:18:24:952 gamecard/(4142:4142): No se encontro pokemons en la posicion
+[ERROR] 23:18:24:968 gamecard/(4142:4142): No se encontro pokemons en la posicion
+[ERROR] 23:18:25:366 gamecard/(4142:4142): No existe ese pokemon
+[ERROR] 23:19:30:429 gamecard/(4212:4212): No se encontro pokemons en la posicion
+[ERROR] 23:19:30:430 gamecard/(4212:4212): No se encontro pokemons en la posicion
+[ERROR] 23:19:30:692 gamecard/(4212:4212): No existe ese pokemon
+[ERROR] 23:19:55:81 gamecard/(4232:4232): No se encontro pokemons en la posicion
+[ERROR] 23:19:55:147 gamecard/(4232:4232): No se encontro pokemons en la posicion
+[ERROR] 23:19:57:504 gamecard/(4232:4232): No existe ese pokemon
+[ERROR] 23:24:21:29 gamecard/(5686:5686): No se encontro pokemons en la posicion
+[ERROR] 23:24:21:30 gamecard/(5686:5686): No se encontro pokemons en la posicion
+[ERROR] 23:24:21:375 gamecard/(5686:5686): No existe ese pokemon
+[ERROR] 23:25:15:966 gamecard/(5740:5740): No se encontro pokemons en la posicion
+[ERROR] 23:25:15:967 gamecard/(5740:5740): No se encontro pokemons en la posicion
+[ERROR] 23:25:16:282 gamecard/(5740:5740): No existe ese pokemon

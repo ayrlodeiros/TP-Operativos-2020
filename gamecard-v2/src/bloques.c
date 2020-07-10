@@ -147,7 +147,6 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 	t_list* bloques_del_metadata = crear_t_list(lista_de_bloques);
 	list_destroy(bloques_del_metadata);
 	free(lista_de_bloques);
-	//free(lista_de_bloques_string);
 
 	//Si el dato no entra en el bloque
 	// DATO = 111111111-55555555 = 999999
@@ -155,7 +154,8 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 	if(tamanio_dato > tamanio_disponible_del_ultimo_bloque){
 		agregar_bloques_al_metadata(path_nombre_metadata,tamanio_dato,tamanio_disponible_del_ultimo_bloque);
 		int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
-		char* path_bloque_a_escribir = devolver_path_dato(string_itoa(bloque_a_escribir));
+		char* string_bloque_a_escribir = string_itoa(bloque_a_escribir);
+		char* path_bloque_a_escribir = devolver_path_dato(string_bloque_a_escribir);
 		char* a_escribir = string_new();
 		a_escribir = string_substring(dato_a_escribir, 0, tamanio_disponible_del_ultimo_bloque);
 		guardar_en_bloque(path_bloque_a_escribir,a_escribir);
@@ -166,20 +166,10 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 
 		escribir_bloque_sin_asignar(path_nombre_metadata,dato_a_escribir_restante);
 
-		/*int tamanio_dato_a_escribir_restante = strlen(dato_a_escribir_restante);
-		if(obtener_primer_bloque_libre(path_nombre_metadata) != -1){
-			int bloque_nuevo_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
-			char* path_bloque_nuevo_a_escribir = devolver_path_dato(string_itoa(bloque_nuevo_a_escribir));
-
-			guardar_en_bloque(path_bloque_nuevo_a_escribir,dato_a_escribir_restante);
-
-			actualizar_tamanio_bloque(path_nombre_metadata);
-			free(path_bloque_nuevo_a_escribir);
-		}*/
-
 		free(a_escribir);
 		free(dato_a_escribir_restante);
 		free(path_bloque_a_escribir);
+		free(string_bloque_a_escribir);
 	}
 	//en el ultimo bloque hay espacio suficiente para guardar la info completa
 	else{
@@ -189,20 +179,24 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 
 void escribir_bloque_sin_asignar(char* path_nombre_metadata,char* dato_a_escribir_restante){
 
-
 	int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
-	char* path_bloque_a_escribir = devolver_path_dato(string_itoa(bloque_a_escribir));
+	char* string_bloque_a_escribir = string_itoa(bloque_a_escribir);
+	char* path_bloque_a_escribir = devolver_path_dato(string_bloque_a_escribir);
+	free(string_bloque_a_escribir);
 	char* a_escribir = string_new();
 	a_escribir = string_substring(dato_a_escribir_restante, 0, tamanio_libre_del_bloque(bloque_a_escribir));
 	guardar_en_bloque(path_bloque_a_escribir,a_escribir);
+	free(a_escribir);
 	actualizar_tamanio_bloque(path_nombre_metadata);
+	free(path_bloque_a_escribir);
 
 	if(string_length(dato_a_escribir_restante) > obtener_block_size()){
 		char* a_escribir_restante = string_new();
 		a_escribir_restante = string_substring_from(dato_a_escribir_restante, obtener_block_size());
+		free(dato_a_escribir_restante);
 		escribir_bloque_sin_asignar(path_nombre_metadata,a_escribir_restante);
+		free(a_escribir_restante);
 	}
-
 
 }
 
@@ -334,43 +328,16 @@ void agregar_datos_a_la_lista(char *dato,t_list* lista_de_posiciones,char* path_
 		char* cantidad_string = pivot_partido[1];
 		int cantidad = atoi(cantidad_string);
 		char* dato_a_guardar;
-		/*
-		int posicion_encontrada = posicion_en_la_lista_de_posiciones_pokemon_a_buscar(lista_de_posiciones,posicion);
-		if(se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons(lista_de_posiciones,posicion)){
-			log_info(nuestro_log,"ENTRE AL IF");
-			char* aux = string_new();
-			char* pivot_aux = list_remove(lista_de_posiciones,posicion_encontrada);
-			string_append(&aux,pivot_aux);
-			char** aux_partido = string_split(aux,"=");
-			int cantidad_encontrada = atoi(aux[1]);
-			int nueva_cantidad = cantidad + cantidad_encontrada;
 
-			dato_a_guardar = armar_dato_bloque(posicion,string_itoa(nueva_cantidad));
-			log_info(nuestro_log,"DATO A GUARDAR : %s",dato_a_guardar);
-			list_add(lista_de_posiciones,dato_a_guardar);
-			free(aux);
-			free(aux_partido);
-
-		}else{*/
-			dato_a_guardar = armar_dato_bloque(posicion,cantidad);
-			list_add(lista_de_posiciones,dato_a_guardar);
-		//}
+		dato_a_guardar = armar_dato_bloque(posicion,cantidad);
+		list_add(lista_de_posiciones,dato_a_guardar);
 
 		free(lista_de_datos[i]);
-		//free(pivot_partido);
+		free(pivot_partido);
 		free(pivot);
 	}
 	free(lista_de_datos);
 
-	/*
-	 * if(dictionary_has_key(objetivo_global, pokemon_objetivo)) {
-		dictionary_put(objetivo_global, pokemon_objetivo, (void*) (dictionary_get(objetivo_global, pokemon_objetivo) + 1));
-	}
-	//Si el pokemon no existia lo agrego al diccionario con un valor de 1
-	else {
-		int valor_inicial = 1;
-		dictionary_put(objetivo_global, pokemon_objetivo, valor_inicial);
-	 */
 }
 /*
 void reemplazar_cantidad_en_la_posicion_en_el_archivo(char* path_metadata_config,char* posicion_a_buscar,char* nuevo_cantidad){
@@ -500,46 +467,8 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 	}
 
 	//pthread_mutex_unlock(&Mutex_Bitmap);
-	//free(path_nombre_metadata);
 
 }
-
-/*
-void las_posiciones_son_iguales(char *dato,char* posicion_a_buscar,char* nuevo_cantidad){
-
-	char** lista_de_datos = string_split(dato,"\n");
-	char* pivot;
-	for(int i =0; i<tamanio_de_lista(lista_de_datos); i++)
-	{
-
-		pivot = string_duplicate(lista_de_datos[i]);
-		char** pivot_partido = string_split(pivot,"=");
-		char* posicion = pivot_partido[0];
-		char* cantidad = pivot_partido[1];
-
-		log_info(nuestro_log,"Posicion a buscar : %s",posicion_a_buscar);
-		log_info(nuestro_log,"Posicion : %s",posicion);
-
-		if(string_equals_ignore_case(posicion,posicion_a_buscar)){
-			int largo_cantidad = strlen(cantidad);
-			int largo_nueva_cantidad = strlen(nuevo_cantidad);
-
-			if(largo_cantidad == largo_nueva_cantidad){
-
-			}
-
-
-			log_info(nuestro_log,"Se encontro la posicion : %s", posicion_a_buscar);
-			free(lista_de_datos[i]);
-			return;
-		}
-	}
-	free(lista_de_datos);
-	log_info(nuestro_log,"NO se encontro la posicion : %s", posicion_a_buscar);
-
-}
-*/
-
 
 void escribir_bloque_asignado(int bloque){
 	char* path_bloque = devolver_path_dato(string_itoa(bloque));
@@ -582,9 +511,11 @@ int se_creo_el_bloque(){
 
 void crear_bloque(){ //ANDA BIEN
 	char* path_bloque;
-
+	char* string_i;
 	for(int i = 0; i < obtener_blocks(); i++){
-		path_bloque = devolver_path_dato(string_itoa(i));
+		string_i = string_itoa(i);
+		path_bloque = devolver_path_dato(string_i);
+		free(string_i);
 		FILE* archivo = fopen(path_bloque,"w");
 		fclose(archivo);
 		free(path_bloque);
@@ -623,13 +554,6 @@ void actualizar_tamanio_bloque(char* path_bloque){
 //esta funcion no deberia romper nunca por overflow de tamano de bloque porquese cheuquea antes de usarla
 void guardar_en_bloque(char* path_bloque, char* dato){
 
-	/*
-	char* path_bloque = devolver_path_dato(string_itoa(bloque));
-	t_config* archivo_pokemon = config_create(path_bloque);
-	config_set_value(archivo_pokemon,key_a_guardar,nueva_cantidad);
-	config_save(archivo_pokemon);
-	bitarray_set_bit(bitmap,bloque);
-	*/
 	char* pivot = malloc(3);
 	struct stat st;
 	FILE* archivo;

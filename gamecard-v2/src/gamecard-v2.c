@@ -11,6 +11,20 @@ int main(void)
 	//NEW => void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int cantidad)
 	//GET => t_list* armar_mensaje_get(char* nombre_pokemon) => Devuelve una lista de DATOS
 
+	/*LISTA DE FREES :
+	 * 1) Agregue en utils,c (linea 247) 2 frees y anda bien
+	 * 2) Agregue 1 free en bitmap.c linea 17 y anda
+	 * 3) Agregue 1 free en bitmap.c linea 24 y anda
+	 * 4) Bloques.c linea 187, puse 1 free y anda [free(path_bloque_a_escribir);]
+	 * 5) Bloques.c linea 192, puse 1 free y anda [free(dato_a_escribir_restante);]
+	 * 6) Bloques.c linea 186, puse 1 free y anda [free(a_escribir);]
+	 * 7) Bloques.c linea 195, puse 1 free y anda [free(a_escribir_restante);]
+	 * 8) Bloques.c linea 195, puse 1 free y anda [free(string_bloque_a_escribir);]
+	 * 9) Bloques.c linea 335, puse 1 free y anda [free(pivot_partido);]
+	 * 10) Bloques.c linea 172, puse 1 free y anda [free(string_bloque_a_escribir);]
+	 * 11) Bloques.c linea 518, puse 1 free y anda [free(string_i);]
+	 */
+
 
 	iniciar_gamecard();
 
@@ -115,7 +129,7 @@ void iniciar_gamecard() {
 	nuestro_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log.txt", "gamecard", true, LOG_LEVEL_INFO);
 	punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
 	crear_directorio(punto_montaje_tallgrass);
-	crear_archivo_metadata(1,1000);
+	crear_archivo_metadata(64,1000);
 	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y","0","","N");
 
 	pthread_mutex_init(&Mutex_Bitmap,NULL);

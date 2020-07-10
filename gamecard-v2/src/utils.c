@@ -244,6 +244,9 @@ char* devolver_posicion_concatenada (int posicion_x,int posicion_y){
 	string_append(&key_a_guardar,pos_x_aux);
 	string_append(&key_a_guardar,"-");
 	string_append(&key_a_guardar,pos_y_aux);
+	//Agregue en utils,c (linea 247) 2 frees y anda bien
+	free(pos_x_aux);
+	free(pos_y_aux);
 
 	return key_a_guardar;
 }
@@ -366,7 +369,7 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 		//string_append(&informacion_a_guardar,pos_y_aux);
 		char* path_nombre_metadata = string_new();
 		string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon));
-		string_append(&path_nombre_metadata, "/Metadata.bin");
+		string_append(&path_nombre_metadata,"/Metadata.bin");
 
 		int pude_abrir_el_archivo = 0;
 		while(pude_abrir_el_archivo == 0){
@@ -407,47 +410,6 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 	}
 }
 
-/*
-//DEVOLVER_POSICIONES_POKEMONS = GET POKEMON
-char* devolver_posiciones_pokemons(char* nombre_pokemon){
-
-	if(existe_el_pokemon(nombre_pokemon)){
-		//string_append(&informacion_a_guardar,pos_y_aux);
-		char* path_nombre_metadata = string_new();
-		string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon));
-		string_append(&path_nombre_metadata, "/Metadata.bin");
-
-		int pude_abrir_el_archivo = 0;
-		while(pude_abrir_el_archivo == 0){
-			if(se_puede_abrir_el_archivo(nombre_pokemon)){
-				abrir_archivo(nombre_pokemon);
-				pude_abrir_el_archivo = 1;
-				t_list* bloques = obtener_blocks_archivo_metadata_pokemon(nombre_pokemon);
-				t_config* archivo_pokemon;
-				int posicion;
-				char* posiciones = string_new();
-				string_append(&posiciones,"[");
-
-				for(int i = 0; i< list_size(bloques);i++){
-					archivo_pokemon = config_create(devolver_path_dato(list_get(bloques,i)));
-					string_append(&posiciones,config_);
-					string_append(&posiciones,",");
-					config_destroy(archivo_pokemon);
-				}
-				string_append(&posiciones,"]");
-				sleep(leer_tiempo_retardo_operacion());
-				cerrar_archivo(nombre_pokemon);
-				list_destroy(bloques);
-			}
-			else{
-				sleep(leer_tiempo_de_reintento_operacion());
-			}
-		}
-	}else{
-		//Informar mensaje sin posiciones ni cantidades
-	}
-}
-*/
 
 int existe_el_pokemon(char* nombre_pokemon){
 	char* path_archivo_files = string_new();
