@@ -33,8 +33,22 @@ int main(void)
 	 * 14) Bloques.c linea 352, puse 1 free y anda [free(string_bloque);]
 	 * 15) Bloques.c linea 473, puse 1 free y anda [free(bloque_aux);]
 	 * 16) Bloques.c linea 325, puse 1 free y anda [free(lista_de_bloques);]
-	 * 16) Bloques.c linea 325, puse 1 list_destroy y anda [list_destroy(bloques);]
-	 * 16) Bloques.c linea 325, puse 1 list_destroy y anda [list_destroy(lista_de_posiciones);]
+	 * 17) Bloques.c linea 325, puse 1 list_destroy y anda [list_destroy(bloques);]
+	 * 18) Bloques.c linea 325, puse 1 list_destroy y anda [list_destroy(lista_de_posiciones);]
+	 * 19) Bloques.c cantidad_en_posicion, puse 1 free y anda [free(cantidad_encontrada_string);]
+	 * 20) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 1 free y anda [free(posicion);]
+	 * 21) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 1 free y anda [free(aux_partido);]
+	 * 22) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 1 free y anda [free(aux);]
+	 * 23) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 1 free y anda [free(posicion);]
+	 * 24) Bloques.c posicion_en_la_lista_de_la_posicion_a_buscar, puse 1 free y anda [free(posicion);]
+	 * 25) Bloques.c posicion_en_la_lista_de_la_posicion_a_buscar, puse 1 free y anda [free(posicion);]
+	 * 26) Bloques.c posicion_en_la_lista_de_posiciones_pokemon_a_buscar, puse 1 free y anda [free(posicion);]
+	 * 27) Bloques.c posicion_en_la_lista_de_posiciones_pokemon_a_buscar, puse 1 free y anda [free(posicion);]
+	 * 28) Bloques.c agregar_datos_a_la_lista, puse 1 free y anda [free(posicion);]
+	 * 29) Bloques.c agregar_datos_a_la_lista, puse 1 free y anda [free(cantidad_string);]
+	 * 30) Bloques.c borrar_posicion, puse 1 free y anda [free(posicion_nueva);]
+	 * 31) Bloques.c reescribir_bloques, puse 1 free y anda [free(lista_de_bloques[i]);]
+	 *
 	 *
 	 * UTILS.C
 	 *
@@ -50,6 +64,10 @@ int main(void)
 	 * 10) Utils.c [devolver_path_bitmap] 1 free [free(path_aux);]
 	 * 11) Utils.c [guardar_informacion] 2 free [free(path_aux);]
 	 * 12) Utils.c [armar_mensaje_get] 1 free [free(path_aux);]
+	 * 13) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 free [free(path_aux);]
+	 * 14) Utils.c [crear_archivo_files_metadata] 1 free [free(string_nuevo_bloque_libre);]
+	 * 15) Utils.c [guardar_informacion] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
+	 * 16) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 list_destroy_and_destroy_elements(lista_de_datos,free);
 	 *
 	 *
 	 *
@@ -103,14 +121,14 @@ int main(void)
 	guardar_informacion("Squirtle",3,3,30);
 	guardar_informacion("Squirtle",5,5,50);
 
-
+/*
 	t_list* posiciones = armar_mensaje_get("Pikachu");
 	if(!list_is_empty(posiciones)){
 		for(int i = 0; i<list_size(posiciones);i++ ){
 			log_info(nuestro_log,"Posicion %d : %s",i,list_get(posiciones,i));
 		}
 	}
-
+*/
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",100,202);
@@ -121,25 +139,25 @@ int main(void)
 	log_info(nuestro_log,"PRUEBA 0.2");
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",105,50);
 	log_info(nuestro_log,"PRUEBA 0.3");
-
+/*
 	posiciones = armar_mensaje_get("Pikachu");
 	if(!list_is_empty(posiciones)){
 		for(int i = 0; i<list_size(posiciones);i++ ){
 			log_info(nuestro_log,"Posicion %d : %s",i,list_get(posiciones,i));
 		}
 	}
-
+*/
 	log_info(nuestro_log,"PRUEBA 1");
 
 	disminuir_cantidad_de_pokemon_en_la_posicion("PokemonInexistente",105,50);
-
+/*
 	posiciones = armar_mensaje_get("Squirtle");
 	if(!list_is_empty(posiciones)){
 		for(int i = 0; i<list_size(posiciones);i++ ){
 			log_info(nuestro_log,"Posicion %d : %s",i,list_get(posiciones,i));
 		}
 	}
-
+*/
 	//buscar_posicion_en_el_archivo(path_nombre_metadata,"52-13");
 
 	for(int j = 0;j<10;j++){

@@ -49,7 +49,7 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 		int bloque_a_escribir = obtener_primer_bloque_libre(path_nombre_metadata);
 		char* string_bloque_a_escribir = string_itoa(bloque_a_escribir);
 		char* path_bloque_a_escribir = devolver_path_dato(string_bloque_a_escribir);
-		char* a_escribir = string_new();
+		char* a_escribir = "";
 		a_escribir = string_substring(dato_a_escribir, 0, tamanio_disponible_del_ultimo_bloque);
 		guardar_en_bloque(path_bloque_a_escribir,a_escribir);
 
@@ -144,6 +144,7 @@ int cantidad_en_posicion(t_list* lista_de_posiciones,char* posicion_a_buscar){
 	int cantidad_encontrada = atoi(cantidad_encontrada_string);
 	free(aux);
 	free(aux_partido);
+	free(cantidad_encontrada_string);
 	free(posicion);
 
 	return cantidad_encontrada;
@@ -179,9 +180,12 @@ int se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons(t_list* lista_de
 		char** aux_partido = string_split(aux,"=");
 		posicion = aux_partido[0];
 		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			free(posicion);
+			free(aux_partido);
+			free(aux);
 			return 1;
 		}
-
+		free(posicion);
 		free(aux_partido);
 		free(aux);
 	}
@@ -193,8 +197,10 @@ int posicion_en_la_lista_de_la_posicion_a_buscar(t_list* lista_de_posiciones,cha
 	for(int i = 0; i< list_size(lista_de_posiciones);i++){
 		posicion = list_get(lista_de_posiciones,i);
 		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			free(posicion);
 			return i;
 		}
+		free(posicion);
 	}
 	return 0;
 }
@@ -204,8 +210,10 @@ int posicion_en_la_lista_de_posiciones_pokemon_a_buscar(t_list* lista_de_posicio
 	for(int i = 0; i< list_size(lista_de_posiciones);i++){
 		posicion = obtener_posicion_del_dato(list_get(lista_de_posiciones,i));
 		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
+			free(posicion);
 			return i;
 		}
+		free(posicion);
 	}
 	return 0;
 }
@@ -227,6 +235,8 @@ void agregar_datos_a_la_lista(char *dato,t_list* lista_de_posiciones,char* path_
 		dato_a_guardar = armar_dato_bloque(posicion,cantidad);
 		list_add(lista_de_posiciones,dato_a_guardar);
 
+		free(posicion);
+		free(cantidad_string);
 		free(lista_de_datos[i]);
 		free(pivot_partido);
 		free(pivot);
@@ -239,7 +249,7 @@ void borrar_posicion(t_list* lista_de_posiciones, char* dato_a_escribir){
 	char* posicion_nueva = obtener_posicion_del_dato(dato_a_escribir);
 	int indice = posicion_en_la_lista_de_posiciones_pokemon_a_buscar(lista_de_posiciones,posicion_nueva);
 	free(list_remove(lista_de_posiciones,indice));
-	return;
+	free(posicion_nueva);
 }
 
 char* obtener_posicion_del_dato(char* dato_a_escribir){
@@ -315,6 +325,7 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 	for(int i = 0; i < size; i++){
 		int bloque_a_limpiar = atoi(lista_de_bloques[i]);
 		limpiar_bloque(bloque_a_limpiar);
+		free(lista_de_bloques[i]);
 	}
 	resetear_bloques_metadata_pokemon(path_nombre_metadata);
 	log_info(nuestro_log,"reescribo posicion: %s",obtener_posicion_del_dato(dato_a_escribir));
