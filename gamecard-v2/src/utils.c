@@ -116,6 +116,9 @@ t_list* obtener_blocks_archivo_metadata_pokemon(char* nombre){
 	free(path);
 	config_destroy(metadata_config);
 	t_list* nueva_lista = crear_t_list(lista);
+	for(int i = 0; i < tamanio_de_lista(lista); i++){
+		free(lista[i]);
+	}
 	free(lista);
 	return nueva_lista;
 }

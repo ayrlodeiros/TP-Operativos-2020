@@ -396,14 +396,14 @@ void crear_bloque(){ //ANDA BIEN
 }
 
 void modificar_tamanio_bloque(char* path_bloque,int tamanio){
-	pthread_mutex_lock(&mutex_facu);
+	pthread_mutex_lock(&mutex_modificar_bloque);
 	t_config* config = config_create(path_bloque);
 	char* tamanio_string = string_itoa(tamanio);
 	config_set_value(config,"SIZE",tamanio_string);
 	config_save(config);
 	config_destroy(config);
 	free(tamanio_string);
-	pthread_mutex_unlock(&mutex_facu);
+	pthread_mutex_unlock(&mutex_modificar_bloque);
 }
 
 //actualiza el tamano
@@ -526,12 +526,12 @@ void agregar_bloque(char* path_bloque){
 
 //pisa el valor de BLOCKS por el de listBlocks
 void modificar_bloque(char* path_particion, char* lista_bloques){
-	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
+	pthread_mutex_lock(&mutex_modificar_bloque);
 	t_config* particion = config_create(path_particion);
 	config_set_value(particion,"BLOCKS",lista_bloques);
 	config_save(particion);
 	config_destroy(particion);
-	//pthread_mutex_unlock(&MUTEX_ELSOLUCIONADOR);
+	pthread_mutex_unlock(&mutex_modificar_bloque);
 
 }
 
@@ -560,14 +560,7 @@ int obtener_primer_bloque_libre(char* path_nombre_metadata){
 	free(lista_de_bloques);
 
 	return -1;
-	/*
-	for(int i= 0; i< obtener_blocks();i++){
-		if(!bitarray_test_bit(bitmap,i)){
-			return i;
-		}
-		log_error(nuestro_log,"no hay bloques libres");
-		return -1;
-	}*/
+
 }
 
 int el_bloque_esta_lleno(int bloque){
@@ -588,19 +581,16 @@ int devolver_ultimo_bloque(char* path){
 	char* bloques = devolver_lista_de_bloques(path);
 	char** lista_bloques = string_get_string_as_array(bloques);
 	free(bloques);
-	//if(string_length(lista_bloques) > 0){
-		int posicion_ultimo_bloque = tamanio_de_lista (lista_bloques) - 1;
-		char* ultimo_bloque = string_duplicate(lista_bloques[posicion_ultimo_bloque]);
-		int numero_ultimo_bloque = strtol(ultimo_bloque,NULL,10);
-		free(ultimo_bloque);
-		for(int i = 0; i < tamanio_de_lista(lista_bloques); i++){
-			free(lista_bloques[i]);
-		}
-		free(lista_bloques);
-		return numero_ultimo_bloque;
-	//}else{
-	//	return obtener_primer_bloque_libre(path);
-	//}
+
+	int posicion_ultimo_bloque = tamanio_de_lista (lista_bloques) - 1;
+	char* ultimo_bloque = string_duplicate(lista_bloques[posicion_ultimo_bloque]);
+	int numero_ultimo_bloque = strtol(ultimo_bloque,NULL,10);
+	free(ultimo_bloque);
+	for(int i = 0; i < tamanio_de_lista(lista_bloques); i++){
+		free(lista_bloques[i]);
+	}
+	free(lista_bloques);
+	return numero_ultimo_bloque;
 }
 
 int tamanio_de_lista(char** un_array){

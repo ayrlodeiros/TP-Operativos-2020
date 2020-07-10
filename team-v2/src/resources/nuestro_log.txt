@@ -812,3 +812,23 @@
 [INFO] 23:34:29:901 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
 [INFO] 23:34:34:905 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
 [INFO] 23:34:39:911 team/(6058:6064): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:23:24:333 team/(8953:8953): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 20:23:24:401 team/(8953:8953): Necesito 1 pokemons Pidgey
+[INFO] 20:23:24:405 team/(8953:8953): Necesito 1 pokemons Squirtle
+[INFO] 20:23:24:405 team/(8953:8953): Necesito 1 pokemons Pikachu
+[INFO] 20:23:24:406 team/(8953:8953): Necesito 1 pokemons Charmander
+[INFO] 20:23:24:469 team/(8953:8955): El broker no esta conectado...
+[INFO] 20:23:24:478 team/(8953:8954): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 20:23:24:489 team/(8953:8955): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:23:24:492 team/(8953:8954): Listo para recibir conexion de GAMEBOY
+[INFO] 20:23:24:520 team/(8953:8953): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:23:24:533 team/(8953:8953): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:23:24:536 team/(8953:8953): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:23:24:539 team/(8953:8953): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 20:23:24:582 team/(8953:8956): Esperando alguna accion
+[INFO] 20:23:24:585 team/(8953:8957): Estoy en el planificador
+[INFO] 20:23:24:589 team/(8953:8957): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 20:23:29:538 team/(8953:8955): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:23:34:541 team/(8953:8955): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:23:39:545 team/(8953:8955): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:23:44:554 team/(8953:8955): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444

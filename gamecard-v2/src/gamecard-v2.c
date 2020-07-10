@@ -48,6 +48,7 @@ int main(void)
 	 * 29) Bloques.c agregar_datos_a_la_lista, puse 1 free y anda [free(cantidad_string);]
 	 * 30) Bloques.c borrar_posicion, puse 1 free y anda [free(posicion_nueva);]
 	 * 31) Bloques.c reescribir_bloques, puse 1 free y anda [free(lista_de_bloques[i]);]
+	 * 32) Bloques.c devolver_ultimo_bloque, puse 1 free y anda [free(lista_bloques[i]);]
 	 *
 	 *
 	 * UTILS.C
@@ -69,6 +70,9 @@ int main(void)
 	 * 15) Utils.c [guardar_informacion] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	 * 16) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 list_destroy_and_destroy_elements(lista_de_datos,free);
 	 *
+	 *
+	 * SEMAFOROS:
+	 * liberar_bloque -> Se agrego pthread_mutex_lock(&Mutex_Bitmap);
 	 *
 	 *
 	 */
@@ -183,7 +187,7 @@ void iniciar_gamecard() {
 	pthread_mutex_init(&Mutex_Bitmap,NULL);
 	pthread_mutex_init(&asignar_bloque,NULL);
 	pthread_mutex_init(&mutex_liberar_bloque,NULL);
-	pthread_mutex_init(&mutex_facu,NULL);
+	pthread_mutex_init(&mutex_modificar_bloque,NULL);
 
 	//Iniciamos las variables globales del constructor
 	flag_bloques_libres = 1; //hay bloques libres
