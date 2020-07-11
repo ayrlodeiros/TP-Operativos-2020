@@ -1,7 +1,6 @@
 #include "bloques.h"
 
 void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int tamanio_disponible_del_ultimo_bloque){
-	//pthread_mutex_lock(&Mutex_Bitmap);
 	int bloques_necesarios;
 	if( ((tamanio_dato-tamanio_disponible_del_ultimo_bloque) % obtener_block_size()) == 0 ){
 	//si entra justo le doy los bloques justos
@@ -14,7 +13,6 @@ void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int
 	for(int i = 0; i < bloques_necesarios; i++){
 		agregar_bloque(path_nombre_metadata);
 	}
-	//pthread_mutex_unlock(&Mutex_Bitmap);
 }
 
 void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir){
@@ -310,7 +308,6 @@ int obtener_cantidad_del_dato(char* dato_a_escribir){
 
 void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 
-	//pthread_mutex_lock(&Mutex_Bitmap);
 	char* lista_de_bloques_string = devolver_lista_de_bloques(path_nombre_metadata);
 	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
 	free(lista_de_bloques_string);
@@ -336,7 +333,6 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 	free(lista_de_bloques);
 	list_destroy(bloques);
 	list_destroy(lista_de_posiciones);
-	//pthread_mutex_unlock(&Mutex_Bitmap);
 
 }
 
@@ -608,11 +604,11 @@ int tamanio_de_lista(char** un_array){
 
 
 char* devolver_lista_de_bloques(char* path_files_config){
-	//pthread_mutex_lock(&MUTEX_ELSOLUCIONADOR);
+	pthread_mutex_lock(&mutex_modificar_bloque);
 	t_config* config_file = config_create(path_files_config);
 	char* bloques = string_duplicate(config_get_string_value(config_file,"BLOCKS"));
 	config_destroy(config_file);
-	//pthread_mutex_unlock(&MUTEX_ELSOLUCIONADOR);
+	pthread_mutex_unlock(&mutex_modificar_bloque);
 	return bloques;
 }
 

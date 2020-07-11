@@ -26,7 +26,7 @@ void crear_archivo_metadata(int block_size, int blocks){
 }
 
 void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size,char* open){
-	pthread_mutex_lock(&asignar_bloque);
+	pthread_mutex_lock(&mutex_modificar_bloque);
 	char* path_archivo_files_metadata = devolver_path_files_metadata(nombre_archivo);
 	char* size_aux = string_itoa(size);
 	char* blocks_aux = string_new();
@@ -46,7 +46,7 @@ void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size
 	free(size_aux);
 	free(blocks_aux);
 
-	pthread_mutex_unlock(&asignar_bloque);
+	pthread_mutex_unlock(&mutex_modificar_bloque);
 }
 
 void creacion_archivo_files_metadata(char* path, char* directory,char* size, char* blocks,char* open){
