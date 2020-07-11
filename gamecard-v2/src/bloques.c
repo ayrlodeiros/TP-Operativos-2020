@@ -37,6 +37,9 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 	free(lista_de_bloques_string);
 	t_list* bloques_del_metadata = crear_t_list(lista_de_bloques);
 	list_destroy(bloques_del_metadata);
+	for(int i = 0; i < tamanio_de_lista(lista_de_bloques); i++){
+		free(lista_de_bloques[i]);
+	}
 	free(lista_de_bloques);
 
 	//Si el dato no entra en el bloque
@@ -179,11 +182,13 @@ int se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons(t_list* lista_de
 		posicion = aux_partido[0];
 		if(string_equals_ignore_case(posicion_a_buscar,posicion)){
 			free(posicion);
+			free(aux_partido[1]);
 			free(aux_partido);
 			free(aux);
 			return 1;
 		}
 		free(posicion);
+		free(aux_partido[1]);
 		free(aux_partido);
 		free(aux);
 	}
@@ -302,6 +307,7 @@ int obtener_cantidad_del_dato(char* dato_a_escribir){
 	aux_partido = string_split(aux,"=");
 	int cantidad = atoi(aux_partido[1]);
 	free(aux);
+	free(aux_partido[0]);
 	free(aux_partido);
 	return cantidad;
 }

@@ -49,6 +49,9 @@ int main(void)
 	 * 30) Bloques.c borrar_posicion, puse 1 free y anda [free(posicion_nueva);]
 	 * 31) Bloques.c reescribir_bloques, puse 1 free y anda [free(lista_de_bloques[i]);]
 	 * 32) Bloques.c devolver_ultimo_bloque, puse 1 free y anda [free(lista_bloques[i]);]
+	 * 33) Bloques.c escribir_bloque_v2, puse 1 free y anda [free(lista_de_bloques[i]);]
+	 * 34) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 2 free y anda [free(aux_partido[1]);]
+	 * 35) Bloques.c obtener_cantidad_del_dato, puse 1 free y anda [free(aux_partido[0]);]
 	 *
 	 *
 	 * UTILS.C
