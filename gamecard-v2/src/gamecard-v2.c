@@ -52,6 +52,7 @@ int main(void)
 	 * 33) Bloques.c escribir_bloque_v2, puse 1 free y anda [free(lista_de_bloques[i]);]
 	 * 34) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 2 free y anda [free(aux_partido[1]);]
 	 * 35) Bloques.c obtener_cantidad_del_dato, puse 1 free y anda [free(aux_partido[0]);]
+	 * 36) Bloques.c reescribir_bloques, puse 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	 *
 	 *
 	 * UTILS.C
@@ -74,6 +75,10 @@ int main(void)
 	 * 16) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 list_destroy_and_destroy_elements(lista_de_datos,free);
 	 * 17) Utils.c [la_posicion_ya_existe_dentro_del_archivo] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	 * 18) Utils.c [posiciones_del_pokemon] 1 list_destroy_and_destroy_elements(posiciones_pokemon,free);
+	 * 19) Utils.c [guardar_informacion] movi 1 [free(dato_a_escribir)];
+	 * 20) Utils.c [reescribir_bloques] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
+	 * 21) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 free(posicion);
+	 * 22) Utils.c [guardar_informacion] 1 free(posicion);
 	 *
 	 *
 	 * SEMAFOROS:

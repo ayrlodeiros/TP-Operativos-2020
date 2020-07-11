@@ -337,7 +337,7 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 	}
 	free(lista_de_bloques);
 	list_destroy(bloques);
-	list_destroy(lista_de_posiciones);
+	list_destroy_and_destroy_elements(lista_de_posiciones,free);
 
 }
 

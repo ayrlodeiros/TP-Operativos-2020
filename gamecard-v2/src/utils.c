@@ -294,16 +294,17 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 					t_list* lista_de_posiciones = leer_datos(path_nombre_metadata);
 					int cantidad_sumada = cantidad + cantidad_en_posicion(lista_de_posiciones,posicion);
 					dato_a_escribir = armar_dato_bloque(posicion,cantidad_sumada);
-					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 					list_destroy_and_destroy_elements(lista_de_posiciones,free);
+					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
+
 				}else{
 					dato_a_escribir = armar_dato_bloque(posicion,cantidad);
 					escribir_bloque_v2(path_nombre_metadata,dato_a_escribir);
+					free(dato_a_escribir);
 				}
 				//sleep(leer_tiempo_retardo_operacion());
-				log_info(nuestro_log, "guarde informacion: %s de pokemon %s",dato_a_escribir,nombre_pokemon);
+				free(posicion);
 				cerrar_archivo(nombre_pokemon);
-				free(dato_a_escribir);
 				list_destroy(bloques);
 				free(path_nombre_metadata);
 			}
@@ -430,6 +431,7 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 				//sleep(leer_tiempo_retardo_operacion());
 				cerrar_archivo(nombre_pokemon);
 				list_destroy(bloques);
+				free(posicion);
 				list_destroy_and_destroy_elements(lista_de_datos,free);
 			}
 			else{
