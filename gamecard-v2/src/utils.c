@@ -433,6 +433,7 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 				list_destroy(bloques);
 				free(posicion);
 				list_destroy_and_destroy_elements(lista_de_datos,free);
+				free(path_nombre_metadata);
 			}
 			else{
 				sleep(leer_tiempo_de_reintento_operacion());
@@ -448,7 +449,9 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 int existe_el_pokemon(char* nombre_pokemon){
 	char* path_archivo_files = string_new();
 
-	string_append(&path_archivo_files, devolver_path_directorio("/Files"));
+	char* path_aux = devolver_path_directorio("/Files");
+	string_append(&path_archivo_files,path_aux);
+	free(path_aux);
 	string_append(&path_archivo_files,"/");
 	string_append(&path_archivo_files,nombre_pokemon);
 	int existe_el_pokemon = existe_el_directorio(path_archivo_files);

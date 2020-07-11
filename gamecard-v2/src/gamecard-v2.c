@@ -80,7 +80,8 @@ int main(void)
 	 * 21) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 free(posicion);
 	 * 22) Utils.c [guardar_informacion] 1 free(posicion);
 	 * 23) Utils.c [existe_el_pokemon] 1 free(path_archivo_files);
-	 *
+	 * 24) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 free(path_nombre_metadata);
+	 * 25) Utils.c [existe_el_pokemon] 1 free(path_aux);
 	 *
 	 * SEMAFOROS:
 	 * liberar_bloque -> Se agrego pthread_mutex_lock(&Mutex_Bitmap);

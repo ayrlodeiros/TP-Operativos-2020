@@ -625,3 +625,24 @@
 [ERROR] 17:00:45:954 gamecard/(9364:9364): No se encontro pokemons en la posicion
 [ERROR] 17:00:45:955 gamecard/(9364:9364): No se encontro pokemons en la posicion
 [ERROR] 17:00:46:248 gamecard/(9364:9364): No existe ese pokemon
+[ERROR] 17:28:11:73 gamecard/(9706:9706): No se encontro pokemons en la posicion
+[ERROR] 17:28:11:141 gamecard/(9706:9706): No se encontro pokemons en la posicion
+[ERROR] 17:28:13:746 gamecard/(9706:9706): No existe ese pokemon
+[ERROR] 17:31:03:514 gamecard/(9861:9861): No se encontro pokemons en la posicion
+[ERROR] 17:31:03:522 gamecard/(9861:9861): No se encontro pokemons en la posicion
+[ERROR] 17:31:03:688 gamecard/(9861:9861): No existe ese pokemon
+[ERROR] 17:31:56:726 gamecard/(9877:9877): No se encontro pokemons en la posicion
+[ERROR] 17:31:56:801 gamecard/(9877:9877): No se encontro pokemons en la posicion
+[ERROR] 17:31:58:849 gamecard/(9877:9877): No existe ese pokemon
+[ERROR] 17:32:29:0 gamecard/(9915:9915): No se encontro pokemons en la posicion
+[ERROR] 17:32:30:67 gamecard/(9915:9915): No se encontro pokemons en la posicion
+[ERROR] 17:32:33:63 gamecard/(9915:9915): No existe ese pokemon
+[ERROR] 17:36:20:469 gamecard/(10064:10064): No se encontro pokemons en la posicion
+[ERROR] 17:36:20:470 gamecard/(10064:10064): No se encontro pokemons en la posicion
+[ERROR] 17:36:20:824 gamecard/(10064:10064): No existe ese pokemon
+[ERROR] 17:37:14:824 gamecard/(10085:10085): No se encontro pokemons en la posicion
+[ERROR] 17:37:14:900 gamecard/(10085:10085): No se encontro pokemons en la posicion
+[ERROR] 17:37:16:907 gamecard/(10085:10085): No existe ese pokemon
+[ERROR] 17:38:15:823 gamecard/(10120:10120): No se encontro pokemons en la posicion
+[ERROR] 17:38:15:887 gamecard/(10120:10120): No se encontro pokemons en la posicion
+[ERROR] 17:38:18:306 gamecard/(10120:10120): No existe ese pokemon
