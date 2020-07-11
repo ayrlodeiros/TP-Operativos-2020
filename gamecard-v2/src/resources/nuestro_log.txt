@@ -1,0 +1,30 @@
+[INFO] 17:00:45:261 gamecard/(9364:9364): path : /home/utnso/Escritorio/tall-grass/Metadata/Metadata.bin 
+[INFO] 17:00:45:443 gamecard/(9364:9364): TERMINE DE CREAR BITMAP
+[INFO] 17:00:45:452 gamecard/(9364:9364): reescribo posicion: 105-50
+[INFO] 17:00:45:522 gamecard/(9364:9364): reescribo posicion: 5-3
+[INFO] 17:00:45:589 gamecard/(9364:9364): reescribo posicion: 1-2
+[INFO] 17:00:45:638 gamecard/(9364:9364): reescribo posicion: 12-3
+[INFO] 17:00:45:771 gamecard/(9364:9364): reescribo posicion: 1-5
+[INFO] 17:00:45:868 gamecard/(9364:9364): reescribo posicion: 10-2
+[ERROR] 17:00:45:954 gamecard/(9364:9364): No se encontro pokemons en la posicion
+[ERROR] 17:00:45:955 gamecard/(9364:9364): No se encontro pokemons en la posicion
+[INFO] 17:00:45:955 gamecard/(9364:9364): PRUEBA 0.0
+[INFO] 17:00:45:976 gamecard/(9364:9364): reescribo posicion: 105-50
+[INFO] 17:00:46:49 gamecard/(9364:9364): PRUEBA 0.1
+[INFO] 17:00:46:80 gamecard/(9364:9364): reescribo posicion: 105-50
+[INFO] 17:00:46:144 gamecard/(9364:9364): PRUEBA 0.2
+[INFO] 17:00:46:171 gamecard/(9364:9364): reescribo posicion: 105-50
+[INFO] 17:00:46:248 gamecard/(9364:9364): PRUEBA 0.3
+[INFO] 17:00:46:248 gamecard/(9364:9364): PRUEBA 1
+[ERROR] 17:00:46:248 gamecard/(9364:9364): No existe ese pokemon
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 0: 1
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 1: 1
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 2: 1
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 3: 1
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 4: 1
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 5: 1
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 6: 0
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 7: 0
+[INFO] 17:00:46:248 gamecard/(9364:9364): VALOR DEL BITMAP 8: 0
+[INFO] 17:00:46:249 gamecard/(9364:9364): VALOR DEL BITMAP 9: 0
+[INFO] 17:00:46:249 gamecard/(9364:9364): Termine

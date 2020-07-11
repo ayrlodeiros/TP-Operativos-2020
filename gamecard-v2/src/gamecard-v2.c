@@ -79,6 +79,7 @@ int main(void)
 	 * 20) Utils.c [reescribir_bloques] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	 * 21) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 free(posicion);
 	 * 22) Utils.c [guardar_informacion] 1 free(posicion);
+	 * 23) Utils.c [existe_el_pokemon] 1 free(path_archivo_files);
 	 *
 	 *
 	 * SEMAFOROS:

@@ -454,13 +454,13 @@ void guardar_en_bloque(char* path_bloque, char* dato){
 int tamanio_libre_real(int bloque){
 	char* path_bloque = devolver_path_dato(string_itoa(bloque));
 
-		struct stat st;
-		stat(path_bloque,&st);
+	struct stat st;
+	stat(path_bloque,&st);
 
-		int tamanio_actual = st.st_size;
+	int tamanio_actual = st.st_size;
 
-		free(path_bloque);
-		return (obtener_block_size() - tamanio_actual);
+	free(path_bloque);
+	return (obtener_block_size() - tamanio_actual);
 
 }
 

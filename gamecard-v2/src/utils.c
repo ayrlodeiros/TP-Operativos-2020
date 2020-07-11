@@ -451,7 +451,9 @@ int existe_el_pokemon(char* nombre_pokemon){
 	string_append(&path_archivo_files, devolver_path_directorio("/Files"));
 	string_append(&path_archivo_files,"/");
 	string_append(&path_archivo_files,nombre_pokemon);
-	return existe_el_directorio(path_archivo_files);
+	int existe_el_pokemon = existe_el_directorio(path_archivo_files);
+	free(path_archivo_files);
+	return existe_el_pokemon;
 
 }
 
