@@ -277,11 +277,14 @@ int obtener_posicion_x_del_dato(char* dato_a_escribir){
 	aux = string_new();
 	string_append(&aux,posicion);
 	posicion_partida = string_split(aux,"-");
-	char* posicion_en_x = posicion_partida[0];
+	int posicion_en_x = atoi(posicion_partida[0]);
 	free(aux);
 	free(posicion_partida);
 	free(posicion);
-	return atoi(posicion_en_x);
+	free(posicion_partida[0]);
+	free(posicion_partida[1]);
+
+	return posicion_en_x;
 }
 
 int obtener_posicion_y_del_dato(char* dato_a_escribir){
@@ -292,11 +295,13 @@ int obtener_posicion_y_del_dato(char* dato_a_escribir){
 	aux = string_new();
 	string_append(&aux,posicion);
 	posicion_partida = string_split(aux,"-");
-	char* posicion_en_y = posicion_partida[1];
+	int posicion_y = atoi(posicion_partida[1]);
 	free(aux);
 	free(posicion_partida);
 	free(posicion);
-	return atoi(posicion_en_y);
+	free(posicion_partida[1]);
+	free(posicion_partida[0]);
+	return posicion_y;
 }
 
 int obtener_cantidad_del_dato(char* dato_a_escribir){
@@ -308,6 +313,7 @@ int obtener_cantidad_del_dato(char* dato_a_escribir){
 	int cantidad = atoi(aux_partido[1]);
 	free(aux);
 	free(aux_partido[0]);
+	free(aux_partido[1]);
 	free(aux_partido);
 	return cantidad;
 }

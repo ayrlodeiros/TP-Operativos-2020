@@ -55,6 +55,11 @@ int main(void)
 	 * 36) Bloques.c reescribir_bloques, puse 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	 * 37) Bloques.c escribir_bloque_sin_asignar, cambie un string_new por "". char* a_escribir = "";
 	 * 38) Bloques.c escribir_bloque_v2, cambie un string_new por "". char* a_escribir = "";
+	 * 39) Bloques.c obtener_cantidad_del_dato, 1 free(aux_partido[1]);
+	 * 40) Bloques.c obtener_posicion_x_del_dato, 1 free(posicion_partida[0]);
+	 * 41) Bloques.c obtener_posicion_x_del_dato, 1 free(posicion_partida[1]);
+	 * 42) Bloques.c obtener_posicion_y_del_dato, 1 free(posicion_partida[1]);
+	 * 42) Bloques.c obtener_posicion_y_del_dato, 1 free(posicion_partida[0]);
 	 *
 	 *
 	 * UTILS.C
