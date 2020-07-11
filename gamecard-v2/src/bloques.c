@@ -335,7 +335,6 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 	for(int j = 0 ; j < list_size(lista_de_posiciones); j++){
 		escribir_bloque_v2(path_nombre_metadata,list_get(lista_de_posiciones,j));
 	}
-
 	free(lista_de_bloques);
 	list_destroy(bloques);
 	list_destroy(lista_de_posiciones);

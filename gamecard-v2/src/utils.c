@@ -487,7 +487,7 @@ int la_posicion_ya_existe_dentro_del_archivo(char* posicion_a_buscar,char* nombr
 	t_list* lista_de_posiciones = posiciones_del_pokemon(path_nombre_metadata);
 	free(path_nombre_metadata);
 	int se_encuentra_la_posicion = se_encuentra_la_posicion_en_la_lista(lista_de_posiciones,posicion_a_buscar);
-	list_destroy(lista_de_posiciones);
+	list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	return se_encuentra_la_posicion;
 }
 
@@ -499,6 +499,6 @@ t_list* posiciones_del_pokemon(char* path_nombre_metadata){
 		char* posicion = obtener_posicion_del_dato(list_get(posiciones_pokemon,i));
 		list_add(posiciones,posicion);
 	}
-	list_destroy(posiciones_pokemon);
+	list_destroy_and_destroy_elements(posiciones_pokemon,free);
 	return posiciones;
 }

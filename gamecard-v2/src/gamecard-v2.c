@@ -72,6 +72,8 @@ int main(void)
 	 * 14) Utils.c [crear_archivo_files_metadata] 1 free [free(string_nuevo_bloque_libre);]
 	 * 15) Utils.c [guardar_informacion] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
 	 * 16) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 list_destroy_and_destroy_elements(lista_de_datos,free);
+	 * 17) Utils.c [la_posicion_ya_existe_dentro_del_archivo] 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
+	 * 18) Utils.c [posiciones_del_pokemon] 1 list_destroy_and_destroy_elements(posiciones_pokemon,free);
 	 *
 	 *
 	 * SEMAFOROS:
