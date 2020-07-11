@@ -53,6 +53,8 @@ int main(void)
 	 * 34) Bloques.c se_encuentra_la_posicion_en_la_lista_de_posiciones_pokemons, puse 2 free y anda [free(aux_partido[1]);]
 	 * 35) Bloques.c obtener_cantidad_del_dato, puse 1 free y anda [free(aux_partido[0]);]
 	 * 36) Bloques.c reescribir_bloques, puse 1 list_destroy_and_destroy_elements(lista_de_posiciones,free);
+	 * 37) Bloques.c escribir_bloque_sin_asignar, cambie un string_new por "". char* a_escribir = "";
+	 * 38) Bloques.c escribir_bloque_v2, cambie un string_new por "". char* a_escribir = "";
 	 *
 	 *
 	 * UTILS.C
@@ -82,6 +84,7 @@ int main(void)
 	 * 23) Utils.c [existe_el_pokemon] 1 free(path_archivo_files);
 	 * 24) Utils.c [disminuir_cantidad_de_pokemon_en_la_posicion] 1 free(path_nombre_metadata);
 	 * 25) Utils.c [existe_el_pokemon] 1 free(path_aux);
+	 * 26) Utils.c [la_posicion_ya_existe_dentro_del_archivo] 1 free(path_aux);
 	 *
 	 * SEMAFOROS:
 	 * liberar_bloque -> Se agrego pthread_mutex_lock(&Mutex_Bitmap);

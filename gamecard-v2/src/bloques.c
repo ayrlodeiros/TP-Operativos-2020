@@ -55,7 +55,7 @@ void escribir_bloque_v2(char* path_nombre_metadata,char* dato_a_escribir){
 		guardar_en_bloque(path_bloque_a_escribir,a_escribir);
 
 		actualizar_tamanio_bloque(path_nombre_metadata);
-		char* dato_a_escribir_restante = string_new();
+		char* dato_a_escribir_restante = "";
 		dato_a_escribir_restante = string_substring_from(dato_a_escribir, strlen(a_escribir));
 
 		escribir_bloque_sin_asignar(path_nombre_metadata,dato_a_escribir_restante);
@@ -77,7 +77,7 @@ void escribir_bloque_sin_asignar(char* path_nombre_metadata,char* dato_a_escribi
 	char* string_bloque_a_escribir = string_itoa(bloque_a_escribir);
 	char* path_bloque_a_escribir = devolver_path_dato(string_bloque_a_escribir);
 	free(string_bloque_a_escribir);
-	char* a_escribir = string_new();
+	char* a_escribir = "";
 	a_escribir = string_substring(dato_a_escribir_restante, 0, tamanio_libre_del_bloque(bloque_a_escribir));
 	guardar_en_bloque(path_bloque_a_escribir,a_escribir);
 	free(a_escribir);

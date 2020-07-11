@@ -489,7 +489,9 @@ int se_puede_abrir_el_archivo(char* nombre_pokemon){
 
 int la_posicion_ya_existe_dentro_del_archivo(char* posicion_a_buscar,char* nombre_pokemon){
 	char* path_nombre_metadata = string_new();
-	string_append(&path_nombre_metadata, devolver_path_files_metadata(nombre_pokemon));
+	char* path_aux = devolver_path_files_metadata(nombre_pokemon);
+	string_append(&path_nombre_metadata,path_aux);
+	free(path_aux);
 	string_append(&path_nombre_metadata, "/Metadata.bin");
 	t_list* lista_de_posiciones = posiciones_del_pokemon(path_nombre_metadata);
 	free(path_nombre_metadata);
