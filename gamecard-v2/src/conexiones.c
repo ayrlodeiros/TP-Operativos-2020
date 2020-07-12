@@ -133,7 +133,7 @@ int levantar_servidor(char* ip, char* puerto) {
 	    break;
 	}
 
-	log_info(nuestro_log, string_from_format("Servidor levantado en IP: %s y PUERTO: %s", ip, puerto));
+	log_info(nuestro_log, "Servidor levantado en IP: %s y PUERTO: %s", ip, puerto);
 
 	listen(socket_servidor, SOMAXCONN);
 

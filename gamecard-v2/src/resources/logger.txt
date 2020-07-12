@@ -935,3 +935,4 @@
 [ERROR] 00:18:04:444 gamecard/(8512:8512): No se encontro pokemons en la posicion
 [ERROR] 00:18:57:600 gamecard/(8632:8632): No se encontro pokemons en la posicion
 [ERROR] 00:21:45:810 gamecard/(8890:8890): No se encontro pokemons en la posicion
+[INFO] 17:20:11:458 gamecard/(5782:13554): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
