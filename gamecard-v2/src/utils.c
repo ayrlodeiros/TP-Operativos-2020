@@ -6,9 +6,6 @@ void crear_archivo_metadata(int block_size, int blocks){
 	char* block_size_aux = string_itoa(block_size);
 	char* blocks_aux = string_itoa(blocks);
 
-	log_info(nuestro_log,"path : %s ", path_archivo_metadata);
-
-
 	FILE* archivo_metadata  = fopen( path_archivo_metadata , "wb+");
 	fclose(archivo_metadata);
 	metadata_config = config_create(path_archivo_metadata);
@@ -346,7 +343,7 @@ void resetear_bloques_metadata_pokemon(char* path_nombre_metadata){
 t_list* armar_mensaje_get(char* nombre_pokemon){
 
 	int pude_abrir_el_archivo = 0;
-	t_list* lista_de_posiciones_get = list_create();
+	t_list* lista_de_posiciones_get;
 	if(existe_el_pokemon(nombre_pokemon)){
 		char* path_nombre_metadata = string_new();
 		char* path_aux = devolver_path_files_metadata(nombre_pokemon);
@@ -385,9 +382,8 @@ char* armar_dato_bloque(char* posicion,int cantidad){
 	string_append(&dato,"=");
 	char* string_cantidad = string_itoa(cantidad);
 	string_append(&dato,string_cantidad);
-	string_append(&dato,"\n");
-
 	free(string_cantidad);
+	string_append(&dato,"\n");
 
 	return dato;
 }
@@ -417,13 +413,13 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 					int cantidad_en_pos = cantidad_en_posicion(lista_de_datos,posicion);
 					int nueva_cantidad_en_posicion = cantidad_en_pos - 1;
 					dato_a_escribir = armar_dato_bloque(posicion,nueva_cantidad_en_posicion);
+					list_destroy_and_destroy_elements(lista_de_datos,free);
 					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 
 					//sleep(leer_tiempo_retardo_operacion());
 					cerrar_archivo(nombre_pokemon);
 					list_destroy(bloques);
 					free(posicion);
-					list_destroy_and_destroy_elements(lista_de_datos,free);
 					free(path_nombre_metadata);
 
 					return 1;

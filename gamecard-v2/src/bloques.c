@@ -337,7 +337,6 @@ void reescribir_bloques(char* path_nombre_metadata,char* dato_a_escribir){
 		free(lista_de_bloques[i]);
 	}
 	resetear_bloques_metadata_pokemon(path_nombre_metadata);
-	log_info(nuestro_log,"reescribo posicion: %s",obtener_posicion_del_dato(dato_a_escribir));
 	for(int j = 0 ; j < list_size(lista_de_posiciones); j++){
 		escribir_bloque_v2(path_nombre_metadata,list_get(lista_de_posiciones,j));
 	}
