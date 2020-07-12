@@ -12,6 +12,8 @@ void iniciar_config(void){
 	setear_puerto_broker();
 	setear_log_file();
 	setear_id_modulo();
+	setear_ip_team();
+	setear_puerto_team();
 }
 
 void destruir_config(void) {
@@ -104,6 +106,14 @@ int leer_id_modulo(void) {
 	return id_modulo;
 }
 
+char* leer_ip_team(void){
+	return ip_team;
+}
+
+char* leer_puerto_team(void){
+	return puerto_team;
+}
+
 //SOLO SE EJECUTAN UNA VEZ
 //
 void setear_tiempo_reconexion(void){
@@ -159,4 +169,12 @@ void setear_log_file(void){
 
 void setear_id_modulo(void){
 	id_modulo = config_get_int_value(config, "ID_MODULO");
+}
+
+void setear_ip_team(void){
+	ip_team = config_get_string_value(config, "IP_TEAM");
+}
+
+void setear_puerto_team(void){
+	puerto_team = config_get_string_value(config, "PUERTO_TEAM");
 }

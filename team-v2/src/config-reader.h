@@ -27,6 +27,8 @@ char* ip_broker;
 char* puerto_broker;
 char* log_file;
 int id_modulo;
+char* ip_team;
+char* puerto_team;
 
 void iniciar_config(void);
 void destruir_config(void);
@@ -47,6 +49,8 @@ char* leer_ip_broker(void);
 char* leer_puerto_broker(void);
 char* leer_log_file(void);
 int leer_id_modulo(void);
+char* leer_ip_team(void);
+char* leer_puerto_team(void);
 
 void setear_tiempo_reconexion(void);
 void setear_retardo_ciclo_cpu(void);
@@ -58,5 +62,7 @@ void setear_ip_broker(void);
 void setear_puerto_broker(void);
 void setear_log_file(void);
 void setear_id_modulo(void);
+void setear_ip_team(void);
+void setear_puerto_team(void);
 
 #endif /* CONFIGREADER_H_ */

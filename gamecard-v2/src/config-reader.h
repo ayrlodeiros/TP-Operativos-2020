@@ -22,6 +22,9 @@ int tiempo_retardo_operacion;
 char* punto_montaje_tallgrass;
 char* ip_broker;
 int puerto_broker;
+int id_modulo;
+char* ip_gamecard;
+int puerto_gamecard;
 
 void iniciar_config(void);
 void destruir_config(void);
@@ -32,6 +35,9 @@ int leer_tiempo_retardo_operacion(void);
 char* leer_punto_montaje_tallgrass(void);
 char* leer_ip_broker(void);
 int leer_puerto_broker(void);
+int leer_id_modulo(void);
+char* leer_ip_gamecard(void);
+int leer_puerto_gamecard(void);
 
 void setear_tiempo_de_reintento_conexion(void);
 void setear_tiempo_de_reintento_operacion(void);
@@ -39,6 +45,9 @@ void setear_tiempo_retardo_operacion(void);
 void setear_punto_montaje_tallgrass(void);
 void setear_ip_broker(void);
 void setear_puerto_broker(void);
+void setear_id_modulo(void);
+void setear_ip_gamecard(void);
+void setear_puerto_gamecard(void);
 
 
 #endif /* CONFIG_READER_H_ */

@@ -100,7 +100,7 @@ int main(void)
 
 	iniciar_gamecard();
 
-	guardar_informacion("Pikachu",105,50,226);
+	/*guardar_informacion("Pikachu",105,50,226);
 	guardar_informacion("Squirtle",105,50,10);
 	guardar_informacion("Pikachu",105,50,1111);
 	guardar_informacion("Pikachu",11,51,1111);
@@ -143,7 +143,7 @@ int main(void)
 	guardar_informacion("Squirtle",1,1,10);
 	guardar_informacion("Squirtle",2,2,20);
 	guardar_informacion("Squirtle",3,3,30);
-	guardar_informacion("Squirtle",5,5,50);
+	guardar_informacion("Squirtle",5,5,50);*/
 
 /*
 	t_list* posiciones = armar_mensaje_get("Pikachu");
@@ -153,7 +153,7 @@ int main(void)
 		}
 	}
 */
-	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
+	/*disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",10,2);
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",100,202);
 	log_info(nuestro_log,"PRUEBA 0.0");
@@ -162,7 +162,7 @@ int main(void)
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",105,50);
 	log_info(nuestro_log,"PRUEBA 0.2");
 	disminuir_cantidad_de_pokemon_en_la_posicion("Pikachu",105,50);
-	log_info(nuestro_log,"PRUEBA 0.3");
+	log_info(nuestro_log,"PRUEBA 0.3");*/
 /*
 	posiciones = armar_mensaje_get("Pikachu");
 	if(!list_is_empty(posiciones)){
@@ -171,9 +171,9 @@ int main(void)
 		}
 	}
 */
-	log_info(nuestro_log,"PRUEBA 1");
+	//log_info(nuestro_log,"PRUEBA 1");
 
-	disminuir_cantidad_de_pokemon_en_la_posicion("PokemonInexistente",105,50);
+	//disminuir_cantidad_de_pokemon_en_la_posicion("PokemonInexistente",105,50);
 /*
 	posiciones = armar_mensaje_get("Squirtle");
 	if(!list_is_empty(posiciones)){
@@ -184,14 +184,24 @@ int main(void)
 */
 	//buscar_posicion_en_el_archivo(path_nombre_metadata,"52-13");
 
-	for(int j = 0;j<10;j++){
+	/*for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
-	}
+	}*/
+
+
+	//TODO BORRAR
+	pthread_t* hilo_infinito;
+	pthread_create(&hilo_infinito,NULL, while_infinito, NULL);
+	pthread_join(hilo_infinito, NULL);
 
 	log_info(nuestro_log,"Termine");
 	//log_info(nuestro_log,config_get_string_value(config,"miele"));
 	terminar_gamecard();
 	return EXIT_SUCCESS;
+}
+
+void while_infinito() {
+	while(1);
 }
 
 
@@ -218,6 +228,7 @@ void iniciar_gamecard() {
 	}
 	crear_bitmap(); //levanto el bitarray;
 
+	levantar_conexiones();
 }
 
 void terminar_gamecard() {

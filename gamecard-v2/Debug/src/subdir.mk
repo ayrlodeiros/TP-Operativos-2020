@@ -6,6 +6,7 @@
 C_SRCS += \
 ../src/bitmap.c \
 ../src/bloques.c \
+../src/conexiones.c \
 ../src/config-reader.c \
 ../src/gamecard-v2.c \
 ../src/utils.c 
@@ -13,6 +14,7 @@ C_SRCS += \
 OBJS += \
 ./src/bitmap.o \
 ./src/bloques.o \
+./src/conexiones.o \
 ./src/config-reader.o \
 ./src/gamecard-v2.o \
 ./src/utils.o 
@@ -20,6 +22,7 @@ OBJS += \
 C_DEPS += \
 ./src/bitmap.d \
 ./src/bloques.d \
+./src/conexiones.d \
 ./src/config-reader.d \
 ./src/gamecard-v2.d \
 ./src/utils.d 

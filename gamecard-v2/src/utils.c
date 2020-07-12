@@ -393,7 +393,7 @@ char* armar_dato_bloque(char* posicion,int cantidad){
 }
 
 //DISMINUIR_CANTIDAD_DE_POKEMON_EN_LA_POSICION = CATCH POKEMON
-void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posicion_x,int posicion_y){
+int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posicion_x,int posicion_y){
 
 	if(existe_el_pokemon(nombre_pokemon)){
 		//string_append(&informacion_a_guardar,pos_y_aux);
@@ -415,15 +415,18 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 
 				if(la_posicion_ya_existe_dentro_del_archivo(posicion,nombre_pokemon)){
 					int cantidad_en_pos = cantidad_en_posicion(lista_de_datos,posicion);
+					int nueva_cantidad_en_posicion = cantidad_en_pos - 1;
+					dato_a_escribir = armar_dato_bloque(posicion,nueva_cantidad_en_posicion);
+					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 
-					if(cantidad_en_posicion > 1){
-						int nueva_cantidad_en_posicion = cantidad_en_pos - 1;
-						dato_a_escribir = armar_dato_bloque(posicion,nueva_cantidad_en_posicion);
-						reescribir_bloques(path_nombre_metadata,dato_a_escribir);
-					}else{
-						dato_a_escribir = armar_dato_bloque(posicion,0);
-						reescribir_bloques(path_nombre_metadata,dato_a_escribir);
-					}
+					//sleep(leer_tiempo_retardo_operacion());
+					cerrar_archivo(nombre_pokemon);
+					list_destroy(bloques);
+					free(posicion);
+					list_destroy_and_destroy_elements(lista_de_datos,free);
+					free(path_nombre_metadata);
+
+					return 1;
 				}else{
 					log_error(logger,"No se encontro pokemons en la posicion");
 					log_error(nuestro_log,"No se encontro pokemons en la posicion");
@@ -443,6 +446,7 @@ void disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posic
 		log_error(logger,"No existe ese pokemon");
 		log_error(nuestro_log,"No existe ese pokemon");
 	}
+	return 0;
 }
 
 

@@ -9,6 +9,9 @@ void iniciar_config(void){
 	setear_punto_montaje_tallgrass();
 	setear_ip_broker();
 	setear_puerto_broker();
+	setear_id_modulo();
+	setear_ip_gamecard();
+	setear_puerto_gamecard();
 }
 
 void destruir_config(void) {
@@ -39,6 +42,18 @@ int leer_puerto_broker(void){
 	return puerto_broker;
 }
 
+int leer_id_modulo(void) {
+	return id_modulo;
+}
+
+char* leer_ip_gamecard(void){
+	return ip_gamecard;
+}
+
+int leer_puerto_gamecard(void){
+	return puerto_gamecard;
+}
+
 void setear_tiempo_de_reintento_conexion(void){
 	tiempo_de_reintento_conexion = config_get_int_value(config, "TIEMPO_DE_REINTENTO_CONEXION");
 }
@@ -61,4 +76,16 @@ void setear_ip_broker(void){
 
 void setear_puerto_broker(void){
 	puerto_broker = config_get_int_value(config, "PUERTO_BROKER");
+}
+
+void setear_id_modulo(void){
+	id_modulo = config_get_int_value(config, "ID_MODULO");
+}
+
+void setear_ip_gamecard(void){
+	ip_gamecard = config_get_string_value(config, "IP_GAMECARD");
+}
+
+void setear_puerto_gamecard(void){
+	puerto_gamecard = config_get_int_value(config, "PUERTO_GAMECARD");
 }

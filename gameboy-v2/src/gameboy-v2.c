@@ -3,25 +3,35 @@
 int main(int argc, char *argv[])
 {
 	iniciar_gameBoy();
-	char* primer_argumento = argv[1];
-	char* tipo_mensaje = argv[2];
 
-	if(argc > 1){
+	if(argc >= 4){
+		char* primer_argumento = argv[1];
+		char* tipo_mensaje = argv[2];
 		if(!strcmp(primer_argumento,"SUSCRIPTOR")){
-			gestionar_suscriptor(argv);
+			if(argc == 4) {
+				gestionar_suscriptor(argv);
+			} else {
+				log_error(mi_log, "Cantidad incorrecta de argumentos para SUSCRIPCION");
+			}
 		} else if(!strcmp(tipo_mensaje,"APPEARED_POKEMON")){
-			gestionar_envio_appeared(argv);
+			gestionar_envio_appeared(argv, argc);
 		} else if(!strcmp(tipo_mensaje,"GET_POKEMON")){
-			gestionar_envio_get(argv);
-		}else if(!strcmp(tipo_mensaje,"NEW_POKEMON")){
-			gestionar_envio_new(argv);
-		}else if(!strcmp(tipo_mensaje,"CATCH_POKEMON")){
-			gestionar_envio_catch(argv);
-		}else if(!strcmp(tipo_mensaje,"CAUGHT_POKEMON")){
-			gestionar_envio_caught(argv);
+			gestionar_envio_get(argv, argc);
+		} else if(!strcmp(tipo_mensaje,"NEW_POKEMON")){
+			gestionar_envio_new(argv, argc);
+		} else if(!strcmp(tipo_mensaje,"CATCH_POKEMON")){
+			gestionar_envio_catch(argv, argc);
+		} else if(!strcmp(tipo_mensaje,"CAUGHT_POKEMON")){
+			if(argc == 5) {
+				gestionar_envio_caught(argv);
+			} else {
+				log_error(mi_log, "Cantidad incorrecta de argumentos para CAUGHT");
+			}
+		} else {
+			log_error(mi_log, "MENSAJE INCORRECTO");
 		}
-
-		log_info(mi_log,"mensaje enviado");
+	} else {
+		log_error(mi_log, "MENSAJE INCORRECTO, NO CUMPLE CON LA CANTIDAD MINIMA DE ARGUMENTOS");
 	}
 
 	terminar_gameBoy();
@@ -44,7 +54,7 @@ void terminar_gameBoy(){
 	log_destroy(mi_log);
 }
 
-void gestionar_envio_appeared(char* argv[]){
+void gestionar_envio_appeared(char* argv[], int argc){
 	t_appeared_pokemon *appeared_pokemon = malloc(sizeof(t_appeared_pokemon));
 	int socket;
 	char* tipo_modulo = argv[1];
@@ -55,11 +65,21 @@ void gestionar_envio_appeared(char* argv[]){
 	appeared_pokemon->posicionY = atoi(argv[5]);
 
 	if(!strcmp(tipo_modulo,"BROKER")){
-		socket = conectarse_a(BROKER);
-		enviar_mensaje_appeared_broker(*appeared_pokemon, socket,atoi(argv[6]));
-	}else if(!strcmp(tipo_modulo,"TEAM")){
-		socket = conectarse_a(TEAM);
-		enviar_mensaje_appeared_team(*appeared_pokemon, socket);
+		if(argc == 7) {
+			socket = conectarse_a(BROKER);
+			enviar_mensaje_appeared_broker(*appeared_pokemon, socket,atoi(argv[6]));
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para APPEARED en BROKER");
+		}
+	} else if(!strcmp(tipo_modulo,"TEAM")){
+		if(argc == 6) {
+			socket = conectarse_a(TEAM);
+			enviar_mensaje_appeared_team(*appeared_pokemon, socket);
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para APPEARED en TEAM");
+		}
+	} else {
+		log_error(mi_log, "Modulo incorrecto para APPEARED");
 	}
 
 	//ESTE FREE PROVOCA EL SEG F
@@ -67,7 +87,7 @@ void gestionar_envio_appeared(char* argv[]){
 	free(appeared_pokemon);
 }
 
-void gestionar_envio_get(char* argv[]){
+void gestionar_envio_get(char* argv[], int argc){
 	const char* tipo_modulo = argv[1];
 	t_get_pokemon *get_pokemon = malloc (sizeof(t_get_pokemon));
 	int socket;
@@ -75,20 +95,31 @@ void gestionar_envio_get(char* argv[]){
 	get_pokemon->largo_nombre_pokemon = strlen(get_pokemon->nombre_pokemon);
 
 	if(!strcmp(tipo_modulo,"BROKER")){
-		socket = conectarse_a(BROKER);
+		if(argc == 4) {
+			socket = conectarse_a(BROKER);
 			enviar_mensaje_get_broker(*get_pokemon,socket);
-	}else if(!strcmp(tipo_modulo,"GAMECARD")){
-		socket = conectarse_a(GAMECARD);
-		enviar_mensaje_get_gamecard(*get_pokemon, socket,atoi(argv[3]));
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para GET en BROKER");
+		}
+	} else if(!strcmp(tipo_modulo,"GAMECARD")){
+		if(argc == 5) {
+			socket = conectarse_a(GAMECARD);
+			enviar_mensaje_get_gamecard(*get_pokemon, socket,atoi(argv[3]));
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para GET en GAMECARD");
+		}
+	} else {
+		log_error(mi_log, "Modulo incorrecto para GET");
 	}
 
 	free(get_pokemon);
 }
 
-void gestionar_envio_new(char* argv[]){
+void gestionar_envio_new(char* argv[], int argc){
 	const char* tipo_modulo = argv[1];
 	t_new_pokemon *new_pokemon = malloc (sizeof(t_new_pokemon));
 	int socket;
+	//TODO VER DE ABSTRAER EN FUNCION PARA LLAMARLO RECIEN CUANDO SE HIZO LA VALIDACION
 	new_pokemon->nombre_pokemon = argv[3];
 	new_pokemon->largo_nombre_pokemon = strlen(new_pokemon->nombre_pokemon);
 	new_pokemon->posicionX = atoi(argv[4]);
@@ -96,11 +127,23 @@ void gestionar_envio_new(char* argv[]){
 	new_pokemon->cantidad_pokemon = atoi(argv[6]);
 
 	if(!strcmp(tipo_modulo,"BROKER")){
-		socket = conectarse_a(BROKER);
-		enviar_mensaje_new_broker(*new_pokemon, socket);
-	}else if(!strcmp(tipo_modulo,"GAMECARD")){
-		socket= conectarse_a(GAMECARD);
-		enviar_mensaje_new_gamecard(*new_pokemon, socket,atoi(argv[6]));
+		if(argc == 7) {
+
+			socket = conectarse_a(BROKER);
+			enviar_mensaje_new_broker(*new_pokemon, socket);
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para NEW en BROKER");
+		}
+	} else if(!strcmp(tipo_modulo,"GAMECARD")){
+		if(argc == 8) {
+
+			socket= conectarse_a(GAMECARD);
+			enviar_mensaje_new_gamecard(*new_pokemon, socket,atoi(argv[6]));
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para NEW en GAMECARD");
+		}
+	} else {
+		log_error(mi_log, "Modulo incorrecto para NEW");
 	}
 
 	free(new_pokemon);
@@ -108,7 +151,7 @@ void gestionar_envio_new(char* argv[]){
 
 
 
-void gestionar_envio_catch(char* argv[]){
+void gestionar_envio_catch(char* argv[], int argc){
 	const char* tipo_modulo = argv[1];
 	t_catch_pokemon *catch_pokemon = malloc (sizeof(t_catch_pokemon));
 	int socket;
@@ -118,11 +161,21 @@ void gestionar_envio_catch(char* argv[]){
 	catch_pokemon->posicionY = atoi(argv[5]);
 
 	if(!strcmp(tipo_modulo,"BROKER")){
-		socket = conectarse_a(BROKER);
-		enviar_mensaje_catch_broker(*catch_pokemon, socket);
-	}else if(!strcmp(tipo_modulo,"GAMECARD")){
-		socket= conectarse_a(GAMECARD);
-		enviar_mensaje_catch_gamecard(*catch_pokemon, socket,atoi(argv[6]));
+		if(argc == 6) {
+			socket = conectarse_a(BROKER);
+			enviar_mensaje_catch_broker(*catch_pokemon, socket);
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para CATCH en BROKER");
+		}
+	} else if(!strcmp(tipo_modulo,"GAMECARD")){
+		if(argc == 7) {
+			socket= conectarse_a(GAMECARD);
+			enviar_mensaje_catch_gamecard(*catch_pokemon, socket,atoi(argv[6]));
+		} else {
+			log_error(mi_log, "Cantidad incorrecta de argumentos para CATCH en GAMECARD");
+		}
+	} else {
+		log_error(mi_log, "Modulo incorrecto para CATCH");
 	}
 
 	free(catch_pokemon);

@@ -19,12 +19,15 @@
 #include <fcntl.h>
 #include <dirent.h>
 #include <unistd.h>
+#include <netdb.h>
+#include <signal.h>
+#include <sys/socket.h>
 #include <commons/config.h>
 #include <commons/log.h>
 #include <commons/string.h>
 #include <commons/bitarray.h>
 #include <semaphore.h>
-#include"commons/txt.h"
+#include "commons/txt.h"
 #include <commons/collections/dictionary.h>
 
 t_config* metadata_config;
@@ -78,5 +81,8 @@ t_list* posiciones_del_pokemon(char* path_nombre_metadata);
 void abrir_archivo(char* nombre_pokemon);
 void cerrar_archivo(char* nombre_pokemon);
 void resetear_bloques_metadata_pokemon(char* path_nombre_metadata);
+
+void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int cantidad);
+int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posicion_x,int posicion_y);
 
 #endif /* UTILS_H_ */

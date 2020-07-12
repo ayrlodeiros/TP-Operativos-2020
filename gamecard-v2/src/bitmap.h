@@ -3,7 +3,6 @@
 #ifndef BITMAP_H_
 #define BITMAP_H_
 
-#include "utils.h"
 #include "bloques.h"
 
 void crear_bitmap();

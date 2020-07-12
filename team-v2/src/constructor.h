@@ -154,7 +154,7 @@ typedef struct
 typedef struct
 {
 	int id;
-	int id_correlativo; //El team no lo usa
+	int id_correlativo;
 	int tamanio;
 	void* payload;
 } mensaje_broker;

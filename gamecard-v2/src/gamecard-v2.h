@@ -1,6 +1,8 @@
 #ifndef GAMECARD_H_
 #define GAMECARD_H_
 
-#include "bitmap.h"
+#include "conexiones.h"
+
+void while_infinito();
 
 #endif /* GAME-CARD_H_ */

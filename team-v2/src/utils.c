@@ -19,16 +19,21 @@ t_paquete* crear_paquete_sin_buffer(codigo_operacion cod_op, codigo_accion cod_a
 }
 void* serializar_paquete(t_paquete* paquete, int tamanio_a_enviar){
 	void * a_enviar = malloc(tamanio_a_enviar);
-	int offset = 0;
 
-	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(int));
-	offset += sizeof(int);
-	memcpy(a_enviar + offset,&(paquete->codigo_de_operacion),sizeof(int));
-	offset += sizeof(int);
-	memcpy(a_enviar + offset,&(paquete->codigo_de_accion),sizeof(int));
-	offset += sizeof(int);
-	memcpy(a_enviar + offset,&(paquete->buffer->tamanio),sizeof(int));
-	offset += sizeof(int);
+	//Creo el id con valor -1 porque no tiene id correlativo
+	int id_correlativo = -1;
+
+	int offset = 0;
+	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_operacion),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_accion),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&id_correlativo,sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->buffer->tamanio),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
 	memcpy(a_enviar + offset,paquete->buffer->stream, paquete->buffer->tamanio);
 
 	return a_enviar;
@@ -38,17 +43,17 @@ void* serializar_paquete_sin_buffer(t_paquete* paquete, int tamanio_a_enviar){
 	void * a_enviar = malloc(tamanio_a_enviar);
 	int offset = 0;
 
-	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(int));
-	offset += sizeof(int);
-	memcpy(a_enviar + offset,&(paquete->codigo_de_operacion),sizeof(int));
-	offset += sizeof(int);
-	memcpy(a_enviar + offset,&(paquete->codigo_de_accion),sizeof(int));
+	memcpy(a_enviar + offset, &(paquete->numero_de_modulo),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_operacion),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->codigo_de_accion),sizeof(uint32_t));
 
 	return a_enviar;
 }
 
 int obtener_tamanio_de_paquete(t_paquete* paquete) {
-	return paquete->buffer->tamanio + 4*sizeof(int);
+	return paquete->buffer->tamanio + 5*sizeof(uint32_t);
 }
 
 void destruir_paquete(t_paquete* paquete) {
@@ -120,7 +125,7 @@ int levantar_servidor(char* ip, char* puerto) {
 
 	//PARA GAMEBOY
 void atender_conexion_gameboy() {
-	int servidor_para_gameboy = levantar_servidor("127.0.0.2", "5002");
+	int servidor_para_gameboy = levantar_servidor(leer_ip_team(), leer_puerto_team());
 
 	while (1) {
 		struct sockaddr_in dir_cliente;
@@ -188,7 +193,7 @@ void recibir_mensaje_de_gameboy(int socket_gameboy) {
 	if(hubo_error == 0) {
 		manejar_aparicion_de_pokemon(nombre_pokemon, posicionX, posicionY);
 	} else {
-		log_info(nuestro_log, "No se pudo recibir el mensaje del Gameboy");
+		log_info(nuestro_log, "No se pudo recibir el mensaje del Game Boy");
 	}
 }
 	//FIN DE PARA GAMEBOY
@@ -326,12 +331,7 @@ void esperar_mensaje_appeared() {
 			memcpy(&posicion_y, payload+offset, sizeof(uint32_t));
 			offset+=sizeof(uint32_t);
 
-			if(el_pokemon_es_requerido(nombre_pokemon)) {
-				manejar_aparicion_de_pokemon(nombre_pokemon, posicion_x, posicion_y);
-			} else {
-				free(nombre_pokemon);
-			}
-
+			manejar_aparicion_de_pokemon(nombre_pokemon, posicion_x, posicion_y);
 
 			free(msj_broker->payload);
 			free(msj_broker);
@@ -347,7 +347,7 @@ void esperar_mensaje_localized() {
 		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
 		} else {
-			if(id_esta_en_lista_ids_localized(msj_broker->id) == 1) {
+			if(id_esta_en_lista_ids_localized(msj_broker->id_correlativo) == 1) {
 
 				//TODO implementar funcion para deserializar payload en funcion de localized
 				void* payload = msj_broker->payload;
@@ -366,36 +366,42 @@ void esperar_mensaje_localized() {
 					free(nombre_pokemon);
 				} else {
 
-					actualizar_pokemon_como_recibido(nombre_pokemon);
-
 					int cantidad;
 					memcpy(&cantidad, payload+offset, sizeof(uint32_t));
 					offset+=sizeof(uint32_t);
 
-					t_list* posiciones = list_create();
-					for(int i = 0; i<cantidad; i++) {
-						posicion* pos = malloc(sizeof(posicion));
+					if(cantidad > 0) {
+						actualizar_pokemon_como_recibido(nombre_pokemon);
 
-						memcpy(&(pos->posicion_x), payload+offset, sizeof(uint32_t));
-						offset+=sizeof(uint32_t);
+						t_list* posiciones = list_create();
+						for(int i = 0; i<cantidad; i++) {
+							posicion* pos = malloc(sizeof(posicion));
 
-						memcpy(&(pos->posicion_y), payload+offset, sizeof(uint32_t));
-						offset+=sizeof(uint32_t);
+							memcpy(&(pos->posicion_x), payload+offset, sizeof(uint32_t));
+							offset+=sizeof(uint32_t);
 
+							memcpy(&(pos->posicion_y), payload+offset, sizeof(uint32_t));
+							offset+=sizeof(uint32_t);
+
+							list_add(posiciones, pos);
+
+						}
+						//TERMINA DESERIALIZACION
+
+
+						//TODO REVISAR EL ISSUE PARA SABER SI TOMO TODOS LOS QUE APARECEN EN EL LOCALIZED
+						int cantidad_en_objetivo = *(int*) dictionary_get(objetivo_global, nombre_pokemon);
+
+						for(int i=0; i<cantidad_en_objetivo && i<cantidad; i++) {
+							posicion* pos = list_get(posiciones, i);
+
+							manejar_aparicion_de_pokemon(nombre_pokemon, pos->posicion_x, pos->posicion_y);
+						}
+
+						list_destroy_and_destroy_elements(posiciones, limpiar_posicion);
+					} else {
+						free(nombre_pokemon);
 					}
-					//TERMINA DESERIALIZACION
-
-
-					//TODO REVISAR EL ISSUE PARA SABER SI TOMO TODOS LOS QUE APARECEN EN EL LOCALIZED
-					int cantidad_en_objetivo = *(int*) dictionary_get(objetivo_global, nombre_pokemon);
-
-					for(int i=0; i<cantidad_en_objetivo && i<cantidad; i++) {
-						posicion* pos = list_get(posiciones, i);
-
-						manejar_aparicion_de_pokemon(nombre_pokemon, pos->posicion_x, pos->posicion_y);
-					}
-
-					list_destroy_and_destroy_elements(posiciones, limpiar_posicion);
 				}
 			}
 			free(msj_broker->payload);
@@ -458,7 +464,7 @@ void esperar_mensaje_caught() {
 		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
 		} else {
-			int posicion_en_lista = obtener_posicion_en_lista_de_id_caught(msj_broker->id);
+			int posicion_en_lista = obtener_posicion_en_lista_de_id_caught(msj_broker->id_correlativo);
 			if(posicion_en_lista != -1) {
 				log_info(nuestro_log, "El mensaje CAUGHT corresponde a un ID que se estaba esperando");
 				pthread_mutex_lock(&mutex_lista_ids_caught);
@@ -550,6 +556,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 		buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
 	} else {
 		log_info(nuestro_log, string_from_format("El pokemon %s no es requerido", nombre));
+		free(nombre);
 	}
 }
 
@@ -923,10 +930,13 @@ void realizar_get(char* key, void* value) {
 
 			//CREO EL BUFFER CON SU TAMANIO Y STREAM
 			t_buffer* buffer = malloc(sizeof(t_buffer));
-			buffer->tamanio = strlen(key) + 1;
+			int largo_key = strlen(key);
+			buffer->tamanio = largo_key + 1 + sizeof(uint32_t);
 			void* stream = malloc(buffer->tamanio);
 			int offset = 0;
-			memcpy(stream + offset,&key, buffer->tamanio);
+			memcpy(stream + offset,&largo_key, sizeof(uint32_t));
+			offset+=sizeof(uint32_t);
+			memcpy(stream + offset,&key, (largo_key + 1));
 			buffer->stream = stream;
 
 			//CREO EL PAQUETE CON EL CONTENIDO DE LO QUE VOY A ENVIAR
@@ -981,7 +991,7 @@ void catch_pokemon(entrenador* entrenador) {
 	if(funciona_broker == 0 || socket_catch == -1) {
 		//ACCION POR DEFAULT
 		log_info(logger, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
-		log_info(logger, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
+		log_info(nuestro_log, "9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
 		manejar_la_captura_del_pokemon(entrenador);
 	} else {
 		//ACCION CON EL BROKER
@@ -990,15 +1000,18 @@ void catch_pokemon(entrenador* entrenador) {
 		t_buffer* buffer = malloc(sizeof(t_buffer));
 
 		int tamanio_char_pokemon = strlen(entrenador->pokemon_en_busqueda->nombre) + 1;
-		buffer->tamanio = tamanio_char_pokemon + (2*sizeof(int));
+		buffer->tamanio = tamanio_char_pokemon + (3*sizeof(uint32_t));
+		tamanio_char_pokemon--;
 
 		void* stream = malloc(buffer->tamanio);
 		int offset = 0;
-		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->nombre), tamanio_char_pokemon);
-		offset += tamanio_char_pokemon;
-		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_x), sizeof(int));
-		offset += sizeof(int);
-		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_y), sizeof(int));
+		memcpy(stream + offset,&tamanio_char_pokemon, sizeof(uint32_t));
+		offset += sizeof(uint32_t);
+		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->nombre), (tamanio_char_pokemon+1));
+		offset += (tamanio_char_pokemon+1);
+		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_x), sizeof(uint32_t));
+		offset += sizeof(uint32_t);
+		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_y), sizeof(uint32_t));
 
 		buffer->stream = stream;
 
