@@ -30,8 +30,8 @@ void registrar_movimiento(entrenador* entrenador) {
 //Logea en el logger principal el movimiento que realizo un entrenador
 //Solo usar dsp de que un entrenador cambio de posicion
 void loggear_movimiento(entrenador* entrenador) {
-	log_info(nuestro_log, string_from_format("2. Entrenador %d moviendose a la posicion: %d|%d.", entrenador->id, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y));
-	log_info(logger, string_from_format("2. Entrenador %d moviendose a la posicion: %d|%d.", entrenador->id, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y));
+	log_info(nuestro_log, "2. Entrenador %d moviendose a la posicion: %d|%d.", entrenador->id, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
+	log_info(logger, "2. Entrenador %d moviendose a la posicion: %d|%d.", entrenador->id, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
 }
 
 void ejecutar(entrenador* entrenador){

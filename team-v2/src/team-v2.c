@@ -5,7 +5,7 @@ int main(void){
 
 	iniciar_team();
 
-	log_info(nuestro_log, string_from_format("La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores)));
+	log_info(nuestro_log, "La cantidad de entrenadores del equipo es de %d entrenadores", list_size(entrenadores));
 	dictionary_iterator(objetivo_global, mostrar_objetivo_global);
 
 	pthread_t* hilo_conexion_gameboy;

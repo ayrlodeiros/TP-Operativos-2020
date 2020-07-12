@@ -76,11 +76,11 @@ int crear_conexion_como_cliente(char *ip, char* puerto) {
 	int socket_cliente = socket(server_info->ai_family, server_info->ai_socktype, server_info->ai_protocol);
 
 	if(connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen) == -1) {
-		//log_error(nuestro_log, string_from_format("Falla al conectarse en IP: %s y PUERTO: %s", ip, puerto));
+		//log_error(nuestro_log, "Falla al conectarse en IP: %s y PUERTO: %s", ip, puerto);
 		freeaddrinfo(server_info);
 		return -1;
 	} else {
-		log_info(nuestro_log, string_from_format("Conexion exitosa en IP: %s y PUERTO: %s", ip, puerto));
+		log_info(nuestro_log, "Conexion exitosa en IP: %s y PUERTO: %s", ip, puerto);
 		freeaddrinfo(server_info);
 		return socket_cliente;
 	}
@@ -114,7 +114,7 @@ int levantar_servidor(char* ip, char* puerto) {
 	    break;
 	}
 
-	log_info(nuestro_log, string_from_format("Servidor levantado en IP: %s y PUERTO: %s", ip, puerto));
+	log_info(nuestro_log, "Servidor levantado en IP: %s y PUERTO: %s", ip, puerto);
 
 	listen(socket_servidor, SOMAXCONN);
 
@@ -216,7 +216,7 @@ int intentar_conectar_al_broker() {
 	int conexion = -1;
 
 	while(conexion == -1) {
-		log_info(nuestro_log, string_from_format("Intentando conectar con broker en IP: %s y PUERTO: %s", ip_broker, puerto_broker));
+		log_info(nuestro_log, "Intentando conectar con broker en IP: %s y PUERTO: %s", ip_broker, puerto_broker);
 		log_info(logger, "10. Inicio de proceso de intento de comunicación con el Broker.");
 
 		conexion = crear_conexion_como_cliente(ip_broker, puerto_broker);
@@ -555,7 +555,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 	//el_pokemon_es_requerido(nombre)
 	if(dictionary_has_key(objetivo_global,nombre)) {
 		if(necesito_mas_de_ese_pokemon(nombre)){
-			log_info(nuestro_log, string_from_format("Aparecio un %s en %d|%d, el cual es requerido", nombre, posicion_x, posicion_y));
+			log_info(nuestro_log, "Aparecio un %s en %d|%d, el cual es requerido", nombre, posicion_x, posicion_y);
 
 			//Se hace aca para que dos entrenadores no esten buscando al mismo pokemon
 			restar_adquirido_a_objetivo_global(nombre);
@@ -566,7 +566,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 
 			buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
 		} else {
-			log_info(nuestro_log, string_from_format("El pokemon %s no es requerido actualmente, pero podría serlo en un futuro", nombre));
+			log_info(nuestro_log, "El pokemon %s no es requerido actualmente, pero podría serlo en un futuro", nombre);
 			//Si no lo necesito actualmente, lo agrego a una lista de pokemons que podrian ser llamados
 			pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
 			nuevo_pokemon->nombre = nombre;
@@ -575,7 +575,7 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 		}
 
 	} else {
-		log_info(nuestro_log, string_from_format("El pokemon %s no es requerido", nombre));
+		log_info(nuestro_log, "El pokemon %s no es requerido", nombre);
 		free(nombre);
 	}
 }
@@ -635,7 +635,7 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 		agregar_pokemon_a_pokemons_sin_entrenador(pokemon_objetivo);
 		log_info(nuestro_log,"No hay entrenadores disponibles en este momento, cuando alguno finalice el hilo de entrenadores disponibles se encargara de la asignacion.");
 	} else {
-		log_info(nuestro_log, string_from_format("Se encontro entrenador para asignar a la busqueda de %s", pokemon_objetivo->nombre));
+		log_info(nuestro_log, "Se encontro entrenador para asignar a la busqueda de %s", pokemon_objetivo->nombre);
 		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);
 	}
 	list_destroy(entrenadores_mas_cercanos);
@@ -892,7 +892,7 @@ int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador){
 
 //Realiza un intercambio entre dos entrenadores que estaban bloqueados
 void intercambiar(entrenador* entrenador1) {
-	log_info(nuestro_log,string_from_format("Empezando la accion de intercambio"));
+	log_info(nuestro_log,"Empezando la accion de intercambio");
 	char* pokemon_a_eliminar_en_1;
 	char* pokemon_a_eliminar_en_2;
 	int posicion_pokemon_a_eliminar;
@@ -911,8 +911,8 @@ void intercambiar(entrenador* entrenador1) {
 	pokemon_a_eliminar_en_2 = list_remove(intercambio_a_realizar->entrenador2->pokemons_sobrantes, posicion_pokemon_a_eliminar);
 
 
-	log_info(nuestro_log, string_from_format("Entrenador %d dando %s", entrenador1->id, pokemon_a_eliminar_en_1));
-	log_info(nuestro_log, string_from_format("Entrenador %d dando %s", intercambio_a_realizar->entrenador2->id, pokemon_a_eliminar_en_2));
+	log_info(nuestro_log, "Entrenador %d dando %s", entrenador1->id, pokemon_a_eliminar_en_1);
+	log_info(nuestro_log, "Entrenador %d dando %s", intercambio_a_realizar->entrenador2->id, pokemon_a_eliminar_en_2);
 
 	agregar_pokemon_a_adquirido(entrenador1, pokemon_a_eliminar_en_2);
 	agregar_pokemon_a_adquirido(intercambio_a_realizar->entrenador2, pokemon_a_eliminar_en_1);
@@ -922,7 +922,7 @@ void intercambiar(entrenador* entrenador1) {
 
 	destruir_intercambio(intercambio_a_realizar);
 
-	log_info(nuestro_log,string_from_format("Terminando la accion de intercambio"));
+	log_info(nuestro_log,"Terminando la accion de intercambio");
 }
 
 void destruir_intercambio(intercambio* intercambio_realizado) {
@@ -1011,7 +1011,7 @@ void esperar_id_localized(int socket_get) {
 	int id_localized;
 
 	if(recv(socket_get,&id_localized, sizeof(int), 0) > 0){
-		log_info(nuestro_log, string_from_format("Se recibio correctamente el ID: %d, para esperar en LOCALIZED", id_localized));
+		log_info(nuestro_log, "Se recibio correctamente el ID: %d, para esperar en LOCALIZED", id_localized);
 
 		pthread_mutex_lock(&mutex_lista_ids_localized);
 		list_add(lista_ids_localized, &id_localized);
@@ -1092,7 +1092,7 @@ void esperar_id_caught(socket_y_entrenador* sye) {
 	free(sye);
 
 	if(recv(socket, &id_caught, sizeof(int), 0) > 0){
-		log_info(nuestro_log, string_from_format("Se recibio correctamente el ID: %d, para esperar en CAUGHT", id_caught));
+		log_info(nuestro_log, "Se recibio correctamente el ID: %d, para esperar en CAUGHT", id_caught);
 
 		id_y_entrenador* iye = malloc(sizeof(id_y_entrenador));
 		iye->id = id_caught;
@@ -1111,13 +1111,13 @@ void esperar_id_caught(socket_y_entrenador* sye) {
 void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 
 	if(el_entrenador_cumplio_su_objetivo(entrenador)) {
-		log_info(nuestro_log,string_from_format("El entrenador %d cumplio su objetivo y queda en estado EXIT", entrenador->id));
+		log_info(nuestro_log,"El entrenador %d cumplio su objetivo y queda en estado EXIT", entrenador->id);
 		cambiar_estado_entrenador(entrenador, EXIT);
 	} else if (el_entrenador_no_puede_capturar_mas_pokemons(entrenador)) {
-		log_info(nuestro_log,string_from_format("El entrenador %d se bloquea quedando en estado DEADLOCK", entrenador->id));
+		log_info(nuestro_log,"El entrenador %d se bloquea quedando en estado DEADLOCK", entrenador->id);
 		cambiar_estado_entrenador(entrenador, BLOCK_DEADLOCK);
 	} else {
-		log_info(nuestro_log,string_from_format("El entrenador %d queda en BLOCK_READY", entrenador->id));
+		log_info(nuestro_log,"El entrenador %d queda en BLOCK_READY", entrenador->id);
 		cambiar_estado_entrenador(entrenador, BLOCK_READY);
 		//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
 		pthread_mutex_unlock(&lock_de_entrenador_disponible);
@@ -1126,7 +1126,7 @@ void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 
 void manejar_la_no_captura_del_pokemon(entrenador* entrenador) {
 	pokemon* pokemon_en_captura = entrenador->pokemon_en_busqueda;
-	log_info(nuestro_log, string_from_format("3. No se pudo realizar la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
+	log_info(nuestro_log, "3. No se pudo realizar la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y);
 
 	agregar_objetivo_a_objetivo_global(pokemon_en_captura->nombre);
 	destruir_pokemon(pokemon_en_captura);
@@ -1136,8 +1136,8 @@ void manejar_la_no_captura_del_pokemon(entrenador* entrenador) {
 
 void manejar_la_captura_del_pokemon(entrenador* entrenador) {
 	pokemon* pokemon_en_captura = entrenador->pokemon_en_busqueda;
-	log_info(logger, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
-	log_info(nuestro_log, string_from_format("3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y));
+	log_info(logger, "3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y);
+	log_info(nuestro_log, "3. Se realiza la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y);
 
 
 	//restar_adquirido_a_objetivo_global(pokemon_en_captura->nombre); ESTO SE HACE CUANDO SE VA A BUSCAR AL POKEMON
