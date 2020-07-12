@@ -300,7 +300,7 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 						escribir_bloque_v2(path_nombre_metadata,dato_a_escribir);
 						free(dato_a_escribir);
 					}
-					//sleep(leer_tiempo_retardo_operacion());
+					sleep(leer_tiempo_retardo_operacion());
 					free(posicion);
 					cerrar_archivo(nombre_pokemon);
 					list_destroy(bloques);
@@ -363,7 +363,7 @@ t_list* armar_mensaje_get(char* nombre_pokemon){
 
 				lista_de_posiciones_get = leer_datos(path_nombre_metadata);
 
-				//sleep(leer_tiempo_retardo_operacion());
+				sleep(leer_tiempo_retardo_operacion());
 				cerrar_archivo(nombre_pokemon);
 				free(path_nombre_metadata);
 				return lista_de_posiciones_get;
@@ -421,7 +421,7 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 					list_destroy_and_destroy_elements(lista_de_datos,free);
 					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 
-					//sleep(leer_tiempo_retardo_operacion());
+					sleep(leer_tiempo_retardo_operacion());
 					cerrar_archivo(nombre_pokemon);
 					list_destroy(bloques);
 					free(posicion);
@@ -432,7 +432,7 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 					log_error(logger,"No se encontro pokemons en la posicion");
 					log_error(nuestro_log,"No se encontro pokemons en la posicion");
 				}
-				//sleep(leer_tiempo_retardo_operacion());
+				sleep(leer_tiempo_retardo_operacion());
 				cerrar_archivo(nombre_pokemon);
 				list_destroy(bloques);
 				free(posicion);
