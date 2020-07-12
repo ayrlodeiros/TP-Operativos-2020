@@ -31,16 +31,21 @@ pthread_mutex_t mutex_entrenadores;
 pthread_mutex_t mutex_pokemon_para_planificar;
 pthread_mutex_t mutex_entrenadores_ready;
 pthread_mutex_t mutex_objetivo_global;
+pthread_mutex_t mutex_cantidad_de_deadlocks;
+pthread_mutex_t mutex_pokemons_sin_entrenador;
+pthread_mutex_t mutex_pokemons_en_espera;
 
 t_log* logger;
 t_log* nuestro_log;
 
 t_list* entrenadores;
 t_dictionary* objetivo_global;
-//TODO VER MAS ADELANTE EL CASO EN EL QUE LOS ENTRENADORES ESTEN OCUPADOS Y NINGUNO PUEDA IR A BUSCARLO
 t_queue* pokemons_sin_entrenador;
+t_list* pokemons_en_espera;
 t_list* entrenadores_ready;
 t_list* intercambios;
+
+int cantidad_de_deadlocks;
 
 
 typedef struct

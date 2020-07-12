@@ -38,11 +38,6 @@ void fifo(){
 			ejecutar(entrenador_a_ejecutar);
 		}
 
-		if(entrenador_a_ejecutar->estado == BLOCK_READY) {
-			//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
-			pthread_mutex_unlock(&lock_de_entrenador_disponible);
-		}
-
 		evaluar_y_atacar_deadlock();
 
 	}
@@ -75,11 +70,6 @@ void round_robin(){
 
 				//Vuelvo a setear el sobrante en 0
 				entrenador_a_ejecutar->cpu_rr_anterior = 0;
-
-				if(entrenador_a_ejecutar->estado == BLOCK_READY) {
-					//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
-					pthread_mutex_unlock(&lock_de_entrenador_disponible);
-				}
 
 			} else {
 				log_info(nuestro_log, "El entrenador %d consume %d de QUANTUM", entrenador_a_ejecutar->id, quantum_restante);
@@ -126,11 +116,6 @@ void sjf_sin_desalojo(){
 			ejecutar(entrenador_a_ejecutar);
 		}
 
-		if(entrenador_a_ejecutar->estado == BLOCK_READY) {
-			//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
-			pthread_mutex_unlock(&lock_de_entrenador_disponible);
-		}
-
 		evaluar_y_atacar_deadlock();
 	}
 
@@ -169,10 +154,6 @@ void sjf_con_desalojo(){
 			//Vuelvo a setear el cpu acumulado anterior en 1
 			entrenador_a_ejecutar->cpu_sjf_anterior = 1;
 
-			if(entrenador_a_ejecutar->estado == BLOCK_READY) {
-				//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
-				pthread_mutex_unlock(&lock_de_entrenador_disponible);
-			}
 			//Cuando realmente se ejecuta la accion es cuando hay que evaluar el deadlock
 			evaluar_y_atacar_deadlock();
 		} else {
@@ -232,5 +213,15 @@ void evaluar_y_atacar_deadlock() {
 		planear_intercambio(ultimo_entrenador_en_deadlock);
 	}
 	list_destroy(entrenadores_en_deadlock);
+}
+
+
+void terminar_team() {
+	mostrar_metricas(nuestro_log);
+	mostrar_metricas(logger);
+	log_info(nuestro_log, "TERMINO EL PROCESO TEAM");
+	destruir_config();
+	log_destroy(logger);
+	log_destroy(nuestro_log);
 }
 

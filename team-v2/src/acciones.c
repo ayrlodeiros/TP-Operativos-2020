@@ -40,8 +40,8 @@ void ejecutar(entrenador* entrenador){
 
 	sumar_cpu_usado(entrenador, accion_a_ejecutar->cpu_requerido);
 
+	// Se usa el hilo del entrenador para ejecutar la accion
 	pthread_create(&(entrenador->hilo), NULL, accion_a_ejecutar->funcion, entrenador);
-	//TODO VER ESTO
 	pthread_join(entrenador->hilo, NULL);
 
 	free(accion_a_ejecutar);

@@ -40,10 +40,3 @@ void iniciar_team() {
 	//Iniciamos las variables globales del constructor
 	iniciar_variables_globales();
 }
-
-void terminar_team() {
-	log_info(nuestro_log,string_from_format("TERMINO EL PROCESO TEAM"));
-	destruir_config();
-	log_destroy(logger);
-	log_destroy(nuestro_log);
-}

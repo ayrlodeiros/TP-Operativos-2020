@@ -27,5 +27,7 @@ entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_con_rafaga
 entrenador* obtener_primer_entrenador_ready();
 void evaluar_y_atacar_deadlock();
 
+void terminar_team();
+
 
 #endif /* PLANIFICACION_H_ */

@@ -6,6 +6,7 @@ void iniciar_variables_globales() {
 	armar_objetivo_global();
 	armar_pokemons_para_recibir();
 	pokemons_sin_entrenador = queue_create();
+	pokemons_en_espera = list_create();
 	entrenadores_ready = list_create();
 	lista_ids_localized = list_create();
 	lista_ids_caught = list_create();
@@ -22,6 +23,9 @@ void iniciar_variables_globales() {
 	pthread_mutex_init(&mutex_funciona_broker, NULL);
 	pthread_mutex_init(&mutex_objetivo_global, NULL);
 	pthread_mutex_init(&mutex_pokemons_recibidos, NULL);
+	pthread_mutex_init(&mutex_cantidad_de_deadlocks, NULL);
+	pthread_mutex_init(&mutex_pokemons_sin_entrenador, NULL);
+	pthread_mutex_init(&mutex_pokemons_en_espera, NULL);
 
 	pthread_mutex_lock(&lock_de_planificacion);
 	pthread_mutex_lock(&lock_de_entrenador_disponible);
@@ -30,7 +34,8 @@ void iniciar_variables_globales() {
 	conexion_appeared = -1;
 	conexion_localized = -1;
 	conexion_caught = -1;
-	funciona_broker=0;
+	funciona_broker = 0;
+	cantidad_de_deadlocks = 0;
 }
 
 //Se deberia ejecutar una sola vez, en el metodo inciar_variables_globales

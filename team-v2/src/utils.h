@@ -27,7 +27,6 @@ void levantar_conexiones_al_broker();
 mensaje_broker* recibir_msj_broker(int conexion_broker);
 void esperar_mensaje_appeared();
 void esperar_mensaje_localized();
-void limpiar_posicion(posicion* pos);
 int pokemon_ya_fue_recibido(char* pokemon);
 void actualizar_pokemon_como_recibido(char* pokemon);
 int id_esta_en_lista_ids_localized(int id);
@@ -42,6 +41,10 @@ void desbloquear_lock_reintento();
 void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estado);
 
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y);
+void agregar_pokemon_a_pokemons_sin_entrenador(pokemon* nuevo_pokemon);
+pokemon* quitar_pokemon_de_pokemons_sin_entrenador();
+void agregar_pokemon_a_pokemons_en_espera(pokemon* nuevo_pokemon);
+pokemon* quitar_pokemon_de_pokemons_en_espera(int posicion);
 void buscar_entrenador_disponible();
 void buscar_entrenador_a_planificar_para_moverse();
 void agregar_entrenador_a_entrenadores_ready(entrenador* entrenador_listo, pokemon* pokemon_suelto);
@@ -65,9 +68,9 @@ int cantidad_del_mismo_pokemon_por_entrenador(t_list* lista_de_pokemons,char* po
 int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos, t_list* pokemons_objetivo, char* pokemon);
 int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, intercambio* un_intercambio);
 void planear_intercambio(entrenador* entrenador1);
+void sumar_uno_a_cantidad_de_deadlocks();
 int el_otro_entrenador_tiene_el_pokemon_que_necesito(entrenador* entrenador1,entrenador* entrenador_a_evaluar);
 char* pokemon_que_sirven_para_intercambiar(entrenador* entrenador1, entrenador* entrenador2);
-t_list* pokemons_a_intercambiar(entrenador* entrenador1,entrenador* entrenador2);
 t_list* pokemons_a_intercambiar_ideal(entrenador* entrenador1,entrenador* entrenador2);
 t_list* entrenadores_con_block_deadlock();
 int el_entrenador_esta_en_exit(entrenador* entrenador);
@@ -88,10 +91,16 @@ void esperar_id_localized(int socket_get);
 
 void catch_pokemon(entrenador* entrenador);
 void esperar_id_caught(socket_y_entrenador* sye);
+void manejar_la_no_captura_del_pokemon(entrenador* entrenador);
 void manejar_la_captura_del_pokemon(entrenador* entrenador);
 void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador);
 void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido);
 void destruir_pokemon(pokemon* pokemon);
+void evaluar_pokemons_en_espera(char* nombre);
 
+
+void mostrar_metricas(t_log* log);
+int calcular_ciclos_de_CPU_totales();
+void mostrar_ciclos_de_CPU_por_entrenador(t_log* log);
 
 #endif /* UTILS_H_ */

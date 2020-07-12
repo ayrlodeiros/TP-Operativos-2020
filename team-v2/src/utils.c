@@ -126,20 +126,29 @@ int levantar_servidor(char* ip, char* puerto) {
 	//PARA GAMEBOY
 void atender_conexion_gameboy() {
 	int servidor_para_gameboy = levantar_servidor(leer_ip_team(), leer_puerto_team());
+	if(servidor_para_gameboy < 0) {
+		log_error(nuestro_log, "No se pudo levantar servidor para atender al GAMEBOY en IP: %s y PUERTO: %s", leer_ip_team(), leer_puerto_team());
+	} else {
+		while (1) {
+			struct sockaddr_in dir_cliente;
 
-	while (1) {
-		struct sockaddr_in dir_cliente;
+			int tam_direccion = sizeof(struct sockaddr_in);
 
-		int tam_direccion = sizeof(struct sockaddr_in);
+			log_info(nuestro_log, "Listo para recibir conexion de GAMEBOY, en servidor: %d", servidor_para_gameboy);
+			int socket_cliente = accept(servidor_para_gameboy, (void*) &dir_cliente, &tam_direccion);
+			if(socket_cliente < 0) {
+				log_info(nuestro_log, "Hubo un error al intentar recibir una conexion en el servidor para el GAMEBOY");
+				//TODO VER SI DEJAR ESTO O NO
+				log_info(nuestro_log, "Se esperara 10 segundos para poder volver a recibir otra conexion en el servidor para el GAMEBOY");
+				sleep(10);
+			} else {
+				log_info(nuestro_log, "CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY");
 
-		log_info(nuestro_log, "Listo para recibir conexion de GAMEBOY");
-		int socket_cliente = accept(servidor_para_gameboy, (void*) &dir_cliente, &tam_direccion);
-
-		log_info(nuestro_log, "SE CONECTO EL GAMEBOY");
-
-		pthread_t* hilo_conexion_gameboy;
-		pthread_create(&hilo_conexion_gameboy,NULL, recibir_mensaje_de_gameboy, socket_cliente);
-		pthread_detach(hilo_conexion_gameboy);
+				pthread_t* hilo_conexion_gameboy;
+				pthread_create(&hilo_conexion_gameboy,NULL, recibir_mensaje_de_gameboy, socket_cliente);
+				pthread_detach(hilo_conexion_gameboy);
+			}
+		}
 	}
 }
 
@@ -309,7 +318,7 @@ void esperar_mensaje_appeared() {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
 		} else {
 
-			//TODO implementar funcion para deserializar payload en funcion de appeared
+			// Deserializacion del payload
 			void* payload = msj_broker->payload;
 			int offset = 0;
 
@@ -331,6 +340,8 @@ void esperar_mensaje_appeared() {
 			memcpy(&posicion_y, payload+offset, sizeof(uint32_t));
 			offset+=sizeof(uint32_t);
 
+			// Fin de deserializacion del payload
+
 			manejar_aparicion_de_pokemon(nombre_pokemon, posicion_x, posicion_y);
 
 			free(msj_broker->payload);
@@ -349,7 +360,7 @@ void esperar_mensaje_localized() {
 		} else {
 			if(id_esta_en_lista_ids_localized(msj_broker->id_correlativo) == 1) {
 
-				//TODO implementar funcion para deserializar payload en funcion de localized
+				// Deserializacion del payload
 				void* payload = msj_broker->payload;
 				int offset = 0;
 
@@ -386,19 +397,20 @@ void esperar_mensaje_localized() {
 							list_add(posiciones, pos);
 
 						}
-						//TERMINA DESERIALIZACION
+						//Fin de deserializacion del payload
 
 
 						//TODO REVISAR EL ISSUE PARA SABER SI TOMO TODOS LOS QUE APARECEN EN EL LOCALIZED
-						int cantidad_en_objetivo = *(int*) dictionary_get(objetivo_global, nombre_pokemon);
+						//int cantidad_en_objetivo = (int) dictionary_get(objetivo_global, nombre_pokemon);
+						//>>>>>> Por ahora lo dejo para que agarre a todos los pokemons que llegan del localized y los procese <<<<<<
 
-						for(int i=0; i<cantidad_en_objetivo && i<cantidad; i++) {
+						for(int i=0; i<cantidad; i++) {
 							posicion* pos = list_get(posiciones, i);
 
 							manejar_aparicion_de_pokemon(nombre_pokemon, pos->posicion_x, pos->posicion_y);
 						}
 
-						list_destroy_and_destroy_elements(posiciones, limpiar_posicion);
+						list_destroy_and_destroy_elements(posiciones, free);
 					} else {
 						free(nombre_pokemon);
 					}
@@ -408,10 +420,6 @@ void esperar_mensaje_localized() {
 			free(msj_broker);
 		}
 	}
-}
-
-void limpiar_posicion(posicion* pos) {
-	free(pos);
 }
 
 int pokemon_ya_fue_recibido(char* pokemon) {
@@ -443,7 +451,7 @@ int id_esta_en_lista_ids_localized(int id) {
 	pthread_mutex_lock(&mutex_lista_ids_localized);
 
 	for(int i = 0; i<list_size(lista_ids_localized); i++) {
-		int id_localized = *(int*) list_get(lista_ids_localized, i);
+		int id_localized = (int) list_get(lista_ids_localized, i);
 
 		if(id_localized == id) {
 			list_remove(lista_ids_localized, i);
@@ -471,7 +479,7 @@ void esperar_mensaje_caught() {
 				id_y_entrenador* iye = list_remove(lista_ids_caught, posicion_en_lista);
 				pthread_mutex_unlock(&mutex_lista_ids_caught);
 
-				int respuesta_caught = *(int*) msj_broker->payload;
+				int respuesta_caught = (int) msj_broker->payload;
 
 				if(respuesta_caught == 1) {
 					manejar_la_captura_del_pokemon(iye->entrenador);
@@ -543,21 +551,60 @@ void cambiar_estado_entrenador(entrenador* entrenador,estado_entrenador un_estad
 
 //Manejo la llegada de un nuevo pokemon (LOCALIZED O APPEARED)
 void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) {
-	if(el_pokemon_es_requerido(nombre)) {
-		log_info(nuestro_log, string_from_format("Aparecio un %s en %d|%d, el cual es requerido", nombre, posicion_x, posicion_y));
+	//dictionary_has_key(objetivo_global,nombre_pokemon) && necesito_mas_de_ese_pokemon(nombre_pokemon)
+	//el_pokemon_es_requerido(nombre)
+	if(dictionary_has_key(objetivo_global,nombre)) {
+		if(necesito_mas_de_ese_pokemon(nombre)){
+			log_info(nuestro_log, string_from_format("Aparecio un %s en %d|%d, el cual es requerido", nombre, posicion_x, posicion_y));
 
-		//Se hace aca para que dos entrenadores no esten buscando al mismo pokemon
-		restar_adquirido_a_objetivo_global(nombre);
+			//Se hace aca para que dos entrenadores no esten buscando al mismo pokemon
+			restar_adquirido_a_objetivo_global(nombre);
 
-		pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
-		nuevo_pokemon->nombre = nombre;
-		nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+			pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
+			nuevo_pokemon->nombre = nombre;
+			nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
 
-		buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
+			buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
+		} else {
+			log_info(nuestro_log, string_from_format("El pokemon %s no es requerido actualmente, pero podría serlo en un futuro", nombre));
+			//Si no lo necesito actualmente, lo agrego a una lista de pokemons que podrian ser llamados
+			pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
+			nuevo_pokemon->nombre = nombre;
+			nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+			agregar_pokemon_a_pokemons_en_espera(nuevo_pokemon);
+		}
+
 	} else {
 		log_info(nuestro_log, string_from_format("El pokemon %s no es requerido", nombre));
 		free(nombre);
 	}
+}
+
+void agregar_pokemon_a_pokemons_sin_entrenador(pokemon* nuevo_pokemon) {
+	pthread_mutex_lock(&mutex_pokemons_sin_entrenador);
+	queue_push(pokemons_sin_entrenador, nuevo_pokemon);
+	pthread_mutex_unlock(&mutex_pokemons_sin_entrenador);
+}
+
+pokemon* quitar_pokemon_de_pokemons_sin_entrenador() {
+	pthread_mutex_lock(&mutex_pokemons_sin_entrenador);
+	pokemon * p = queue_pop(pokemons_sin_entrenador);
+	pthread_mutex_unlock(&mutex_pokemons_sin_entrenador);
+
+	return p;
+}
+
+void agregar_pokemon_a_pokemons_en_espera(pokemon* nuevo_pokemon) {
+	pthread_mutex_lock(&mutex_pokemons_en_espera);
+	list_add(pokemons_en_espera, nuevo_pokemon);
+	pthread_mutex_unlock(&mutex_pokemons_en_espera);
+}
+
+pokemon* quitar_pokemon_de_pokemons_en_espera(int posicion) {
+	pthread_mutex_lock(&mutex_pokemons_en_espera);
+	pokemon * p = list_remove(pokemons_en_espera, posicion);
+	pthread_mutex_unlock(&mutex_pokemons_en_espera);
+	return p;
 }
 
 //Funcion que ejecuta el hilo cuando se le manda la señal de liberacion de un entrenador
@@ -570,7 +617,7 @@ void buscar_entrenador_disponible(){
 
 		if(list_any_satisfy(entrenadores, el_entrenador_se_puede_planificar) && queue_size(pokemons_sin_entrenador)>0) {
 			log_info(nuestro_log,"Se libero entrenador para buscar pokemon sin asignar");
-			buscar_entrenador_a_planificar_para_moverse(queue_pop(pokemons_sin_entrenador));
+			buscar_entrenador_a_planificar_para_moverse(quitar_pokemon_de_pokemons_sin_entrenador());
 		}
 	}
 }
@@ -585,7 +632,7 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 	pthread_mutex_unlock(&mutex_pokemon_para_planificar);
 
 	if(list_size(entrenadores_mas_cercanos) == 0) {
-		queue_push(pokemons_sin_entrenador, pokemon_objetivo);
+		agregar_pokemon_a_pokemons_sin_entrenador(pokemon_objetivo);
 		log_info(nuestro_log,"No hay entrenadores disponibles en este momento, cuando alguno finalice el hilo de entrenadores disponibles se encargara de la asignacion.");
 	} else {
 		log_info(nuestro_log, string_from_format("Se encontro entrenador para asignar a la busqueda de %s", pokemon_objetivo->nombre));
@@ -685,6 +732,9 @@ void planear_intercambio(entrenador* entrenador1){
 	cambiar_estado_entrenador(entrenador1, INTERCAMBIO);
 
 	if(se_encontraron_entrenadores_para_intercambio(entrenador1, un_intercambio)){
+		//Llegado a este punto se considera que realmente fue un DEADLOCK entre mas de un entrador (Por lo que se considera como DEADLOCK atacado)
+		sumar_uno_a_cantidad_de_deadlocks();
+
 		log_info(nuestro_log,"Se movera al entrenador %d para hacer intercambio", entrenador1->id);
 
 		list_add(intercambios, un_intercambio);
@@ -705,6 +755,12 @@ void planear_intercambio(entrenador* entrenador1){
 
 	log_info(nuestro_log,"Sali de planear el intercambio");
 
+}
+
+void sumar_uno_a_cantidad_de_deadlocks() {
+	pthread_mutex_lock(&mutex_cantidad_de_deadlocks);
+	cantidad_de_deadlocks++;
+	pthread_mutex_unlock(&mutex_cantidad_de_deadlocks);
 }
 
 int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, intercambio* un_intercambio){
@@ -744,13 +800,10 @@ int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, interc
 		un_intercambio->entrenador1 = entrenador1;
 		un_intercambio->entrenador2 = entrenador_a_intercambiar;
 
-		//CALCULAR POKEMON A INTERCAMBIAR QUE LE SIRVA AL ENTRENADOR1 SOLAMENTE
-		t_list* pokemons_que_necesito_para_intercambiar = pokemons_a_intercambiar(entrenador1,entrenador_a_intercambiar);
-		un_intercambio->pokemon1 = list_get(pokemons_que_necesito_para_intercambiar,0);
+		un_intercambio->pokemon1 = pokemon_que_sirven_para_intercambiar(entrenador1,entrenador_a_intercambiar);
 		//EN POKEMON2 VOY A PONER A POKEMON SOBRANTE DEL ENTRENADOR1
 		un_intercambio->pokemon2 = list_get(entrenador1->pokemons_sobrantes,0);
 
-		list_destroy(pokemons_que_necesito_para_intercambiar);
 		list_destroy(entrenadores_en_deadlock);
 		return 1;
 	} else {
@@ -780,20 +833,8 @@ char* pokemon_que_sirven_para_intercambiar(entrenador* entrenador1, entrenador* 
 			}
 		}
 	}
-}
 
-t_list* pokemons_a_intercambiar(entrenador* entrenador1,entrenador* entrenador2){
-
-	t_list* pokemons_a_intercambiar = list_create();
-
-	//Agrego a la lista de intercambiar al pokemon que el entrenador 1 necesita
-	list_add(pokemons_a_intercambiar,pokemon_que_sirven_para_intercambiar(entrenador1,entrenador2));
-
-	//Agrego a la lista de intercambiar a cualquier pokemon que le sobre al entrenador 1.
-	list_add(pokemons_a_intercambiar,entrenador1->pokemons_sobrantes);
-
-	return pokemons_a_intercambiar;
-
+	//TODO revisar caso en el que no entre al if (preguntar a Fede)
 }
 
 t_list* pokemons_a_intercambiar_ideal(entrenador* entrenador1,entrenador* entrenador2){
@@ -834,7 +875,7 @@ int tiene_mas_cantidad_de_ese_pokemon(t_list* pokemons_adquiridos, t_list* pokem
 }
 
 t_list* entrenadores_con_block_deadlock(){
-	return list_filter(entrenadores,el_entrenador_esta_block_deadlock);
+	return list_filter(entrenadores, el_entrenador_esta_block_deadlock);
 }
 
 int el_entrenador_esta_en_exit(entrenador* entrenador){
@@ -842,7 +883,7 @@ int el_entrenador_esta_en_exit(entrenador* entrenador){
 }
 
 int terminaron_todos_los_entrenadores(){
-	return list_all_satisfy(entrenadores,el_entrenador_esta_en_exit);
+	return list_all_satisfy(entrenadores, el_entrenador_esta_en_exit);
 }
 
 int el_entrenador_no_puede_capturar_mas_pokemons(entrenador* entrenador){
@@ -1078,6 +1119,8 @@ void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 	} else {
 		log_info(nuestro_log,string_from_format("El entrenador %d queda en BLOCK_READY", entrenador->id));
 		cambiar_estado_entrenador(entrenador, BLOCK_READY);
+		//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
+		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 }
 
@@ -1099,6 +1142,9 @@ void manejar_la_captura_del_pokemon(entrenador* entrenador) {
 
 	//restar_adquirido_a_objetivo_global(pokemon_en_captura->nombre); ESTO SE HACE CUANDO SE VA A BUSCAR AL POKEMON
 	agregar_pokemon_a_adquirido(entrenador, pokemon_en_captura->nombre);
+
+	evaluar_pokemons_en_espera(pokemon_en_captura->nombre);
+
 	destruir_pokemon(pokemon_en_captura);
 
 	accionar_en_funcion_del_estado_del_entrenador(entrenador);
@@ -1110,6 +1156,49 @@ void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido
 }
 
 void destruir_pokemon(pokemon* pokemon) {
+	free(pokemon->nombre);
 	free(pokemon->posicion);
 	free(pokemon);
+}
+
+void evaluar_pokemons_en_espera(char* nombre) {
+	pthread_mutex_lock(&mutex_pokemons_en_espera);
+
+	for(int i = 0; i<list_size(pokemons_en_espera); i++) {
+		pokemon* p = list_get(pokemons_en_espera, i);
+		if(string_equals_ignore_case(nombre, p->nombre)) {
+			p = quitar_pokemon_de_pokemons_en_espera(i);
+			agregar_pokemon_a_pokemons_sin_entrenador(p);
+			pthread_mutex_unlock(&lock_de_entrenador_disponible);
+			break;
+		}
+	}
+
+	pthread_mutex_unlock(&mutex_pokemons_en_espera);
+}
+
+
+void mostrar_metricas(t_log* log) {
+	log_info(log, "-------- METRICAS --------");
+	log_info(log, "Cantidad de ciclos de CPU total: %d", calcular_ciclos_de_CPU_totales());
+	//TODO ver a que se considera cambio de contexto
+	//log_info(log, "Cantidad de cambios de contextos realizados: %d", cantidad_de_cambios_de_contexto);
+	mostrar_ciclos_de_CPU_por_entrenador(log);
+	log_info(log, "Deadlocks producidos y resueltos: %d", cantidad_de_deadlocks);
+}
+
+int calcular_ciclos_de_CPU_totales() {
+	int acum;
+	for(int i = 0; i<list_size(entrenadores); i++) {
+		entrenador* e = list_get(entrenadores, i);
+		acum += e->cpu_usado;
+	}
+	return acum;
+}
+
+void mostrar_ciclos_de_CPU_por_entrenador(t_log* log) {
+	for(int i = 0; i<list_size(entrenadores); i++) {
+		entrenador* e = list_get(entrenadores, i);
+		log_info(log, "Cantidad de ciclos de CPU realizados por entrenador %d: %d", e->id, e->cpu_usado);
+	}
 }
