@@ -31,6 +31,20 @@ t_list* crear_t_list(char** array) {
 	return lista;
 }
 
+int tamanio_de_lista(char** un_array){
+	int i = 0;
+
+	if(!un_array[i]){
+		return 0;
+	}
+
+	while(un_array[i] != NULL){
+		i++;
+	}
+	return i;
+}
+
+
 t_dictionary* crear_t_dictionary(char** array) {
 	t_dictionary* diccionario = dictionary_create();
 	int pos = 0;
@@ -51,19 +65,29 @@ t_list* leer_posiciones_entrenadores(void){
 
 	char** posiciones_config = config_get_array_value(config, "POSICIONES_ENTRENADORES");
 
-	return crear_t_list(posiciones_config);
+	t_list* lista = crear_t_list(posiciones_config);
+
+	free(posiciones_config);
+	return lista;
 }
 
 t_list* leer_pokemon_entrenadores(void){
 	char** pokemons_config = config_get_array_value(config, "POKEMON_ENTRENADORES");
 
-	return crear_t_list(pokemons_config);
+	t_list* lista = crear_t_list(pokemons_config);
+
+	free(pokemons_config);
+
+	return lista;
 }
 
 t_list* leer_objetivos_entrenadores(void){
 	char** objetivos_config = config_get_array_value(config, "OBJETIVOS_ENTRENADORES");
 
-	return crear_t_list(objetivos_config);
+	t_list* lista = crear_t_list(objetivos_config);
+
+	free(objetivos_config);
+	return lista;
 }
 
 int leer_tiempo_reconexion(void){

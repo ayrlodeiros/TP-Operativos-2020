@@ -562,7 +562,9 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 
 			pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
 			nuevo_pokemon->nombre = nombre;
-			nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+			char* pos = string_from_format("%d|%d", posicion_x, posicion_y);
+			nuevo_pokemon->posicion = armar_posicion(pos);
+			free(pos);
 
 			buscar_entrenador_a_planificar_para_moverse(nuevo_pokemon);
 		} else {
@@ -570,10 +572,12 @@ void manejar_aparicion_de_pokemon(char* nombre, int posicion_x, int posicion_y) 
 			//Si no lo necesito actualmente, lo agrego a una lista de pokemons que podrian ser llamados
 			pokemon* nuevo_pokemon  = malloc(sizeof(pokemon));
 			nuevo_pokemon->nombre = nombre;
-			nuevo_pokemon->posicion = armar_posicion(string_from_format("%d|%d", posicion_x, posicion_y));
+			char* pos = string_from_format("%d|%d", posicion_x, posicion_y);
+			nuevo_pokemon->posicion = armar_posicion(pos);
+			free(pos);
+
 			agregar_pokemon_a_pokemons_en_espera(nuevo_pokemon);
 		}
-
 	} else {
 		log_info(nuestro_log, "El pokemon %s no es requerido", nombre);
 		free(nombre);
@@ -628,7 +632,8 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 	//Seteo la variable global del utils para poder manejarla en los distintos metodos que me filtran al entrenador mas cerca
 	pokemon_para_planificar = pokemon_objetivo;
 	//Filtro entrenadores en estado NEW o BLOCK_READY, luego ordeno la lista para obtener al primero mas cercano y despues lo agrego a la lista de entredores ready
-	t_list* entrenadores_mas_cercanos = list_sorted(list_filter(entrenadores, el_entrenador_se_puede_planificar), el_entrenador1_esta_mas_cerca);
+	t_list* entrenadores_para_planificar = list_filter(entrenadores, el_entrenador_se_puede_planificar);
+	t_list* entrenadores_mas_cercanos = list_sorted(entrenadores_para_planificar, el_entrenador1_esta_mas_cerca);
 	pthread_mutex_unlock(&mutex_pokemon_para_planificar);
 
 	if(list_size(entrenadores_mas_cercanos) == 0) {
@@ -638,6 +643,7 @@ void buscar_entrenador_a_planificar_para_moverse(pokemon* pokemon_objetivo){
 		log_info(nuestro_log, "Se encontro entrenador para asignar a la busqueda de %s", pokemon_objetivo->nombre);
 		agregar_entrenador_a_entrenadores_ready(list_get(entrenadores_mas_cercanos, 0), pokemon_objetivo);
 	}
+	list_destroy(entrenadores_para_planificar);
 	list_destroy(entrenadores_mas_cercanos);
 	pthread_mutex_unlock(&mutex_entrenadores);
 }
@@ -815,7 +821,9 @@ int se_encontraron_entrenadores_para_intercambio(entrenador* entrenador1, interc
 int el_otro_entrenador_tiene_el_pokemon_que_necesito(entrenador* entrenador1,entrenador* entrenador_a_evaluar){
 	for(int i = 0; i< list_size(entrenador1->pokemons_objetivo);i++){
 		for(int j=0; j< list_size(entrenador_a_evaluar->pokemons_sobrantes);j++){
-			if(string_equals_ignore_case(list_get(entrenador1->pokemons_objetivo,i),list_get(entrenador_a_evaluar->pokemons_sobrantes,j))){
+			char* pokemon1 = list_get(entrenador1->pokemons_objetivo,i);
+			char* pokemon2 = list_get(entrenador_a_evaluar->pokemons_sobrantes,j);
+			if(string_equals_ignore_case(pokemon1,pokemon2)){
 				return 1;
 			}
 		}
@@ -1129,6 +1137,8 @@ void manejar_la_no_captura_del_pokemon(entrenador* entrenador) {
 	log_info(nuestro_log, "3. No se pudo realizar la captura del pokemon %s, en la posicion %d|%d exitosamente.", pokemon_en_captura->nombre, pokemon_en_captura->posicion->posicion_x, pokemon_en_captura->posicion->posicion_y);
 
 	agregar_objetivo_a_objetivo_global(pokemon_en_captura->nombre);
+
+	free(pokemon_en_captura->nombre);
 	destruir_pokemon(pokemon_en_captura);
 
 	accionar_en_funcion_del_estado_del_entrenador(entrenador);
@@ -1156,7 +1166,6 @@ void agregar_pokemon_a_adquirido(entrenador* entrenador, char* pokemon_adquirido
 }
 
 void destruir_pokemon(pokemon* pokemon) {
-	free(pokemon->nombre);
 	free(pokemon->posicion);
 	free(pokemon);
 }
@@ -1188,7 +1197,7 @@ void mostrar_metricas(t_log* log) {
 }
 
 int calcular_ciclos_de_CPU_totales() {
-	int acum;
+	int acum = 0;
 	for(int i = 0; i<list_size(entrenadores); i++) {
 		entrenador* e = list_get(entrenadores, i);
 		acum += e->cpu_usado;

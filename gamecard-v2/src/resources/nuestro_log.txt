@@ -1,0 +1,3 @@
+[INFO] 17:47:01:682 gamecard/(3313:3313): TERMINE DE CREAR BITMAP
+[INFO] 17:47:01:692 gamecard/(3313:3320): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:47:01:692 gamecard/(3313:3320): Listo para recibir conexion de GAMEBOY, 

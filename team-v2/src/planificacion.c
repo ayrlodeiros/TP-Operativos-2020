@@ -134,43 +134,62 @@ void sjf_con_desalojo(){
 			pthread_mutex_lock(&lock_de_planificacion);
 		}
 
-		//Cada ciclo de cpu voy a evaluar si hay nuevos entrenadores en ready (mayor overhead)
-		pthread_mutex_lock(&mutex_entrenadores_ready);
-		while(list_size(entrenadores_ready) > 0){
-			entrenador* entrenador_a_estimar = list_remove(entrenadores_ready, 0);
-			asignar_rafaga_estimada_al_entrenador(entrenador_a_estimar);
-			list_add(entrenadores_con_rafagas_estimadas, entrenador_a_estimar);
-		}
-		pthread_mutex_unlock(&mutex_entrenadores_ready);
+		if(list_size(entrenadores_ready) != 0 || list_size(entrenadores_con_rafagas_estimadas) != 0) {
 
-		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
+			//Cada ciclo de cpu voy a evaluar si hay nuevos entrenadores en ready (mayor overhead)
+			pthread_mutex_lock(&mutex_entrenadores_ready);
+			while(list_size(entrenadores_ready) > 0){
+				entrenador* entrenador_a_estimar = list_remove(entrenadores_ready, 0);
+				asignar_rafaga_estimada_al_entrenador(entrenador_a_estimar);
+				if(list_is_empty(entrenadores_con_rafagas_estimadas) || !lista_contiene_a_entrenador(entrenadores_con_rafagas_estimadas, entrenador_a_estimar)) {
+					list_add(entrenadores_con_rafagas_estimadas, entrenador_a_estimar);
+				}
+			}
+			pthread_mutex_unlock(&mutex_entrenadores_ready);
 
-		accion* proxima_accion = list_get(entrenador_a_ejecutar->acciones, 0);
+			entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
 
-		log_info(nuestro_log, "Estimado restante de entrenador %d es %f", entrenador_a_ejecutar->id, entrenador_a_ejecutar->cpu_estimado_restante);
-		log_info(nuestro_log, "Entrenador %d consume 1 de CPU", entrenador_a_ejecutar->id);
-		if(proxima_accion->cpu_requerido == entrenador_a_ejecutar->cpu_sjf_anterior) {
-			ejecutar(entrenador_a_ejecutar);
-			//Vuelvo a setear el cpu acumulado anterior en 1
-			entrenador_a_ejecutar->cpu_sjf_anterior = 1;
+			accion* proxima_accion = list_get(entrenador_a_ejecutar->acciones, 0);
 
-			//Cuando realmente se ejecuta la accion es cuando hay que evaluar el deadlock
-			evaluar_y_atacar_deadlock();
-		} else {
-			//Voy sumando 1 de CPU
-			entrenador_a_ejecutar->cpu_sjf_anterior += 1;
-		}
+			log_info(nuestro_log, "Estimado restante de entrenador %d es %f", entrenador_a_ejecutar->id, entrenador_a_ejecutar->cpu_estimado_restante);
+			log_info(nuestro_log, "Entrenador %d consume 1 de CPU", entrenador_a_ejecutar->id);
+			if(proxima_accion->cpu_requerido == entrenador_a_ejecutar->cpu_sjf_anterior) {
+				ejecutar(entrenador_a_ejecutar);
+				//Vuelvo a setear el cpu acumulado anterior en 1
+				entrenador_a_ejecutar->cpu_sjf_anterior = 1;
 
-		entrenador_a_ejecutar->cpu_estimado_restante -= 1;
+				//Cuando realmente se ejecuta la accion es cuando hay que evaluar el deadlock
+				evaluar_y_atacar_deadlock();
 
-		if(list_size(entrenador_a_ejecutar->acciones) > 0) {
-			//Vuelvo a agregar al entrenador para que siga siendo evaluado porque sigue teniendo acciones que ejecutar
-			list_add(entrenadores_con_rafagas_estimadas, entrenador_a_ejecutar);
+			} else {
+				//Voy sumando 1 de CPU
+				entrenador_a_ejecutar->cpu_sjf_anterior += 1;
+			}
+
+			if(entrenador_a_ejecutar->estado != EXIT){
+				entrenador_a_ejecutar->cpu_estimado_restante -= 1;
+
+				if(list_size(entrenador_a_ejecutar->acciones) > 0) {
+					//Vuelvo a agregar al entrenador para que siga siendo evaluado porque sigue teniendo acciones que ejecutar
+					list_add(entrenadores_con_rafagas_estimadas, entrenador_a_ejecutar);
+				}
+			}
+
 		}
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
 	terminar_team();
+}
+
+int lista_contiene_a_entrenador(t_list* lista, entrenador* entrenador_a_buscar) {
+	for(int i = 0; i < list_size(lista); i++) {
+		entrenador* entrenador_en_lista = list_get(lista, i);
+		if(entrenador_en_lista->id == entrenador_a_buscar->id) {
+			return 1;
+		}
+	}
+	return 0;
 }
 
 double estimar_siguiente_rafaga(entrenador* entrenador){

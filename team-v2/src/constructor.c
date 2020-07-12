@@ -50,13 +50,24 @@ void armar_entrenadores() {
 		list_add(entrenadores, armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i), i));
 	}
 
+	list_destroy(posiciones);
+	list_destroy(pokemons);
+	list_destroy(objetivos);
+
 }
 
 //Se deberia usar solo en armar_entrenadores
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, int id){
 	entrenador* un_entrenador = malloc(sizeof(entrenador));
-	t_list* lista_pokemons_adquiridos = crear_t_list(string_split(pokemons,"|"));
-	t_list* lista_pokemons_objetivo = crear_t_list(string_split(objetivos,"|"));
+
+	char** pokemons_adquiridos = string_split(pokemons,"|");
+	char** pokemons_objetivo = string_split(objetivos,"|");
+
+	t_list* lista_pokemons_adquiridos = crear_t_list(pokemons_adquiridos);
+	t_list* lista_pokemons_objetivo = crear_t_list(pokemons_objetivo);
+
+	free(pokemons_adquiridos);
+	free(pokemons_objetivo);
 
 	un_entrenador->id = id;
 	un_entrenador->posicion = armar_posicion(posicion);
@@ -145,6 +156,10 @@ posicion* armar_posicion(char* posicion_a_armar) {
 
 	pos->posicion_x = atoi(posiciones[0]);
 	pos->posicion_y = atoi(posiciones[1]);
+
+	free(posiciones[0]);
+	free(posiciones[1]);
+	free(posiciones);
 
 	return pos;
 }

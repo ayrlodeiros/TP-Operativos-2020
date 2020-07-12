@@ -19,6 +19,7 @@ void round_robin();
 void sjf_sin_desalojo();
 void sjf_con_desalojo();
 
+int lista_contiene_a_entrenador(t_list* lista, entrenador* entrenador_a_buscar);
 double estimar_siguiente_rafaga(entrenador* entrenador);
 void asignar_rafaga_estimada_al_entrenador(entrenador* entrenador);
 int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2);
