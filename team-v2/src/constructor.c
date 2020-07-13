@@ -101,11 +101,15 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, in
 
 	actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(un_entrenador);
 
-	if(list_is_empty(lista_pokemons_objetivo)){
+	if(el_entrenador_cumplio_su_objetivo(un_entrenador)){
 		log_info(nuestro_log,"El entrenador %d cumplio su objetivo y queda en estado EXIT", un_entrenador->id);
-		un_entrenador->estado = EXIT;
-	}else{
-		un_entrenador->estado = NEW;
+		cambiar_estado_entrenador(un_entrenador,EXIT);
+	}else if (el_entrenador_no_puede_capturar_mas_pokemons(un_entrenador)) {
+		log_info(nuestro_log,"El entrenador %d se bloquea quedando en estado DEADLOCK", un_entrenador->id);
+		cambiar_estado_entrenador(un_entrenador,BLOCK_DEADLOCK);
+	}
+	else{
+		cambiar_estado_entrenador(un_entrenador,NEW);
 	}
 
 	return un_entrenador;

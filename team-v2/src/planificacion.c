@@ -28,6 +28,10 @@ void planificar(){
 
 void fifo(){
 
+	for(int j = 0; j< list_size(entrenadores);j++){
+		evaluar_y_atacar_deadlock();
+	}
+
 	while(!terminaron_todos_los_entrenadores()){
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
@@ -51,6 +55,10 @@ void fifo(){
 void round_robin(){
 
 	int quantum_restante;
+
+	for(int j = 0; j< list_size(entrenadores);j++){
+		evaluar_y_atacar_deadlock();
+	}
 
 	while(!terminaron_todos_los_entrenadores()){
 		if(list_size(entrenadores_ready) == 0) {
@@ -99,6 +107,10 @@ void round_robin(){
 void sjf_sin_desalojo(){
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
 
+	for(int j = 0; j< list_size(entrenadores);j++){
+		evaluar_y_atacar_deadlock();
+	}
+
 	while(!terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en SJF SIN DESALOJO preparado para planificar");
 
@@ -133,6 +145,10 @@ void sjf_sin_desalojo(){
 void sjf_con_desalojo(){
 
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
+
+	for(int j = 0; j< list_size(entrenadores);j++){
+		evaluar_y_atacar_deadlock();
+	}
 
 	while(!terminaron_todos_los_entrenadores()){
 		log_info(nuestro_log, "Estoy en SJF CON DESALOJO preparado para planificar");
