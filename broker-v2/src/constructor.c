@@ -86,13 +86,13 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	//TODO abstraer en otra funcion la busqueda del stream en la memoria principal
 	memcpy(paquete->buffer->stream, memoria_principal + mensaje->pos_en_memoria->pos, paquete->buffer->size);
 
-	int bytes = paquete->buffer->size + 3*sizeof(int);
+	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
 
 	void* a_enviar = serializar_paquete(paquete, bytes);
 
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,suscriptor);
-		log_info(mi_log,"Se envio correctamente el mensaje al suscriptor\n");
+		log_info(mi_log,"Se envio correctamente el mensaje al suscriptor de id %d y socket %d.",suscriptor->identificador,suscriptor->conexion);
 	}
 	else
 		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor\n");
@@ -116,11 +116,12 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 		suscriptor = list_get(cola->suscriptores,i);
 
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
-			pthread_t* ack;
+			//pthread_t* ack;
 			aux->mensaje = mensaje;
 			aux->suscriptor = suscriptor;
-			pthread_create(&ack,NULL,(void*)enviar_mensaje,aux);
-			pthread_detach(ack);
+			/*pthread_create(&ack,NULL,(void*)enviar_mensaje,aux);
+			pthread_detach(ack); */
+			enviar_mensaje(aux);
 
 		}
 	}

@@ -25,6 +25,7 @@ void recibir_mensaje_de_gameboy(int socket_gameboy);
 int intentar_conectar_al_broker();
 void levantar_conexiones_al_broker();
 mensaje_broker* recibir_msj_broker(int conexion_broker);
+void mandar_ack(int conexion, int resultado);
 void esperar_mensaje_appeared();
 void esperar_mensaje_localized();
 int pokemon_ya_fue_recibido(char* pokemon);

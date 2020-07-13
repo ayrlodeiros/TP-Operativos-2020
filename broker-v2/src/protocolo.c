@@ -5,7 +5,7 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 	int tamanio_anterior = list_size(cola->suscriptores);
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
-			log_info(mi_log,string_from_format("Se agrego el suscriptor %d a la cola %d correctamente\n",suscriptor->conexion,cola->nombre)); /** Por ahora le paso la conexion
+			log_info(mi_log,"Se agrego el suscriptor %d a la cola %d correctamente\n",suscriptor->identificador,cola->nombre); /** Por ahora le paso la conexion
 			 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	como nombre puede que cambie a futuro*/
 	}
 
@@ -46,7 +46,8 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		if(!list_is_empty(queue->suscriptores)){
 			agregar_msj_cola(queue,mensaje);
 		}
-		enviar_id_msj_cliente(socket_cliente,queue,mensaje->id);
+		log_info(mi_log,"Voy a mandar el id de msj: %d al socket %d",mensaje->id,socket_cliente);
+		enviar_id_msj_cliente(socket_cliente,mensaje->id);
 }
 
 
@@ -86,12 +87,20 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 
 void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
 	int valor;
-	if (recv(suscriptor->conexion,valor, sizeof(int), MSG_WAITALL) < 0){
+	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",suscriptor->identificador);
+	if (recv(suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
 		/* Deberia actualizar el mensaje e indicar que no se recibio la confirmacion de recepcion*/
 	}
-	else
-		add_sub_lista_conf_msj(mensaje,suscriptor);
+	else{
+		log_info(mi_log, "Se recibio el valor de ack: %d", valor);
+		if(valor == 1) {
+			log_info(mi_log, "Recibi el ack del suscriptor %d.",suscriptor->identificador);
+			add_sub_lista_conf_msj(mensaje,suscriptor);
+		} else {
+			//TODO volver a mandar el mensaje, poner el mensaje en la cola
+		}
+	}
 }
 
 void* serializar_paquete(t_paquete* paquete, int bytes)
@@ -99,12 +108,12 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 	void * magic = malloc(bytes);
 	int desplazamiento = 0;
 
-	memcpy(magic + desplazamiento, &(paquete->id), sizeof(int));
-	desplazamiento+= sizeof(int);
-	memcpy(magic + desplazamiento, &(paquete->id_cor), sizeof(int));
-	desplazamiento+= sizeof(int);
-	memcpy(magic + desplazamiento, &(paquete->buffer->size), sizeof(int));
-	desplazamiento+= sizeof(int);
+	memcpy(magic + desplazamiento, &(paquete->id), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	memcpy(magic + desplazamiento, &(paquete->id_cor), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	memcpy(magic + desplazamiento, &(paquete->buffer->size), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
 	memcpy(magic + desplazamiento, paquete->buffer->stream, paquete->buffer->size);
 	desplazamiento+= paquete->buffer->size;
 
@@ -112,9 +121,9 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 }
 
 
-void enviar_id_msj_cliente(int socket_cliente,t_mq* cola,int id_msj){
+void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 	//todo Implementar caso que el send falle
-	if(send(socket_cliente,id_msj, sizeof(int), 0) > 0){
+	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
 			log_info(mi_log,"Se envio el id del mensaje correctamente\n");
 		}
 }
@@ -131,6 +140,7 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 	int cola;
 	recv(socket_cliente,&cola,sizeof(int),MSG_WAITALL);
+	log_info(mi_log,"El socket %d se quiere conectar a la cola %d.",socket_cliente,cola);
 	switch (cola){
 			case GET:
 				switch_operacion(cod_op,get_mq,socket_cliente,id_modulo);

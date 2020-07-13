@@ -239,12 +239,12 @@ void levantar_conexiones_al_broker() {
 		if(funciona_broker == 1) {
 			log_info(nuestro_log, "Funciona broker, activando las tres colas...");
 
+			pthread_create(&hilo_caught,NULL, esperar_mensaje_caught, NULL);
+			pthread_detach(hilo_caught);
 			pthread_create(&hilo_appeared,NULL, esperar_mensaje_appeared, NULL);
 			pthread_detach(hilo_appeared);
 			pthread_create(&hilo_localized,NULL, esperar_mensaje_localized, NULL);
 			pthread_detach(hilo_localized);
-			pthread_create(&hilo_caught,NULL, esperar_mensaje_caught, NULL);
-			pthread_detach(hilo_caught);
 
 			log_info(nuestro_log, "Bloqueo de conexiones al broker");
 
@@ -255,11 +255,16 @@ void levantar_conexiones_al_broker() {
 
 			log_info(nuestro_log, "El broker no esta conectado...");
 
+			//conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+			conexion_caught = intentar_conectar_al_broker();
+			log_info(nuestro_log, "La conexion del caught es %d", conexion_caught);
+
 			conexion_appeared = intentar_conectar_al_broker();
+			log_info(nuestro_log, "La conexion del appeared es %d", conexion_appeared);
 
-			conexion_localized = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-
-			conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+			//conexion_localized = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+			conexion_localized = intentar_conectar_al_broker();
+			log_info(nuestro_log, "La conexion del localized es %d", conexion_localized);
 
 			if(conexion_appeared == -1 || conexion_localized == -1 || conexion_caught == -1) {
 				cambiar_valor_de_funciona_broker(0);
@@ -287,7 +292,7 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 				hubo_error = 1;
 			} else {
 				payload = malloc(tamanio);
-				if(recv(conexion_broker, payload, sizeof(tamanio), 0) == -1) {
+				if(recv(conexion_broker, payload, tamanio, 0) == -1) {
 					hubo_error = 1;
 				}
 			}
@@ -298,15 +303,29 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 		log_info(nuestro_log, "No se pudo recibir el mensaje del broker, se perdio la conexion");
 		cambiar_valor_de_funciona_broker(0);
 		desbloquear_lock_reintento();
+
+		mandar_ack(conexion_broker, 0);
+
 		return NULL;
 	} else {
+		log_info(nuestro_log, "Se recibio un mensaje del broker en la conexion %d", conexion_broker);
 		mensaje_broker* msj_broker = malloc(sizeof(mensaje_broker));
 		msj_broker->id = id;
+		log_info(nuestro_log, "El ID del mensaje es: %d", id);
 		msj_broker->id_correlativo = id_cor;
+		log_info(nuestro_log, "El ID CORRELATIVO del mensaje es: %d", id_cor);
 		msj_broker->tamanio = tamanio;
+		log_info(nuestro_log, "El TAMANIO del mensaje es: %d", tamanio);
 		msj_broker->payload = payload;
+
+		mandar_ack(conexion_broker, 1);
+
 		return msj_broker;
 	}
+}
+
+void mandar_ack(int conexion, int resultado) {
+	send(conexion, &resultado, sizeof(int), 0);
 }
 
 void esperar_mensaje_appeared() {
@@ -1010,7 +1029,6 @@ void realizar_get(char* key, void* value) {
 
 			free(a_enviar);
 			destruir_paquete(paquete);
-			liberar_conexion(socket_get);
 		}
 	}
 }

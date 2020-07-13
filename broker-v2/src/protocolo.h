@@ -21,7 +21,7 @@ void enviar_mensaje_suscriptores(t_mq* cola);
 
 void* serializar_paquete(t_paquete* paquete, int bytes);
 
-void enviar_id_msj_cliente(int socket_cliente,t_mq* mq,int id_msj);
+void enviar_id_msj_cliente(int socket_cliente,int id_msj);
 
 /* Falta definir los siguientes metodos */
 

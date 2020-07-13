@@ -71,7 +71,7 @@ void levantar_servidor(char* ip, int port, t_log* logger) {
 void esperar_cliente(int socket_servidor,t_log* logger)
 {
 	/* Le saque el puntero para que deje de tirar warnings  */
-	pthread_t espera;
+	pthread_t* espera;
 	int err;
 
 	struct sockaddr_in dir_cliente;
@@ -83,29 +83,29 @@ void esperar_cliente(int socket_servidor,t_log* logger)
 	if(socket_cliente == -1) {
 		log_error(mi_log, "Hubo un error en la conexion con el cliente");
 	} else {
-		log_info(mi_log,string_from_format("Estableci una conexion con un modulo de socket: %d\n",socket_cliente));
+		log_info(mi_log,"Estableci una conexion con un modulo de socket: %d\n",socket_cliente);
 		//log_info(logger,"Estableci una conexion con un modulo\n");
 
-		err = pthread_create(&espera,NULL,(void*)servir_cliente,&socket_cliente);
+		err = pthread_create(&espera,NULL,(void*)servir_cliente,socket_cliente);
 		if( err != 0){
-			log_info(logger,string_from_format("Hubo un error al intentar crear el thread: %s",strerror(err)));
+			log_info(logger,"Hubo un error al intentar crear el thread: %s",strerror(err));
 		}
 		pthread_detach(espera);
 	}
 }
 
-void servir_cliente(int* socket)
+void servir_cliente(int socket)
 {
 	int cod_modulo;
-	if(recv(*socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
+	if(recv(socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
 		cod_modulo = -1;
-	log_info(mi_log, string_from_format("El codigo de modulo es %d", cod_modulo));
-	process_request(cod_modulo, *socket);
+	log_info(mi_log, string_from_format("El socket %d, tiene como identificador el valor %d",socket ,cod_modulo));
+	process_request(cod_modulo, socket);
 }
 
 void process_request(int id_modulo, int socket_cliente) {
 	int cod_op;
 	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
-	log_info(mi_log, string_from_format("El codigo de operacion es %d", cod_op));
+	log_info(mi_log, string_from_format("El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op));
 	switch_cola(cod_op,socket_cliente,id_modulo);
 }
