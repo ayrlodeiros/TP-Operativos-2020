@@ -164,15 +164,15 @@ void liberar_appeared_mq(void);
 /* memoria principal */
 void iniciar_memoria_principal();
 
-void guardar_mensaje_en_memoria(int tamanio, void*buffer, int* posicion);
+int guardar_mensaje_en_memoria(int tamanio, void*buffer);
 
 void almacenar_en_memoria(int tamanio, void* buffer, int posicion);
 
-void obtener_posicion_particiones(int tamanio, int* posicion);
+int obtener_posicion_particiones(int tamanio, int posicion);
 
-void obtener_posicion_bs(int tamanio, int* posicion);
+int obtener_posicion_bs(int tamanio, int posicion);
 
-void obtener_posicion_normal(int tamanio, int* posicion);
+int obtener_posicion_normal();
 
 
 /* Lista GLobal de mensajes */

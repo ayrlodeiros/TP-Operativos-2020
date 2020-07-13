@@ -32,8 +32,10 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		int tamanio;
 		int id_correlativo;
 		void* buffer;
-		recv(socket_cliente,(int) id_correlativo, sizeof(int), MSG_WAITALL);
-		recv(socket_cliente,(int) tamanio, sizeof(int), MSG_WAITALL);
+		recv(socket_cliente, &id_correlativo, sizeof(int), MSG_WAITALL);
+		log_info(mi_log,"El id del msj es :%d", id_correlativo);
+		recv(socket_cliente, &tamanio, sizeof(int), MSG_WAITALL);
+		log_info(mi_log,"El tamanio del msj es :%d", tamanio);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
 		log_info(mi_log, "Se recibio el mensaje correctamente\n");

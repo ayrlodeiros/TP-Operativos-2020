@@ -242,10 +242,10 @@ void liberar_appeared_mq(){
 /*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
 t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlativo){
 
-	int posicion;
+
 	t_mensaje* mensaje  = malloc(sizeof(t_mensaje));
 
-	guardar_mensaje_en_memoria(tamanio, buffer, &posicion);
+	int posicion = guardar_mensaje_en_memoria(tamanio, buffer);
 	mensaje->id = asignar_id_univoco();
 	mensaje->id_cor = id_correlativo;
 	mensaje->cola = cola;
@@ -255,6 +255,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 	mensaje->pos_en_memoria = malloc(sizeof(t_pos_memoria));
 	mensaje->pos_en_memoria->pos = posicion;
 	mensaje->pos_en_memoria->tamanio = tamanio;
+	log_info(mi_log,"Se guardo un nuevo mensaje en la cola %d, posicion %d y tamanio %d .",cola,posicion,tamanio);
 
 	return mensaje;
 }
@@ -279,23 +280,25 @@ void iniciar_memoria_principal(){
 	ultima_pos = 0;
 }
 
-void guardar_mensaje_en_memoria(int tamanio, void* buffer, int* posicion){
+int guardar_mensaje_en_memoria(int tamanio, void* buffer){
+	int posicion;
 
 	switch(leer_algoritmo_memoria()){
 		case PARTICIONES:
-			obtener_posicion_particiones(tamanio, posicion);
-			almacenar_en_memoria(tamanio, buffer, &posicion);
+			posicion = obtener_posicion_particiones(tamanio, posicion);
+			almacenar_en_memoria(tamanio, buffer, posicion);
 			break;
 		case BS:
-			obtener_posicion_bs(tamanio, posicion);
+			posicion = obtener_posicion_bs(tamanio, posicion);
 			almacenar_en_memoria(tamanio, buffer, &posicion);
 			break;
 		case NORMAL:
 			/*todo si hay error puede que sea q falta el * en posicion */
-			obtener_posicion_normal(tamanio, posicion);
-			almacenar_en_memoria(tamanio, buffer, &posicion);
+			posicion = obtener_posicion_normal();
+			almacenar_en_memoria(tamanio, buffer, posicion);
 			break;
 	}
+	return posicion;
 }
 
 void almacenar_en_memoria(int tamanio, void* buffer, int posicion) {
@@ -305,26 +308,28 @@ void almacenar_en_memoria(int tamanio, void* buffer, int posicion) {
 	pthread_mutex_unlock(&mutex_memoria_principal);
 }
 
-void obtener_posicion_particiones(int tamanio, int* posicion) {
+int obtener_posicion_particiones(int tamanio, int posicion) {
 	//TODO impletar obtencion posicion particiones
 	pthread_mutex_lock(&mutex_memoria_principal);
 
 
 
 	pthread_mutex_unlock(&mutex_memoria_principal);
+	return -1;
 }
 
-void obtener_posicion_bs(int tamanio, int* posicion) {
+int obtener_posicion_bs(int tamanio, int posicion) {
 	//TODO impletar obtencion posicion bs
 	pthread_mutex_lock(&mutex_memoria_principal);
 
 
 
 	pthread_mutex_unlock(&mutex_memoria_principal);
+	return -1;
 }
 
-void obtener_posicion_normal(int tamanio, int* posicion) {
-	*posicion = ultima_pos;
+int obtener_posicion_normal() {
+	return ultima_pos;
 }
 
 suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo){
