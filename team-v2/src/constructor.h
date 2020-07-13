@@ -46,6 +46,7 @@ t_list* entrenadores_ready;
 t_list* intercambios;
 
 int cantidad_de_deadlocks;
+int cantidad_de_cambios_de_contexto;
 
 
 typedef struct
