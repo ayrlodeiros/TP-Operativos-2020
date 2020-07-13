@@ -1191,7 +1191,7 @@ void mostrar_metricas(t_log* log) {
 	log_info(log, "-------- METRICAS --------");
 	log_info(log, "Cantidad de ciclos de CPU total: %d", calcular_ciclos_de_CPU_totales());
 	//TODO ver a que se considera cambio de contexto
-	//log_info(log, "Cantidad de cambios de contextos realizados: %d", cantidad_de_cambios_de_contexto);
+	log_info(log, "Cantidad de cambios de contextos realizados: %d", cantidad_de_cambios_de_contexto);
 	mostrar_ciclos_de_CPU_por_entrenador(log);
 	log_info(log, "Deadlocks producidos y resueltos: %d", cantidad_de_deadlocks);
 }

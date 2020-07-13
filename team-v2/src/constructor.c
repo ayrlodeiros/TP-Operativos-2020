@@ -47,7 +47,18 @@ void armar_entrenadores() {
 	t_list* objetivos = leer_objetivos_entrenadores();
 
 	for(int i=0; i< list_size(posiciones);i++){
-		list_add(entrenadores, armar_entrenador(list_get(posiciones, i), list_get(pokemons, i), list_get(objetivos, i), i));
+
+		char* posicion_entrenador = list_get(posiciones, i);
+		char* pokemons_entrenador;
+
+		if(i<list_size(pokemons)){
+			pokemons_entrenador = list_get(pokemons, i);
+		}else{
+			pokemons_entrenador = "nulo";
+		}
+		char* objetivos_entrenador =  list_get(objetivos, i);
+
+		list_add(entrenadores,armar_entrenador(posicion_entrenador,pokemons_entrenador,objetivos_entrenador,i));
 	}
 
 	list_destroy(posiciones);
@@ -60,19 +71,23 @@ void armar_entrenadores() {
 entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, int id){
 	entrenador* un_entrenador = malloc(sizeof(entrenador));
 
-	char** pokemons_adquiridos = string_split(pokemons,"|");
+	if(string_equals_ignore_case(pokemons,"nulo")){
+		un_entrenador->pokemons_adquiridos = list_create();
+	}else{
+		char** pokemons_adquiridos = string_split(pokemons,"|");
+		t_list* lista_pokemons_adquiridos = crear_t_list(pokemons_adquiridos);
+		free(pokemons_adquiridos);
+		un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;
+	}
 	char** pokemons_objetivo = string_split(objetivos,"|");
 
-	t_list* lista_pokemons_adquiridos = crear_t_list(pokemons_adquiridos);
 	t_list* lista_pokemons_objetivo = crear_t_list(pokemons_objetivo);
 
-	free(pokemons_adquiridos);
 	free(pokemons_objetivo);
+
 
 	un_entrenador->id = id;
 	un_entrenador->posicion = armar_posicion(posicion);
-	un_entrenador->estado = NEW;
-	un_entrenador->pokemons_adquiridos = lista_pokemons_adquiridos;
 	un_entrenador->pokemons_objetivo = lista_pokemons_objetivo;
 	un_entrenador->pokemons_sobrantes = list_create();
 	un_entrenador->cant_maxima_pokemons = list_size(lista_pokemons_objetivo);
@@ -85,6 +100,13 @@ entrenador* armar_entrenador(char* posicion, char* pokemons, char* objetivos, in
 	un_entrenador->acciones = list_create();
 
 	actualizar_objetivo_y_sobrante_del_entrenador_con_adquiridos(un_entrenador);
+
+	if(list_is_empty(lista_pokemons_objetivo)){
+		log_info(nuestro_log,"El entrenador %d cumplio su objetivo y queda en estado EXIT", un_entrenador->id);
+		un_entrenador->estado = EXIT;
+	}else{
+		un_entrenador->estado = NEW;
+	}
 
 	return un_entrenador;
 }
@@ -123,6 +145,9 @@ void armar_objetivo_global() {
 		entrenador* entrenador_aux = list_get(entrenadores, i);
 		for(int j = 0; j<list_size(entrenador_aux->pokemons_objetivo); j++) {
 			agregar_objetivo_a_objetivo_global(list_get(entrenador_aux->pokemons_objetivo, j));
+		}
+		for(int k = 0; k<list_size(entrenador_aux->pokemons_sobrantes); k++) {
+			restar_adquirido_a_objetivo_global(list_get(entrenador_aux->pokemons_sobrantes, k));
 		}
 	}
 }

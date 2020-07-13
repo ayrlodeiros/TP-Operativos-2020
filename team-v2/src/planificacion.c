@@ -4,6 +4,7 @@
 void planificar(){
 
 	log_info(nuestro_log, "Estoy en el planificador");
+	cantidad_de_cambios_de_contexto = 0;
 
 	switch (leer_algoritmo_planificacion()) {
 	    case FIFO:
@@ -39,6 +40,8 @@ void fifo(){
 		}
 
 		evaluar_y_atacar_deadlock();
+
+		cantidad_de_cambios_de_contexto++;
 
 	}
 
@@ -86,6 +89,8 @@ void round_robin(){
 		}
 
 		evaluar_y_atacar_deadlock();
+
+		cantidad_de_cambios_de_contexto++;
 	}
 
 	terminar_team();
@@ -117,6 +122,7 @@ void sjf_sin_desalojo(){
 		}
 
 		evaluar_y_atacar_deadlock();
+		cantidad_de_cambios_de_contexto++;
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
@@ -176,6 +182,7 @@ void sjf_con_desalojo(){
 			}
 
 		}
+		cantidad_de_cambios_de_contexto++;
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);

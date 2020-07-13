@@ -74,6 +74,18 @@ t_list* leer_posiciones_entrenadores(void){
 t_list* leer_pokemon_entrenadores(void){
 	char** pokemons_config = config_get_array_value(config, "POKEMON_ENTRENADORES");
 
+	/*
+	for(int i = 0 ; i< tamanio_de_lista(pokemons_config); i++){
+		printf(pokemons_config[i]);
+	}
+	*/
+	//[,,Pikachu]
+	//[Pikachu,,,Squirtle,]
+	//Pikachu Squirtle NULL
+
+
+	//Pikachu NULL basura
+
 	t_list* lista = crear_t_list(pokemons_config);
 
 	free(pokemons_config);
