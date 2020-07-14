@@ -278,7 +278,16 @@ int asignar_id_univoco(){
 
 void iniciar_memoria_principal(){
 	memoria_principal = malloc(leer_tamano_memoria());
-	ultima_pos = 0;
+	switch(leer_algoritmo_memoria()){
+	case PARTICIONES:
+		break;
+	case BS:
+		break;
+	case NORMAL:
+		ultima_pos = 0;
+		break;
+	}
+
 }
 
 int guardar_mensaje_en_memoria(int tamanio, void* buffer){
@@ -286,6 +295,7 @@ int guardar_mensaje_en_memoria(int tamanio, void* buffer){
 
 	switch(leer_algoritmo_memoria()){
 		case PARTICIONES:
+			//todo creo que vamos a tener que meter ambas en una misma funcion y ahi meter el mutex, porque talvez al asignar posicion se tendra q compactar y mover cachos de memoria
 			posicion = obtener_posicion_particiones(tamanio, posicion);
 			almacenar_en_memoria(tamanio, buffer, posicion);
 			break;
@@ -309,6 +319,7 @@ void almacenar_en_memoria(int tamanio, void* buffer, int posicion) {
 	pthread_mutex_unlock(&mutex_memoria_principal);
 }
 
+//todo tener en cuenta que al COMPACTAR se mueve la posicion del msj, por lo tanto hay que ver una forma de actualizar ese valor en la estructura msj
 int obtener_posicion_particiones(int tamanio, int posicion) {
 	//TODO impletar obtencion posicion particiones
 	pthread_mutex_lock(&mutex_memoria_principal);
