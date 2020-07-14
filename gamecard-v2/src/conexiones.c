@@ -722,7 +722,7 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 				hubo_error = 1;
 			} else {
 				payload = malloc(tamanio);
-				if(recv(conexion_broker, payload, sizeof(tamanio), 0) == -1) {
+				if(recv(conexion_broker, payload, tamanio, 0) == -1) {
 					hubo_error = 1;
 				}
 			}
