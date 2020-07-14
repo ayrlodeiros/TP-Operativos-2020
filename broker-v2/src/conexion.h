@@ -33,10 +33,10 @@ void liberar_conexion(int socket);
  * Devuelve como entero el servidor levantado.
  * */
 
-void levantar_servidor(char* ip, int puerto, t_log* logger);
+void levantar_servidor(char* ip, int puerto);
 
 
-void esperar_cliente(int socket_servidor, t_log* logger);
+void esperar_cliente(int socket_servidor);
 
 void servir_cliente(int socket);
 

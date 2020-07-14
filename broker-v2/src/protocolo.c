@@ -57,7 +57,7 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	int tamanio_previo = queue_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
 	queue_push(queue->cola,mensaje);
 	if(queue_size(queue->cola) > tamanio_previo)
-		log_info(mi_log,string_from_format("Se agrego correctamente el mensaje a la cola %d",queue->nombre));
+		log_info(mi_log,"Se agrego correctamente el mensaje a la cola %d",queue->nombre);
 
 	pthread_mutex_unlock(&mutex_agregar_msj_a_cola);
 
@@ -84,25 +84,6 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 }*/
 
 
-
-void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
-	int valor;
-	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",suscriptor->identificador);
-	if (recv(suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
-		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
-		/* Deberia actualizar el mensaje e indicar que no se recibio la confirmacion de recepcion*/
-	}
-	else{
-		log_info(mi_log, "Se recibio el valor de ack: %d", valor);
-		if(valor == 1) {
-			log_info(mi_log, "Recibi el ack del suscriptor %d.",suscriptor->identificador);
-			add_sub_lista_conf_msj(mensaje,suscriptor);
-		} else {
-			//TODO volver a mandar el mensaje, poner el mensaje en la cola
-		}
-	}
-}
-
 void* serializar_paquete(t_paquete* paquete, int bytes)
 {
 	void * magic = malloc(bytes);
@@ -126,15 +107,6 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
 			log_info(mi_log,"Se envio el id del mensaje correctamente\n");
 		}
-}
-
-
-void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor_t* suscriptor){
-	list_add(mensaje->suscriptores_conf,suscriptor->identificador);
-}
-
-void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
-	list_add(mensaje->suscriptores_env,suscriptor->identificador);
 }
 
 void switch_cola(int cod_op, int socket_cliente, int id_modulo){

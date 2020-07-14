@@ -16,7 +16,7 @@ int main(void)
 
 	iniciar_broker();
 
-	levantar_servidor(leer_ip_broker(),leer_puerto_broker(),mi_log);
+	levantar_servidor(leer_ip_broker(),leer_puerto_broker());
 
 	terminar_broker();
 
@@ -29,7 +29,7 @@ int main(void)
 void iniciar_broker(){
 
 	printf("-----------------Iniciando archivo config-----------------\n");
-	//logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
+	logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
 	mi_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt","broker",true,LOG_LEVEL_INFO);
 	iniciar_funcionalidades();
 

@@ -170,7 +170,7 @@ void almacenar_en_memoria(int tamanio, void* buffer, int posicion);
 
 int obtener_posicion_particiones(int tamanio, int posicion);
 
-int obtener_posicion_bs(int tamanio, int posicion);
+//int obtener_posicion_bs(int tamanio);
 
 int obtener_posicion_normal();
 
@@ -200,5 +200,10 @@ void iniciar_list_global();
 
 /** Crea el paquete para manda en funcion del mensaje */
 void enviar_mensaje(aux_msj_susc* aux);
+
+void recibir_ACK(suscriptor_t* socket_cliente,t_mensaje* mensaje);
+
+void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
+void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 
 #endif //CONSTRUCTOR_H_
