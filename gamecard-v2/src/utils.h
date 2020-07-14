@@ -52,6 +52,7 @@ typedef struct
 } posicion;
 
 void crear_archivo_metadata(int block_size, int blocks);
+void crear_punto_de_montaje();
 void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size,char* open);
 void creacion_archivo_files_metadata(char* path, char* directory,char* size, char* blocks,char* open);
 void crear_directorio(char* path_directorio);

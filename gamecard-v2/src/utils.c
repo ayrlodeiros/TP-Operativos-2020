@@ -22,6 +22,23 @@ void crear_archivo_metadata(int block_size, int blocks){
 
 }
 
+void crear_punto_de_montaje(){
+	char** punto_montaje_tallgrass_partido = string_split(punto_montaje_tallgrass,"/");
+	char* path = string_new();
+	for(int i = 0; i< tamanio_de_lista(punto_montaje_tallgrass_partido) ; i++){
+		string_append(&path,"/");
+		string_append(&path,punto_montaje_tallgrass_partido[i]);
+
+		crear_directorio(path);
+		free(punto_montaje_tallgrass_partido[i]);
+
+	}
+
+	free(path);
+	free(punto_montaje_tallgrass_partido);
+
+}
+
 void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size,char* open){
 	pthread_mutex_lock(&mutex_modificar_bloque);
 	char* path_archivo_files_metadata = devolver_path_files_metadata(nombre_archivo);

@@ -23,15 +23,8 @@ void* serializar_paquete(t_paquete* paquete, int bytes);
 
 void enviar_id_msj_cliente(int socket_cliente,int id_msj);
 
-/* Falta definir los siguientes metodos */
-
-void recibir_ACK(suscriptor_t* socket_cliente,t_mensaje* mensaje);
-
 /* Filtra los mensajes de la lista global y los agrega a la cola correspondiente*/
 void mandar_mensajes_cache(t_mq* cola);
-
-void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
-void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 
 
 /*Switchs*/

@@ -105,6 +105,32 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	recibir_ACK(suscriptor,mensaje);
 }
 
+void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
+	int valor;
+	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",suscriptor->identificador);
+	if (recv(suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
+		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
+		/* Deberia actualizar el mensaje e indicar que no se recibio la confirmacion de recepcion*/
+	}
+	else{
+		log_info(mi_log, "Se recibio el valor de ack: %d", valor);
+		if(valor == 1) {
+			log_info(mi_log, "Recibi el ack del suscriptor %d.",suscriptor->identificador);
+			add_sub_lista_conf_msj(mensaje,suscriptor);
+		} else {
+			//TODO volver a mandar el mensaje, poner el mensaje en la cola
+		}
+	}
+}
+
+void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor_t* suscriptor){
+	list_add(mensaje->suscriptores_conf,suscriptor->identificador);
+}
+
+void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
+	list_add(mensaje->suscriptores_env,suscriptor->identificador);
+}
+
 void enviar_mensaje_suscriptores(t_mq* cola){
 	aux_msj_susc* aux = malloc(sizeof(aux_msj_susc));
 	/*todo Por lo que estuve viendo en el foro, no es necesario que haya que sacar el msj de la cola, ya que puede que pasar que no lo hayan recibido todos los suscriptores */
@@ -300,8 +326,8 @@ int guardar_mensaje_en_memoria(int tamanio, void* buffer){
 			almacenar_en_memoria(tamanio, buffer, posicion);
 			break;
 		case BS:
-			posicion = obtener_posicion_bs(tamanio, posicion);
-			almacenar_en_memoria(tamanio, buffer, &posicion);
+			posicion = obtener_posicion_bs(tamanio);
+			almacenar_en_memoria(tamanio, buffer, posicion);
 			break;
 		case NORMAL:
 			/*todo si hay error puede que sea q falta el * en posicion */
@@ -330,15 +356,16 @@ int obtener_posicion_particiones(int tamanio, int posicion) {
 	return -1;
 }
 
-int obtener_posicion_bs(int tamanio, int posicion) {
+/*int obtener_posicion_bs(int tamanio) {
 	//TODO impletar obtencion posicion bs
 	pthread_mutex_lock(&mutex_memoria_principal);
 
 
 
+
 	pthread_mutex_unlock(&mutex_memoria_principal);
 	return -1;
-}
+}*/
 
 int obtener_posicion_normal() {
 	return ultima_pos;
