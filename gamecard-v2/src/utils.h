@@ -44,6 +44,7 @@ pthread_mutex_t Mutex_Bitmap;
 pthread_mutex_t asignar_bloque;
 pthread_mutex_t mutex_liberar_bloque;
 pthread_mutex_t mutex_modificar_bloque;
+pthread_mutex_t mutex_modificar_carpeta;
 
 typedef struct
 {

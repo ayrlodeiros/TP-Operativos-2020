@@ -222,6 +222,7 @@ void iniciar_gamecard() {
 	pthread_mutex_init(&asignar_bloque,NULL);
 	pthread_mutex_init(&mutex_liberar_bloque,NULL);
 	pthread_mutex_init(&mutex_modificar_bloque,NULL);
+	pthread_mutex_init(&mutex_modificar_carpeta,NULL);
 
 	//Iniciamos las variables globales del constructor
 	flag_bloques_libres = 1; //hay bloques libres

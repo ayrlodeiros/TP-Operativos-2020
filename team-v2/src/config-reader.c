@@ -66,8 +66,8 @@ t_list* leer_posiciones_entrenadores(void){
 	char** posiciones_config = config_get_array_value(config, "POSICIONES_ENTRENADORES");
 
 	t_list* lista = crear_t_list(posiciones_config);
-
 	free(posiciones_config);
+
 	return lista;
 }
 

@@ -334,8 +334,9 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 			string_append(&path_nombre_metadata, path_aux);
 			free(path_aux);
 			string_append(&path_nombre_metadata, "/Metadata.bin");
-
+			pthread_mutex_lock(&mutex_modificar_carpeta);
 			crear_archivo_files_metadata(nombre_pokemon,"N",250,"N");
+			pthread_mutex_unlock(&mutex_modificar_carpeta);
 			free(path_nombre_metadata);
 			guardar_informacion(nombre_pokemon,posicion_x,posicion_y,cantidad);
 		}
@@ -438,8 +439,22 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 					list_destroy_and_destroy_elements(lista_de_datos,free);
 					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 
-					sleep(leer_tiempo_retardo_operacion());
+					t_list* posiciones_pokemon = posiciones_del_pokemon(path_nombre_metadata);
+
 					cerrar_archivo(nombre_pokemon);
+					if(list_is_empty(posiciones_pokemon)){
+						pthread_mutex_lock(&mutex_modificar_carpeta);
+						char* path_carpeta_pokemon = devolver_path_files_metadata(nombre_pokemon);
+						int bloque_a_remover = devolver_ultimo_bloque(path_nombre_metadata);
+						liberar_bloque(bloque_a_remover);
+						remove(path_nombre_metadata);
+						rmdir(path_carpeta_pokemon);
+						free(path_carpeta_pokemon);
+						pthread_mutex_unlock(&mutex_modificar_carpeta);
+					}
+					list_destroy_and_destroy_elements(posiciones_pokemon,free);
+					sleep(leer_tiempo_retardo_operacion());
+
 					list_destroy(bloques);
 					free(posicion);
 					free(path_nombre_metadata);
@@ -470,7 +485,7 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 
 int existe_el_pokemon(char* nombre_pokemon){
 	char* path_archivo_files = string_new();
-
+	pthread_mutex_lock(&mutex_modificar_carpeta);
 	char* path_aux = devolver_path_directorio("/Files");
 	string_append(&path_archivo_files,path_aux);
 	free(path_aux);
@@ -478,6 +493,7 @@ int existe_el_pokemon(char* nombre_pokemon){
 	string_append(&path_archivo_files,nombre_pokemon);
 	int existe_el_pokemon = existe_el_directorio(path_archivo_files);
 	free(path_archivo_files);
+	pthread_mutex_unlock(&mutex_modificar_carpeta);
 	return existe_el_pokemon;
 
 }

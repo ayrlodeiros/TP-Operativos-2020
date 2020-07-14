@@ -1086,3 +1086,79 @@
 [INFO] 20:20:25:709 gameBoy/(7411:7411): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
 [INFO] 20:20:27:963 gameBoy/(7418:7418): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
 [INFO] 20:20:27:963 gameBoy/(7418:7418): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:30:460 gameBoy/(6907:6907): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 16:51:30:464 gameBoy/(6907:6907): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:26:113 gameBoy/(6912:6912): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 16:52:26:113 gameBoy/(6912:6912): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:53:01:207 gameBoy/(6916:6916): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 16:53:01:207 gameBoy/(6916:6916): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:32:393 gameBoy/(7147:7147): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:12:32:393 gameBoy/(7147:7147): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:40:270 gameBoy/(7150:7150): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:12:40:271 gameBoy/(7150:7150): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:42:652 gameBoy/(7153:7153): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:12:42:652 gameBoy/(7153:7153): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:29:997 gameBoy/(7752:7752): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:35:29:997 gameBoy/(7752:7752): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:32:742 gameBoy/(7755:7755): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:35:32:742 gameBoy/(7755:7755): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:34:260 gameBoy/(7758:7758): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:35:34:262 gameBoy/(7758:7758): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:58:15:228 gameBoy/(20617:20617): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:58:15:241 gameBoy/(20617:20617): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:31:28:161 gameBoy/(5660:5660): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:31:28:173 gameBoy/(5660:5660): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:33:37:394 gameBoy/(5753:5753): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:33:37:394 gameBoy/(5753:5753): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:34:12:868 gameBoy/(5797:5797): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:34:12:869 gameBoy/(5797:5797): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:35:12:975 gameBoy/(5826:5826): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:35:12:975 gameBoy/(5826:5826): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:35:34:698 gameBoy/(5850:5850): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:35:34:698 gameBoy/(5850:5850): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:40:43:624 gameBoy/(10033:10033): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:40:43:624 gameBoy/(10033:10033): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 16:40:54:563 gameBoy/(10035:10035): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 16:40:54:563 gameBoy/(10035:10035): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:01:52:954 gameBoy/(10750:10750): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:01:52:954 gameBoy/(10750:10750): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:02:03:861 gameBoy/(10755:10755): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:02:03:861 gameBoy/(10755:10755): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:02:16:2 gameBoy/(10766:10766): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:02:16:2 gameBoy/(10766:10766): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:02:47:159 gameBoy/(10801:10801): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:02:47:159 gameBoy/(10801:10801): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:15:53:897 gameBoy/(10884:10884): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:15:53:903 gameBoy/(10884:10884): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:16:00:654 gameBoy/(17737:17737): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:16:00:660 gameBoy/(17737:17737): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:16:14:862 gameBoy/(31261:31261): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:16:14:865 gameBoy/(31261:31261): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:33:54:789 gameBoy/(6253:6253): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:33:54:789 gameBoy/(6253:6253): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:35:12:147 gameBoy/(6263:6263): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:35:12:147 gameBoy/(6263:6263): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:35:23:466 gameBoy/(6270:6270): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:35:23:467 gameBoy/(6270:6270): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:35:37:801 gameBoy/(6275:6275): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:35:37:801 gameBoy/(6275:6275): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:36:07:676 gameBoy/(6297:6297): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:36:07:676 gameBoy/(6297:6297): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:36:18:338 gameBoy/(6300:6300): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:36:18:339 gameBoy/(6300:6300): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:36:38:210 gameBoy/(6325:6325): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:36:38:211 gameBoy/(6325:6325): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:37:00:161 gameBoy/(6332:6332): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:37:00:161 gameBoy/(6332:6332): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:41:51:46 gameBoy/(6487:6487): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:41:51:46 gameBoy/(6487:6487): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:41:53:633 gameBoy/(6489:6489): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:41:53:633 gameBoy/(6489:6489): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:42:28:881 gameBoy/(6517:6517): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:42:28:882 gameBoy/(6517:6517): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:42:34:98 gameBoy/(6522:6522): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:42:34:99 gameBoy/(6522:6522): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:42:38:521 gameBoy/(6530:6530): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:42:38:522 gameBoy/(6530:6530): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 17:42:47:210 gameBoy/(6533:6533): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 17:42:47:210 gameBoy/(6533:6533): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
