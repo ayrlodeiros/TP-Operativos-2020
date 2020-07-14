@@ -14,6 +14,7 @@ int main(void)
 {
 	//pthread_t* conexion_team;
 
+
 	iniciar_broker();
 
 	levantar_servidor(leer_ip_broker(),leer_puerto_broker(),mi_log);

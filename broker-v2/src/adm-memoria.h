@@ -2,19 +2,10 @@
 #define ADMMEMORIA_H_
 #include "constructor.h"
 
-typedef enum{
-	FIRST_FIT = 1,
-	BEST_FIT = 2
-}algor_part_libre;
-
-typedef enum{
-	FIRST_I_FIRST_O = 1,
-	LAST_RECENTLY_USED = 2
-}algor_reemplazo;
-
 typedef struct{
 	int inicio;
 	int fin;
+	int tamanio_ocupado;
 	bool libre;
 }t_particion;
 

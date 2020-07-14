@@ -30,8 +30,19 @@ int obtener_pos_particiones(int tamanio) {
 //todo seguir haciendo
 int algoritmo_best_fit(int tamanio){
 	t_particion mejor_particion;
-	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
+	t_list particiones_libres = list_filter(lista_particiones,esta_libre());
+	if(list_is_empty(particiones_libres())){
+		//todo implementar eliminar un msj
+		return -1;
+	}
+	for(int i = 0; list_size(particiones_libres) > i ; i++ ){
+		if(){
 
+		}
 	}
 	return -1;
+}
+
+bool esta_libre(t_particion* particion){
+	return particion->libre;
 }
