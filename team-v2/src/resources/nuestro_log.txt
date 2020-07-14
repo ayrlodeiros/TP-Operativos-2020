@@ -479,3 +479,354 @@
 [INFO] 15:48:21:256 team/(5443:5452): Cantidad de ciclos de CPU realizados por entrenador 2: 9
 [INFO] 15:48:21:256 team/(5443:5452): Deadlocks producidos y resueltos: 2
 [INFO] 15:48:21:257 team/(5443:5452): TERMINO EL PROCESO TEAM
+[INFO] 16:51:20:506 team/(6897:6897): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 16:51:20:508 team/(6897:6897): Necesito 1 pokemons Squirtle
+[INFO] 16:51:20:508 team/(6897:6897): Necesito 1 pokemons Pikachu
+[INFO] 16:51:20:508 team/(6897:6897): Necesito 1 pokemons Charmander
+[INFO] 16:51:20:508 team/(6897:6897): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:51:20:508 team/(6897:6897): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:51:20:508 team/(6897:6897): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:51:20:508 team/(6897:6906): Estoy en el planificador
+[INFO] 16:51:20:508 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:51:20:508 team/(6897:6905): Esperando alguna accion
+[INFO] 16:51:20:509 team/(6897:6904): El broker no esta conectado...
+[INFO] 16:51:20:509 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:20:509 team/(6897:6903): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 16:51:20:509 team/(6897:6903): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 16:51:25:509 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:30:460 team/(6897:6903): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 16:51:30:460 team/(6897:6903): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 16:51:30:467 team/(6897:6908): Aparecio un Pikachu en 5|5, el cual es requerido
+[INFO] 16:51:30:467 team/(6897:6908): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 16:51:30:467 team/(6897:6906): Estimado restante de entrenador 1 es 3.000000
+[INFO] 16:51:30:467 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:51:30:468 team/(6897:6909): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:51:30:468 team/(6897:6909): 3. Se realiza la captura del pokemon Pikachu, en la posicion 5|5 exitosamente.
+[INFO] 16:51:30:468 team/(6897:6909): El entrenador 1 se bloquea quedando en estado DEADLOCK
+[INFO] 16:51:30:468 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:51:30:510 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:35:512 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:40:514 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:45:515 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:50:519 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:51:55:520 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:00:524 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:05:527 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:10:530 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:15:532 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:20:535 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:25:537 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:26:113 team/(6897:6903): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 16:52:26:113 team/(6897:6903): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 16:52:26:116 team/(6897:6913): Aparecio un Charmander en 6|6, el cual es requerido
+[INFO] 16:52:26:116 team/(6897:6913): Se encontro entrenador para asignar a la busqueda de Charmander
+[INFO] 16:52:26:117 team/(6897:6906): Estimado restante de entrenador 2 es 3.000000
+[INFO] 16:52:26:117 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:52:26:117 team/(6897:6914): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:52:26:117 team/(6897:6914): 3. Se realiza la captura del pokemon Charmander, en la posicion 6|6 exitosamente.
+[INFO] 16:52:26:117 team/(6897:6914): El entrenador 2 se bloquea quedando en estado DEADLOCK
+[INFO] 16:52:26:117 team/(6897:6906): Entre a planear el intercambio
+[INFO] 16:52:26:117 team/(6897:6906): No se encontro intercambio beneficioso para entrenador 2
+[INFO] 16:52:26:117 team/(6897:6906): Sali de planear el intercambio
+[INFO] 16:52:26:117 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:52:30:540 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:35:542 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:40:544 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:45:546 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:50:549 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:52:55:551 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:53:00:554 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:53:01:201 team/(6897:6903): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 16:53:01:202 team/(6897:6903): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 16:53:01:215 team/(6897:6917): Aparecio un Squirtle en 4|4, el cual es requerido
+[INFO] 16:53:01:215 team/(6897:6917): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 16:53:01:215 team/(6897:6906): Estimado restante de entrenador 0 es 3.000000
+[INFO] 16:53:01:215 team/(6897:6906): Entrenador 0 consume 1 de CPU
+[INFO] 16:53:01:217 team/(6897:6918): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:53:01:217 team/(6897:6918): 3. Se realiza la captura del pokemon Squirtle, en la posicion 4|4 exitosamente.
+[INFO] 16:53:01:217 team/(6897:6918): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 16:53:01:217 team/(6897:6906): Entre a planear el intercambio
+[INFO] 16:53:01:217 team/(6897:6906): Se movera al entrenador 2 para hacer intercambio
+[INFO] 16:53:01:218 team/(6897:6906): Sali de planear el intercambio
+[INFO] 16:53:01:218 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:01:218 team/(6897:6906): Estimado restante de entrenador 2 es 6.000000
+[INFO] 16:53:01:218 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:01:218 team/(6897:6919): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:53:03:220 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:03:220 team/(6897:6906): Estimado restante de entrenador 2 es 5.000000
+[INFO] 16:53:03:220 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:03:221 team/(6897:6920): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:53:05:222 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:05:222 team/(6897:6906): Estimado restante de entrenador 2 es 4.000000
+[INFO] 16:53:05:222 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:05:222 team/(6897:6921): 2. Entrenador 2 moviendose a la posicion: 4|5.
+[INFO] 16:53:05:554 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:53:07:223 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:07:223 team/(6897:6906): Estimado restante de entrenador 2 es 3.000000
+[INFO] 16:53:07:223 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:07:224 team/(6897:6922): 2. Entrenador 2 moviendose a la posicion: 4|4.
+[INFO] 16:53:09:224 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:09:225 team/(6897:6906): Estimado restante de entrenador 2 es 2.000000
+[INFO] 16:53:09:225 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:09:225 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:09:225 team/(6897:6906): Estimado restante de entrenador 2 es 1.000000
+[INFO] 16:53:09:225 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:09:225 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:09:225 team/(6897:6906): Estimado restante de entrenador 2 es 0.000000
+[INFO] 16:53:09:225 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:09:225 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:09:225 team/(6897:6906): Estimado restante de entrenador 2 es -1.000000
+[INFO] 16:53:09:226 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:09:226 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:09:226 team/(6897:6906): Estimado restante de entrenador 2 es -2.000000
+[INFO] 16:53:09:226 team/(6897:6906): Entrenador 2 consume 1 de CPU
+[INFO] 16:53:09:227 team/(6897:6925): Empezando la accion de intercambio
+[INFO] 16:53:09:227 team/(6897:6925): Entrenador 2 dando Charmander
+[INFO] 16:53:09:227 team/(6897:6925): Entrenador 0 dando Squirtle
+[INFO] 16:53:09:227 team/(6897:6925): El entrenador 2 cumplio su objetivo y queda en estado EXIT
+[INFO] 16:53:09:227 team/(6897:6925): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 16:53:09:228 team/(6897:6925): Terminando la accion de intercambio
+[INFO] 16:53:09:228 team/(6897:6906): Entre a planear el intercambio
+[INFO] 16:53:09:228 team/(6897:6906): Se movera al entrenador 1 para hacer intercambio
+[INFO] 16:53:09:228 team/(6897:6906): Sali de planear el intercambio
+[INFO] 16:53:09:228 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:09:228 team/(6897:6906): Estimado restante de entrenador 1 es 5.000000
+[INFO] 16:53:09:229 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:09:229 team/(6897:6926): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:53:10:556 team/(6897:6904): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 16:53:11:229 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:11:230 team/(6897:6906): Estimado restante de entrenador 1 es 4.000000
+[INFO] 16:53:11:230 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:11:231 team/(6897:6927): 2. Entrenador 1 moviendose a la posicion: 4|4.
+[INFO] 16:53:13:231 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:13:231 team/(6897:6906): Estimado restante de entrenador 1 es 3.000000
+[INFO] 16:53:13:231 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:13:231 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:13:231 team/(6897:6906): Estimado restante de entrenador 1 es 2.000000
+[INFO] 16:53:13:232 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:13:232 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:13:232 team/(6897:6906): Estimado restante de entrenador 1 es 1.000000
+[INFO] 16:53:13:232 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:13:232 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:13:232 team/(6897:6906): Estimado restante de entrenador 1 es 0.000000
+[INFO] 16:53:13:232 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:13:232 team/(6897:6906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 16:53:13:232 team/(6897:6906): Estimado restante de entrenador 1 es -1.000000
+[INFO] 16:53:13:232 team/(6897:6906): Entrenador 1 consume 1 de CPU
+[INFO] 16:53:13:232 team/(6897:6928): Empezando la accion de intercambio
+[INFO] 16:53:13:232 team/(6897:6928): Entrenador 1 dando Pikachu
+[INFO] 16:53:13:232 team/(6897:6928): Entrenador 0 dando Charmander
+[INFO] 16:53:13:232 team/(6897:6928): El entrenador 1 cumplio su objetivo y queda en estado EXIT
+[INFO] 16:53:13:232 team/(6897:6928): El entrenador 0 cumplio su objetivo y queda en estado EXIT
+[INFO] 16:53:13:232 team/(6897:6928): Terminando la accion de intercambio
+[INFO] 16:53:13:232 team/(6897:6906): -------- METRICAS --------
+[INFO] 16:53:13:232 team/(6897:6906): Cantidad de ciclos de CPU total: 19
+[INFO] 16:53:13:232 team/(6897:6906): Cantidad de cambios de contextos realizados: 19
+[INFO] 16:53:13:232 team/(6897:6906): Cantidad de ciclos de CPU realizados por entrenador 0: 1
+[INFO] 16:53:13:232 team/(6897:6906): Cantidad de ciclos de CPU realizados por entrenador 1: 8
+[INFO] 16:53:13:232 team/(6897:6906): Cantidad de ciclos de CPU realizados por entrenador 2: 10
+[INFO] 16:53:13:232 team/(6897:6906): Deadlocks producidos y resueltos: 2
+[INFO] 16:53:13:232 team/(6897:6906): TERMINO EL PROCESO TEAM
+[INFO] 17:11:48:743 team/(7114:7114): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:11:48:889 team/(7114:7114): Necesito 1 pokemons Squirtle
+[INFO] 17:11:48:905 team/(7114:7114): Necesito 1 pokemons Pikachu
+[INFO] 17:11:48:906 team/(7114:7114): Necesito 1 pokemons Charmander
+[INFO] 17:11:49:49 team/(7114:7120): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:11:49:63 team/(7114:7121): El broker no esta conectado...
+[INFO] 17:11:49:79 team/(7114:7121): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:11:49:95 team/(7114:7120): Listo para recibir conexion de GAMEBOY, en servidor: 6
+[INFO] 17:11:49:114 team/(7114:7114): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:11:49:118 team/(7114:7114): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:11:49:127 team/(7114:7114): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:11:49:169 team/(7114:7122): Esperando alguna accion
+[INFO] 17:11:49:178 team/(7114:7123): Estoy en el planificador
+[INFO] 17:11:49:199 team/(7114:7123): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 17:11:54:134 team/(7114:7121): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:11:59:138 team/(7114:7121): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:22:687 team/(7137:7137): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:12:22:791 team/(7137:7137): Necesito 1 pokemons Squirtle
+[INFO] 17:12:22:795 team/(7137:7137): Necesito 1 pokemons Pikachu
+[INFO] 17:12:22:795 team/(7137:7137): Necesito 1 pokemons Charmander
+[INFO] 17:12:22:925 team/(7137:7144): El broker no esta conectado...
+[INFO] 17:12:22:943 team/(7137:7143): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:12:22:967 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:22:970 team/(7137:7143): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:12:22:989 team/(7137:7137): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:12:22:990 team/(7137:7137): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:12:22:991 team/(7137:7137): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:12:23:23 team/(7137:7145): Esperando alguna accion
+[INFO] 17:12:23:37 team/(7137:7146): Estoy en el planificador
+[INFO] 17:12:27:993 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:32:388 team/(7137:7143): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:12:32:404 team/(7137:7143): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:12:32:411 team/(7137:7148): Aparecio un Pikachu en 5|5, el cual es requerido
+[INFO] 17:12:32:480 team/(7137:7148): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 17:12:32:528 team/(7137:7149): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:12:32:539 team/(7137:7149): 3. Se realiza la captura del pokemon Pikachu, en la posicion 5|5 exitosamente.
+[INFO] 17:12:32:574 team/(7137:7149): El entrenador 1 se bloquea quedando en estado DEADLOCK
+[INFO] 17:12:32:997 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:37:1 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:40:265 team/(7137:7143): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:12:40:283 team/(7137:7143): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:12:40:292 team/(7137:7151): Aparecio un Squirtle en 4|4, el cual es requerido
+[INFO] 17:12:40:301 team/(7137:7151): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 17:12:40:319 team/(7137:7152): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:12:40:321 team/(7137:7152): 3. Se realiza la captura del pokemon Squirtle, en la posicion 4|4 exitosamente.
+[INFO] 17:12:40:322 team/(7137:7152): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 17:12:40:328 team/(7137:7146): Entre a planear el intercambio
+[INFO] 17:12:40:340 team/(7137:7146): No se encontro intercambio beneficioso para entrenador 1
+[INFO] 17:12:40:341 team/(7137:7146): Sali de planear el intercambio
+[INFO] 17:12:42:650 team/(7137:7143): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:12:42:651 team/(7137:7143): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:12:42:658 team/(7137:7154): Aparecio un Charmander en 6|6, el cual es requerido
+[INFO] 17:12:42:670 team/(7137:7154): Se encontro entrenador para asignar a la busqueda de Charmander
+[INFO] 17:12:42:688 team/(7137:7155): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:12:42:690 team/(7137:7155): 3. Se realiza la captura del pokemon Charmander, en la posicion 6|6 exitosamente.
+[INFO] 17:12:42:691 team/(7137:7155): El entrenador 2 se bloquea quedando en estado DEADLOCK
+[INFO] 17:12:42:692 team/(7137:7146): Entre a planear el intercambio
+[INFO] 17:12:42:713 team/(7137:7146): Se movera al entrenador 2 para hacer intercambio
+[INFO] 17:12:42:722 team/(7137:7146): Sali de planear el intercambio
+[INFO] 17:12:42:737 team/(7137:7156): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 17:12:43:16 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:44:741 team/(7137:7157): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 17:12:46:750 team/(7137:7159): 2. Entrenador 2 moviendose a la posicion: 4|5.
+[INFO] 17:12:48:20 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:48:763 team/(7137:7160): 2. Entrenador 2 moviendose a la posicion: 4|4.
+[INFO] 17:12:50:767 team/(7137:7161): Empezando la accion de intercambio
+[INFO] 17:12:50:798 team/(7137:7161): Entrenador 2 dando Charmander
+[INFO] 17:12:50:811 team/(7137:7161): Entrenador 0 dando Squirtle
+[INFO] 17:12:50:823 team/(7137:7161): El entrenador 2 cumplio su objetivo y queda en estado EXIT
+[INFO] 17:12:50:840 team/(7137:7161): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 17:12:50:842 team/(7137:7161): Terminando la accion de intercambio
+[INFO] 17:12:50:843 team/(7137:7146): Entre a planear el intercambio
+[INFO] 17:12:50:848 team/(7137:7146): Se movera al entrenador 1 para hacer intercambio
+[INFO] 17:12:50:849 team/(7137:7146): Sali de planear el intercambio
+[INFO] 17:12:50:850 team/(7137:7162): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 17:12:52:852 team/(7137:7163): 2. Entrenador 1 moviendose a la posicion: 4|4.
+[INFO] 17:12:53:39 team/(7137:7144): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:12:54:854 team/(7137:7164): Empezando la accion de intercambio
+[INFO] 17:12:54:859 team/(7137:7164): Entrenador 1 dando Pikachu
+[INFO] 17:12:54:859 team/(7137:7164): Entrenador 0 dando Charmander
+[INFO] 17:12:54:860 team/(7137:7164): El entrenador 1 cumplio su objetivo y queda en estado EXIT
+[INFO] 17:12:54:861 team/(7137:7164): El entrenador 0 cumplio su objetivo y queda en estado EXIT
+[INFO] 17:12:54:862 team/(7137:7164): Terminando la accion de intercambio
+[INFO] 17:12:54:863 team/(7137:7146): -------- METRICAS --------
+[INFO] 17:12:54:866 team/(7137:7146): Cantidad de ciclos de CPU total: 19
+[INFO] 17:12:54:867 team/(7137:7146): Cantidad de cambios de contextos realizados: 5
+[INFO] 17:12:54:869 team/(7137:7146): Cantidad de ciclos de CPU realizados por entrenador 0: 1
+[INFO] 17:12:54:871 team/(7137:7146): Cantidad de ciclos de CPU realizados por entrenador 1: 8
+[INFO] 17:12:54:871 team/(7137:7146): Cantidad de ciclos de CPU realizados por entrenador 2: 10
+[INFO] 17:12:54:873 team/(7137:7146): Deadlocks producidos y resueltos: 2
+[INFO] 17:12:54:880 team/(7137:7146): TERMINO EL PROCESO TEAM
+[INFO] 17:19:21:355 team/(7496:7496): Pokemon [] en la posicion 0
+[INFO] 17:19:21:355 team/(7496:7496): Pokemon [] en la posicion 0
+[INFO] 17:19:21:355 team/(7496:7496): Pokemon [] en la posicion 0
+[INFO] 17:19:21:355 team/(7496:7496): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:19:21:355 team/(7496:7496): Necesito 1 pokemons 
+[INFO] 17:19:21:355 team/(7496:7496): Necesito 1 pokemons �U�xW�er
+[INFO] 17:19:21:355 team/(7496:7496): Necesito 1 pokemons `T�
+[INFO] 17:19:21:355 team/(7496:7496): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:19:21:355 team/(7496:7496): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:19:21:355 team/(7496:7496): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:19:21:358 team/(7496:7504): Estoy en el planificador
+[INFO] 17:19:21:358 team/(7496:7503): Esperando alguna accion
+[INFO] 17:19:21:358 team/(7496:7502): El broker no esta conectado...
+[INFO] 17:19:21:358 team/(7496:7502): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:19:21:358 team/(7496:7501): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:19:21:358 team/(7496:7501): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 17:19:26:358 team/(7496:7502): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:29:08:853 team/(7596:7596): Pokemon [Pikachu] en la posicion 0
+[INFO] 17:29:08:870 team/(7596:7596): Pokemon [Charmander] en la posicion 0
+[INFO] 17:29:08:870 team/(7596:7596): Pokemon [Squirtle] en la posicion 0
+[INFO] 17:29:08:871 team/(7596:7596): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:29:08:871 team/(7596:7596): Necesito 1 pokemons Squirtle
+[INFO] 17:29:08:871 team/(7596:7596): Necesito 1 pokemons Pikachu
+[INFO] 17:29:08:871 team/(7596:7596): Necesito 1 pokemons Charmander
+[INFO] 17:29:08:871 team/(7596:7596): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:29:08:871 team/(7596:7596): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:29:08:871 team/(7596:7596): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:29:08:878 team/(7596:7603): El broker no esta conectado...
+[INFO] 17:29:08:878 team/(7596:7605): Estoy en el planificador
+[INFO] 17:29:08:878 team/(7596:7603): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:29:08:879 team/(7596:7604): Esperando alguna accion
+[INFO] 17:29:08:879 team/(7596:7602): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:29:08:879 team/(7596:7602): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 17:35:00:141 team/(7734:7734): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:35:01:217 team/(7734:7734): Necesito 1 pokemons Squirtle
+[INFO] 17:35:01:221 team/(7734:7734): Necesito 1 pokemons Pikachu
+[INFO] 17:35:01:224 team/(7734:7734): Necesito 1 pokemons Charmander
+[INFO] 17:35:01:285 team/(7734:7746): El broker no esta conectado...
+[INFO] 17:35:01:300 team/(7734:7745): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:35:01:308 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:01:323 team/(7734:7734): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:35:01:312 team/(7734:7745): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:35:01:336 team/(7734:7734): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:35:01:338 team/(7734:7734): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:35:01:362 team/(7734:7747): Esperando alguna accion
+[INFO] 17:35:01:369 team/(7734:7748): Estoy en el planificador
+[INFO] 17:35:06:343 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:11:350 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:16:353 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:21:355 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:26:358 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:29:994 team/(7734:7745): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:35:30:7 team/(7734:7745): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:35:30:17 team/(7734:7753): Aparecio un Pikachu en 5|5, el cual es requerido
+[INFO] 17:35:30:72 team/(7734:7753): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 17:35:30:108 team/(7734:7754): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:35:30:117 team/(7734:7754): 3. Se realiza la captura del pokemon Pikachu, en la posicion 5|5 exitosamente.
+[INFO] 17:35:30:125 team/(7734:7754): El entrenador 1 se bloquea quedando en estado DEADLOCK
+[INFO] 17:35:31:361 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:32:738 team/(7734:7745): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:35:32:757 team/(7734:7745): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:35:32:758 team/(7734:7756): Aparecio un Squirtle en 4|4, el cual es requerido
+[INFO] 17:35:32:760 team/(7734:7756): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 17:35:32:774 team/(7734:7757): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:35:32:776 team/(7734:7757): 3. Se realiza la captura del pokemon Squirtle, en la posicion 4|4 exitosamente.
+[INFO] 17:35:32:777 team/(7734:7757): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 17:35:32:784 team/(7734:7748): Entre a planear el intercambio
+[INFO] 17:35:32:800 team/(7734:7748): No se encontro intercambio beneficioso para entrenador 1
+[INFO] 17:35:32:801 team/(7734:7748): Sali de planear el intercambio
+[INFO] 17:35:34:258 team/(7734:7745): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:35:34:259 team/(7734:7745): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 17:35:34:266 team/(7734:7759): Aparecio un Charmander en 6|6, el cual es requerido
+[INFO] 17:35:34:282 team/(7734:7759): Se encontro entrenador para asignar a la busqueda de Charmander
+[INFO] 17:35:34:292 team/(7734:7760): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:35:34:293 team/(7734:7760): 3. Se realiza la captura del pokemon Charmander, en la posicion 6|6 exitosamente.
+[INFO] 17:35:34:296 team/(7734:7760): El entrenador 2 se bloquea quedando en estado DEADLOCK
+[INFO] 17:35:34:298 team/(7734:7748): Entre a planear el intercambio
+[INFO] 17:35:34:316 team/(7734:7748): Se movera al entrenador 2 para hacer intercambio
+[INFO] 17:35:34:324 team/(7734:7748): Sali de planear el intercambio
+[INFO] 17:35:34:327 team/(7734:7761): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 17:35:36:330 team/(7734:7762): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 17:35:36:363 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:38:342 team/(7734:7763): 2. Entrenador 2 moviendose a la posicion: 4|5.
+[INFO] 17:35:40:355 team/(7734:7764): 2. Entrenador 2 moviendose a la posicion: 4|4.
+[INFO] 17:35:41:365 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:42:370 team/(7734:7765): Empezando la accion de intercambio
+[INFO] 17:35:42:376 team/(7734:7765): Entrenador 2 dando Charmander
+[INFO] 17:35:42:377 team/(7734:7765): Entrenador 0 dando Squirtle
+[INFO] 17:35:42:385 team/(7734:7765): El entrenador 2 cumplio su objetivo y queda en estado EXIT
+[INFO] 17:35:42:387 team/(7734:7765): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 17:35:42:391 team/(7734:7765): Terminando la accion de intercambio
+[INFO] 17:35:42:392 team/(7734:7748): Entre a planear el intercambio
+[INFO] 17:35:42:396 team/(7734:7748): Se movera al entrenador 1 para hacer intercambio
+[INFO] 17:35:42:397 team/(7734:7748): Sali de planear el intercambio
+[INFO] 17:35:42:403 team/(7734:7766): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 17:35:44:405 team/(7734:7767): 2. Entrenador 1 moviendose a la posicion: 4|4.
+[INFO] 17:35:46:370 team/(7734:7746): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 17:35:46:406 team/(7734:7768): Empezando la accion de intercambio
+[INFO] 17:35:46:407 team/(7734:7768): Entrenador 1 dando Pikachu
+[INFO] 17:35:46:408 team/(7734:7768): Entrenador 0 dando Charmander
+[INFO] 17:35:46:408 team/(7734:7768): El entrenador 1 cumplio su objetivo y queda en estado EXIT
+[INFO] 17:35:46:409 team/(7734:7768): El entrenador 0 cumplio su objetivo y queda en estado EXIT
+[INFO] 17:35:46:409 team/(7734:7768): Terminando la accion de intercambio
+[INFO] 17:35:46:411 team/(7734:7748): -------- METRICAS --------
+[INFO] 17:35:46:412 team/(7734:7748): Cantidad de ciclos de CPU total: 19
+[INFO] 17:35:46:413 team/(7734:7748): Cantidad de cambios de contextos realizados: 5
+[INFO] 17:35:46:415 team/(7734:7748): Cantidad de ciclos de CPU realizados por entrenador 0: 1
+[INFO] 17:35:46:416 team/(7734:7748): Cantidad de ciclos de CPU realizados por entrenador 1: 8
+[INFO] 17:35:46:417 team/(7734:7748): Cantidad de ciclos de CPU realizados por entrenador 2: 10
+[INFO] 17:35:46:418 team/(7734:7748): Deadlocks producidos y resueltos: 2
+[INFO] 17:35:46:425 team/(7734:7748): TERMINO EL PROCESO TEAM
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

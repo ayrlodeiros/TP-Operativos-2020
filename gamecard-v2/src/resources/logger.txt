@@ -936,3 +936,32 @@
 [ERROR] 00:18:57:600 gamecard/(8632:8632): No se encontro pokemons en la posicion
 [ERROR] 00:21:45:810 gamecard/(8890:8890): No se encontro pokemons en la posicion
 [INFO] 17:20:11:458 gamecard/(5782:13554): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 23:58:16:249 gamecard/(20583:20618): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 16:33:38:409 gamecard/(5741:5754): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 16:34:13:884 gamecard/(5741:5798): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 16:35:13:993 gamecard/(5741:5827): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 16:35:35:707 gamecard/(5741:5851): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[ERROR] 16:40:43:630 gamecard/(10023:10034): No existe ese pokemon
+[INFO] 16:40:43:631 gamecard/(10023:10034): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:01:53:986 gamecard/(10727:10751): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:02:04:884 gamecard/(10727:10756): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:02:18:14 gamecard/(10727:10767): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:02:48:186 gamecard/(10727:10802): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:15:54:927 gamecard/(10727:10904): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:16:01:666 gamecard/(10727:17757): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:16:15:896 gamecard/(10727:31282): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Squirtle
+[INFO] 17:33:55:811 gamecard/(6068:6254): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:35:13:163 gamecard/(6068:6264): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:35:24:508 gamecard/(6068:6271): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Squirtle
+[INFO] 17:35:38:838 gamecard/(6068:6276): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:36:08:703 gamecard/(6068:6298): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:36:19:376 gamecard/(6068:6301): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[ERROR] 17:36:38:214 gamecard/(6068:6326): No existe ese pokemon
+[INFO] 17:36:38:215 gamecard/(6068:6326): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:37:01:188 gamecard/(6068:6333): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Squirtle
+[INFO] 17:41:52:79 gamecard/(6479:6488): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 17:41:54:670 gamecard/(6479:6490): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Squirtle
+[INFO] 17:42:29:936 gamecard/(6479:6518): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:42:35:133 gamecard/(6479:6523): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Squirtle
+[INFO] 17:42:39:569 gamecard/(6479:6531): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 17:42:48:238 gamecard/(6479:6534): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pepe
