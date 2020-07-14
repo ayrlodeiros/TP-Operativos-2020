@@ -214,7 +214,7 @@ void iniciar_gamecard() {
 	logger = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/logger.txt", "gamecard", false, LOG_LEVEL_INFO);
 	nuestro_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log.txt", "gamecard", true, LOG_LEVEL_INFO);
 	punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
-	crear_directorio(punto_montaje_tallgrass);
+	crear_punto_de_montaje();
 	crear_archivo_metadata(64,1000);
 	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y","0","","N");
 
