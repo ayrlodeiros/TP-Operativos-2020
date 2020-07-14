@@ -11,25 +11,73 @@ void inicializar_lista_particiones(){
 	list_add(lista_particiones,primera_part);
 }
 
+void inicializar_contador_compactacion(){
+	contador_compactacion = leer_frecuencia_compactacion();
+}
+
 int obtener_pos_particiones(int tamanio) {
+
+	//pthread_mutex_lock(&mutex_memoria_principal);
+
 	int posicion;
-	//TODO impletar obtencion posicion particiones
-	pthread_mutex_lock(&mutex_memoria_principal);
+	int contador_compactacion = leer_frecuencia_compactacion();
+	bool se_encontro_particion_libre = false;
+	bool recien_se_compacto = false;
 
-	switch(leer_algoritmo_particion_libre()){
-	case FF:
-		break;
-	case BF:
-		posicion = algoritmo_best_fit(tamanio);
-		break;
+	while(se_encontro_particion_libre){
+		posicion = buscar_particion_libre(tamanio);
+
+		if( posicion >= 0 ){
+			se_encontro_particion_libre = true;
+			//nose si es mejor directamente retornar resultado aca
+		}
+		//el recien_Se_compacto lo agrego para que en el caso que la frecuencia de compactacion sea cero, no se me quede en un loop infinito y nunca libere particiones
+		else if (contador_compactacion == 0 && !recien_se_compacto)
+		{
+				compactacion();
+				contador_compactacion = leer_frecuencia_compactacion();
+				recien_se_compacto = true;
+		}
+			else {
+				liberar_particion();
+				contador_compactacion--;
+				recien_se_compacto = false;
+			}
+
 	}
+	return posicion;
+	//pthread_mutex_unlock(&mutex_memoria_principal);
 
-	pthread_mutex_unlock(&mutex_memoria_principal);
-	return -1;
+}
+
+void compactacion(){
+	//todo definir compactacion
+
+	// Basicamente resetea el valor del contador para que arranque de nuevo
+	inicializar_contador_compactacion();
+}
+
+void liberar_particion(){
+	//todo desarrolllar
+	consolidar();
+}
+
+void consolidar();
+
+
+int buscar_particion_libre(int tamanio){
+	switch(leer_algoritmo_particion_libre()){
+		case FF:
+			break;
+		case BF:
+			return algoritmo_best_fit(tamanio);
+			break;
+		}
 }
 
 int algoritmo_best_fit(int tamanio){
 	t_particion* mejor_particion;
+/*
 
 	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
 		t_particion* particion_actual = list_get(lista_particiones,i);
@@ -38,8 +86,9 @@ int algoritmo_best_fit(int tamanio){
 
 		}
 		else
-			mejor_particion = lista_get(lista_particiones,i);
+			mejor_particion = list_get(lista_particiones,i);
 	}
+	*/
 	return -1;
 }
 
@@ -126,3 +175,4 @@ t_bs_nodo* obtener_nodo_mas_cercano(t_bs_nodo* nodo_a_evaluar, int potencia_de_d
 	}
 
 }
+

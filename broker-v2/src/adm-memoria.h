@@ -2,6 +2,8 @@
 #define ADMMEMORIA_H_
 #include "constructor.h"
 
+
+int contador_compactacion;
 t_list* lista_particiones;
 
 typedef struct{
@@ -17,21 +19,29 @@ typedef struct{
 	int potencia_de_dos;
 	bool libre;
 }t_particion_bs;
-/*
+
 typedef struct{
 	t_particion_bs* particion;
 	t_bs_nodo* izq;
 	t_bs_nodo* der;
 }t_bs_nodo;
-*/
+
 
 t_bs_nodo* arbol_bs;
 
 
 /*Funciones particiones dinamicas */
+
+
 void inicializar_lista_particiones();
+void inicializar_contador_compactacion();
+
+int obtener_pos_particiones(int tamanio);
+int buscar_particion_libre(int tamanio);
 int algoritmo_best_fit(int tamanio);
 bool esta_libre(t_particion* particion);
+bool hay_que_compactar();
+void compactacion();
 
 // Funciones Buddy System
 void inicializar_lista_bs();
