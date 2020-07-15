@@ -2,15 +2,21 @@
 
 int main(int argc, char *argv[])
 {
+	//Puse un FREE en conexion en crear_conexion_del_cliente [free(puerto);]
+
+
 	iniciar_gameBoy();
-	/*argv[1] = "GAMECARD";
+
+
+	argv[1] = "GAMECARD";
 	argv[2] = "NEW_POKEMON";
 	argv[3] = "Pikachu";
 	argv[4] = "2";
 	argv[5] = "1";
 	argv[6] = "3";
 	argv[7] = "5";
-	argc = 8;*/
+	argc = 8;
+
 
 	if(argc >= 4){
 		char* primer_argumento = argv[1];
