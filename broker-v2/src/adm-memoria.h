@@ -20,6 +20,8 @@ typedef struct{
 	int inicio;
 	int fin;
 	int potencia_de_dos;
+	uint64_t tiempo_ingreso;
+	uint64_t ult_vez_usado;
 	bool libre;
 }t_particion_bs;
 

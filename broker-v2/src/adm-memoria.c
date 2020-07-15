@@ -309,6 +309,8 @@ void inicializar_lista_bs(){
 	primera_part->inicio = 0;
 	primera_part->fin = tamanio_memoria; //TODO ver si usar el -1
 	primera_part->potencia_de_dos=obtener_potencia_de_dos_mas_cercana(tamanio_memoria);
+	primera_part->tiempo_ingreso = timestamp();
+	primera_part->ult_vez_usado = timestamp();
 	primera_part->libre = true;
 
 }
@@ -319,25 +321,27 @@ int obtener_posicion_bs(int tamanio) {
 
 	pthread_mutex_lock(&mutex_memoria_principal);
 
+	//OBTIENE LA POSICION DE LA PARTICION QUE MAS SE ACERCA A LA POTENCIA DE DOS DESEADA, DEVUELVE -1 SI NO ENCONTRO NIGUNA
 	int posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_mas_cercana);
 
-	if(posicion_de_particion_en_lista == -1) {
-		// TODO REALIZAR SUSTITUCION
-	} else {
-		t_particion_bs* posible_particion = list_get(lista_particiones_bs, posicion_de_particion_en_lista);
-		if(posible_particion->potencia_de_dos == potencia_de_dos_mas_cercana) {
-			// TODO OCUPAR LA PARTICION
-
-		} else {
-			// DIVIDIR EN DOS HASTA LLEGAR A POTENCIA DE DOS MAS CERCANA
-			posible_particion = particionar_y_obtener_particion(posicion_de_particion_en_lista, potencia_de_dos_mas_cercana);
-
-			// TODO OCUPAR LA PARTICION
-		}
+	while(posicion_de_particion_en_lista == -1) {
+		// TODO REALIZAR LIBERACION Y CONSOLIDACION, HASTA OBTENER posicion DISTINTA DE -1
 	}
 
+
+	t_particion_bs* posible_particion = list_get(lista_particiones_bs, posicion_de_particion_en_lista);
+
+	if(posible_particion->potencia_de_dos != potencia_de_dos_mas_cercana) {
+		// DIVIDIR EN DOS HASTA LLEGAR A POTENCIA DE DOS MAS CERCANA
+		posible_particion = particionar_y_obtener_particion(posicion_de_particion_en_lista, potencia_de_dos_mas_cercana);
+	}
+
+	// OCUPAR LA PARTICION
+	posible_particion->libre = false;
+
 	pthread_mutex_unlock(&mutex_memoria_principal);
-	return -1;
+
+	return posible_particion->inicio;
 }
 
 int obtener_potencia_de_dos_mas_cercana(int valor) {
@@ -375,7 +379,7 @@ int obtener_posicion_particion_mas_cercana(int potencia_de_dos) {
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada) {
 	t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
 
-	/* TODO DESCOMENTAR Y VER PORQUE NO ME RECONOCE EL pow (#include <math.h> EN constructor.h)
+	// TODO DESCOMENTAR Y VER PORQUE NO ME RECONOCE EL pow (#include <math.h> EN constructor.h)
 	int tamanio_actual = pow(2, particion_a_particionar->potencia_de_dos);
 	int tamanio_deseado = pow(2, potencia_de_dos_deseada);
 
@@ -403,7 +407,7 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 	}
 
 
-	list_destroy(lista_auxiliar);*/
+	list_destroy(lista_auxiliar);
 	return particion_a_particionar;
 }
 
