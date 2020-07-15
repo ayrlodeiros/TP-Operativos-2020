@@ -17,6 +17,7 @@ void agregar_bloques_al_metadata(char* path_nombre_metadata,int tamanio_dato,int
 
 void agregar_dato_al_bloque (char* path_nombre_metadata,char* dato_a_escribir){
 	int ultimo_bloque = devolver_ultimo_bloque(path_nombre_metadata);
+	log_info(logger,"se escribio el bloque %d perteneciente al metadata %s  con el dato %s",ultimo_bloque,path_nombre_metadata,dato_a_escribir);
 	bitarray_set_bit(bitmap,ultimo_bloque);
 	char* string_dato = string_itoa(devolver_ultimo_bloque(path_nombre_metadata));
 	char* path_bloque = devolver_path_dato(string_dato);
@@ -368,6 +369,7 @@ void limpiar_bloque(int bloque){
 	fclose(archivo);
 	liberar_bloque(bloque); //libero en bitarray
 
+	log_info(logger,"se limpio el bloque %d",bloque);
 	free(path_bloque);
 	free(string_bloque);
 }
@@ -451,6 +453,7 @@ void guardar_en_bloque(char* path_bloque, char* dato){
 
 	FILE* archivo2 = txt_open_for_append(path_bloque);
 	txt_write_in_file(archivo2, dato);
+	log_info(logger,"se guardo el dato %s en el path del bloque %s",dato,path_bloque);
 	txt_close_file(archivo2);
 	free(pivot);
 
@@ -498,7 +501,9 @@ int tamanio_libre_del_bloque(int bloque){
 void agregar_bloque(char* path_bloque){
 
 	int nuevo_bloque = obtener_nuevo_bloque_libre();
+	log_info(logger,"se agrego el bloque %d al metadata %s",nuevo_bloque,path_bloque);
 	bitarray_set_bit(bitmap,nuevo_bloque);
+	log_info(logger,"se cambio el bit %d del bitmap a 1",nuevo_bloque);
 	char* lista_bloques_string = devolver_lista_de_bloques(path_bloque);
 	char** lista_bloques = string_get_string_as_array(lista_bloques_string);
 
@@ -538,6 +543,7 @@ void modificar_bloque(char* path_particion, char* lista_bloques){
 	config_save(particion);
 	config_destroy(particion);
 	pthread_mutex_unlock(&mutex_modificar_bloque);
+	log_info(logger,"se cambio los blocks del path %s por los siguientes bloques",path_particion,lista_bloques);
 
 }
 

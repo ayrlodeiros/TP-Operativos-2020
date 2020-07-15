@@ -1162,3 +1162,147 @@
 [INFO] 17:42:38:522 gameBoy/(6530:6530): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
 [INFO] 17:42:47:210 gameBoy/(6533:6533): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
 [INFO] 17:42:47:210 gameBoy/(6533:6533): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:38:13:888 gameBoy/(19081:19081): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:38:13:891 gameBoy/(19081:19081): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:44:19:294 gameBoy/(19248:19248): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:44:19:294 gameBoy/(19248:19248): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:45:18:111 gameBoy/(19334:19334): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:45:18:111 gameBoy/(19334:19334): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:45:39:952 gameBoy/(19374:19374): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:45:39:953 gameBoy/(19374:19374): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:45:54:360 gameBoy/(19409:19409): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:45:54:360 gameBoy/(19409:19409): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:46:06:95 gameBoy/(19444:19444): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:46:06:95 gameBoy/(19444:19444): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:46:24:507 gameBoy/(19484:19484): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:46:24:507 gameBoy/(19484:19484): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:46:38:304 gameBoy/(19521:19521): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:46:38:304 gameBoy/(19521:19521): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:46:50:398 gameBoy/(19556:19556): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:46:50:398 gameBoy/(19556:19556): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:47:05:797 gameBoy/(19591:19591): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:47:05:798 gameBoy/(19591:19591): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:49:06:308 gameBoy/(19708:19708): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:49:06:308 gameBoy/(19708:19708): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:51:33:829 gameBoy/(19798:19798): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:51:33:829 gameBoy/(19798:19798): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:51:57:220 gameBoy/(19840:19840): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:51:57:220 gameBoy/(19840:19840): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:52:24:318 gameBoy/(19875:19875): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:52:24:319 gameBoy/(19875:19875): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:53:43:619 gameBoy/(19960:19960): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:53:43:622 gameBoy/(19960:19960): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:54:21:557 gameBoy/(20001:20001): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:54:21:557 gameBoy/(20001:20001): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:55:00:200 gameBoy/(20077:20077): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:55:00:200 gameBoy/(20077:20077): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:58:21:708 gameBoy/(20774:20774): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:58:21:708 gameBoy/(20774:20774): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 19:59:45:207 gameBoy/(20813:20813): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 19:59:45:208 gameBoy/(20813:20813): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 20:00:18:469 gameBoy/(20853:20853): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:00:18:469 gameBoy/(20853:20853): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:12:35:732 gameBoy/(21977:21977): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:12:35:803 gameBoy/(21977:21977): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:13:48:987 gameBoy/(22069:22069): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:13:49:63 gameBoy/(22069:22069): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:19:16:536 gameBoy/(22207:22207): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:19:16:607 gameBoy/(22207:22207): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:19:48:624 gameBoy/(22291:22291): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:19:48:692 gameBoy/(22291:22291): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:20:00:950 gameBoy/(22326:22326): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:20:00:950 gameBoy/(22326:22326): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:20:19:535 gameBoy/(22398:22398): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:20:19:535 gameBoy/(22398:22398): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:20:38:529 gameBoy/(22471:22471): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:20:38:530 gameBoy/(22471:22471): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:21:11:210 gameBoy/(22536:22536): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:21:11:287 gameBoy/(22536:22536): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:24:32:178 gameBoy/(22688:22688): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:24:32:266 gameBoy/(22688:22688): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:25:43:664 gameBoy/(22753:22753): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:25:43:664 gameBoy/(22753:22753): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:26:16:234 gameBoy/(22807:22807): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:26:16:355 gameBoy/(22807:22807): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:30:01:653 gameBoy/(23397:23397): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:30:01:662 gameBoy/(23397:23397): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521634
+[INFO] 20:30:14:853 gameBoy/(23462:23462): 5001
+[INFO] 20:30:14:853 gameBoy/(23462:23462): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521614
+[INFO] 20:30:23:352 gameBoy/(23497:23497): 5001
+[INFO] 20:30:23:427 gameBoy/(23497:23497): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521614
+[INFO] 20:30:42:841 gameBoy/(23544:23544): 5001
+[INFO] 20:30:42:916 gameBoy/(23544:23544): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521614
+[INFO] 20:32:13:751 gameBoy/(23855:23855): 5001
+[INFO] 20:32:13:819 gameBoy/(23855:23855): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521550
+[INFO] 20:32:24:42 gameBoy/(23924:23924): 5001
+[INFO] 20:32:24:43 gameBoy/(23924:23924): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521550
+[INFO] 20:33:06:68 gameBoy/(24003:24003): 5001
+[INFO] 20:33:06:68 gameBoy/(24003:24003): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521555
+[INFO] 20:33:28:543 gameBoy/(24070:24070): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:33:28:546 gameBoy/(24070:24070): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521570
+[INFO] 20:33:36:660 gameBoy/(24105:24105): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:33:36:737 gameBoy/(24105:24105): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521570
+[INFO] 20:35:51:714 gameBoy/(24296:24296): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:35:51:714 gameBoy/(24296:24296): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 20:37:22:575 gameBoy/(24392:24392): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:37:22:657 gameBoy/(24392:24392): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[ERROR] 20:41:07:537 gameBoy/(24685:24685): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:45:749 gameBoy/(24748:24748): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:47:452 gameBoy/(24783:24783): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:48:616 gameBoy/(24818:24818): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:49:615 gameBoy/(24853:24853): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:50:639 gameBoy/(24888:24888): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:51:674 gameBoy/(24923:24923): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:52:713 gameBoy/(24958:24958): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:41:53:779 gameBoy/(24993:24993): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[INFO] 20:42:28:16 gameBoy/(25068:25068): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:42:28:16 gameBoy/(25068:25068): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 20:44:49:170 gameBoy/(25173:25173): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:44:49:171 gameBoy/(25173:25173): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521410
+[INFO] 20:44:51:759 gameBoy/(25215:25215): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:44:51:759 gameBoy/(25215:25215): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521410
+[INFO] 20:44:56:578 gameBoy/(25250:25250): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:44:56:641 gameBoy/(25250:25250): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521410
+[INFO] 20:45:17:412 gameBoy/(25305:25305): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:45:17:483 gameBoy/(25305:25305): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521410
+[INFO] 20:45:26:204 gameBoy/(25362:25362): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:45:26:275 gameBoy/(25362:25362): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521410
+[INFO] 20:46:05:369 gameBoy/(25440:25440): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:46:05:480 gameBoy/(25440:25440): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521410
+[INFO] 20:50:57:217 gameBoy/(25644:25644): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:50:57:218 gameBoy/(25644:25644): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521397
+[INFO] 20:51:02:897 gameBoy/(25686:25686): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:51:02:975 gameBoy/(25686:25686): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521397
+[INFO] 20:52:32:310 gameBoy/(25780:25780): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 20:52:32:372 gameBoy/(25780:25780): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521426
+[ERROR] 20:56:43:804 gameBoy/(25998:25998): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:57:10:152 gameBoy/(26067:26067): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:57:39:659 gameBoy/(26140:26140): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[ERROR] 20:58:46:739 gameBoy/(26169:26169): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: Modulo incorrecto
+[INFO] 21:00:32:805 gameBoy/(26288:26288): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:00:32:808 gameBoy/(26288:26288): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:00:38:384 gameBoy/(26323:26323): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:00:38:453 gameBoy/(26323:26323): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:06:25:808 gameBoy/(27011:27011): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:06:25:808 gameBoy/(27011:27011): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:07:31:348 gameBoy/(27082:27082): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:07:31:348 gameBoy/(27082:27082): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[ERROR] 21:07:32:956 gameBoy/(27151:27151): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[ERROR] 21:07:35:579 gameBoy/(27187:27187): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[ERROR] 21:07:54:689 gameBoy/(27221:27221): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[ERROR] 21:08:56:901 gameBoy/(27459:27459): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[ERROR] 21:09:30:666 gameBoy/(27527:27527): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:15:204 gameBoy/(27606:27606): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:15:205 gameBoy/(27606:27606): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:10:17:959 gameBoy/(27648:27648): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:17:960 gameBoy/(27648:27648): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:10:18:981 gameBoy/(27683:27683): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:18:981 gameBoy/(27683:27683): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:10:19:904 gameBoy/(27718:27718): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:19:905 gameBoy/(27718:27718): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:10:20:603 gameBoy/(27753:27753): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:20:604 gameBoy/(27753:27753): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:10:21:713 gameBoy/(27788:27788): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:21:713 gameBoy/(27788:27788): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377
+[INFO] 21:10:22:604 gameBoy/(27823:27823): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 21:10:22:604 gameBoy/(27823:27823): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521377

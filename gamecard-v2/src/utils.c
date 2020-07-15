@@ -16,6 +16,8 @@ void crear_archivo_metadata(int block_size, int blocks){
 
 	config_save(metadata_config);
 	config_destroy(metadata_config);
+
+	log_info(logger, "Se creo el archivo metadata correctamente en el path %s ",path_archivo_metadata);
 	free(path_archivo_metadata);
 	free(block_size_aux);
 	free(blocks_aux);
@@ -33,7 +35,7 @@ void crear_punto_de_montaje(){
 		free(punto_montaje_tallgrass_partido[i]);
 
 	}
-
+    log_info(logger, "se creo el punto de montaje correctamente en el path %s ",punto_montaje_tallgrass);
 	free(path);
 	free(punto_montaje_tallgrass_partido);
 
@@ -51,8 +53,9 @@ void crear_archivo_files_metadata(char* nombre_archivo, char* directory,int size
 	string_append(&blocks_aux,string_nuevo_bloque_libre);
 	free(string_nuevo_bloque_libre);
 
-	bitarray_set_bit(bitmap,nuevo_bloque_libre);
-
+	bitarray_set_bit(bitmap,nuevo_bloque_libre); //TODO ver si poner mutex o no
+	log_info(logger, "se asigno el bloque [%d] al bitmap",nuevo_bloque_libre);
+	log_info(logger, "se asigno el bloque [%d] al files del pokemon : %s",nuevo_bloque_libre,nombre_archivo);
 	string_append(&blocks_aux,"]");
 
 
@@ -78,7 +81,7 @@ void creacion_archivo_files_metadata(char* path, char* directory,char* size, cha
 
 	config_save(files_metadata_config);
 	config_destroy(files_metadata_config);
-
+	log_info(logger, "Se creo el archivo files metadata correctamente en el path %s ",path);
 	free(path);
 
 }
@@ -310,11 +313,13 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 						int cantidad_sumada = cantidad + cantidad_en_posicion(lista_de_posiciones,posicion);
 						dato_a_escribir = armar_dato_bloque(posicion,cantidad_sumada);
 						list_destroy_and_destroy_elements(lista_de_posiciones,free);
+						log_info(logger,"se reemplazo la cantidad en la posicion (%s) con la nueva cantidad (%d)",posicion,cantidad_sumada);
 						reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 
 					}else{
 						dato_a_escribir = armar_dato_bloque(posicion,cantidad);
 						escribir_bloque_v2(path_nombre_metadata,dato_a_escribir);
+						log_info(logger,"se agrego la posicion (%s) con la cantidad (%d)",posicion,cantidad);
 						free(dato_a_escribir);
 					}
 					sleep(leer_tiempo_retardo_operacion());
@@ -343,6 +348,7 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 	}
 	else{
 		log_info(nuestro_log,"Cantidad invalida ( cantidad < 0 )");
+		log_info(logger,"Cantidad invalida ( cantidad < 0 )");
 	}
 }
 
@@ -361,6 +367,8 @@ void resetear_bloques_metadata_pokemon(char* path_nombre_metadata){
 	free(string_nuevo_bloque);
 	config_save(config);
 	config_destroy(config);
+
+	log_info(logger,"se resetean los bloques del metadata del pokemon : %s",path_nombre_metadata);
 }
 
 t_list* armar_mensaje_get(char* nombre_pokemon){
@@ -437,6 +445,7 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 					int nueva_cantidad_en_posicion = cantidad_en_pos - 1;
 					dato_a_escribir = armar_dato_bloque(posicion,nueva_cantidad_en_posicion);
 					list_destroy_and_destroy_elements(lista_de_datos,free);
+					log_info(logger,"Se disminuye en 1 la cantidad en la posicion %s,del (Pokemon : %s)",posicion,nombre_pokemon);
 					reescribir_bloques(path_nombre_metadata,dato_a_escribir);
 
 					t_list* posiciones_pokemon = posiciones_del_pokemon(path_nombre_metadata);
@@ -449,6 +458,7 @@ int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posici
 						liberar_bloque(bloque_a_remover);
 						remove(path_nombre_metadata);
 						rmdir(path_carpeta_pokemon);
+						log_info(logger,"Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : %s)",nombre_pokemon);
 						free(path_carpeta_pokemon);
 						pthread_mutex_unlock(&mutex_modificar_carpeta);
 					}
@@ -505,6 +515,7 @@ void abrir_archivo(char* nombre_pokemon){
 	metadata_config = config_create(path);
 	config_set_value(metadata_config,"OPEN","Y");
 	config_destroy(metadata_config);
+	log_info(logger,"se abrio el archivo : %s", nombre_pokemon);
 	free(path);
 }
 
@@ -515,6 +526,7 @@ void cerrar_archivo(char* nombre_pokemon){
 	metadata_config = config_create(path);
 	config_set_value(metadata_config,"OPEN","N");
 	config_destroy(metadata_config);
+	log_info(logger,"se cerro el archivo : %s", nombre_pokemon);
 	free(path);
 }
 

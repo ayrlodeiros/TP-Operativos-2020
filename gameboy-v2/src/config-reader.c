@@ -35,8 +35,6 @@ void setear_puerto_gamecard(void){
 	puerto_gamecard = config_get_int_value(config,"PUERTO_GAMECARD");
 }
 
-
-
 char* leer_ip_broker(void){
 	return ip_broker;
 }
