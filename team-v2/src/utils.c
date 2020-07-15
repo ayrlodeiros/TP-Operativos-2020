@@ -86,8 +86,8 @@ int crear_conexion_como_cliente(char *ip, char* puerto) {
 	}
 }
 
-void liberar_conexion(int socket) {
-	close(socket);
+void liberar_conexion(int conexion) {
+	close(conexion);
 }
 
 int levantar_servidor(char* ip, char* puerto) {
@@ -1093,7 +1093,7 @@ void catch_pokemon(entrenador* entrenador) {
 			log_info(nuestro_log, "Se realizo el envio de CATCH correctamente");
 
 			socket_y_entrenador* s_y_e = malloc(sizeof(socket_y_entrenador));
-			s_y_e->socket = socket_catch;
+			s_y_e->conexion = socket_catch;
 			s_y_e->entrenador = entrenador;
 
 			pthread_t* hilo_espera_catch;
@@ -1113,11 +1113,11 @@ void catch_pokemon(entrenador* entrenador) {
 void esperar_id_caught(socket_y_entrenador* sye) {
 	int id_caught;
 
-	int socket = sye->socket;
+	int conexion = sye->conexion;
 	entrenador* entr = sye->entrenador;
 	free(sye);
 
-	if(recv(socket, &id_caught, sizeof(int), 0) > 0){
+	if(recv(conexion, &id_caught, sizeof(int), 0) > 0){
 		log_info(nuestro_log, "Se recibio correctamente el ID: %d, para esperar en CAUGHT", id_caught);
 
 		id_y_entrenador* iye = malloc(sizeof(id_y_entrenador));
@@ -1128,11 +1128,11 @@ void esperar_id_caught(socket_y_entrenador* sye) {
 		list_add(lista_ids_caught, iye);
 		pthread_mutex_unlock(&mutex_lista_ids_caught);
 	} else {
-		log_info(logger, "9. No se pudo recibir el ID de CAUGHT, se realizará el CATCH por DEFAUL");
-		log_info(nuestro_log, "9. No se pudo recibir el ID de CAUGHT, se realizará el CATCH por DEFAUL");
+		log_info(logger, "9. No se pudo recibir el ID de CAUGHT, se realizará el CATCH por DEFAULT");
+		log_info(nuestro_log, "9. No se pudo recibir el ID de CAUGHT, se realizará el CATCH por DEFAULT");
 		manejar_la_captura_del_pokemon(entr);
 	}
-	liberar_conexion(socket);
+	liberar_conexion(conexion);
 }
 void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 
@@ -1145,8 +1145,6 @@ void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 	} else {
 		log_info(nuestro_log,"El entrenador %d queda en BLOCK_READY", entrenador->id);
 		cambiar_estado_entrenador(entrenador, BLOCK_READY);
-		//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
-		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 }
 

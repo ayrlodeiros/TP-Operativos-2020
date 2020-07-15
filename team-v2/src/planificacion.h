@@ -26,6 +26,8 @@ int tiene_menor_rafaga(entrenador* entrenador1,entrenador* entrenador2);
 entrenador* entrenador_con_menor_rafaga_estimada(t_list* entrenadores_con_rafagas_estimadas);
 
 entrenador* obtener_primer_entrenador_ready();
+void evaluar_cambio_de_contexto(int id_entrenador_anterior, int id_entrenador_actual);
+void evaluar_si_entrenador_termino(entrenador* entrenador_a_evaluar);
 void evaluar_y_atacar_deadlock();
 
 void terminar_team();

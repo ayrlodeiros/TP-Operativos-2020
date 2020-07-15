@@ -15,7 +15,7 @@ void* serializar_paquete_sin_buffer(t_paquete* paquete, int tamanio_a_enviar);
 int obtener_tamanio_de_paquete(t_paquete* paquete);
 void destruir_paquete(t_paquete* paquete);
 int crear_conexion_como_cliente(char *ip, char* puerto);
-void liberar_conexion(int socket);
+void liberar_conexion(int conexion);
 int levantar_servidor(char* ip, char* puerto);
 	//PARA GAMEBOY
 void atender_conexion_gameboy();

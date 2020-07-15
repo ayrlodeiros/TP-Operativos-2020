@@ -11,6 +11,7 @@ void iniciar_config(void){
 	setear_ip_broker();
 	setear_puerto_broker();
 	setear_log_file();
+	setear_nuestro_log_file();
 	setear_id_modulo();
 	setear_ip_team();
 	setear_puerto_team();
@@ -138,6 +139,10 @@ char* leer_log_file(void){
 	return log_file;
 }
 
+char* leer_nuestro_log_file(void){
+	return nuestro_log_file;
+}
+
 int leer_id_modulo(void) {
 	return id_modulo;
 }
@@ -201,6 +206,10 @@ void setear_puerto_broker(void){
 
 void setear_log_file(void){
 	log_file = config_get_string_value(config, "LOG_FILE");
+}
+
+void setear_nuestro_log_file(void){
+	nuestro_log_file = config_get_string_value(config, "NUESTRO_LOG_FILE");
 }
 
 void setear_id_modulo(void){
