@@ -12,6 +12,7 @@ void iniciar_config(void){
 	setear_puerto_broker();
 	setear_frecuencia_compactacion();
 	setear_log_file();
+	setear_nuestro_log_file();
 }
 
 void destruir_config(){
@@ -56,6 +57,9 @@ void setear_frecuencia_compactacion(void){
 void setear_log_file(void){
 	LOG_FILE = config_get_string_value(config,"LOG_FILE");
 }
+void setear_nuestro_log_file(void){
+	NUESTRO_LOG_FILE = config_get_string_value(config,"NUESTRO_LOG_FILE");
+}
 
 int leer_tamano_memoria(void){
 	return TAMANO_MEMORIA;
@@ -84,3 +88,7 @@ int leer_frecuencia_compactacion(void){
 char* leer_log_file(void){
 	return LOG_FILE;
 }
+char* leer_nuestro_log_file(void){
+	return NUESTRO_LOG_FILE;
+}
+

@@ -49,7 +49,7 @@ void inicializar_message_queues(){
 	pthread_create(&hilo_appeared, NULL, esperar_mensaje_en_cola, appeared_mq);
 	pthread_detach(hilo_appeared);
 
-	printf("Message queues creadas correctamente \n");
+	log_info(mi_log,"Message queues creadas correctamente ");
 
 }
 

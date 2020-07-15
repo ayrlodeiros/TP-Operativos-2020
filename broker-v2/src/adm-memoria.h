@@ -5,6 +5,7 @@
 
 int contador_compactacion;
 t_list* lista_particiones;
+t_list* lista_particiones_bs;
 
 typedef struct{
 	int inicio;
@@ -21,18 +22,8 @@ typedef struct{
 	bool libre;
 }t_particion_bs;
 
-typedef struct{
-	t_particion_bs* particion;
-	t_bs_nodo* izq;
-	t_bs_nodo* der;
-}t_bs_nodo;
-
-
-t_bs_nodo* arbol_bs;
-
 
 /*Funciones particiones dinamicas */
-
 
 void inicializar_lista_particiones();
 void inicializar_contador_compactacion();
@@ -48,10 +39,13 @@ bool esta_libre(t_particion* particion);
 bool hay_que_compactar();
 void compactacion();
 
-// Funciones Buddy System
+
+/* Funciones Buddy System */
+
 void inicializar_lista_bs();
 int obtener_posicion_bs(int tamanio);
 int obtener_potencia_de_dos_mas_cercana(int valor);
-t_bs_nodo* obtener_nodo_mas_cercano(t_bs_nodo* nodo_a_evaluar, int potencia_de_dos);
+int obtener_posicion_particion_mas_cercana(int potencia_de_dos);
+t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada);
 
 #endif

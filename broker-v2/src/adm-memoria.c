@@ -157,21 +157,19 @@ int tamanio_particion(t_particion* particion){
 }
 
 
-//BUDDY SYSTEM
+
+/* BUDDY SYSTEM */
 
 void inicializar_lista_bs(){
 	int tamanio_memoria = leer_tamano_memoria();
 
-	arbol_bs = malloc(sizeof(t_bs_nodo));
+	lista_particiones_bs = list_create();
 	t_particion_bs* primera_part = malloc(sizeof(t_particion_bs));
 	primera_part->inicio = 0;
-	primera_part->fin = tamanio_memoria-1; //TODO ver si usar el fin
+	primera_part->fin = tamanio_memoria; //TODO ver si usar el -1
 	primera_part->potencia_de_dos=obtener_potencia_de_dos_mas_cercana(tamanio_memoria);
 	primera_part->libre = true;
 
-	arbol_bs->particion = primera_part;
-	arbol_bs->izq = NULL;
-	arbol_bs->der = NULL;
 }
 
 int obtener_posicion_bs(int tamanio) {
@@ -180,16 +178,21 @@ int obtener_posicion_bs(int tamanio) {
 
 	pthread_mutex_lock(&mutex_memoria_principal);
 
-	t_bs_nodo* nodo_mas_cercano = obtener_nodo_mas_cercano(arbol_bs, potencia_de_dos_mas_cercana);
-	if(nodo_mas_cercano == NULL) {
-		//TODO IMPLEMENTAR ALGORITMO PARA LA SUSTICION DE ALGUNA PARTICION
-	} else {
-		if(nodo_mas_cercano->particion->potencia_de_dos == potencia_de_dos_mas_cercana) {
-			//TODO MARCAR PARTICION COMO OCUPADA
-		} else {
-			//TODO PARTICIONAR ARBOL HASTA LA potencia_de_dos_mas_cercana Y DEVOLVER NODO
-		}
+	int posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_mas_cercana);
 
+	if(posicion_de_particion_en_lista == -1) {
+		// TODO REALIZAR SUSTITUCION
+	} else {
+		t_particion_bs* posible_particion = list_get(lista_particiones_bs, posicion_de_particion_en_lista);
+		if(posible_particion->potencia_de_dos == potencia_de_dos_mas_cercana) {
+			// TODO OCUPAR LA PARTICION
+
+		} else {
+			// DIVIDIR EN DOS HASTA LLEGAR A POTENCIA DE DOS MAS CERCANA
+			posible_particion = particionar_y_obtener_particion(posicion_de_particion_en_lista, potencia_de_dos_mas_cercana);
+
+			// TODO OCUPAR LA PARTICION
+		}
 	}
 
 	pthread_mutex_unlock(&mutex_memoria_principal);
@@ -210,28 +213,56 @@ int obtener_potencia_de_dos_mas_cercana(int valor) {
 	}
 }
 
-t_bs_nodo* obtener_nodo_mas_cercano(t_bs_nodo* nodo_a_evaluar, int potencia_de_dos) {
+int obtener_posicion_particion_mas_cercana(int potencia_de_dos) {
+	int posicion = -1;
 
-	if(nodo_a_evaluar->particion->libre) {
-		if(nodo_a_evaluar->particion->potencia_de_dos >= potencia_de_dos) {
-			return nodo_a_evaluar;
-		} else {
-			return NULL;
-		}
-	} else {
-		t_bs_nodo* nodo_izq = obtener_nodo_mas_cercano(nodo_a_evaluar, potencia_de_dos);
-		t_bs_nodo* nodo_der = obtener_nodo_mas_cercano(nodo_a_evaluar, potencia_de_dos);
-
-		if(nodo_izq == NULL) {
-			if(nodo_der == NULL) {
-				return NULL;
-			} else {
-				return nodo_der;
+	for(int i = 0; i < list_size(lista_particiones_bs); i++) {
+		t_particion_bs* posible_particion = list_get(lista_particiones_bs, i);
+		if(posible_particion->libre) {
+			if(posible_particion->potencia_de_dos == potencia_de_dos) {
+				return i;
 			}
-		} else {
-			return nodo_izq;
+			if(posible_particion->potencia_de_dos > potencia_de_dos) {
+				posicion = i;
+			}
 		}
 	}
 
+	return posicion;
+}
+
+t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada) {
+	t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
+
+	/* TODO DESCOMENTAR Y VER PORQUE NO ME RECONOCE EL pow (#include <math.h> EN constructor.h)
+	int tamanio_actual = pow(2, particion_a_particionar->potencia_de_dos);
+	int tamanio_deseado = pow(2, potencia_de_dos_deseada);
+
+	t_list* lista_auxiliar = list_create();
+	while(tamanio_actual != tamanio_deseado) {
+		tamanio_actual /= 2;
+		int potencia_nueva = obtener_potencia_de_dos_mas_cercana(tamanio_actual);
+
+		t_particion_bs* nueva_particion = malloc(sizeof(t_particion_bs));
+		nueva_particion->inicio = particion_a_particionar->inicio + tamanio_actual;
+		nueva_particion->fin = nueva_particion->inicio + tamanio_actual; // TODO si se usa el -1 cuando se crea, habria que usarlo aca tambien
+		nueva_particion->potencia_de_dos = potencia_nueva;
+		nueva_particion->libre = true;
+		list_add(lista_auxiliar, nueva_particion);
+
+		particion_a_particionar->fin = nueva_particion->inicio; // TODO si se usa el -1 cuando se crea, habria que usarlo aca tambien
+	}
+
+	particion_a_particionar->potencia_de_dos = potencia_de_dos_deseada;
+
+	// AGREGO LAS NUEVAS PARTICIONES A LA LISTA DE PARTICIONES, DETRAS DE LA PARTICION QUE CREE
+	posicion_a_particionar++;
+	for(int i = 0; i < list_size(lista_auxiliar); i++) {
+		list_add_in_index(lista_particiones_bs, posicion_a_particionar+i, list_get(lista_auxiliar, i));
+	}
+
+
+	list_destroy(lista_auxiliar);*/
+	return particion_a_particionar;
 }
 

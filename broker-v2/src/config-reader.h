@@ -34,6 +34,7 @@ char* IP_BROKER;
 int PUERTO_BROKER;
 int FRECUENCIA_COMPACTACION;
 char* LOG_FILE;
+char* NUESTRO_LOG_FILE;
 
 void iniciar_config(void);
 void destruir_config(void);
@@ -47,6 +48,7 @@ void setear_ip_broker(void);
 void setear_puerto_broker(void);
 void setear_frecuencia_compactacion(void);
 void setear_log_file(void);
+void setear_nuestro_log_file(void);
 
 int leer_tamano_memoria(void);
 int leer_tamano_minimo_particion(void);
@@ -57,6 +59,7 @@ char* leer_ip_broker(void);
 int leer_puerto_broker(void);
 int leer_frecuencia_compactacion(void);
 char* leer_log_file(void);
+char* leer_nuestro_log_file(void);
 
 
 #endif /* CONFIGREADER_H_ */
