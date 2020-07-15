@@ -3,16 +3,12 @@
 //PARTICIONES DINAMICAS
 
 void inicializar_lista_particiones(){
-	t_particion* primera_part = malloc(sizeof(t_particion));
+	t_particion_dinamica* primera_part = malloc(sizeof(t_particion_dinamica));
 	primera_part->inicio = 0;
 	primera_part->fin = leer_tamano_memoria();
 	primera_part->libre = true;
-	lista_particiones = list_create();
-	list_add(lista_particiones,primera_part);
-}
-
-void inicializar_contador_compactacion(){
-	contador_compactacion = leer_frecuencia_compactacion();
+	lista_particiones_dinamicas = list_create();
+	list_add(lista_particiones_dinamicas,primera_part);
 }
 
 int obtener_pos_particiones(int tamanio) {
@@ -31,7 +27,7 @@ int obtener_pos_particiones(int tamanio) {
 			se_encontro_particion_libre = true;
 			//nose si es mejor directamente retornar resultado aca
 		}
-		//el recien_Se_compacto lo agrego para que en el caso que la frecuencia de compactacion sea cero, no se me quede en un loop infinito y nunca libere particiones
+		//el recien_se_compacto lo agrego para que en el caso que la frecuencia de compactacion sea cero, no se me quede en un loop infinito y nunca libere particiones
 		else if (contador_compactacion == 0 && !recien_se_compacto)
 		{
 				compactacion();
@@ -50,28 +46,128 @@ int obtener_pos_particiones(int tamanio) {
 
 }
 
-void compactacion(){
-	//todo definir compactacion
-
-	// Basicamente resetea el valor del contador para que arranque de nuevo
-	inicializar_contador_compactacion();
+bool estaOcupado(void* elemento){
+	return ((t_particion_dinamica*)elemento)->libre;
 }
+
+
+void compactacion(){
+	t_list* particiones_ocupadas = list_filter(lista_particiones_dinamicas,estaOcupado);//filtrar lista de particiones llenas
+
+	//elimnar particiones vacias de la lista
+	//guardarme temporalmente los mensajes en las particiones vacias
+	//ir llenando nuevamente la lista con las particiones llenas y copiando los mensajes en la pos correspondiente de la memoria (recordar eliminar memoria aux creada)
+
+	}
 
 void liberar_particion(){
-
+	int ubicacion_particion;
 	switch(leer_algoritmo_reemplazo()){
 		case FIFO:
+				ubicacion_particion = algoritmo_reemplazo_fifo();
 			break;
 		case LRU:
+				algoritmo_reemplazo_lru();
 			break;
 	}
-	consolidar();
+	consolidar(ubicacion_particion);
 }
 
-void consolidar();
+/*todo si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor */
+int algoritmo_reemplazo_fifo(void){
+
+	t_particion_dinamica* primera_particion = NULL;
+		int pos_primera_particion;
+
+		for (int i = 0; list_size(lista_particiones_dinamicas) > 0 ;i++){
+			t_particion_dinamica* particion = list_get(lista_particiones_dinamicas,i);
+
+			if(!esta_libre(particion)){
+
+				if(primera_particion == NULL || particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
+					primera_particion = particion;
+					pos_primera_particion = i;
+				}
+			}
+		}
+
+		borrar_msj_mp(primera_particion->inicio,primera_particion->tamanio_ocupado);
+		primera_particion->libre = true;
+		primera_particion->tamanio_ocupado = 0;
+
+		//todo consolidar() tal vez conviene mejor ponerlo aca
+		return pos_primera_particion;
+}
+
+int algoritmo_reemplazo_lru(void){
+
+	t_particion_dinamica* part_menos_usada = NULL;
+	int pos_part_menos_usada;
+
+	for (int i = 0; list_size(lista_particiones_dinamicas) > 0 ;i++){
+		t_particion_dinamica* particion = list_get(lista_particiones_dinamicas,i);
+
+		if(!esta_libre(particion)){
+
+			if(part_menos_usada == NULL || particion->ult_vez_usado < part_menos_usada->ult_vez_usado){
+				part_menos_usada = particion;
+				pos_part_menos_usada = i;
+			}
+		}
+	}
+
+	borrar_msj_mp(part_menos_usada->inicio,part_menos_usada->tamanio_ocupado);
+	part_menos_usada->libre = true;
+	part_menos_usada->tamanio_ocupado = 0;
+	//todo part_menos_usada->orden_ingreso;
+	//todo consolidar() tal vez conviene mejor ponerlo aca
+	return pos_part_menos_usada;
+}
+
+//todo tengo la duda, habria que al inicializar la memoria principal setear los valores a 0 o algo para identificarlo, agregar semaforos
+void borrar_msj_mp(int posicion, int tamanio){
+	memset(memoria_principal+posicion,0,tamanio);
+	//de alguna forma hay que avisar a la estructura de mensajes que se elimino este msj
+}
+
+
+
+/* Supongo que funciona pero seguro se puede mejorar */
+void consolidar(int pos_particion){
+
+	t_particion_dinamica* liberada = list_get(lista_particiones_dinamicas,pos_particion);
+	t_particion_dinamica* aux = liberada;
+	int pos = pos_particion;
+
+	if(particion_libre_a_la_izquierda(pos_particion)){
+		t_particion_dinamica* izquierda = list_get(lista_particiones_dinamicas,pos_particion-1);
+		izquierda->fin = liberada->fin;
+		list_remove(lista_particiones_dinamicas,pos_particion);
+		free(liberada);
+		aux = izquierda;
+		pos = pos_particion -1;
+	}
+	if (particion_libre_a_la_derecha(pos)){
+
+		t_particion_dinamica* derecha = list_get(lista_particiones_dinamicas,pos+1);
+		aux->inicio = derecha->inicio;
+		list_remove(lista_particiones_dinamicas,pos+1);
+		free(derecha);
+	}
+}
+
+bool particion_libre_a_la_izquierda(int posicion){
+	return posicion - 1 >= 0 && esta_libre(list_get(lista_particiones_dinamicas,posicion-1));
+
+}
+
+bool particion_libre_a_la_derecha(int posicion){
+	return posicion + 1 <= leer_tamano_memoria()-1 && esta_libre(list_get(lista_particiones_dinamicas,posicion+1));
+}
 
 
 int buscar_particion_libre(int tamanio){
+
 	switch(leer_algoritmo_particion_libre()){
 		case FF:
 			return algoritmo_first_fit(tamanio);
@@ -80,32 +176,57 @@ int buscar_particion_libre(int tamanio){
 			return algoritmo_best_fit(tamanio);
 			break;
 		}
+	return -1;
 }
 
 int algoritmo_best_fit(int tamanio){
-	t_particion* mejor_particion;
-	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
-		t_particion* particion_actual = list_get(lista_particiones,i);
+	t_particion_dinamica* mejor_particion;
+	int dif_mejor_part = -1;
+	int posicion_mejor_part;
 
-		if(mejor_particion != NULL){
+	for(int i = 0; list_size(lista_particiones_dinamicas) > i ; i++ ){
+		t_particion_dinamica* particion_actual = list_get(lista_particiones_dinamicas,i);
 
+
+		if(esta_libre(particion_actual)){
+			int diferencia = diferencia_tamanio_particion(particion_actual,tamanio);
+
+			if(diferencia >= 0){
+
+				if(diferencia < dif_mejor_part || dif_mejor_part < 0){
+					mejor_particion = particion_actual;
+					dif_mejor_part = diferencia;
+					posicion_mejor_part = i;
+				}
+			}
+		}
+	}
+
+	if(dif_mejor_part < 0){
+
+		return -1;
+	}
+	else if(dif_mejor_part >= leer_tamano_minimo_particion())
+		{
+			return llenar_y_realizar_nueva_particion(mejor_particion,tamanio,posicion_mejor_part);
 		}
 		else
-			mejor_particion = list_get(lista_particiones,i);
-	}
-	return -1;
+		{
+			return llenar_particion(mejor_particion,tamanio);
+		}
+
 }
 
 int algoritmo_first_fit(int tamanio){
 
-	t_particion* particion;
+	t_particion_dinamica* particion;
 
-	for(int i = 0;list_size(lista_particiones) > i; i++){
-		particion = list_get(lista_particiones,i);
+	for(int i = 0;list_size(lista_particiones_dinamicas) > i; i++){
+		particion = list_get(lista_particiones_dinamicas,i);
 
 		if(esta_libre(particion)){
 			/* Esto es porque hay un minimo en el tamanio de particiones */
-			int diferencia = tamanio_particion(particion) - tamanio;
+			int diferencia = diferencia_tamanio_particion(particion,tamanio);
 
 			if(diferencia >= 0){
 
@@ -117,7 +238,6 @@ int algoritmo_first_fit(int tamanio){
 				{
 						return llenar_particion(particion,tamanio);
 				}
-
 			}
 		}
 	}
@@ -126,36 +246,57 @@ int algoritmo_first_fit(int tamanio){
 }
 
 
-int llenar_y_realizar_nueva_particion(t_particion* particion,int tamanio,int posicion_en_lista){
-	t_particion* nueva_particion = malloc(sizeof(t_particion));
+int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamanio,int posicion_en_lista){
+	//todo no ovlidar que cuando elimino la particion se tiene que liberar este espacio de memoria
+	t_particion_dinamica* nueva_particion = malloc(sizeof(t_particion_dinamica));
 	nueva_particion->fin = particion->fin;
 	nueva_particion->inicio = nueva_particion->fin - tamanio + 1;
+	nueva_particion->libre = true;
 
 	//todo aunque tecnicamente no esta ocupado todavia no se me ocurre otro momento mejor para llenar este dato
 	particion->tamanio_ocupado = tamanio;
 	particion->fin = particion->inicio + tamanio - 1;
 	particion->libre = false;
+	particion->tiempo_ingreso = timestamp();
+	particion->ult_vez_usado = timestamp();
 
-	list_add_in_index(lista_particiones,posicion_en_lista+1,nueva_particion);
+	list_add_in_index(lista_particiones_dinamicas,posicion_en_lista+1,nueva_particion);
 
 	return particion->inicio;
 
 }
 /* A diferencia del de arriba esto es cuando el msj tiene el mismo tamanio que la particion o un poco menos*/
-int llenar_particion(t_particion* particion, int tamanio){
+int llenar_particion(t_particion_dinamica* particion, int tamanio){
 	particion->tamanio_ocupado = tamanio;
 	particion->libre = false;
+	particion->tiempo_ingreso = timestamp();
+	particion->ult_vez_usado = timestamp();
 	return particion->inicio;
 }
 
-bool esta_libre(t_particion* particion){
+bool esta_libre(t_particion_dinamica* particion){
 	return particion->libre;
 }
 
-int tamanio_particion(t_particion* particion){
+int diferencia_tamanio_particion(t_particion_dinamica* particion,int tamanio_msj){
+	return tamanio_particion(particion) - tamanio_msj;
+}
+
+int tamanio_particion(t_particion_dinamica* particion){
 	return particion->fin - particion->inicio +1;
 }
 
+
+uint64_t timestamp(void) {
+
+	struct timeval valor;
+	gettimeofday(&valor, NULL);
+	unsigned long long result = (((unsigned long long )valor.tv_sec) * 1000 + ((unsigned long) valor.tv_usec));
+	uint64_t tiempo = result;
+
+	return tiempo;
+
+}
 
 
 /* BUDDY SYSTEM */

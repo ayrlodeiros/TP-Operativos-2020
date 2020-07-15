@@ -1,19 +1,20 @@
 #ifndef ADMMEMORIA_H_
 #define ADMMEMORIA_H_
 #include "constructor.h"
+#include <sys/time.h>
 
-
-int contador_compactacion;
-t_list* lista_particiones;
+int orden_de_llegada;
+t_list* lista_particiones_dinamicas;
 t_list* lista_particiones_bs;
 
 typedef struct{
 	int inicio;
 	int fin;
 	int tamanio_ocupado;
-	//todo chequear que funcion asi
-	bool libre = true;
-}t_particion;
+	uint64_t tiempo_ingreso;
+	uint64_t ult_vez_usado;
+	bool libre;
+}t_particion_dinamica;
 
 typedef struct{
 	int inicio;
@@ -26,19 +27,35 @@ typedef struct{
 /*Funciones particiones dinamicas */
 
 void inicializar_lista_particiones();
-void inicializar_contador_compactacion();
 
 int obtener_pos_particiones(int tamanio);
 int buscar_particion_libre(int tamanio);
 void liberar_particion();
+bool estaOcupado(void* elemento);
+
+int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamanio,int posicion_en_lista);
+int llenar_particion(t_particion_dinamica* particion, int tamanio);
 
 int algoritmo_best_fit(int tamanio);
 int algoritmo_first_fit(int tamanio);
 
-bool esta_libre(t_particion* particion);
+int algoritmo_reemplazo_fifo();
+int algoritmo_reemplazo_lru();
+
+bool particion_libre_a_la_izquierda(int posicion);
+bool particion_libre_a_la_derecha(int posicion);
+
+int diferencia_tamanio_particion(t_particion_dinamica* particion,int tamanio_msj);
+int tamanio_particion(t_particion_dinamica* particion);
+
+bool esta_libre(t_particion_dinamica* particion);
 bool hay_que_compactar();
 void compactacion();
+void consolidar(int pos_particion);
+void borrar_msj_mp(int posicion, int tamanio);
 
+/* Esto es para cuando se accede a la memoria de una particion, saber en que momento fue utilizada para el algoritmo LRU */
+uint64_t timestamp(void);
 
 /* Funciones Buddy System */
 
