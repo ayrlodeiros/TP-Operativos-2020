@@ -10,7 +10,8 @@ typedef struct{
 	int inicio;
 	int fin;
 	int tamanio_ocupado;
-	bool libre;
+	//todo chequear que funcion asi
+	bool libre = true;
 }t_particion;
 
 typedef struct{
@@ -38,7 +39,11 @@ void inicializar_contador_compactacion();
 
 int obtener_pos_particiones(int tamanio);
 int buscar_particion_libre(int tamanio);
+void liberar_particion();
+
 int algoritmo_best_fit(int tamanio);
+int algoritmo_first_fit(int tamanio);
+
 bool esta_libre(t_particion* particion);
 bool hay_que_compactar();
 void compactacion();

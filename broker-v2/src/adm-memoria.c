@@ -58,7 +58,13 @@ void compactacion(){
 }
 
 void liberar_particion(){
-	//todo desarrolllar
+
+	switch(leer_algoritmo_reemplazo()){
+		case FIFO:
+			break;
+		case LRU:
+			break;
+	}
 	consolidar();
 }
 
@@ -68,6 +74,7 @@ void consolidar();
 int buscar_particion_libre(int tamanio){
 	switch(leer_algoritmo_particion_libre()){
 		case FF:
+			return algoritmo_first_fit(tamanio);
 			break;
 		case BF:
 			return algoritmo_best_fit(tamanio);
@@ -77,8 +84,6 @@ int buscar_particion_libre(int tamanio){
 
 int algoritmo_best_fit(int tamanio){
 	t_particion* mejor_particion;
-/*
-
 	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
 		t_particion* particion_actual = list_get(lista_particiones,i);
 
@@ -88,14 +93,68 @@ int algoritmo_best_fit(int tamanio){
 		else
 			mejor_particion = list_get(lista_particiones,i);
 	}
-	*/
 	return -1;
+}
+
+int algoritmo_first_fit(int tamanio){
+
+	t_particion* particion;
+
+	for(int i = 0;list_size(lista_particiones) > i; i++){
+		particion = list_get(lista_particiones,i);
+
+		if(esta_libre(particion)){
+			/* Esto es porque hay un minimo en el tamanio de particiones */
+			int diferencia = tamanio_particion(particion) - tamanio;
+
+			if(diferencia >= 0){
+
+				if(diferencia >= leer_tamano_minimo_particion())
+				{
+						return llenar_y_realizar_nueva_particion(particion,tamanio,i);
+				}
+				else
+				{
+						return llenar_particion(particion,tamanio);
+				}
+
+			}
+		}
+	}
+	/* No se encontro espacio libre para el msj */
+	return -1;
+}
+
+
+int llenar_y_realizar_nueva_particion(t_particion* particion,int tamanio,int posicion_en_lista){
+	t_particion* nueva_particion = malloc(sizeof(t_particion));
+	nueva_particion->fin = particion->fin;
+	nueva_particion->inicio = nueva_particion->fin - tamanio + 1;
+
+	//todo aunque tecnicamente no esta ocupado todavia no se me ocurre otro momento mejor para llenar este dato
+	particion->tamanio_ocupado = tamanio;
+	particion->fin = particion->inicio + tamanio - 1;
+	particion->libre = false;
+
+	list_add_in_index(lista_particiones,posicion_en_lista+1,nueva_particion);
+
+	return particion->inicio;
+
+}
+/* A diferencia del de arriba esto es cuando el msj tiene el mismo tamanio que la particion o un poco menos*/
+int llenar_particion(t_particion* particion, int tamanio){
+	particion->tamanio_ocupado = tamanio;
+	particion->libre = false;
+	return particion->inicio;
 }
 
 bool esta_libre(t_particion* particion){
 	return particion->libre;
 }
 
+int tamanio_particion(t_particion* particion){
+	return particion->fin - particion->inicio +1;
+}
 
 
 //BUDDY SYSTEM
