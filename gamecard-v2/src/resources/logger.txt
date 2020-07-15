@@ -965,3 +965,752 @@
 [INFO] 17:42:35:133 gamecard/(6479:6523): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Squirtle
 [INFO] 17:42:39:569 gamecard/(6479:6531): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
 [INFO] 17:42:48:238 gamecard/(6479:6534): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pepe
+[INFO] 19:31:57:578 gamecard/(5677:5677): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 19:31:57:579 gamecard/(5677:5677): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 19:31:57:582 gamecard/(5677:5677): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 19:32:38:88 gamecard/(11639:11639): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 19:32:38:89 gamecard/(11639:11639): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 19:32:38:89 gamecard/(11639:11639): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 19:34:09:842 gamecard/(18069:18069): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 19:34:09:842 gamecard/(18069:18069): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 19:34:09:842 gamecard/(18069:18069): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 19:38:13:897 gamecard/(18069:19082): se asigno el bloque [0] al bitmap
+[INFO] 19:38:13:897 gamecard/(18069:19082): se asigno el bloque [0] al files del pokemon : pikachu
+[INFO] 19:38:13:897 gamecard/(18069:19082): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin 
+[INFO] 19:38:13:897 gamecard/(18069:19082): se abrio el archivo : pikachu
+[INFO] 19:38:13:897 gamecard/(18069:19082): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 5-5=1
+
+[INFO] 19:38:13:898 gamecard/(18069:19082): se guardo el dato 5-5=1
+ en el bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:38:13:898 gamecard/(18069:19082): se agrego la posicion (5-5) con la cantidad (1)
+[INFO] 19:38:14:903 gamecard/(18069:19082): se cerro el archivo : pikachu
+[INFO] 19:38:14:904 gamecard/(18069:19082): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pikachu
+[INFO] 19:43:49:62 gamecard/(19234:19234): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 19:43:49:62 gamecard/(19234:19234): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 19:43:49:63 gamecard/(19234:19234): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 19:44:19:300 gamecard/(19234:19249): se asigno el bloque [0] al bitmap
+[INFO] 19:44:19:300 gamecard/(19234:19249): se asigno el bloque [0] al files del pokemon : pikachu
+[INFO] 19:44:19:300 gamecard/(19234:19249): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin 
+[INFO] 19:44:19:300 gamecard/(19234:19249): se abrio el archivo : pikachu
+[INFO] 19:44:19:301 gamecard/(19234:19249): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 2-5=10
+
+[INFO] 19:44:19:301 gamecard/(19234:19249): se guardo el dato 2-5=10
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:44:19:301 gamecard/(19234:19249): se agrego la posicion (2-5) con la cantidad (10)
+[INFO] 19:44:20:302 gamecard/(19234:19249): se cerro el archivo : pikachu
+[INFO] 19:44:20:302 gamecard/(19234:19249): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pikachu
+[INFO] 19:45:18:115 gamecard/(19234:19335): se abrio el archivo : pikachu
+[INFO] 19:45:18:115 gamecard/(19234:19335): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 1-9=3
+
+[INFO] 19:45:18:116 gamecard/(19234:19335): se guardo el dato 1-9=3
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:45:18:118 gamecard/(19234:19335): se agrego la posicion (1-9) con la cantidad (3)
+[INFO] 19:45:19:118 gamecard/(19234:19335): se cerro el archivo : pikachu
+[INFO] 19:45:19:118 gamecard/(19234:19335): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pikachu
+[INFO] 19:45:39:960 gamecard/(19234:19375): se asigno el bloque [1] al bitmap
+[INFO] 19:45:39:960 gamecard/(19234:19375): se asigno el bloque [1] al files del pokemon : charmander
+[INFO] 19:45:39:961 gamecard/(19234:19375): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin 
+[INFO] 19:45:39:961 gamecard/(19234:19375): se abrio el archivo : charmander
+[INFO] 19:45:39:961 gamecard/(19234:19375): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 4-1=101
+
+[INFO] 19:45:39:962 gamecard/(19234:19375): se guardo el dato 4-1=101
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:45:39:962 gamecard/(19234:19375): se agrego la posicion (4-1) con la cantidad (101)
+[INFO] 19:45:40:962 gamecard/(19234:19375): se cerro el archivo : charmander
+[INFO] 19:45:40:963 gamecard/(19234:19375): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:45:54:362 gamecard/(19234:19410): se abrio el archivo : charmander
+[INFO] 19:45:54:363 gamecard/(19234:19410): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 517-2046=15
+
+[INFO] 19:45:54:363 gamecard/(19234:19410): se guardo el dato 517-2046=15
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:45:54:366 gamecard/(19234:19410): se agrego la posicion (517-2046) con la cantidad (15)
+[INFO] 19:45:55:368 gamecard/(19234:19410): se cerro el archivo : charmander
+[INFO] 19:45:55:369 gamecard/(19234:19410): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:46:06:99 gamecard/(19234:19445): se abrio el archivo : charmander
+[INFO] 19:46:06:100 gamecard/(19234:19445): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 413-17=1
+
+[INFO] 19:46:06:100 gamecard/(19234:19445): se guardo el dato 413-17=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:46:06:100 gamecard/(19234:19445): se agrego la posicion (413-17) con la cantidad (1)
+[INFO] 19:46:07:101 gamecard/(19234:19445): se cerro el archivo : charmander
+[INFO] 19:46:07:101 gamecard/(19234:19445): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:46:24:508 gamecard/(19234:19485): se abrio el archivo : charmander
+[INFO] 19:46:24:509 gamecard/(19234:19485): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 723-97=29
+
+[INFO] 19:46:24:509 gamecard/(19234:19485): se guardo el dato 723-97=29
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:46:24:509 gamecard/(19234:19485): se agrego la posicion (723-97) con la cantidad (29)
+[INFO] 19:46:25:509 gamecard/(19234:19485): se cerro el archivo : charmander
+[INFO] 19:46:25:509 gamecard/(19234:19485): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:46:38:309 gamecard/(19234:19522): se abrio el archivo : charmander
+[INFO] 19:46:38:309 gamecard/(19234:19522): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 65-93=3001
+
+[INFO] 19:46:38:309 gamecard/(19234:19522): se guardo el dato 65-93=3001
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:46:38:310 gamecard/(19234:19522): se agrego la posicion (65-93) con la cantidad (3001)
+[INFO] 19:46:39:311 gamecard/(19234:19522): se cerro el archivo : charmander
+[INFO] 19:46:39:311 gamecard/(19234:19522): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:46:50:402 gamecard/(19234:19557): se abrio el archivo : charmander
+[INFO] 19:46:50:406 gamecard/(19234:19557): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 12-17=34
+
+[INFO] 19:46:50:406 gamecard/(19234:19557): se guardo el dato 12-17=34
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:46:50:408 gamecard/(19234:19557): se agrego la posicion (12-17) con la cantidad (34)
+[INFO] 19:46:51:408 gamecard/(19234:19557): se cerro el archivo : charmander
+[INFO] 19:46:51:408 gamecard/(19234:19557): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:47:05:806 gamecard/(19234:19592): se abrio el archivo : charmander
+[INFO] 19:47:05:811 gamecard/(19234:19592): se agrego el bloque 2 al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin
+[INFO] 19:47:05:811 gamecard/(19234:19592): se cambio el bit 2 del bitmap a 1
+[INFO] 19:47:05:811 gamecard/(19234:19592): se cambio los blocks del path /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin por los siguientes bloques
+[INFO] 19:47:05:812 gamecard/(19234:19592): se guardo el dato 129-5 en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:47:05:812 gamecard/(19234:19592): se guardo el dato 47=11
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 19:47:05:813 gamecard/(19234:19592): se agrego la posicion (129-547) con la cantidad (11)
+[INFO] 19:47:06:813 gamecard/(19234:19592): se cerro el archivo : charmander
+[INFO] 19:47:06:813 gamecard/(19234:19592): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de charmander
+[INFO] 19:49:06:310 gamecard/(19234:19709): se abrio el archivo : charmander
+[INFO] 19:49:06:313 gamecard/(19234:19709): Se disminuye en 1 la cantidad en la posicion 413-17,del (Pokemon : charmander)
+[INFO] 19:49:06:318 gamecard/(19234:19709): se limpio el bloque 1
+[INFO] 19:49:06:318 gamecard/(19234:19709): se limpio el bloque 2
+[INFO] 19:49:06:321 gamecard/(19234:19709): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin
+[INFO] 19:49:06:321 gamecard/(19234:19709): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 4-1=101
+
+[INFO] 19:49:06:321 gamecard/(19234:19709): se guardo el dato 4-1=101
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:49:06:322 gamecard/(19234:19709): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 517-2046=15
+
+[INFO] 19:49:06:322 gamecard/(19234:19709): se guardo el dato 517-2046=15
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:49:06:322 gamecard/(19234:19709): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 723-97=29
+
+[INFO] 19:49:06:322 gamecard/(19234:19709): se guardo el dato 723-97=29
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:49:06:323 gamecard/(19234:19709): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 65-93=3001
+
+[INFO] 19:49:06:323 gamecard/(19234:19709): se guardo el dato 65-93=3001
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:49:06:323 gamecard/(19234:19709): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 12-17=34
+
+[INFO] 19:49:06:324 gamecard/(19234:19709): se guardo el dato 12-17=34
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:49:06:324 gamecard/(19234:19709): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/charmander/Metadata.bin  con el dato 129-547=11
+
+[INFO] 19:49:06:324 gamecard/(19234:19709): se guardo el dato 129-547=11
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:49:06:325 gamecard/(19234:19709): se cerro el archivo : charmander
+[INFO] 19:49:07:326 gamecard/(19234:19709): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 1
+[INFO] 19:51:06:679 gamecard/(19786:19786): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 19:51:06:680 gamecard/(19786:19786): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 19:51:06:680 gamecard/(19786:19786): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 19:51:33:834 gamecard/(19786:19799): se asigno el bloque [0] al bitmap
+[INFO] 19:51:33:834 gamecard/(19786:19799): se asigno el bloque [0] al files del pokemon : pikachu
+[INFO] 19:51:33:834 gamecard/(19786:19799): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin 
+[INFO] 19:51:33:834 gamecard/(19786:19799): se abrio el archivo : pikachu
+[INFO] 19:51:33:835 gamecard/(19786:19799): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 1-1=1
+
+[INFO] 19:51:33:835 gamecard/(19786:19799): se guardo el dato 1-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:51:33:835 gamecard/(19786:19799): se agrego la posicion (1-1) con la cantidad (1)
+[INFO] 19:51:34:836 gamecard/(19786:19799): se cerro el archivo : pikachu
+[INFO] 19:51:34:836 gamecard/(19786:19799): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pikachu
+[INFO] 19:51:57:229 gamecard/(19786:19841): se abrio el archivo : pikachu
+[INFO] 19:51:57:230 gamecard/(19786:19841): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 1-2=1
+
+[INFO] 19:51:57:230 gamecard/(19786:19841): se guardo el dato 1-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:51:57:230 gamecard/(19786:19841): se agrego la posicion (1-2) con la cantidad (1)
+[INFO] 19:51:58:231 gamecard/(19786:19841): se cerro el archivo : pikachu
+[INFO] 19:51:58:231 gamecard/(19786:19841): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pikachu
+[INFO] 19:52:24:329 gamecard/(19786:19876): se asigno el bloque [1] al bitmap
+[INFO] 19:52:24:329 gamecard/(19786:19876): se asigno el bloque [1] al files del pokemon : volteon
+[INFO] 19:52:24:329 gamecard/(19786:19876): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/volteon/Metadata.bin 
+[INFO] 19:52:24:330 gamecard/(19786:19876): se abrio el archivo : volteon
+[INFO] 19:52:24:330 gamecard/(19786:19876): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/volteon/Metadata.bin  con el dato 1-2=1
+
+[INFO] 19:52:24:330 gamecard/(19786:19876): se guardo el dato 1-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 19:52:24:330 gamecard/(19786:19876): se agrego la posicion (1-2) con la cantidad (1)
+[INFO] 19:52:25:331 gamecard/(19786:19876): se cerro el archivo : volteon
+[INFO] 19:52:25:331 gamecard/(19786:19876): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de volteon
+[INFO] 19:53:43:627 gamecard/(19786:19961): se abrio el archivo : pikachu
+[INFO] 19:53:43:628 gamecard/(19786:19961): Se disminuye en 1 la cantidad en la posicion 1-2,del (Pokemon : pikachu)
+[INFO] 19:53:43:628 gamecard/(19786:19961): se limpio el bloque 0
+[INFO] 19:53:43:631 gamecard/(19786:19961): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin
+[INFO] 19:53:43:631 gamecard/(19786:19961): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 1-1=1
+
+[INFO] 19:53:43:632 gamecard/(19786:19961): se guardo el dato 1-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:53:43:632 gamecard/(19786:19961): se cerro el archivo : pikachu
+[INFO] 19:53:44:633 gamecard/(19786:19961): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 2
+[INFO] 19:54:21:566 gamecard/(19786:20002): se abrio el archivo : pikachu
+[INFO] 19:54:21:567 gamecard/(19786:20002): Se disminuye en 1 la cantidad en la posicion 1-1,del (Pokemon : pikachu)
+[INFO] 19:54:21:567 gamecard/(19786:20002): se limpio el bloque 0
+[INFO] 19:54:21:569 gamecard/(19786:20002): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin
+[INFO] 19:54:21:569 gamecard/(19786:20002): se cerro el archivo : pikachu
+[INFO] 19:54:21:578 gamecard/(19786:20002): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : pikachu)
+[INFO] 19:54:22:579 gamecard/(19786:20002): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 2
+[INFO] 19:55:00:211 gamecard/(19786:20078): se asigno el bloque [0] al bitmap
+[INFO] 19:55:00:211 gamecard/(19786:20078): se asigno el bloque [0] al files del pokemon : pika
+[INFO] 19:55:00:211 gamecard/(19786:20078): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/pika/Metadata.bin 
+[INFO] 19:55:00:212 gamecard/(19786:20078): se abrio el archivo : pika
+[INFO] 19:55:00:212 gamecard/(19786:20078): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pika/Metadata.bin  con el dato 1-2=1
+
+[INFO] 19:55:00:212 gamecard/(19786:20078): se guardo el dato 1-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:55:00:213 gamecard/(19786:20078): se agrego la posicion (1-2) con la cantidad (1)
+[INFO] 19:55:01:213 gamecard/(19786:20078): se cerro el archivo : pika
+[INFO] 19:55:01:213 gamecard/(19786:20078): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pika
+[INFO] 19:56:26:339 gamecard/(20407:20407): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 19:56:26:340 gamecard/(20407:20407): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 19:56:26:340 gamecard/(20407:20407): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 19:58:21:712 gamecard/(20407:20775): se asigno el bloque [0] al bitmap
+[INFO] 19:58:21:712 gamecard/(20407:20775): se asigno el bloque [0] al files del pokemon : pikachu
+[INFO] 19:58:21:712 gamecard/(20407:20775): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin 
+[INFO] 19:58:21:712 gamecard/(20407:20775): se abrio el archivo : pikachu
+[INFO] 19:58:21:713 gamecard/(20407:20775): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 1-1=2
+
+[INFO] 19:58:21:713 gamecard/(20407:20775): se guardo el dato 1-1=2
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 19:58:21:713 gamecard/(20407:20775): se agrego la posicion (1-1) con la cantidad (2)
+[INFO] 19:58:22:713 gamecard/(20407:20775): se cerro el archivo : pikachu
+[INFO] 19:58:22:713 gamecard/(20407:20775): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de pikachu
+[INFO] 19:59:45:210 gamecard/(20407:20814): se abrio el archivo : pikachu
+[INFO] 19:59:46:211 gamecard/(20407:20814): se cerro el archivo : pikachu
+[INFO] 19:59:46:211 gamecard/(20407:20814): No se pudo realizar la conexión con el BROKER para el envio del mensaje LOCALIZED de pikachu
+[INFO] 20:00:18:470 gamecard/(20407:20854): se abrio el archivo : pikachu
+[INFO] 20:00:18:473 gamecard/(20407:20854): Se disminuye en 1 la cantidad en la posicion 1-1,del (Pokemon : pikachu)
+[INFO] 20:00:18:474 gamecard/(20407:20854): se limpio el bloque 0
+[INFO] 20:00:18:476 gamecard/(20407:20854): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin
+[INFO] 20:00:18:476 gamecard/(20407:20854): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/pikachu/Metadata.bin  con el dato 1-1=1
+
+[INFO] 20:00:18:476 gamecard/(20407:20854): se guardo el dato 1-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 20:00:18:477 gamecard/(20407:20854): se cerro el archivo : pikachu
+[INFO] 20:00:19:477 gamecard/(20407:20854): No se pudo realizar la conexión con el BROKER para el envio del mensaje CAUGHT de ID: 2
+[INFO] 20:12:35:800 gamecard/(20407:21980): se asigno el bloque [1] al bitmap
+[INFO] 20:12:35:800 gamecard/(20407:21980): se asigno el bloque [1] al files del pokemon : Pikachu
+[INFO] 20:12:35:800 gamecard/(20407:21980): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin 
+[INFO] 20:12:35:801 gamecard/(20407:21980): se abrio el archivo : Pikachu
+[INFO] 20:12:35:801 gamecard/(20407:21980): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=1
+
+[INFO] 20:12:35:801 gamecard/(20407:21980): se guardo el dato 1-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:12:35:801 gamecard/(20407:21980): se agrego la posicion (1-1) con la cantidad (1)
+[INFO] 20:12:36:802 gamecard/(20407:21980): se cerro el archivo : Pikachu
+[INFO] 20:12:36:802 gamecard/(20407:21980): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:13:49:50 gamecard/(20407:22070): se abrio el archivo : Pikachu
+[INFO] 20:13:49:50 gamecard/(20407:22070): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (2)
+[INFO] 20:13:49:51 gamecard/(20407:22070): se limpio el bloque 1
+[INFO] 20:13:49:53 gamecard/(20407:22070): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:13:49:53 gamecard/(20407:22070): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=2
+
+[INFO] 20:13:49:53 gamecard/(20407:22070): se guardo el dato 1-1=2
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:13:50:54 gamecard/(20407:22070): se cerro el archivo : Pikachu
+[INFO] 20:13:50:54 gamecard/(20407:22070): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:19:16:601 gamecard/(20407:22208): se abrio el archivo : Pikachu
+[INFO] 20:19:16:602 gamecard/(20407:22208): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (3)
+[INFO] 20:19:16:602 gamecard/(20407:22208): se limpio el bloque 1
+[INFO] 20:19:16:604 gamecard/(20407:22208): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:19:16:604 gamecard/(20407:22208): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=3
+
+[INFO] 20:19:16:604 gamecard/(20407:22208): se guardo el dato 1-1=3
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:19:17:605 gamecard/(20407:22208): se cerro el archivo : Pikachu
+[INFO] 20:19:17:606 gamecard/(20407:22208): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:19:48:688 gamecard/(20407:22292): se abrio el archivo : Pikachu
+[INFO] 20:19:48:688 gamecard/(20407:22292): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (4)
+[INFO] 20:19:48:689 gamecard/(20407:22292): se limpio el bloque 1
+[INFO] 20:19:48:690 gamecard/(20407:22292): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:19:48:690 gamecard/(20407:22292): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=4
+
+[INFO] 20:19:48:690 gamecard/(20407:22292): se guardo el dato 1-1=4
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:19:49:691 gamecard/(20407:22292): se cerro el archivo : Pikachu
+[INFO] 20:19:49:691 gamecard/(20407:22292): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:20:00:951 gamecard/(20407:22327): se abrio el archivo : Pikachu
+[INFO] 20:20:00:951 gamecard/(20407:22327): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (5)
+[INFO] 20:20:00:951 gamecard/(20407:22327): se limpio el bloque 1
+[INFO] 20:20:00:952 gamecard/(20407:22327): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:20:00:953 gamecard/(20407:22327): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=5
+
+[INFO] 20:20:00:953 gamecard/(20407:22327): se guardo el dato 1-1=5
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:20:01:953 gamecard/(20407:22327): se cerro el archivo : Pikachu
+[INFO] 20:20:01:953 gamecard/(20407:22327): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:20:19:559 gamecard/(20407:22399): se abrio el archivo : Pikachu
+[INFO] 20:20:19:559 gamecard/(20407:22399): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (6)
+[INFO] 20:20:19:559 gamecard/(20407:22399): se limpio el bloque 1
+[INFO] 20:20:19:574 gamecard/(20407:22399): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:20:19:574 gamecard/(20407:22399): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=6
+
+[INFO] 20:20:19:574 gamecard/(20407:22399): se guardo el dato 1-1=6
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:20:20:575 gamecard/(20407:22399): se cerro el archivo : Pikachu
+[INFO] 20:20:20:575 gamecard/(20407:22399): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:20:38:538 gamecard/(20407:22472): se abrio el archivo : Pikachu
+[INFO] 20:20:38:538 gamecard/(20407:22472): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (7)
+[INFO] 20:20:38:539 gamecard/(20407:22472): se limpio el bloque 1
+[INFO] 20:20:38:551 gamecard/(20407:22472): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:20:38:552 gamecard/(20407:22472): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=7
+
+[INFO] 20:20:38:552 gamecard/(20407:22472): se guardo el dato 1-1=7
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:20:39:553 gamecard/(20407:22472): se cerro el archivo : Pikachu
+[INFO] 20:20:39:553 gamecard/(20407:22472): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:21:11:283 gamecard/(20407:22537): se abrio el archivo : Pikachu
+[INFO] 20:21:11:284 gamecard/(20407:22537): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (8)
+[INFO] 20:21:11:284 gamecard/(20407:22537): se limpio el bloque 1
+[INFO] 20:21:11:285 gamecard/(20407:22537): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:21:11:285 gamecard/(20407:22537): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=8
+
+[INFO] 20:21:11:285 gamecard/(20407:22537): se guardo el dato 1-1=8
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:21:12:286 gamecard/(20407:22537): se cerro el archivo : Pikachu
+[INFO] 20:21:12:286 gamecard/(20407:22537): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:24:32:238 gamecard/(20407:22693): se abrio el archivo : Pikachu
+[INFO] 20:24:32:238 gamecard/(20407:22693): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=3
+
+[INFO] 20:24:32:238 gamecard/(20407:22693): se guardo el dato 2-1=3
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:24:32:239 gamecard/(20407:22693): se agrego la posicion (2-1) con la cantidad (3)
+[INFO] 20:24:33:239 gamecard/(20407:22693): se cerro el archivo : Pikachu
+[INFO] 20:24:33:239 gamecard/(20407:22693): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:25:43:665 gamecard/(20407:22754): se abrio el archivo : Pikachu
+[INFO] 20:25:43:665 gamecard/(20407:22754): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (6)
+[INFO] 20:25:43:669 gamecard/(20407:22754): se limpio el bloque 1
+[INFO] 20:25:43:671 gamecard/(20407:22754): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:25:43:671 gamecard/(20407:22754): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=8
+
+[INFO] 20:25:43:671 gamecard/(20407:22754): se guardo el dato 1-1=8
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:25:43:672 gamecard/(20407:22754): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=6
+
+[INFO] 20:25:43:672 gamecard/(20407:22754): se guardo el dato 2-1=6
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:25:44:674 gamecard/(20407:22754): se cerro el archivo : Pikachu
+[INFO] 20:25:44:675 gamecard/(20407:22754): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:26:16:332 gamecard/(20407:22812): se abrio el archivo : Pikachu
+[INFO] 20:26:16:332 gamecard/(20407:22812): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (9)
+[INFO] 20:26:16:333 gamecard/(20407:22812): se limpio el bloque 1
+[INFO] 20:26:16:335 gamecard/(20407:22812): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:26:16:335 gamecard/(20407:22812): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=8
+
+[INFO] 20:26:16:335 gamecard/(20407:22812): se guardo el dato 1-1=8
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:26:16:337 gamecard/(20407:22812): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:26:16:337 gamecard/(20407:22812): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:26:17:338 gamecard/(20407:22812): se cerro el archivo : Pikachu
+[INFO] 20:26:17:338 gamecard/(20407:22812): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:30:01:681 gamecard/(20407:23398): se abrio el archivo : Pikachu
+[INFO] 20:30:01:682 gamecard/(20407:23398): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (9)
+[INFO] 20:30:01:682 gamecard/(20407:23398): se limpio el bloque 1
+[INFO] 20:30:01:711 gamecard/(20407:23398): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:30:01:711 gamecard/(20407:23398): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:30:01:711 gamecard/(20407:23398): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:01:712 gamecard/(20407:23398): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=9
+
+[INFO] 20:30:01:712 gamecard/(20407:23398): se guardo el dato 1-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:02:714 gamecard/(20407:23398): se cerro el archivo : Pikachu
+[INFO] 20:30:02:714 gamecard/(20407:23398): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:30:14:859 gamecard/(20407:23463): se abrio el archivo : Pikachu
+[INFO] 20:30:14:859 gamecard/(20407:23463): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (10)
+[INFO] 20:30:14:859 gamecard/(20407:23463): se limpio el bloque 1
+[INFO] 20:30:14:865 gamecard/(20407:23463): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:30:14:865 gamecard/(20407:23463): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:30:14:865 gamecard/(20407:23463): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:14:866 gamecard/(20407:23463): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=10
+
+[INFO] 20:30:14:866 gamecard/(20407:23463): se guardo el dato 1-1=10
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:15:870 gamecard/(20407:23463): se cerro el archivo : Pikachu
+[INFO] 20:30:15:870 gamecard/(20407:23463): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:30:23:423 gamecard/(20407:23498): se abrio el archivo : Pikachu
+[INFO] 20:30:23:423 gamecard/(20407:23498): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (11)
+[INFO] 20:30:23:423 gamecard/(20407:23498): se limpio el bloque 1
+[INFO] 20:30:23:425 gamecard/(20407:23498): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:30:23:425 gamecard/(20407:23498): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:30:23:425 gamecard/(20407:23498): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:23:425 gamecard/(20407:23498): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=11
+
+[INFO] 20:30:23:426 gamecard/(20407:23498): se guardo el dato 1-1=11
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:24:426 gamecard/(20407:23498): se cerro el archivo : Pikachu
+[INFO] 20:30:24:426 gamecard/(20407:23498): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:30:42:912 gamecard/(20407:23545): se abrio el archivo : Pikachu
+[INFO] 20:30:42:913 gamecard/(20407:23545): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (12)
+[INFO] 20:30:42:913 gamecard/(20407:23545): se limpio el bloque 1
+[INFO] 20:30:42:914 gamecard/(20407:23545): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:30:42:914 gamecard/(20407:23545): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:30:42:914 gamecard/(20407:23545): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:42:915 gamecard/(20407:23545): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=12
+
+[INFO] 20:30:42:915 gamecard/(20407:23545): se guardo el dato 1-1=12
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:30:43:916 gamecard/(20407:23545): se cerro el archivo : Pikachu
+[INFO] 20:30:43:916 gamecard/(20407:23545): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:32:13:805 gamecard/(20407:23856): se abrio el archivo : Pikachu
+[INFO] 20:32:13:806 gamecard/(20407:23856): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (13)
+[INFO] 20:32:13:806 gamecard/(20407:23856): se limpio el bloque 1
+[INFO] 20:32:13:807 gamecard/(20407:23856): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:32:13:808 gamecard/(20407:23856): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:32:13:808 gamecard/(20407:23856): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:32:13:809 gamecard/(20407:23856): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=13
+
+[INFO] 20:32:13:809 gamecard/(20407:23856): se guardo el dato 1-1=13
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:32:14:810 gamecard/(20407:23856): se cerro el archivo : Pikachu
+[INFO] 20:32:14:810 gamecard/(20407:23856): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:32:24:61 gamecard/(20407:23925): se abrio el archivo : Pikachu
+[INFO] 20:32:24:61 gamecard/(20407:23925): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (14)
+[INFO] 20:32:24:61 gamecard/(20407:23925): se limpio el bloque 1
+[INFO] 20:32:24:68 gamecard/(20407:23925): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:32:24:68 gamecard/(20407:23925): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:32:24:68 gamecard/(20407:23925): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:32:24:69 gamecard/(20407:23925): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=14
+
+[INFO] 20:32:24:69 gamecard/(20407:23925): se guardo el dato 1-1=14
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:32:25:69 gamecard/(20407:23925): se cerro el archivo : Pikachu
+[INFO] 20:32:25:70 gamecard/(20407:23925): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:33:06:71 gamecard/(20407:24004): se abrio el archivo : Pikachu
+[INFO] 20:33:06:71 gamecard/(20407:24004): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (15)
+[INFO] 20:33:06:71 gamecard/(20407:24004): se limpio el bloque 1
+[INFO] 20:33:06:92 gamecard/(20407:24004): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:33:06:98 gamecard/(20407:24004): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:33:06:98 gamecard/(20407:24004): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:33:06:101 gamecard/(20407:24004): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=15
+
+[INFO] 20:33:06:101 gamecard/(20407:24004): se guardo el dato 1-1=15
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:33:07:102 gamecard/(20407:24004): se cerro el archivo : Pikachu
+[INFO] 20:33:07:102 gamecard/(20407:24004): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:33:28:560 gamecard/(20407:24071): se abrio el archivo : Pikachu
+[INFO] 20:33:28:560 gamecard/(20407:24071): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (16)
+[INFO] 20:33:28:560 gamecard/(20407:24071): se limpio el bloque 1
+[INFO] 20:33:28:568 gamecard/(20407:24071): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:33:28:568 gamecard/(20407:24071): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:33:28:568 gamecard/(20407:24071): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:33:28:569 gamecard/(20407:24071): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=16
+
+[INFO] 20:33:28:569 gamecard/(20407:24071): se guardo el dato 1-1=16
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:33:29:570 gamecard/(20407:24071): se cerro el archivo : Pikachu
+[INFO] 20:33:29:570 gamecard/(20407:24071): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:33:36:735 gamecard/(20407:24108): se abrio el archivo : Pikachu
+[INFO] 20:33:36:735 gamecard/(20407:24108): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (17)
+[INFO] 20:33:36:735 gamecard/(20407:24108): se limpio el bloque 1
+[INFO] 20:33:36:738 gamecard/(20407:24108): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:33:36:738 gamecard/(20407:24108): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:33:36:738 gamecard/(20407:24108): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:33:36:739 gamecard/(20407:24108): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=17
+
+[INFO] 20:33:36:739 gamecard/(20407:24108): se guardo el dato 1-1=17
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:33:37:740 gamecard/(20407:24108): se cerro el archivo : Pikachu
+[INFO] 20:33:37:745 gamecard/(20407:24108): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:35:51:736 gamecard/(20407:24297): se abrio el archivo : Pikachu
+[INFO] 20:35:51:758 gamecard/(20407:24297): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (18)
+[INFO] 20:35:51:759 gamecard/(20407:24297): se limpio el bloque 1
+[INFO] 20:35:51:772 gamecard/(20407:24297): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:35:51:773 gamecard/(20407:24297): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=9
+
+[INFO] 20:35:51:773 gamecard/(20407:24297): se guardo el dato 2-1=9
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:35:51:802 gamecard/(20407:24297): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:35:51:802 gamecard/(20407:24297): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:35:52:803 gamecard/(20407:24297): se cerro el archivo : Pikachu
+[INFO] 20:35:52:807 gamecard/(20407:24297): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:37:22:645 gamecard/(20407:24397): se abrio el archivo : Pikachu
+[INFO] 20:37:22:645 gamecard/(20407:24397): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (12)
+[INFO] 20:37:22:645 gamecard/(20407:24397): se limpio el bloque 1
+[INFO] 20:37:22:649 gamecard/(20407:24397): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:37:22:650 gamecard/(20407:24397): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:37:22:650 gamecard/(20407:24397): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:37:22:651 gamecard/(20407:24397): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=12
+
+[INFO] 20:37:22:651 gamecard/(20407:24397): se guardo el dato 2-1=12
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:37:23:653 gamecard/(20407:24397): se cerro el archivo : Pikachu
+[INFO] 20:37:23:653 gamecard/(20407:24397): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:42:28:22 gamecard/(20407:25069): se abrio el archivo : Pikachu
+[INFO] 20:42:28:22 gamecard/(20407:25069): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (15)
+[INFO] 20:42:28:22 gamecard/(20407:25069): se limpio el bloque 1
+[INFO] 20:42:28:30 gamecard/(20407:25069): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:42:28:31 gamecard/(20407:25069): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:42:28:31 gamecard/(20407:25069): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:42:28:31 gamecard/(20407:25069): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=15
+
+[INFO] 20:42:28:31 gamecard/(20407:25069): se guardo el dato 2-1=15
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:42:29:32 gamecard/(20407:25069): se cerro el archivo : Pikachu
+[INFO] 20:42:29:32 gamecard/(20407:25069): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:44:49:177 gamecard/(20407:25174): se abrio el archivo : Pikachu
+[INFO] 20:44:49:185 gamecard/(20407:25174): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (18)
+[INFO] 20:44:49:185 gamecard/(20407:25174): se limpio el bloque 1
+[INFO] 20:44:49:199 gamecard/(20407:25174): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:44:49:200 gamecard/(20407:25174): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:44:49:200 gamecard/(20407:25174): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:44:49:201 gamecard/(20407:25174): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=18
+
+[INFO] 20:44:49:201 gamecard/(20407:25174): se guardo el dato 2-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:44:50:201 gamecard/(20407:25174): se cerro el archivo : Pikachu
+[INFO] 20:44:50:201 gamecard/(20407:25174): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:44:51:765 gamecard/(20407:25216): se abrio el archivo : Pikachu
+[INFO] 20:44:51:765 gamecard/(20407:25216): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (21)
+[INFO] 20:44:51:765 gamecard/(20407:25216): se limpio el bloque 1
+[INFO] 20:44:51:768 gamecard/(20407:25216): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:44:51:769 gamecard/(20407:25216): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:44:51:769 gamecard/(20407:25216): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:44:51:773 gamecard/(20407:25216): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=21
+
+[INFO] 20:44:51:774 gamecard/(20407:25216): se guardo el dato 2-1=21
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:44:52:774 gamecard/(20407:25216): se cerro el archivo : Pikachu
+[INFO] 20:44:52:774 gamecard/(20407:25216): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:44:56:632 gamecard/(20407:25251): se abrio el archivo : Pikachu
+[INFO] 20:44:56:632 gamecard/(20407:25251): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (24)
+[INFO] 20:44:56:633 gamecard/(20407:25251): se limpio el bloque 1
+[INFO] 20:44:56:634 gamecard/(20407:25251): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:44:56:639 gamecard/(20407:25251): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:44:56:639 gamecard/(20407:25251): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:44:56:640 gamecard/(20407:25251): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=24
+
+[INFO] 20:44:56:640 gamecard/(20407:25251): se guardo el dato 2-1=24
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:44:57:641 gamecard/(20407:25251): se cerro el archivo : Pikachu
+[INFO] 20:44:57:641 gamecard/(20407:25251): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:45:17:479 gamecard/(20407:25306): se abrio el archivo : Pikachu
+[INFO] 20:45:17:479 gamecard/(20407:25306): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (27)
+[INFO] 20:45:17:479 gamecard/(20407:25306): se limpio el bloque 1
+[INFO] 20:45:17:481 gamecard/(20407:25306): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:45:17:481 gamecard/(20407:25306): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=18
+
+[INFO] 20:45:17:481 gamecard/(20407:25306): se guardo el dato 1-1=18
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:45:17:482 gamecard/(20407:25306): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=27
+
+[INFO] 20:45:17:482 gamecard/(20407:25306): se guardo el dato 2-1=27
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:45:18:483 gamecard/(20407:25306): se cerro el archivo : Pikachu
+[INFO] 20:45:18:483 gamecard/(20407:25306): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:45:26:268 gamecard/(20407:25363): se abrio el archivo : Pikachu
+[INFO] 20:45:26:268 gamecard/(20407:25363): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (19)
+[INFO] 20:45:26:268 gamecard/(20407:25363): se limpio el bloque 1
+[INFO] 20:45:26:270 gamecard/(20407:25363): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:45:26:270 gamecard/(20407:25363): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=27
+
+[INFO] 20:45:26:272 gamecard/(20407:25363): se guardo el dato 2-1=27
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:45:26:273 gamecard/(20407:25363): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=19
+
+[INFO] 20:45:26:273 gamecard/(20407:25363): se guardo el dato 1-1=19
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:45:27:273 gamecard/(20407:25363): se cerro el archivo : Pikachu
+[INFO] 20:45:27:274 gamecard/(20407:25363): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:46:05:471 gamecard/(20407:25445): se abrio el archivo : Pikachu
+[INFO] 20:46:05:472 gamecard/(20407:25445): se reemplazo la cantidad en la posicion (2-1) con la nueva cantidad (30)
+[INFO] 20:46:05:472 gamecard/(20407:25445): se limpio el bloque 1
+[INFO] 20:46:05:475 gamecard/(20407:25445): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:46:05:475 gamecard/(20407:25445): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=19
+
+[INFO] 20:46:05:475 gamecard/(20407:25445): se guardo el dato 1-1=19
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:46:05:476 gamecard/(20407:25445): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=30
+
+[INFO] 20:46:05:477 gamecard/(20407:25445): se guardo el dato 2-1=30
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:46:06:477 gamecard/(20407:25445): se cerro el archivo : Pikachu
+[INFO] 20:46:06:478 gamecard/(20407:25445): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:50:57:223 gamecard/(20407:25645): se abrio el archivo : Pikachu
+[INFO] 20:50:57:223 gamecard/(20407:25645): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (20)
+[INFO] 20:50:57:223 gamecard/(20407:25645): se limpio el bloque 1
+[INFO] 20:50:57:228 gamecard/(20407:25645): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:50:57:239 gamecard/(20407:25645): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=30
+
+[INFO] 20:50:57:239 gamecard/(20407:25645): se guardo el dato 2-1=30
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:50:57:240 gamecard/(20407:25645): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=20
+
+[INFO] 20:50:57:240 gamecard/(20407:25645): se guardo el dato 1-1=20
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:50:58:242 gamecard/(20407:25645): se cerro el archivo : Pikachu
+[INFO] 20:50:58:242 gamecard/(20407:25645): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:51:02:968 gamecard/(20407:25687): se abrio el archivo : Pikachu
+[INFO] 20:51:02:969 gamecard/(20407:25687): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (21)
+[INFO] 20:51:02:969 gamecard/(20407:25687): se limpio el bloque 1
+[INFO] 20:51:02:973 gamecard/(20407:25687): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:51:02:973 gamecard/(20407:25687): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=30
+
+[INFO] 20:51:02:973 gamecard/(20407:25687): se guardo el dato 2-1=30
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:51:02:974 gamecard/(20407:25687): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=21
+
+[INFO] 20:51:02:974 gamecard/(20407:25687): se guardo el dato 1-1=21
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:51:03:975 gamecard/(20407:25687): se cerro el archivo : Pikachu
+[INFO] 20:51:03:975 gamecard/(20407:25687): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 20:52:32:364 gamecard/(20407:25781): se abrio el archivo : Pikachu
+[INFO] 20:52:32:364 gamecard/(20407:25781): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (22)
+[INFO] 20:52:32:364 gamecard/(20407:25781): se limpio el bloque 1
+[INFO] 20:52:32:365 gamecard/(20407:25781): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 20:52:32:366 gamecard/(20407:25781): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=30
+
+[INFO] 20:52:32:366 gamecard/(20407:25781): se guardo el dato 2-1=30
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:52:32:367 gamecard/(20407:25781): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=22
+
+[INFO] 20:52:32:367 gamecard/(20407:25781): se guardo el dato 1-1=22
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 20:52:33:368 gamecard/(20407:25781): se cerro el archivo : Pikachu
+[INFO] 20:52:33:368 gamecard/(20407:25781): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 21:00:32:814 gamecard/(20407:26289): se abrio el archivo : Pikachu
+[INFO] 21:00:32:814 gamecard/(20407:26289): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (23)
+[INFO] 21:00:32:815 gamecard/(20407:26289): se limpio el bloque 1
+[INFO] 21:00:32:831 gamecard/(20407:26289): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 21:00:32:831 gamecard/(20407:26289): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=30
+
+[INFO] 21:00:32:831 gamecard/(20407:26289): se guardo el dato 2-1=30
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 21:00:32:832 gamecard/(20407:26289): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=23
+
+[INFO] 21:00:32:832 gamecard/(20407:26289): se guardo el dato 1-1=23
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 21:00:33:833 gamecard/(20407:26289): se cerro el archivo : Pikachu
+[INFO] 21:00:33:833 gamecard/(20407:26289): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 21:00:38:449 gamecard/(20407:26326): se abrio el archivo : Pikachu
+[INFO] 21:00:38:449 gamecard/(20407:26326): se reemplazo la cantidad en la posicion (1-1) con la nueva cantidad (24)
+[INFO] 21:00:38:449 gamecard/(20407:26326): se limpio el bloque 1
+[INFO] 21:00:38:451 gamecard/(20407:26326): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 21:00:38:451 gamecard/(20407:26326): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 2-1=30
+
+[INFO] 21:00:38:451 gamecard/(20407:26326): se guardo el dato 2-1=30
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 21:00:38:452 gamecard/(20407:26326): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1-1=24
+
+[INFO] 21:00:38:452 gamecard/(20407:26326): se guardo el dato 1-1=24
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 21:00:39:453 gamecard/(20407:26326): se cerro el archivo : Pikachu
+[INFO] 21:00:39:453 gamecard/(20407:26326): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 21:05:47:466 gamecard/(27008:27008): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 21:05:47:466 gamecard/(27008:27008): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 21:05:47:466 gamecard/(27008:27008): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 21:06:25:811 gamecard/(27008:27012): se asigno el bloque [2] al bitmap
+[INFO] 21:06:25:811 gamecard/(27008:27012): se asigno el bloque [2] al files del pokemon : ola
+[INFO] 21:06:25:811 gamecard/(27008:27012): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/ola/Metadata.bin 
+[INFO] 21:06:25:812 gamecard/(27008:27012): se abrio el archivo : ola
+[INFO] 21:06:25:812 gamecard/(27008:27012): se escribio el bloque 2 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/ola/Metadata.bin  con el dato 1-5=12
+
+[INFO] 21:06:25:812 gamecard/(27008:27012): se guardo el dato 1-5=12
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 21:06:25:812 gamecard/(27008:27012): se agrego la posicion (1-5) con la cantidad (12)
+[INFO] 21:06:26:812 gamecard/(27008:27012): se cerro el archivo : ola
+[INFO] 21:06:26:813 gamecard/(27008:27012): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de ola
+[INFO] 21:10:09:152 gamecard/(27601:27601): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 21:10:09:152 gamecard/(27601:27601): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 21:10:09:153 gamecard/(27601:27601): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 21:10:15:207 gamecard/(27601:27607): se asigno el bloque [0] al bitmap
+[INFO] 21:10:15:207 gamecard/(27601:27607): se asigno el bloque [0] al files del pokemon : olaxd
+[INFO] 21:10:15:207 gamecard/(27601:27607): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin 
+[INFO] 21:10:15:211 gamecard/(27601:27607): se abrio el archivo : olaxd
+[INFO] 21:10:15:212 gamecard/(27601:27607): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=7
+
+[INFO] 21:10:15:212 gamecard/(27601:27607): se guardo el dato 5-6=7
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:15:212 gamecard/(27601:27607): se agrego la posicion (5-6) con la cantidad (7)
+[INFO] 21:10:16:213 gamecard/(27601:27607): se cerro el archivo : olaxd
+[INFO] 21:10:16:213 gamecard/(27601:27607): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd
+[INFO] 21:10:17:962 gamecard/(27601:27649): se abrio el archivo : olaxd
+[INFO] 21:10:17:963 gamecard/(27601:27649): se reemplazo la cantidad en la posicion (5-6) con la nueva cantidad (14)
+[INFO] 21:10:17:963 gamecard/(27601:27649): se limpio el bloque 0
+[INFO] 21:10:17:973 gamecard/(27601:27649): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin
+[INFO] 21:10:17:973 gamecard/(27601:27649): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=14
+
+[INFO] 21:10:17:973 gamecard/(27601:27649): se guardo el dato 5-6=14
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:18:973 gamecard/(27601:27649): se cerro el archivo : olaxd
+[INFO] 21:10:18:975 gamecard/(27601:27649): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd
+[INFO] 21:10:18:991 gamecard/(27601:27684): se abrio el archivo : olaxd
+[INFO] 21:10:18:992 gamecard/(27601:27684): se reemplazo la cantidad en la posicion (5-6) con la nueva cantidad (21)
+[INFO] 21:10:18:992 gamecard/(27601:27684): se limpio el bloque 0
+[INFO] 21:10:18:995 gamecard/(27601:27684): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin
+[INFO] 21:10:18:995 gamecard/(27601:27684): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=21
+
+[INFO] 21:10:18:995 gamecard/(27601:27684): se guardo el dato 5-6=21
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:19:913 gamecard/(27601:27719): se abrio el archivo : olaxd
+[INFO] 21:10:19:913 gamecard/(27601:27719): se reemplazo la cantidad en la posicion (5-6) con la nueva cantidad (28)
+[INFO] 21:10:19:913 gamecard/(27601:27719): se limpio el bloque 0
+[INFO] 21:10:19:918 gamecard/(27601:27719): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin
+[INFO] 21:10:19:918 gamecard/(27601:27719): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=28
+
+[INFO] 21:10:19:918 gamecard/(27601:27719): se guardo el dato 5-6=28
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:19:996 gamecard/(27601:27684): se cerro el archivo : olaxd
+[INFO] 21:10:19:996 gamecard/(27601:27684): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd
+[INFO] 21:10:20:605 gamecard/(27601:27754): se abrio el archivo : olaxd
+[INFO] 21:10:20:605 gamecard/(27601:27754): se reemplazo la cantidad en la posicion (5-6) con la nueva cantidad (35)
+[INFO] 21:10:20:605 gamecard/(27601:27754): se limpio el bloque 0
+[INFO] 21:10:20:611 gamecard/(27601:27754): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin
+[INFO] 21:10:20:611 gamecard/(27601:27754): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=35
+
+[INFO] 21:10:20:611 gamecard/(27601:27754): se guardo el dato 5-6=35
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:20:919 gamecard/(27601:27719): se cerro el archivo : olaxd
+[INFO] 21:10:20:919 gamecard/(27601:27719): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd
+[INFO] 21:10:21:612 gamecard/(27601:27754): se cerro el archivo : olaxd
+[INFO] 21:10:21:612 gamecard/(27601:27754): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd
+[INFO] 21:10:21:714 gamecard/(27601:27789): se abrio el archivo : olaxd
+[INFO] 21:10:21:717 gamecard/(27601:27789): se reemplazo la cantidad en la posicion (5-6) con la nueva cantidad (42)
+[INFO] 21:10:21:717 gamecard/(27601:27789): se limpio el bloque 0
+[INFO] 21:10:21:721 gamecard/(27601:27789): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin
+[INFO] 21:10:21:721 gamecard/(27601:27789): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=42
+
+[INFO] 21:10:21:721 gamecard/(27601:27789): se guardo el dato 5-6=42
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:22:606 gamecard/(27601:27824): se abrio el archivo : olaxd
+[INFO] 21:10:22:606 gamecard/(27601:27824): se reemplazo la cantidad en la posicion (5-6) con la nueva cantidad (49)
+[INFO] 21:10:22:613 gamecard/(27601:27824): se limpio el bloque 0
+[INFO] 21:10:22:617 gamecard/(27601:27824): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin
+[INFO] 21:10:22:617 gamecard/(27601:27824): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/olaxd/Metadata.bin  con el dato 5-6=49
+
+[INFO] 21:10:22:617 gamecard/(27601:27824): se guardo el dato 5-6=49
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 21:10:22:722 gamecard/(27601:27789): se cerro el archivo : olaxd
+[INFO] 21:10:22:722 gamecard/(27601:27789): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd
+[INFO] 21:10:23:618 gamecard/(27601:27824): se cerro el archivo : olaxd
+[INFO] 21:10:23:618 gamecard/(27601:27824): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de olaxd

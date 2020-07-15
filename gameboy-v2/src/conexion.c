@@ -16,11 +16,11 @@ int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger) {
 	int socket_cliente = socket(server_info->ai_family, server_info->ai_socktype, server_info->ai_protocol);
 
 	if(connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen) == -1){
-		log_error(logger, string_from_format("El cliente fallo al conectarse en IP: %s y PUERTO: %s", ip, puerto));
-		log_error(mi_log, string_from_format("El cliente fallo al conectarse en IP: %s y PUERTO: %s", ip, puerto));
+		log_error(logger, "El cliente fallo al conectarse en IP: %s y PUERTO: %s", ip, puerto);
+		log_error(mi_log, "El cliente fallo al conectarse en IP: %s y PUERTO: %s", ip, puerto);
 	}else{
-		log_info(logger, string_from_format("El cliente se conecto exitosamente en IP: %s y PUERTO: %s", ip, puerto));
-		log_info(mi_log, string_from_format("El cliente se conecto exitosamente en IP: %s y PUERTO: %s", ip, puerto));
+		log_info(logger, "El cliente se conecto exitosamente en IP: %s y PUERTO: %s", ip, puerto);
+		log_info(mi_log, "El cliente se conecto exitosamente en IP: %s y PUERTO: %s", ip, puerto);
 	}
 	freeaddrinfo(server_info);
 	return socket_cliente;
@@ -63,8 +63,8 @@ void enviar_mensaje_appeared_broker(t_appeared_pokemon appeared_pokemon, int soc
 	//log_info(mi_log,string_from_format("sizes: %d",size_serializados));
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker()));
-		log_info(mi_log, string_from_format("Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker()));
+		log_info(logger, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
+		log_info(mi_log, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje APPEARED.");
 		log_error(mi_log, "No se pudo enviar el mensaje APPEARED.");
@@ -108,8 +108,8 @@ void enviar_mensaje_appeared_team(t_appeared_pokemon appeared_pokemon, int socke
 	//log_info(mi_log,string_from_format("sizes: %d",size_serializados));
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker()));
-		log_info(mi_log, string_from_format("Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker()));
+		log_info(logger, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
+		log_info(mi_log, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje APPEARED.");
 		log_error(mi_log, "No se pudo enviar el mensaje APPEARED.");
@@ -152,7 +152,7 @@ void enviar_mensaje_new_broker(t_new_pokemon new_pokemon, int socket){
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje NEW: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker));
+		log_info(logger, "Se envio el mensaje NEW: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker);
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje NEW.");
 	}
@@ -196,7 +196,7 @@ void enviar_mensaje_new_gamecard(t_new_pokemon new_pokemon, int socket, int id_m
 	void *mensaje_a_enviar = serializar_paquete_con_id(paquete,size_serializados,id_mensaje);
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje NEW: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker));
+		log_info(logger, "Se envio el mensaje NEW: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker);
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje NEW.");
 	}
@@ -238,7 +238,7 @@ void enviar_mensaje_catch_gamecard(t_catch_pokemon catch_pokemon, int socket, ui
 	void *mensaje_a_enviar = serializar_paquete_con_id(paquete,size_serializados,id_mensaje);
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje CATCH: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker));
+		log_info(logger, "Se envio el mensaje CATCH: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker);
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje CATCH.");
 	}
@@ -282,7 +282,7 @@ void enviar_mensaje_catch_broker(t_catch_pokemon catch_pokemon, int socket){
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje CATCH: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker));
+		log_info(logger, "Se envio el mensaje CATCH: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker);
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje CATCH.");
 	}
@@ -317,7 +317,7 @@ void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,ui
 	log_info(mi_log,string_from_format("sizes: %d",size_serializados));
 
 	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se envio el mensaje CAUGHT: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker() ));
+		log_info(logger, "Se envio el mensaje CAUGHT: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje CAUGHT.");
 	}
@@ -353,7 +353,7 @@ void enviar_mensaje_get_gamecard(t_get_pokemon get_pokemon, int socket, uint32_t
 	int envio = send(socket,mensaje_a_enviar,size_serializados,0);
 
 	if(envio > 0){
-		log_info(logger, string_from_format("Se envio el mensaje GET a IP: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker()));
+		log_info(logger, "Se envio el mensaje GET a IP: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje GET.");
 	}
@@ -388,7 +388,7 @@ void enviar_mensaje_get_broker(t_get_pokemon get_pokemon, int socket){
 	int envio = send(socket,mensaje_a_enviar,size_serializados,0);
 
 	if(envio > 0){
-		log_info(logger, string_from_format("Se envio el mensaje GET a IP: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker()));
+		log_info(logger, "Se envio el mensaje GET a IP: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje GET.");
 	}
@@ -422,9 +422,9 @@ void suscribirse_a_cola(int cola, int tiempo, int socket_broker){
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
 	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, string_from_format("Se suscribio correctamente a la cola %d", cola));
+		log_info(logger, "Se suscribio correctamente a la cola %d", cola);
 	}else{
-		log_error(logger, string_from_format("No se pudo suscribir a la cola %d",cola));
+		log_error(logger,"No se pudo suscribir a la cola %d",cola);
 	}
 
 
