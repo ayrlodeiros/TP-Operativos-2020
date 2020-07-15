@@ -23,6 +23,7 @@ int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger) {
 		log_info(mi_log, "El cliente se conecto exitosamente en IP: %s y PUERTO: %s", ip, puerto);
 	}
 	freeaddrinfo(server_info);
+	free(puerto);
 	return socket_cliente;
 }
 
