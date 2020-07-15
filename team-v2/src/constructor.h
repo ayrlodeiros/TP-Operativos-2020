@@ -167,7 +167,7 @@ typedef struct
 
 typedef struct
 {
-	int socket;
+	int conexion;
 	entrenador* entrenador;
 } socket_y_entrenador;
 

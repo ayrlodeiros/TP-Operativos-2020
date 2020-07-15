@@ -36,7 +36,7 @@ void mostrar_objetivo_global(char* key, void* value) {
 void iniciar_team() {
 	iniciar_config();
 	logger = log_create(leer_log_file(), "team", false, LOG_LEVEL_INFO);
-	nuestro_log = log_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/nuestro_log.txt", "team", true, LOG_LEVEL_INFO);
+	nuestro_log = log_create(leer_nuestro_log_file(), "team", true, LOG_LEVEL_INFO);
 	//Iniciamos las variables globales del constructor
 	iniciar_variables_globales();
 }

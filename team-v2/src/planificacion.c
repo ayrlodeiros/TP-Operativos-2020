@@ -28,6 +28,8 @@ void planificar(){
 
 void fifo(){
 
+	int id_entrenador_anterior = -1;
+
 	for(int j = 0; j< list_size(entrenadores);j++){
 		evaluar_y_atacar_deadlock();
 	}
@@ -39,13 +41,17 @@ void fifo(){
 
 		entrenador* entrenador_a_ejecutar = obtener_primer_entrenador_ready();
 
+		//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+		evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+		id_entrenador_anterior = entrenador_a_ejecutar->id;
+
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			ejecutar(entrenador_a_ejecutar);
 		}
 
-		evaluar_y_atacar_deadlock();
+		evaluar_si_entrenador_termino(entrenador_a_ejecutar);
 
-		cantidad_de_cambios_de_contexto++;
+		evaluar_y_atacar_deadlock();
 
 	}
 
@@ -55,6 +61,7 @@ void fifo(){
 void round_robin(){
 
 	int quantum_restante;
+	int id_entrenador_anterior = -1;
 
 	for(int j = 0; j< list_size(entrenadores);j++){
 		evaluar_y_atacar_deadlock();
@@ -66,6 +73,10 @@ void round_robin(){
 		}
 
 		entrenador* entrenador_a_ejecutar = obtener_primer_entrenador_ready();
+
+		//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+		evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+		id_entrenador_anterior = entrenador_a_ejecutar->id;
 
 		quantum_restante = leer_quantum();
 
@@ -96,9 +107,9 @@ void round_robin(){
 			list_add(entrenadores_ready,entrenador_a_ejecutar);
 		}
 
-		evaluar_y_atacar_deadlock();
+		evaluar_si_entrenador_termino(entrenador_a_ejecutar);
 
-		cantidad_de_cambios_de_contexto++;
+		evaluar_y_atacar_deadlock();
 	}
 
 	terminar_team();
@@ -106,6 +117,7 @@ void round_robin(){
 
 void sjf_sin_desalojo(){
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
+	int id_entrenador_anterior = -1;
 
 	for(int j = 0; j< list_size(entrenadores);j++){
 		evaluar_y_atacar_deadlock();
@@ -128,13 +140,17 @@ void sjf_sin_desalojo(){
 
 		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
 
+		//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+		evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+		id_entrenador_anterior = entrenador_a_ejecutar->id;
+
 		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
 			log_info(nuestro_log, "Estimado de entrenador %d es %f", entrenador_a_ejecutar->id, entrenador_a_ejecutar->cpu_estimado_restante);
 			ejecutar(entrenador_a_ejecutar);
 		}
 
+		evaluar_si_entrenador_termino(entrenador_a_ejecutar);
 		evaluar_y_atacar_deadlock();
-		cantidad_de_cambios_de_contexto++;
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
@@ -145,6 +161,7 @@ void sjf_sin_desalojo(){
 void sjf_con_desalojo(){
 
 	t_list* entrenadores_con_rafagas_estimadas = list_create();
+	int id_entrenador_anterior = -1;
 
 	for(int j = 0; j< list_size(entrenadores);j++){
 		evaluar_y_atacar_deadlock();
@@ -171,6 +188,10 @@ void sjf_con_desalojo(){
 
 			entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
 
+			//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+			evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+			id_entrenador_anterior = entrenador_a_ejecutar->id;
+
 			accion* proxima_accion = list_get(entrenador_a_ejecutar->acciones, 0);
 
 			log_info(nuestro_log, "Estimado restante de entrenador %d es %f", entrenador_a_ejecutar->id, entrenador_a_ejecutar->cpu_estimado_restante);
@@ -180,6 +201,7 @@ void sjf_con_desalojo(){
 				//Vuelvo a setear el cpu acumulado anterior en 1
 				entrenador_a_ejecutar->cpu_sjf_anterior = 1;
 
+				evaluar_si_entrenador_termino(entrenador_a_ejecutar);
 				//Cuando realmente se ejecuta la accion es cuando hay que evaluar el deadlock
 				evaluar_y_atacar_deadlock();
 
@@ -198,7 +220,6 @@ void sjf_con_desalojo(){
 			}
 
 		}
-		cantidad_de_cambios_de_contexto++;
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
@@ -245,6 +266,19 @@ entrenador* obtener_primer_entrenador_ready() {
 	entrenador* entrenador_ready = list_remove(entrenadores_ready, 0);
 	pthread_mutex_unlock(&mutex_entrenadores_ready);
 	return entrenador_ready;
+}
+
+void evaluar_cambio_de_contexto(int id_entrenador_anterior, int id_entrenador_actual) {
+	if(id_entrenador_anterior != id_entrenador_actual) {
+		cantidad_de_cambios_de_contexto++;
+	}
+}
+
+void evaluar_si_entrenador_termino(entrenador* entrenador_a_evaluar) {
+	if(entrenador_a_evaluar->estado == BLOCK_READY) {
+		//Mando señal de que hay entrenador disponible para que pueda replanificar si quedaron pokemons sin atender
+		pthread_mutex_unlock(&lock_de_entrenador_disponible);
+	}
 }
 
 void evaluar_y_atacar_deadlock() {
