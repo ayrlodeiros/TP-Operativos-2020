@@ -10,6 +10,7 @@
 #include<netdb.h>
 #include<pthread.h>
 #include<string.h>
+#include <time.h>
 #include<commons/log.h>
 #include<commons/config.h>
 #include<commons/collections/queue.h>
@@ -19,9 +20,7 @@
 
 /* ADMINISTRACION DE MEMORIA */
 void* memoria_principal;
-int orden_de_llegada; // TODO preguntar a Agus si se usa esta variable
-t_list* lista_particiones_dinamicas;
-t_list* lista_particiones_bs;
+t_list* lista_particiones;
 int ultima_pos;
 
 /** VG Para manejar ids mensajes */
@@ -169,6 +168,8 @@ pthread_mutex_t mutex_agregar_msj_a_cola;
 
 void iniciar_funcionalidades();
 
+/* Dump de memoria */
+void fecha_dump(void);
 void iniciar_signal_handler();
 void signal_handler(int signo);
 

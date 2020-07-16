@@ -16,9 +16,24 @@ void iniciar_signal_handler() {
 	}
 }
 
+void dump__principio_fecha(){
+	time_t t = time(NULL);
+	struct tm time = *localtime(&t);
+	log_info(mi_log,"*********************************");
+	log_info(mi_log,"Dump: %d/%02d/%02d %02d:%02d:%02d\n", time.tm_mday , time.tm_mon + 1, time.tm_year + 1900 , time.tm_hour, time.tm_min, time.tm_sec);
+}
+
 // TODO modificar en funcion de lo que dice el enunciado
+
 void signal_handler(int signo) {
-	log_info(mi_log,"Se recibio la SIGURS1");
+
+	dump__principio_fecha();
+
+	/*for(int i = 0; list_size(lista_particiones) ;i++){
+
+	}
+	 */
+	log_info(mi_log,"*********************************");
 }
 
 void inicializar_semaforos() {
@@ -392,8 +407,8 @@ void inicializar_lista_particiones(){
 	primera_part->inicio = 0;
 	primera_part->fin = leer_tamano_memoria();
 	primera_part->libre = true;
-	lista_particiones_dinamicas = list_create();
-	list_add(lista_particiones_dinamicas,primera_part);
+	lista_particiones = list_create();
+	list_add(lista_particiones,primera_part);
 }
 
 int obtener_posicion_particiones(int tamanio) {
@@ -462,7 +477,7 @@ void compactacion(){
 
 		t_struct_temporal* aux = list_get(lista_temporal,i);
 		t_particion_dinamica* particion = aux->particion;
-		list_add(lista_particiones_dinamicas,particion);
+		list_add(lista_particiones,particion);
 		particion->inicio = prox_posicion;
 		particion->fin = prox_posicion + particion->tamanio_ocupado -1;
 		prox_posicion = prox_posicion + particion->tamanio_ocupado;
@@ -478,7 +493,7 @@ void compactacion(){
 	t_particion_dinamica* particion_libre = crear_particion_dinamica_libre();
 	particion_libre->inicio = prox_posicion;
 	particion_libre->fin = leer_tamano_memoria() - 1;
-	list_add(lista_particiones_dinamicas,particion_libre);
+	list_add(lista_particiones,particion_libre);
 
 	}
 
@@ -487,9 +502,9 @@ void llenar_memoria_principal(int posicion, int tamanio, void* mensaje){
 }
 
 t_list* obtener_particiones_ocupadas(){
-	t_list* particiones_ocupadas = list_filter(lista_particiones_dinamicas,estaOcupado);//filtrar lista de particiones llenas
-	t_list* particiones_libres = list_filter(lista_particiones_dinamicas,noEstaOcupado);
-	list_clean(lista_particiones_dinamicas);
+	t_list* particiones_ocupadas = list_filter(lista_particiones,estaOcupado);//filtrar lista de particiones llenas
+	t_list* particiones_libres = list_filter(lista_particiones,noEstaOcupado);
+	list_clean(lista_particiones);
 	list_destroy_and_destroy_elements(particiones_libres,borrarParticion);
 	return particiones_ocupadas;
 }
@@ -527,8 +542,8 @@ int algoritmo_reemplazo_fifo(void){
 	t_particion_dinamica* primera_particion = NULL;
 		int pos_primera_particion;
 
-		for (int i = 0; list_size(lista_particiones_dinamicas) > 0 ;i++){
-			t_particion_dinamica* particion = list_get(lista_particiones_dinamicas,i);
+		for (int i = 0; list_size(lista_particiones) > 0 ;i++){
+			t_particion_dinamica* particion = list_get(lista_particiones,i);
 
 			if(!esta_libre(particion)){
 
@@ -552,8 +567,8 @@ int algoritmo_reemplazo_lru(void){
 	t_particion_dinamica* part_menos_usada = NULL;
 	int pos_part_menos_usada;
 
-	for (int i = 0; list_size(lista_particiones_dinamicas) > 0 ;i++){
-		t_particion_dinamica* particion = list_get(lista_particiones_dinamicas,i);
+	for (int i = 0; list_size(lista_particiones) > 0 ;i++){
+		t_particion_dinamica* particion = list_get(lista_particiones,i);
 
 		if(!esta_libre(particion)){
 
@@ -575,34 +590,34 @@ int algoritmo_reemplazo_lru(void){
 /* Supongo que funciona pero seguro se puede mejorar */
 void consolidar(int pos_particion){
 
-	t_particion_dinamica* liberada = list_get(lista_particiones_dinamicas,pos_particion);
+	t_particion_dinamica* liberada = list_get(lista_particiones,pos_particion);
 	t_particion_dinamica* aux = liberada;
 	int pos = pos_particion;
 
 	if(particion_libre_a_la_izquierda(pos_particion)){
-		t_particion_dinamica* izquierda = list_get(lista_particiones_dinamicas,pos_particion-1);
+		t_particion_dinamica* izquierda = list_get(lista_particiones,pos_particion-1);
 		izquierda->fin = liberada->fin;
-		list_remove(lista_particiones_dinamicas,pos_particion);
+		list_remove(lista_particiones,pos_particion);
 		free(liberada);
 		aux = izquierda;
 		pos = pos_particion -1;
 	}
 	if (particion_libre_a_la_derecha(pos)){
 
-		t_particion_dinamica* derecha = list_get(lista_particiones_dinamicas,pos+1);
+		t_particion_dinamica* derecha = list_get(lista_particiones,pos+1);
 		aux->inicio = derecha->inicio;
-		list_remove(lista_particiones_dinamicas,pos+1);
+		list_remove(lista_particiones,pos+1);
 		free(derecha);
 	}
 }
 
 bool particion_libre_a_la_izquierda(int posicion){
-	return posicion - 1 >= 0 && esta_libre(list_get(lista_particiones_dinamicas,posicion-1));
+	return posicion - 1 >= 0 && esta_libre(list_get(lista_particiones,posicion-1));
 
 }
 
 bool particion_libre_a_la_derecha(int posicion){
-	return posicion + 1 <= leer_tamano_memoria()-1 && esta_libre(list_get(lista_particiones_dinamicas,posicion+1));
+	return posicion + 1 <= leer_tamano_memoria()-1 && esta_libre(list_get(lista_particiones,posicion+1));
 }
 
 
@@ -624,8 +639,8 @@ int algoritmo_best_fit(int tamanio){
 	int dif_mejor_part = -1;
 	int posicion_mejor_part;
 
-	for(int i = 0; list_size(lista_particiones_dinamicas) > i ; i++ ){
-		t_particion_dinamica* particion_actual = list_get(lista_particiones_dinamicas,i);
+	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
+		t_particion_dinamica* particion_actual = list_get(lista_particiones,i);
 
 
 		if(esta_libre(particion_actual)){
@@ -661,8 +676,8 @@ int algoritmo_first_fit(int tamanio){
 
 	t_particion_dinamica* particion;
 
-	for(int i = 0;list_size(lista_particiones_dinamicas) > i; i++){
-		particion = list_get(lista_particiones_dinamicas,i);
+	for(int i = 0;list_size(lista_particiones) > i; i++){
+		particion = list_get(lista_particiones,i);
 
 		if(esta_libre(particion)){
 			/* Esto es porque hay un minimo en el tamanio de particiones */
@@ -705,7 +720,7 @@ int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamani
 	particion->tiempo_ingreso = timestamp();
 	particion->ult_vez_usado = timestamp();
 
-	list_add_in_index(lista_particiones_dinamicas,posicion_en_lista+1,nueva_particion);
+	list_add_in_index(lista_particiones,posicion_en_lista+1,nueva_particion);
 
 	return particion->inicio;
 
@@ -737,7 +752,7 @@ int tamanio_particion(t_particion_dinamica* particion){
 void inicializar_lista_bs(){
 	int tamanio_memoria = leer_tamano_memoria();
 
-	lista_particiones_bs = list_create();
+	lista_particiones = list_create();
 	t_particion_bs* primera_part = malloc(sizeof(t_particion_bs));
 	primera_part->inicio = 0;
 	primera_part->fin = tamanio_memoria; // Ver si usar el -1
@@ -767,7 +782,7 @@ int obtener_posicion_bs(int tamanio) {
 		posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_deseada);
 	}
 
-	t_particion_bs* posible_particion = list_get(lista_particiones_bs, posicion_de_particion_en_lista);
+	t_particion_bs* posible_particion = list_get(lista_particiones, posicion_de_particion_en_lista);
 
 	//SI LA POTENCIA DE DOS DE LA PARTICION ENCONTRADA NO ES IGUAL A LA DESEADA SE PARTICIONA A LA PARTICION
 	if(posible_particion->potencia_de_dos != potencia_de_dos_deseada) {
@@ -800,8 +815,8 @@ int obtener_potencia_de_dos_mas_cercana(int valor) {
 int obtener_posicion_particion_mas_cercana(int potencia_de_dos) {
 	int posicion = -1;
 
-	for(int i = 0; i < list_size(lista_particiones_bs); i++) {
-		t_particion_bs* posible_particion = list_get(lista_particiones_bs, i);
+	for(int i = 0; i < list_size(lista_particiones); i++) {
+		t_particion_bs* posible_particion = list_get(lista_particiones, i);
 		if(posible_particion->libre) {
 			if(posible_particion->potencia_de_dos == potencia_de_dos) {
 				return i;
@@ -844,8 +859,8 @@ int obtener_posicion_de_particion_liberada_fifo() {
 	t_particion_bs* particion_objetivo = NULL;
 	int posicion;
 
-	for(int i = 0; i<list_size(lista_particiones_bs); i++) {
-		t_particion_bs* particion_aux = list_get(lista_particiones_bs, i);
+	for(int i = 0; i<list_size(lista_particiones); i++) {
+		t_particion_bs* particion_aux = list_get(lista_particiones, i);
 		if(!(particion_aux->libre) && (particion_objetivo == NULL || particion_aux->tiempo_ingreso < particion_objetivo->tiempo_ingreso)) {
 			particion_objetivo = particion_aux;
 			posicion = i;
@@ -862,8 +877,8 @@ int obtener_posicion_de_particion_liberada_lru() {
 	t_particion_bs* particion_objetivo = NULL;
 	int posicion;
 
-	for(int i = 0; i<list_size(lista_particiones_bs); i++) {
-		t_particion_bs* particion_aux = list_get(lista_particiones_bs, i);
+	for(int i = 0; i<list_size(lista_particiones); i++) {
+		t_particion_bs* particion_aux = list_get(lista_particiones, i);
 		if(!(particion_aux->libre) && (particion_objetivo == NULL || particion_aux->ult_vez_usado < particion_objetivo->ult_vez_usado)) {
 			particion_objetivo = particion_aux;
 			posicion = i;
@@ -886,7 +901,7 @@ int evaluar_consolidacion(int posicion_buddy_1) {
 		posicion_buddy_2 = posicion_buddy_1 - 1;
 	}
 
-	t_particion_bs* buddy_2 = list_get(lista_particiones_bs, posicion_buddy_2);
+	t_particion_bs* buddy_2 = list_get(lista_particiones, posicion_buddy_2);
 
 	if(buddy_2->libre) {
 		int posicion_mas_chica;
@@ -895,7 +910,7 @@ int evaluar_consolidacion(int posicion_buddy_1) {
 			consolidar_buddies(posicion_buddy_1, buddy_2);
 		} else {
 			posicion_mas_chica = posicion_buddy_1;
-			consolidar_buddies(posicion_buddy_2, list_get(lista_particiones_bs, posicion_buddy_1));
+			consolidar_buddies(posicion_buddy_2, list_get(lista_particiones, posicion_buddy_1));
 		}
 
 		return posicion_mas_chica;
@@ -905,7 +920,7 @@ int evaluar_consolidacion(int posicion_buddy_1) {
 }
 
 void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener) {
-	t_particion_bs* buddy_eliminado = list_remove(lista_particiones_bs, posicion_buddy_a_eliminar);
+	t_particion_bs* buddy_eliminado = list_remove(lista_particiones, posicion_buddy_a_eliminar);
 
 
 	buddy_a_mantener->potencia_de_dos++;
@@ -916,7 +931,7 @@ void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_m
 }
 
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada) {
-	t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
+	t_particion_bs* particion_a_particionar = list_get(lista_particiones, posicion_a_particionar);
 
 	int tamanio_actual = potencia(2, particion_a_particionar->potencia_de_dos);
 	int tamanio_deseado = potencia(2, potencia_de_dos_deseada);
@@ -941,7 +956,7 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 	// AGREGO LAS NUEVAS PARTICIONES A LA LISTA DE PARTICIONES, DETRAS DE LA PARTICION QUE CREE
 	posicion_a_particionar++;
 	for(int i = 0; i < list_size(lista_auxiliar); i++) {
-		list_add_in_index(lista_particiones_bs, posicion_a_particionar+i, list_get(lista_auxiliar, i));
+		list_add_in_index(lista_particiones, posicion_a_particionar+i, list_get(lista_auxiliar, i));
 	}
 
 
