@@ -50,15 +50,81 @@ bool estaOcupado(void* elemento){
 	return ((t_particion_dinamica*)elemento)->libre;
 }
 
+bool noEstaOcupado(void* elemento){
+	return !((t_particion_dinamica*)elemento)->libre;
+}
+
+void borrarParticion(void* elemento){
+	free((t_particion_dinamica*) elemento);
+}
+
+// Lo dejo work in progress, basicamente para la compactacion para eliminar los particiones libres pensaba
+/*bool libresPrimero(void* elemento,void* elementoDos){
+	if( ((t_particion_dinamica*)elemento)->libre && !((t_particion_dinamica*)elementoDos)->libre ){
+		return true;
+	}
+	if(){
+
+}
+*/
 
 void compactacion(){
-	t_list* particiones_ocupadas = list_filter(lista_particiones_dinamicas,estaOcupado);//filtrar lista de particiones llenas
 
-	//elimnar particiones vacias de la lista
-	//guardarme temporalmente los mensajes en las particiones vacias
-	//ir llenando nuevamente la lista con las particiones llenas y copiando los mensajes en la pos correspondiente de la memoria (recordar eliminar memoria aux creada)
+	t_list* particiones_ocupadas = obtener_particiones_ocupadas();
+	/* Hasta aca la lista de particiones, borre todas las estructuras que estaban libres y me quede con una nueva lista de particiones ocupadas */
+	//todo esta medio a lo bestia, despues ver si se puede mejorar
+
+	t_list* lista_temporal = crear_list_temporal(particiones_ocupadas);;
+	int prox_posicion = 0;
+	for(int i = 0; list_size(lista_temporal);i++){
+
+		t_struct_temporal* aux = list_get(lista_temporal,i);
+		t_particion_dinamica* particion = aux->particion;
+		list_add(lista_particiones_dinamicas,particion);
+		particion->inicio = prox_posicion;
+		particion->fin = prox_posicion + particion->tamanio_ocupado -1;
+		prox_posicion = prox_posicion + particion->tamanio_ocupado;
+		/*todo acordarme de avisar a la estructura de msjs que se movieron los valores de la particion */
+		llenar_memoria_principal(particion->inicio,particion->tamanio_ocupado,aux->memoria);
+		free(aux->memoria);
+		free(aux);
 
 	}
+
+	//Creo la particion libre y la agrego al final de la memoria
+	list_destroy(lista_temporal);
+	t_particion_dinamica* particion_libre = crear_particion_dinamica_libre();
+	particion_libre->inicio = prox_posicion;
+	particion_libre->fin = leer_tamano_memoria() - 1;
+	list_add(lista_particiones_dinamicas,particion_libre);
+
+	}
+
+void llenar_memoria_principal(int posicion, int tamanio, void* mensaje){
+	memcpy(memoria_principal+posicion,mensaje,tamanio);
+}
+
+t_list* obtener_particiones_ocupadas(){
+	t_list* particiones_ocupadas = list_filter(lista_particiones_dinamicas,estaOcupado);//filtrar lista de particiones llenas
+	t_list* particiones_libres = list_filter(lista_particiones_dinamicas,noEstaOcupado);
+	list_clean(lista_particiones_dinamicas);
+	list_destroy_and_destroy_elements(particiones_libres,borrarParticion);
+	return particiones_ocupadas;
+}
+
+t_list* crear_list_temporal(t_list* particiones){
+
+	t_list* lista_temporal = list_create();
+
+	for(int i = 0; list_size(particiones);i++){
+		t_struct_temporal* aux = malloc(sizeof(t_struct_temporal));
+		aux->particion = list_get(particiones,i);
+		aux->memoria = malloc(aux->particion->tamanio_ocupado);
+		memcpy(aux->memoria,memoria_principal+aux->particion->inicio,aux->particion->tamanio_ocupado);
+		list_add(lista_temporal,aux);
+	}
+	return lista_temporal;
+}
 
 void liberar_particion(){
 	int ubicacion_particion;
@@ -245,13 +311,18 @@ int algoritmo_first_fit(int tamanio){
 	return -1;
 }
 
+t_particion_dinamica* crear_particion_dinamica_libre(){
+	t_particion_dinamica* particion = malloc(sizeof(t_particion_dinamica));
+	particion->libre = true;
+	return particion;
+}
 
 int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamanio,int posicion_en_lista){
 	//todo no ovlidar que cuando elimino la particion se tiene que liberar este espacio de memoria
-	t_particion_dinamica* nueva_particion = malloc(sizeof(t_particion_dinamica));
+	t_particion_dinamica* nueva_particion = crear_particion_dinamica_libre();
 	nueva_particion->fin = particion->fin;
 	nueva_particion->inicio = nueva_particion->fin - tamanio + 1;
-	nueva_particion->libre = true;
+
 
 	//todo aunque tecnicamente no esta ocupado todavia no se me ocurre otro momento mejor para llenar este dato
 	particion->tamanio_ocupado = tamanio;
@@ -377,7 +448,7 @@ int obtener_posicion_particion_mas_cercana(int potencia_de_dos) {
 }
 
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada) {
-	t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
+	/*t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
 
 	// TODO DESCOMENTAR Y VER PORQUE NO ME RECONOCE EL pow (#include <math.h> EN constructor.h)
 	int tamanio_actual = pow(2, particion_a_particionar->potencia_de_dos);
@@ -408,6 +479,6 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 
 
 	list_destroy(lista_auxiliar);
-	return particion_a_particionar;
+	return particion_a_particionar;*/
 }
 

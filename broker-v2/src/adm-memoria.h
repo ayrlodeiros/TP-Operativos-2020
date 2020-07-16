@@ -17,6 +17,11 @@ typedef struct{
 }t_particion_dinamica;
 
 typedef struct{
+	t_particion_dinamica* particion;
+	void* memoria;
+}t_struct_temporal;
+
+typedef struct{
 	int inicio;
 	int fin;
 	int potencia_de_dos;
@@ -34,6 +39,11 @@ int obtener_pos_particiones(int tamanio);
 int buscar_particion_libre(int tamanio);
 void liberar_particion();
 bool estaOcupado(void* elemento);
+bool noEstaOcupado(void* elemento);
+void borrarParticion(void* elemento);
+
+t_list* obtener_particiones_ocupadas();
+t_list* crear_list_temporal(t_list* particiones);
 
 int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamanio,int posicion_en_lista);
 int llenar_particion(t_particion_dinamica* particion, int tamanio);
@@ -55,6 +65,7 @@ bool hay_que_compactar();
 void compactacion();
 void consolidar(int pos_particion);
 void borrar_msj_mp(int posicion, int tamanio);
+t_particion_dinamica* crear_particion_dinamica_libre();
 
 /* Esto es para cuando se accede a la memoria de una particion, saber en que momento fue utilizada para el algoritmo LRU */
 uint64_t timestamp(void);
