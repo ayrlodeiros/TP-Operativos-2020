@@ -170,9 +170,7 @@ echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICI
 
 #Configuro broker compactacion Particiones Dinamicas
 
-cd ../../../broker-v2-COMPACTACION-PD/
-
-cd 
+cd ../../../broker-v2-COMPACTACION-PD/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -193,4 +191,3 @@ echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=BS\nALG
 #FIN DE BROKER
 
 cd
-cd ..
