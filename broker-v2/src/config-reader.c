@@ -11,6 +11,7 @@ void iniciar_config(void){
 	setear_ip_broker();
 	setear_puerto_broker();
 	setear_frecuencia_compactacion();
+	setear_path_archivo_dump();
 	setear_log_file();
 	setear_nuestro_log_file();
 }
@@ -54,6 +55,9 @@ void setear_puerto_broker(void){
 void setear_frecuencia_compactacion(void){
 	FRECUENCIA_COMPACTACION = config_get_int_value(config,"FRECUENCIA_COMPACTACION");
 }
+void setear_path_archivo_dump(void){
+	PATH_ARCHIVO_DUMP = config_get_string_value(config,"PATH_ARCHIVO_DUMP");
+}
 void setear_log_file(void){
 	LOG_FILE = config_get_string_value(config,"LOG_FILE");
 }
@@ -84,6 +88,9 @@ int leer_puerto_broker(void){
 }
 int leer_frecuencia_compactacion(void){
 	return FRECUENCIA_COMPACTACION;
+}
+char* leer_path_archivo_dump(void){
+	return PATH_ARCHIVO_DUMP;
 }
 char* leer_log_file(void){
 	return LOG_FILE;

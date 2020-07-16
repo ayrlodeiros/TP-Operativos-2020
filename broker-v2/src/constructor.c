@@ -16,9 +16,38 @@ void iniciar_signal_handler() {
 	}
 }
 
-// TODO modificar en funcion de lo que dice el enunciado
+// TODO modificar en funcion de lo que dice el enunciado (faltan algunas cosas)
 void signal_handler(int signo) {
 	log_info(mi_log,"Se recibio la SIGURS1");
+	char* path_archivo_dump = leer_path_archivo_dump();
+
+	FILE* archivo_metadata  = fopen(path_archivo_dump, "wb+");
+	fclose(archivo_metadata);
+
+	t_config* dump_config = config_create(path_archivo_dump);
+
+	char* fecha = obtener_fecha();
+	config_set_value(dump_config,"\nDump", fecha);
+	//FALTA TERMINAR
+	config_set_value(dump_config, "Particion 1", "Hola");
+	config_set_value(dump_config, "Particion 2", "Chau");
+
+	config_save(dump_config);
+	config_destroy(dump_config);
+
+	log_info(mi_log, "Se actualizo el archivo dump");
+	free(fecha);
+}
+
+char* obtener_fecha() {
+	time_t t;
+	struct tm* tm;
+	char* fecha_y_hora = malloc(20*sizeof(char));
+	t=time(NULL);
+	tm=localtime(&t);
+	strftime(fecha_y_hora, 100, "%d/%m/%Y %H:%M:%S", tm);
+
+	return fecha_y_hora;
 }
 
 void inicializar_semaforos() {
@@ -149,6 +178,8 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 	t_mensaje* mensaje = queue_pop(cola->cola);
 	suscriptor_t* suscriptor;
 	int i;
+
+	actualizar_ultima_vez_usado_particion(mensaje);
 
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
@@ -987,4 +1018,40 @@ void destruir_t_mensaje(t_mensaje* mensaje) {
 	list_destroy(mensaje->suscriptores_conf);
 	list_destroy(mensaje->suscriptores_env);
 	free(mensaje);
+}
+
+void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje) {
+	pthread_mutex_lock(&mutex_memoria_principal);
+
+	switch(leer_algoritmo_memoria()){
+		case PARTICIONES:
+			actualizar_ultima_vez_dinamica(mensaje);
+			break;
+		case BS:
+			actualizar_ultima_vez_lru(mensaje);
+			break;
+		case NORMAL:
+			break;
+	}
+	pthread_mutex_unlock(&mutex_memoria_principal);
+}
+
+void actualizar_ultima_vez_dinamica(t_mensaje* mensaje) {
+	for(int i=0; i< list_size(lista_particiones_dinamicas); i++) {
+		t_particion_dinamica* particion = list_get(lista_particiones_dinamicas, i);
+		if(mensaje->pos_en_memoria->pos == particion->inicio) {
+			particion->ult_vez_usado = timestamp();
+			break;
+		}
+	}
+}
+
+void actualizar_ultima_vez_lru(t_mensaje* mensaje) {
+	for(int i=0; i< list_size(lista_particiones_bs); i++) {
+		t_particion_bs* particion = list_get(lista_particiones_bs, i);
+		if(mensaje->pos_en_memoria->pos == particion->inicio) {
+			particion->ult_vez_usado = timestamp();
+			break;
+		}
+	}
 }

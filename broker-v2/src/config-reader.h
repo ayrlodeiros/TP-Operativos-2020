@@ -33,6 +33,7 @@ algoritmo_particion_libre ALGORITMO_PARTICION_LIBRE;
 char* IP_BROKER;
 int PUERTO_BROKER;
 int FRECUENCIA_COMPACTACION;
+char* PATH_ARCHIVO_DUMP;
 char* LOG_FILE;
 char* NUESTRO_LOG_FILE;
 
@@ -47,6 +48,7 @@ void setear_algoritmo_particion_libre(void);
 void setear_ip_broker(void);
 void setear_puerto_broker(void);
 void setear_frecuencia_compactacion(void);
+void setear_path_archivo_dump(void);
 void setear_log_file(void);
 void setear_nuestro_log_file(void);
 
@@ -58,6 +60,7 @@ algoritmo_particion_libre leer_algoritmo_particion_libre(void);
 char* leer_ip_broker(void);
 int leer_puerto_broker(void);
 int leer_frecuencia_compactacion(void);
+char* leer_path_archivo_dump(void);
 char* leer_log_file(void);
 char* leer_nuestro_log_file(void);
 

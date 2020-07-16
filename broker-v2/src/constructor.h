@@ -171,6 +171,7 @@ void iniciar_funcionalidades();
 
 void iniciar_signal_handler();
 void signal_handler(int signo);
+char* obtener_fecha();
 
 /** Metodos para crear las colas de mensajes */
 void inicializar_semaforos();
@@ -279,5 +280,8 @@ int potencia(int base, int exponente);
 uint64_t timestamp(void);
 void borrar_msj_mp(int posicion);
 void destruir_t_mensaje(t_mensaje* mensaje);
+void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje);
+void actualizar_ultima_vez_dinamica(t_mensaje* mensaje);
+void actualizar_ultima_vez_lru(t_mensaje* mensaje);
 
 #endif //CONSTRUCTOR_H_

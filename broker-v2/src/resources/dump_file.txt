@@ -1,0 +1,4 @@
+
+Dump=16/07/2020 14:05:40
+Particion 2=Chau
+Particion 1=Hola
