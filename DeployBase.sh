@@ -103,10 +103,8 @@ cp -r team-v2/ team-v2-SJF-CD
 #CONFIGURO LOS TEAMS
 
 #Configuro team con FIFO
-r
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/
 
-cd /src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -116,9 +114,7 @@ echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\n
 
 #Configuro team con RR -> Quantum = 2
 
-cd ../../../team-v2-RR/
-
-cd /src/resources/
+cd ../../../team-v2-RR/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -128,9 +124,7 @@ echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\n
 
 #Configuro team con SJF - SD
 
-cd ../../../team-v2-SJF-SD/
-
-cd /src/resources/
+cd ../../../team-v2-SJF-SD/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -140,9 +134,7 @@ echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\n
 
 #Configuro team con SJF - CD
 
-cd ../../../team-v2-SJF-CD/
-
-cd /src/resources/
+cd ../../../team-v2-SJF-CD/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -168,9 +160,7 @@ cp broker-v2/ broker-v2-BUDDY-SYSTEM
 
 #Configuro broker consolidacion Particiones dinamicas
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/
-
-cd /src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -182,7 +172,7 @@ echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICI
 
 cd ../../../broker-v2-COMPACTACION-PD/
 
-cd /src/resources/
+cd 
 
 if test -e broker.config; then
 	rm broker.config
@@ -192,9 +182,7 @@ echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICI
 
 #Configuro broker compactacion Particiones Dinamicas
 
-cd ../../../broker-v2-BUDDY-SYSTEM/
-
-cd /src/resources/
+cd ../../../broker-v2-BUDDY-SYSTEM/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
