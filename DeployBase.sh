@@ -138,7 +138,7 @@ cd ../../../team-v2-SJF-CD/src/resources/
 
 if test -e team.config; then
 	rm team.config
-
+fi
 
 echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-CD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-CD.txt" >> team.config
 #FIN DE TEAM
@@ -180,7 +180,7 @@ fi
 
 echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICIONES\nALGORITMO_REEMPLAZO=FF\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=1\nLOG_FILE=\n">> broker.config
 
-#Configuro broker compactacion Particiones Dinamicas
+#Configuro broker Buddy System
 
 cd ../../../broker-v2-BUDDY-SYSTEM/src/resources/
 
@@ -193,3 +193,4 @@ echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=BS\nALG
 #FIN DE BROKER
 
 cd
+cd ..
