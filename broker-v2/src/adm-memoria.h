@@ -54,7 +54,8 @@ bool esta_libre(t_particion_dinamica* particion);
 bool hay_que_compactar();
 void compactacion();
 void consolidar(int pos_particion);
-void borrar_msj_mp(int posicion, int tamanio);
+void borrar_msj_mp(int posicion);
+void destruir_t_mensaje(t_mensaje* mensaje);
 
 /* Esto es para cuando se accede a la memoria de una particion, saber en que momento fue utilizada para el algoritmo LRU */
 uint64_t timestamp(void);
@@ -65,6 +66,12 @@ void inicializar_lista_bs();
 int obtener_posicion_bs(int tamanio);
 int obtener_potencia_de_dos_mas_cercana(int valor);
 int obtener_posicion_particion_mas_cercana(int potencia_de_dos);
+void liberar_y_consolidar();
+int liberar_una_particion();
+int obtener_posicion_de_particion_liberada_fifo();
+int obtener_posicion_de_particion_liberada_lru();
+int evaluar_consolidacion(int posicion_buddy_1);
+void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener);
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada);
 
 #endif

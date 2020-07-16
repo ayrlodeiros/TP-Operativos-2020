@@ -91,7 +91,7 @@ int algoritmo_reemplazo_fifo(void){
 			}
 		}
 
-		borrar_msj_mp(primera_particion->inicio,primera_particion->tamanio_ocupado);
+		borrar_msj_mp(primera_particion->inicio);
 		primera_particion->libre = true;
 		primera_particion->tamanio_ocupado = 0;
 
@@ -116,7 +116,7 @@ int algoritmo_reemplazo_lru(void){
 		}
 	}
 
-	borrar_msj_mp(part_menos_usada->inicio,part_menos_usada->tamanio_ocupado);
+	borrar_msj_mp(part_menos_usada->inicio);
 	part_menos_usada->libre = true;
 	part_menos_usada->tamanio_ocupado = 0;
 	//todo part_menos_usada->orden_ingreso;
@@ -125,11 +125,27 @@ int algoritmo_reemplazo_lru(void){
 }
 
 //todo tengo la duda, habria que al inicializar la memoria principal setear los valores a 0 o algo para identificarlo, agregar semaforos
-void borrar_msj_mp(int posicion, int tamanio){
-	memset(memoria_principal+posicion,0,tamanio);
+void borrar_msj_mp(int posicion){
+	//memset(memoria_principal+posicion,0,tamanio);
 	//de alguna forma hay que avisar a la estructura de mensajes que se elimino este msj
+
+	pthread_mutex_lock(&mutex_lista_msjs);
+	for(int i=0; i< list_size(lista_global_msjs); i++) {
+		t_mensaje* mensaje = list_get(lista_global_msjs, i);
+		if(mensaje->pos_en_memoria->pos == posicion) {
+			list_remove_and_destroy_element(lista_global_msjs, i, destruir_t_mensaje);
+			break;
+		}
+	}
+	pthread_mutex_unlock(&mutex_lista_msjs);
 }
 
+void destruir_t_mensaje(t_mensaje* mensaje) {
+	free(mensaje->pos_en_memoria);
+	list_destroy(mensaje->suscriptores_conf);
+	list_destroy(mensaje->suscriptores_env);
+	free(mensaje);
+}
 
 
 /* Supongo que funciona pero seguro se puede mejorar */
@@ -324,13 +340,17 @@ int obtener_posicion_bs(int tamanio) {
 	//OBTIENE LA POSICION DE LA PARTICION QUE MAS SE ACERCA A LA POTENCIA DE DOS DESEADA, DEVUELVE -1 SI NO ENCONTRO NIGUNA
 	int posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_mas_cercana);
 
+	//REALIZAR LIBERACION Y CONSOLIDACION, HASTA OBTENER posicion DISTINTA DE -1
 	while(posicion_de_particion_en_lista == -1) {
-		// TODO REALIZAR LIBERACION Y CONSOLIDACION, HASTA OBTENER posicion DISTINTA DE -1
+		liberar_y_consolidar();
+
+		posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_mas_cercana);
 	}
 
 
 	t_particion_bs* posible_particion = list_get(lista_particiones_bs, posicion_de_particion_en_lista);
 
+	//SI LA POTENCIA DE DOS DE LA PARTICION ENCONTRADA NO ES IGUAL A LA DESEADA SE PARTICIONA A LA PARTICION
 	if(posible_particion->potencia_de_dos != potencia_de_dos_mas_cercana) {
 		// DIVIDIR EN DOS HASTA LLEGAR A POTENCIA DE DOS MAS CERCANA
 		posible_particion = particionar_y_obtener_particion(posicion_de_particion_en_lista, potencia_de_dos_mas_cercana);
@@ -338,6 +358,8 @@ int obtener_posicion_bs(int tamanio) {
 
 	// OCUPAR LA PARTICION
 	posible_particion->libre = false;
+	posible_particion->tiempo_ingreso = timestamp();
+	posible_particion->ult_vez_usado = timestamp();
 
 	pthread_mutex_unlock(&mutex_memoria_principal);
 
@@ -376,11 +398,111 @@ int obtener_posicion_particion_mas_cercana(int potencia_de_dos) {
 	return posicion;
 }
 
+void liberar_y_consolidar() {
+	int posicion_particion_liberada = liberar_una_particion();
+
+	int posicion_consolidacion = evaluar_consolidacion(posicion_particion_liberada);
+	//Hasta que no devuelva -1 quiere decir que se puede seguir intentando consolidar la misma particion
+	while(posicion_consolidacion != -1) {
+		posicion_consolidacion = evaluar_consolidacion(posicion_consolidacion);
+	}
+}
+
+int liberar_una_particion() {
+	int posicion_particion_liberada;
+
+	switch(leer_algoritmo_reemplazo()){
+		case FIFO:
+			posicion_particion_liberada = obtener_posicion_de_particion_liberada_fifo();
+			break;
+		case LRU:
+			posicion_particion_liberada = obtener_posicion_de_particion_liberada_lru();
+			break;
+	}
+
+	return posicion_particion_liberada;
+}
+
+int obtener_posicion_de_particion_liberada_fifo() {
+	t_particion_bs* particion_objetivo = NULL;
+	int posicion;
+
+	for(int i = 0; i<list_size(lista_particiones_bs); i++) {
+		t_particion_bs* particion_aux = list_get(lista_particiones_bs, i);
+		if(!(particion_aux->libre) && (particion_objetivo == NULL || particion_aux->tiempo_ingreso < particion_objetivo->tiempo_ingreso)) {
+			particion_objetivo = particion_aux;
+			posicion = i;
+		}
+	}
+
+	borrar_msj_mp(particion_objetivo->inicio);
+	particion_objetivo->libre = true;
+
+	return particion_objetivo;
+}
+
+int obtener_posicion_de_particion_liberada_lru() {
+	t_particion_bs* particion_objetivo = NULL;
+	int posicion;
+
+	for(int i = 0; i<list_size(lista_particiones_bs); i++) {
+		t_particion_bs* particion_aux = list_get(lista_particiones_bs, i);
+		if(!(particion_aux->libre) && (particion_objetivo == NULL || particion_aux->ult_vez_usado < particion_objetivo->ult_vez_usado)) {
+			particion_objetivo = particion_aux;
+			posicion = i;
+		}
+	}
+
+	borrar_msj_mp(particion_objetivo->inicio);
+	particion_objetivo->libre = true;
+
+	return posicion;
+}
+
+// EVALUA SI SE PUEDE CONSOLIDAR, Y CONSOLIDA DE SER POSIBLE, SI CONSOLIDO DEVUELVE LA POSICION EN LA QUE QUEDO LA PARTICION CONSOLIDADA, SI NO -1
+int evaluar_consolidacion(int posicion_buddy_1) {
+	int posicion_buddy_2;
+	//CONSIGO LAS POSICIONES DE LOS DOS BUDDIES
+	if(posicion_buddy_1%2 == 0) {
+		posicion_buddy_2 = posicion_buddy_1 + 1;
+	} else {
+		posicion_buddy_2 = posicion_buddy_1 - 1;
+	}
+
+	t_particion_bs* buddy_2 = list_get(lista_particiones_bs, posicion_buddy_2);
+
+	if(buddy_2->libre) {
+		int posicion_mas_chica;
+		if(posicion_buddy_1 > posicion_buddy_2) {
+			posicion_mas_chica = posicion_buddy_2;
+			consolidar_buddies(posicion_buddy_1, buddy_2);
+		} else {
+			posicion_mas_chica = posicion_buddy_1;
+			consolidar_buddies(posicion_buddy_2, list_get(lista_particiones_bs, posicion_buddy_1));
+		}
+
+		return posicion_mas_chica;
+	}
+
+	return -1;
+}
+
+void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener) {
+	t_particion_bs* buddy_eliminado = list_remove(lista_particiones_bs, posicion_buddy_a_eliminar);
+
+
+	buddy_a_mantener->potencia_de_dos++;
+	buddy_a_mantener->fin = buddy_eliminado->fin;
+
+
+	free(buddy_eliminado);
+}
+
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada) {
 	t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
 
 	// TODO DESCOMENTAR Y VER PORQUE NO ME RECONOCE EL pow (#include <math.h> EN constructor.h)
-	int tamanio_actual = pow(2, particion_a_particionar->potencia_de_dos);
+	/*int tamanio_actual = pow(2, particion_a_particionar->potencia_de_dos);
 	int tamanio_deseado = pow(2, potencia_de_dos_deseada);
 
 	t_list* lista_auxiliar = list_create();
@@ -407,7 +529,7 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 	}
 
 
-	list_destroy(lista_auxiliar);
+	list_destroy(lista_auxiliar);*/
 	return particion_a_particionar;
 }
 
