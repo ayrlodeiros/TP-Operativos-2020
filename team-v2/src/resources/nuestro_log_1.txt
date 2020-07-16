@@ -1465,3 +1465,19 @@
 [INFO] 23:09:07:488 team/(9905:9915): Estoy en SJF CON DESALOJO preparado para planificar
 [INFO] 23:09:07:489 team/(9905:9912): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
 [INFO] 23:09:07:490 team/(9905:9912): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 12:26:45:637 team/(16721:16721): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:26:45:639 team/(16721:16721): Necesito 2 pokemons Squirtle
+[INFO] 12:26:45:639 team/(16721:16721): Necesito 1 pokemons Pikachu
+[INFO] 12:26:45:639 team/(16721:16721): Necesito 1 pokemons Onix
+[INFO] 12:26:45:639 team/(16721:16721): Necesito 1 pokemons Gengar
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:643 team/(16721:16727): El broker no esta conectado...
+[INFO] 12:26:45:643 team/(16721:16727): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:26:45:643 team/(16721:16729): Estoy en el planificador
+[INFO] 12:26:45:643 team/(16721:16729): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 12:26:45:643 team/(16721:16728): Esperando alguna accion
+[INFO] 12:26:45:643 team/(16721:16726): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 12:26:45:643 team/(16721:16726): Listo para recibir conexion de GAMEBOY, en servidor: 10

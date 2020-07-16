@@ -552,3 +552,9 @@
 [INFO] 23:09:07:479 team/(9905:9905): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
 [INFO] 23:09:07:487 team/(9905:9913): 10. Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 23:09:07:489 team/(9905:9913): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:26:45:639 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:640 team/(16721:16721): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:45:643 team/(16721:16727): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:26:45:643 team/(16721:16727): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

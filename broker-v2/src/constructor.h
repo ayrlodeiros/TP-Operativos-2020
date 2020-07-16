@@ -5,11 +5,11 @@
 #include<stdlib.h>
 #include<signal.h>
 #include<unistd.h>
+#include<sys/time.h>
 #include<sys/socket.h>
 #include<netdb.h>
 #include<pthread.h>
 #include<string.h>
-#include<math.h>
 #include<commons/log.h>
 #include<commons/config.h>
 #include<commons/collections/queue.h>
@@ -17,16 +17,43 @@
 #include<commons/string.h>
 #include "config-reader.h"
 
-/* Memoria principal */
+/* ADMINISTRACION DE MEMORIA */
 void* memoria_principal;
-
+int orden_de_llegada; // TODO preguntar a Agus si se usa esta variable
+t_list* lista_particiones_dinamicas;
+t_list* lista_particiones_bs;
 int ultima_pos;
 
 /** VG Para manejar ids mensajes */
 int contador_ids_mensaje;
 
-/*** COLAS DE MENSAJES ESTRUCTURAS ***/
 
+/*** ADMINISTRACION DE MEMORIA ESTRUCTURAS ***/
+typedef struct{
+	int inicio;
+	int fin;
+	int tamanio_ocupado;
+	uint64_t tiempo_ingreso;
+	uint64_t ult_vez_usado;
+	bool libre;
+}t_particion_dinamica;
+
+typedef struct{
+	t_particion_dinamica* particion;
+	void* memoria;
+}t_struct_temporal;
+
+typedef struct{
+	int inicio;
+	int fin;
+	int potencia_de_dos;
+	uint64_t tiempo_ingreso;
+	uint64_t ult_vez_usado;
+	bool libre;
+}t_particion_bs;
+
+
+/*** COLAS DE MENSAJES ESTRUCTURAS ***/
 /* Define los nombres de las colas de mensaje */
 typedef enum{
 		GET = 1,
@@ -142,6 +169,9 @@ pthread_mutex_t mutex_agregar_msj_a_cola;
 
 void iniciar_funcionalidades();
 
+void iniciar_signal_handler();
+void signal_handler(int signo);
+
 /** Metodos para crear las colas de mensajes */
 void inicializar_semaforos();
 void inicializar_message_queues(void);
@@ -161,19 +191,6 @@ void liberar_catch_mq(void);
 void liberar_caught_mq(void);
 void liberar_new_mq(void);
 void liberar_appeared_mq(void);
-
-/* memoria principal */
-void iniciar_memoria_principal();
-
-int guardar_mensaje_en_memoria(int tamanio, void*buffer);
-
-void almacenar_en_memoria(int tamanio, void* buffer, int posicion);
-
-int obtener_posicion_particiones(int tamanio, int posicion);
-
-//int obtener_posicion_bs(int tamanio);
-
-int obtener_posicion_normal();
 
 
 /* Lista GLobal de mensajes */
@@ -206,5 +223,61 @@ void recibir_ACK(suscriptor_t* socket_cliente,t_mensaje* mensaje);
 
 void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
+
+
+
+/* ADMINISTRACION DE MEMORIA */
+
+void iniciar_memoria_principal();
+int guardar_mensaje_en_memoria(int tamanio, void*buffer);
+void almacenar_en_memoria(int tamanio, void* buffer, int posicion);
+
+// Normal
+int obtener_posicion_normal();
+
+// Dinamica
+void inicializar_lista_particiones();
+int obtener_posicion_particiones(int tamanio);
+bool estaOcupado(void* elemento);
+bool noEstaOcupado(void* elemento);
+void borrarParticion(void* elemento);
+void compactacion();
+void llenar_memoria_principal(int posicion, int tamanio, void* mensaje);
+t_list* obtener_particiones_ocupadas();
+t_list* crear_list_temporal(t_list* particiones);
+void liberar_particion();
+int algoritmo_reemplazo_fifo(void);
+int algoritmo_reemplazo_lru(void);
+void consolidar(int pos_particion);
+bool particion_libre_a_la_izquierda(int posicion);
+bool particion_libre_a_la_derecha(int posicion);
+int buscar_particion_libre(int tamanio);
+int algoritmo_best_fit(int tamanio);
+int algoritmo_first_fit(int tamanio);
+t_particion_dinamica* crear_particion_dinamica_libre();
+int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamanio,int posicion_en_lista);
+int llenar_particion(t_particion_dinamica* particion, int tamanio);
+bool esta_libre(t_particion_dinamica* particion);
+int diferencia_tamanio_particion(t_particion_dinamica* particion,int tamanio_msj);
+int tamanio_particion(t_particion_dinamica* particion);
+
+// Buddy System
+void inicializar_lista_bs();
+int obtener_posicion_bs(int tamanio);
+int obtener_potencia_de_dos_mas_cercana(int valor);
+int obtener_posicion_particion_mas_cercana(int potencia_de_dos);
+void liberar_y_consolidar();
+int liberar_una_particion();
+int obtener_posicion_de_particion_liberada_fifo();
+int obtener_posicion_de_particion_liberada_lru();
+int evaluar_consolidacion(int posicion_buddy_1);
+void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener);
+t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada);
+int potencia(int base, int exponente);
+
+/* Esto es para cuando se accede a la memoria de una particion, saber en que momento fue utilizada para el algoritmo LRU */
+uint64_t timestamp(void);
+void borrar_msj_mp(int posicion);
+void destruir_t_mensaje(t_mensaje* mensaje);
 
 #endif //CONSTRUCTOR_H_

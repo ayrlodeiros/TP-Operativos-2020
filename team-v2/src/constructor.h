@@ -9,7 +9,6 @@
 #define CONSTRUCTOR_H_
 
 #include"config-reader.h"
-#include<math.h>
 #include<netdb.h>
 #include<signal.h>
 #include<stdio.h>

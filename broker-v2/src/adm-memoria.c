@@ -1,4 +1,4 @@
-#include "adm-memoria.h"
+/*#include "adm-memoria.h"
 
 //PARTICIONES DINAMICAS
 
@@ -59,19 +59,19 @@ void borrarParticion(void* elemento){
 }
 
 // Lo dejo work in progress, basicamente para la compactacion para eliminar los particiones libres pensaba
-/*bool libresPrimero(void* elemento,void* elementoDos){
-	if( ((t_particion_dinamica*)elemento)->libre && !((t_particion_dinamica*)elementoDos)->libre ){
-		return true;
-	}
-	if(){
+//bool libresPrimero(void* elemento,void* elementoDos){
+//	if( ((t_particion_dinamica*)elemento)->libre && !((t_particion_dinamica*)elementoDos)->libre ){
+//		return true;
+//	}
+//	if(){
+//
+//}
 
-}
-*/
 
 void compactacion(){
 
 	t_list* particiones_ocupadas = obtener_particiones_ocupadas();
-	/* Hasta aca la lista de particiones, borre todas las estructuras que estaban libres y me quede con una nueva lista de particiones ocupadas */
+	//Hasta aca la lista de particiones, borre todas las estructuras que estaban libres y me quede con una nueva lista de particiones ocupadas
 	//todo esta medio a lo bestia, despues ver si se puede mejorar
 
 	t_list* lista_temporal = crear_list_temporal(particiones_ocupadas);;
@@ -84,7 +84,7 @@ void compactacion(){
 		particion->inicio = prox_posicion;
 		particion->fin = prox_posicion + particion->tamanio_ocupado -1;
 		prox_posicion = prox_posicion + particion->tamanio_ocupado;
-		/*todo acordarme de avisar a la estructura de msjs que se movieron los valores de la particion */
+		//todo acordarme de avisar a la estructura de msjs que se movieron los valores de la particion
 		llenar_memoria_principal(particion->inicio,particion->tamanio_ocupado,aux->memoria);
 		free(aux->memoria);
 		free(aux);
@@ -139,7 +139,7 @@ void liberar_particion(){
 	consolidar(ubicacion_particion);
 }
 
-/*todo si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor */
+//todo si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor
 int algoritmo_reemplazo_fifo(void){
 
 	t_particion_dinamica* primera_particion = NULL;
@@ -190,31 +190,7 @@ int algoritmo_reemplazo_lru(void){
 	return pos_part_menos_usada;
 }
 
-//todo tengo la duda, habria que al inicializar la memoria principal setear los valores a 0 o algo para identificarlo, agregar semaforos
-void borrar_msj_mp(int posicion){
-	//memset(memoria_principal+posicion,0,tamanio);
-	//de alguna forma hay que avisar a la estructura de mensajes que se elimino este msj
-
-	pthread_mutex_lock(&mutex_lista_msjs);
-	for(int i=0; i< list_size(lista_global_msjs); i++) {
-		t_mensaje* mensaje = list_get(lista_global_msjs, i);
-		if(mensaje->pos_en_memoria->pos == posicion) {
-			list_remove_and_destroy_element(lista_global_msjs, i, destruir_t_mensaje);
-			break;
-		}
-	}
-	pthread_mutex_unlock(&mutex_lista_msjs);
-}
-
-void destruir_t_mensaje(t_mensaje* mensaje) {
-	free(mensaje->pos_en_memoria);
-	list_destroy(mensaje->suscriptores_conf);
-	list_destroy(mensaje->suscriptores_env);
-	free(mensaje);
-}
-
-
-/* Supongo que funciona pero seguro se puede mejorar */
+// Supongo que funciona pero seguro se puede mejorar
 void consolidar(int pos_particion){
 
 	t_particion_dinamica* liberada = list_get(lista_particiones_dinamicas,pos_particion);
@@ -307,7 +283,7 @@ int algoritmo_first_fit(int tamanio){
 		particion = list_get(lista_particiones_dinamicas,i);
 
 		if(esta_libre(particion)){
-			/* Esto es porque hay un minimo en el tamanio de particiones */
+			// Esto es porque hay un minimo en el tamanio de particiones
 			int diferencia = diferencia_tamanio_particion(particion,tamanio);
 
 			if(diferencia >= 0){
@@ -323,7 +299,7 @@ int algoritmo_first_fit(int tamanio){
 			}
 		}
 	}
-	/* No se encontro espacio libre para el msj */
+	// No se encontro espacio libre para el msj
 	return -1;
 }
 
@@ -352,7 +328,7 @@ int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamani
 	return particion->inicio;
 
 }
-/* A diferencia del de arriba esto es cuando el msj tiene el mismo tamanio que la particion o un poco menos*/
+// A diferencia del de arriba esto es cuando el msj tiene el mismo tamanio que la particion o un poco menos
 int llenar_particion(t_particion_dinamica* particion, int tamanio){
 	particion->tamanio_ocupado = tamanio;
 	particion->libre = false;
@@ -374,19 +350,7 @@ int tamanio_particion(t_particion_dinamica* particion){
 }
 
 
-uint64_t timestamp(void) {
-
-	struct timeval valor;
-	gettimeofday(&valor, NULL);
-	unsigned long long result = (((unsigned long long )valor.tv_sec) * 1000 + ((unsigned long) valor.tv_usec));
-	uint64_t tiempo = result;
-
-	return tiempo;
-
-}
-
-
-/* BUDDY SYSTEM */
+// BUDDY SYSTEM
 
 void inicializar_lista_bs(){
 	int tamanio_memoria = leer_tamano_memoria();
@@ -394,7 +358,7 @@ void inicializar_lista_bs(){
 	lista_particiones_bs = list_create();
 	t_particion_bs* primera_part = malloc(sizeof(t_particion_bs));
 	primera_part->inicio = 0;
-	primera_part->fin = tamanio_memoria; //TODO ver si usar el -1
+	primera_part->fin = tamanio_memoria; // Ver si usar el -1
 	primera_part->potencia_de_dos=obtener_potencia_de_dos_mas_cercana(tamanio_memoria);
 	primera_part->tiempo_ingreso = timestamp();
 	primera_part->ult_vez_usado = timestamp();
@@ -570,7 +534,7 @@ void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_m
 }
 
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada) {
-	/*t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
+	t_particion_bs* particion_a_particionar = list_get(lista_particiones_bs, posicion_a_particionar);
 
 	// TODO DESCOMENTAR Y VER PORQUE NO ME RECONOCE EL pow (#include <math.h> EN constructor.h)
 	int tamanio_actual = pow(2, particion_a_particionar->potencia_de_dos);
@@ -601,6 +565,48 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 
 
 	list_destroy(lista_auxiliar);
-	return particion_a_particionar;*/
+	return particion_a_particionar;
 }
 
+int potencia(int base, int exponente) {
+	int resultado = 1;
+	for(int i = 0; i<exponente; i++) {
+		resultado = resultado * base;
+	}
+	return resultado;
+}
+
+
+uint64_t timestamp(void) {
+
+	struct timeval valor;
+	gettimeofday(&valor, NULL);
+	unsigned long long result = (((unsigned long long )valor.tv_sec) * 1000 + ((unsigned long) valor.tv_usec));
+	uint64_t tiempo = result;
+
+	return tiempo;
+
+}
+
+//todo tengo la duda, habria que al inicializar la memoria principal setear los valores a 0 o algo para identificarlo, agregar semaforos
+void borrar_msj_mp(int posicion){
+	//memset(memoria_principal+posicion,0,tamanio);
+	//de alguna forma hay que avisar a la estructura de mensajes que se elimino este msj
+
+	pthread_mutex_lock(&mutex_lista_msjs);
+	for(int i=0; i< list_size(lista_global_msjs); i++) {
+		t_mensaje* mensaje = list_get(lista_global_msjs, i);
+		if(mensaje->pos_en_memoria->pos == posicion) {
+			list_remove_and_destroy_element(lista_global_msjs, i, destruir_t_mensaje);
+			break;
+		}
+	}
+	pthread_mutex_unlock(&mutex_lista_msjs);
+}
+
+void destruir_t_mensaje(t_mensaje* mensaje) {
+	free(mensaje->pos_en_memoria);
+	list_destroy(mensaje->suscriptores_conf);
+	list_destroy(mensaje->suscriptores_env);
+	free(mensaje);
+}*/

@@ -6,10 +6,6 @@ struct mesg_buffer {
     char mesg_text[100];
 } message;
 
-void while_infinito() {
-	while(1){}
-}
-
 int main(void)
 {
 	//pthread_t* conexion_team;
@@ -19,8 +15,6 @@ int main(void)
 	levantar_servidor(leer_ip_broker(),leer_puerto_broker());
 
 	terminar_broker();
-
-	//pthread_t* hilo_infinito;
 
 	return EXIT_SUCCESS;
 

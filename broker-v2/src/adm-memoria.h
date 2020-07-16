@@ -1,4 +1,4 @@
-#ifndef ADMMEMORIA_H_
+/*#ifndef ADMMEMORIA_H_
 #define ADMMEMORIA_H_
 #include "constructor.h"
 #include <sys/time.h>
@@ -31,7 +31,7 @@ typedef struct{
 }t_particion_bs;
 
 
-/*Funciones particiones dinamicas */
+//Funciones particiones dinamicas
 
 void inicializar_lista_particiones();
 
@@ -66,13 +66,8 @@ void compactacion();
 void consolidar(int pos_particion);
 t_particion_dinamica* crear_particion_dinamica_libre();
 
-void borrar_msj_mp(int posicion);
-void destruir_t_mensaje(t_mensaje* mensaje);
 
-/* Esto es para cuando se accede a la memoria de una particion, saber en que momento fue utilizada para el algoritmo LRU */
-uint64_t timestamp(void);
-
-/* Funciones Buddy System */
+//Funciones Buddy System
 
 void inicializar_lista_bs();
 int obtener_posicion_bs(int tamanio);
@@ -85,5 +80,12 @@ int obtener_posicion_de_particion_liberada_lru();
 int evaluar_consolidacion(int posicion_buddy_1);
 void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener);
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada);
+int potencia(int base, int exponente);
 
-#endif
+
+// Esto es para cuando se accede a la memoria de una particion, saber en que momento fue utilizada para el algoritmo LRU
+uint64_t timestamp(void);
+void borrar_msj_mp(int posicion);
+void destruir_t_mensaje(t_mensaje* mensaje);
+
+#endif*/
