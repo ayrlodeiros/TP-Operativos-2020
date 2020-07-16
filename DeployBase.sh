@@ -96,9 +96,9 @@ make all
 
 cd ../../
 
-cp team-v2/ team-v2-RR
-cp team-v2/ team-v2-SJF-SD
-cp team-v2/ team-v2-SJF-CD
+cp -r team-v2/ team-v2-RR
+cp -r team-v2/ team-v2-SJF-SD
+cp -r team-v2/ team-v2-SJF-CD
 
 #CONFIGURO LOS TEAMS
 
