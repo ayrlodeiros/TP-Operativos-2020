@@ -3,11 +3,11 @@
 #include<stdio.h>
 #include<commons/config.h>
 #include<commons/collections/list.h>
+#include<commons/string.h>
 
 typedef enum{
 	PARTICIONES = 1,
 	BS = 2,
-	/*todo Al finalizar los otros dos eliminar */
 	NORMAL = 3
 }
 algoritmo_memoria;

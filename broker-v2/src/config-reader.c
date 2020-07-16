@@ -29,10 +29,10 @@ void setear_tamano_minimo_particion(void){
 }
 void setear_algoritmo_memoria(void){
 	char* algoritmo = config_get_string_value(config,"ALGORITMO_MEMORIA");
-	if(string_equals_ignore_case(algoritmo,"NORMAL")) ALGORITMO_MEMORIA = 3;
-	else if(string_equals_ignore_case(algoritmo,"PARTICIONES")) ALGORITMO_MEMORIA = 1;
+	if(string_equals_ignore_case(algoritmo,"PARTICIONES")) ALGORITMO_MEMORIA = 1;
+	else if(string_equals_ignore_case(algoritmo,"BS")) ALGORITMO_MEMORIA = 2;
 		else
-		ALGORITMO_MEMORIA = 2;
+		ALGORITMO_MEMORIA = 3;
 }
 void setear_algoritmo_reemplazo(void){
 	char* algoritmo = config_get_string_value(config,"ALGORITMO_REEMPLAZO");

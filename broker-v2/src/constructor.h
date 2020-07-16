@@ -15,7 +15,6 @@
 #include<commons/config.h>
 #include<commons/collections/queue.h>
 #include<commons/collections/list.h>
-#include<commons/string.h>
 #include "config-reader.h"
 
 /* ADMINISTRACION DE MEMORIA */
@@ -66,7 +65,7 @@ typedef enum{
 /*  Define la estructura de una cola de mensajes  */
 typedef struct{
 	mq_nombre nombre;
-	t_queue* cola;
+	t_list* cola;
 	t_list* suscriptores; /** Lo cambie a una estructura suscriptor definida en protocolo.h*/
 	pthread_mutex_t lock;
 }t_mq;
@@ -89,7 +88,7 @@ t_pos_memoria;
 
 
 /** Es la estructura con la que se va a guardar los mensajes en la memoria interna del broker, contiene mas informacion */
-/** todo ESTRUCTURA MENSAJE */
+/** ESTRUCTURA MENSAJE */
 typedef struct{
 	int id;
 	int id_cor;
@@ -148,7 +147,7 @@ pthread_mutex_t mutex_lista_msjs;
 /** LOGS */
 t_log* logger;
 t_log* mi_log;
-
+t_log* dump;
 
 /* VG Colas de mensajes */
 t_mq* get_mq;
@@ -173,6 +172,7 @@ void fecha_dump(void);
 void iniciar_signal_handler();
 void signal_handler(int signo);
 char* obtener_fecha();
+void dump_particion(int posicion,int inicio, int fin,bool libre,uint64_t lru);
 
 /** Metodos para crear las colas de mensajes */
 void inicializar_semaforos();
@@ -283,6 +283,6 @@ void borrar_msj_mp(int posicion);
 void destruir_t_mensaje(t_mensaje* mensaje);
 void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje);
 void actualizar_ultima_vez_dinamica(t_mensaje* mensaje);
-void actualizar_ultima_vez_lru(t_mensaje* mensaje);
+void actualizar_ultima_vez_bs(t_mensaje* mensaje);
 
 #endif //CONSTRUCTOR_H_

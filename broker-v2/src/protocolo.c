@@ -28,7 +28,6 @@ void mandar_mensajes_cache(t_mq* cola){
 
 void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 
-		/*todo adaptar a distintos tipos de mensajes */
 		int tamanio;
 		int id_correlativo;
 		void* buffer;
@@ -103,10 +102,20 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 
 
 void enviar_id_msj_cliente(int socket_cliente,int id_msj){
-	//todo Implementar caso que el send falle
+	bool se_mando = false;
+	int contador = 3;
+	while(!se_mando && contador != 0){
 	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
-			log_info(mi_log,"Se envio el id del mensaje correctamente\n");
+		se_mando = true;
+		log_info(mi_log,"Se envio el id del mensaje correctamente\n");
 		}
+	else{
+		log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
+		contador--;
+		sleep(10);
+		}
+	}
+
 }
 
 void switch_cola(int cod_op, int socket_cliente, int id_modulo){
@@ -146,7 +155,6 @@ void switch_operacion (op_code operacion, t_mq* cola,int conexion, int id_modulo
 		break;
 	case SUSCRIPCION:
 		recibir_suscriptor(conexion, id_modulo, cola);
-		//TODO ver como manejar la llegada de un nuevo suscriptor para enviarle los mensajes de cache
 		break;
 	}
 }

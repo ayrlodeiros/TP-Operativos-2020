@@ -4,7 +4,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/adm-memoria.c \
 ../src/broker-v2.c \
 ../src/conexion.c \
 ../src/config-reader.c \
@@ -12,7 +11,6 @@ C_SRCS += \
 ../src/protocolo.c 
 
 OBJS += \
-./src/adm-memoria.o \
 ./src/broker-v2.o \
 ./src/conexion.o \
 ./src/config-reader.o \
@@ -20,7 +18,6 @@ OBJS += \
 ./src/protocolo.o 
 
 C_DEPS += \
-./src/adm-memoria.d \
 ./src/broker-v2.d \
 ./src/conexion.d \
 ./src/config-reader.d \

@@ -16,27 +16,63 @@ void iniciar_signal_handler() {
 	}
 }
 
-// TODO modificar en funcion de lo que dice el enunciado (faltan algunas cosas)
+t_mensaje* obtener_mensaje_asociado(int inicio){
+	for(int i = 0; list_size(lista_global_msjs) ;i++ ){
+		t_mensaje* aux = list_get(lista_global_msjs,i);
+
+		if(aux->pos_en_memoria->pos == inicio){
+			return aux;
+		}
+	}
+	log_info(mi_log,"ERROR NO SE PUDO IDENTIFICAR EL MENSAJE CON LA PARTICION");
+	return NULL;
+}
+
+
+void dump_particion(int posicion,int inicio, int fin,bool libre,uint64_t lru){
+
+	char estado;
+	if(libre){
+		estado = 'L';
+		log_info(dump,"Particion %d: %p - %p. [%c] Size: %db ",posicion,memoria_principal+inicio,memoria_principal+fin,estado,fin - inicio + 1);
+	}
+	else{
+		//todo no probamos esto todavia
+		estado = 'X';
+		t_mensaje* mensaje = obtener_mensaje_asociado(inicio);
+		log_info(dump,"Particion %d: %p - %p. [%c] Size: %db   LRU:%d  COLA:%d ID:%d",posicion,memoria_principal+inicio,memoria_principal+fin,estado,fin - inicio + 1,lru,mensaje->cola,mensaje->id);
+	}
+}
+
+
 void signal_handler(int signo) {
-	log_info(mi_log,"Se recibio la SIGURS1");
 
-	log_info(mi_log,"---------------------------");
+	log_info(dump,"---------------------------");
 	char* fecha = obtener_fecha();
-	log_info(mi_log,"Dump: %s", fecha);
+	log_info(dump,"Dump: %s", fecha);
 
-	//FALTA TERMINAR
-	/*
-	config_set_value(dump_config, "Particion 1", "Hola");
-	config_set_value(dump_config, "Particion 2", "Chau");
+	switch(leer_algoritmo_memoria()){
+		case BS:
+			for(int i = 0; list_size(lista_particiones) > i  ; i++){
 
-	config_save(dump_config);
-	config_destroy(dump_config);
+				t_particion_bs* particion = list_get(lista_particiones,i);
+				dump_particion(i,particion->inicio,particion->fin,particion->libre,particion->ult_vez_usado);
 
-	log_info(mi_log, "Se actualizo el archivo dump");
+			}
 
-*/
+			break;
+		case PARTICIONES:
+			for(int i = 0; list_size(lista_particiones) > i  ; i++){
+				t_particion_dinamica* particion = list_get(lista_particiones,i);
+				dump_particion(i,particion->inicio,particion->fin,particion->libre,particion->ult_vez_usado);
+			}
+			break;
+		case NORMAL:
+			break;
+	}
+
 	free(fecha);
-	log_info(mi_log,"---------------------------");
+	log_info(dump,"---------------------------");
 }
 
 char* obtener_fecha() {
@@ -101,15 +137,16 @@ void iniciar_list_global(){
 void esperar_mensaje_en_cola(t_mq* mq) {
 
 	while(1) {
-		if(queue_is_empty(mq->cola)) {
+		if(list_is_empty(mq->cola)) {
 			log_info(mi_log, "Se bloquea la cola %d", mq->nombre);
 			pthread_mutex_lock(&mq->lock);
 		}
 
 		log_info(mi_log, "Se desbloqueo la cola %d por la aparicion de un mensaje", mq->nombre);
 
+		pthread_mutex_lock(&mutex_memoria_principal);
 		enviar_mensaje_suscriptores(mq);
-		//TODO implementar codigo cuando tenes mensaje para enviar de la cola
+		pthread_mutex_unlock(&mutex_memoria_principal);
 	}
 }
 
@@ -124,7 +161,7 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	paquete->buffer = malloc(sizeof(t_buffer));
 	paquete->buffer->size = mensaje->pos_en_memoria->tamanio;
 	paquete->buffer->stream = malloc(paquete->buffer->size);
-	//TODO abstraer en otra funcion la busqueda del stream en la memoria principal
+
 	memcpy(paquete->buffer->stream, memoria_principal + mensaje->pos_en_memoria->pos, paquete->buffer->size);
 
 	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
@@ -147,6 +184,7 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 }
 
 void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
+
 	int valor;
 	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",suscriptor->identificador);
 	if (recv(suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
@@ -174,8 +212,7 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 
 void enviar_mensaje_suscriptores(t_mq* cola){
 	aux_msj_susc* aux = malloc(sizeof(aux_msj_susc));
-	/*todo Por lo que estuve viendo en el foro, no es necesario que haya que sacar el msj de la cola, ya que puede que pasar que no lo hayan recibido todos los suscriptores */
-	t_mensaje* mensaje = queue_pop(cola->cola);
+	t_mensaje* mensaje = list_remove(cola->cola,0);
 	suscriptor_t* suscriptor;
 	int i;
 
@@ -210,7 +247,7 @@ bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
 void crear_get_mq(){
 	get_mq = malloc(sizeof(t_mq));
 	get_mq->nombre = GET;
-	get_mq->cola = queue_create();
+	get_mq->cola = list_create();
 	get_mq->suscriptores = list_create();
 	pthread_mutex_init(&get_mq->lock, NULL);
 	pthread_mutex_lock(&get_mq->lock);
@@ -219,7 +256,7 @@ void crear_get_mq(){
 void crear_localized_mq(){
 	localized_mq = malloc(sizeof(t_mq));
 	localized_mq->nombre = LOCALIZED;
-	localized_mq->cola = queue_create();
+	localized_mq->cola = list_create();
 	localized_mq->suscriptores = list_create();
 	pthread_mutex_init(&localized_mq->lock, NULL);
 	pthread_mutex_lock(&localized_mq->lock);
@@ -228,7 +265,7 @@ void crear_localized_mq(){
 void crear_catch_mq(){
 	catch_mq = malloc(sizeof(t_mq));
 	catch_mq->nombre = CATCH;
-	catch_mq->cola = queue_create();
+	catch_mq->cola = list_create();
 	catch_mq->suscriptores = list_create();
 	pthread_mutex_init(&catch_mq->lock, NULL);
 	pthread_mutex_lock(&catch_mq->lock);
@@ -237,7 +274,7 @@ void crear_catch_mq(){
 void crear_caught_mq(){
 	caught_mq = malloc(sizeof(t_mq));
 	caught_mq->nombre = CAUGHT;
-	caught_mq->cola = queue_create();
+	caught_mq->cola = list_create();
 	caught_mq->suscriptores = list_create();
 	pthread_mutex_init(&caught_mq->lock, NULL);
 	pthread_mutex_lock(&caught_mq->lock);
@@ -245,7 +282,7 @@ void crear_caught_mq(){
 void crear_new_mq(){
 	new_mq = malloc(sizeof(t_mq));
 	new_mq->nombre = NEW;
-	new_mq->cola = queue_create();
+	new_mq->cola = list_create();
 	new_mq->suscriptores = list_create();
 	pthread_mutex_init(&new_mq->lock, NULL);
 	pthread_mutex_lock(&new_mq->lock);
@@ -253,7 +290,7 @@ void crear_new_mq(){
 void crear_appeared_mq(){
 	appeared_mq = malloc(sizeof(t_mq));
 	appeared_mq->nombre = APPEARED;
-	appeared_mq->cola = queue_create();
+	appeared_mq->cola = list_create();
 	appeared_mq->suscriptores = list_create();
 	pthread_mutex_init(&appeared_mq->lock, NULL);
 	pthread_mutex_lock(&appeared_mq->lock);
@@ -273,39 +310,40 @@ void liberar_message_queues(){
 
 void liberar_mq(t_mq* mq){
 	list_destroy(mq->suscriptores);
-	queue_destroy(mq->cola);
+	//todo tener en cosideracion usar un list_destroy
+	list_destroy(mq->cola);
 	free(mq);
 }
 
 void liberar_get_mq(){
 	list_destroy(get_mq->suscriptores);
-	queue_destroy(get_mq->cola);
+	list_destroy(get_mq->cola);
 	free(get_mq);
 }
 
 void liberar_localized_mq(){
 	list_destroy(localized_mq->suscriptores);
-	queue_destroy(localized_mq->cola);
+	list_destroy(localized_mq->cola);
 	free(localized_mq);
 }
 void liberar_catch_mq(){
 	list_destroy(catch_mq->suscriptores);
-	queue_destroy(catch_mq->cola);
+	list_destroy(catch_mq->cola);
 	free(catch_mq);
 }
 void liberar_caught_mq(){
 	list_destroy(caught_mq->suscriptores);
-	queue_destroy(caught_mq->cola);
+	list_destroy(caught_mq->cola);
 	free(caught_mq);
 }
 void liberar_new_mq(){
 	list_destroy(new_mq->suscriptores);
-	queue_destroy(new_mq->cola);
+	list_destroy(new_mq->cola);
 	free(new_mq);
 }
 void liberar_appeared_mq(){
 	list_destroy(appeared_mq->suscriptores);
-	queue_destroy(appeared_mq->cola);
+	list_destroy(appeared_mq->cola);
 	free(appeared_mq);
 }
 
@@ -332,7 +370,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 
 
 /*Inicializa el contador de ids */
-/*todo IDS MENSAJES */
+/* IDS MENSAJES */
 void iniciar_contador_ids_mensaje(){
 	contador_ids_mensaje = 1;
 }
@@ -409,8 +447,6 @@ void almacenar_en_memoria(int tamanio, void* buffer, int posicion) {
 	ultima_pos += tamanio;
 }
 
-//todo tener en cuenta que al COMPACTAR se mueve la posicion del msj, por lo tanto hay que ver una forma de actualizar ese valor en la estructura msj
-
 int obtener_posicion_normal() {
 	return ultima_pos;
 }
@@ -421,7 +457,7 @@ int obtener_posicion_normal() {
 void inicializar_lista_particiones(){
 	t_particion_dinamica* primera_part = malloc(sizeof(t_particion_dinamica));
 	primera_part->inicio = 0;
-	primera_part->fin = leer_tamano_memoria();
+	primera_part->fin = leer_tamano_memoria() -1;
 	primera_part->libre = true;
 	lista_particiones = list_create();
 	list_add(lista_particiones,primera_part);
@@ -481,29 +517,56 @@ void borrarParticion(void* elemento){
 }
 */
 
+t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
+
+	for(int i = 0; list_size(lista_msjs) > i ;i++ ){
+
+		t_mensaje* msj = list_get(lista_msjs,i);
+		if(msj->pos_en_memoria->pos == posicion){
+			return msj;
+		}
+
+	}
+
+	return NULL;
+
+}
+
+void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
+
+	t_mensaje* mensaje = obtener_estructura_msj(pos_vieja,lista_global_msjs);
+	mensaje->pos_en_memoria->pos = pos_nueva;
+}
+
 void compactacion(){
 
 	t_list* particiones_ocupadas = obtener_particiones_ocupadas();
 	/* Hasta aca la lista de particiones, borre todas las estructuras que estaban libres y me quede con una nueva lista de particiones ocupadas */
-	//todo esta medio a lo bestia, despues ver si se puede mejorar
+	// esta medio a lo bestia, despues ver si se puede mejorar
 
 	t_list* lista_temporal = crear_list_temporal(particiones_ocupadas);;
 	int prox_posicion = 0;
+	int aux_para_encontrar_msjs;
+
+	pthread_mutex_lock(&mutex_lista_msjs);
 	for(int i = 0; list_size(lista_temporal);i++){
 
 		t_struct_temporal* aux = list_get(lista_temporal,i);
 		t_particion_dinamica* particion = aux->particion;
+		aux_para_encontrar_msjs = aux->particion->inicio;
+
 		list_add(lista_particiones,particion);
 		particion->inicio = prox_posicion;
 		particion->fin = prox_posicion + particion->tamanio_ocupado -1;
 		prox_posicion = prox_posicion + particion->tamanio_ocupado;
-		/*todo acordarme de avisar a la estructura de msjs que se movieron los valores de la particion */
+
+		actualizar_estructura_mensaje(aux_para_encontrar_msjs,particion->inicio);
 		llenar_memoria_principal(particion->inicio,particion->tamanio_ocupado,aux->memoria);
 		free(aux->memoria);
 		free(aux);
 
 	}
-
+	pthread_mutex_unlock(&mutex_lista_msjs);
 	//Creo la particion libre y la agrego al final de la memoria
 	list_destroy(lista_temporal);
 	t_particion_dinamica* particion_libre = crear_particion_dinamica_libre();
@@ -546,13 +609,13 @@ void liberar_particion(){
 				ubicacion_particion = algoritmo_reemplazo_fifo();
 			break;
 		case LRU:
-				algoritmo_reemplazo_lru();
+				ubicacion_particion = algoritmo_reemplazo_lru();
 			break;
 	}
 	consolidar(ubicacion_particion);
 }
 
-/*todo si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor */
+/* si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor */
 int algoritmo_reemplazo_fifo(void){
 
 	t_particion_dinamica* primera_particion = NULL;
@@ -574,7 +637,6 @@ int algoritmo_reemplazo_fifo(void){
 		primera_particion->libre = true;
 		primera_particion->tamanio_ocupado = 0;
 
-		//todo consolidar() tal vez conviene mejor ponerlo aca
 		return pos_primera_particion;
 }
 
@@ -598,8 +660,7 @@ int algoritmo_reemplazo_lru(void){
 	borrar_msj_mp(part_menos_usada->inicio);
 	part_menos_usada->libre = true;
 	part_menos_usada->tamanio_ocupado = 0;
-	//todo part_menos_usada->orden_ingreso;
-	//todo consolidar() tal vez conviene mejor ponerlo aca
+	//consolidar() tal vez conviene mejor ponerlo aca
 	return pos_part_menos_usada;
 }
 
@@ -723,13 +784,13 @@ t_particion_dinamica* crear_particion_dinamica_libre(){
 }
 
 int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamanio,int posicion_en_lista){
-	//todo no ovlidar que cuando elimino la particion se tiene que liberar este espacio de memoria
+	// no ovlidar que cuando elimino la particion se tiene que liberar este espacio de memoria
 	t_particion_dinamica* nueva_particion = crear_particion_dinamica_libre();
 	nueva_particion->fin = particion->fin;
 	nueva_particion->inicio = nueva_particion->fin - tamanio + 1;
 
 
-	//todo aunque tecnicamente no esta ocupado todavia no se me ocurre otro momento mejor para llenar este dato
+	// aunque tecnicamente no esta ocupado todavia no se me ocurre otro momento mejor para llenar este dato
 	particion->tamanio_ocupado = tamanio;
 	particion->fin = particion->inicio + tamanio - 1;
 	particion->libre = false;
@@ -768,14 +829,16 @@ int tamanio_particion(t_particion_dinamica* particion){
 void inicializar_lista_bs(){
 	int tamanio_memoria = leer_tamano_memoria();
 
-	lista_particiones = list_create();
 	t_particion_bs* primera_part = malloc(sizeof(t_particion_bs));
 	primera_part->inicio = 0;
-	primera_part->fin = tamanio_memoria; // Ver si usar el -1
+	primera_part->fin = tamanio_memoria-1;
 	primera_part->potencia_de_dos = obtener_potencia_de_dos_mas_cercana(tamanio_memoria);
 	primera_part->tiempo_ingreso = timestamp();
 	primera_part->ult_vez_usado = timestamp();
 	primera_part->libre = true;
+
+	lista_particiones = list_create();
+	list_add(lista_particiones, primera_part);
 
 }
 
@@ -886,7 +949,7 @@ int obtener_posicion_de_particion_liberada_fifo() {
 	borrar_msj_mp(particion_objetivo->inicio);
 	particion_objetivo->libre = true;
 
-	return particion_objetivo;
+	return posicion;
 }
 
 int obtener_posicion_de_particion_liberada_lru() {
@@ -959,12 +1022,12 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 
 		t_particion_bs* nueva_particion = malloc(sizeof(t_particion_bs));
 		nueva_particion->inicio = particion_a_particionar->inicio + tamanio_actual;
-		nueva_particion->fin = nueva_particion->inicio + tamanio_actual; //si se usa el -1 cuando se crea, habria que usarlo aca tambien
+		nueva_particion->fin = nueva_particion->inicio + tamanio_actual -1;
 		nueva_particion->potencia_de_dos = potencia_nueva;
 		nueva_particion->libre = true;
 		list_add(lista_auxiliar, nueva_particion);
 
-		particion_a_particionar->fin = nueva_particion->inicio; //si se usa el -1 cuando se crea, habria que usarlo aca tambien
+		particion_a_particionar->fin = nueva_particion->inicio -1;
 	}
 
 	particion_a_particionar->potencia_de_dos = potencia_de_dos_deseada;
@@ -1013,7 +1076,44 @@ void borrar_msj_mp(int posicion){
 	pthread_mutex_unlock(&mutex_lista_msjs);
 }
 
+void chequear_y_borrar_msj_en_cola(t_mq* cola, int id_msj_borrado){
+
+	for(int i = 0; list_size(cola->cola) > i;i++ ){
+
+		t_mensaje* mensaje = list_get(cola->cola,i);
+		if( mensaje->id == id_msj_borrado){
+			list_remove(cola->cola,i);
+			break;
+		}
+
+	}
+
+}
+
+
 void destruir_t_mensaje(t_mensaje* mensaje) {
+
+	switch(mensaje->cola){
+	case CATCH:
+		chequear_y_borrar_msj_en_cola(catch_mq,mensaje->id);
+		break;
+	case CAUGHT:
+		chequear_y_borrar_msj_en_cola(caught_mq,mensaje->id);
+			break;
+	case LOCALIZED:
+		chequear_y_borrar_msj_en_cola(localized_mq,mensaje->id);
+			break;
+	case GET:
+		chequear_y_borrar_msj_en_cola(get_mq,mensaje->id);
+			break;
+	case NEW:
+		chequear_y_borrar_msj_en_cola(new_mq,mensaje->id);
+			break;
+	case APPEARED:
+		chequear_y_borrar_msj_en_cola(appeared_mq,mensaje->id);
+			break;
+	}
+
 	free(mensaje->pos_en_memoria);
 	list_destroy(mensaje->suscriptores_conf);
 	list_destroy(mensaje->suscriptores_env);
@@ -1028,7 +1128,7 @@ void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje) {
 			actualizar_ultima_vez_dinamica(mensaje);
 			break;
 		case BS:
-			actualizar_ultima_vez_lru(mensaje);
+			actualizar_ultima_vez_bs(mensaje);
 			break;
 		case NORMAL:
 			break;
@@ -1046,7 +1146,7 @@ void actualizar_ultima_vez_dinamica(t_mensaje* mensaje) {
 	}
 }
 
-void actualizar_ultima_vez_lru(t_mensaje* mensaje) {
+void actualizar_ultima_vez_bs(t_mensaje* mensaje) {
 	for(int i=0; i< list_size(lista_particiones); i++) {
 		t_particion_bs* particion = list_get(lista_particiones, i);
 		if(mensaje->pos_en_memoria->pos == particion->inicio) {

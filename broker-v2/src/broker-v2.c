@@ -8,7 +8,7 @@ struct mesg_buffer {
 
 int main(void)
 {
-	//pthread_t* conexion_team;
+
 
 	iniciar_broker();
 
@@ -25,6 +25,7 @@ void iniciar_broker(){
 	printf("-----------------Iniciando archivo config-----------------\n");
 	logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
 	mi_log = log_create(leer_nuestro_log_file(),"broker",true,LOG_LEVEL_INFO);
+	dump = log_create(leer_path_archivo_dump(),"dump",true,LOG_LEVEL_INFO);
 	iniciar_funcionalidades();
 
 }
