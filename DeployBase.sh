@@ -43,18 +43,18 @@ cd
 
 #COPIO CARPETA TP
 
-if test -d /home/utnso/Documentos/tp-2020-1c-C-aprueba/; then
-	sudo rm -r /home/utnso/Documentos/tp-2020-1c-C-aprueba
+if test -d /home/utnso/tp-2020-1c-C-aprueba/; then
+	sudo rm -r /home/utnso/tp-2020-1c-C-aprueba
 fi
 
 cd /home/utnso/tp-safe-zone/
 
-cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba
+cp -r tp-2020-1c-C-aprueba/ /home/utnso/tp-2020-1c-C-aprueba
 
 #FIN DE COPIAR CARPETA
 
 #INICIO DE GAMEBOY
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
+cd /home/utnso/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
 
 make all
 
@@ -69,7 +69,7 @@ echo -e "IP_BROKER=\nIP_TEAM=127.0.0.2\nIP_GAMECARD=127.0.0.3\nPUERTO_BROKER=\nP
 #FIN DE GAMEBOY
 
 #INICIO DE GAMECARD
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug/
+cd /home/utnso/tp-2020-1c-C-aprueba/gamecard-v2/Debug/
 
 make all
 
@@ -85,7 +85,7 @@ echo -e "TIEMPO_DE_REINTENTO_CONEXION=10\nTIEMPO_DE_REINTENTO_OPERACION=5\nTIEMP
 
 #CREO TEAMS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug/
+cd /home/utnso/tp-2020-1c-C-aprueba/team-v2/Debug/
 
 make all
 
@@ -99,7 +99,7 @@ cp team-v2/ team-v2-SJF-CD
 
 #Configuro team con FIFO
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/
+cd /home/utnso/tp-2020-1c-C-aprueba/team-v2/
 
 cd /src/resources/
 
@@ -107,7 +107,7 @@ if test -e .team.config; then
 	rm .team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=FIFO\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt" >> .team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=FIFO\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt" >> .team.config
 
 #Configuro team con RR -> Quantum = 2
 
@@ -119,7 +119,7 @@ if test -e .team.config; then
 	rm .team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=RR\nQUANTUM=2\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_RR.txt" >> .team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=RR\nQUANTUM=2\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_RR.txt" >> .team.config
 
 #Configuro team con SJF - SD
 
@@ -131,7 +131,7 @@ if test -e .team.config; then
 	rm .team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-SD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-SD.txt" >> .team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-SD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-SD.txt" >> .team.config
 
 #Configuro team con SJF - CD
 
@@ -143,14 +143,14 @@ if test -e .team.config; then
 	rm .team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-CD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-CD.txt" >> .team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-CD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-CD.txt" >> .team.config
 #FIN DE TEAM
 
 #INICIO BROKER
 
 #CREO LOS BROKERS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug/
+cd /home/utnso/tp-2020-1c-C-aprueba/broker-v2/Debug/
 
 make all
 
@@ -163,7 +163,7 @@ cp broker-v2/ broker-v2-BUDDY-SYSTEM
 
 #Configuro broker consolidacion Particiones dinamicas
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/
+cd /home/utnso/tp-2020-1c-C-aprueba/broker-v2/
 
 cd /src/resources/
 
