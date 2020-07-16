@@ -16,24 +16,38 @@ void iniciar_signal_handler() {
 	}
 }
 
-void dump__principio_fecha(){
-	time_t t = time(NULL);
-	struct tm time = *localtime(&t);
-	log_info(mi_log,"*********************************");
-	log_info(mi_log,"Dump: %d/%02d/%02d %02d:%02d:%02d\n", time.tm_mday , time.tm_mon + 1, time.tm_year + 1900 , time.tm_hour, time.tm_min, time.tm_sec);
+// TODO modificar en funcion de lo que dice el enunciado (faltan algunas cosas)
+void signal_handler(int signo) {
+	log_info(mi_log,"Se recibio la SIGURS1");
+
+	log_info(mi_log,"---------------------------");
+	char* fecha = obtener_fecha();
+	log_info(mi_log,"Dump: %s", fecha);
+
+	//FALTA TERMINAR
+	/*
+	config_set_value(dump_config, "Particion 1", "Hola");
+	config_set_value(dump_config, "Particion 2", "Chau");
+
+	config_save(dump_config);
+	config_destroy(dump_config);
+
+	log_info(mi_log, "Se actualizo el archivo dump");
+
+*/
+	free(fecha);
+	log_info(mi_log,"---------------------------");
 }
 
-// TODO modificar en funcion de lo que dice el enunciado
+char* obtener_fecha() {
+	time_t t;
+	struct tm* tm;
+	char* fecha_y_hora = malloc(20*sizeof(char));
+	t=time(NULL);
+	tm=localtime(&t);
+	strftime(fecha_y_hora, 100, "%d/%m/%Y %H:%M:%S", tm);
 
-void signal_handler(int signo) {
-
-	dump__principio_fecha();
-
-	/*for(int i = 0; list_size(lista_particiones) ;i++){
-
-	}
-	 */
-	log_info(mi_log,"*********************************");
+	return fecha_y_hora;
 }
 
 void inicializar_semaforos() {
@@ -164,6 +178,8 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 	t_mensaje* mensaje = queue_pop(cola->cola);
 	suscriptor_t* suscriptor;
 	int i;
+
+	actualizar_ultima_vez_usado_particion(mensaje);
 
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
@@ -1002,4 +1018,40 @@ void destruir_t_mensaje(t_mensaje* mensaje) {
 	list_destroy(mensaje->suscriptores_conf);
 	list_destroy(mensaje->suscriptores_env);
 	free(mensaje);
+}
+
+void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje) {
+	pthread_mutex_lock(&mutex_memoria_principal);
+
+	switch(leer_algoritmo_memoria()){
+		case PARTICIONES:
+			actualizar_ultima_vez_dinamica(mensaje);
+			break;
+		case BS:
+			actualizar_ultima_vez_lru(mensaje);
+			break;
+		case NORMAL:
+			break;
+	}
+	pthread_mutex_unlock(&mutex_memoria_principal);
+}
+
+void actualizar_ultima_vez_dinamica(t_mensaje* mensaje) {
+	for(int i=0; i< list_size(lista_particiones); i++) {
+		t_particion_dinamica* particion = list_get(lista_particiones, i);
+		if(mensaje->pos_en_memoria->pos == particion->inicio) {
+			particion->ult_vez_usado = timestamp();
+			break;
+		}
+	}
+}
+
+void actualizar_ultima_vez_lru(t_mensaje* mensaje) {
+	for(int i=0; i< list_size(lista_particiones); i++) {
+		t_particion_bs* particion = list_get(lista_particiones, i);
+		if(mensaje->pos_en_memoria->pos == particion->inicio) {
+			particion->ult_vez_usado = timestamp();
+			break;
+		}
+	}
 }
