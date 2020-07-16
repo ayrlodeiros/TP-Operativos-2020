@@ -23,8 +23,8 @@ cd
 
 #BASE
 
-if test -d /home/utnso/delibird-base/; then
-	sudo rm -r /home/utnso/delibird-base/
+if test -d /home/utnso/tallgrass-base/; then
+	sudo rm -r /home/utnso/tallgrass-base/
 fi
 
 cd
