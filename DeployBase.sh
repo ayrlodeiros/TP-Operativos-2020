@@ -153,8 +153,8 @@ make all
 
 cd ../../
 
-cp broker-v2/ broker-v2-COMPACTACION-PD
-cp broker-v2/ broker-v2-BUDDY-SYSTEM
+cp -r broker-v2/ broker-v2-COMPACTACION-PD
+cp -r broker-v2/ broker-v2-BUDDY-SYSTEM
 
 #CONFIGURO BROKERS
 
