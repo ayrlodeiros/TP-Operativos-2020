@@ -402,7 +402,7 @@ t_list* armar_mensaje_get(char* nombre_pokemon){
 	else{
 		log_info(logger,"No se encontro al Pokemon");
 		log_info(nuestro_log,"No se encontro al Pokemon");
-		return lista_de_posiciones_get;
+		return list_create();
 	}
 
 }

@@ -255,16 +255,14 @@ void levantar_conexiones_al_broker() {
 
 			log_info(nuestro_log, "El broker no esta conectado...");
 
-			//conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-			conexion_caught = intentar_conectar_al_broker();
-			log_info(nuestro_log, "La conexion del caught es %d", conexion_caught);
-
 			conexion_appeared = intentar_conectar_al_broker();
 			log_info(nuestro_log, "La conexion del appeared es %d", conexion_appeared);
 
-			//conexion_localized = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-			conexion_localized = intentar_conectar_al_broker();
+			conexion_localized = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 			log_info(nuestro_log, "La conexion del localized es %d", conexion_localized);
+
+			conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
+			log_info(nuestro_log, "La conexion del caught es %d", conexion_caught);
 
 			if(conexion_appeared == -1 || conexion_localized == -1 || conexion_caught == -1) {
 				cambiar_valor_de_funciona_broker(0);
@@ -292,23 +290,25 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 			if(recv(conexion_broker, &tamanio, sizeof(uint32_t), 0) == -1) {
 				hubo_error = 1;
 			} else {
-				payload = malloc(tamanio);
-				if(recv(conexion_broker, payload, tamanio, 0) == -1) {
-					hubo_error = 1;
+				if(tamanio>0 && tamanio<100000) {
+					payload = malloc(tamanio);
+					if(recv(conexion_broker, payload, tamanio, 0) == -1) {
+						hubo_error = 1;
+					}
+					mallockeo_payload = 1;
 				}
-				mallockeo_payload = 1;
 			}
 		}
 	}
 
-	if(hubo_error) {
+	if(hubo_error || mallockeo_payload==0) {
 		log_info(nuestro_log, "No se pudo recibir el mensaje del broker, se perdio la conexion");
-		cambiar_valor_de_funciona_broker(0);
-		desbloquear_lock_reintento();
-
 		if(mallockeo_payload) {
 			free(payload);
 		}
+
+		cambiar_valor_de_funciona_broker(0);
+		desbloquear_lock_reintento();
 
 		return NULL;
 	} else {
@@ -377,7 +377,7 @@ void esperar_mensaje_localized() {
 	suscribirse_a_cola(conexion_localized, LOCALIZED);
 	while(funciona_broker == 1) {
 		log_info(nuestro_log, "Estoy esperando mensaje LOCALIZED");
-		mensaje_broker* msj_broker = recibir_msj_broker(conexion_appeared);
+		mensaje_broker* msj_broker = recibir_msj_broker(conexion_localized);
 		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
 		} else {
@@ -477,6 +477,7 @@ int id_esta_en_lista_ids_localized(int id) {
 		int id_localized = (int) list_get(lista_ids_localized, i);
 
 		if(id_localized == id) {
+			log_info(nuestro_log, "El id %d esta en la lista de LOCALIZED", id_localized);
 			list_remove(lista_ids_localized, i);
 			pthread_mutex_unlock(&mutex_lista_ids_localized);
 			return 1;
@@ -491,7 +492,7 @@ void esperar_mensaje_caught() {
 	suscribirse_a_cola(conexion_caught, CAUGHT);
 	while(funciona_broker == 1) {
 		log_info(nuestro_log, "Estoy esperando mensaje CAUGHT");
-		mensaje_broker* msj_broker = recibir_msj_broker(conexion_appeared);
+		mensaje_broker* msj_broker = recibir_msj_broker(conexion_caught);
 		if(msj_broker == NULL) {
 			log_info(nuestro_log, "Se perdio la conexion con el broker");
 		} else {
@@ -502,7 +503,8 @@ void esperar_mensaje_caught() {
 				id_y_entrenador* iye = list_remove(lista_ids_caught, posicion_en_lista);
 				pthread_mutex_unlock(&mutex_lista_ids_caught);
 
-				int respuesta_caught = (int) msj_broker->payload;
+				int respuesta_caught;
+				memcpy(&respuesta_caught, msj_broker->payload, sizeof(uint32_t));
 
 				if(respuesta_caught == 1) {
 					manejar_la_captura_del_pokemon(iye->entrenador);
@@ -510,6 +512,7 @@ void esperar_mensaje_caught() {
 					manejar_la_no_captura_del_pokemon(iye->entrenador);
 				}
 
+				free(iye);
 			}
 
 			free(msj_broker->payload);
@@ -524,6 +527,7 @@ int obtener_posicion_en_lista_de_id_caught(int id_caught) {
 	for(int i = 0; i<list_size(lista_ids_caught); i++) {
 		id_y_entrenador* iye = list_get(lista_ids_caught, i);
 		if(iye->id == id_caught) {
+			log_info(nuestro_log, "El id %d estan en la lista CAUGHT", iye->id);
 			pthread_mutex_unlock(&mutex_lista_ids_caught);
 			return i;
 
@@ -781,7 +785,7 @@ void planear_intercambio(entrenador* entrenador1){
 	} else {
 		log_info(nuestro_log,"No se encontro intercambio beneficioso para entrenador %d", entrenador1->id);
 		cambiar_estado_entrenador(entrenador1, BLOCK_DEADLOCK);
-		free (un_intercambio);
+		free(un_intercambio);
 	}
 
 	log_info(nuestro_log,"Sali de planear el intercambio");
@@ -1010,7 +1014,7 @@ void realizar_get(char* key, void* value) {
 			int offset = 0;
 			memcpy(stream + offset,&largo_key, sizeof(uint32_t));
 			offset+=sizeof(uint32_t);
-			memcpy(stream + offset,&key, (largo_key + 1));
+			memcpy(stream + offset,key, (largo_key + 1));
 			buffer->stream = stream;
 
 			//CREO EL PAQUETE CON EL CONTENIDO DE LO QUE VOY A ENVIAR
@@ -1046,7 +1050,7 @@ void esperar_id_localized(int socket_get) {
 		log_info(nuestro_log, "Se recibio correctamente el ID: %d, para esperar en LOCALIZED", id_localized);
 
 		pthread_mutex_lock(&mutex_lista_ids_localized);
-		list_add(lista_ids_localized, &id_localized);
+		list_add(lista_ids_localized, id_localized);
 		pthread_mutex_unlock(&mutex_lista_ids_localized);
 	} else {
 		log_info(nuestro_log, "No se pudo recibir el ID de LOCALIZED");
@@ -1072,15 +1076,14 @@ void catch_pokemon(entrenador* entrenador) {
 		//CREO EL BUFFER CON SU TAMANIO Y STREAM
 		t_buffer* buffer = malloc(sizeof(t_buffer));
 
-		int tamanio_char_pokemon = strlen(entrenador->pokemon_en_busqueda->nombre) + 1;
-		buffer->tamanio = tamanio_char_pokemon + (3*sizeof(uint32_t));
-		tamanio_char_pokemon--;
+		int tamanio_char_pokemon = strlen(entrenador->pokemon_en_busqueda->nombre);
+		buffer->tamanio = tamanio_char_pokemon + 1 + (3*sizeof(uint32_t));
 
 		void* stream = malloc(buffer->tamanio);
 		int offset = 0;
 		memcpy(stream + offset,&tamanio_char_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
-		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->nombre), (tamanio_char_pokemon+1));
+		memcpy(stream + offset,entrenador->pokemon_en_busqueda->nombre, (tamanio_char_pokemon+1));
 		offset += (tamanio_char_pokemon+1);
 		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_x), sizeof(uint32_t));
 		offset += sizeof(uint32_t);
@@ -1096,7 +1099,7 @@ void catch_pokemon(entrenador* entrenador) {
 		void* a_enviar = serializar_paquete(paquete, bytes);
 
 		if(send(socket_catch, a_enviar, bytes ,0) > 0){
-			log_info(nuestro_log, "Se realizo el envio de CATCH correctamente");
+			log_info(nuestro_log, "Se realizo el envio de CATCH %s correctamente", entrenador->pokemon_en_busqueda->nombre);
 
 			socket_y_entrenador* s_y_e = malloc(sizeof(socket_y_entrenador));
 			s_y_e->conexion = socket_catch;

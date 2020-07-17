@@ -225,6 +225,23 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	free(paquete);
 }
 
+void* serializar_paquete(t_paquete* paquete, int bytes)
+{
+	void * magic = malloc(bytes);
+	int desplazamiento = 0;
+
+	memcpy(magic + desplazamiento, &(paquete->id), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	memcpy(magic + desplazamiento, &(paquete->id_cor), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	memcpy(magic + desplazamiento, &(paquete->buffer->size), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	memcpy(magic + desplazamiento, paquete->buffer->stream, paquete->buffer->size);
+	desplazamiento+= paquete->buffer->size;
+
+	return magic;
+}
+
 void recibir_ACK(aux_msj_susc* msj_y_susc){
 
 	int valor;

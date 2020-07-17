@@ -148,9 +148,9 @@ void enviar_mensaje_new_broker(t_new_pokemon new_pokemon, int socket){
 	bytes_escritos += sizeof(uint32_t);
 
 	paquete->buffer->stream = stream;
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
+	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
-	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
+	void *mensaje_a_enviar = serializar_paquete_con_id(paquete,size_serializados,-1);
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
 		log_info(logger, "Se envio el mensaje NEW: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker);
@@ -278,9 +278,9 @@ void enviar_mensaje_catch_broker(t_catch_pokemon catch_pokemon, int socket){
 	bytes_escritos += sizeof(uint32_t);
 
 	paquete->buffer->stream = stream;
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
+	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
-	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
+	void *mensaje_a_enviar = serializar_paquete_con_id(paquete,size_serializados,-1);
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
 		log_info(logger, "Se envio el mensaje CATCH: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker);
@@ -383,7 +383,7 @@ void enviar_mensaje_get_broker(t_get_pokemon get_pokemon, int socket){
 
 	paquete->buffer->stream = stream;
 
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
+	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 	int envio = send(socket,mensaje_a_enviar,size_serializados,0);
