@@ -18,11 +18,11 @@
 #include<pthread.h>
 #include<commons/log.h>
 #include<commons/string.h>
-#include "message-queue.h"
 #include "config-reader.h"
 
 t_log* logger;
 t_log* mi_log;
+
 
 typedef enum
 {
@@ -104,9 +104,12 @@ void enviar_mensaje_catch_broker(t_catch_pokemon catch_pokemon, int socket);
 void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,uint32_t id_mensaje_correlativo);
 void enviar_mensaje_get_gamecard(t_get_pokemon get_pokemon, int socket, uint32_t id_mensaje);
 void enviar_mensaje_get_broker(t_get_pokemon get_pokemon, int socket);
-void suscribirse_a_cola(int cola, int tiempo, int socket_broker);
+int suscribirse_a_cola(int cola, int tiempo, int socket_broker);
+void recibir_msj_broker(int conexion_broker);
+void mandar_ack(int conexion, int resultado);
 void* serializar_paquete(t_paquete* paquete, int bytes);
 void* serializar_paquete_con_id(t_paquete* paquete, int bytes, int id);
+void* serializar_paquete_sin_buffer(t_paquete* paquete, int tamanio_a_enviar);
 char* leer_puerto_string(int modulo);
 int conectarse_a(int modulo);
 

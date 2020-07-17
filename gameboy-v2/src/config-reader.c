@@ -9,6 +9,8 @@ void iniciar_config(void){
 	setear_puerto_broker();
 	setear_puerto_team();
 	setear_puerto_gamecard();
+	setear_log_file();
+	setear_mi_log_file();
 }
 
 void destruir_config(void){
@@ -34,6 +36,12 @@ void setear_puerto_team(void){
 void setear_puerto_gamecard(void){
 	puerto_gamecard = config_get_int_value(config,"PUERTO_GAMECARD");
 }
+void setear_log_file() {
+	log_file = config_get_string_value(config,"LOG_FILE");
+}
+void setear_mi_log_file() {
+	mi_log_file = config_get_string_value(config,"MI_LOG_FILE");
+}
 
 char* leer_ip_broker(void){
 	return ip_broker;
@@ -52,4 +60,10 @@ int leer_puerto_team(void){
 }
 int leer_puerto_gamecard(void){
 	return puerto_gamecard;
+}
+char* leer_log_file(void){
+	return log_file;
+}
+char* leer_mi_log_file(void){
+	return mi_log_file;
 }

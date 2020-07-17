@@ -6,20 +6,17 @@
 C_SRCS += \
 ../src/conexion.c \
 ../src/config-reader.c \
-../src/gameboy-v2.c \
-../src/message-queue.c 
+../src/gameboy-v2.c 
 
 OBJS += \
 ./src/conexion.o \
 ./src/config-reader.o \
-./src/gameboy-v2.o \
-./src/message-queue.o 
+./src/gameboy-v2.o 
 
 C_DEPS += \
 ./src/conexion.d \
 ./src/config-reader.d \
-./src/gameboy-v2.d \
-./src/message-queue.d 
+./src/gameboy-v2.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

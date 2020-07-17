@@ -90,7 +90,7 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 	while(!se_mando && contador != 0){
 	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
 		se_mando = true;
-		log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente\n");
+		log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente");
 		}
 	else{
 		log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
@@ -125,7 +125,7 @@ void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 				switch_operacion(cod_op,appeared_mq,socket_cliente,id_modulo);
 				break;
 			default:
-				log_info(mi_log,"HUbo un error al tratar de recibir el mensaje\n");
+				log_info(mi_log,"Hubo un error al tratar de recibir el mensaje, no se encontro la cola");
 				pthread_exit(NULL);
 	}
 }

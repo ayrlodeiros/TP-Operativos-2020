@@ -1,0 +1,3 @@
+[INFO] 22:37:00:393 gameBoy/(27501:27501): -----------------Leyendo archivo config-----------------
+[ERROR] 22:37:00:399 gameBoy/(27501:27501): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 22:37:00:408 gameBoy/(27501:27501): -----------------Destruyendo archivo config-----------------

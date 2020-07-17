@@ -11,7 +11,8 @@ void gestionar_envio_new(char* argv[], int argc);
 void gestionar_envio_catch(char* argv[], int argc);
 void gestionar_envio_caught(char* argv[]);
 void gestionar_suscriptor(char* argv[]);
+void esperar_y_finalizar(int tiempo);
 int cola_mensajes(char* nombre_cola);
-t_new_pokemon* armar_new_pokemon(char* nombre, int posicion_x, int posicion_y, int cantidad);
+int tiene_cantidad_correcta_argumentos(int argc ,char *argv[]);
 
 #endif /* GAMEBOY_H_ */

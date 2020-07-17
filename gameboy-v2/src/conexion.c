@@ -315,7 +315,7 @@ void enviar_mensaje_caught(t_caught_pokemon caught_pokemon, int socket_broker,ui
 	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
 	void *mensaje_a_enviar = serializar_paquete_con_id(paquete,size_serializados,id_mensaje_correlativo);
-	log_info(mi_log,string_from_format("sizes: %d",size_serializados));
+	log_info(mi_log,"sizes: %d",size_serializados);
 
 	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
 		log_info(logger, "Se envio el mensaje CAUGHT: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
@@ -400,39 +400,77 @@ void enviar_mensaje_get_broker(t_get_pokemon get_pokemon, int socket){
 	free(paquete);
 }
 
-void suscribirse_a_cola(int cola, int tiempo, int socket_broker){
+int suscribirse_a_cola(int cola, int tiempo, int socket_broker){
 
-	log_info(mi_log,"0");
+	int resultado = -1;
+
 	t_paquete *paquete = malloc(sizeof(t_paquete));
 	paquete->modulo = GAMEBOY;
 	paquete->cod_op = SUSCRIPCION;
 	paquete->mensaje = cola;
 
-	log_info(mi_log,"1");
-	paquete->buffer = malloc(sizeof(t_buffer));
-	paquete->buffer->size = sizeof(uint32_t);
+	int size_serializados = 3*sizeof(int);
 
-	void* stream = malloc(paquete->buffer->size);
-	int bytes_escritos = 0;
-
-	memcpy(stream + bytes_escritos, &tiempo,sizeof(uint32_t));
-
-	paquete->buffer->stream = stream;
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
-
-	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
+	void *mensaje_a_enviar = serializar_paquete_sin_buffer(paquete,size_serializados);
 
 	if(send(socket_broker,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, "Se suscribio correctamente a la cola %d", cola);
+		log_info(mi_log, "Se suscribio correctamente a la cola %d por %d segundos", cola, tiempo);
+		log_info(logger, "Se suscribio correctamente a la cola %d por %d segundos", cola, tiempo);
+		resultado = 1;
 	}else{
+		log_error(mi_log,"No se pudo suscribir a la cola %d",cola);
 		log_error(logger,"No se pudo suscribir a la cola %d",cola);
+		resultado = 0;
 	}
 
-
 	free(mensaje_a_enviar);
-	free(paquete->buffer->stream);
-	free(paquete->buffer);
 	free(paquete);
+
+	return resultado;
+}
+
+void recibir_msj_broker(int conexion_broker) {
+	int hubo_error = 0;
+	int id;
+	int id_cor;
+	int tamanio;
+	void* payload;
+	if(recv(conexion_broker, &id, sizeof(uint32_t), 0) == -1) {
+		hubo_error = 1;
+	} else {
+		if(recv(conexion_broker, &id_cor, sizeof(uint32_t), 0) == -1) {
+			hubo_error = 1;
+		} else {
+			if(recv(conexion_broker, &tamanio, sizeof(uint32_t), 0) == -1) {
+				hubo_error = 1;
+			} else {
+				payload = malloc(tamanio);
+				if(recv(conexion_broker, payload, tamanio, 0) == -1) {
+					hubo_error = 1;
+				}
+			}
+		}
+	}
+
+	if(hubo_error) {
+		log_info(logger, "No se pudo recibir el mensaje del broker, se perdio la conexion");
+		log_info(mi_log, "No se pudo recibir el mensaje del broker, se perdio la conexion");
+	} else {
+		log_info(logger, "Se recibio un mensaje del broker", conexion_broker);
+		log_info(logger, "ID: %d", id);
+		log_info(logger, "ID CORRELATIVO: %d", id_cor);
+		log_info(logger, "TAMANIO: %d", tamanio);
+		log_info(mi_log, "Se recibio un mensaje del broker", conexion_broker);
+		log_info(mi_log, "ID: %d", id);
+		log_info(mi_log, "ID CORRELATIVO: %d", id_cor);
+		log_info(mi_log, "TAMANIO: %d", tamanio);
+	}
+	mandar_ack(conexion_broker, 1);
+	free(payload);
+}
+
+void mandar_ack(int conexion, int resultado) {
+	send(conexion, &resultado, sizeof(int), 0);
 }
 
 void* serializar_paquete(t_paquete* paquete, int bytes){
@@ -467,6 +505,19 @@ void* serializar_paquete_con_id(t_paquete* paquete, int bytes, int id){
 	memcpy(a_enviar + offset,&(paquete->buffer->size),sizeof(uint32_t));
 	offset += sizeof(uint32_t);
 	memcpy(a_enviar + offset,paquete->buffer->stream, paquete->buffer->size);
+
+	return a_enviar;
+}
+
+void* serializar_paquete_sin_buffer(t_paquete* paquete, int tamanio_a_enviar){
+	void * a_enviar = malloc(tamanio_a_enviar);
+	int offset = 0;
+
+	memcpy(a_enviar + offset, &(paquete->modulo),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->cod_op),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&(paquete->mensaje),sizeof(uint32_t));
 
 	return a_enviar;
 }

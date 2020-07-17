@@ -98,7 +98,7 @@ void servir_cliente(int socket)
 	int cod_modulo;
 	if(recv(socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
 		cod_modulo = -1;
-	log_info(mi_log, "El proceso %d, tiene como identificador el valor %d",socket ,cod_modulo);
+	log_info(mi_log, "El proceso de socket: %d, tiene como identificador el valor %d",socket ,cod_modulo);
 	process_request(cod_modulo, socket);
 }
 

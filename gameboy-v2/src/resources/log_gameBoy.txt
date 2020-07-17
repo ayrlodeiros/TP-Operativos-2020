@@ -1,0 +1,16 @@
+[ERROR] 22:37:00:399 gameBoy/(27501:27501): El cliente fallo al conectarse en IP: 127.0.0.3 y PUERTO: 5001
+[ERROR] 22:37:00:408 gameBoy/(27501:27501): No se pudo enviar el mensaje NEW.
+[INFO] 23:47:58:86 gameBoy/(29807:29807): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:47:58:87 gameBoy/(29807:29807): Realizando suscripcion a cola: -1
+[INFO] 23:47:58:88 gameBoy/(29807:29807): Se suscribio correctamente a la cola -1 por 30 segundos
+[INFO] 23:48:45:159 gameBoy/(29845:29845): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:48:45:159 gameBoy/(29845:29845): Realizando suscripcion a cola: -1
+[INFO] 23:48:45:160 gameBoy/(29845:29845): Se suscribio correctamente a la cola -1 por 30 segundos
+[INFO] 23:54:41:949 gameBoy/(30150:30150): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:54:57:830 gameBoy/(30187:30187): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:54:57:830 gameBoy/(30187:30187): Realizando suscripcion a cola: 1
+[INFO] 23:54:57:830 gameBoy/(30187:30187): Se suscribio correctamente a la cola 1 por 30 segundos
+[INFO] 23:55:56:241 gameBoy/(30292:30292): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:56:05:269 gameBoy/(30327:30327): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 23:56:05:269 gameBoy/(30327:30327): Realizando suscripcion a cola: 1
+[INFO] 23:56:05:269 gameBoy/(30327:30327): Se suscribio correctamente a la cola 1 por 30 segundos
