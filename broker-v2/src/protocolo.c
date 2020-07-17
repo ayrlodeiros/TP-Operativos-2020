@@ -42,6 +42,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 
 		//Crea el mensaje y ya lo guarda en memoria
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre,id_correlativo);
+		log_info(logger, "Se almaceno el mensaje de ID: %d en la posicion inicial: %p", mensaje->id, memoria_principal+(mensaje->pos_en_memoria->pos));
 		agregar_a_lista_global(mensaje);
 		if(!list_is_empty(queue->suscriptores)){
 			agregar_msj_cola(queue,mensaje);
@@ -134,9 +135,11 @@ void switch_operacion (op_code operacion, t_mq* cola,int conexion, int id_modulo
 	suscriptor_t* suscriptor;
 	switch(operacion){
 	case MENSAJE:
+		log_info(logger, "Se recibio una conexion con el modulo de id: %d para enviar un MENSAJE a la cola %d", id_modulo, cola->nombre);
 		recibir_y_guardar_mensaje(conexion, cola);
 		break;
 	case SUSCRIPCION:
+		log_info(logger, "Se recibio una conexion con el modulo de id: %d para SUSCRIBIRSE a la cola %d", id_modulo, cola->nombre);
 		recibir_suscriptor(conexion, id_modulo, cola);
 		break;
 	}
