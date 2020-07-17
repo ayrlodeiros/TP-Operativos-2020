@@ -174,7 +174,7 @@ cd
 
 #CREO TEAMS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2/Debug/
 
 make clean
 make all
@@ -190,7 +190,7 @@ cp -r team-v2/ team-v2-SJF-CD-stress
 
 #Configuro team con FIFO
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-FIFO-stress/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-FIFO-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
