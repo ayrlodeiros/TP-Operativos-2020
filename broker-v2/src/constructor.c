@@ -8,6 +8,16 @@ void iniciar_funcionalidades() {
 	iniciar_contador_ids_mensaje();
 	iniciar_list_global();
 	iniciar_signal_handler();
+	iniciar_sigint_handler();
+}
+
+void int_handler(int signal){
+	terminar_broker();
+}
+
+void iniciar_sigint_handler(void){
+	signal(SIGINT, int_handler);
+
 }
 
 void iniciar_signal_handler() {
@@ -73,6 +83,7 @@ void signal_handler(int signo) {
 
 	free(fecha);
 	log_info(dump,"---------------------------");
+	log_info(mi_log,"Se solicito un dump de Cache.");
 }
 
 char* obtener_fecha() {
@@ -152,6 +163,7 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 
 void enviar_mensaje(aux_msj_susc* msj_susc)
 {
+	pthread_t* hilo_ack;
 	t_mensaje* mensaje = msj_susc->mensaje;
 	suscriptor_t* suscriptor = msj_susc->suscriptor;
 	t_paquete* paquete= malloc(sizeof(t_paquete));
@@ -170,7 +182,7 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,suscriptor);
-		log_info(mi_log,"Se envio correctamente el mensaje al suscriptor de id %d y socket %d.",suscriptor->identificador,suscriptor->conexion);
+		log_info(mi_log,"Se envio el mensaje al suscriptor de id %d y socket %d.",suscriptor->identificador,suscriptor->conexion);
 	}
 	else
 		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor\n");
@@ -180,24 +192,28 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	free(paquete->buffer);
 	free(paquete);
 
-	recibir_ACK(suscriptor,mensaje);
+	pthread_create(&hilo_ack, NULL, recibir_ACK ,msj_susc);
+	pthread_detach(hilo_ack);
 }
 
-void recibir_ACK(suscriptor_t* suscriptor,t_mensaje* mensaje){
+void recibir_ACK(aux_msj_susc* msj_y_susc){
 
 	int valor;
-	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",suscriptor->identificador);
-	if (recv(suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
+	log_debug(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->suscriptor->identificador);
+	if (recv(msj_y_susc->suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
+
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
-		/* Deberia actualizar el mensaje e indicar que no se recibio la confirmacion de recepcion*/
+
 	}
 	else{
-		log_info(mi_log, "Se recibio el valor de ack: %d", valor);
+
+		log_debug(mi_log, "Se recibio el valor de ack: %d", valor);
+
 		if(valor == 1) {
-			log_info(mi_log, "Recibi el ack del suscriptor %d.",suscriptor->identificador);
-			add_sub_lista_conf_msj(mensaje,suscriptor);
+			log_info(mi_log, "Recibi la confirmacion de recepcion del suscriptor %d.",msj_y_susc->suscriptor->identificador);
+			add_sub_lista_conf_msj(msj_y_susc->mensaje,msj_y_susc->suscriptor);
 		} else {
-			//TODO volver a mandar el mensaje, poner el mensaje en la cola
+			//TODO Ver como reaccionar en caso de que la recepcion no sea correcta
 		}
 	}
 }
@@ -211,6 +227,7 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
+
 	aux_msj_susc* aux = malloc(sizeof(aux_msj_susc));
 	t_mensaje* mensaje = list_remove(cola->cola,0);
 	suscriptor_t* suscriptor;
@@ -222,11 +239,9 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 		suscriptor = list_get(cola->suscriptores,i);
 
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
-			//pthread_t* ack;
+
 			aux->mensaje = mensaje;
 			aux->suscriptor = suscriptor;
-			/*pthread_create(&ack,NULL,(void*)enviar_mensaje,aux);
-			pthread_detach(ack); */
 			enviar_mensaje(aux);
 
 		}
@@ -480,7 +495,9 @@ int obtener_posicion_particiones(int tamanio) {
 		//el recien_se_compacto lo agrego para que en el caso que la frecuencia de compactacion sea cero, no se me quede en un loop infinito y nunca libere particiones
 		else if (contador_compactacion == 0 && !recien_se_compacto)
 		{
+				log_info(mi_log,"Se procede a compactar la memoria.");
 				compactacion();
+				log_info(mi_log,"Se realizo la compactacion correctamente.");
 				contador_compactacion = leer_frecuencia_compactacion();
 				recien_se_compacto = true;
 		}
@@ -504,6 +521,7 @@ bool noEstaOcupado(void* elemento){
 }
 
 void borrarParticion(void* elemento){
+	log_info(mi_log,"Se ha eliminado una particion de memoria, su posicion de inicio era %d.",((t_particion_dinamica*) elemento)->inicio);
 	free((t_particion_dinamica*) elemento);
 }
 
@@ -612,6 +630,7 @@ void liberar_particion(){
 				ubicacion_particion = algoritmo_reemplazo_lru();
 			break;
 	}
+	log_info(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
 	consolidar(ubicacion_particion);
 }
 
@@ -674,7 +693,7 @@ void consolidar(int pos_particion){
 	if(particion_libre_a_la_izquierda(pos_particion)){
 		t_particion_dinamica* izquierda = list_get(lista_particiones,pos_particion-1);
 		izquierda->fin = liberada->fin;
-		list_remove(lista_particiones,pos_particion);
+		list_remove_and_destroy_element(lista_particiones,pos,borrarParticion);
 		free(liberada);
 		aux = izquierda;
 		pos = pos_particion -1;

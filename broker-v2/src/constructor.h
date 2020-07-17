@@ -116,12 +116,13 @@ typedef struct{
 }
 suscriptor_t;
 
-/* Estructura para hilo enviar_mensaje */
+/* Estructura de hilo enviar_mensaje / ACK*/
 typedef struct{
 	t_mensaje* mensaje;
 	suscriptor_t* suscriptor;
 }
 aux_msj_susc;
+
 
 /** Define el identificador del modulo*/
 typedef enum{
@@ -221,7 +222,7 @@ void iniciar_list_global();
 /** Crea el paquete para manda en funcion del mensaje */
 void enviar_mensaje(aux_msj_susc* aux);
 
-void recibir_ACK(suscriptor_t* socket_cliente,t_mensaje* mensaje);
+void recibir_ACK(aux_msj_susc* msj_y_susc);
 
 void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
 void add_sub_lista_conf_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
@@ -284,5 +285,8 @@ void destruir_t_mensaje(t_mensaje* mensaje);
 void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje);
 void actualizar_ultima_vez_dinamica(t_mensaje* mensaje);
 void actualizar_ultima_vez_bs(t_mensaje* mensaje);
+
+void int_handler(int signal);
+void iniciar_sigint_handler(void);
 
 #endif //CONSTRUCTOR_H_

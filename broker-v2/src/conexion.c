@@ -19,7 +19,7 @@ int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger) {
 		log_error(logger, "El cliente fallo al conectarse en IP: %s y PUERTO: %s", ip, puerto);
 
 	freeaddrinfo(server_info);
-	log_info(logger, "El cliente se conecto exitosamente en IP: %s y PUERTO: %s", ip, puerto);
+	log_info(logger, "Un proceso se ha conectado exitosamente al broker en la IP: %s y PUERTO: %s", ip, puerto);
 	return socket_cliente;
 }
 
@@ -83,8 +83,7 @@ void esperar_cliente(int socket_servidor)
 	if(socket_cliente == -1) {
 		log_error(mi_log, "Hubo un error en la conexion con el cliente");
 	} else {
-		log_info(mi_log,"Estableci una conexion con un modulo de socket: %d\n",socket_cliente);
-		//log_info(logger,"Estableci una conexion con un modulo\n");
+		log_debug(mi_log,"Estableci una conexion con un modulo de socket: %d\n",socket_cliente);
 
 		err = pthread_create(&espera,NULL,(void*)servir_cliente,socket_cliente);
 		if( err != 0){
@@ -99,13 +98,13 @@ void servir_cliente(int socket)
 	int cod_modulo;
 	if(recv(socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
 		cod_modulo = -1;
-	log_info(mi_log, "El socket %d, tiene como identificador el valor %d",socket ,cod_modulo);
+	log_info(mi_log, "El proceso %d, tiene como identificador el valor %d",socket ,cod_modulo);
 	process_request(cod_modulo, socket);
 }
 
 void process_request(int id_modulo, int socket_cliente) {
 	int cod_op;
 	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
-	log_info(mi_log, "El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op);
+	log_debug(mi_log, "El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op);
 	switch_cola(cod_op,socket_cliente,id_modulo);
 }
