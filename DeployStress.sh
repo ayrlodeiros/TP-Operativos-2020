@@ -23,8 +23,8 @@ cd
 
 #STRESS
 
-if test -d /home/utnso/delibird-stress/; then
-	sudo rm -r /home/utnso/delibird-stress/
+if test -d /home/utnso/tallgrass-stress/; then
+	sudo rm -r /home/utnso/tallgrass-stress/
 fi
 
 cd
