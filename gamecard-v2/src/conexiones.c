@@ -741,8 +741,15 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 		msj_broker->id_correlativo = id_cor;
 		msj_broker->tamanio = tamanio;
 		msj_broker->payload = payload;
+
+		mandar_ack(conexion_broker, 1);
+
 		return msj_broker;
 	}
+}
+
+void mandar_ack(int conexion, int resultado) {
+	send(conexion, &resultado, sizeof(int), 0);
 }
 
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir) {

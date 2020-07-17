@@ -1,4 +1,134 @@
-
-Dump=16/07/2020 14:05:40
-Particion 2=Chau
-Particion 1=Hola
+[INFO] 11:30:41:481 dump/(5894:5894): ------------------------------------------------------
+[INFO] 11:30:41:481 dump/(5894:5894): Dump: 17/07/2020 11:30:41
+[INFO] 11:30:41:481 dump/(5894:5894): Particion 0: 0x97a7ec8 - 0x97a8ec7.	[L]	Size: 4096b
+[INFO] 11:30:41:481 dump/(5894:5894): ------------------------------------------------------
+[INFO] 12:21:12:221 dump/(8420:8420): ------------------------------------------------------
+[INFO] 12:21:12:222 dump/(8420:8420): Dump: 17/07/2020 12:21:12
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 0: 0x93e5ec8 - 0x93e5ecb.	[X]	Size: 4b	LRU:1567177423	COLA:371	ID:4
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 1: 0x93e66c8 - 0x93e6ec7.	[L]	Size: 2048b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 2: 0x93e62c8 - 0x93e66c7.	[L]	Size: 1024b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 3: 0x93e60c8 - 0x93e62c7.	[L]	Size: 512b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 4: 0x93e5fc8 - 0x93e60c7.	[L]	Size: 256b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 5: 0x93e5f48 - 0x93e5fc7.	[L]	Size: 128b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 6: 0x93e5f08 - 0x93e5f47.	[L]	Size: 64b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 7: 0x93e5ee8 - 0x93e5f07.	[L]	Size: 32b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 8: 0x93e5ed8 - 0x93e5ee7.	[L]	Size: 16b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 9: 0x93e5ed0 - 0x93e5ed3.	[X]	Size: 4b	LRU:1567092377	COLA:371	ID:4
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 10: 0x93e5ed4 - 0x93e5ed7.	[L]	Size: 4b
+[INFO] 12:21:12:222 dump/(8420:8420): Particion 11: 0x93e5ecc - 0x93e5ecf.	[X]	Size: 4b	LRU:1567288703	COLA:371	ID:4
+[INFO] 12:21:12:222 dump/(8420:8420): ------------------------------------------------------
+[INFO] 12:26:47:350 dump/(8829:8829): ------------------------------------------------------
+[INFO] 12:26:47:351 dump/(8829:8829): Dump: 17/07/2020 12:26:47
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 0: 0x834eec8 - 0x834eecb.	[X]	Size: 4b	LRU:1566989109	COLA:371	ID:4
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 1: 0x834eecc - 0x834eecf.	[X]	Size: 4b	LRU:1567203643	COLA:371	ID:4
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 2: 0x834eed0 - 0x834eed7.	[L]	Size: 8b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 3: 0x834eed8 - 0x834eee7.	[L]	Size: 16b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 4: 0x834eee8 - 0x834ef07.	[L]	Size: 32b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 5: 0x834ef08 - 0x834ef47.	[L]	Size: 64b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 6: 0x834ef48 - 0x834efc7.	[L]	Size: 128b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 7: 0x834efc8 - 0x834f0c7.	[L]	Size: 256b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 8: 0x834f0c8 - 0x834f2c7.	[L]	Size: 512b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 9: 0x834f2c8 - 0x834f6c7.	[L]	Size: 1024b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 10: 0x834f6c8 - 0x834f6cb.	[X]	Size: 4b	LRU:1566730709	COLA:371	ID:4
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 11: 0x834f6cc - 0x834f6cf.	[L]	Size: 4b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 12: 0x834f6d0 - 0x834f6d7.	[L]	Size: 8b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 13: 0x834f6d8 - 0x834f6e7.	[L]	Size: 16b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 14: 0x834f6e8 - 0x834f707.	[L]	Size: 32b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 15: 0x834f708 - 0x834f747.	[L]	Size: 64b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 16: 0x834f748 - 0x834f7c7.	[L]	Size: 128b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 17: 0x834f7c8 - 0x834f8c7.	[L]	Size: 256b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 18: 0x834f8c8 - 0x834fac7.	[L]	Size: 512b
+[INFO] 12:26:47:351 dump/(8829:8829): Particion 19: 0x834fac8 - 0x834fec7.	[L]	Size: 1024b
+[INFO] 12:26:47:351 dump/(8829:8829): ------------------------------------------------------
+[INFO] 12:32:21:616 dump/(8829:8829): ------------------------------------------------------
+[INFO] 12:32:21:616 dump/(8829:8829): Dump: 17/07/2020 12:32:21
+[INFO] 12:32:21:616 dump/(8829:8829): Particion 0: 0x834eec8 - 0x834eecb.	[X]	Size: 4b	LRU:1566989109	COLA:371	ID:4
+[INFO] 12:32:21:616 dump/(8829:8829): Particion 1: 0x834eecc - 0x834eecf.	[X]	Size: 4b	LRU:1567203643	COLA:371	ID:4
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 2: 0x834eed0 - 0x834eed7.	[L]	Size: 8b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 3: 0x834eed8 - 0x834eee7.	[L]	Size: 16b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 4: 0x834eee8 - 0x834ef07.	[L]	Size: 32b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 5: 0x834ef08 - 0x834ef47.	[L]	Size: 64b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 6: 0x834ef48 - 0x834efc7.	[L]	Size: 128b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 7: 0x834efc8 - 0x834f0c7.	[L]	Size: 256b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 8: 0x834f0c8 - 0x834f2c7.	[L]	Size: 512b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 9: 0x834f2c8 - 0x834f6c7.	[L]	Size: 1024b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 10: 0x834f6c8 - 0x834f6cb.	[X]	Size: 4b	LRU:1566730709	COLA:371	ID:4
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 11: 0x834f6cc - 0x834f6cf.	[L]	Size: 4b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 12: 0x834f6d0 - 0x834f6d7.	[L]	Size: 8b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 13: 0x834f6d8 - 0x834f6e7.	[L]	Size: 16b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 14: 0x834f6e8 - 0x834f707.	[L]	Size: 32b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 15: 0x834f708 - 0x834f747.	[L]	Size: 64b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 16: 0x834f748 - 0x834f7c7.	[L]	Size: 128b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 17: 0x834f7c8 - 0x834f8c7.	[L]	Size: 256b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 18: 0x834f8c8 - 0x834fac7.	[L]	Size: 512b
+[INFO] 12:32:21:617 dump/(8829:8829): Particion 19: 0x834fac8 - 0x834fec7.	[L]	Size: 1024b
+[INFO] 12:32:21:617 dump/(8829:8829): ------------------------------------------------------
+[INFO] 12:45:49:501 dump/(10024:10024): ------------------------------------------------------
+[INFO] 12:45:49:502 dump/(10024:10024): Dump: 17/07/2020 12:45:49
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 0: 0x9423ec8 - 0x9423ecb.	[X]	Size: 4b	LRU: 1595001575670		COLA: 4	ID: 1
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 1: 0x9423ecc - 0x9423ecf.	[X]	Size: 4b	LRU: 1595001361469		COLA: 4	ID: 2
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 2: 0x9423ed0 - 0x9423ed7.	[L]	Size: 8b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 3: 0x9423ed8 - 0x9423ee7.	[L]	Size: 16b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 4: 0x9423ee8 - 0x9423f07.	[L]	Size: 32b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 5: 0x9423f08 - 0x9423f47.	[L]	Size: 64b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 6: 0x9423f48 - 0x9423fc7.	[L]	Size: 128b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 7: 0x9423fc8 - 0x94240c7.	[L]	Size: 256b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 8: 0x94240c8 - 0x94242c7.	[L]	Size: 512b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 9: 0x94242c8 - 0x94246c7.	[L]	Size: 1024b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 10: 0x94246c8 - 0x94246cb.	[X]	Size: 4b	LRU: 1595001638991		COLA: 4	ID: 3
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 11: 0x94246cc - 0x94246cf.	[L]	Size: 4b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 12: 0x94246d0 - 0x94246d7.	[L]	Size: 8b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 13: 0x94246d8 - 0x94246e7.	[L]	Size: 16b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 14: 0x94246e8 - 0x9424707.	[L]	Size: 32b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 15: 0x9424708 - 0x9424747.	[L]	Size: 64b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 16: 0x9424748 - 0x94247c7.	[L]	Size: 128b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 17: 0x94247c8 - 0x94248c7.	[L]	Size: 256b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 18: 0x94248c8 - 0x9424ac7.	[L]	Size: 512b
+[INFO] 12:45:49:502 dump/(10024:10024): Particion 19: 0x9424ac8 - 0x9424ec7.	[L]	Size: 1024b
+[INFO] 12:45:49:502 dump/(10024:10024): ------------------------------------------------------
+[INFO] 12:47:21:256 dump/(10333:10333): ------------------------------------------------------
+[INFO] 12:47:21:256 dump/(10333:10333): Dump: 17/07/2020 12:47:21
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 0: 0x82c0ec8 - 0x82c0ecb.		[X]	Size: 4b	LRU: 1595001784420		COLA: 4	ID: 1
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 1: 0x82c0ecc - 0x82c0ecf.		[X]	Size: 4b	LRU: 1595000956758		COLA: 4	ID: 2
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 2: 0x82c0ed0 - 0x82c0ed7.		[L]	Size: 8b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 3: 0x82c0ed8 - 0x82c0ee7.		[L]	Size: 16b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 4: 0x82c0ee8 - 0x82c0f07.		[L]	Size: 32b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 5: 0x82c0f08 - 0x82c0f47.		[L]	Size: 64b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 6: 0x82c0f48 - 0x82c0fc7.		[L]	Size: 128b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 7: 0x82c0fc8 - 0x82c10c7.		[L]	Size: 256b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 8: 0x82c10c8 - 0x82c12c7.		[L]	Size: 512b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 9: 0x82c12c8 - 0x82c16c7.		[L]	Size: 1024b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 10: 0x82c16c8 - 0x82c16cb.		[X]	Size: 4b	LRU: 1595001016476		COLA: 4	ID: 3
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 11: 0x82c16cc - 0x82c16cf.		[L]	Size: 4b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 12: 0x82c16d0 - 0x82c16d7.		[L]	Size: 8b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 13: 0x82c16d8 - 0x82c16e7.		[L]	Size: 16b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 14: 0x82c16e8 - 0x82c1707.		[L]	Size: 32b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 15: 0x82c1708 - 0x82c1747.		[L]	Size: 64b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 16: 0x82c1748 - 0x82c17c7.		[L]	Size: 128b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 17: 0x82c17c8 - 0x82c18c7.		[L]	Size: 256b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 18: 0x82c18c8 - 0x82c1ac7.		[L]	Size: 512b
+[INFO] 12:47:21:256 dump/(10333:10333): Particion 19: 0x82c1ac8 - 0x82c1ec7.		[L]	Size: 1024b
+[INFO] 12:47:21:256 dump/(10333:10333): ------------------------------------------------------
+[INFO] 12:47:23:323 dump/(10333:10333): ------------------------------------------------------
+[INFO] 12:47:23:323 dump/(10333:10333): Dump: 17/07/2020 12:47:23
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 0: 0x82c0ec8 - 0x82c0ecb.		[X]	Size: 4b	LRU: 1595001784420		COLA: 4	ID: 1
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 1: 0x82c0ecc - 0x82c0ecf.		[X]	Size: 4b	LRU: 1595000956758		COLA: 4	ID: 2
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 2: 0x82c0ed0 - 0x82c0ed7.		[L]	Size: 8b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 3: 0x82c0ed8 - 0x82c0ee7.		[L]	Size: 16b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 4: 0x82c0ee8 - 0x82c0f07.		[L]	Size: 32b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 5: 0x82c0f08 - 0x82c0f47.		[L]	Size: 64b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 6: 0x82c0f48 - 0x82c0fc7.		[L]	Size: 128b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 7: 0x82c0fc8 - 0x82c10c7.		[L]	Size: 256b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 8: 0x82c10c8 - 0x82c12c7.		[L]	Size: 512b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 9: 0x82c12c8 - 0x82c16c7.		[L]	Size: 1024b
+[INFO] 12:47:23:323 dump/(10333:10333): Particion 10: 0x82c16c8 - 0x82c16cb.		[X]	Size: 4b	LRU: 1595001016476		COLA: 4	ID: 3
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 11: 0x82c16cc - 0x82c16cf.		[L]	Size: 4b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 12: 0x82c16d0 - 0x82c16d7.		[L]	Size: 8b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 13: 0x82c16d8 - 0x82c16e7.		[L]	Size: 16b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 14: 0x82c16e8 - 0x82c1707.		[L]	Size: 32b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 15: 0x82c1708 - 0x82c1747.		[L]	Size: 64b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 16: 0x82c1748 - 0x82c17c7.		[L]	Size: 128b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 17: 0x82c17c8 - 0x82c18c7.		[L]	Size: 256b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 18: 0x82c18c8 - 0x82c1ac7.		[L]	Size: 512b
+[INFO] 12:47:23:324 dump/(10333:10333): Particion 19: 0x82c1ac8 - 0x82c1ec7.		[L]	Size: 1024b
+[INFO] 12:47:23:324 dump/(10333:10333): ------------------------------------------------------

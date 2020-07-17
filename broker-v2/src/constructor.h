@@ -11,6 +11,7 @@
 #include<pthread.h>
 #include<string.h>
 #include <time.h>
+#include<inttypes.h>
 #include<commons/log.h>
 #include<commons/config.h>
 #include<commons/collections/queue.h>

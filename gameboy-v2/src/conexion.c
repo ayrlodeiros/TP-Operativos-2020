@@ -464,9 +464,9 @@ void recibir_msj_broker(int conexion_broker) {
 		log_info(mi_log, "ID: %d", id);
 		log_info(mi_log, "ID CORRELATIVO: %d", id_cor);
 		log_info(mi_log, "TAMANIO: %d", tamanio);
+		mandar_ack(conexion_broker, 1);
+		free(payload);
 	}
-	mandar_ack(conexion_broker, 1);
-	free(payload);
 }
 
 void mandar_ack(int conexion, int resultado) {

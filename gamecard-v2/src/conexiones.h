@@ -97,6 +97,7 @@ void trabajar_mensaje_get(mensaje_broker* msj_broker);
 void enviar_mensaje_localized(int id_mensaje, int largo_nombre_pokemon, char* nombre_pokemon, int cantidad_de_posiciones, t_list* posiciones);
 
 mensaje_broker* recibir_msj_broker(int conexion_broker);
+void mandar_ack(int conexion, int resultado);
 void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir);
 void cambiar_valor_de_funciona_broker(int new_value);
 void desbloquear_lock_reintento();

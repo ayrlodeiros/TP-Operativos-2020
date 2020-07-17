@@ -83,7 +83,7 @@ void esperar_cliente(int socket_servidor)
 	if(socket_cliente == -1) {
 		log_error(mi_log, "Hubo un error en la conexion con el cliente");
 	} else {
-		log_info(mi_log,"Estableci una conexion con un modulo de socket: %d\n",socket_cliente);
+		log_info(mi_log,"Estableci una conexion con un modulo de socket: %d",socket_cliente);
 
 		err = pthread_create(&espera,NULL,(void*)servir_cliente,socket_cliente);
 		if( err != 0){

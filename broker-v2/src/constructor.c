@@ -1,7 +1,6 @@
 #include "constructor.h"
 
 void iniciar_funcionalidades() {
-	iniciar_config();
 	inicializar_semaforos();
 	inicializar_message_queues();
 	iniciar_memoria_principal();
@@ -44,19 +43,21 @@ void dump_particion(int posicion,int inicio, int fin,bool libre,uint64_t lru){
 	char estado;
 	if(libre){
 		estado = 'L';
-		log_info(dump,"Particion %d: %p - %p. [%c] Size: %db ",posicion,memoria_principal+inicio,memoria_principal+fin,estado,fin - inicio + 1);
+		log_info(dump,"Particion %d: %p - %p.		[%c]	Size: %db",posicion,memoria_principal+inicio,memoria_principal+fin,estado,fin - inicio + 1);
 	}
 	else{
 		//todo no probamos esto todavia
 		estado = 'X';
+		char lru_c[21];
+		sprintf(lru_c, "%" PRIu64, lru);
 		t_mensaje* mensaje = obtener_mensaje_asociado(inicio);
-		log_info(dump,"Particion %d: %p - %p. [%c] Size: %db   LRU:%d  COLA:%d ID:%d",posicion,memoria_principal+inicio,memoria_principal+fin,estado,fin - inicio + 1,lru,mensaje->cola,mensaje->id);
+		log_info(dump,"Particion %d: %p - %p.		[%c]	Size: %db		LRU: %s		COLA: %d	ID: %d",posicion,memoria_principal+inicio,memoria_principal+fin,estado,fin - inicio + 1,lru_c,mensaje->cola,mensaje->id);
 	}
 }
 
 
 void signal_handler(int signo) {
-	log_info(dump,"---------------------------");
+	log_info(dump,"------------------------------------------------------");
 	char* fecha = obtener_fecha();
 	log_info(dump,"Dump: %s", fecha);
 
@@ -81,7 +82,7 @@ void signal_handler(int signo) {
 	}
 
 	free(fecha);
-	log_info(dump,"---------------------------");
+	log_info(dump,"------------------------------------------------------");
 	log_info(mi_log,"Se solicito un Dump de cache");
 }
 
@@ -1056,8 +1057,9 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 
 	// AGREGO LAS NUEVAS PARTICIONES A LA LISTA DE PARTICIONES, DETRAS DE LA PARTICION QUE CREE
 	posicion_a_particionar++;
-	for(int i = 0; i < list_size(lista_auxiliar); i++) {
-		list_add_in_index(lista_particiones, posicion_a_particionar+i, list_get(lista_auxiliar, i));
+	for(int i = (list_size(lista_auxiliar)-1); i >= 0; i--) {
+		list_add_in_index(lista_particiones, posicion_a_particionar, list_get(lista_auxiliar, i));
+		posicion_a_particionar++;
 	}
 
 

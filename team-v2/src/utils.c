@@ -278,6 +278,7 @@ void levantar_conexiones_al_broker() {
 
 mensaje_broker* recibir_msj_broker(int conexion_broker) {
 	int hubo_error = 0;
+	int mallockeo_payload = 0;
 	int id;
 	int id_cor;
 	int tamanio;
@@ -295,6 +296,7 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 				if(recv(conexion_broker, payload, tamanio, 0) == -1) {
 					hubo_error = 1;
 				}
+				mallockeo_payload = 1;
 			}
 		}
 	}
@@ -304,7 +306,9 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 		cambiar_valor_de_funciona_broker(0);
 		desbloquear_lock_reintento();
 
-		mandar_ack(conexion_broker, 0);
+		if(mallockeo_payload) {
+			free(payload);
+		}
 
 		return NULL;
 	} else {

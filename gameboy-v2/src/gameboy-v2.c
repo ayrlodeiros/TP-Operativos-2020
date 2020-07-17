@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 			} else if(!strcmp(tipo_mensaje,"CAUGHT_POKEMON")){
 					gestionar_envio_caught(argv);
 			} else {
-				log_error(mi_log, "MENSAJE INCORRECTO");
+				log_error(mi_log, "TIPO DE MENSAJE INCORRECTO");
 			}
 		} else {
 			log_error(mi_log, "CANTIDAD INCORRECTA DE ARGUMENTOS");
@@ -143,11 +143,13 @@ void gestionar_envio_catch(char* argv[], int argc){
 }
 
 void gestionar_envio_caught(char* argv[]){
-	t_caught_pokemon *caught_pokemon = malloc(sizeof(caught_pokemon));
+	t_caught_pokemon *caught_pokemon = malloc(sizeof(t_caught_pokemon));
 	int conexion;
 	if(!strcmp(argv[4],"OK")){
 		caught_pokemon->atrapado = 1;
 	}else if(!strcmp(argv[4],"FAIL")){
+		caught_pokemon->atrapado = 0;
+	} else {
 		caught_pokemon->atrapado = 0;
 	}
 	conexion = conectarse_a(BROKER);
