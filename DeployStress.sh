@@ -57,7 +57,7 @@ git checkout develop
 
 #INICIO DE GAMEBOY
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/Debug/
 
 make clean
 make all
@@ -75,8 +75,8 @@ PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
 ID_MODULO=1\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/log_gameBoy.txt\n
-MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
 #FIN DE GAMEBOY
 
@@ -143,7 +143,7 @@ IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=10\n
 PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/dump_file.txt\n
-ID_MODULO=5\n
+ID_MODULO=8\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/mi_log_broker.txt\n">> broker.config
 
@@ -164,7 +164,10 @@ IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=1\n
 PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-stress/src/resources/dump_file.txt\n
-ID_MODULO=6\n
+ID_MODULO=9
+
+
+\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-stress/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-stress/src/resources/mi_log_broker.txt\n">> broker.config
 

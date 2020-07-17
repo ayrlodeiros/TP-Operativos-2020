@@ -59,7 +59,7 @@ git checkout develop
 
 #INICIO DE GAMEBOY
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/Debug/
 
 make clean
 make all
@@ -77,8 +77,8 @@ PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
 ID_MODULO=0\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/log_gameBoy.txt\n
-MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
 #FIN DE GAMEBOY
 
@@ -326,7 +326,7 @@ cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug
 
 cd
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/Debug
     make clean
     make all
 
