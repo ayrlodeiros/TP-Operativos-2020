@@ -100,7 +100,7 @@ void enviar_mensaje_appeared_team(t_appeared_pokemon appeared_pokemon, int socke
 	memcpy(stream + bytes_escritos, &appeared_pokemon.posicionY, sizeof(uint32_t));
 
 	paquete->buffer->stream = stream;
-	int size_serializados = paquete->buffer->size + 4*sizeof(int);
+	int size_serializados = paquete->buffer->size + 5*sizeof(int);
 
 	//void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 	void *mensaje_a_enviar = malloc(size_serializados);
@@ -148,7 +148,7 @@ void enviar_mensaje_new_broker(t_new_pokemon new_pokemon, int socket){
 	bytes_escritos += sizeof(uint32_t);
 
 	paquete->buffer->stream = stream;
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
+	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
@@ -278,7 +278,7 @@ void enviar_mensaje_catch_broker(t_catch_pokemon catch_pokemon, int socket){
 	bytes_escritos += sizeof(uint32_t);
 
 	paquete->buffer->stream = stream;
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
+	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 
@@ -383,7 +383,7 @@ void enviar_mensaje_get_broker(t_get_pokemon get_pokemon, int socket){
 
 	paquete->buffer->stream = stream;
 
-	int size_serializados = paquete->buffer->size + 4*sizeof(uint32_t);
+	int size_serializados = paquete->buffer->size + 5*sizeof(uint32_t);
 
 	void *mensaje_a_enviar = serializar_paquete(paquete,size_serializados);
 	int envio = send(socket,mensaje_a_enviar,size_serializados,0);
@@ -476,12 +476,15 @@ void mandar_ack(int conexion, int resultado) {
 void* serializar_paquete(t_paquete* paquete, int bytes){
 	void* a_enviar = malloc(bytes);
 	int offset = 0;
+	int id_default = -1;
 
 	memcpy(a_enviar + offset, &(paquete->modulo),sizeof(uint32_t));
 	offset += sizeof(uint32_t);
 	memcpy(a_enviar + offset,&(paquete->cod_op),sizeof(uint32_t));
 	offset += sizeof(uint32_t);
 	memcpy(a_enviar + offset,&(paquete->mensaje),sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(a_enviar + offset,&id_default,sizeof(uint32_t));
 	offset += sizeof(uint32_t);
 	memcpy(a_enviar + offset,&(paquete->buffer->size),sizeof(uint32_t));
 	offset += sizeof(uint32_t);

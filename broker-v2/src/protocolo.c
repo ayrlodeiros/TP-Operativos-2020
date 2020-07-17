@@ -66,23 +66,6 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	pthread_mutex_unlock(&queue->lock);
 }
 
-void* serializar_paquete(t_paquete* paquete, int bytes)
-{
-	void * magic = malloc(bytes);
-	int desplazamiento = 0;
-
-	memcpy(magic + desplazamiento, &(paquete->id), sizeof(uint32_t));
-	desplazamiento+= sizeof(uint32_t);
-	memcpy(magic + desplazamiento, &(paquete->id_cor), sizeof(uint32_t));
-	desplazamiento+= sizeof(uint32_t);
-	memcpy(magic + desplazamiento, &(paquete->buffer->size), sizeof(uint32_t));
-	desplazamiento+= sizeof(uint32_t);
-	memcpy(magic + desplazamiento, paquete->buffer->stream, paquete->buffer->size);
-	desplazamiento+= paquete->buffer->size;
-
-	return magic;
-}
-
 
 void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 

@@ -25,6 +25,7 @@ t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, int id_
 	paquete->numero_de_modulo = leer_id_modulo();
 	paquete->codigo_de_operacion = cod_op;
 	paquete->codigo_de_accion = cod_acc;
+	paquete->id_mensaje = id_mensaje;
 	paquete->buffer = buffer;
 	return paquete;
 }
@@ -467,7 +468,7 @@ void enviar_mensaje_appeared(int id_mensaje, int largo_nombre_pokemon, char* nom
 		int offset = 0;
 		memcpy(stream + offset,&largo_nombre_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
-		memcpy(stream + offset,&nombre_pokemon, (largo_nombre_pokemon+1));
+		memcpy(stream + offset,nombre_pokemon, (largo_nombre_pokemon+1));
 		offset += (largo_nombre_pokemon+1);
 		memcpy(stream + offset,&posicion_x, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
@@ -666,7 +667,7 @@ void enviar_mensaje_localized(int id_mensaje, int largo_nombre_pokemon, char* no
 		int offset = 0;
 		memcpy(stream + offset,&largo_nombre_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
-		memcpy(stream + offset,&nombre_pokemon, (largo_nombre_pokemon+1));
+		memcpy(stream + offset,nombre_pokemon, (largo_nombre_pokemon+1));
 		offset += (largo_nombre_pokemon+1);
 		memcpy(stream + offset,&cantidad_de_posiciones, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
@@ -711,6 +712,7 @@ void enviar_mensaje_localized(int id_mensaje, int largo_nombre_pokemon, char* no
 
 mensaje_broker* recibir_msj_broker(int conexion_broker) {
 	int hubo_error = 0;
+	int mallockeo_payload = 0;
 	int id;
 	int id_cor;
 	int tamanio;
@@ -724,18 +726,26 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 			if(recv(conexion_broker, &tamanio, sizeof(uint32_t), 0) == -1) {
 				hubo_error = 1;
 			} else {
-				payload = malloc(tamanio);
-				if(recv(conexion_broker, payload, tamanio, 0) == -1) {
-					hubo_error = 1;
+				if(tamanio>0 && tamanio<100000) {
+					payload = malloc(tamanio);
+					if(recv(conexion_broker, payload, tamanio, 0) == -1) {
+						hubo_error = 1;
+					}
+					mallockeo_payload = 1;
 				}
 			}
 		}
 	}
 
-	if(hubo_error) {
+	if(hubo_error || mallockeo_payload == 0) {
 		log_info(nuestro_log, "No se pudo recibir el mensaje del broker, se perdio la conexion");
+		if(mallockeo_payload) {
+			free(payload);
+		}
+
 		cambiar_valor_de_funciona_broker(0);
 		desbloquear_lock_reintento();
+
 		return NULL;
 	} else {
 		log_info(nuestro_log, "Se recibio el mensaje del broker correctamente");

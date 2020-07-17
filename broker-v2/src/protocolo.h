@@ -19,8 +19,6 @@ void agregar_msj_cola(t_mq* cola,t_mensaje* mensaje);
 
 void enviar_mensaje_suscriptores(t_mq* cola);
 
-void* serializar_paquete(t_paquete* paquete, int bytes);
-
 void enviar_id_msj_cliente(int socket_cliente,int id_msj);
 
 /* Filtra los mensajes de la lista global y los agrega a la cola correspondiente*/

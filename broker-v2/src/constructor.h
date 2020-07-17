@@ -223,6 +223,8 @@ void iniciar_list_global();
 /** Crea el paquete para manda en funcion del mensaje */
 void enviar_mensaje(aux_msj_susc* aux);
 
+void* serializar_paquete(t_paquete* paquete, int bytes);
+
 void recibir_ACK(aux_msj_susc* msj_y_susc);
 
 void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor);
