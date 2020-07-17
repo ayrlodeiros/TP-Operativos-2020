@@ -56,7 +56,6 @@ void dump_particion(int posicion,int inicio, int fin,bool libre,uint64_t lru){
 
 
 void signal_handler(int signo) {
-
 	log_info(dump,"---------------------------");
 	char* fecha = obtener_fecha();
 	log_info(dump,"Dump: %s", fecha);
@@ -83,7 +82,7 @@ void signal_handler(int signo) {
 
 	free(fecha);
 	log_info(dump,"---------------------------");
-	log_info(mi_log,"Se solicito un dump de Cache.");
+	log_info(mi_log,"Se solicito un Dump de cache");
 }
 
 char* obtener_fecha() {
@@ -182,10 +181,10 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,suscriptor);
-		log_info(mi_log,"Se envio el mensaje al suscriptor de id %d y socket %d.",suscriptor->identificador,suscriptor->conexion);
+		log_info(mi_log,"Se envio el mensaje al suscriptor de id %d y socket %d de la cola %d.",suscriptor->identificador,suscriptor->conexion, mensaje->cola);
 	}
 	else
-		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor\n");
+		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor.");
 
 	free(a_enviar);
 	free(paquete->buffer->stream);
@@ -207,7 +206,7 @@ void recibir_ACK(aux_msj_susc* msj_y_susc){
 	}
 	else{
 
-		log_debug(mi_log, "Se recibio el valor de ack: %d", valor);
+		log_debug(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
 
 		if(valor == 1) {
 			log_info(mi_log, "Recibi la confirmacion de recepcion del suscriptor %d.",msj_y_susc->suscriptor->identificador);
@@ -319,8 +318,6 @@ void liberar_message_queues(){
 	liberar_mq(caught_mq);
 	liberar_mq(new_mq);
 	liberar_mq(appeared_mq);
-
-	printf("Se libero la memoria de los mq correctamente\n");
 }
 
 void liberar_mq(t_mq* mq){
@@ -379,6 +376,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 	mensaje->pos_en_memoria->pos = posicion;
 	mensaje->pos_en_memoria->tamanio = tamanio;
 	log_info(mi_log,"Se guardo un nuevo mensaje en la cola %d, posicion %d y tamanio %d .",cola,posicion,tamanio);
+
 
 	return mensaje;
 }
@@ -968,6 +966,8 @@ int obtener_posicion_de_particion_liberada_fifo() {
 	borrar_msj_mp(particion_objetivo->inicio);
 	particion_objetivo->libre = true;
 
+	log_info(mi_log, "Se libero, por FIFO, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
+
 	return posicion;
 }
 
@@ -985,6 +985,8 @@ int obtener_posicion_de_particion_liberada_lru() {
 
 	borrar_msj_mp(particion_objetivo->inicio);
 	particion_objetivo->libre = true;
+
+	log_info(mi_log, "Se libero, por LRU, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
 
 	return posicion;
 }
@@ -1024,6 +1026,7 @@ void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_m
 	buddy_a_mantener->potencia_de_dos++;
 	buddy_a_mantener->fin = buddy_eliminado->fin;
 
+	log_info(mi_log, "Se asociaron los bloques (buddies) con posiciones de inicio: %p y %p. Quedando una particion con valor de potencia de dos: %d", memoria_principal+(buddy_a_mantener->inicio), memoria_principal+(buddy_eliminado->inicio), buddy_a_mantener->potencia_de_dos);
 
 	free(buddy_eliminado);
 }
