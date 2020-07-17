@@ -52,17 +52,12 @@ echo -e "BLOCK_SIZE=64\nBLOCKS=1024\nMAGIC_NUMBER=TALL_GRASS" >> Metadata.bin
 #FIN STRESS
 
 cd
-cd Documentos/tp-2020-1c-C-aprueba
-git checkout develop
+cd Documentos/tp-2020-1c-C-aprueba-stress
+
 
 #INICIO DE GAMEBOY
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/Debug/
-
-make clean
-make all
-
-cd ../src/resources/
+cd gameboy/src/resources/
 
 if test -e gameBoy.config; then
 	rm gameBoy.config
@@ -78,17 +73,16 @@ ID_MODULO=1\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy/src/resources/log_gameBoy.txt\n
 MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
+cd ../../Debug
+make clean
+make all
+
 #FIN DE GAMEBOY
 
 cd
 
 #INICIO DE GAMECARD
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug/
-
-make clean
-make all
-
-cd ../src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/
 
 if test -e gamecard.config; then
 	rm gamecard.config
@@ -106,6 +100,10 @@ PUERTO_GAMECARD=5001\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/log_gamecard_stress.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/nuestro_log_gamecard_stress.txt" >> gamecard.config
 
+cd ../../Debug
+make clean
+make all
+
 #FIN DE GAMECARD
 
 cd
@@ -114,12 +112,7 @@ cd
 
 #CREO LOS BROKERS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug/
-
-make clean
-make all
-
-cd ../../
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
 
 cp -r broker-v2/ broker-v2-Particiones-dinamicas-stress
 cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-stress
@@ -128,7 +121,7 @@ cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-stress
 
 #Configuro broker consolidacion Particiones dinamicas
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -142,10 +135,14 @@ ALGORITMO_PARTICION_LIBRE=FF\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=10\n
-PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/dump_file.txt\n
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/dump_file.txt\n
 ID_MODULO=8\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/mi_log_broker.txt\n">> broker.config
+
+cd ../../Debug
+make clean
+make all
 
 #Configuro broker Buddy System
 
@@ -168,18 +165,17 @@ ID_MODULO=9\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-BUDDY-SYSTEM-stress/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-BUDDY-SYSTEM-stress/src/resources/mi_log_broker.txt\n">> broker.config
 
+cd ../../Debug
+make clean
+make all
+
 #FIN DE BROKER
 
 cd
 
 #CREO TEAMS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2/Debug/
-
-make clean
-make all
-
-cd ../../
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
 
 cp -r team-v2/ team-v2-FIFO-stress
 cp -r team-v2/ team-v2-RR-stress
@@ -213,6 +209,10 @@ ID_MODULO=15\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
+cd ../../Debug
+make clean
+make all
+
 #Configuro team con RR -> Quantum = 2
 
 cd ../../../team-v2-RR-stress/src/resources/
@@ -237,6 +237,10 @@ NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-s
 ID_MODULO=16\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
+
+cd ../../Debug
+make clean
+make all
 
 #Configuro team con SJF - SD
 
@@ -263,6 +267,10 @@ ID_MODULO=17\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
+cd ../../Debug
+make clean
+make all
+
 #Configuro team con SJF - CD
 
 cd ../../../team-v2-SJF-CD-stress/src/resources/
@@ -287,6 +295,11 @@ NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-
 ID_MODULO=18\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
+
+cd ../../Debug
+make clean
+make all
+
 #FIN DE TEAM
 
 cd

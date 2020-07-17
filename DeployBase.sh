@@ -49,22 +49,19 @@ fi
 
 mkdir Documentos
 
+cd tp-2020-1c-C-aprueba
+git checkout develop
+cd ..
 cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba
 
 #FIN DE COPIAR CARPETA
 
 cd
 cd Documentos/tp-2020-1c-C-aprueba
-git checkout develop
 
 #INICIO DE GAMEBOY
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/Debug/
-
-make clean
-make all
-
-cd ../src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/
 
 if test -e gameBoy.config; then
 	rm gameBoy.config
@@ -80,15 +77,14 @@ ID_MODULO=0\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/log_gameBoy.txt\n
 MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
-#FIN DE GAMEBOY
-
-#INICIO DE GAMECARD
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug/
-
+cd ../../Debug
 make clean
 make all
 
-cd ../src/resources/
+#FIN DE GAMEBOY
+
+#INICIO DE GAMECARD
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/
 
 if test -e gamecard.config; then
 	rm gamecard.config
@@ -106,16 +102,15 @@ PUERTO_GAMECARD=5001\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/log_gamecard_base.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log_gamecard_base.txt" >> gamecard.config
 
+cd ../../Debug
+make clean
+make all
+
 #FIN DE GAMECARD
 
 #CREO TEAMS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug/
-
-make clean
-make all
-
-cd ../../
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/
 
 cp -r team-v2/ team-v2-RR
 cp -r team-v2/ team-v2-SJF-SD
@@ -148,6 +143,9 @@ ID_MODULO=10\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
+cd ../../Debug
+make clean
+make all
 
 #Configuro team con RR -> Quantum = 2
 
@@ -174,6 +172,10 @@ ID_MODULO=11\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
+cd ../../Debug
+make clean
+make all
+
 #Configuro team con SJF - SD
 
 cd ../../../team-v2-SJF-SD/src/resources/
@@ -199,6 +201,10 @@ ID_MODULO=12\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
+cd ../../Debug
+make clean
+make all
+
 #Configuro team con SJF - CD
 
 cd ../../../team-v2-SJF-CD/src/resources/
@@ -223,18 +229,18 @@ NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/
 ID_MODULO=13\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
+
+cd ../../Debug
+make clean
+make all
+
 #FIN DE TEAM
 
 #INICIO BROKER
 
 #CREO LOS BROKERS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug/
-
-make clean
-make all
-
-cd ../../
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba
 
 cp -r broker-v2/ broker-v2-COMPACTACION-PD
 cp -r broker-v2/ broker-v2-BUDDY-SYSTEM
@@ -262,9 +268,13 @@ ID_MODULO=5\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt\n">> broker.config
 
+cd ../../Debug
+make clean
+make all
+
 #Configuro broker compactacion Particiones Dinamicas
 
-cd ../../../broker-v2-COMPACTACION-PD/src/resources/
+cd ../../broker-v2-COMPACTACION-PD/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -283,10 +293,13 @@ ID_MODULO=6\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/mi_log_broker.txt\n">> broker.config
 
+cd ../../Debug
+make clean
+make all
 
 #Configuro broker Buddy System
 
-cd ../../../broker-v2-BUDDY-SYSTEM/src/resources/
+cd ../../broker-v2-BUDDY-SYSTEM/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -305,6 +318,10 @@ ID_MODULO=7\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/mi_log_broker.txt\n">> broker.config
 
+cd ../../Debug
+make clean
+make all
+
 #FIN DE BROKER
 
 cd
@@ -319,27 +336,3 @@ fi
 cd
 
 mv /home/utnso/tp-2020-1c-C-aprueba/  /home/utnso/Documentos
-
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug
-    make clean
-    make all
-
-cd
-
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/Debug
-    make clean
-    make all
-
-cd
-
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug
-    make clean
-    make all
-
-cd
-
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug
-    make clean
-    make all
-
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba
