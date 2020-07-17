@@ -2,7 +2,7 @@
 
 
 void iniciar_config(void){
-	config = config_create("src/resources/gamecard.config");
+	config = config_create("/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/gamecard.config");
 	setear_tiempo_de_reintento_conexion();
 	setear_tiempo_de_reintento_operacion();
 	setear_tiempo_retardo_operacion();
