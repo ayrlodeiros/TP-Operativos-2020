@@ -102,6 +102,7 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 
 
 void enviar_id_msj_cliente(int socket_cliente,int id_msj){
+
 	bool se_mando = false;
 	int contador = 3;
 	while(!se_mando && contador != 0){
