@@ -49,7 +49,7 @@ void terminar_gameBoy(){
 	log_info(mi_log, "-----------------Destruyendo archivo config-----------------");
 	destruir_config();
 	log_destroy(logger);
-	//log_destroy(mi_log);
+	log_destroy(mi_log);
 }
 
 void gestionar_envio_appeared(char* argv[], int argc){

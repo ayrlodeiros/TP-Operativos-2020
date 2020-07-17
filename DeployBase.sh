@@ -57,7 +57,7 @@ cd
 cd Documentos/tp-2020-1c-C-aprueba
 git checkout develop
 
-#INICIO DE GAMEBOYls
+#INICIO DE GAMEBOY
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
 
@@ -69,7 +69,7 @@ if test -e gameBoy.config; then
 	rm gameBoy.config
 fi
 #REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
-echo -e "IP_BROKER=127.0.0.1\nIP_TEAM=127.0.0.2\nIP_GAMECARD=127.0.0.3\nPUERTO_BROKER=4444\nPUERTO_TEAM=5002\nPUERTO_GAMECARD=5001\n" >> gameBoy.config
+echo -e "IP_BROKER=127.0.0.1\nIP_TEAM=127.0.0.2\nIP_GAMECARD=127.0.0.3\nPUERTO_BROKER=4444\nPUERTO_TEAM=5002\nPUERTO_GAMECARD=5001\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/log_gameBoy.txt\nMI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
 #FIN DE GAMEBOY
 
@@ -110,7 +110,19 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=FIFO\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=127.0.0.1\nPUERTO_BROKER=4444\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/nuestro_log_team_FIFO.txt" >> team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\n
+POKEMON_ENTRENADORES=[Pikachu]\n
+OBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\n
+TIEMPO_RECONEXION=30\n
+RETARDO_CICLO_CPU=5\n
+ALGORITMO_PLANIFICACION=FIFO\n
+QUANTUM=0\n
+ALPHA=0.5\n
+ESTIMACION_INICIAL=5\n
+IP_BROKER=127.0.0.1\n
+PUERTO_BROKER=4444\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/nuestro_log_team_FIFO.txt" >> team.config
 
 #Configuro team con RR -> Quantum = 2
 
