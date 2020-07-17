@@ -163,7 +163,7 @@ t_list* crear_t_list(char** array) {
 
 int obtener_blocks(){
 	char* path = devolver_path_archivo_metadata();
-	metadata_config = config_create (path);
+	metadata_config = config_create(path);
 	int blocks = config_get_int_value(metadata_config, "BLOCKS");
 	free(path);
 	config_destroy(metadata_config);
@@ -560,4 +560,78 @@ t_list* posiciones_del_pokemon(char* path_nombre_metadata){
 	}
 	list_destroy_and_destroy_elements(posiciones_pokemon,free);
 	return posiciones;
+}
+
+//Se mueve del bloques.c
+int tamanio_de_lista(char** un_array){
+	int i = 0;
+
+	if(!un_array[i]){
+		return 0;
+	}
+
+	while(un_array[i] != NULL){
+		i++;
+	}
+	return i;
+}
+
+
+//trae todas los inserts de esa url, que es la particion.bin o el .tmp
+t_list* leer_datos(char* path_metadata_config){
+	FILE *archivo;
+	int tamanio_archivo;
+	char* lista_de_bloques_string = devolver_lista_de_bloques(path_metadata_config);
+	char** lista_de_bloques = string_get_string_as_array(lista_de_bloques_string);
+	free(lista_de_bloques_string);
+	int size = tamanio_de_lista(lista_de_bloques); // tamano de array de bloques
+	char* dato = string_new();
+	char* path_bloque; // url de cada block particular
+	char* pivot;
+	struct stat st;
+	for(int i = 0; i<size; i++)
+	{
+		path_bloque = devolver_path_dato(lista_de_bloques[i]);
+		stat(path_bloque,&st);
+		tamanio_archivo = st.st_size;
+
+		pivot = malloc(tamanio_archivo+1);
+		archivo = fopen(path_bloque,"r");
+		fread(pivot,tamanio_archivo,1,archivo);
+		fclose(archivo);
+		pivot[tamanio_archivo] = '\0';
+		if(strcmp(pivot,"&")) //si no es igual a "&" lo agrego a la lista de inserts
+			string_append(&dato,pivot);
+
+		free(lista_de_bloques[i]);
+		free(pivot);
+		free(path_bloque);
+	}
+	t_list* lista_de_posiciones = list_create();
+
+	agregar_datos_a_la_lista(dato,lista_de_posiciones,path_metadata_config);
+	 //parsea el char *inserts por \n y los mete en la lista
+	free(dato);
+	free(lista_de_bloques);
+	return lista_de_posiciones;
+}
+
+int cantidad_en_posicion(t_list* lista_de_posiciones,char* posicion_a_buscar){
+
+	int posicion_encontrada = posicion_en_la_lista_de_posiciones_pokemon_a_buscar(lista_de_posiciones,posicion_a_buscar);
+	char* aux = string_new();
+	char* pivot_aux = list_get(lista_de_posiciones,posicion_encontrada);
+	string_append(&aux,pivot_aux);
+	char** aux_partido = string_split(aux,"=");
+	char* cantidad_encontrada_string = aux_partido[1];
+	char* posicion = aux_partido[0];
+	int cantidad_encontrada = atoi(cantidad_encontrada_string);
+	free(aux);
+	free(aux_partido);
+	free(cantidad_encontrada_string);
+	free(posicion);
+
+	return cantidad_encontrada;
+
+
 }

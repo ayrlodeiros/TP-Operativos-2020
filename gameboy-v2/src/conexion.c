@@ -550,7 +550,7 @@ int conectarse_a(int modulo){
 		case TEAM:
 			//log_info(logger,"SE ESTABLECIO CONEXION CON EL PROCESO: %s", modulo);
 			//log_info(mi_log,"SE ESTABLECIO CONEXION CON EL PROCESO: %s", modulo);
-			log_info(mi_log,"1");
+			//log_info(mi_log,"1");
 			return crear_conexion_del_cliente(leer_ip_team(),leer_puerto_string(TEAM),logger);
 		default:
 			return -1;

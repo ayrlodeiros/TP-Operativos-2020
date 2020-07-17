@@ -15,9 +15,9 @@ void levantar_conexiones() {
 	pthread_create(&hilo_gameboy,NULL, atender_conexion_gameboy, NULL);
 	pthread_detach(hilo_gameboy);
 
-	/*pthread_t* hilo_broker;
+	pthread_t* hilo_broker;
 	pthread_create(&hilo_broker,NULL, levantar_conexiones_al_broker, NULL);
-	pthread_detach(hilo_broker);*/
+	pthread_detach(hilo_broker);
 }
 
 t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, int id_mensaje, t_buffer* buffer) {
@@ -524,6 +524,7 @@ void trabajar_mensaje_catch(mensaje_broker* msj_broker) {
 	void* payload = msj_broker->payload;
 	int offset = 0;
 
+	log_info(nuestro_log, "El id del mensaje CATCH es %d", id_mensaje);
 	int largo_nombre_pokemon;
 	memcpy(&largo_nombre_pokemon, payload+offset, sizeof(uint32_t));
 	offset+=sizeof(uint32_t);
@@ -531,6 +532,8 @@ void trabajar_mensaje_catch(mensaje_broker* msj_broker) {
 	char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
 	memcpy(nombre_pokemon, payload+offset, largo_nombre_pokemon+1);
 	offset+=(largo_nombre_pokemon+1);
+	log_info(nuestro_log, "El nombre del pokemon es %s", nombre_pokemon);
+
 
 	int posicion_x;
 	memcpy(&posicion_x, payload+offset, sizeof(uint32_t));

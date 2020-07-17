@@ -54,3 +54,129 @@
 [INFO] 12:47:14:122 gameBoy/(10417:10417): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
 [INFO] 12:47:15:180 gameBoy/(10452:10452): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
 [INFO] 12:47:15:180 gameBoy/(10452:10452): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:26:505 gameBoy/(11356:11356): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:26:505 gameBoy/(11356:11356): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:28:985 gameBoy/(11392:11392): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:28:986 gameBoy/(11392:11392): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:38:18 gameBoy/(11428:11428): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:48:334 gameBoy/(11468:11468): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:52:48:334 gameBoy/(11468:11468): Realizando suscripcion a cola: 4
+[INFO] 12:52:48:335 gameBoy/(11468:11468): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 12:52:49:665 gameBoy/(11468:11468): Se recibio un mensaje del broker
+[INFO] 12:52:49:665 gameBoy/(11468:11468): ID: -1217523712
+[INFO] 12:52:49:665 gameBoy/(11468:11468): ID CORRELATIVO: -1217523712
+[INFO] 12:52:49:665 gameBoy/(11468:11468): TAMANIO: -1074033064
+[INFO] 12:52:49:665 gameBoy/(11468:11468): Se recibio un mensaje del broker
+[INFO] 12:52:49:665 gameBoy/(11468:11468): ID: -1217523712
+[INFO] 12:52:49:665 gameBoy/(11468:11468): ID CORRELATIVO: -1217523712
+[INFO] 12:52:49:665 gameBoy/(11468:11468): TAMANIO: -1074033064
+[INFO] 12:55:17:500 gameBoy/(11658:11658): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:55:17:526 gameBoy/(11658:11658): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:55:27:489 gameBoy/(11701:11701): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:55:27:489 gameBoy/(11701:11701): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:55:31:723 gameBoy/(11737:11737): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:55:31:723 gameBoy/(11737:11737): Realizando suscripcion a cola: 4
+[INFO] 12:55:31:723 gameBoy/(11737:11737): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 12:55:45:624 gameBoy/(11737:11737): Se recibio un mensaje del broker
+[INFO] 12:55:45:624 gameBoy/(11737:11737): ID: -1217265664
+[INFO] 12:55:45:624 gameBoy/(11737:11737): ID CORRELATIVO: -1217265664
+[INFO] 12:55:45:624 gameBoy/(11737:11737): TAMANIO: -1079392248
+[INFO] 12:55:45:625 gameBoy/(11737:11737): Se recibio un mensaje del broker
+[INFO] 12:55:45:625 gameBoy/(11737:11737): ID: -1217265664
+[INFO] 12:55:45:625 gameBoy/(11737:11737): ID CORRELATIVO: -1217265664
+[INFO] 12:55:45:625 gameBoy/(11737:11737): TAMANIO: -1079392248
+[INFO] 12:59:42:618 gameBoy/(11979:11979): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:59:42:619 gameBoy/(11979:11979): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:59:44:590 gameBoy/(12015:12015): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:59:44:591 gameBoy/(12015:12015): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:59:46:295 gameBoy/(12050:12050): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 12:59:46:296 gameBoy/(12050:12050): Realizando suscripcion a cola: 4
+[INFO] 12:59:46:296 gameBoy/(12050:12050): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:01:30:162 gameBoy/(12129:12129): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:01:30:162 gameBoy/(12129:12129): Realizando suscripcion a cola: 4
+[INFO] 13:01:30:162 gameBoy/(12129:12129): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:03:00:0 gameBoy/(12366:12366): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:03:00:1 gameBoy/(12366:12366): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:03:03:598 gameBoy/(12401:12401): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:03:03:598 gameBoy/(12401:12401): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:03:06:93 gameBoy/(12437:12437): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:03:06:93 gameBoy/(12437:12437): Realizando suscripcion a cola: 4
+[INFO] 13:03:06:93 gameBoy/(12437:12437): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:05:30:553 gameBoy/(12645:12645): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:05:30:561 gameBoy/(12645:12645): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:05:33:327 gameBoy/(12687:12687): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:05:33:328 gameBoy/(12687:12687): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:05:36:647 gameBoy/(12723:12723): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:05:36:647 gameBoy/(12723:12723): Realizando suscripcion a cola: 4
+[INFO] 13:05:36:647 gameBoy/(12723:12723): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:07:43:324 gameBoy/(12884:12884): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:07:43:326 gameBoy/(12884:12884): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:07:49:63 gameBoy/(12921:12921): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:07:49:63 gameBoy/(12921:12921): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:08:06:194 gameBoy/(12993:12993): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:08:06:194 gameBoy/(12993:12993): Realizando suscripcion a cola: 4
+[INFO] 13:08:06:194 gameBoy/(12993:12993): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:08:06:199 gameBoy/(12993:12993): Se recibio un mensaje del broker
+[INFO] 13:08:06:200 gameBoy/(12993:12993): ID: 1
+[INFO] 13:08:06:200 gameBoy/(12993:12993): ID CORRELATIVO: 10
+[INFO] 13:08:06:200 gameBoy/(12993:12993): TAMANIO: 4
+[INFO] 13:08:06:204 gameBoy/(12993:12993): Se recibio un mensaje del broker
+[INFO] 13:08:06:204 gameBoy/(12993:12993): ID: 2
+[INFO] 13:08:06:204 gameBoy/(12993:12993): ID CORRELATIVO: 10
+[INFO] 13:08:06:204 gameBoy/(12993:12993): TAMANIO: 4
+[INFO] 13:08:07:897 gameBoy/(12993:12993): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:13:51:615 gameBoy/(13258:13258): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:13:51:616 gameBoy/(13258:13258): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:13:54:866 gameBoy/(13294:13294): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:13:54:870 gameBoy/(13294:13294): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:13:56:791 gameBoy/(13331:13331): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:13:56:792 gameBoy/(13331:13331): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:14:15:144 gameBoy/(13402:13402): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:14:15:146 gameBoy/(13402:13402): Realizando suscripcion a cola: 4
+[INFO] 13:14:15:146 gameBoy/(13402:13402): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:14:15:154 gameBoy/(13402:13402): Se recibio un mensaje del broker
+[INFO] 13:14:15:154 gameBoy/(13402:13402): ID: 1
+[INFO] 13:14:15:154 gameBoy/(13402:13402): ID CORRELATIVO: 10
+[INFO] 13:14:15:154 gameBoy/(13402:13402): TAMANIO: 4
+[INFO] 13:14:15:155 gameBoy/(13402:13402): Se recibio un mensaje del broker
+[INFO] 13:14:15:155 gameBoy/(13402:13402): ID: 2
+[INFO] 13:14:15:155 gameBoy/(13402:13402): ID CORRELATIVO: 10
+[INFO] 13:14:15:155 gameBoy/(13402:13402): TAMANIO: 4
+[INFO] 13:14:15:156 gameBoy/(13402:13402): Se recibio un mensaje del broker
+[INFO] 13:14:15:156 gameBoy/(13402:13402): ID: 3
+[INFO] 13:14:15:156 gameBoy/(13402:13402): ID CORRELATIVO: 10
+[INFO] 13:14:15:156 gameBoy/(13402:13402): TAMANIO: 4
+[INFO] 13:17:19:243 gameBoy/(13531:13531): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:17:19:243 gameBoy/(13531:13531): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:17:47:293 gameBoy/(13579:13579): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:17:47:293 gameBoy/(13579:13579): Realizando suscripcion a cola: 4
+[INFO] 13:17:47:293 gameBoy/(13579:13579): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:18:21:868 gameBoy/(13619:13619): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:18:21:868 gameBoy/(13619:13619): Realizando suscripcion a cola: 4
+[INFO] 13:18:21:868 gameBoy/(13619:13619): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:22:26:493 gameBoy/(13859:13859): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:22:26:493 gameBoy/(13859:13859): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:24:45:564 gameBoy/(13960:13960): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:24:45:565 gameBoy/(13960:13960): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[ERROR] 13:25:07:900 gameBoy/(13999:13999): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:26:57:650 gameBoy/(14145:14145): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:26:57:654 gameBoy/(14145:14145): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:29:56:119 gameBoy/(14337:14337): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 4444
+[INFO] 13:29:56:119 gameBoy/(14337:14337): Realizando suscripcion a cola: 4
+[INFO] 13:29:56:120 gameBoy/(14337:14337): Se suscribio correctamente a la cola 4 por 30 segundos
+[INFO] 13:59:17:75 gameBoy/(16211:16211): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:59:17:75 gameBoy/(16211:16211): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521987
+[INFO] 14:01:00:646 gameBoy/(16302:16302): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 14:01:00:646 gameBoy/(16302:16302): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:02:06:134 gameBoy/(16345:16345): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 14:02:06:134 gameBoy/(16345:16345): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521987
+[INFO] 14:14:09:789 gameBoy/(16553:16553): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:14:09:789 gameBoy/(16553:16553): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521987
+[INFO] 14:34:05:578 gameBoy/(17842:17842): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 14:34:05:578 gameBoy/(17842:17842): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:56:08:557 gameBoy/(18487:18487): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 14:56:08:557 gameBoy/(18487:18487): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:58:57:412 gameBoy/(18821:18821): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 14:58:57:413 gameBoy/(18821:18821): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 15:13:37:706 gameBoy/(19744:19744): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 15:13:37:707 gameBoy/(19744:19744): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009

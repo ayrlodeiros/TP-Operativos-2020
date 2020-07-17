@@ -56,9 +56,9 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	pthread_mutex_lock(&mutex_agregar_msj_a_cola);
 
-	int tamanio_previo = queue_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
-	queue_push(queue->cola,mensaje);
-	if(queue_size(queue->cola) > tamanio_previo)
+	int tamanio_previo = list_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
+	list_add(queue->cola,mensaje);
+	if(list_size(queue->cola) > tamanio_previo)
 		log_info(mi_log,"Se agrego un nuevo mensaje a la cola %d",queue->nombre);
 
 	pthread_mutex_unlock(&mutex_agregar_msj_a_cola);

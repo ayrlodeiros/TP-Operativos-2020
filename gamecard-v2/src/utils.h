@@ -17,6 +17,7 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <fcntl.h>
+#include <pthread.h>
 #include <dirent.h>
 #include <unistd.h>
 #include <netdb.h>
@@ -70,7 +71,6 @@ int obtener_block_size();
 char* obtener_open_archivo_metadata_pokemon(char* nombre);
 int obtener_size_archivo_metadata_pokemon(char* nombre);
 t_list* obtener_blocks_archivo_metadata_pokemon(char* nombre);
-t_list* crear_t_list(char** array);
 char* obtener_directory_archivo_metadata_pokemon(char* nombre);
 char* devolver_path_directorio_files();
 int existe_el_directorio(char* path_directorio);
@@ -85,6 +85,12 @@ void cerrar_archivo(char* nombre_pokemon);
 void resetear_bloques_metadata_pokemon(char* path_nombre_metadata);
 
 void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int cantidad);
+int cantidad_en_posicion(t_list* lista_de_posiciones,char* posicion_a_buscar);
 int disminuir_cantidad_de_pokemon_en_la_posicion(char* nombre_pokemon,int posicion_x,int posicion_y);
+
+//Se mueve del bloques.h
+int tamanio_de_lista(char** un_array);
+t_list* leer_datos(char* path_metadata_config);
+t_list* crear_t_list(char** array);
 
 #endif /* UTILS_H_ */

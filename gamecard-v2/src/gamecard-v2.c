@@ -186,7 +186,7 @@ int main(void)
 
 	//buscar_posicion_en_el_archivo(path_nombre_metadata,"52-13");
 
-	/*for(int j = 0;j<10;j++){
+	for(int j = 0;j<10;j++){
 		log_info(nuestro_log,"VALOR DEL BITMAP %d: %d",j,bitarray_test_bit(bitmap,j));
 	}
 */
@@ -210,10 +210,10 @@ void while_infinito() {
 void iniciar_gamecard() {
 	iniciar_config();
 	logger = log_create(leer_path_logger(), "gamecard", false, LOG_LEVEL_INFO);
-	nuestro_log = log_create(leer_path_nuestro_logger(), "gamecard", false, LOG_LEVEL_INFO);
+	nuestro_log = log_create(leer_path_nuestro_logger(), "gamecard", true, LOG_LEVEL_INFO);
 	punto_montaje_tallgrass = leer_punto_montaje_tallgrass();
 	crear_punto_de_montaje();
-	//crear_archivo_metadata(64,1000);
+	crear_archivo_metadata(64,1000);
 	creacion_archivo_files_metadata(devolver_path_directorio_files(),"Y","0","","N");
 
 	pthread_mutex_init(&Mutex_Bitmap,NULL);

@@ -55,19 +55,12 @@ int obtener_nuevo_bloque_libre(){
 	flag_bloques_libres = 0; // 0 si no hay libres, 1 si los hay
 	pthread_mutex_unlock(&Mutex_Bitmap);
 	return -1; // salio del while, por lo que no hay bloque libres/
-	}
-
-	void destruir_bitmap(){
-		msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
-		bitarray_destroy(bitmap);
-	}
-
-	//libera el bloque
-	void liberar_bloque(int bloque){
-		pthread_mutex_lock(&Mutex_Bitmap);
-		bitarray_clean_bit(bitmap,bloque);
-		flag_bloques_libres = 1;
-		pthread_mutex_unlock(&Mutex_Bitmap);
 }
+
+void destruir_bitmap(){
+	msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
+	bitarray_destroy(bitmap);
+}
+
 
 

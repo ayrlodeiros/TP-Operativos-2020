@@ -155,9 +155,11 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 
 		log_info(mi_log, "Se desbloqueo la cola %d por la aparicion de un mensaje", mq->nombre);
 
-		pthread_mutex_lock(&mutex_memoria_principal);
-		enviar_mensaje_suscriptores(mq);
-		pthread_mutex_unlock(&mutex_memoria_principal);
+		if(!list_is_empty(mq->cola)) {
+			pthread_mutex_lock(&mutex_memoria_principal);
+			enviar_mensaje_suscriptores(mq);
+			pthread_mutex_unlock(&mutex_memoria_principal);
+		}
 	}
 }
 
@@ -176,6 +178,27 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 
 	memcpy(paquete->buffer->stream, memoria_principal + mensaje->pos_en_memoria->pos, paquete->buffer->size);
 
+	// TODO borrar al final
+	if(mensaje->cola == CATCH) {
+		int offset=0;
+		int largo_nombre_pokemon;
+		memcpy(&largo_nombre_pokemon, (paquete->buffer->stream) + offset, sizeof(uint32_t));
+		offset+=sizeof(uint32_t);
+		log_info(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
+		char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+		int posicion_x;
+		int posicion_y;
+		memcpy(nombre_pokemon, (paquete->buffer->stream) + offset, largo_nombre_pokemon + 1);
+		log_info(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
+		offset+=largo_nombre_pokemon + 1;
+		memcpy(&posicion_x, (paquete->buffer->stream) + offset, sizeof(uint32_t));
+		offset+=sizeof(uint32_t);
+		log_info(mi_log, "La posicion x del pokemon es %d", posicion_x);
+		memcpy(&posicion_y, (paquete->buffer->stream) + offset, sizeof(uint32_t));
+		offset+=sizeof(uint32_t);
+		log_info(mi_log, "La posicion y del pokemon es %d", posicion_y);
+	}
+
 	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
 
 	void* a_enviar = serializar_paquete(paquete, bytes);
@@ -183,6 +206,8 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,suscriptor);
 		log_info(mi_log,"Se envio el mensaje al suscriptor de id %d y socket %d de la cola %d.",suscriptor->identificador,suscriptor->conexion, mensaje->cola);
+		pthread_create(&hilo_ack, NULL, recibir_ACK ,msj_susc);
+		pthread_detach(hilo_ack);
 	}
 	else
 		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor.");
@@ -191,15 +216,12 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	free(paquete->buffer->stream);
 	free(paquete->buffer);
 	free(paquete);
-
-	pthread_create(&hilo_ack, NULL, recibir_ACK ,msj_susc);
-	pthread_detach(hilo_ack);
 }
 
 void recibir_ACK(aux_msj_susc* msj_y_susc){
 
 	int valor;
-	log_debug(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->suscriptor->identificador);
+	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->suscriptor->identificador);
 	if (recv(msj_y_susc->suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
 
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
@@ -207,7 +229,7 @@ void recibir_ACK(aux_msj_susc* msj_y_susc){
 	}
 	else{
 
-		log_debug(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
+		log_info(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
 
 		if(valor == 1) {
 			log_info(mi_log, "Recibi la confirmacion de recepcion del suscriptor %d.",msj_y_susc->suscriptor->identificador);
@@ -216,6 +238,8 @@ void recibir_ACK(aux_msj_susc* msj_y_susc){
 			//TODO Ver como reaccionar en caso de que la recepcion no sea correcta
 		}
 	}
+
+	free(msj_y_susc);
 }
 
 void add_sub_lista_conf_msj(t_mensaje* mensaje, suscriptor_t* suscriptor){
@@ -246,7 +270,6 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 
 		}
 	}
-	free(aux);
 }
 
 bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
@@ -368,6 +391,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 
 	int posicion = guardar_mensaje_en_memoria(tamanio, buffer);
 	mensaje->id = asignar_id_univoco();
+	log_info(mi_log, "El id del mensaje creado es %d", mensaje->id);
 	mensaje->id_cor = id_correlativo;
 	mensaje->cola = cola;
 	mensaje->suscriptores_env = list_create();
@@ -1145,8 +1169,8 @@ void destruir_t_mensaje(t_mensaje* mensaje) {
 }
 
 void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje) {
-	pthread_mutex_lock(&mutex_memoria_principal);
 
+	//No van los mutex aca, porque cuando se llama a esta funcion, la memoria principal ya esta bloqueada
 	switch(leer_algoritmo_memoria()){
 		case PARTICIONES:
 			actualizar_ultima_vez_dinamica(mensaje);
@@ -1157,7 +1181,6 @@ void actualizar_ultima_vez_usado_particion(t_mensaje* mensaje) {
 		case NORMAL:
 			break;
 	}
-	pthread_mutex_unlock(&mutex_memoria_principal);
 }
 
 void actualizar_ultima_vez_dinamica(t_mensaje* mensaje) {
