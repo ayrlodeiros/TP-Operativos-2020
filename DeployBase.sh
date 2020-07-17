@@ -61,6 +61,7 @@ git checkout develop
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
 
+make clean
 make all
 
 cd ../src/resources/
@@ -76,6 +77,7 @@ echo -e "IP_BROKER=127.0.0.1\nIP_TEAM=127.0.0.2\nIP_GAMECARD=127.0.0.3\nPUERTO_B
 #INICIO DE GAMECARD
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug/
 
+make clean
 make all
 
 cd ../src/resources/
@@ -92,6 +94,7 @@ echo -e "TIEMPO_DE_REINTENTO_CONEXION=10\nTIEMPO_DE_REINTENTO_OPERACION=5\nTIEMP
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug/
 
+make clean
 make all
 
 cd ../../
@@ -161,6 +164,7 @@ echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\n
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug/
 
+make clean
 make all
 
 cd ../../

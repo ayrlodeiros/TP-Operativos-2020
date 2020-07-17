@@ -68,7 +68,7 @@ if test -e gameBoy.config; then
 	rm gameBoy.config
 fi
 #REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
-echo -e "IP_BROKER=127.0.0.1\nIP_TEAM=127.0.0.2\nIP_GAMECARD=127.0.0.3\nPUERTO_BROKER=4444\nPUERTO_TEAM=5002\nPUERTO_GAMECARD=5001\n" >> gameBoy.config
+echo -e "IP_BROKER=127.0.0.1\nIP_TEAM=127.0.0.2\nIP_GAMECARD=127.0.0.3\nPUERTO_BROKER=4444\nPUERTO_TEAM=5002\nPUERTO_GAMECARD=5001\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/log_gameBoy.txt\nMI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
 #FIN DE GAMEBOY
 
