@@ -110,7 +110,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=FIFO\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt" >> team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=FIFO\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/nuestro_log_team_FIFO.txt\n">> team.config
 
 #Configuro team con RR -> Quantum = 2
 
@@ -120,7 +120,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=RR\nQUANTUM=2\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_RR.txt" >> team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=RR\nQUANTUM=2\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR/src/resources/log_team_RR.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR/src/resources/nuestro_log_team_RR.txt" >> team.config
 
 #Configuro team con SJF - SD
 
@@ -130,7 +130,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-SD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-SD.txt" >> team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-SD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD/src/resources/log_team_SJF-SD.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD/src/resources/nuestro_log_team_SJF-SD.txt\n" >> team.config
 
 #Configuro team con SJF - CD
 
@@ -138,9 +138,9 @@ cd ../../../team-v2-SJF-CD/src/resources/
 
 if test -e team.config; then
 	rm team.config
+fi
 
-
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-CD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_SJF-CD.txt" >> team.config
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\nPOKEMON_ENTRENADORES=[Pikachu]\nOBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\nTIEMPO_RECONEXION=30\nRETARDO_CICLO_CPU=5\nALGORITMO_PLANIFICACION=SFJ-CD\nQUANTUM=0\nALPHA=0.5\nESTIMACION_INICIAL=5\nIP_BROKER=\nPUERTO_BROKER=\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/log_team_SJF-CD.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/nuestro_log_team_SJF-CD.txt\n" >> team.config
 #FIN DE TEAM
 
 #INICIO BROKER
@@ -153,8 +153,8 @@ make all
 
 cd ../../
 
-cp broker-v2/ broker-v2-COMPACTACION-PD
-cp broker-v2/ broker-v2-BUDDY-SYSTEM
+cp -r broker-v2/ broker-v2-COMPACTACION-PD
+cp -r broker-v2/ broker-v2-BUDDY-SYSTEM
 
 #CONFIGURO BROKERS
 
@@ -166,21 +166,19 @@ if test -e broker.config; then
 	rm broker.config
 fi
 
-echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICIONES\nALGORITMO_REEMPLAZO=FIFO\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=10\nLOG_FILE=\n">> broker.config
+echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICIONES\nALGORITMO_REEMPLAZO=FIFO\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=10\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/log_broker.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt\n">> broker.config
 
 #Configuro broker compactacion Particiones Dinamicas
 
-cd ../../../broker-v2-COMPACTACION-PD/
-
-cd 
+cd ../../../broker-v2-COMPACTACION-PD/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
 fi
 
-echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICIONES\nALGORITMO_REEMPLAZO=FF\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=1\nLOG_FILE=\n">> broker.config
+echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=PARTICIONES\nALGORITMO_REEMPLAZO=FF\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=1\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/log_broker.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/mi_log_broker.txt\n">> broker.config
 
-#Configuro broker compactacion Particiones Dinamicas
+#Configuro broker Buddy System
 
 cd ../../../broker-v2-BUDDY-SYSTEM/src/resources/
 
@@ -188,7 +186,7 @@ if test -e broker.config; then
 	rm broker.config
 fi
 
-echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=BS\nALGORITMO_REEMPLAZO=FIFO\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=1\nLOG_FILE=\n">> broker.config
+echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=BS\nALGORITMO_REEMPLAZO=FIFO\nALGORITMO_PARTICION_LIBRE=FF\nIP_BROKER=\nPUERTO_BROKER=\nFRECUENCIA_COMPACTACION=1\nLOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/log_broker.txt\nNUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/mi_log_broker.txt\n">> broker.config
 
 #FIN DE BROKER
 
