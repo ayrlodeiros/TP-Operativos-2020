@@ -2,7 +2,7 @@
 
 
 void iniciar_config(void){
-	config = config_create("/src/resources/gamecard.config");
+	config = config_create("src/resources/gamecard.config");
 	setear_tiempo_de_reintento_conexion();
 	setear_tiempo_de_reintento_operacion();
 	setear_tiempo_retardo_operacion();
@@ -12,6 +12,8 @@ void iniciar_config(void){
 	setear_id_modulo();
 	setear_ip_gamecard();
 	setear_puerto_gamecard();
+	setear_path_logger();
+	setear_path_nuestro_logger();
 }
 
 void destruir_config(void) {
@@ -86,7 +88,7 @@ void setear_path_logger(void){
 	path_logger = config_get_string_value(config, "LOG_FILE");
 }
 
-void setear_nuestro_path_logger(void){
+void setear_path_nuestro_logger(void){
 	path_nuestro_logger = config_get_string_value(config, "NUESTRO_LOG_FILE");
 }
 
