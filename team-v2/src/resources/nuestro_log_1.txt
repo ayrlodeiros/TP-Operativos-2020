@@ -3094,3 +3094,251 @@
 [INFO] 17:31:16:401 team/(26276:26293): El TAMANIO del mensaje es: 17
 [INFO] 17:31:16:402 team/(26276:26293): El pokemon Onix no es requerido actualmente, pero podría serlo en un futuro
 [INFO] 17:31:16:402 team/(26276:26293): Estoy esperando mensaje APPEARED
+[INFO] 17:53:50:535 team/(27681:27681): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:53:53:336 team/(27681:27681): Necesito 2 pokemons Squirtle
+[INFO] 17:53:53:338 team/(27681:27681): Necesito 1 pokemons Pikachu
+[INFO] 17:53:53:338 team/(27681:27681): Necesito 1 pokemons Onix
+[INFO] 17:53:53:338 team/(27681:27681): Necesito 1 pokemons Gengar
+[INFO] 17:53:53:344 team/(27681:27843): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:53:53:344 team/(27681:27843): Listo para recibir conexion de GAMEBOY, en servidor: 5
+[INFO] 17:53:53:345 team/(27681:27681): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:346 team/(27681:27681): Se realizo el envio de GET correctamente
+[INFO] 17:53:53:346 team/(27681:27844): El broker no esta conectado...
+[INFO] 17:53:53:352 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:352 team/(27681:27844): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:352 team/(27681:27844): La conexion del appeared es 8
+[INFO] 17:53:53:353 team/(27681:27844): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:353 team/(27681:27844): La conexion del localized es 9
+[INFO] 17:53:53:353 team/(27681:27844): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:353 team/(27681:27844): La conexion del caught es 10
+[INFO] 17:53:53:353 team/(27681:27844): Funciona broker, activando las tres colas...
+[INFO] 17:53:53:361 team/(27681:27681): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:361 team/(27681:27681): Se realizo el envio de GET correctamente
+[INFO] 17:53:53:361 team/(27681:27847): Suscripcion exitosa a la cola
+[INFO] 17:53:53:361 team/(27681:27847): Estoy esperando mensaje CAUGHT
+[INFO] 17:53:53:370 team/(27681:27681): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:370 team/(27681:27681): Se realizo el envio de GET correctamente
+[INFO] 17:53:53:371 team/(27681:27849): Suscripcion exitosa a la cola
+[INFO] 17:53:53:371 team/(27681:27849): Estoy esperando mensaje APPEARED
+[INFO] 17:53:53:376 team/(27681:27681): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:376 team/(27681:27681): Se realizo el envio de GET correctamente
+[INFO] 17:53:53:377 team/(27681:27844): Bloqueo de conexiones al broker
+[INFO] 17:53:53:377 team/(27681:27851): Suscripcion exitosa a la cola
+[INFO] 17:53:53:379 team/(27681:27851): Estoy esperando mensaje LOCALIZED
+[INFO] 17:53:53:385 team/(27681:27853): Esperando alguna accion
+[INFO] 17:53:53:386 team/(27681:27854): Estoy en el planificador
+[INFO] 17:53:53:386 team/(27681:27854): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 17:53:53:953 team/(27681:27849): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 17:53:53:953 team/(27681:27851): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 17:53:53:953 team/(27681:27847): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 17:53:53:953 team/(27681:27848): No se pudo recibir el ID de LOCALIZED
+[INFO] 17:53:53:953 team/(27681:27850): No se pudo recibir el ID de LOCALIZED
+[INFO] 17:53:53:953 team/(27681:27852): No se pudo recibir el ID de LOCALIZED
+[INFO] 17:53:53:953 team/(27681:27846): No se pudo recibir el ID de LOCALIZED
+[INFO] 17:53:53:953 team/(27681:27849): Se perdio la conexion con el broker
+[INFO] 17:53:53:953 team/(27681:27844): Desbloqueo de conexiones al broker
+[INFO] 17:53:53:957 team/(27681:27844): El broker no esta conectado...
+[INFO] 17:53:53:957 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:53:53:957 team/(27681:27851): Se perdio la conexion con el broker
+[INFO] 17:53:53:957 team/(27681:27847): Se perdio la conexion con el broker
+[INFO] 17:54:23:961 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:54:53:961 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:55:05:663 team/(27681:27843): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:55:05:665 team/(27681:27843): Listo para recibir conexion de GAMEBOY, en servidor: 5
+[INFO] 17:55:05:675 team/(27681:27906): El pokemon  no es requerido
+[INFO] 17:55:23:961 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:55:53:962 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:56:23:963 team/(27681:27844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:56:39:321 team/(27980:27980): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:56:39:323 team/(27980:27980): Necesito 2 pokemons Squirtle
+[INFO] 17:56:39:323 team/(27980:27980): Necesito 1 pokemons Pikachu
+[INFO] 17:56:39:323 team/(27980:27980): Necesito 1 pokemons Onix
+[INFO] 17:56:39:323 team/(27980:27980): Necesito 1 pokemons Gengar
+[INFO] 17:56:39:324 team/(27980:27980): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:56:39:324 team/(27980:27980): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:56:39:324 team/(27980:27980): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:56:39:325 team/(27980:27980): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:56:39:327 team/(27980:27987): El broker no esta conectado...
+[INFO] 17:56:39:327 team/(27980:27987): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:56:39:327 team/(27980:27986): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:56:39:328 team/(27980:27986): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 17:56:39:328 team/(27980:27989): Estoy en el planificador
+[INFO] 17:56:39:328 team/(27980:27989): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 17:56:39:328 team/(27980:27988): Esperando alguna accion
+[INFO] 17:56:45:28 team/(27980:27986): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:56:45:28 team/(27980:27986): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 17:56:45:29 team/(27980:27991): No se pudo recibir el mensaje del Game Boy
+[INFO] 17:57:09:328 team/(27980:27987): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:57:39:329 team/(27980:27987): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:58:09:330 team/(27980:27987): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:58:23:275 team/(27980:27986): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:58:23:275 team/(27980:27986): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 17:58:23:276 team/(27980:28067): No se pudo recibir el mensaje del Game Boy
+[INFO] 17:58:31:885 team/(27980:27986): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:58:31:886 team/(27980:27986): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 17:58:31:887 team/(27980:28102): No se pudo recibir el mensaje del Game Boy
+[INFO] 17:58:39:332 team/(27980:27987): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:58:49:671 team/(28158:28158): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 17:58:49:684 team/(28158:28158): Necesito 2 pokemons Squirtle
+[INFO] 17:58:49:684 team/(28158:28158): Necesito 1 pokemons Pikachu
+[INFO] 17:58:49:684 team/(28158:28158): Necesito 1 pokemons Onix
+[INFO] 17:58:49:684 team/(28158:28158): Necesito 1 pokemons Gengar
+[INFO] 17:58:49:685 team/(28158:28158): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:58:49:689 team/(28158:28158): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:58:49:689 team/(28158:28158): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:58:49:693 team/(28158:28158): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 17:58:49:693 team/(28158:28164): El broker no esta conectado...
+[INFO] 17:58:49:693 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:58:49:693 team/(28158:28163): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 17:58:49:697 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 17:58:49:697 team/(28158:28166): Estoy en el planificador
+[INFO] 17:58:49:697 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 17:58:49:697 team/(28158:28165): Esperando alguna accion
+[INFO] 17:58:53:225 team/(28158:28163): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 17:58:53:226 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 17:58:53:230 team/(28158:28170): El pokemon  no es requerido
+[INFO] 17:59:19:695 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:59:49:696 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:00:19:697 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:00:49:698 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:01:19:699 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:01:21:340 team/(28158:28163): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 18:01:21:340 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 18:01:21:342 team/(28158:28292): Aparecio un Onix en 1|1, el cual es requerido
+[INFO] 18:01:21:342 team/(28158:28292): Se encontro entrenador para asignar a la busqueda de Onix
+[INFO] 18:01:21:342 team/(28158:28166): Estimado restante de entrenador 0 es 4.000000
+[INFO] 18:01:21:342 team/(28158:28166): Entrenador 0 consume 1 de CPU
+[INFO] 18:01:21:343 team/(28158:28294): 2. Entrenador 0 moviendose a la posicion: 1|2.
+[INFO] 18:01:26:345 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:26:346 team/(28158:28166): Estimado restante de entrenador 0 es 3.000000
+[INFO] 18:01:26:346 team/(28158:28166): Entrenador 0 consume 1 de CPU
+[INFO] 18:01:26:346 team/(28158:28337): 2. Entrenador 0 moviendose a la posicion: 1|1.
+[INFO] 18:01:27:752 team/(28158:28163): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 18:01:27:752 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 18:01:27:754 team/(28158:28339): Aparecio un Squirtle en 1|1, el cual es requerido
+[INFO] 18:01:27:756 team/(28158:28339): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 18:01:28:964 team/(28158:28163): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 18:01:28:964 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 18:01:28:971 team/(28158:28374): Aparecio un Squirtle en 1|1, el cual es requerido
+[INFO] 18:01:28:972 team/(28158:28374): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 18:01:31:346 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:31:358 team/(28158:28166): Estimado restante de entrenador 0 es 2.000000
+[INFO] 18:01:31:358 team/(28158:28166): Entrenador 0 consume 1 de CPU
+[INFO] 18:01:31:358 team/(28158:28408): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:01:31:358 team/(28158:28408): 3. Se realiza la captura del pokemon Onix, en la posicion 1|1 exitosamente.
+[INFO] 18:01:31:358 team/(28158:28408): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 18:01:31:358 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:31:358 team/(28158:28166): Estimado restante de entrenador 2 es 4.000000
+[INFO] 18:01:31:358 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:31:358 team/(28158:28409): 2. Entrenador 2 moviendose a la posicion: 1|2.
+[INFO] 18:01:33:538 team/(28158:28163): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 18:01:33:538 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 18:01:33:539 team/(28158:28411): Aparecio un Gengar en 1|1, el cual es requerido
+[INFO] 18:01:33:539 team/(28158:28411): No hay entrenadores disponibles en este momento, cuando alguno finalice el hilo de entrenadores disponibles se encargara de la asignacion.
+[INFO] 18:01:36:359 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:36:359 team/(28158:28166): Estimado restante de entrenador 2 es 3.000000
+[INFO] 18:01:36:359 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:36:359 team/(28158:28445): 2. Entrenador 2 moviendose a la posicion: 1|1.
+[INFO] 18:01:41:119 team/(28158:28163): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 18:01:41:119 team/(28158:28163): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 18:01:41:120 team/(28158:28447): Aparecio un Pikachu en 1|1, el cual es requerido
+[INFO] 18:01:41:120 team/(28158:28447): No hay entrenadores disponibles en este momento, cuando alguno finalice el hilo de entrenadores disponibles se encargara de la asignacion.
+[INFO] 18:01:41:359 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:41:359 team/(28158:28166): Estimado restante de entrenador 2 es 2.000000
+[INFO] 18:01:41:359 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:41:359 team/(28158:28481): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:01:41:360 team/(28158:28481): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 18:01:41:360 team/(28158:28481): El entrenador 2 queda en BLOCK_READY
+[INFO] 18:01:41:360 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:41:360 team/(28158:28165): Se libero entrenador para buscar pokemon sin asignar
+[INFO] 18:01:41:360 team/(28158:28166): Estimado restante de entrenador 1 es 4.500000
+[INFO] 18:01:41:360 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:41:360 team/(28158:28165): Se encontro entrenador para asignar a la busqueda de Gengar
+[INFO] 18:01:41:360 team/(28158:28165): Esperando alguna accion
+[INFO] 18:01:41:360 team/(28158:28482): 2. Entrenador 1 moviendose a la posicion: 1|3.
+[INFO] 18:01:46:361 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:46:361 team/(28158:28166): Estimado restante de entrenador 2 es 2.500000
+[INFO] 18:01:46:361 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:46:361 team/(28158:28483): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:01:46:361 team/(28158:28483): 3. Se realiza la captura del pokemon Gengar, en la posicion 1|1 exitosamente.
+[INFO] 18:01:46:361 team/(28158:28483): El entrenador 2 se bloquea quedando en estado DEADLOCK
+[INFO] 18:01:46:361 team/(28158:28166): Entre a planear el intercambio
+[INFO] 18:01:46:361 team/(28158:28166): Se movera al entrenador 2 para hacer intercambio
+[INFO] 18:01:46:361 team/(28158:28166): Sali de planear el intercambio
+[INFO] 18:01:46:361 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:46:361 team/(28158:28166): Estimado restante de entrenador 1 es 3.500000
+[INFO] 18:01:46:361 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:46:361 team/(28158:28484): 2. Entrenador 1 moviendose a la posicion: 1|2.
+[INFO] 18:01:49:704 team/(28158:28164): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:01:51:371 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:51:372 team/(28158:28166): Estimado restante de entrenador 1 es 2.500000
+[INFO] 18:01:51:372 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:51:373 team/(28158:28486): 2. Entrenador 1 moviendose a la posicion: 1|1.
+[INFO] 18:01:56:375 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:375 team/(28158:28166): Estimado restante de entrenador 1 es 1.500000
+[INFO] 18:01:56:375 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:376 team/(28158:28487): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:01:56:376 team/(28158:28487): 3. Se realiza la captura del pokemon Squirtle, en la posicion 1|1 exitosamente.
+[INFO] 18:01:56:376 team/(28158:28487): El entrenador 1 queda en BLOCK_READY
+[INFO] 18:01:56:376 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:376 team/(28158:28165): Se libero entrenador para buscar pokemon sin asignar
+[INFO] 18:01:56:376 team/(28158:28166): Estimado restante de entrenador 2 es 3.750000
+[INFO] 18:01:56:376 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:56:376 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:376 team/(28158:28166): Estimado restante de entrenador 2 es 2.750000
+[INFO] 18:01:56:376 team/(28158:28165): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 18:01:56:376 team/(28158:28165): Esperando alguna accion
+[INFO] 18:01:56:376 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:56:376 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:377 team/(28158:28166): Estimado restante de entrenador 2 es 1.750000
+[INFO] 18:01:56:377 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:56:377 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:377 team/(28158:28166): Estimado restante de entrenador 2 es 0.750000
+[INFO] 18:01:56:377 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:56:377 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:377 team/(28158:28166): Estimado restante de entrenador 2 es -0.250000
+[INFO] 18:01:56:377 team/(28158:28166): Entrenador 2 consume 1 de CPU
+[INFO] 18:01:56:377 team/(28158:28488): Empezando la accion de intercambio
+[INFO] 18:01:56:377 team/(28158:28488): Entrenador 2 dando Gengar
+[INFO] 18:01:56:377 team/(28158:28488): Entrenador 0 dando Onix
+[INFO] 18:01:56:377 team/(28158:28488): El entrenador 2 cumplio su objetivo y queda en estado EXIT
+[INFO] 18:01:56:377 team/(28158:28488): El entrenador 0 se bloquea quedando en estado DEADLOCK
+[INFO] 18:01:56:377 team/(28158:28488): Terminando la accion de intercambio
+[INFO] 18:01:56:378 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:378 team/(28158:28166): Estimado restante de entrenador 1 es 2.750000
+[INFO] 18:01:56:378 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:378 team/(28158:28489): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 18:01:56:378 team/(28158:28489): 3. Se realiza la captura del pokemon Pikachu, en la posicion 1|1 exitosamente.
+[INFO] 18:01:56:378 team/(28158:28489): El entrenador 1 se bloquea quedando en estado DEADLOCK
+[INFO] 18:01:56:378 team/(28158:28166): Entre a planear el intercambio
+[INFO] 18:01:56:378 team/(28158:28166): Se movera al entrenador 1 para hacer intercambio
+[INFO] 18:01:56:378 team/(28158:28166): Sali de planear el intercambio
+[INFO] 18:01:56:378 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:378 team/(28158:28166): Estimado restante de entrenador 1 es 3.875000
+[INFO] 18:01:56:378 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:378 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:378 team/(28158:28166): Estimado restante de entrenador 1 es 2.875000
+[INFO] 18:01:56:378 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:378 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:378 team/(28158:28166): Estimado restante de entrenador 1 es 1.875000
+[INFO] 18:01:56:379 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:379 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:379 team/(28158:28166): Estimado restante de entrenador 1 es 0.875000
+[INFO] 18:01:56:379 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:379 team/(28158:28166): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 18:01:56:379 team/(28158:28166): Estimado restante de entrenador 1 es -0.125000
+[INFO] 18:01:56:379 team/(28158:28166): Entrenador 1 consume 1 de CPU
+[INFO] 18:01:56:379 team/(28158:28490): Empezando la accion de intercambio
+[INFO] 18:01:56:379 team/(28158:28490): Entrenador 1 dando Squirtle
+[INFO] 18:01:56:379 team/(28158:28490): Entrenador 0 dando Gengar
+[INFO] 18:01:56:380 team/(28158:28490): El entrenador 1 cumplio su objetivo y queda en estado EXIT
+[INFO] 18:01:56:380 team/(28158:28490): El entrenador 0 cumplio su objetivo y queda en estado EXIT
+[INFO] 18:01:56:381 team/(28158:28490): Terminando la accion de intercambio
+[INFO] 18:01:56:381 team/(28158:28166): -------- METRICAS --------
+[INFO] 18:01:56:381 team/(28158:28166): Cantidad de ciclos de CPU total: 22
+[INFO] 18:01:56:381 team/(28158:28166): Cantidad de cambios de contextos realizados: 7
+[INFO] 18:01:56:381 team/(28158:28166): Cantidad de ciclos de CPU realizados por entrenador 0: 3
+[INFO] 18:01:56:381 team/(28158:28166): Cantidad de ciclos de CPU realizados por entrenador 1: 10
+[INFO] 18:01:56:381 team/(28158:28166): Cantidad de ciclos de CPU realizados por entrenador 2: 9
+[INFO] 18:01:56:381 team/(28158:28166): Deadlocks producidos y resueltos: 2
+[INFO] 18:01:56:381 team/(28158:28166): TERMINO EL PROCESO TEAM
