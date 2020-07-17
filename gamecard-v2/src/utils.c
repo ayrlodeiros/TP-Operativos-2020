@@ -322,6 +322,7 @@ void guardar_informacion(char* nombre_pokemon,int posicion_x,int posicion_y,int 
 						log_info(logger,"se agrego la posicion (%s) con la cantidad (%d)",posicion,cantidad);
 						free(dato_a_escribir);
 					}
+					log_info(logger,"Tamaño del archivo del pokemon %s: %d",nombre_pokemon,obtener_size_archivo_metadata_pokemon(nombre_pokemon));
 					sleep(leer_tiempo_retardo_operacion());
 					free(posicion);
 					cerrar_archivo(nombre_pokemon);
