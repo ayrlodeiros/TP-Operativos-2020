@@ -540,6 +540,8 @@ void suscribirse_a_cola(int conexion_broker, codigo_accion cola_a_suscribir) {
 		cambiar_valor_de_funciona_broker(0);
 		desbloquear_lock_reintento();
 	}
+
+	free(a_enviar);
 	free(paquete);
 }
 
