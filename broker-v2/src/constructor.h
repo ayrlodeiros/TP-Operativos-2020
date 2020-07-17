@@ -289,5 +289,6 @@ void actualizar_ultima_vez_bs(t_mensaje* mensaje);
 
 void int_handler(int signal);
 void iniciar_sigint_handler(void);
+void dump_solo_particion(void);
 
 #endif //CONSTRUCTOR_H_

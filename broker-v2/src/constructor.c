@@ -55,6 +55,13 @@ void dump_particion(int posicion,int inicio, int fin,bool libre,uint64_t lru){
 	}
 }
 
+void dump_solo_particion(void){
+
+	for(int i = 0; list_size(lista_particiones) > i  ; i++){
+			t_particion_dinamica* particion = list_get(lista_particiones,i);
+			dump_particion(i,particion->inicio,particion->fin,particion->libre,particion->ult_vez_usado);
+	}
+}
 
 void signal_handler(int signo) {
 	log_info(dump,"------------------------------------------------------");
@@ -383,7 +390,6 @@ void liberar_appeared_mq(){
 	free(appeared_mq);
 }
 
-/*Por ahora solo crea una estrucutura t_mensaje con algunos valores, no todos*/
 t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlativo){
 
 
@@ -503,34 +509,38 @@ void inicializar_lista_particiones(){
 
 int obtener_posicion_particiones(int tamanio) {
 
-	int posicion;
+	int posicion = -1;
 	int contador_compactacion = leer_frecuencia_compactacion();
 	bool se_encontro_particion_libre = false;
 	bool recien_se_compacto = false;
 
-	while(se_encontro_particion_libre){
+
+	while(!se_encontro_particion_libre){
 		posicion = buscar_particion_libre(tamanio);
 
 		if( posicion >= 0 ){
 			se_encontro_particion_libre = true;
-			//nose si es mejor directamente retornar resultado aca
+
 		}
 		//el recien_se_compacto lo agrego para que en el caso que la frecuencia de compactacion sea cero, no se me quede en un loop infinito y nunca libere particiones
 		else if (contador_compactacion == 0 && !recien_se_compacto)
 		{
 				log_info(mi_log,"Se procede a compactar la memoria.");
 				compactacion();
+				log_info(mi_log,"En este momento la posicion vale %d",posicion);
 				log_info(mi_log,"Se realizo la compactacion correctamente.");
 				contador_compactacion = leer_frecuencia_compactacion();
 				recien_se_compacto = true;
 		}
 			else {
+				log_info(mi_log,"NO SE ENCONTRO POSICION, SE PROCEDE A LIBERAR MEMORIA");
 				liberar_particion();
 				contador_compactacion--;
 				recien_se_compacto = false;
 			}
 
 	}
+	log_info(mi_log,"LA POSICION OBTENIDA VALE %d",posicion);
 	return posicion;
 
 }
@@ -645,15 +655,20 @@ t_list* crear_list_temporal(t_list* particiones){
 
 void liberar_particion(){
 	int ubicacion_particion;
+
+	dump_solo_particion();
 	switch(leer_algoritmo_reemplazo()){
 		case FIFO:
-				ubicacion_particion = algoritmo_reemplazo_fifo();
+			log_info(mi_log,"HAGO ALGORITMO FIFO.");
+			ubicacion_particion = algoritmo_reemplazo_fifo();
 			break;
 		case LRU:
+			log_info(mi_log,"HAGO ALGORITMO FIFO.");
 				ubicacion_particion = algoritmo_reemplazo_lru();
 			break;
 	}
 	log_info(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
+	dump_solo_particion();
 	consolidar(ubicacion_particion);
 }
 
@@ -667,21 +682,33 @@ int algoritmo_reemplazo_fifo(void){
 			t_particion_dinamica* particion = list_get(lista_particiones,i);
 
 			if(!esta_libre(particion)){
-
-				if(primera_particion == NULL || particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
+				log_info(mi_log,"Puede que aca este el error");
+				if(primera_particion == NULL){
 					primera_particion = particion;
 					pos_primera_particion = i;
+					log_info(mi_log,"ENTRO AL IF ");
 				}
-			}
-		}
 
+				else if(particion->tiempo_ingreso < primera_particion->tiempo_ingreso)
+				{
+
+					primera_particion = particion;
+					pos_primera_particion = i;
+					log_info(mi_log,"ENTRO AL IF ");
+				}
+
+
+
+		}
+		log_info(mi_log,"El error puede que este en borrar_msj_mp");
 		borrar_msj_mp(primera_particion->inicio);
+		log_info(mi_log,"No es ahi el error");
 		primera_particion->libre = true;
 		primera_particion->tamanio_ocupado = 0;
 
 		return pos_primera_particion;
+		}
 }
-
 int algoritmo_reemplazo_lru(void){
 
 	t_particion_dinamica* part_menos_usada = NULL;
@@ -692,7 +719,11 @@ int algoritmo_reemplazo_lru(void){
 
 		if(!esta_libre(particion)){
 
-			if(part_menos_usada == NULL || particion->ult_vez_usado < part_menos_usada->ult_vez_usado){
+			if(part_menos_usada == NULL){
+				part_menos_usada = particion;
+				pos_part_menos_usada = i;
+			}
+			else if(particion->ult_vez_usado < part_menos_usada->ult_vez_usado){
 				part_menos_usada = particion;
 				pos_part_menos_usada = i;
 			}
@@ -758,12 +789,16 @@ int algoritmo_best_fit(int tamanio){
 	int dif_mejor_part = -1;
 	int posicion_mejor_part;
 
+
 	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
 		t_particion_dinamica* particion_actual = list_get(lista_particiones,i);
 
+		log_info(mi_log,"En best fit estoy analizando la particion cuyo inicio es %d:", particion_actual->inicio);
 
 		if(esta_libre(particion_actual)){
 			int diferencia = diferencia_tamanio_particion(particion_actual,tamanio);
+			log_info(mi_log,"Esta libre esa particion %d:", particion_actual->inicio);
+			log_info(mi_log,"La diferencica de tamanio entre esa particion y el mensaje es de %d:", diferencia);
 
 			if(diferencia >= 0){
 
@@ -777,7 +812,7 @@ int algoritmo_best_fit(int tamanio){
 	}
 
 	if(dif_mejor_part < 0){
-
+		log_info(mi_log,"NO SE ENCONTRO PARTICION LIBRE");
 		return -1;
 	}
 	else if(dif_mejor_part >= leer_tamano_minimo_particion())
@@ -829,7 +864,7 @@ int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamani
 	// no ovlidar que cuando elimino la particion se tiene que liberar este espacio de memoria
 	t_particion_dinamica* nueva_particion = crear_particion_dinamica_libre();
 	nueva_particion->fin = particion->fin;
-	nueva_particion->inicio = nueva_particion->fin - tamanio + 1;
+	nueva_particion->inicio = particion->inicio + tamanio;
 
 
 	// aunque tecnicamente no esta ocupado todavia no se me ocurre otro momento mejor para llenar este dato
