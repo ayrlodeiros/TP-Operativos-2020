@@ -149,7 +149,7 @@ make all
 
 #Configuro team con RR -> Quantum = 2
 
-cd ../../../team-v2-RR/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -178,7 +178,7 @@ make all
 
 #Configuro team con SJF - SD
 
-cd ../../../team-v2-SJF-SD/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -207,7 +207,7 @@ make all
 
 #Configuro team con SJF - CD
 
-cd ../../../team-v2-SJF-CD/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/
 
 if test -e team.config; then
 	rm team.config
