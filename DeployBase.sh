@@ -208,3 +208,38 @@ echo -e "TAMANO_MEMORIA=64\nTAMANO_MINIMO_PARTICION=4\nALGORITMO_MEMORIA=BS\nALG
 #FIN DE BROKER
 
 cd
+
+# -------------
+#Deploy de los sistemas
+
+if test ! -d /home/utnso/Documentos; then
+    mkdir /home/utnso/Documentos
+fi
+
+cd
+
+mv /home/utnso/tp-2020-1c-C-aprueba/  /home/utnso/Documentos
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug
+    make clean
+    make all
+
+cd
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug
+    make clean
+    make all
+
+cd
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug
+    make clean
+    make all
+
+cd
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug
+    make clean
+    make all
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba
