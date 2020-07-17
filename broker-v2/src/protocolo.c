@@ -5,8 +5,9 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 	int tamanio_anterior = list_size(cola->suscriptores);
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
-			log_info(mi_log,"Se agrego el suscriptor %d a la cola %d correctamente\n",suscriptor->identificador,cola->nombre); /** Por ahora le paso la conexion
-			 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	como nombre puede que cambie a futuro*/
+
+		log_info(mi_log,"Se agrego el proceso %d como suscriptor a la cola %d ",suscriptor->identificador,cola->nombre);
+
 	}
 
 	mandar_mensajes_cache(cola);
@@ -37,7 +38,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		log_info(mi_log,"El tamanio del msj es :%d", tamanio);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
-		log_info(mi_log, "Se recibio el mensaje correctamente\n");
+		log_debug(mi_log, "Se recibio el mensaje correctamente\n");
 
 		//Crea el mensaje y ya lo guarda en memoria
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre,id_correlativo);
@@ -45,6 +46,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		if(!list_is_empty(queue->suscriptores)){
 			agregar_msj_cola(queue,mensaje);
 		}
+
 		log_info(mi_log,"Voy a mandar el id de msj: %d al socket %d",mensaje->id,socket_cliente);
 		enviar_id_msj_cliente(socket_cliente,mensaje->id);
 }
@@ -56,32 +58,12 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	int tamanio_previo = queue_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
 	queue_push(queue->cola,mensaje);
 	if(queue_size(queue->cola) > tamanio_previo)
-		log_info(mi_log,"Se agrego correctamente el mensaje a la cola %d",queue->nombre);
+		log_info(mi_log,"Se agrego un nuevo mensaje a la cola %d",queue->nombre);
 
 	pthread_mutex_unlock(&mutex_agregar_msj_a_cola);
 
 	pthread_mutex_unlock(&queue->lock);
 }
-
-/*
-void enviar_mensaje_suscriptores(t_mq* cola){
-	pthread_t* ack;
-	t_mensaje* mensaje = queue_pop(cola->cola);
-	suscriptor_t* suscriptor;
-	int i;
-
-	for(i=0;i<list_size(cola->suscriptores);i++){
-		suscriptor = list_get(cola->suscriptores,i);
-
-		if(pthread_create(&ack,NULL,(void*)enviar_mensaje,&mensaje,&suscriptor) != 0)
-		{
-			log_info(mi_log,"Hubo un error al intentar crear el thread");
-		}
-		pthread_detach(ack);
-	}
-	log_info(mi_log,"Se envio el mensaje a todos los suscriptores \n");
-}*/
-
 
 void* serializar_paquete(t_paquete* paquete, int bytes)
 {
@@ -108,7 +90,7 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 	while(!se_mando && contador != 0){
 	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
 		se_mando = true;
-		log_info(mi_log,"Se envio el id del mensaje correctamente\n");
+		log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente\n");
 		}
 	else{
 		log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
@@ -122,7 +104,7 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 	int cola;
 	recv(socket_cliente,&cola,sizeof(int),MSG_WAITALL);
-	log_info(mi_log,"El socket %d se quiere conectar a la cola %d.",socket_cliente,cola);
+	log_debug(mi_log,"El proceso de socket %d se quiere conectar a la cola %d.",socket_cliente,cola);
 	switch (cola){
 			case GET:
 				switch_operacion(cod_op,get_mq,socket_cliente,id_modulo);
@@ -161,6 +143,7 @@ void switch_operacion (op_code operacion, t_mq* cola,int conexion, int id_modulo
 }
 
 void recibir_suscriptor(int conexion, int id_modulo, t_mq* cola){
+
 	int posicion = chequear_si_ya_existe_suscriptor(cola->suscriptores,id_modulo);
 
 	suscriptor_t* suscriptor;

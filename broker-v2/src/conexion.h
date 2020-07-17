@@ -12,15 +12,6 @@
 #include"protocolo.h"
 
 
-/* crear_conexion_del_cliente:
- * Recibe como parametros la ip y el puerto del servidor a conectarse
- * y el logger en donde registrar los sucesos
- *
- * Devuelve como entero la conexion al cliente (socket_cliente)
- * si devuelve -1 la conexion fallo.
- * */
-//int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
-
 /* liberar_conexion:
  * Recibe un socket al que finalizaremos
  * */
@@ -34,7 +25,6 @@ void liberar_conexion(int socket);
  * */
 
 void levantar_servidor(char* ip, int puerto);
-
 
 void esperar_cliente(int socket_servidor);
 
