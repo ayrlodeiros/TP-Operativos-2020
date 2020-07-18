@@ -704,19 +704,29 @@ int algoritmo_reemplazo_fifo(void){
 		for (int i = 0; list_size(lista_particiones) > i ;i++){
 			t_particion_dinamica* particion = list_get(lista_particiones,i);
 			log_info(mi_log,"Analizando la particion de posicion en la lista %d e inicio %d",i,particion->inicio);
-			if(!esta_libre(particion)){
-
-				if(primera_particion == NULL || particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
+			if(!particion->libre){
+				char lru_c[21];
+				sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
+				log_info(mi_log,"La particion tiene como utimo timestamp el valor %s",lru_c);
+				if(primera_particion == NULL){
+					log_info(mi_log,"ES LA PRIMERA PARTICION A ANALIZAR");
 					primera_particion = particion;
 					pos_primera_particion = i;
 					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
+
+				}
+				else if(particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
+					primera_particion = particion;
+					pos_primera_particion = i;
+					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
+
 				}
 			}
 			else log_info(mi_log,"LA PARTICION YA ESTA LIBRE.");
 		}
 		borrar_msj_mp(primera_particion->inicio);
 		primera_particion->libre = true;
-		primera_particion->tamanio_ocupado = 0;
+
 
 		return pos_primera_particion;
 }
@@ -896,6 +906,9 @@ int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamani
 	particion->ult_vez_usado = timestamp();
 
 	list_add_in_index(lista_particiones,posicion_en_lista+1,nueva_particion);
+	char lru_c[21];
+	sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
+	log_info(mi_log,"Se creo una nueva particion y se lleno la particion vieja con inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
 
 	return particion->inicio;
 
@@ -906,6 +919,9 @@ int llenar_particion(t_particion_dinamica* particion, int tamanio){
 	particion->libre = false;
 	particion->tiempo_ingreso = timestamp();
 	particion->ult_vez_usado = timestamp();
+	char lru_c[21];
+	sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
+	log_info(mi_log,"Se lleno la particion de inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
 	return particion->inicio;
 }
 
