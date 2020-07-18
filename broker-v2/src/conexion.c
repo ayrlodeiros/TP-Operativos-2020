@@ -53,14 +53,14 @@ void levantar_servidor(char* ip, int port) {
 	}
 
 	if(socket_servidor == -1) {
-		log_error(mi_log, "La IP o el PUERTO estan ocupados");
+		log_error(logger, "La IP o el PUERTO estan ocupados");
 	} else {
 		log_info(logger, "Servidor levantado en IP: %s y PUERTO: %s", ip, puerto);
 
 		listen(socket_servidor, SOMAXCONN);
 		freeaddrinfo(servinfo);
 
-		log_info(mi_log, "Esperando conexiones");
+		log_info(logger, "Esperando conexiones");
 
 		while(1){
 			esperar_cliente(socket_servidor);
@@ -81,9 +81,9 @@ void esperar_cliente(int socket_servidor)
 	int socket_cliente = accept(socket_servidor, (void*) &dir_cliente,&tam_direccion);
 
 	if(socket_cliente == -1) {
-		log_error(mi_log, "Hubo un error en la conexion con el cliente");
+		log_error(logger, "Hubo un error en la conexion con el cliente");
 	} else {
-		log_info(mi_log,"Estableci una conexion con un modulo de socket: %d",socket_cliente);
+		log_info(logger,"Estableci una conexion con un modulo de socket: %d",socket_cliente);
 
 		err = pthread_create(&espera,NULL,(void*)servir_cliente,socket_cliente);
 		if( err != 0){
@@ -98,13 +98,13 @@ void servir_cliente(int socket)
 	int cod_modulo;
 	if(recv(socket, &cod_modulo, sizeof(int), MSG_WAITALL) == -1)
 		cod_modulo = -1;
-	log_info(mi_log, "El proceso de socket: %d, tiene como identificador el valor %d",socket ,cod_modulo);
+	log_info(logger, "El proceso de socket: %d, tiene como identificador el valor %d",socket ,cod_modulo);
 	process_request(cod_modulo, socket);
 }
 
 void process_request(int id_modulo, int socket_cliente) {
 	int cod_op;
 	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
-	log_debug(mi_log, "El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op);
+	log_debug(logger, "El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op);
 	switch_cola(cod_op,socket_cliente,id_modulo);
 }
