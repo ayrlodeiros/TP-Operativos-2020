@@ -207,7 +207,7 @@ make all
 
 #Configuro team con SJF - CD
 
-cd lteam-v2-SJF-CD/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/
 
 if test -e team.config; then
 	rm team.config
