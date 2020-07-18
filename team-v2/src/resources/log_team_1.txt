@@ -1,0 +1,58 @@
+[INFO] 12:19:37:704 team/(6752:6752): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:19:37:704 team/(6752:6752): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:19:37:705 team/(6752:6752): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:19:37:705 team/(6752:6752): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:19:37:705 team/(6752:6754): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:19:37:705 team/(6752:6754): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:20:07:706 team/(6752:6754): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:20:07:706 team/(6752:6754): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:20:37:706 team/(6752:6754): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:20:37:707 team/(6752:6754): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:21:07:707 team/(6752:6754): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:21:07:707 team/(6752:6754): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:22:22:647 team/(6991:6991): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:22:22:647 team/(6991:6991): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:22:22:648 team/(6991:6991): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:22:22:648 team/(6991:6991): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:22:22:651 team/(6991:6993): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:22:22:652 team/(6991:6993): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:26:15:707 team/(7190:7190): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:15:707 team/(7190:7190): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:15:708 team/(7190:7190): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:15:708 team/(7190:7190): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:26:15:708 team/(7190:7192): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:26:15:708 team/(7190:7192): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:26:45:710 team/(7190:7192): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:26:45:710 team/(7190:7192): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:35:07:767 team/(7480:7480): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:07:767 team/(7480:7480): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:07:767 team/(7480:7480): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:07:767 team/(7480:7480): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:07:768 team/(7480:7482): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:35:07:768 team/(7480:7482): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:35:36:171 team/(7603:7603): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:36:172 team/(7603:7603): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:36:172 team/(7603:7603): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:36:172 team/(7603:7603): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 12:35:36:172 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:35:36:172 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:36:06:173 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:36:06:173 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:36:36:175 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:36:36:175 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:37:06:176 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:06:176 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:37:36:176 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:37:36:177 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:06:177 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:06:177 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:38:36:181 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:38:36:181 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:06:182 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:06:182 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:39:36:182 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:39:36:182 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:06:183 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:06:183 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:40:36:183 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:40:36:183 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

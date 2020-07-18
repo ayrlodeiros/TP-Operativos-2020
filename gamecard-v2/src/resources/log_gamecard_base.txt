@@ -1,0 +1,2 @@
+[INFO] 12:06:40:738 gamecard/(6488:6488): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 12:06:40:738 gamecard/(6488:6488): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
