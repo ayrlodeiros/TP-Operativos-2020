@@ -189,3 +189,25 @@
 [INFO] 13:59:03:272 team/(14894:14896): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
 [INFO] 13:59:33:272 team/(14894:14896): 10. Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 13:59:33:272 team/(14894:14896): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:00:57:817 team/(16603:16605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:00:57:818 team/(16603:16605): 11. Intento de conexion con el broker exitosa.
+[INFO] 14:01:50:427 team/(16603:16605): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:01:50:427 team/(16603:16605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:03:12:860 team/(19023:19025): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:03:12:861 team/(19023:19025): 11. Intento de conexion con el broker exitosa.
+[INFO] 14:03:12:909 team/(19023:19062): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 14:03:17:911 team/(19023:19065): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 14:03:22:915 team/(19023:19066): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 14:03:27:918 team/(19023:19067): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 14:03:32:925 team/(19023:19071): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 14:03:37:929 team/(19023:19076): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 14:03:42:933 team/(19023:19077): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 14:03:47:937 team/(19023:19078): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 14:03:52:940 team/(19023:19079): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 14:03:57:945 team/(19023:19080): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 14:04:02:949 team/(19023:19081): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 14:04:07:954 team/(19023:19085): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 14:04:12:959 team/(19023:19087): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 14:04:17:976 team/(19023:19092): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 14:04:22:993 team/(19023:19100): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 14:04:27:997 team/(19023:19108): 2. Entrenador 1 moviendose a la posicion: 9|9.
