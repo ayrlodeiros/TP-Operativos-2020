@@ -242,8 +242,10 @@ make all
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba
 
-cp -r broker-v2/ broker-v2-COMPACTACION-PD
-cp -r broker-v2/ broker-v2-BUDDY-SYSTEM
+cp -r broker-v2/ broker-v2-COMPACTACION-PD-FIFO
+cp -r broker-v2/ broker-v2-COMPACTACION-PD-LRU
+cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-FIFO
+cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-LRU
 
 #CONFIGURO BROKERS
 
@@ -274,7 +276,7 @@ make all
 
 #Configuro broker compactacion Particiones Dinamicas
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-FIFO/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -283,15 +285,38 @@ fi
 echo -e "TAMANO_MEMORIA=64\n
 TAMANO_MINIMO_PARTICION=4\n
 ALGORITMO_MEMORIA=PARTICIONES\n
-ALGORITMO_REEMPLAZO=FF\n
+ALGORITMO_REEMPLAZO=FIFO\n
 ALGORITMO_PARTICION_LIBRE=FF\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=1\n
-PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/dump_file.txt\n
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-FIFO/src/resources/dump_file.txt\n
 ID_MODULO=6\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/log_broker.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/mi_log_broker.txt\n">> broker.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-FIFO/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-FIFO/src/resources/mi_log_broker.txt\n">> broker.config
+
+cd ../../Debug
+make clean
+make all
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-LRU/src/resources/
+
+if test -e broker.config; then
+	rm broker.config
+fi
+
+echo -e "TAMANO_MEMORIA=64\n
+TAMANO_MINIMO_PARTICION=4\n
+ALGORITMO_MEMORIA=PARTICIONES\n
+ALGORITMO_REEMPLAZO=LRU\n
+ALGORITMO_PARTICION_LIBRE=FF\n
+IP_BROKER=127.0.0.1\n
+PUERTO_BROKER=4444\n
+FRECUENCIA_COMPACTACION=1\n
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-LRU/src/resources/dump_file.txt\n
+ID_MODULO=6\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-LRU/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD-LRU/src/resources/mi_log_broker.txt\n">> broker.config
 
 cd ../../Debug
 make clean
@@ -299,7 +324,7 @@ make all
 
 #Configuro broker Buddy System
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-FIFO/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -313,10 +338,33 @@ ALGORITMO_PARTICION_LIBRE=FF\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=1\n
-PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/dump_file.txt\n
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-FIFO/src/resources/dump_file.txt\n
 ID_MODULO=7\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/log_broker.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/mi_log_broker.txt\n">> broker.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-FIFO/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-FIFO/src/resources/mi_log_broker.txt\n">> broker.config
+
+cd ../../Debug
+make clean
+make all
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-LRU/src/resources/
+
+if test -e broker.config; then
+	rm broker.config
+fi
+
+echo -e "TAMANO_MEMORIA=64\n
+TAMANO_MINIMO_PARTICION=4\n
+ALGORITMO_MEMORIA=BS\n
+ALGORITMO_REEMPLAZO=LRU\n
+ALGORITMO_PARTICION_LIBRE=FF\n
+IP_BROKER=127.0.0.1\n
+PUERTO_BROKER=4444\n
+FRECUENCIA_COMPACTACION=1\n
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-LRU/src/resources/dump_file.txt\n
+ID_MODULO=7\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-LRU/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-LRU/src/resources/mi_log_broker.txt\n">> broker.config
 
 cd ../../Debug
 make clean
