@@ -35,14 +35,14 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		recv(socket_cliente, &id_correlativo, sizeof(int), MSG_WAITALL);
 		log_info(mi_log,"El id del msj es :%d", id_correlativo);
 		recv(socket_cliente, &tamanio, sizeof(int), MSG_WAITALL);
-		log_info(mi_log,"El tamanio del msj es :%d", tamanio);
+		log_info(mi_log,"El TAMANIO DEL MSJ ES :%d", tamanio);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
 		log_debug(mi_log, "Se recibio el mensaje correctamente\n");
 
 		//Crea el mensaje y ya lo guarda en memoria
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre,id_correlativo);
-		log_info(logger, "Se almaceno el mensaje de ID: %d en la posicion inicial: %p", mensaje->id, memoria_principal+(mensaje->pos_en_memoria->pos));
+		log_info(logger, "SE ALMACENO EL MENSAJE DE ID: %d EN LA POSICION INICIAL: %p", mensaje->id, memoria_principal+(mensaje->pos_en_memoria->pos));
 		agregar_a_lista_global(mensaje);
 		if(!list_is_empty(queue->suscriptores)){
 			agregar_msj_cola(queue,mensaje);
