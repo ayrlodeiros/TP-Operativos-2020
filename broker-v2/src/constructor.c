@@ -162,11 +162,11 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 
 		log_info(mi_log, "Se desbloqueo la cola %d por la aparicion de un mensaje", mq->nombre);
 
+		pthread_mutex_lock(&mutex_memoria_principal);
 		if(!list_is_empty(mq->cola)) {
-			pthread_mutex_lock(&mutex_memoria_principal);
 			enviar_mensaje_suscriptores(mq);
-			pthread_mutex_unlock(&mutex_memoria_principal);
 		}
+		pthread_mutex_unlock(&mutex_memoria_principal);
 	}
 }
 
@@ -483,7 +483,6 @@ void iniciar_memoria_principal(){
 int guardar_mensaje_en_memoria(int tamanio, void* buffer){
 	int posicion;
 
-	pthread_mutex_lock(&mutex_memoria_principal);
 	switch(leer_algoritmo_memoria()){
 		case PARTICIONES:
 			posicion = obtener_posicion_particiones(tamanio);
@@ -498,7 +497,6 @@ int guardar_mensaje_en_memoria(int tamanio, void* buffer){
 			almacenar_en_memoria(tamanio, buffer, posicion);
 			break;
 	}
-	pthread_mutex_unlock(&mutex_memoria_principal);
 
 	return posicion;
 }
@@ -1098,19 +1096,23 @@ int evaluar_consolidacion(int posicion_buddy_1) {
 		posicion_buddy_2 = posicion_buddy_1 - 1;
 	}
 
-	t_particion_bs* buddy_2 = list_get(lista_particiones, posicion_buddy_2);
 
-	if(buddy_2->libre) {
-		int posicion_mas_chica;
-		if(posicion_buddy_1 > posicion_buddy_2) {
-			posicion_mas_chica = posicion_buddy_2;
-			consolidar_buddies(posicion_buddy_1, buddy_2);
-		} else {
-			posicion_mas_chica = posicion_buddy_1;
-			consolidar_buddies(posicion_buddy_2, list_get(lista_particiones, posicion_buddy_1));
+	if(list_size(lista_particiones) >= posicion_buddy_2 && list_size(lista_particiones) >= posicion_buddy_1) {
+		t_particion_bs* buddy_2 = list_get(lista_particiones, posicion_buddy_2);
+
+		if(buddy_2->libre) {
+			int posicion_mas_chica;
+			if(posicion_buddy_1 > posicion_buddy_2) {
+				posicion_mas_chica = posicion_buddy_2;
+				consolidar_buddies(posicion_buddy_1, buddy_2);
+			} else {
+				posicion_mas_chica = posicion_buddy_1;
+				consolidar_buddies(posicion_buddy_2, list_get(lista_particiones, posicion_buddy_1));
+			}
+
+			return posicion_mas_chica;
 		}
 
-		return posicion_mas_chica;
 	}
 
 	return -1;

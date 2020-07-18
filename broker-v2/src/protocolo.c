@@ -41,6 +41,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		log_debug(mi_log, "Se recibio el mensaje correctamente\n");
 
 		//Crea el mensaje y ya lo guarda en memoria
+		pthread_mutex_lock(&mutex_memoria_principal);
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre,id_correlativo);
 		log_info(logger, "SE ALMACENO EL MENSAJE DE ID: %d EN LA POSICION INICIAL: %p", mensaje->id, memoria_principal+(mensaje->pos_en_memoria->pos));
 		agregar_a_lista_global(mensaje);
@@ -49,6 +50,7 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		}
 
 		log_info(mi_log,"Voy a mandar el id de msj: %d al socket %d",mensaje->id,socket_cliente);
+		pthread_mutex_unlock(&mutex_memoria_principal);
 		enviar_id_msj_cliente(socket_cliente,mensaje->id);
 }
 
