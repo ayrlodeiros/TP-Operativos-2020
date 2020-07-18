@@ -23,13 +23,13 @@ cd
 
 #COPIO CARPETA TP
 
-if test -d /home/utnso/Documentos/tp-2020-1c-C-aprueba/; then
-	sudo rm -r /home/utnso/Documentos/tp-2020-1c-C-aprueba
+if test -d /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/; then
+	sudo rm -r /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
 fi
 
 mkdir Documentos
 
-cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba
+cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
 
 #FIN DE COPIAR CARPETA
 
@@ -52,17 +52,21 @@ echo -e "BLOCK_SIZE=64\nBLOCKS=1024\nMAGIC_NUMBER=TALL_GRASS" >> Metadata.bin
 #FIN STRESS
 
 cd
-cd Documentos/tp-2020-1c-C-aprueba
-git checkout develop
+cd Documentos/tp-2020-1c-C-aprueba-stress
+
 
 #INICIO DE GAMEBOY
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/Debug/
+#CREO LOS GAMEBOYS
 
-make clean
-make all
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
 
-cd ../src/resources/
+cp -r gameboy/ gameboy-team-1-stress
+cp -r gameboy/ gameboy-team-2-stress
+
+#CONFIGURO GAMEBOYS
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-1-stress/src/resources/
 
 if test -e gameBoy.config; then
 	rm gameBoy.config
@@ -75,20 +79,39 @@ PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
 ID_MODULO=1\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/log_gameBoy.txt\n
-MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-1-stress/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-1-stress/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+
+cd ../../Debug
+make clean
+make all
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-2-stress/src/resources/
+
+if test -e gameBoy.config; then
+	rm gameBoy.config
+fi
+#REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
+echo -e "IP_BROKER=127.0.0.1\n
+IP_TEAM=127.0.0.2\n
+IP_GAMECARD=127.0.0.3\n
+PUERTO_BROKER=4444\n
+PUERTO_TEAM=5003\n
+PUERTO_GAMECARD=5001\n
+ID_MODULO=2\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-2-stress/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-2-stress/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+
+cd ../../Debug
+make clean
+make all
 
 #FIN DE GAMEBOY
 
 cd
 
 #INICIO DE GAMECARD
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/Debug/
-
-make clean
-make all
-
-cd ../src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/
 
 if test -e gamecard.config; then
 	rm gamecard.config
@@ -97,14 +120,18 @@ fi
 echo -e "TIEMPO_DE_REINTENTO_CONEXION=10\n
 TIEMPO_DE_REINTENTO_OPERACION=5\n
 TIEMPO_RETARDO_OPERACION=1\n
-PUNTO_MONTAJE_TALLGRASS=/home/utnso/tallgrass-stress/\n
+PUNTO_MONTAJE_TALLGRASS=/home/utnso/tallgrass-stress\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=PUERTO_BROKER=4444\n
 ID_MODULO=25\n
 IP_GAMECARD=127.0.0.3\n
 PUERTO_GAMECARD=5001\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/log_gamecard_stress.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log_gamecard_stress.txt" >> gamecard.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/log_gamecard_stress.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/nuestro_log_gamecard_stress.txt" >> gamecard.config
+
+cd ../../Debug
+make clean
+make all
 
 #FIN DE GAMECARD
 
@@ -114,12 +141,7 @@ cd
 
 #CREO LOS BROKERS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/Debug/
-
-make clean
-make all
-
-cd ../../
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
 
 cp -r broker-v2/ broker-v2-Particiones-dinamicas-stress
 cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-stress
@@ -128,7 +150,7 @@ cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-stress
 
 #Configuro broker consolidacion Particiones dinamicas
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -142,14 +164,18 @@ ALGORITMO_PARTICION_LIBRE=FF\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=10\n
-PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/dump_file.txt\n
-ID_MODULO=5\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/log_broker.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-Particiones-dinamicas-stress/src/resources/mi_log_broker.txt\n">> broker.config
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/dump_file.txt\n
+ID_MODULO=8\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/mi_log_broker.txt\n">> broker.config
+
+cd ../../Debug
+make clean
+make all
 
 #Configuro broker Buddy System
 
-cd ../../../broker-v2-BUDDY-SYSTEM-stress/src/resources/
+cd ../../broker-v2-BUDDY-SYSTEM-stress/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -163,10 +189,14 @@ ALGORITMO_PARTICION_LIBRE=FF\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=1\n
-PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-stress/src/resources/dump_file.txt\n
-ID_MODULO=6\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-stress/src/resources/log_broker.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM-stress/src/resources/mi_log_broker.txt\n">> broker.config
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-BUDDY-SYSTEM-stress/src/resources/dump_file.txt\n
+ID_MODULO=9\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-BUDDY-SYSTEM-stress/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-BUDDY-SYSTEM-stress/src/resources/mi_log_broker.txt\n">> broker.config
+
+cd ../../Debug
+make clean
+make all
 
 #FIN DE BROKER
 
@@ -174,12 +204,7 @@ cd
 
 #CREO TEAMS
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/Debug/
-
-make clean
-make all
-
-cd ../../
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
 
 cp -r team-v2/ team-v2-FIFO-stress
 cp -r team-v2/ team-v2-RR-stress
@@ -190,7 +215,7 @@ cp -r team-v2/ team-v2-SJF-CD-stress
 
 #Configuro team con FIFO
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-FIFO-stress/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-FIFO-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -207,15 +232,19 @@ ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-FIFO-stress/src/resources/log_team_FIFO.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-FIFO-stress/src/resources/nuestro_log_team_FIFO.txt\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-FIFO-stress/src/resources/log_team_FIFO.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-FIFO-stress/src/resources/nuestro_log_team_FIFO.txt\n
 ID_MODULO=15\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
-#Configuro team con RR -> Quantum = 2
+cd ../../Debug
+make clean
+make all
 
-cd ../../../team-v2-RR-stress/src/resources/
+#Configuro team con RR -> Quantum = 1
+
+cd ../../team-v2-RR-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -232,15 +261,19 @@ ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR-stress/src/resources/log_team_RR.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR-stress/src/resources/nuestro_log_team_RR.txt\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-stress/src/resources/log_team_RR.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-stress/src/resources/nuestro_log_team_RR.txt\n
 ID_MODULO=16\n
 IP_TEAM=127.0.0.2\n
-PUERTO_TEAM=5002" >> team.config
+PUERTO_TEAM=5003" >> team.config
+
+cd ../../Debug
+make clean
+make all
 
 #Configuro team con SJF - SD
 
-cd ../../../team-v2-SJF-SD-stress/src/resources/
+cd ../../team-v2-SJF-SD-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -251,21 +284,25 @@ POKEMON_ENTRENADORES=[Pikachu]\n
 OBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\n
 TIEMPO_RECONEXION=30\n
 RETARDO_CICLO_CPU=5\n
-ALGORITMO_PLANIFICACION=SFJ-SD\n
+ALGORITMO_PLANIFICACION=SJF-SD\n
 QUANTUM=0\n
 ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD-stress/src/resources/log_team_SJF-SD.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD-stress/src/resources/nuestro_log_team_SJF-SD.txt\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-SD-stress/src/resources/log_team_SJF-SD.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-SD-stress/src/resources/nuestro_log_team_SJF-SD.txt\n
 ID_MODULO=17\n
 IP_TEAM=127.0.0.2\n
 PUERTO_TEAM=5002" >> team.config
 
+cd ../../Debug
+make clean
+make all
+
 #Configuro team con SJF - CD
 
-cd ../../../team-v2-SJF-CD-stress/src/resources/
+cd ../../team-v2-SJF-CD-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -276,17 +313,22 @@ POKEMON_ENTRENADORES=[]\n
 OBJETIVOS_ENTRENADORES=[Vaporeon,Jolteon,Flareon,Umbreon,Espeon]\n
 TIEMPO_RECONEXION=30\n
 RETARDO_CICLO_CPU=5\n
-ALGORITMO_PLANIFICACION=RR\n
+ALGORITMO_PLANIFICACION=SJF-CD\n
 QUANTUM=1\n
 ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD-stress/src/resources/log_team_RR.txt\n
-NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD-stress/src/resources/nuestro_log_team_RR.txt\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-CD-stress/src/resources/log_team_SJF-CD.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-CD-stress/src/resources/nuestro_log_team_SJF-CD.txt\n
 ID_MODULO=18\n
 IP_TEAM=127.0.0.2\n
-PUERTO_TEAM=5002" >> team.config
+PUERTO_TEAM=5003" >> team.config
+
+cd ../../Debug
+make clean
+make all
+
 #FIN DE TEAM
 
 cd
