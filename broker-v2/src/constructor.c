@@ -601,9 +601,7 @@ t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
 	log_info(mi_log,"La posicion vieja es : %d",pos_vieja);
 	log_info(mi_log,"La posicion nueva es %d",pos_nueva);
-	pthread_mutex_lock(&mutex_lista_msjs);
 	t_mensaje* mensaje = obtener_estructura_msj(pos_vieja,lista_global_msjs);
-	pthread_mutex_unlock(&mutex_lista_msjs);
 	log_info(mi_log,"El id del msj es : %d",mensaje->id);
 	mensaje->pos_en_memoria->pos = pos_nueva;
 	log_info(mi_log,"La nueva posicion inical del msj es : %d",mensaje->pos_en_memoria->pos);
@@ -684,9 +682,11 @@ void liberar_particion(){
 
 	switch(leer_algoritmo_reemplazo()){
 		case FIFO:
+			log_info(mi_log,"ENTRE POR FIFO");
 			ubicacion_particion = algoritmo_reemplazo_fifo();
 			break;
 		case LRU:
+			log_info(mi_log,"ENTRE POR LRU");
 				ubicacion_particion = algoritmo_reemplazo_lru();
 			break;
 	}
@@ -703,14 +703,16 @@ int algoritmo_reemplazo_fifo(void){
 
 		for (int i = 0; list_size(lista_particiones) > i ;i++){
 			t_particion_dinamica* particion = list_get(lista_particiones,i);
-
+			log_info(mi_log,"Analizando la particion de posicion en la lista %d e inicio %d",i,particion->inicio);
 			if(!esta_libre(particion)){
 
 				if(primera_particion == NULL || particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
 					primera_particion = particion;
 					pos_primera_particion = i;
+					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
 				}
 			}
+			else log_info(mi_log,"LA PARTICION YA ESTA LIBRE.");
 		}
 		borrar_msj_mp(primera_particion->inicio);
 		primera_particion->libre = true;
