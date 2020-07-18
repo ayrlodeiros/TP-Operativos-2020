@@ -584,18 +584,15 @@ void borrarParticion(void* elemento){
 */
 
 t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
-	pthread_mutex_lock(&mutex_lista_msjs);
+
 	log_info(mi_log,"La posicion que vas a buscar en la lista es: %d",posicion);
 	for(int i = 0; list_size(lista_msjs) > i ;i++ ){
-
 		t_mensaje* msj = list_get(lista_msjs,i);
 		if(msj->pos_en_memoria->pos == posicion){
 
 			return msj;
 		}
-
 	}
-	pthread_mutex_lock(&mutex_lista_msjs);
 	log_info(mi_log,"Retornas NULL");
 	return NULL;
 
@@ -604,7 +601,9 @@ t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
 	log_info(mi_log,"La posicion vieja es : %d",pos_vieja);
 	log_info(mi_log,"La posicion nueva es %d",pos_nueva);
+	pthread_mutex_lock(&mutex_lista_msjs);
 	t_mensaje* mensaje = obtener_estructura_msj(pos_vieja,lista_global_msjs);
+	pthread_mutex_unlock(&mutex_lista_msjs);
 	log_info(mi_log,"El id del msj es : %d",mensaje->id);
 	mensaje->pos_en_memoria->pos = pos_nueva;
 	log_info(mi_log,"La nueva posicion inical del msj es : %d",mensaje->pos_en_memoria->pos);
