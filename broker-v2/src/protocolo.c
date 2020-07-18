@@ -6,7 +6,7 @@ void agregar_suscriptor_cola(t_mq* cola,suscriptor_t* suscriptor){
 	list_add(cola->suscriptores,suscriptor);
 	if(list_size(cola->suscriptores) > tamanio_anterior){
 
-		log_info(logger,"Se agrego el proceso %d como suscriptor a la cola %d ",suscriptor->identificador,cola->nombre);
+		log_info(mi_log,"Se agrego el proceso %d como suscriptor a la cola %d ",suscriptor->identificador,cola->nombre);
 
 	}
 
@@ -33,23 +33,23 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 		int id_correlativo;
 		void* buffer;
 		recv(socket_cliente, &id_correlativo, sizeof(int), MSG_WAITALL);
-		log_debug(logger,"El id del msj es :%d", id_correlativo);
+		log_info(mi_log,"El id del msj es :%d", id_correlativo);
 		recv(socket_cliente, &tamanio, sizeof(int), MSG_WAITALL);
-		log_debug(logger,"El TAMANIO DEL MSJ ES :%d", tamanio);
+		log_info(mi_log,"El TAMANIO DEL MSJ ES :%d", tamanio);
 		buffer = malloc(tamanio);
 		recv(socket_cliente, buffer, tamanio, MSG_WAITALL);
-		log_debug(logger, "Se recibio el mensaje correctamente\n");
+		log_info(mi_log, "Se recibio el mensaje correctamente\n");
 
 		//Crea el mensaje y ya lo guarda en memoria
 		pthread_mutex_lock(&mutex_memoria_principal);
 		t_mensaje* mensaje = crear_mensaje(buffer,tamanio,queue->nombre,id_correlativo);
-		log_info(logger, "SE ALMACENO EL MENSAJE DE ID: %d EN LA POSICION INICIAL: %p", mensaje->id, memoria_principal+(mensaje->pos_en_memoria->pos));
+		log_info(mi_log, "SE ALMACENO EL MENSAJE DE ID: %d EN LA POSICION INICIAL: %p", mensaje->id, memoria_principal+(mensaje->pos_en_memoria->pos));
 		agregar_a_lista_global(mensaje);
 		if(!list_is_empty(queue->suscriptores)){
 			agregar_msj_cola(queue,mensaje);
 		}
 
-		log_info(logger,"Voy a mandar el id de msj: %d al socket %d",mensaje->id,socket_cliente);
+		log_info(mi_log,"Voy a mandar el id de msj: %d al socket %d",mensaje->id,socket_cliente);
 
 		pthread_mutex_unlock(&mutex_memoria_principal);
 
@@ -63,7 +63,7 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 	int tamanio_previo = list_size(queue->cola);   //Esta solo para confirmar que que se agrego correctamente el msj a la cola
 	list_add(queue->cola,mensaje);
 	if(list_size(queue->cola) > tamanio_previo)
-		log_info(logger,"Se agrego un nuevo mensaje a la cola %d",queue->nombre);
+		log_info(mi_log,"Se agrego un nuevo mensaje a la cola %d",queue->nombre);
 
 	pthread_mutex_unlock(&mutex_agregar_msj_a_cola);
 
@@ -78,10 +78,10 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 	while(!se_mando && contador != 0){
 	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
 		se_mando = true;
-		log_info(logger,"Se envio el id del mensaje al suscriptor correspondiente correctamente");
+		log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente");
 		}
 	else{
-		log_debug(logger,"No se pudo mandar el id, se intentara nuevamente.......");
+		log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
 		contador--;
 		sleep(10);
 		}
@@ -92,7 +92,7 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 	int cola;
 	recv(socket_cliente,&cola,sizeof(int),MSG_WAITALL);
-	log_debug(logger,"El proceso de socket %d se quiere conectar a la cola %d.",socket_cliente,cola);
+	log_info(mi_log,"El proceso de socket %d se quiere conectar a la cola %d.",socket_cliente,cola);
 	switch (cola){
 			case GET:
 				switch_operacion(cod_op,get_mq,socket_cliente,id_modulo);
@@ -113,7 +113,7 @@ void switch_cola(int cod_op, int socket_cliente, int id_modulo){
 				switch_operacion(cod_op,appeared_mq,socket_cliente,id_modulo);
 				break;
 			default:
-				log_debug(logger,"Hubo un error al tratar de recibir el mensaje, no se encontro la cola");
+				log_info(mi_log,"Hubo un error al tratar de recibir el mensaje, no se encontro la cola");
 				pthread_exit(NULL);
 	}
 }
@@ -122,11 +122,11 @@ void switch_operacion (op_code operacion, t_mq* cola,int conexion, int id_modulo
 	suscriptor_t* suscriptor;
 	switch(operacion){
 	case MENSAJE:
-		log_debug(logger, "Se recibio una conexion con el modulo de id: %d para enviar un MENSAJE a la cola %d", id_modulo, cola->nombre);
+		log_info(mi_log, "Se recibio una conexion con el modulo de id: %d para enviar un MENSAJE a la cola %d", id_modulo, cola->nombre);
 		recibir_y_guardar_mensaje(conexion, cola);
 		break;
 	case SUSCRIPCION:
-		log_debug(logger, "Se recibio una conexion con el modulo de id: %d para SUSCRIBIRSE a la cola %d", id_modulo, cola->nombre);
+		log_info(mi_log, "Se recibio una conexion con el modulo de id: %d para SUSCRIBIRSE a la cola %d", id_modulo, cola->nombre);
 		recibir_suscriptor(conexion, id_modulo, cola);
 		break;
 	}

@@ -105,6 +105,6 @@ void servir_cliente(int socket)
 void process_request(int id_modulo, int socket_cliente) {
 	int cod_op;
 	recv(socket_cliente,&cod_op,sizeof(int),MSG_WAITALL);
-	log_debug(mi_log, "El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op);
+	log_info(mi_log, "El socket %d, tiene codigo de operacion %d",socket_cliente, cod_op);
 	switch_cola(cod_op,socket_cliente,id_modulo);
 }

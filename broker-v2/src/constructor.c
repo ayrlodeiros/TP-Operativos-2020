@@ -21,7 +21,7 @@ void iniciar_sigint_handler(void){
 
 void iniciar_signal_handler() {
 	if(signal(SIGUSR1, signal_handler) == SIG_ERR) {
-		log_debug(mi_log, "No se pudo recibir la SIGURS1");
+		log_info(mi_log, "No se pudo recibir la SIGURS1");
 	}
 }
 
@@ -33,7 +33,7 @@ t_mensaje* obtener_mensaje_asociado(int inicio){
 			return aux;
 		}
 	}
-	log_debug(mi_log,"ERROR NO SE PUDO IDENTIFICAR EL MENSAJE CON LA PARTICION");
+	log_info(mi_log,"ERROR NO SE PUDO IDENTIFICAR EL MENSAJE CON LA PARTICION");
 	return NULL;
 }
 
@@ -144,7 +144,7 @@ void inicializar_message_queues(){
 	pthread_create(&hilo_appeared, NULL, esperar_mensaje_en_cola, appeared_mq);
 	pthread_detach(hilo_appeared);
 
-	log_debug(mi_log,"Message queues creadas correctamente ");
+	log_info(mi_log,"Message queues creadas correctamente ");
 
 }
 
@@ -156,11 +156,11 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 
 	while(1) {
 		if(list_is_empty(mq->cola)) {
-			log_debug(mi_log, "Se bloquea la cola %d", mq->nombre);
+			log_info(mi_log, "Se bloquea la cola %d", mq->nombre);
 			pthread_mutex_lock(&mq->lock);
 		}
 
-		log_debug(mi_log, "Se desbloqueo la cola %d por la aparicion de un mensaje", mq->nombre);
+		log_info(mi_log, "Se desbloqueo la cola %d por la aparicion de un mensaje", mq->nombre);
 
 		pthread_mutex_lock(&mutex_memoria_principal);
 		if(!list_is_empty(mq->cola)) {
@@ -191,19 +191,19 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 		int largo_nombre_pokemon;
 		memcpy(&largo_nombre_pokemon, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
-		log_debug(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
+		log_info(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
 		char* nombre_pokemon = malloc(largo_nombre_pokemon+1);
 		int posicion_x;
 		int posicion_y;
 		memcpy(nombre_pokemon, (paquete->buffer->stream) + offset, largo_nombre_pokemon);
-		log_debug(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
+		log_info(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
 		offset+=largo_nombre_pokemon;
 		memcpy(&posicion_x, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
-		log_debug(mi_log, "La posicion x del pokemon es %d", posicion_x);
+		log_info(mi_log, "La posicion x del pokemon es %d", posicion_x);
 		memcpy(&posicion_y, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
-		log_debug(mi_log, "La posicion y del pokemon es %d", posicion_y);
+		log_info(mi_log, "La posicion y del pokemon es %d", posicion_y);
 	}
 
 	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
@@ -245,7 +245,7 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 void recibir_ACK(aux_msj_susc* msj_y_susc){
 
 	int valor;
-	log_debug(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->suscriptor->identificador);
+	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->suscriptor->identificador);
 	if (recv(msj_y_susc->suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
 
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
@@ -253,7 +253,7 @@ void recibir_ACK(aux_msj_susc* msj_y_susc){
 	}
 	else{
 
-		log_debug(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
+		log_info(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
 
 		if(valor == 1) {
 			log_info(mi_log, "Recibi la confirmacion de recepcion del suscriptor %d.",msj_y_susc->suscriptor->identificador);
@@ -414,7 +414,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 
 	int posicion = guardar_mensaje_en_memoria(tamanio, buffer);
 	mensaje->id = asignar_id_univoco();
-	log_debug(mi_log, "El id del mensaje creado es %d", mensaje->id);
+	log_info(mi_log, "El id del mensaje creado es %d", mensaje->id);
 	mensaje->id_cor = id_correlativo;
 	mensaje->cola = cola;
 	mensaje->suscriptores_env = list_create();
@@ -547,7 +547,7 @@ int obtener_posicion_particiones(int tamanio) {
 				recien_se_compacto = true;
 		}
 			else {
-				log_debug(mi_log,"SE PROCEDE A LIBERAR MEMORIA");
+				log_info(mi_log,"SE PROCEDE A LIBERAR MEMORIA");
 				liberar_particion();
 				contador_compactacion--;
 				recien_se_compacto = false;
@@ -583,7 +583,7 @@ void borrarParticion(void* elemento){
 
 t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 
-	log_debug(mi_log,"La posicion que vas a buscar en la lista es: %d",posicion);
+	log_info(mi_log,"La posicion que vas a buscar en la lista es: %d",posicion);
 	for(int i = 0; list_size(lista_msjs) > i ;i++ ){
 		t_mensaje* msj = list_get(lista_msjs,i);
 		if(msj->pos_en_memoria->pos == posicion){
@@ -591,18 +591,18 @@ t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 			return msj;
 		}
 	}
-	log_debug(mi_log,"Retornas NULL");
+	log_info(mi_log,"Retornas NULL");
 	return NULL;
 
 }
 
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
-	log_debug(mi_log,"La posicion vieja es : %d",pos_vieja);
-	log_debug(mi_log,"La posicion nueva es %d",pos_nueva);
+	log_info(mi_log,"La posicion vieja es : %d",pos_vieja);
+	log_info(mi_log,"La posicion nueva es %d",pos_nueva);
 	t_mensaje* mensaje = obtener_estructura_msj(pos_vieja,lista_global_msjs);
-	log_debug(mi_log,"El id del msj es : %d",mensaje->id);
+	log_info(mi_log,"El id del msj es : %d",mensaje->id);
 	mensaje->pos_en_memoria->pos = pos_nueva;
-	log_debug(mi_log,"La nueva posicion inical del msj es : %d",mensaje->pos_en_memoria->pos);
+	log_info(mi_log,"La nueva posicion inical del msj es : %d",mensaje->pos_en_memoria->pos);
 }
 
 void compactacion(){
@@ -627,8 +627,8 @@ void compactacion(){
 		particion->inicio = prox_posicion;
 		particion->fin = prox_posicion + particion->tamanio_ocupado -1;
 		prox_posicion = prox_posicion + particion->tamanio_ocupado;
-		log_debug(mi_log,"La particion ocupada arranca en la posicion %d",particion->inicio);
-		log_debug(mi_log,"La particion ocupada terminar en la posicion %d",particion->fin);
+		log_info(mi_log,"La particion ocupada arranca en la posicion %d",particion->inicio);
+		log_info(mi_log,"La particion ocupada terminar en la posicion %d",particion->fin);
 		actualizar_estructura_mensaje(aux_para_encontrar_msjs,particion->inicio);
 
 		llenar_memoria_principal(particion->inicio,particion->tamanio_ocupado,aux->memoria);
@@ -644,8 +644,8 @@ void compactacion(){
 	particion_libre->inicio = prox_posicion;
 	particion_libre->fin = leer_tamano_memoria() - 1;
 	list_add(lista_particiones,particion_libre);
-	log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->inicio);
-	log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->fin);
+	log_info(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->inicio);
+	log_info(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->fin);
 
 	}
 
@@ -680,17 +680,17 @@ void liberar_particion(){
 
 	switch(leer_algoritmo_reemplazo()){
 		case FIFO:
-			log_debug(mi_log,"ENTRE POR FIFO");
+			log_info(mi_log,"ENTRE POR FIFO");
 			ubicacion_particion = algoritmo_reemplazo_fifo();
 			break;
 		case LRU:
-			log_debug(mi_log,"ENTRE POR LRU");
+			log_info(mi_log,"ENTRE POR LRU");
 				ubicacion_particion = algoritmo_reemplazo_lru();
 			break;
 	}
-	log_debug(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
+	log_info(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
 	consolidar(ubicacion_particion);
-	log_debug(mi_log,"Se termino de consolidar");
+	log_info(mi_log,"Se termino de consolidar");
 }
 
 /* si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor */
@@ -701,26 +701,26 @@ int algoritmo_reemplazo_fifo(void){
 
 		for (int i = 0; list_size(lista_particiones) > i ;i++){
 			t_particion_dinamica* particion = list_get(lista_particiones,i);
-			log_debug(mi_log,"Analizando la particion de posicion en la lista %d e inicio %d",i,particion->inicio);
+			log_info(mi_log,"Analizando la particion de posicion en la lista %d e inicio %d",i,particion->inicio);
 			if(!particion->libre){
 				char lru_c[21];
 				sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
-				log_debug(mi_log,"La particion tiene como utimo timestamp el valor %s",lru_c);
+				log_info(mi_log,"La particion tiene como utimo timestamp el valor %s",lru_c);
 				if(primera_particion == NULL){
-					log_debug(mi_log,"ES LA PRIMERA PARTICION A ANALIZAR");
+					log_info(mi_log,"ES LA PRIMERA PARTICION A ANALIZAR");
 					primera_particion = particion;
 					pos_primera_particion = i;
-					log_debug(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
+					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
 
 				}
 				else if(particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
 					primera_particion = particion;
 					pos_primera_particion = i;
-					log_debug(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
+					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
 
 				}
 			}
-			else log_debug(mi_log,"LA PARTICION YA ESTA LIBRE.");
+			else log_info(mi_log,"LA PARTICION YA ESTA LIBRE.");
 		}
 		borrar_msj_mp(primera_particion->inicio);
 		primera_particion->libre = true;
@@ -737,7 +737,7 @@ int algoritmo_reemplazo_lru(void){
 	for (int i = 0; list_size(lista_particiones) > i ;i++){
 		t_particion_dinamica* particion = list_get(lista_particiones,i);
 
-		log_debug(mi_log,"La ultima vez usada la particion es :%d", particion->ult_vez_usado);
+		log_info(mi_log,"La ultima vez usada la particion es :%d", particion->ult_vez_usado);
 
 		if(!esta_libre(particion)){
 
@@ -759,43 +759,43 @@ int algoritmo_reemplazo_lru(void){
 
 /* Supongo que funciona pero seguro se puede mejorar */
 void consolidar(int pos_particion){
-	log_debug(mi_log,"CONSOLIDAR");
+	log_info(mi_log,"CONSOLIDAR");
 	t_particion_dinamica* liberada = list_get(lista_particiones,pos_particion);
 	t_particion_dinamica* aux = liberada;
 	int pos = pos_particion;
 
 	if(particion_libre_a_la_izquierda(pos_particion,liberada->inicio)){
-		log_debug(mi_log,"Entra izquierda ");
+		log_info(mi_log,"Entra izquierda ");
 		t_particion_dinamica* izquierda = list_get(lista_particiones,pos_particion-1);
-		log_debug(mi_log,"La particion de la izquierda arranca en %d",izquierda->inicio);
-		log_debug(mi_log,"La particion de la izquierda termina en %d",izquierda->fin);
+		log_info(mi_log,"La particion de la izquierda arranca en %d",izquierda->inicio);
+		log_info(mi_log,"La particion de la izquierda termina en %d",izquierda->fin);
 		izquierda->fin = liberada->fin;
 		aux = izquierda;
 		list_remove_and_destroy_element(lista_particiones,pos,borrarParticion);
 		pos = pos_particion -1;
-		log_debug(mi_log,"La particion auxiliar arranca en %d",aux->inicio);
-		log_debug(mi_log,"La particion auxiliar termina en %d",aux->fin);
+		log_info(mi_log,"La particion auxiliar arranca en %d",aux->inicio);
+		log_info(mi_log,"La particion auxiliar termina en %d",aux->fin);
 	}
 	if (particion_libre_a_la_derecha(pos,aux->fin)){
-		log_debug(mi_log,"Entra a la derecha");
+		log_info(mi_log,"Entra a la derecha");
 		t_particion_dinamica* derecha = list_get(lista_particiones,pos+1);
-		log_debug(mi_log,"La particion aux arranca en %d",aux->inicio);
-		log_debug(mi_log,"La particion aux termina en %d",aux->fin);
-		log_debug(mi_log,"La particion de la izquierda arranca en %d",derecha->inicio);
-		log_debug(mi_log,"La particion de la izquierda termina en %d",derecha->fin);
+		log_info(mi_log,"La particion aux arranca en %d",aux->inicio);
+		log_info(mi_log,"La particion aux termina en %d",aux->fin);
+		log_info(mi_log,"La particion de la izquierda arranca en %d",derecha->inicio);
+		log_info(mi_log,"La particion de la izquierda termina en %d",derecha->fin);
 		aux->fin = derecha->fin;
 		list_remove_and_destroy_element(lista_particiones,pos+1,borrarParticion);
 	}
 }
 
 bool particion_libre_a_la_izquierda(int posicion,int inicio_part_liberada){
-	log_debug(mi_log,"ME FIJO SI ESTA LIBRE A LA IZQUIERDA");
+	log_info(mi_log,"ME FIJO SI ESTA LIBRE A LA IZQUIERDA");
 	return inicio_part_liberada - 1 >= 0 && esta_libre(list_get(lista_particiones,posicion-1));
 
 }
 
 bool particion_libre_a_la_derecha(int posicion,int fin_part_liberada){
-	log_debug(mi_log,"ME FIJO SI ESTA LIBRE A LA DERECHA");
+	log_info(mi_log,"ME FIJO SI ESTA LIBRE A LA DERECHA");
 	return fin_part_liberada + 1 <= leer_tamano_memoria()-1 && esta_libre(list_get(lista_particiones,posicion+1));
 }
 
@@ -822,12 +822,12 @@ int algoritmo_best_fit(int tamanio){
 	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
 		t_particion_dinamica* particion_actual = list_get(lista_particiones,i);
 
-		log_debug(mi_log,"En best fit estoy analizando la particion cuyo inicio es %d:", particion_actual->inicio);
+		log_info(mi_log,"En best fit estoy analizando la particion cuyo inicio es %d:", particion_actual->inicio);
 
 		if(esta_libre(particion_actual)){
 			int diferencia = diferencia_tamanio_particion(particion_actual,tamanio);
-			log_debug(mi_log,"Esta libre esa particion %d:", particion_actual->inicio);
-			log_debug(mi_log,"La diferencica de tamanio entre esa particion y el mensaje es de %d:", diferencia);
+			log_info(mi_log,"Esta libre esa particion %d:", particion_actual->inicio);
+			log_info(mi_log,"La diferencica de tamanio entre esa particion y el mensaje es de %d:", diferencia);
 
 			if(diferencia >= 0){
 
@@ -841,7 +841,7 @@ int algoritmo_best_fit(int tamanio){
 	}
 
 	if(dif_mejor_part < 0){
-		log_debug(mi_log,"NO SE ENCONTRO PARTICION LIBRE");
+		log_info(mi_log,"NO SE ENCONTRO PARTICION LIBRE");
 		return -1;
 	}
 	else if(dif_mejor_part >= leer_tamano_minimo_particion())
@@ -906,7 +906,7 @@ int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamani
 	list_add_in_index(lista_particiones,posicion_en_lista+1,nueva_particion);
 	char lru_c[21];
 	sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
-	log_debug(mi_log,"Se creo una nueva particion y se lleno la particion vieja con inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
+	log_info(mi_log,"Se creo una nueva particion y se lleno la particion vieja con inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
 
 	return particion->inicio;
 
@@ -919,7 +919,7 @@ int llenar_particion(t_particion_dinamica* particion, int tamanio){
 	particion->ult_vez_usado = timestamp();
 	char lru_c[21];
 	sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
-	log_debug(mi_log,"Se lleno la particion de inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
+	log_info(mi_log,"Se lleno la particion de inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
 	return particion->inicio;
 }
 
@@ -1061,7 +1061,7 @@ int obtener_posicion_de_particion_liberada_fifo() {
 	borrar_msj_mp(particion_objetivo->inicio);
 	particion_objetivo->libre = true;
 
-	log_debug(mi_log, "Se libero, por FIFO, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
+	log_info(mi_log, "Se libero, por FIFO, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
 
 	return posicion;
 }
@@ -1081,7 +1081,7 @@ int obtener_posicion_de_particion_liberada_lru() {
 	borrar_msj_mp(particion_objetivo->inicio);
 	particion_objetivo->libre = true;
 
-	log_debug(mi_log, "Se libero, por LRU, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
+	log_info(mi_log, "Se libero, por LRU, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
 
 	return posicion;
 }
@@ -1125,7 +1125,7 @@ void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_m
 	buddy_a_mantener->potencia_de_dos++;
 	buddy_a_mantener->fin = buddy_eliminado->fin;
 
-	log_debug(mi_log, "Se asociaron los bloques (buddies) con posiciones de inicio: %p y %p. Quedando una particion con valor de potencia de dos: %d", memoria_principal+(buddy_a_mantener->inicio), memoria_principal+(buddy_eliminado->inicio), buddy_a_mantener->potencia_de_dos);
+	log_info(mi_log, "Se asociaron los bloques (buddies) con posiciones de inicio: %p y %p. Quedando una particion con valor de potencia de dos: %d", memoria_principal+(buddy_a_mantener->inicio), memoria_principal+(buddy_eliminado->inicio), buddy_a_mantener->potencia_de_dos);
 
 	free(buddy_eliminado);
 }
