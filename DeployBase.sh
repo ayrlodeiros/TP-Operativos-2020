@@ -207,7 +207,7 @@ make all
 
 #Configuro team con SJF - CD
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/
+cd lteam-v2-SJF-CD/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -274,7 +274,7 @@ make all
 
 #Configuro broker compactacion Particiones Dinamicas
 
-cd ../../broker-v2-COMPACTACION-PD/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-COMPACTACION-PD/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -299,7 +299,7 @@ make all
 
 #Configuro broker Buddy System
 
-cd ../../broker-v2-BUDDY-SYSTEM/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-BUDDY-SYSTEM/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
