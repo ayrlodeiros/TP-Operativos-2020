@@ -4,12 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/conexion.c \
+../src/config-reader.c \
 ../src/gameboy-v2.c 
 
 OBJS += \
+./src/conexion.o \
+./src/config-reader.o \
 ./src/gameboy-v2.o 
 
 C_DEPS += \
+./src/conexion.d \
+./src/config-reader.d \
 ./src/gameboy-v2.d 
 
 

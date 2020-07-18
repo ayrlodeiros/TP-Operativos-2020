@@ -156,5 +156,8 @@ local.properties
 
 language.settings.xml
 
+src/resources/log_broker.txt
+src/resources/mi_log_broker.txt
+
 # End of https://www.gitignore.io/api/c,git,linux,eclipse
 /Debug/

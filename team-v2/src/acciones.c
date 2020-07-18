@@ -30,14 +30,34 @@ void registrar_movimiento(entrenador* entrenador) {
 //Logea en el logger principal el movimiento que realizo un entrenador
 //Solo usar dsp de que un entrenador cambio de posicion
 void loggear_movimiento(entrenador* entrenador) {
+<<<<<<< HEAD
 	log_info(nuestro_log, string_from_format("Entrenador moviendose a la posicion: %d|%d.", entrenador->posicion->posicion_x, entrenador->posicion->posicion_y));
 	log_info(logger, string_from_format("2. Entrenador moviendose a la posicion: %d|%d.", entrenador->posicion->posicion_x, entrenador->posicion->posicion_y));
+=======
+	log_info(nuestro_log, "2. Entrenador %d moviendose a la posicion: %d|%d.", entrenador->id, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
+	log_info(logger, "2. Entrenador %d moviendose a la posicion: %d|%d.", entrenador->id, entrenador->posicion->posicion_x, entrenador->posicion->posicion_y);
+>>>>>>> develop
 }
 
+void ejecutar(entrenador* entrenador){
 
-//Realiza un intercambio entre dos entrenadores que estaban bloqueados
-void intercambiar(entrenador* entrenador1, entrenador* entrenador2) {
+	accion* accion_a_ejecutar = list_remove(entrenador->acciones, 0);
 
+	sumar_cpu_usado(entrenador, accion_a_ejecutar->cpu_requerido);
+
+	// Se usa el hilo del entrenador para ejecutar la accion
+	pthread_create(&(entrenador->hilo), NULL, accion_a_ejecutar->funcion, entrenador);
+	pthread_join(entrenador->hilo, NULL);
+
+	free(accion_a_ejecutar);
+}
+
+int cpu_restante_entrenador (entrenador* entrenador_a_ejecutar){
+	return entrenador_a_ejecutar->cpu_disponible - entrenador_a_ejecutar->cpu_usado;
+}
+
+void sumar_cpu_usado(entrenador* entrenador, int cantidad) {
+	entrenador->cpu_usado += cantidad;
 }
 
 void ejecutar(entrenador* entrenador){

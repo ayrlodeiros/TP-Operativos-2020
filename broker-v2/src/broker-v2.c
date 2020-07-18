@@ -8,74 +8,32 @@ struct mesg_buffer {
 
 int main(void)
 {
-	//prueba message queue
-
-	/*	key_t key;
-	    int msgid;
-
-	    // ftok to generate unique key
-	    key = ftok("Catched",65);
-
-	    // msgget creates a message queue
-	    // and returns identifier
-	    msgid = msgget(key, 0666 | IPC_CREAT);
-
-	    // msgrcv to receive message
-	    msgrcv(msgid, &message, sizeof(message), 1, 0);
-
-	    // display the message
-	    printf("Data Received is : %s \n",
-	                    message.mesg_text);
-
-	    // to destroy the message queue
-	    msgctl(msgid, IPC_RMID, NULL);
-
-	    return 0;
-
-	//prueba message queue
-*/
-	logger = leer_log_file();
-	pthread_t* conexion_team;
 
 	iniciar_broker();
 
-	/*pthread_create(&conexion_team,NULL,conectar_team, NULL);
-		//NO LO ESPERO
-		//pthread_detach(conexion_broker);
-		//LO ESPERO
-	pthread_join(conexion_team, NULL);*/
-
-	int socket = levantar_servidor(leer_ip_broker(),leer_puerto_broker(),logger);
-	printf("Socket es %d",socket);
-
-	while(1){
-		esperar_cliente(socket);
-	}
+	levantar_servidor(leer_ip_broker(),leer_puerto_broker());
 
 	terminar_broker();
-
-	printf("Todo joya \n");
-
 
 	return EXIT_SUCCESS;
 
 }
 
 void iniciar_broker(){
+
 	printf("-----------------Iniciando archivo config-----------------\n");
 	iniciar_config();
-	inicializar_message_queues();
 	logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
-	mi_log = log_create("src/resources/mi_log_broker.txt","broker",true,LOG_LEVEL_INFO);
-
+	mi_log = log_create(leer_nuestro_log_file(),"broker",true,LOG_LEVEL_INFO);
+	dump = log_create(leer_path_archivo_dump(),"dump",false,LOG_LEVEL_INFO);
+	iniciar_funcionalidades();
 }
 
 void terminar_broker(){
 	printf("-----------------Destruyendo archivo config-----------------\n");
 	destruir_config();
-	terminar_message_queues();
+	liberar_message_queues();
 	log_destroy(logger);
 	log_destroy(mi_log);
+	log_destroy(dump);
 }
-
-

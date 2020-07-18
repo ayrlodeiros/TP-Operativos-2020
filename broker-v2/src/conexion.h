@@ -8,26 +8,9 @@
 #ifndef CONEXION_H_
 #define CONEXION_H_
 
-#include<sys/socket.h>
-#include<netdb.h>
-#include<signal.h>
-#include<unistd.h>
-#include<commons/log.h>
-#include<commons/string.h>
-#include<stdio.h>
-#include<stdlib.h>
-#include<pthread.h>
 
-pthread_t* espera;
+#include"protocolo.h"
 
-/* crear_conexion_del_cliente:
- * Recibe como parametros la ip y el puerto del servidor a conectarse
- * y el logger en donde registrar los sucesos
- *
- * Devuelve como entero la conexion al cliente (socket_cliente)
- * si devuelve -1 la conexion fallo.
- * */
-int crear_conexion_del_cliente(char *ip, char* puerto, t_log* logger);
 
 /* liberar_conexion:
  * Recibe un socket al que finalizaremos
@@ -40,11 +23,13 @@ void liberar_conexion(int socket);
  *
  * Devuelve como entero el servidor levantado.
  * */
-int levantar_servidor(char* ip, char* puerto, t_log* logger);
+
+void levantar_servidor(char* ip, int puerto);
 
 void esperar_cliente(int socket_servidor);
 
-void servir_cliente(int* socket);
+void servir_cliente(int socket);
 
+void process_request(int id_modulo, int socket_cliente);
 
 #endif /* CONEXION_H_ */

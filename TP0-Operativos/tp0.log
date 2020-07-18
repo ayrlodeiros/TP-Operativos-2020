@@ -371,3 +371,522 @@
 [INFO] 20:18:11:375 Game-watch-client/(1488:1488): Se recibio el codigo de operacion correctamente
 [INFO] 20:18:11:375 Game-watch-client/(1488:1488): Se recibio el tamanio del buffer correctamente
 [INFO] 20:18:11:375 Game-watch-client/(1488:1488): Se recibio el stream correctamente
+[INFO] 18:14:19:651 Game-watch-client/(6021:6021): soy un log
+
+[INFO] 18:14:19:691 Game-watch-client/(6021:6021): 127.0.0.1
+[INFO] 18:14:19:692 Game-watch-client/(6021:6021): 4444
+[ERROR] 18:14:19:693 Game-watch-client/(6021:6021): error
+[INFO] 18:14:19:693 Game-watch-client/(6021:6021): Comienza a enviar el mensaje
+[INFO] 18:15:14:396 Game-watch-client/(6079:6079): soy un log
+
+[INFO] 18:15:14:397 Game-watch-client/(6079:6079): 127.0.0.1
+[INFO] 18:15:14:397 Game-watch-client/(6079:6079): 4444
+[ERROR] 18:15:14:397 Game-watch-client/(6079:6079): error
+[INFO] 18:15:14:397 Game-watch-client/(6079:6079): Comienza a enviar el mensaje
+[INFO] 18:15:51:237 Game-watch-client/(6133:6133): soy un log
+
+[INFO] 18:15:51:237 Game-watch-client/(6133:6133): 127.0.0.1
+[INFO] 18:15:51:237 Game-watch-client/(6133:6133): 4444
+[INFO] 18:15:51:238 Game-watch-client/(6133:6133): Comienza a enviar el mensaje
+[INFO] 18:15:51:238 Game-watch-client/(6133:6133): Se mando el mensaje correctamente
+[INFO] 18:15:51:238 Game-watch-client/(6133:6133): Comienza a recibir el mensaje
+[INFO] 18:27:24:779 Game-watch-client/(6743:6743): soy un log
+
+[INFO] 18:27:24:787 Game-watch-client/(6743:6743): 127.0.0.1
+[INFO] 18:27:24:787 Game-watch-client/(6743:6743): 4444
+[INFO] 18:27:24:788 Game-watch-client/(6743:6743): Comienza a enviar el mensaje
+[INFO] 18:27:24:788 Game-watch-client/(6743:6743): Se mando el mensaje correctamente
+[INFO] 18:27:24:788 Game-watch-client/(6743:6743): Comienza a recibir el mensaje
+[INFO] 20:39:26:637 Game-watch-client/(8429:8429): soy un log
+
+[INFO] 20:39:26:648 Game-watch-client/(8429:8429): 127.0.0.1
+[INFO] 20:39:26:648 Game-watch-client/(8429:8429): 4444
+[INFO] 20:39:26:649 Game-watch-client/(8429:8429): Comienza a enviar el mensaje
+[INFO] 20:39:26:649 Game-watch-client/(8429:8429): Se mando el mensaje correctamente
+[INFO] 20:39:26:649 Game-watch-client/(8429:8429): Comienza a recibir el mensaje
+[INFO] 20:44:52:738 Game-watch-client/(11943:11943): soy un log
+
+[INFO] 20:44:52:753 Game-watch-client/(11943:11943): 127.0.0.1
+[INFO] 20:44:52:753 Game-watch-client/(11943:11943): 4444
+[INFO] 20:44:52:754 Game-watch-client/(11943:11943): Comienza a enviar el mensaje
+[INFO] 20:44:52:754 Game-watch-client/(11943:11943): Se mando el mensaje correctamente
+[INFO] 20:44:52:754 Game-watch-client/(11943:11943): Comienza a recibir el mensaje
+[INFO] 20:59:36:730 Game-watch-client/(12497:12497): soy un log
+
+[INFO] 20:59:36:737 Game-watch-client/(12497:12497): 127.0.0.1
+[INFO] 20:59:36:737 Game-watch-client/(12497:12497): 4444
+[INFO] 20:59:36:738 Game-watch-client/(12497:12497): Comienza a enviar el mensaje
+[INFO] 20:59:36:738 Game-watch-client/(12497:12497): Se mando el mensaje correctamente
+[INFO] 20:59:36:738 Game-watch-client/(12497:12497): Comienza a recibir el mensaje
+[INFO] 21:26:29:988 Game-watch-client/(13175:13175): soy un log
+
+[INFO] 21:26:29:998 Game-watch-client/(13175:13175): 127.0.0.1
+[INFO] 21:26:29:999 Game-watch-client/(13175:13175): 4444
+[INFO] 21:26:29:999 Game-watch-client/(13175:13175): Comienza a enviar el mensaje
+[INFO] 21:26:29:999 Game-watch-client/(13175:13175): Se mando el mensaje correctamente
+[INFO] 21:26:29:0 Game-watch-client/(13175:13175): Comienza a recibir el mensaje
+[INFO] 21:26:30:8 Game-watch-client/(13175:13175): Se recibio el codigo de operacion correctamente
+[INFO] 21:30:14:830 Game-watch-client/(13275:13275): soy un log
+
+[INFO] 21:30:14:831 Game-watch-client/(13275:13275): 127.0.0.1
+[INFO] 21:30:14:831 Game-watch-client/(13275:13275): 4444
+[INFO] 21:30:14:832 Game-watch-client/(13275:13275): Comienza a enviar el mensaje
+[INFO] 21:30:14:832 Game-watch-client/(13275:13275): Se mando el mensaje correctamente
+[INFO] 21:30:14:832 Game-watch-client/(13275:13275): Comienza a recibir el mensaje
+[INFO] 21:30:14:832 Game-watch-client/(13275:13275): Se recibio el codigo de operacion correctamente
+[INFO] 21:39:37:908 Game-watch-client/(13486:13486): soy un log
+
+[INFO] 21:39:37:918 Game-watch-client/(13486:13486): 127.0.0.1
+[INFO] 21:39:37:918 Game-watch-client/(13486:13486): 4444
+[INFO] 21:39:37:919 Game-watch-client/(13486:13486): Comienza a enviar el mensaje
+[INFO] 21:39:37:919 Game-watch-client/(13486:13486): Se mando el mensaje correctamente
+[INFO] 21:39:37:919 Game-watch-client/(13486:13486): Comienza a recibir el mensaje
+[INFO] 21:39:37:939 Game-watch-client/(13486:13486): Se recibio el codigo de operacion correctamente
+[INFO] 21:43:28:490 Game-watch-client/(24891:24891): soy un log
+
+[INFO] 21:43:28:491 Game-watch-client/(24891:24891): 127.0.0.1
+[INFO] 21:43:28:491 Game-watch-client/(24891:24891): 4444
+[INFO] 21:43:28:492 Game-watch-client/(24891:24891): Comienza a enviar el mensaje
+[INFO] 21:43:28:492 Game-watch-client/(24891:24891): Se mando el mensaje correctamente
+[INFO] 21:43:28:492 Game-watch-client/(24891:24891): Comienza a recibir el mensaje
+[INFO] 21:43:28:498 Game-watch-client/(24891:24891): Se recibio el codigo de operacion correctamente
+[INFO] 21:44:54:182 Game-watch-client/(24993:24993): soy un log
+
+[INFO] 21:44:54:189 Game-watch-client/(24993:24993): 127.0.0.1
+[INFO] 21:44:54:189 Game-watch-client/(24993:24993): 4444
+[INFO] 21:44:54:191 Game-watch-client/(24993:24993): Comienza a enviar el mensaje
+[INFO] 21:44:54:191 Game-watch-client/(24993:24993): Se mando el mensaje correctamente
+[INFO] 21:44:54:191 Game-watch-client/(24993:24993): Comienza a recibir el mensaje
+[INFO] 21:46:31:546 Game-watch-client/(25090:25090): soy un log
+
+[INFO] 21:46:31:559 Game-watch-client/(25090:25090): 127.0.0.1
+[INFO] 21:46:31:562 Game-watch-client/(25090:25090): 4444
+[INFO] 21:46:31:562 Game-watch-client/(25090:25090): Comienza a enviar el mensaje
+[INFO] 21:46:31:563 Game-watch-client/(25090:25090): Se mando el mensaje correctamente
+[INFO] 21:46:31:563 Game-watch-client/(25090:25090): Comienza a recibir el mensaje
+[INFO] 21:49:03:317 Game-watch-client/(25213:25213): soy un log
+
+[INFO] 21:49:03:318 Game-watch-client/(25213:25213): 127.0.0.1
+[INFO] 21:49:03:318 Game-watch-client/(25213:25213): 4444
+[INFO] 21:49:03:319 Game-watch-client/(25213:25213): Comienza a enviar el mensaje
+[INFO] 21:49:03:319 Game-watch-client/(25213:25213): Se mando el mensaje correctamente
+[INFO] 21:49:03:319 Game-watch-client/(25213:25213): Comienza a recibir el mensaje
+[INFO] 21:52:38:587 Game-watch-client/(25382:25382): soy un log
+
+[INFO] 21:52:38:588 Game-watch-client/(25382:25382): 127.0.0.1
+[INFO] 21:52:38:588 Game-watch-client/(25382:25382): 4444
+[INFO] 21:52:38:588 Game-watch-client/(25382:25382): Comienza a enviar el mensaje
+[INFO] 21:52:38:589 Game-watch-client/(25382:25382): Se mando el mensaje correctamente
+[INFO] 21:52:38:589 Game-watch-client/(25382:25382): Comienza a recibir el mensaje
+[INFO] 21:54:01:877 Game-watch-client/(15924:15924): soy un log
+
+[INFO] 21:54:01:883 Game-watch-client/(15924:15924): 127.0.0.1
+[INFO] 21:54:01:884 Game-watch-client/(15924:15924): 4444
+[INFO] 21:54:01:887 Game-watch-client/(15924:15924): Comienza a enviar el mensaje
+[INFO] 21:54:01:887 Game-watch-client/(15924:15924): Se mando el mensaje correctamente
+[INFO] 21:54:01:888 Game-watch-client/(15924:15924): Comienza a recibir el mensaje
+[INFO] 21:56:40:280 Game-watch-client/(14607:14607): soy un log
+
+[INFO] 21:56:40:281 Game-watch-client/(14607:14607): 127.0.0.1
+[INFO] 21:56:40:281 Game-watch-client/(14607:14607): 4444
+[INFO] 21:56:40:282 Game-watch-client/(14607:14607): Comienza a enviar el mensaje
+[INFO] 21:56:40:282 Game-watch-client/(14607:14607): Se mando el mensaje correctamente
+[INFO] 21:56:40:282 Game-watch-client/(14607:14607): Comienza a recibir el mensaje
+[INFO] 21:57:57:36 Game-watch-client/(14694:14694): soy un log
+
+[INFO] 21:57:57:46 Game-watch-client/(14694:14694): 127.0.0.1
+[INFO] 21:57:57:46 Game-watch-client/(14694:14694): 4444
+[INFO] 21:57:57:47 Game-watch-client/(14694:14694): Comienza a enviar el mensaje
+[INFO] 21:57:57:47 Game-watch-client/(14694:14694): Se mando el mensaje correctamente
+[INFO] 21:57:57:47 Game-watch-client/(14694:14694): Comienza a recibir el mensaje
+[INFO] 21:58:50:904 Game-watch-client/(14790:14790): soy un log
+
+[INFO] 21:58:50:916 Game-watch-client/(14790:14790): 127.0.0.1
+[INFO] 21:58:50:916 Game-watch-client/(14790:14790): 4444
+[INFO] 21:58:50:917 Game-watch-client/(14790:14790): Comienza a enviar el mensaje
+[INFO] 21:58:50:917 Game-watch-client/(14790:14790): Se mando el mensaje correctamente
+[INFO] 21:58:50:917 Game-watch-client/(14790:14790): Comienza a recibir el mensaje
+[INFO] 22:00:41:661 Game-watch-client/(14875:14875): soy un log
+
+[INFO] 22:00:41:674 Game-watch-client/(14875:14875): 127.0.0.1
+[INFO] 22:00:41:674 Game-watch-client/(14875:14875): 4444
+[INFO] 22:00:41:675 Game-watch-client/(14875:14875): Comienza a enviar el mensaje
+[INFO] 22:00:41:675 Game-watch-client/(14875:14875): Se mando el mensaje correctamente
+[INFO] 22:00:41:675 Game-watch-client/(14875:14875): Comienza a recibir el mensaje
+[INFO] 22:03:02:620 Game-watch-client/(3818:3818): soy un log
+
+[INFO] 22:03:02:631 Game-watch-client/(3818:3818): 127.0.0.1
+[INFO] 22:03:02:632 Game-watch-client/(3818:3818): 4444
+[INFO] 22:03:02:632 Game-watch-client/(3818:3818): Comienza a enviar el mensaje
+[INFO] 22:03:02:632 Game-watch-client/(3818:3818): Se mando el mensaje correctamente
+[INFO] 22:03:02:632 Game-watch-client/(3818:3818): Comienza a recibir el mensaje
+[INFO] 22:05:33:433 Game-watch-client/(16940:16940): soy un log
+
+[INFO] 22:05:33:445 Game-watch-client/(16940:16940): 127.0.0.1
+[INFO] 22:05:33:445 Game-watch-client/(16940:16940): 4444
+[INFO] 22:05:33:446 Game-watch-client/(16940:16940): Comienza a enviar el mensaje
+[INFO] 22:05:33:446 Game-watch-client/(16940:16940): Se mando el mensaje correctamente
+[INFO] 22:05:33:446 Game-watch-client/(16940:16940): Comienza a recibir el mensaje
+[INFO] 22:31:59:76 Game-watch-client/(3769:3769): soy un log
+
+[INFO] 22:31:59:88 Game-watch-client/(3769:3769): 127.0.0.1
+[INFO] 22:31:59:89 Game-watch-client/(3769:3769): 4444
+[INFO] 22:31:59:90 Game-watch-client/(3769:3769): Comienza a enviar el mensaje
+[INFO] 22:31:59:90 Game-watch-client/(3769:3769): Se mando el mensaje correctamente
+[INFO] 22:31:59:90 Game-watch-client/(3769:3769): Comienza a recibir el mensaje
+[INFO] 22:33:31:701 Game-watch-client/(4119:4119): soy un log
+
+[INFO] 22:33:31:714 Game-watch-client/(4119:4119): 127.0.0.1
+[INFO] 22:33:31:714 Game-watch-client/(4119:4119): 4444
+[INFO] 22:33:31:715 Game-watch-client/(4119:4119): Comienza a enviar el mensaje
+[INFO] 22:33:31:715 Game-watch-client/(4119:4119): Se mando el mensaje correctamente
+[INFO] 22:33:31:716 Game-watch-client/(4119:4119): Comienza a recibir el mensaje
+[INFO] 22:39:58:528 Game-watch-client/(4568:4568): soy un log
+
+[INFO] 22:39:58:555 Game-watch-client/(4568:4568): 127.0.0.1
+[INFO] 22:39:58:555 Game-watch-client/(4568:4568): 4444
+[INFO] 22:39:58:556 Game-watch-client/(4568:4568): Comienza a enviar el mensaje
+[INFO] 22:39:58:556 Game-watch-client/(4568:4568): Se mando el mensaje correctamente
+[INFO] 22:39:58:556 Game-watch-client/(4568:4568): Comienza a recibir el mensaje
+[INFO] 22:44:38:915 Game-watch-client/(4937:4937): soy un log
+
+[INFO] 22:44:38:919 Game-watch-client/(4937:4937): 127.0.0.1
+[INFO] 22:44:38:919 Game-watch-client/(4937:4937): 4444
+[INFO] 22:44:38:920 Game-watch-client/(4937:4937): Comienza a enviar el mensaje
+[INFO] 22:44:38:920 Game-watch-client/(4937:4937): Se mando el mensaje correctamente
+[INFO] 22:44:38:920 Game-watch-client/(4937:4937): Comienza a recibir el mensaje
+[INFO] 23:06:57:495 Game-watch-client/(28441:28441): soy un log
+
+[INFO] 23:06:57:506 Game-watch-client/(28441:28441): 127.0.0.1
+[INFO] 23:06:57:507 Game-watch-client/(28441:28441): 4444
+[INFO] 23:06:57:508 Game-watch-client/(28441:28441): Comienza a enviar el mensaje
+[INFO] 23:06:57:508 Game-watch-client/(28441:28441): Se mando el mensaje correctamente
+[INFO] 23:06:57:508 Game-watch-client/(28441:28441): Comienza a recibir el mensaje
+[INFO] 23:11:18:220 Game-watch-client/(28604:28604): soy un log
+
+[INFO] 23:11:18:240 Game-watch-client/(28604:28604): 127.0.0.1
+[INFO] 23:11:18:241 Game-watch-client/(28604:28604): 4444
+[INFO] 23:11:18:241 Game-watch-client/(28604:28604): Comienza a enviar el mensaje
+[INFO] 23:11:18:242 Game-watch-client/(28604:28604): Se mando el mensaje correctamente
+[INFO] 23:11:18:242 Game-watch-client/(28604:28604): Comienza a recibir el mensaje
+[INFO] 23:32:12:569 Game-watch-client/(28809:28809): soy un log
+
+[INFO] 23:32:12:578 Game-watch-client/(28809:28809): 127.0.0.1
+[INFO] 23:32:12:579 Game-watch-client/(28809:28809): 4444
+[INFO] 23:32:12:579 Game-watch-client/(28809:28809): Comienza a enviar el mensaje
+[INFO] 23:32:12:583 Game-watch-client/(28809:28809): Se mando el mensaje correctamente
+[INFO] 23:32:12:583 Game-watch-client/(28809:28809): Comienza a recibir el mensaje
+[INFO] 23:37:15:689 Game-watch-client/(28960:28960): soy un log
+
+[INFO] 23:37:15:697 Game-watch-client/(28960:28960): 127.0.0.1
+[INFO] 23:37:15:697 Game-watch-client/(28960:28960): 4444
+[INFO] 23:37:15:698 Game-watch-client/(28960:28960): Comienza a enviar el mensaje
+[INFO] 23:37:15:698 Game-watch-client/(28960:28960): Se mando el mensaje correctamente
+[INFO] 23:37:15:698 Game-watch-client/(28960:28960): Comienza a recibir el mensaje
+[INFO] 23:48:58:813 Game-watch-client/(29153:29153): soy un log
+
+[INFO] 23:48:58:823 Game-watch-client/(29153:29153): 127.0.0.1
+[INFO] 23:48:58:823 Game-watch-client/(29153:29153): 4444
+[INFO] 23:48:58:823 Game-watch-client/(29153:29153): Comienza a enviar el mensaje
+[INFO] 23:48:58:823 Game-watch-client/(29153:29153): Se mando el mensaje correctamente
+[INFO] 23:48:58:823 Game-watch-client/(29153:29153): Comienza a recibir el mensaje
+[INFO] 23:51:31:361 Game-watch-client/(29517:29517): soy un log
+
+[INFO] 23:51:31:370 Game-watch-client/(29517:29517): 127.0.0.1
+[INFO] 23:51:31:371 Game-watch-client/(29517:29517): 4444
+[INFO] 23:51:31:371 Game-watch-client/(29517:29517): Comienza a enviar el mensaje
+[INFO] 23:51:31:372 Game-watch-client/(29517:29517): Se mando el mensaje correctamente
+[INFO] 23:51:31:372 Game-watch-client/(29517:29517): Comienza a recibir el mensaje
+[INFO] 23:54:05:32 Game-watch-client/(29874:29874): soy un log
+
+[INFO] 23:54:05:32 Game-watch-client/(29874:29874): 127.0.0.1
+[INFO] 23:54:05:33 Game-watch-client/(29874:29874): 4444
+[INFO] 23:54:05:34 Game-watch-client/(29874:29874): Comienza a enviar el mensaje
+[INFO] 23:54:05:34 Game-watch-client/(29874:29874): Se mando el mensaje correctamente
+[INFO] 23:54:05:35 Game-watch-client/(29874:29874): Comienza a recibir el mensaje
+[INFO] 00:00:09:435 Game-watch-client/(30320:30320): soy un log
+
+[INFO] 00:00:09:444 Game-watch-client/(30320:30320): 127.0.0.1
+[INFO] 00:00:09:445 Game-watch-client/(30320:30320): 4444
+[INFO] 00:00:09:445 Game-watch-client/(30320:30320): Comienza a enviar el mensaje
+[INFO] 00:00:09:445 Game-watch-client/(30320:30320): Se mando el mensaje correctamente
+[INFO] 00:00:09:445 Game-watch-client/(30320:30320): Comienza a recibir el mensaje
+[INFO] 00:03:17:317 Game-watch-client/(30684:30684): soy un log
+
+[INFO] 00:03:17:318 Game-watch-client/(30684:30684): 127.0.0.1
+[INFO] 00:03:17:318 Game-watch-client/(30684:30684): 4444
+[INFO] 00:03:17:319 Game-watch-client/(30684:30684): Comienza a enviar el mensaje
+[INFO] 00:03:17:319 Game-watch-client/(30684:30684): Se mando el mensaje correctamente
+[INFO] 00:03:17:319 Game-watch-client/(30684:30684): Comienza a recibir el mensaje
+[INFO] 00:06:51:764 Game-watch-client/(31266:31266): soy un log
+
+[INFO] 00:06:51:781 Game-watch-client/(31266:31266): 127.0.0.1
+[INFO] 00:06:51:781 Game-watch-client/(31266:31266): 4444
+[INFO] 00:06:51:782 Game-watch-client/(31266:31266): Comienza a enviar el mensaje
+[INFO] 00:06:51:782 Game-watch-client/(31266:31266): Se mando el mensaje correctamente
+[INFO] 00:06:51:782 Game-watch-client/(31266:31266): Comienza a recibir el mensaje
+[INFO] 00:10:32:379 Game-watch-client/(31728:31728): soy un log
+
+[INFO] 00:10:32:410 Game-watch-client/(31728:31728): 127.0.0.1
+[INFO] 00:10:32:410 Game-watch-client/(31728:31728): 4444
+[INFO] 00:10:32:411 Game-watch-client/(31728:31728): Comienza a enviar el mensaje
+[INFO] 00:10:32:411 Game-watch-client/(31728:31728): Se mando el mensaje correctamente
+[INFO] 00:10:32:411 Game-watch-client/(31728:31728): Comienza a recibir el mensaje
+[INFO] 00:13:41:15 Game-watch-client/(32114:32114): soy un log
+
+[INFO] 00:13:41:23 Game-watch-client/(32114:32114): 127.0.0.1
+[INFO] 00:13:41:23 Game-watch-client/(32114:32114): 4444
+[INFO] 00:13:41:24 Game-watch-client/(32114:32114): Comienza a enviar el mensaje
+[INFO] 00:13:41:24 Game-watch-client/(32114:32114): Se mando el mensaje correctamente
+[INFO] 00:13:41:24 Game-watch-client/(32114:32114): Comienza a recibir el mensaje
+[INFO] 00:24:31:115 Game-watch-client/(32620:32620): soy un log
+
+[INFO] 00:24:31:133 Game-watch-client/(32620:32620): 127.0.0.1
+[INFO] 00:24:31:133 Game-watch-client/(32620:32620): 4444
+[INFO] 00:24:31:134 Game-watch-client/(32620:32620): Comienza a enviar el mensaje
+[INFO] 00:24:31:135 Game-watch-client/(32620:32620): Se mando el mensaje correctamente
+[INFO] 00:24:31:135 Game-watch-client/(32620:32620): Comienza a recibir el mensaje
+[INFO] 00:28:40:359 Game-watch-client/(533:533): soy un log
+
+[INFO] 00:28:40:404 Game-watch-client/(533:533): 127.0.0.1
+[INFO] 00:28:40:404 Game-watch-client/(533:533): 4444
+[INFO] 00:28:40:405 Game-watch-client/(533:533): Comienza a enviar el mensaje
+[INFO] 00:28:40:405 Game-watch-client/(533:533): Se mando el mensaje correctamente
+[INFO] 00:28:40:405 Game-watch-client/(533:533): Comienza a recibir el mensaje
+[INFO] 00:38:43:927 Game-watch-client/(762:762): soy un log
+
+[INFO] 00:38:43:946 Game-watch-client/(762:762): 127.0.0.1
+[INFO] 00:38:43:946 Game-watch-client/(762:762): 4444
+[INFO] 00:38:43:947 Game-watch-client/(762:762): Comienza a enviar el mensaje
+[INFO] 00:38:43:947 Game-watch-client/(762:762): Se mando el mensaje correctamente
+[INFO] 00:38:43:947 Game-watch-client/(762:762): Comienza a recibir el mensaje
+[INFO] 00:46:11:152 Game-watch-client/(1268:1268): soy un log
+
+[INFO] 00:46:11:177 Game-watch-client/(1268:1268): 127.0.0.1
+[INFO] 00:46:11:178 Game-watch-client/(1268:1268): 4444
+[INFO] 00:46:11:181 Game-watch-client/(1268:1268): Comienza a enviar el mensaje
+[INFO] 00:46:11:181 Game-watch-client/(1268:1268): Se mando el mensaje correctamente
+[INFO] 00:46:11:181 Game-watch-client/(1268:1268): Comienza a recibir el mensaje
+[INFO] 00:59:44:698 Game-watch-client/(1512:1512): soy un log
+
+[INFO] 00:59:47:866 Game-watch-client/(1512:1512): 127.0.0.1
+[INFO] 00:59:48:500 Game-watch-client/(1512:1512): 4444
+[INFO] 01:00:04:358 Game-watch-client/(1512:1512): Comienza a enviar el mensaje
+[INFO] 01:01:48:622 Game-watch-client/(1512:1512): Se mando el mensaje correctamente
+[INFO] 01:01:55:27 Game-watch-client/(1512:1512): Comienza a recibir el mensaje
+[INFO] 01:03:21:421 Game-watch-client/(1613:1613): soy un log
+
+[INFO] 01:03:21:444 Game-watch-client/(1613:1613): 127.0.0.1
+[INFO] 01:03:21:444 Game-watch-client/(1613:1613): 4444
+[INFO] 01:03:21:444 Game-watch-client/(1613:1613): Comienza a enviar el mensaje
+[INFO] 01:03:21:445 Game-watch-client/(1613:1613): Se mando el mensaje correctamente
+[INFO] 01:03:21:446 Game-watch-client/(1613:1613): Comienza a recibir el mensaje
+[INFO] 01:14:42:815 Game-watch-client/(1882:1882): soy un log
+
+[INFO] 01:14:42:834 Game-watch-client/(1882:1882): 127.0.0.1
+[INFO] 01:14:42:834 Game-watch-client/(1882:1882): 4444
+[INFO] 01:14:42:834 Game-watch-client/(1882:1882): Comienza a enviar el mensaje
+[INFO] 01:14:42:835 Game-watch-client/(1882:1882): Se mando el mensaje correctamente
+[INFO] 01:14:42:835 Game-watch-client/(1882:1882): Comienza a recibir el mensaje
+[INFO] 01:17:49:307 Game-watch-client/(2001:2001): soy un log
+
+[INFO] 01:17:49:348 Game-watch-client/(2001:2001): 127.0.0.1
+[INFO] 01:17:49:349 Game-watch-client/(2001:2001): 4444
+[INFO] 01:17:49:349 Game-watch-client/(2001:2001): Comienza a enviar el mensaje
+[INFO] 01:17:49:350 Game-watch-client/(2001:2001): Se mando el mensaje correctamente
+[INFO] 01:17:49:350 Game-watch-client/(2001:2001): Comienza a recibir el mensaje
+[INFO] 01:22:42:44 Game-watch-client/(2173:2173): soy un log
+
+[INFO] 01:22:42:63 Game-watch-client/(2173:2173): 127.0.0.1
+[INFO] 01:22:42:63 Game-watch-client/(2173:2173): 4444
+[INFO] 01:22:42:64 Game-watch-client/(2173:2173): Comienza a enviar el mensaje
+[INFO] 01:22:42:64 Game-watch-client/(2173:2173): Se mando el mensaje correctamente
+[INFO] 01:22:42:64 Game-watch-client/(2173:2173): Comienza a recibir el mensaje
+[INFO] 01:24:23:523 Game-watch-client/(2264:2264): soy un log
+
+[INFO] 01:24:23:531 Game-watch-client/(2264:2264): 127.0.0.1
+[INFO] 01:24:23:531 Game-watch-client/(2264:2264): 4444
+[ERROR] 01:24:23:531 Game-watch-client/(2264:2264): error
+[INFO] 01:24:23:531 Game-watch-client/(2264:2264): Comienza a enviar el mensaje
+[INFO] 01:24:31:17 Game-watch-client/(2315:2315): soy un log
+
+[INFO] 01:24:31:18 Game-watch-client/(2315:2315): 127.0.0.1
+[INFO] 01:24:31:18 Game-watch-client/(2315:2315): 4444
+[ERROR] 01:24:31:18 Game-watch-client/(2315:2315): error
+[INFO] 01:24:31:19 Game-watch-client/(2315:2315): Comienza a enviar el mensaje
+[INFO] 01:26:13:141 Game-watch-client/(2668:2668): soy un log
+
+[INFO] 01:26:13:167 Game-watch-client/(2668:2668): 127.0.0.1
+[INFO] 01:26:13:167 Game-watch-client/(2668:2668): 4444
+[INFO] 01:26:13:168 Game-watch-client/(2668:2668): Comienza a enviar el mensaje
+[INFO] 01:26:13:168 Game-watch-client/(2668:2668): Se mando el mensaje correctamente
+[INFO] 01:26:13:168 Game-watch-client/(2668:2668): Comienza a recibir el mensaje
+[INFO] 01:26:47:811 Game-watch-client/(2712:2712): soy un log
+
+[INFO] 01:26:47:811 Game-watch-client/(2712:2712): 127.0.0.1
+[INFO] 01:26:47:811 Game-watch-client/(2712:2712): 4444
+[INFO] 01:26:47:840 Game-watch-client/(2712:2712): Comienza a enviar el mensaje
+[INFO] 01:26:47:840 Game-watch-client/(2712:2712): Se mando el mensaje correctamente
+[INFO] 01:26:47:840 Game-watch-client/(2712:2712): Comienza a recibir el mensaje
+[INFO] 01:33:52:959 Game-watch-client/(3314:3314): soy un log
+
+[INFO] 01:33:52:975 Game-watch-client/(3314:3314): 127.0.0.1
+[INFO] 01:33:52:976 Game-watch-client/(3314:3314): 4444
+[INFO] 01:33:52:976 Game-watch-client/(3314:3314): Comienza a enviar el mensaje
+[INFO] 01:33:52:977 Game-watch-client/(3314:3314): Se mando el mensaje correctamente
+[INFO] 01:33:52:977 Game-watch-client/(3314:3314): Comienza a recibir el mensaje
+[INFO] 01:33:52:989 Game-watch-client/(3314:3314): Se recibio el codigo de operacion correctamente
+[INFO] 01:48:20:130 Game-watch-client/(3659:3659): soy un log
+
+[INFO] 01:48:20:147 Game-watch-client/(3659:3659): 127.0.0.1
+[INFO] 01:48:20:147 Game-watch-client/(3659:3659): 4444
+[INFO] 01:48:20:147 Game-watch-client/(3659:3659): Comienza a enviar el mensaje
+[INFO] 01:48:20:148 Game-watch-client/(3659:3659): Se mando el mensaje correctamente
+[INFO] 01:48:20:148 Game-watch-client/(3659:3659): Comienza a recibir el mensaje
+[INFO] 01:48:20:160 Game-watch-client/(3659:3659): Se recibio el codigo de operacion correctamente
+[INFO] 02:05:20:491 Game-watch-client/(4080:4080): soy un log
+
+[INFO] 02:05:20:508 Game-watch-client/(4080:4080): 127.0.0.1
+[INFO] 02:05:20:508 Game-watch-client/(4080:4080): 4444
+[INFO] 02:05:20:509 Game-watch-client/(4080:4080): Comienza a enviar el mensaje
+[INFO] 02:05:20:510 Game-watch-client/(4080:4080): Se mando el mensaje correctamente
+[INFO] 02:05:20:511 Game-watch-client/(4080:4080): Comienza a recibir el mensaje
+[INFO] 16:05:12:265 Game-watch-client/(4146:4146): soy un log
+
+[INFO] 16:05:12:293 Game-watch-client/(4146:4146): 127.0.0.1
+[INFO] 16:05:12:293 Game-watch-client/(4146:4146): 4444
+[INFO] 16:05:12:294 Game-watch-client/(4146:4146): Comienza a enviar el mensaje
+[INFO] 16:05:12:295 Game-watch-client/(4146:4146): Se mando el mensaje correctamente
+[INFO] 16:05:12:295 Game-watch-client/(4146:4146): Comienza a recibir el mensaje
+[INFO] 16:06:40:391 Game-watch-client/(4222:4222): soy un log
+
+[INFO] 16:06:40:392 Game-watch-client/(4222:4222): 127.0.0.1
+[INFO] 16:06:40:392 Game-watch-client/(4222:4222): 4444
+[INFO] 16:06:40:393 Game-watch-client/(4222:4222): Comienza a enviar el mensaje
+[INFO] 16:06:40:397 Game-watch-client/(4222:4222): Se mando el mensaje correctamente
+[INFO] 16:06:40:397 Game-watch-client/(4222:4222): Comienza a recibir el mensaje
+[INFO] 16:32:28:384 Game-watch-client/(4785:4785): soy un log
+
+[INFO] 16:32:28:406 Game-watch-client/(4785:4785): 127.0.0.1
+[INFO] 16:32:28:406 Game-watch-client/(4785:4785): 4444
+[INFO] 16:32:28:407 Game-watch-client/(4785:4785): Comienza a enviar el mensaje
+[INFO] 16:32:28:407 Game-watch-client/(4785:4785): Se mando el mensaje correctamente
+[INFO] 16:32:28:407 Game-watch-client/(4785:4785): Comienza a recibir el mensaje
+[INFO] 16:41:54:324 Game-watch-client/(5369:5369): soy un log
+
+[INFO] 16:41:54:356 Game-watch-client/(5369:5369): 127.0.0.1
+[INFO] 16:41:54:356 Game-watch-client/(5369:5369): 4444
+[INFO] 16:41:54:359 Game-watch-client/(5369:5369): Comienza a enviar el mensaje
+[INFO] 16:41:54:359 Game-watch-client/(5369:5369): Se mando el mensaje correctamente
+[INFO] 16:41:54:359 Game-watch-client/(5369:5369): Comienza a recibir el mensaje
+[INFO] 16:51:21:918 Game-watch-client/(5606:5606): soy un log
+
+[INFO] 16:51:21:927 Game-watch-client/(5606:5606): 127.0.0.1
+[INFO] 16:51:21:927 Game-watch-client/(5606:5606): 4444
+[INFO] 16:51:21:928 Game-watch-client/(5606:5606): Comienza a enviar el mensaje
+[INFO] 16:51:21:928 Game-watch-client/(5606:5606): Se mando el mensaje correctamente
+[INFO] 16:51:21:928 Game-watch-client/(5606:5606): Comienza a recibir el mensaje
+[INFO] 16:51:21:928 Game-watch-client/(5606:5606): Se recibio el codigo de operacion correctamente
+[INFO] 17:07:10:179 Game-watch-client/(5914:5914): soy un log
+
+[INFO] 17:07:10:235 Game-watch-client/(5914:5914): 127.0.0.1
+[INFO] 17:07:10:235 Game-watch-client/(5914:5914): 4444
+[INFO] 17:07:10:236 Game-watch-client/(5914:5914): Comienza a enviar el mensaje
+[INFO] 17:07:10:236 Game-watch-client/(5914:5914): Se mando el mensaje correctamente
+[INFO] 17:07:10:236 Game-watch-client/(5914:5914): Comienza a recibir el mensaje
+[INFO] 17:07:10:237 Game-watch-client/(5914:5914): Se recibio el codigo de operacion correctamente
+[INFO] 17:09:59:564 Game-watch-client/(6329:6329): soy un log
+
+[INFO] 17:09:59:615 Game-watch-client/(6329:6329): 127.0.0.1
+[INFO] 17:09:59:615 Game-watch-client/(6329:6329): 4444
+[INFO] 17:09:59:615 Game-watch-client/(6329:6329): Comienza a enviar el mensaje
+[INFO] 17:09:59:617 Game-watch-client/(6329:6329): Se mando el mensaje correctamente
+[INFO] 17:09:59:618 Game-watch-client/(6329:6329): Comienza a recibir el mensaje
+[INFO] 17:14:39:758 Game-watch-client/(6734:6734): soy un log
+
+[INFO] 17:14:39:779 Game-watch-client/(6734:6734): 127.0.0.1
+[INFO] 17:14:39:780 Game-watch-client/(6734:6734): 4444
+[INFO] 17:14:39:781 Game-watch-client/(6734:6734): Comienza a enviar el mensaje
+[INFO] 17:14:39:781 Game-watch-client/(6734:6734): Se mando el mensaje correctamente
+[INFO] 17:14:39:781 Game-watch-client/(6734:6734): Comienza a recibir el mensaje
+[INFO] 17:15:27:380 Game-watch-client/(7081:7081): soy un log
+
+[INFO] 17:15:27:392 Game-watch-client/(7081:7081): 127.0.0.1
+[INFO] 17:15:27:392 Game-watch-client/(7081:7081): 4444
+[ERROR] 17:15:27:392 Game-watch-client/(7081:7081): error
+[INFO] 17:15:27:392 Game-watch-client/(7081:7081): Comienza a enviar el mensaje
+[INFO] 17:16:10:662 Game-watch-client/(7419:7419): soy un log
+
+[INFO] 17:16:10:663 Game-watch-client/(7419:7419): 127.0.0.1
+[INFO] 17:16:10:663 Game-watch-client/(7419:7419): 4444
+[INFO] 17:16:10:664 Game-watch-client/(7419:7419): Comienza a enviar el mensaje
+[INFO] 17:16:10:664 Game-watch-client/(7419:7419): Se mando el mensaje correctamente
+[INFO] 17:16:10:664 Game-watch-client/(7419:7419): Comienza a recibir el mensaje
+[INFO] 17:16:10:664 Game-watch-client/(7419:7419): Se recibio el codigo de operacion correctamente
+[INFO] 17:18:02:719 Game-watch-client/(7536:7536): soy un log
+
+[INFO] 17:18:02:720 Game-watch-client/(7536:7536): 127.0.0.1
+[INFO] 17:18:02:720 Game-watch-client/(7536:7536): 4444
+[INFO] 17:18:02:724 Game-watch-client/(7536:7536): Comienza a enviar el mensaje
+[INFO] 17:18:02:724 Game-watch-client/(7536:7536): Se mando el mensaje correctamente
+[INFO] 17:18:02:724 Game-watch-client/(7536:7536): Comienza a recibir el mensaje
+[INFO] 17:31:02:63 Game-watch-client/(7536:7536): Se recibio el codigo de operacion correctamente
+[INFO] 17:32:23:595 Game-watch-client/(8027:8027): soy un log
+
+[INFO] 17:32:23:638 Game-watch-client/(8027:8027): 127.0.0.1
+[INFO] 17:32:23:638 Game-watch-client/(8027:8027): 4444
+[INFO] 17:32:23:644 Game-watch-client/(8027:8027): Comienza a enviar el mensaje
+[INFO] 17:32:23:645 Game-watch-client/(8027:8027): Se mando el mensaje correctamente
+[INFO] 17:32:23:645 Game-watch-client/(8027:8027): Comienza a recibir el mensaje
+[INFO] 17:32:52:67 Game-watch-client/(8027:8027): Se recibio el codigo de operacion correctamente
+[INFO] 17:33:45:127 Game-watch-client/(8397:8397): soy un log
+
+[INFO] 17:33:45:128 Game-watch-client/(8397:8397): 127.0.0.1
+[INFO] 17:33:45:128 Game-watch-client/(8397:8397): 4444
+[INFO] 17:33:45:170 Game-watch-client/(8397:8397): Comienza a enviar el mensaje
+[INFO] 17:33:45:170 Game-watch-client/(8397:8397): Se mando el mensaje correctamente
+[INFO] 17:33:45:174 Game-watch-client/(8397:8397): Comienza a recibir el mensaje
+[INFO] 17:39:57:331 Game-watch-client/(8397:8397): Se recibio el codigo de operacion correctamente
+[INFO] 17:43:15:316 Game-watch-client/(8843:8843): soy un log
+
+[INFO] 17:43:15:346 Game-watch-client/(8843:8843): 127.0.0.1
+[INFO] 17:43:15:346 Game-watch-client/(8843:8843): 4444
+[INFO] 17:43:15:347 Game-watch-client/(8843:8843): Comienza a enviar el mensaje
+[INFO] 17:43:15:347 Game-watch-client/(8843:8843): Se mando el mensaje correctamente
+[INFO] 17:43:15:347 Game-watch-client/(8843:8843): Comienza a recibir el mensaje
+[INFO] 17:43:15:347 Game-watch-client/(8843:8843): Se recibio el codigo de operacion correctamente
+[INFO] 17:44:22:986 Game-watch-client/(8928:8928): soy un log
+
+[INFO] 17:44:22:988 Game-watch-client/(8928:8928): 127.0.0.1
+[INFO] 17:44:22:988 Game-watch-client/(8928:8928): 4444
+[INFO] 17:44:22:989 Game-watch-client/(8928:8928): Comienza a enviar el mensaje
+[INFO] 17:44:22:989 Game-watch-client/(8928:8928): Se mando el mensaje correctamente
+[INFO] 17:44:34:261 Game-watch-client/(8928:8928): Comienza a recibir el mensaje
+[INFO] 17:48:29:345 Game-watch-client/(9037:9037): soy un log
+
+[INFO] 17:48:29:352 Game-watch-client/(9037:9037): 127.0.0.1
+[INFO] 17:48:29:352 Game-watch-client/(9037:9037): 4444
+[INFO] 17:48:29:352 Game-watch-client/(9037:9037): Comienza a enviar el mensaje
+[INFO] 17:48:29:352 Game-watch-client/(9037:9037): Se mando el mensaje correctamente
+[INFO] 17:48:34:667 Game-watch-client/(9037:9037): Comienza a recibir el mensaje
+[INFO] 17:48:58:789 Game-watch-client/(9037:9037): Se recibio el codigo de operacion correctamente
+[INFO] 17:49:03:919 Game-watch-client/(9037:9037): Se recibio el tamanio del buffer correctamente
+[INFO] 17:49:13:324 Game-watch-client/(9037:9037): Se recibio el stream correctamente
+[INFO] 17:52:05:36 Game-watch-client/(9037:9037): Hola12
+[INFO] 18:12:40:966 Game-watch-client/(9170:9170): soy un log
+
+[INFO] 18:12:40:985 Game-watch-client/(9170:9170): 127.0.0.1
+[INFO] 18:12:40:985 Game-watch-client/(9170:9170): 4444
+[ERROR] 18:12:40:996 Game-watch-client/(9170:9170): error
+[INFO] 18:12:40:996 Game-watch-client/(9170:9170): Comienza a enviar el mensaje
+[INFO] 18:13:38:147 Game-watch-client/(9487:9487): soy un log
+
+[INFO] 18:13:38:196 Game-watch-client/(9487:9487): 127.0.0.1
+[INFO] 18:13:38:196 Game-watch-client/(9487:9487): 4444
+[INFO] 18:13:38:197 Game-watch-client/(9487:9487): Comienza a enviar el mensaje
+[INFO] 18:13:38:197 Game-watch-client/(9487:9487): Se mando el mensaje correctamente
+[INFO] 18:13:38:197 Game-watch-client/(9487:9487): Comienza a recibir el mensaje
+[INFO] 18:13:38:198 Game-watch-client/(9487:9487): Se recibio el codigo de operacion correctamente
+[INFO] 18:13:38:199 Game-watch-client/(9487:9487): Se recibio el tamanio del buffer correctamente
+[INFO] 18:13:38:199 Game-watch-client/(9487:9487): Se recibio el stream correctamente
+[INFO] 18:13:38:199 Game-watch-client/(9487:9487): Hola12

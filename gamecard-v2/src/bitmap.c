@@ -14,19 +14,27 @@ void crear_bitmap(){
 	if(bitmap_file_descriptor == -1){
 		log_error(nuestro_log,"Error al abrir el bitmap");
 		close(bitmap_file_descriptor);
+<<<<<<< HEAD
 		//free(path_bitmap);
+=======
+		free(path_bitmap); //Agregue 1 free en bitmap.c linea 17 y anda
+>>>>>>> develop
 		return;
 	}
 
 	char* contenido_del_bitmap = mmap(NULL,bloques/8+1, PROT_READ | PROT_WRITE,MAP_SHARED,bitmap_file_descriptor,0);
 	bitmap = bitarray_create_with_mode(contenido_del_bitmap,bloques/8+1, LSB_FIRST);
 
+<<<<<<< HEAD
 	//free(path_bitmap);
 /*
 	for(int i = 0; i< bloques ; i++){
 		bitarray_set_bit(bitmap,i);
 	}
 */
+=======
+	free(path_bitmap);
+>>>>>>> develop
 	msync(bitmap->bitarray,bitmap_file_descriptor,MS_SYNC);
 
 	log_info(nuestro_log,"TERMINE DE CREAR BITMAP");
@@ -47,6 +55,7 @@ int obtener_nuevo_bloque_libre(){
 	int bloques = obtener_blocks();
 	int bloque_aux = ultimo_bloque_asignado;
 	int i;
+<<<<<<< HEAD
 	for(i = ultimo_bloque_asignado; i < bloques; i++){
 		if(!bitarray_test_bit(bitmap,bloque_aux)){
 			//bitarray_set_bit(bitmap,bloque_aux);
@@ -92,3 +101,27 @@ int obtener_nuevo_bloque_libre(){
 }
 
 
+=======
+
+	for(i = 0; i < bloques; i++){
+		if(!bitarray_test_bit(bitmap,i)){
+			msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
+			pthread_mutex_unlock(&Mutex_Bitmap);
+			return i;
+		}
+		//else bloque_aux++;//vas al proximo bloque
+	}
+
+	flag_bloques_libres = 0; // 0 si no hay libres, 1 si los hay
+	pthread_mutex_unlock(&Mutex_Bitmap);
+	return -1; // salio del while, por lo que no hay bloque libres/
+}
+
+void destruir_bitmap(){
+	msync(bitmap->bitarray, bitmap_file_descriptor, MS_SYNC);
+	bitarray_destroy(bitmap);
+}
+
+
+
+>>>>>>> develop
