@@ -126,7 +126,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\n
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,3|2]\n
 POKEMON_ENTRENADORES=[Pikachu]\n
 OBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\n
 TIEMPO_RECONEXION=30\n
@@ -155,7 +155,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\n
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,3|2]\n
 POKEMON_ENTRENADORES=[Pikachu]\n
 OBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\n
 TIEMPO_RECONEXION=30\n
@@ -184,7 +184,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\n
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,3|2]\n
 POKEMON_ENTRENADORES=[Pikachu]\n
 OBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\n
 TIEMPO_RECONEXION=30\n
@@ -213,7 +213,7 @@ if test -e team.config; then
 	rm team.config
 fi
 
-echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,2|2]\n
+echo -e "POSICIONES_ENTRENADORES=[1|3,2|3,3|2]\n
 POKEMON_ENTRENADORES=[Pikachu]\n
 OBJETIVOS_ENTRENADORES=[Pikachu|Squirtle,Pikachu|Gengar,Squirtle|Onix]\n
 TIEMPO_RECONEXION=30\n

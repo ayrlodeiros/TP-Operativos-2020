@@ -57,7 +57,16 @@ cd Documentos/tp-2020-1c-C-aprueba-stress
 
 #INICIO DE GAMEBOY
 
-cd gameboy/src/resources/
+#CREO LOS GAMEBOYS
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
+
+cp -r gameboy/ gameboy-team-1-stress
+cp -r gameboy/ gameboy-team-2-stress
+
+#CONFIGURO GAMEBOYS
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-1-stress/src/resources/
 
 if test -e gameBoy.config; then
 	rm gameBoy.config
@@ -70,8 +79,28 @@ PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
 ID_MODULO=1\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy/src/resources/log_gameBoy.txt\n
-MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-1-stress/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-1-stress/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+
+cd ../../Debug
+make clean
+make all
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-2-stress/src/resources/
+
+if test -e gameBoy.config; then
+	rm gameBoy.config
+fi
+#REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
+echo -e "IP_BROKER=127.0.0.1\n
+IP_TEAM=127.0.0.2\n
+IP_GAMECARD=127.0.0.3\n
+PUERTO_BROKER=4444\n
+PUERTO_TEAM=5003\n
+PUERTO_GAMECARD=5001\n
+ID_MODULO=2\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-2-stress/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gameboy-team-2-stress/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
 cd ../../Debug
 make clean
@@ -213,7 +242,7 @@ cd ../../Debug
 make clean
 make all
 
-#Configuro team con RR -> Quantum = 2
+#Configuro team con RR -> Quantum = 1
 
 cd ../../../team-v2-RR-stress/src/resources/
 
@@ -236,7 +265,7 @@ LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-stress/sr
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-stress/src/resources/nuestro_log_team_RR.txt\n
 ID_MODULO=16\n
 IP_TEAM=127.0.0.2\n
-PUERTO_TEAM=5002" >> team.config
+PUERTO_TEAM=5003" >> team.config
 
 cd ../../Debug
 make clean
@@ -294,7 +323,7 @@ LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-CD-stres
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-CD-stress/src/resources/nuestro_log_team_SJF-CD.txt\n
 ID_MODULO=18\n
 IP_TEAM=127.0.0.2\n
-PUERTO_TEAM=5002" >> team.config
+PUERTO_TEAM=5003" >> team.config
 
 cd ../../Debug
 make clean
