@@ -255,8 +255,8 @@ void liberar_particion();
 int algoritmo_reemplazo_fifo(void);
 int algoritmo_reemplazo_lru(void);
 void consolidar(int pos_particion);
-bool particion_libre_a_la_izquierda(int posicion);
-bool particion_libre_a_la_derecha(int posicion);
+bool particion_libre_a_la_izquierda(int posicion,int inicio_part_liberada);
+bool particion_libre_a_la_derecha(int posicion,int fin_part_liberada);
 int buscar_particion_libre(int tamanio);
 int algoritmo_best_fit(int tamanio);
 int algoritmo_first_fit(int tamanio);
@@ -291,5 +291,6 @@ void actualizar_ultima_vez_bs(t_mensaje* mensaje);
 
 void int_handler(int signal);
 void iniciar_sigint_handler(void);
+void dump_solo_particion(void);
 
 #endif //CONSTRUCTOR_H_
