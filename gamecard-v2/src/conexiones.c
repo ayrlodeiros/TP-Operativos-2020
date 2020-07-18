@@ -222,7 +222,7 @@ void procesar_mensaje_new(int hubo_error, int socket_gameboy, int id_mensaje) {
 	int posicion_x;
 	int posicion_y;
 	int cantidad;
-	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon + 1, MSG_WAITALL) == -1) {
+	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon+1, MSG_WAITALL) == -1) {
 		hubo_error = 1;
 		log_info(nuestro_log, "No se pudo recibir el nombre del pokemon");
 	}
@@ -265,7 +265,7 @@ void procesar_mensaje_catch(int hubo_error, int socket_gameboy, int id_mensaje) 
 	char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
 	int posicion_x;
 	int posicion_y;
-	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon + 1, MSG_WAITALL) == -1) {
+	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon+1, MSG_WAITALL) == -1) {
 		hubo_error = 1;
 		log_info(nuestro_log, "No se pudo recibir el nombre del pokemon");
 	}
@@ -468,8 +468,8 @@ void enviar_mensaje_appeared(int id_mensaje, int largo_nombre_pokemon, char* nom
 		int offset = 0;
 		memcpy(stream + offset,&largo_nombre_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
-		memcpy(stream + offset,nombre_pokemon, (largo_nombre_pokemon+1));
-		offset += (largo_nombre_pokemon+1);
+		memcpy(stream + offset,nombre_pokemon, largo_nombre_pokemon+1);
+		offset += largo_nombre_pokemon+1;
 		memcpy(stream + offset,&posicion_x, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
 		memcpy(stream + offset,&posicion_y, sizeof(uint32_t));
@@ -668,7 +668,7 @@ void enviar_mensaje_localized(int id_mensaje, int largo_nombre_pokemon, char* no
 		memcpy(stream + offset,&largo_nombre_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
 		memcpy(stream + offset,nombre_pokemon, (largo_nombre_pokemon+1));
-		offset += (largo_nombre_pokemon+1);
+		offset += largo_nombre_pokemon+1;
 		memcpy(stream + offset,&cantidad_de_posiciones, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
 		for(int i = 0; i < cantidad_de_posiciones; i++) {
@@ -689,7 +689,7 @@ void enviar_mensaje_localized(int id_mensaje, int largo_nombre_pokemon, char* no
 		void* a_enviar = serializar_paquete(paquete, bytes);
 
 		if(send(socket_localized, a_enviar, bytes ,0) > 0){
-			log_info(nuestro_log, "Se realizo el envio del LOCALIZED de %s correctamente", nombre_pokemon);
+			log_info(nuestro_log, "Se realizo el envio del LOCALIZED de %s de cantidad %d correctamente", nombre_pokemon, cantidad_de_posiciones);
 
 			int id_respuesta;
 			if(recv(socket_localized, &id_respuesta, sizeof(uint32_t), 0) > 0) {

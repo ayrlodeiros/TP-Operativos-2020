@@ -183,10 +183,10 @@ void recibir_mensaje_de_gameboy(int socket_gameboy) {
 		log_info(nuestro_log, "No se puedo recibir el largo del nombre del pokemon");
 	}
 
-	char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+	char* nombre_pokemon = malloc(largo_nombre_pokemon+1);
 	int posicionX;
 	int posicionY;
-	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon + 1, MSG_WAITALL) == -1) {
+	if(recv(socket_gameboy, nombre_pokemon, largo_nombre_pokemon+1, MSG_WAITALL) == -1) {
 		hubo_error = 1;
 		log_info(nuestro_log, "No se puedo recibir el nombre del pokemon");
 	}
@@ -198,7 +198,6 @@ void recibir_mensaje_de_gameboy(int socket_gameboy) {
 		hubo_error = 1;
 		log_info(nuestro_log, "No se puedo recibir la posicion en Y");
 	}
-
 	if(hubo_error == 0) {
 		manejar_aparicion_de_pokemon(nombre_pokemon, posicionX, posicionY);
 	} else {
@@ -394,6 +393,7 @@ void esperar_mensaje_localized() {
 				char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
 				memcpy(nombre_pokemon, payload+offset, largo_nombre_pokemon+1);
 				offset+=(largo_nombre_pokemon+1);
+				log_info(nuestro_log, "El nombre del LOCALIZED es %s", nombre_pokemon);
 
 				if(pokemon_ya_fue_recibido(nombre_pokemon) == 1) {
 					log_info(nuestro_log, "El LOCALIZED de %s no será tenido en cuenta porque, previamente, ya se recibio un mensaje de su aparicion");
@@ -404,6 +404,7 @@ void esperar_mensaje_localized() {
 					memcpy(&cantidad, payload+offset, sizeof(uint32_t));
 					offset+=sizeof(uint32_t);
 
+					log_info(nuestro_log, "La cantidad del LOCALIZED es %d", cantidad);
 					if(cantidad > 0) {
 						actualizar_pokemon_como_recibido(nombre_pokemon);
 
@@ -1014,7 +1015,7 @@ void realizar_get(char* key, void* value) {
 			int offset = 0;
 			memcpy(stream + offset,&largo_key, sizeof(uint32_t));
 			offset+=sizeof(uint32_t);
-			memcpy(stream + offset,key, (largo_key + 1));
+			memcpy(stream + offset,key, (largo_key+1));
 			buffer->stream = stream;
 
 			//CREO EL PAQUETE CON EL CONTENIDO DE LO QUE VOY A ENVIAR
@@ -1083,8 +1084,8 @@ void catch_pokemon(entrenador* entrenador) {
 		int offset = 0;
 		memcpy(stream + offset,&tamanio_char_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
-		memcpy(stream + offset,entrenador->pokemon_en_busqueda->nombre, (tamanio_char_pokemon+1));
-		offset += (tamanio_char_pokemon+1);
+		memcpy(stream + offset,entrenador->pokemon_en_busqueda->nombre, tamanio_char_pokemon+1);
+		offset += tamanio_char_pokemon+1;
 		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_x), sizeof(uint32_t));
 		offset += sizeof(uint32_t);
 		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_y), sizeof(uint32_t));

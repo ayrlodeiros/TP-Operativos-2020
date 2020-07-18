@@ -21,19 +21,19 @@ int main(void)
 
 void iniciar_broker(){
 
-	printf("-----------------Iniciando archivo config-----------------\n");
+	printf("-----------------Levantando Broker-----------------\n");
 	iniciar_config();
 	logger = log_create(leer_log_file(),"broker",false,LOG_LEVEL_INFO);
-	mi_log = log_create(leer_nuestro_log_file(),"broker",true,LOG_LEVEL_INFO);
+	logger = log_create(leer_nuestro_log_file(),"broker",true,LOG_LEVEL_INFO);
 	dump = log_create(leer_path_archivo_dump(),"dump",false,LOG_LEVEL_INFO);
 	iniciar_funcionalidades();
 }
 
 void terminar_broker(){
-	printf("-----------------Destruyendo archivo config-----------------\n");
+	printf("-----------------Cerrando Broker-----------------\n");
 	destruir_config();
 	liberar_message_queues();
 	log_destroy(logger);
-	log_destroy(mi_log);
+	log_destroy(logger);
 	log_destroy(dump);
 }

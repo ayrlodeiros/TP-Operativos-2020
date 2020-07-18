@@ -1,0 +1,293 @@
+[INFO] 12:06:40:738 gamecard/(6488:6488): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 12:06:40:738 gamecard/(6488:6488): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 12:45:34:528 gamecard/(8736:8736): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 12:45:34:529 gamecard/(8736:8736): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 12:45:34:529 gamecard/(8736:8736): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 12:45:34:599 gamecard/(8736:8738): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:45:34:600 gamecard/(8736:8738): Intento de conexion con el broker exitosa.
+[INFO] 12:45:55:901 gamecard/(8736:8738): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:45:55:901 gamecard/(8736:8738): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:47:27:203 gamecard/(8906:8906): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 12:47:27:203 gamecard/(8906:8906): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 12:47:27:203 gamecard/(8906:8906): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 12:47:27:357 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:47:27:357 gamecard/(8906:8910): Intento de conexion con el broker exitosa.
+[INFO] 12:48:28:918 gamecard/(8906:8984): No se encontro al Pokemon
+[INFO] 12:48:28:925 gamecard/(8906:8986): No se encontro al Pokemon
+[INFO] 12:48:28:927 gamecard/(8906:8988): No se encontro al Pokemon
+[INFO] 12:48:28:928 gamecard/(8906:8990): No se encontro al Pokemon
+[INFO] 12:48:29:569 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:29:570 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:48:39:570 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:39:570 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:48:49:571 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:49:571 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:48:59:572 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:59:572 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:09:572 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:09:572 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:19:573 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:19:573 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:29:573 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:29:573 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:39:575 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:39:575 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:49:576 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:49:576 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:49:59:576 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:49:59:576 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:50:09:577 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:50:09:577 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:50:19:578 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:50:19:578 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:50:29:578 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:50:29:578 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:50:39:579 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:50:39:579 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:50:49:579 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:50:49:579 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:50:59:580 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:50:59:580 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:51:09:580 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:51:09:581 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:51:19:582 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:51:19:582 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:51:29:582 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:51:29:582 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:51:39:583 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:51:39:583 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:51:49:593 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:51:49:593 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:51:59:594 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:51:59:594 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:52:09:595 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:52:09:595 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:52:19:595 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:52:19:596 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:52:29:597 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:52:29:597 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:52:39:601 gamecard/(8906:8910): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:52:39:601 gamecard/(8906:8910): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:53:26:531 gamecard/(9254:9254): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 12:53:26:531 gamecard/(9254:9254): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 12:53:26:531 gamecard/(9254:9254): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 12:53:26:575 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:53:26:576 gamecard/(9254:9256): Intento de conexion con el broker exitosa.
+[INFO] 12:53:39:139 gamecard/(9254:9322): No se encontro al Pokemon
+[INFO] 12:53:39:139 gamecard/(9254:9325): No se encontro al Pokemon
+[INFO] 12:53:39:139 gamecard/(9254:9328): No se encontro al Pokemon
+[INFO] 12:53:39:140 gamecard/(9254:9330): No se encontro al Pokemon
+[INFO] 12:53:39:805 gamecard/(9254:9322): No se pudo recibir el id de respuesta del mensaje LOCALIZED de Pikachu1
+[INFO] 12:53:39:808 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:53:39:808 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:53:49:809 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:53:49:809 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:53:59:809 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:53:59:810 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:09:813 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:09:813 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:19:814 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:19:814 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:29:815 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:29:815 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:39:816 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:39:816 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:49:817 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:49:817 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:59:818 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:59:818 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:55:09:818 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:55:09:818 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:55:19:819 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:55:19:819 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:55:29:819 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:55:29:819 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:55:39:820 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:55:39:820 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:55:49:821 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:55:49:821 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:55:59:822 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:55:59:822 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:56:09:823 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:56:09:823 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:56:19:824 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:56:19:824 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:56:29:825 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:56:29:825 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:56:39:826 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:56:39:827 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:56:49:827 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:56:49:827 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:56:59:827 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:56:59:828 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:57:09:828 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:57:09:828 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:57:19:828 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:57:19:829 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:57:29:829 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:57:29:829 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:57:39:829 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:57:39:829 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:57:49:830 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:57:49:831 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:57:59:831 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:57:59:831 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:58:09:832 gamecard/(9254:9256): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:58:09:832 gamecard/(9254:9256): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:58:26:460 gamecard/(9491:9491): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 12:58:26:460 gamecard/(9491:9491): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 12:58:26:460 gamecard/(9491:9491): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 12:58:26:505 gamecard/(9491:9493): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:58:26:506 gamecard/(9491:9493): Intento de conexion con el broker exitosa.
+[INFO] 12:58:46:599 gamecard/(9491:9560): No se encontro al Pokemon
+[INFO] 12:58:46:601 gamecard/(9491:9563): No se encontro al Pokemon
+[INFO] 12:58:46:604 gamecard/(9491:9565): No se encontro al Pokemon
+[INFO] 12:58:46:604 gamecard/(9491:9567): No se encontro al Pokemon
+[INFO] 13:04:20:586 gamecard/(9491:9493): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:04:20:587 gamecard/(9491:9493): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:05:50:952 gamecard/(10124:10124): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:05:50:952 gamecard/(10124:10124): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:05:50:953 gamecard/(10124:10124): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:05:51:163 gamecard/(10124:10128): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:05:51:163 gamecard/(10124:10128): Intento de conexion con el broker exitosa.
+[INFO] 13:06:09:395 gamecard/(10124:10193): No se encontro al Pokemon
+[INFO] 13:06:09:396 gamecard/(10124:10195): No se encontro al Pokemon
+[INFO] 13:06:09:396 gamecard/(10124:10197): No se encontro al Pokemon
+[INFO] 13:06:09:396 gamecard/(10124:10199): No se encontro al Pokemon
+[INFO] 13:10:32:987 gamecard/(10424:10424): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:10:32:987 gamecard/(10424:10424): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:10:32:987 gamecard/(10424:10424): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:10:33:69 gamecard/(10424:10428): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:10:33:70 gamecard/(10424:10428): Intento de conexion con el broker exitosa.
+[INFO] 13:10:39:90 gamecard/(10424:10492): No se encontro al Pokemon
+[INFO] 13:10:39:97 gamecard/(10424:10495): No se encontro al Pokemon
+[INFO] 13:10:39:97 gamecard/(10424:10497): No se encontro al Pokemon
+[INFO] 13:10:39:98 gamecard/(10424:10499): No se encontro al Pokemon
+[ERROR] 13:10:59:170 gamecard/(10424:10527): No existe ese pokemon
+[INFO] 13:15:31:594 gamecard/(10424:10428): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:15:31:594 gamecard/(10424:10428): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:16:50:311 gamecard/(11150:11150): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:16:50:312 gamecard/(11150:11150): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:16:50:312 gamecard/(11150:11150): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:16:50:379 gamecard/(11150:11154): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:16:50:380 gamecard/(11150:11154): Intento de conexion con el broker exitosa.
+[INFO] 13:18:04:174 gamecard/(11150:11223): No se encontro al Pokemon
+[INFO] 13:18:04:175 gamecard/(11150:11226): No se encontro al Pokemon
+[INFO] 13:18:04:189 gamecard/(11150:11227): No se encontro al Pokemon
+[INFO] 13:18:04:193 gamecard/(11150:11230): No se encontro al Pokemon
+[ERROR] 13:18:24:229 gamecard/(11150:11265): No existe ese pokemon
+[INFO] 13:21:00:800 gamecard/(11470:11470): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:21:00:801 gamecard/(11470:11470): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:21:00:801 gamecard/(11470:11470): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:21:00:845 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:21:00:845 gamecard/(11470:11472): Intento de conexion con el broker exitosa.
+[INFO] 13:24:03:754 gamecard/(11470:11602): No se encontro al Pokemon
+[INFO] 13:24:03:762 gamecard/(11470:11604): No se encontro al Pokemon
+[INFO] 13:24:03:762 gamecard/(11470:11606): No se encontro al Pokemon
+[INFO] 13:24:03:762 gamecard/(11470:11608): No se encontro al Pokemon
+[ERROR] 13:24:23:824 gamecard/(11470:11642): No existe ese pokemon
+[INFO] 13:25:13:245 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:25:13:246 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:25:23:247 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:25:23:247 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:25:33:247 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:25:33:247 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:25:43:248 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:25:43:248 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:25:53:251 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:25:53:251 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:26:03:253 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:26:03:253 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:26:13:257 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:26:13:257 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:26:23:258 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:26:23:258 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:26:33:259 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:26:33:259 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:26:43:259 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:26:43:260 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:26:53:260 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:26:53:260 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:27:03:261 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:27:03:261 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:27:13:261 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:27:13:261 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:27:23:262 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:27:23:262 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:27:33:263 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:27:33:263 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:27:43:264 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:27:43:264 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:27:53:266 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:27:53:266 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:28:03:266 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:28:03:266 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:28:13:269 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:28:13:269 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:28:23:270 gamecard/(11470:11472): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:28:23:270 gamecard/(11470:11472): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:28:34:847 gamecard/(11981:11981): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:28:34:847 gamecard/(11981:11981): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:28:34:847 gamecard/(11981:11981): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:28:34:890 gamecard/(11981:11983): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:28:34:891 gamecard/(11981:11983): Intento de conexion con el broker exitosa.
+[INFO] 13:29:05:535 gamecard/(11981:12088): No se encontro al Pokemon
+[INFO] 13:29:05:538 gamecard/(11981:12091): No se encontro al Pokemon
+[INFO] 13:29:05:550 gamecard/(11981:12093): No se encontro al Pokemon
+[INFO] 13:29:05:558 gamecard/(11981:12096): No se encontro al Pokemon
+[ERROR] 13:29:25:616 gamecard/(11981:12124): No existe ese pokemon
+[INFO] 13:35:08:83 gamecard/(11981:11983): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:35:08:83 gamecard/(11981:11983): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:36:16:797 gamecard/(13360:13360): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:36:16:797 gamecard/(13360:13360): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:36:16:798 gamecard/(13360:13360): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:36:16:869 gamecard/(13360:13364): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:36:16:869 gamecard/(13360:13364): Intento de conexion con el broker exitosa.
+[INFO] 13:36:35:790 gamecard/(13360:13427): No se encontro al Pokemon
+[INFO] 13:36:35:791 gamecard/(13360:13429): No se encontro al Pokemon
+[INFO] 13:36:35:791 gamecard/(13360:13431): No se encontro al Pokemon
+[INFO] 13:36:35:792 gamecard/(13360:13433): No se encontro al Pokemon
+[ERROR] 13:36:55:835 gamecard/(13360:13462): No existe ese pokemon
+[ERROR] 13:37:55:935 gamecard/(13360:13491): No existe ese pokemon
+[INFO] 13:41:27:37 gamecard/(13702:13702): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:41:27:37 gamecard/(13702:13702): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:41:27:37 gamecard/(13702:13702): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:41:27:97 gamecard/(13702:13705): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:41:27:97 gamecard/(13702:13705): Intento de conexion con el broker exitosa.
+[INFO] 13:41:34:173 gamecard/(13702:13778): No se encontro al Pokemon
+[INFO] 13:41:34:174 gamecard/(13702:13781): No se encontro al Pokemon
+[INFO] 13:41:34:175 gamecard/(13702:13783): No se encontro al Pokemon
+[INFO] 13:41:34:189 gamecard/(13702:13785): No se encontro al Pokemon
+[ERROR] 13:41:54:229 gamecard/(13702:13812): No existe ese pokemon
+[ERROR] 13:42:54:327 gamecard/(13702:13853): No existe ese pokemon
+[INFO] 13:44:02:975 gamecard/(13702:13705): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:44:02:976 gamecard/(13702:13705): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:44:12:977 gamecard/(13702:13705): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:44:12:977 gamecard/(13702:13705): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:45:23:2 gamecard/(14840:14840): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 13:45:23:2 gamecard/(14840:14840): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 13:45:23:2 gamecard/(14840:14840): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 13:45:24:61 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:45:24:68 gamecard/(14840:14844): Intento de conexion con el broker exitosa.
+[INFO] 13:45:32:80 gamecard/(14840:14907): No se encontro al Pokemon
+[INFO] 13:45:32:84 gamecard/(14840:14910): No se encontro al Pokemon
+[INFO] 13:45:32:85 gamecard/(14840:14912): No se encontro al Pokemon
+[INFO] 13:45:32:86 gamecard/(14840:14915): No se encontro al Pokemon
+[ERROR] 13:45:52:149 gamecard/(14840:14941): No existe ese pokemon
+[ERROR] 13:46:52:241 gamecard/(14840:14961): No existe ese pokemon
+[ERROR] 13:58:22:187 gamecard/(14840:15858): No existe ese pokemon
+[ERROR] 13:58:22:199 gamecard/(14840:15867): No existe ese pokemon
+[INFO] 13:58:33:271 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:58:33:271 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:58:43:273 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:58:43:273 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:58:53:277 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:58:53:277 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:59:03:278 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:59:03:279 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:59:13:279 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:59:13:279 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:59:23:279 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:59:23:279 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:59:33:280 gamecard/(14840:14844): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:59:33:280 gamecard/(14840:14844): Intento de conexion con el broker fallida. Se volvera a intentar.
