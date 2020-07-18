@@ -56,3 +56,136 @@
 [INFO] 12:40:06:183 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
 [INFO] 12:40:36:183 team/(7603:7605): 10. Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 12:40:36:183 team/(7603:7605): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:48:28:912 team/(8971:8973): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:28:913 team/(8971:8973): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:48:29:569 team/(8971:8973): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:29:569 team/(8971:8973): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:48:59:570 team/(8971:8973): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:48:59:570 team/(8971:8973): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:53:39:136 team/(9309:9311): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:53:39:138 team/(9309:9311): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:53:39:808 team/(9309:9311): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:53:39:808 team/(9309:9311): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:09:813 team/(9309:9311): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:09:813 team/(9309:9311): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:54:39:814 team/(9309:9311): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:54:39:814 team/(9309:9311): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 12:58:46:585 team/(9547:9549): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 12:58:46:640 team/(9547:9549): 11. Intento de conexion con el broker exitosa.
+[INFO] 12:58:46:657 team/(9547:9586): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:06:09:388 team/(10179:10181): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:06:09:388 team/(10179:10181): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:06:09:427 team/(10179:10214): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:06:14:432 team/(10179:10221): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:06:19:437 team/(10179:10222): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:06:24:445 team/(10179:10223): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:10:39:85 team/(10479:10481): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:10:39:89 team/(10479:10481): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:10:39:130 team/(10479:10518): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:10:44:134 team/(10479:10520): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:10:49:137 team/(10479:10521): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:10:54:145 team/(10479:10522): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:10:59:163 team/(10479:10526): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:11:04:166 team/(10479:10531): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:11:09:173 team/(10479:10532): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:11:14:175 team/(10479:10536): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:11:19:178 team/(10479:10537): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:11:24:182 team/(10479:10538): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:11:29:185 team/(10479:10539): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:11:34:188 team/(10479:10540): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:11:39:191 team/(10479:10541): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:11:44:197 team/(10479:10542): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:11:49:200 team/(10479:10543): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:18:04:170 team/(11210:11212): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:18:04:170 team/(11210:11212): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:18:04:205 team/(11210:11245): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:18:09:209 team/(11210:11250): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:18:14:217 team/(11210:11258): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:18:19:221 team/(11210:11259): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:18:24:226 team/(11210:11264): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:18:29:231 team/(11210:11269): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:18:34:243 team/(11210:11270): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:18:39:246 team/(11210:11271): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:18:44:249 team/(11210:11273): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:24:03:753 team/(11588:11590): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:24:03:753 team/(11588:11590): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:24:03:794 team/(11588:11625): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:24:08:796 team/(11588:11628): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:24:13:802 team/(11588:11636): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:24:18:813 team/(11588:11637): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:24:23:822 team/(11588:11641): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:24:28:825 team/(11588:11646): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:24:33:829 team/(11588:11647): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:29:05:521 team/(12075:12077): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:29:05:535 team/(12075:12077): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:29:05:581 team/(12075:12114): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:29:10:584 team/(12075:12115): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:29:15:587 team/(12075:12118): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:29:20:590 team/(12075:12119): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:29:25:614 team/(12075:12123): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:29:30:620 team/(12075:12128): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:29:35:625 team/(12075:12129): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:29:40:631 team/(12075:12130): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:29:45:636 team/(12075:12131): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:36:35:789 team/(13414:13416): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:36:35:789 team/(13414:13416): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:36:35:815 team/(13414:13453): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:36:40:819 team/(13414:13454): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:36:45:822 team/(13414:13456): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:36:50:825 team/(13414:13457): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:36:55:833 team/(13414:13461): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:37:00:851 team/(13414:13466): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:37:05:855 team/(13414:13467): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:37:10:859 team/(13414:13468): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:37:15:869 team/(13414:13471): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:37:20:878 team/(13414:13472): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:37:25:881 team/(13414:13476): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:37:30:889 team/(13414:13477): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:37:35:892 team/(13414:13484): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:37:40:898 team/(13414:13485): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:37:45:905 team/(13414:13486): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:37:50:911 team/(13414:13487): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 13:41:34:172 team/(13765:13767): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:41:34:172 team/(13765:13767): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:41:34:207 team/(13765:13801): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:41:39:210 team/(13765:13805): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:41:44:213 team/(13765:13806): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:41:49:217 team/(13765:13807): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:41:54:227 team/(13765:13811): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:41:59:237 team/(13765:13816): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:42:04:247 team/(13765:13819): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:42:09:252 team/(13765:13821): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:42:14:261 team/(13765:13826): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:42:19:266 team/(13765:13833): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:42:24:279 team/(13765:13840): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:42:29:289 team/(13765:13841): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:42:34:293 team/(13765:13846): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:42:39:301 team/(13765:13847): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:42:44:309 team/(13765:13848): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:42:49:317 team/(13765:13849): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 13:44:02:975 team/(13765:13767): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:44:02:975 team/(13765:13767): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:45:32:63 team/(14894:14896): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:45:32:69 team/(14894:14896): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:45:32:114 team/(14894:14931): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:45:37:121 team/(14894:14934): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:45:42:124 team/(14894:14935): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:45:47:133 team/(14894:14936): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:45:52:141 team/(14894:14940): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:45:57:145 team/(14894:14945): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:46:02:149 team/(14894:14946): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:46:07:153 team/(14894:14947): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:46:12:161 team/(14894:14948): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:46:17:170 team/(14894:14951): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:46:22:183 team/(14894:14952): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:46:27:189 team/(14894:14953): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:46:32:199 team/(14894:14954): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:46:37:205 team/(14894:14955): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:46:42:212 team/(14894:14956): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:46:47:226 team/(14894:14957): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 13:58:33:271 team/(14894:14896): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:58:33:271 team/(14894:14896): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:59:03:272 team/(14894:14896): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:59:03:272 team/(14894:14896): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 13:59:33:272 team/(14894:14896): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:59:33:272 team/(14894:14896): 11. Intento de conexion con el broker fallida. Se volvera a intentar.

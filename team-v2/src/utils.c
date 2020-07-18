@@ -393,6 +393,7 @@ void esperar_mensaje_localized() {
 				char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
 				memcpy(nombre_pokemon, payload+offset, largo_nombre_pokemon+1);
 				offset+=(largo_nombre_pokemon+1);
+				log_info(nuestro_log, "El nombre del LOCALIZED es %s", nombre_pokemon);
 
 				if(pokemon_ya_fue_recibido(nombre_pokemon) == 1) {
 					log_info(nuestro_log, "El LOCALIZED de %s no será tenido en cuenta porque, previamente, ya se recibio un mensaje de su aparicion");
@@ -403,6 +404,7 @@ void esperar_mensaje_localized() {
 					memcpy(&cantidad, payload+offset, sizeof(uint32_t));
 					offset+=sizeof(uint32_t);
 
+					log_info(nuestro_log, "La cantidad del LOCALIZED es %d", cantidad);
 					if(cantidad > 0) {
 						actualizar_pokemon_como_recibido(nombre_pokemon);
 
@@ -1008,12 +1010,12 @@ void realizar_get(char* key, void* value) {
 			//CREO EL BUFFER CON SU TAMANIO Y STREAM
 			t_buffer* buffer = malloc(sizeof(t_buffer));
 			int largo_key = strlen(key);
-			buffer->tamanio = largo_key + sizeof(uint32_t);
+			buffer->tamanio = largo_key + 1 + sizeof(uint32_t);
 			void* stream = malloc(buffer->tamanio);
 			int offset = 0;
 			memcpy(stream + offset,&largo_key, sizeof(uint32_t));
 			offset+=sizeof(uint32_t);
-			memcpy(stream + offset,key, largo_key);
+			memcpy(stream + offset,key, (largo_key+1));
 			buffer->stream = stream;
 
 			//CREO EL PAQUETE CON EL CONTENIDO DE LO QUE VOY A ENVIAR
@@ -1076,14 +1078,14 @@ void catch_pokemon(entrenador* entrenador) {
 		t_buffer* buffer = malloc(sizeof(t_buffer));
 
 		int tamanio_char_pokemon = strlen(entrenador->pokemon_en_busqueda->nombre);
-		buffer->tamanio = tamanio_char_pokemon + (3*sizeof(uint32_t));
+		buffer->tamanio = tamanio_char_pokemon + 1 + (3*sizeof(uint32_t));
 
 		void* stream = malloc(buffer->tamanio);
 		int offset = 0;
 		memcpy(stream + offset,&tamanio_char_pokemon, sizeof(uint32_t));
 		offset += sizeof(uint32_t);
-		memcpy(stream + offset,entrenador->pokemon_en_busqueda->nombre, tamanio_char_pokemon);
-		offset += tamanio_char_pokemon;
+		memcpy(stream + offset,entrenador->pokemon_en_busqueda->nombre, tamanio_char_pokemon+1);
+		offset += tamanio_char_pokemon+1;
 		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_x), sizeof(uint32_t));
 		offset += sizeof(uint32_t);
 		memcpy(stream + offset,&(entrenador->pokemon_en_busqueda->posicion->posicion_y), sizeof(uint32_t));
