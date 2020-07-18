@@ -175,7 +175,7 @@ make all
 
 #Configuro broker Buddy System
 
-cd ../../../broker-v2-BUDDY-SYSTEM-stress/src/resources/
+cd ../../broker-v2-BUDDY-SYSTEM-stress/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
@@ -244,7 +244,7 @@ make all
 
 #Configuro team con RR -> Quantum = 1
 
-cd ../../../team-v2-RR-stress/src/resources/
+cd ../../team-v2-RR-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -273,7 +273,7 @@ make all
 
 #Configuro team con SJF - SD
 
-cd ../../../team-v2-SJF-SD-stress/src/resources/
+cd ../../team-v2-SJF-SD-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
@@ -302,7 +302,7 @@ make all
 
 #Configuro team con SJF - CD
 
-cd ../../../team-v2-SJF-CD-stress/src/resources/
+cd ../../team-v2-SJF-CD-stress/src/resources/
 
 if test -e team.config; then
 	rm team.config
