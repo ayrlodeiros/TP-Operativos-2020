@@ -122,3 +122,1416 @@
 [INFO] 12:39:36:182 team/(7603:7605): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 12:40:06:183 team/(7603:7605): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 12:40:36:183 team/(7603:7605): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:902 team/(8971:8971): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:48:28:902 team/(8971:8971): Necesito 2 pokemons Squirtle
+[INFO] 12:48:28:902 team/(8971:8971): Necesito 1 pokemons Pikachu
+[INFO] 12:48:28:902 team/(8971:8971): Necesito 1 pokemons Onix
+[INFO] 12:48:28:902 team/(8971:8971): Necesito 1 pokemons Gengar
+[INFO] 12:48:28:903 team/(8971:8971): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:903 team/(8971:8971): Se realizo el envio de GET correctamente
+[INFO] 12:48:28:903 team/(8971:8971): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:903 team/(8971:8971): Se realizo el envio de GET correctamente
+[INFO] 12:48:28:904 team/(8971:8971): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:904 team/(8971:8971): Se realizo el envio de GET correctamente
+[INFO] 12:48:28:904 team/(8971:8971): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:906 team/(8971:8971): Se realizo el envio de GET correctamente
+[INFO] 12:48:28:907 team/(8971:8982): Esperando alguna accion
+[INFO] 12:48:28:907 team/(8971:8983): Estoy en el planificador
+[INFO] 12:48:28:909 team/(8971:8979): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 12:48:28:910 team/(8971:8983): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 12:48:28:911 team/(8971:8981): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 12:48:28:911 team/(8971:8973): El broker no esta conectado...
+[INFO] 12:48:28:912 team/(8971:8975): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 12:48:28:912 team/(8971:8977): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 12:48:28:912 team/(8971:8973): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:912 team/(8971:8973): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:913 team/(8971:8973): La conexion del appeared es 8
+[INFO] 12:48:28:913 team/(8971:8973): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:913 team/(8971:8973): La conexion del localized es 9
+[INFO] 12:48:28:913 team/(8971:8973): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:913 team/(8971:8973): La conexion del caught es 10
+[INFO] 12:48:28:913 team/(8971:8973): Funciona broker, activando las tres colas...
+[INFO] 12:48:28:914 team/(8971:8973): Bloqueo de conexiones al broker
+[INFO] 12:48:28:914 team/(8971:8972): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 12:48:28:927 team/(8971:8972): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 12:48:28:932 team/(8971:8995): Suscripcion exitosa a la cola
+[INFO] 12:48:28:932 team/(8971:8996): Suscripcion exitosa a la cola
+[INFO] 12:48:28:932 team/(8971:8997): Suscripcion exitosa a la cola
+[INFO] 12:48:28:932 team/(8971:8995): Estoy esperando mensaje CAUGHT
+[INFO] 12:48:28:933 team/(8971:8997): Estoy esperando mensaje LOCALIZED
+[INFO] 12:48:28:933 team/(8971:8996): Estoy esperando mensaje APPEARED
+[INFO] 12:48:28:933 team/(8971:8996): Se recibio un mensaje del broker en la conexion 8
+[INFO] 12:48:28:933 team/(8971:8996): El ID del mensaje es: 4
+[INFO] 12:48:28:933 team/(8971:8996): El ID CORRELATIVO del mensaje es: 4
+[INFO] 12:48:28:933 team/(8971:8996): El TAMANIO del mensaje es: 20
+[INFO] 12:48:28:933 team/(8971:8996): El pokemon Flareon no es requerido
+[INFO] 12:48:28:933 team/(8971:8996): Estoy esperando mensaje APPEARED
+[INFO] 12:48:28:942 team/(8971:8997): Se recibio un mensaje del broker en la conexion 9
+[INFO] 12:48:28:942 team/(8971:8997): El ID del mensaje es: 9
+[INFO] 12:48:28:943 team/(8971:8997): El ID CORRELATIVO del mensaje es: 5
+[INFO] 12:48:28:943 team/(8971:8997): El TAMANIO del mensaje es: 16
+[INFO] 12:48:28:943 team/(8971:8997): El id 5 esta en la lista de LOCALIZED
+[INFO] 12:48:28:943 team/(8971:8997): Estoy esperando mensaje LOCALIZED
+[INFO] 12:48:28:943 team/(8971:8997): Se recibio un mensaje del broker en la conexion 9
+[INFO] 12:48:28:943 team/(8971:8997): El ID del mensaje es: 10
+[INFO] 12:48:28:943 team/(8971:8997): El ID CORRELATIVO del mensaje es: 8
+[INFO] 12:48:28:943 team/(8971:8997): El TAMANIO del mensaje es: 15
+[INFO] 12:48:28:943 team/(8971:8997): El id 8 esta en la lista de LOCALIZED
+[INFO] 12:48:28:943 team/(8971:8997): Estoy esperando mensaje LOCALIZED
+[INFO] 12:48:28:944 team/(8971:8997): Se recibio un mensaje del broker en la conexion 9
+[INFO] 12:48:28:944 team/(8971:8997): El ID del mensaje es: 11
+[INFO] 12:48:28:944 team/(8971:8997): El ID CORRELATIVO del mensaje es: 6
+[INFO] 12:48:28:944 team/(8971:8997): El TAMANIO del mensaje es: 12
+[INFO] 12:48:28:944 team/(8971:8997): El id 6 esta en la lista de LOCALIZED
+[INFO] 12:48:29:568 team/(8971:8995): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:48:29:568 team/(8971:8996): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:48:29:568 team/(8971:8995): Se perdio la conexion con el broker
+[INFO] 12:48:29:568 team/(8971:8973): Desbloqueo de conexiones al broker
+[INFO] 12:48:29:569 team/(8971:8996): Se perdio la conexion con el broker
+[INFO] 12:48:29:569 team/(8971:8973): El broker no esta conectado...
+[INFO] 12:48:29:569 team/(8971:8973): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:59:570 team/(8971:8973): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:120 team/(9309:9309): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:53:39:121 team/(9309:9309): Necesito 2 pokemons Squirtle
+[INFO] 12:53:39:121 team/(9309:9309): Necesito 1 pokemons Pikachu
+[INFO] 12:53:39:121 team/(9309:9309): Necesito 1 pokemons Onix
+[INFO] 12:53:39:121 team/(9309:9309): Necesito 1 pokemons Gengar
+[INFO] 12:53:39:121 team/(9309:9309): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:121 team/(9309:9309): Se realizo el envio de GET correctamente
+[INFO] 12:53:39:122 team/(9309:9309): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:122 team/(9309:9309): Se realizo el envio de GET correctamente
+[INFO] 12:53:39:122 team/(9309:9309): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:122 team/(9309:9309): Se realizo el envio de GET correctamente
+[INFO] 12:53:39:122 team/(9309:9309): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:125 team/(9309:9309): Se realizo el envio de GET correctamente
+[INFO] 12:53:39:126 team/(9309:9320): Esperando alguna accion
+[INFO] 12:53:39:126 team/(9309:9321): Estoy en el planificador
+[INFO] 12:53:39:127 team/(9309:9321): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 12:53:39:135 team/(9309:9311): El broker no esta conectado...
+[INFO] 12:53:39:136 team/(9309:9313): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 12:53:39:136 team/(9309:9315): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 12:53:39:136 team/(9309:9311): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:136 team/(9309:9311): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:137 team/(9309:9317): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 12:53:39:137 team/(9309:9319): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 12:53:39:138 team/(9309:9311): La conexion del appeared es 10
+[INFO] 12:53:39:138 team/(9309:9311): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:138 team/(9309:9311): La conexion del localized es 11
+[INFO] 12:53:39:138 team/(9309:9311): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:138 team/(9309:9311): La conexion del caught es 12
+[INFO] 12:53:39:138 team/(9309:9311): Funciona broker, activando las tres colas...
+[INFO] 12:53:39:138 team/(9309:9311): Bloqueo de conexiones al broker
+[INFO] 12:53:39:138 team/(9309:9310): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 12:53:39:139 team/(9309:9310): Listo para recibir conexion de GAMEBOY, en servidor: 13
+[INFO] 12:53:39:142 team/(9309:9333): Suscripcion exitosa a la cola
+[INFO] 12:53:39:142 team/(9309:9334): Suscripcion exitosa a la cola
+[INFO] 12:53:39:143 team/(9309:9335): Suscripcion exitosa a la cola
+[INFO] 12:53:39:144 team/(9309:9333): Estoy esperando mensaje CAUGHT
+[INFO] 12:53:39:144 team/(9309:9335): Estoy esperando mensaje LOCALIZED
+[INFO] 12:53:39:144 team/(9309:9334): Estoy esperando mensaje APPEARED
+[INFO] 12:53:39:144 team/(9309:9334): Se recibio un mensaje del broker en la conexion 10
+[INFO] 12:53:39:144 team/(9309:9334): El ID del mensaje es: 4
+[INFO] 12:53:39:144 team/(9309:9334): El ID CORRELATIVO del mensaje es: 4
+[INFO] 12:53:39:144 team/(9309:9334): El TAMANIO del mensaje es: 20
+[INFO] 12:53:39:144 team/(9309:9334): El pokemon Flareon no es requerido
+[INFO] 12:53:39:144 team/(9309:9334): Estoy esperando mensaje APPEARED
+[INFO] 12:53:39:165 team/(9309:9335): Se recibio un mensaje del broker en la conexion 11
+[INFO] 12:53:39:165 team/(9309:9335): El ID del mensaje es: 9
+[INFO] 12:53:39:166 team/(9309:9335): El ID CORRELATIVO del mensaje es: 6
+[INFO] 12:53:39:166 team/(9309:9335): El TAMANIO del mensaje es: 14
+[INFO] 12:53:39:166 team/(9309:9335): El id 6 esta en la lista de LOCALIZED
+[INFO] 12:53:39:166 team/(9309:9335): Estoy esperando mensaje LOCALIZED
+[INFO] 12:53:39:169 team/(9309:9335): Se recibio un mensaje del broker en la conexion 11
+[INFO] 12:53:39:169 team/(9309:9335): El ID del mensaje es: 10
+[INFO] 12:53:39:170 team/(9309:9335): El ID CORRELATIVO del mensaje es: 7
+[INFO] 12:53:39:170 team/(9309:9335): El TAMANIO del mensaje es: 12
+[INFO] 12:53:39:170 team/(9309:9335): El id 7 esta en la lista de LOCALIZED
+[INFO] 12:53:39:806 team/(9309:9333): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:53:39:806 team/(9309:9334): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:53:39:806 team/(9309:9333): Se perdio la conexion con el broker
+[INFO] 12:53:39:806 team/(9309:9311): Desbloqueo de conexiones al broker
+[INFO] 12:53:39:808 team/(9309:9334): Se perdio la conexion con el broker
+[INFO] 12:53:39:808 team/(9309:9311): El broker no esta conectado...
+[INFO] 12:53:39:808 team/(9309:9311): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:09:813 team/(9309:9311): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:39:814 team/(9309:9311): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:568 team/(9547:9547): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 12:58:46:569 team/(9547:9547): Necesito 2 pokemons Squirtle
+[INFO] 12:58:46:569 team/(9547:9547): Necesito 1 pokemons Pikachu
+[INFO] 12:58:46:569 team/(9547:9547): Necesito 1 pokemons Onix
+[INFO] 12:58:46:569 team/(9547:9547): Necesito 1 pokemons Gengar
+[INFO] 12:58:46:569 team/(9547:9547): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:569 team/(9547:9547): Se realizo el envio de GET correctamente
+[INFO] 12:58:46:570 team/(9547:9547): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:570 team/(9547:9547): Se realizo el envio de GET correctamente
+[INFO] 12:58:46:570 team/(9547:9547): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:573 team/(9547:9547): Se realizo el envio de GET correctamente
+[INFO] 12:58:46:574 team/(9547:9547): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:574 team/(9547:9547): Se realizo el envio de GET correctamente
+[INFO] 12:58:46:575 team/(9547:9553): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 12:58:46:578 team/(9547:9558): Esperando alguna accion
+[INFO] 12:58:46:578 team/(9547:9559): Estoy en el planificador
+[INFO] 12:58:46:579 team/(9547:9551): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 12:58:46:582 team/(9547:9559): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 12:58:46:583 team/(9547:9557): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 12:58:46:584 team/(9547:9549): El broker no esta conectado...
+[INFO] 12:58:46:585 team/(9547:9555): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 12:58:46:585 team/(9547:9549): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:601 team/(9547:9548): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 12:58:46:601 team/(9547:9548): Listo para recibir conexion de GAMEBOY, en servidor: 7
+[INFO] 12:58:46:637 team/(9547:9549): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:640 team/(9547:9549): La conexion del appeared es 5
+[INFO] 12:58:46:640 team/(9547:9549): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:640 team/(9547:9549): La conexion del localized es 9
+[INFO] 12:58:46:640 team/(9547:9549): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:640 team/(9547:9549): La conexion del caught es 10
+[INFO] 12:58:46:640 team/(9547:9549): Funciona broker, activando las tres colas...
+[INFO] 12:58:46:640 team/(9547:9549): Bloqueo de conexiones al broker
+[INFO] 12:58:46:642 team/(9547:9577): Suscripcion exitosa a la cola
+[INFO] 12:58:46:642 team/(9547:9576): Suscripcion exitosa a la cola
+[INFO] 12:58:46:642 team/(9547:9575): Suscripcion exitosa a la cola
+[INFO] 12:58:46:645 team/(9547:9577): Estoy esperando mensaje LOCALIZED
+[INFO] 12:58:46:645 team/(9547:9575): Estoy esperando mensaje CAUGHT
+[INFO] 12:58:46:645 team/(9547:9576): Estoy esperando mensaje APPEARED
+[INFO] 12:58:46:645 team/(9547:9576): Se recibio un mensaje del broker en la conexion 5
+[INFO] 12:58:46:645 team/(9547:9576): El ID del mensaje es: 1
+[INFO] 12:58:46:645 team/(9547:9576): El ID CORRELATIVO del mensaje es: 1
+[INFO] 12:58:46:646 team/(9547:9576): El TAMANIO del mensaje es: 20
+[INFO] 12:58:46:646 team/(9547:9576): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 12:58:46:646 team/(9547:9577): Se recibio un mensaje del broker en la conexion 9
+[INFO] 12:58:46:649 team/(9547:9576): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 12:58:46:649 team/(9547:9559): Estimado restante de entrenador 1 es 9.500000
+[INFO] 12:58:46:649 team/(9547:9559): Entrenador 1 consume 1 de CPU
+[INFO] 12:58:46:649 team/(9547:9576): Estoy esperando mensaje APPEARED
+[INFO] 12:58:46:649 team/(9547:9576): Se recibio un mensaje del broker en la conexion 5
+[INFO] 12:58:46:649 team/(9547:9576): El ID del mensaje es: 2
+[INFO] 12:58:46:649 team/(9547:9576): El ID CORRELATIVO del mensaje es: 2
+[INFO] 12:58:46:650 team/(9547:9576): El TAMANIO del mensaje es: 21
+[INFO] 12:58:46:650 team/(9547:9576): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 12:58:46:650 team/(9547:9576): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 12:58:46:650 team/(9547:9576): Estoy esperando mensaje APPEARED
+[INFO] 12:58:46:650 team/(9547:9576): Se recibio un mensaje del broker en la conexion 5
+[INFO] 12:58:46:650 team/(9547:9576): El ID del mensaje es: 3
+[INFO] 12:58:46:650 team/(9547:9576): El ID CORRELATIVO del mensaje es: 3
+[INFO] 12:58:46:651 team/(9547:9576): El TAMANIO del mensaje es: 20
+[INFO] 12:58:46:651 team/(9547:9576): El pokemon Jolteon no es requerido
+[INFO] 12:58:46:651 team/(9547:9576): Estoy esperando mensaje APPEARED
+[INFO] 12:58:46:651 team/(9547:9576): Se recibio un mensaje del broker en la conexion 5
+[INFO] 12:58:46:651 team/(9547:9576): El ID del mensaje es: 4
+[INFO] 12:58:46:651 team/(9547:9576): El ID CORRELATIVO del mensaje es: 4
+[INFO] 12:58:46:651 team/(9547:9586): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 12:58:46:653 team/(9547:9576): El TAMANIO del mensaje es: 20
+[INFO] 12:58:46:653 team/(9547:9576): El pokemon Flareon no es requerido
+[INFO] 12:58:46:655 team/(9547:9576): Estoy esperando mensaje APPEARED
+[INFO] 12:58:46:657 team/(9547:9577): El ID del mensaje es: 9
+[INFO] 12:58:46:657 team/(9547:9577): El ID CORRELATIVO del mensaje es: 5
+[INFO] 12:58:46:658 team/(9547:9577): El TAMANIO del mensaje es: 15
+[INFO] 12:58:46:658 team/(9547:9577): El id 5 esta en la lista de LOCALIZED
+[INFO] 13:06:09:378 team/(10179:10179): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:06:09:378 team/(10179:10179): Necesito 2 pokemons Squirtle
+[INFO] 13:06:09:378 team/(10179:10179): Necesito 1 pokemons Pikachu
+[INFO] 13:06:09:378 team/(10179:10179): Necesito 1 pokemons Onix
+[INFO] 13:06:09:378 team/(10179:10179): Necesito 1 pokemons Gengar
+[INFO] 13:06:09:378 team/(10179:10179): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:379 team/(10179:10179): Se realizo el envio de GET correctamente
+[INFO] 13:06:09:379 team/(10179:10179): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:379 team/(10179:10179): Se realizo el envio de GET correctamente
+[INFO] 13:06:09:379 team/(10179:10179): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:379 team/(10179:10179): Se realizo el envio de GET correctamente
+[INFO] 13:06:09:380 team/(10179:10179): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:380 team/(10179:10179): Se realizo el envio de GET correctamente
+[INFO] 13:06:09:382 team/(10179:10183): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:06:09:384 team/(10179:10190): Esperando alguna accion
+[INFO] 13:06:09:384 team/(10179:10191): Estoy en el planificador
+[INFO] 13:06:09:384 team/(10179:10191): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:06:09:385 team/(10179:10189): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:06:09:387 team/(10179:10187): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:06:09:388 team/(10179:10185): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:06:09:388 team/(10179:10181): El broker no esta conectado...
+[INFO] 13:06:09:388 team/(10179:10181): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:388 team/(10179:10181): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:388 team/(10179:10181): La conexion del appeared es 5
+[INFO] 13:06:09:389 team/(10179:10181): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:389 team/(10179:10181): La conexion del localized es 7
+[INFO] 13:06:09:394 team/(10179:10181): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:394 team/(10179:10181): La conexion del caught es 8
+[INFO] 13:06:09:394 team/(10179:10181): Funciona broker, activando las tres colas...
+[INFO] 13:06:09:394 team/(10179:10181): Bloqueo de conexiones al broker
+[INFO] 13:06:09:395 team/(10179:10180): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:06:09:395 team/(10179:10180): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 13:06:09:413 team/(10179:10203): Suscripcion exitosa a la cola
+[INFO] 13:06:09:414 team/(10179:10204): Suscripcion exitosa a la cola
+[INFO] 13:06:09:417 team/(10179:10205): Suscripcion exitosa a la cola
+[INFO] 13:06:09:418 team/(10179:10203): Estoy esperando mensaje CAUGHT
+[INFO] 13:06:09:418 team/(10179:10205): Estoy esperando mensaje LOCALIZED
+[INFO] 13:06:09:418 team/(10179:10204): Estoy esperando mensaje APPEARED
+[INFO] 13:06:09:418 team/(10179:10204): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:06:09:418 team/(10179:10204): El ID del mensaje es: 1
+[INFO] 13:06:09:418 team/(10179:10204): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:06:09:418 team/(10179:10204): El TAMANIO del mensaje es: 20
+[INFO] 13:06:09:419 team/(10179:10204): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:06:09:419 team/(10179:10204): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:06:09:419 team/(10179:10191): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:06:09:419 team/(10179:10191): Entrenador 1 consume 1 de CPU
+[INFO] 13:06:09:419 team/(10179:10204): Estoy esperando mensaje APPEARED
+[INFO] 13:06:09:419 team/(10179:10204): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:06:09:419 team/(10179:10204): El ID del mensaje es: 2
+[INFO] 13:06:09:419 team/(10179:10204): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:06:09:420 team/(10179:10205): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:06:09:420 team/(10179:10204): El TAMANIO del mensaje es: 21
+[INFO] 13:06:09:420 team/(10179:10204): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:06:09:420 team/(10179:10204): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:06:09:421 team/(10179:10204): Estoy esperando mensaje APPEARED
+[INFO] 13:06:09:425 team/(10179:10204): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:06:09:425 team/(10179:10204): El ID del mensaje es: 3
+[INFO] 13:06:09:425 team/(10179:10204): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:06:09:425 team/(10179:10204): El TAMANIO del mensaje es: 20
+[INFO] 13:06:09:425 team/(10179:10204): El pokemon Jolteon no es requerido
+[INFO] 13:06:09:426 team/(10179:10204): Estoy esperando mensaje APPEARED
+[INFO] 13:06:09:426 team/(10179:10214): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:06:09:426 team/(10179:10204): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:06:09:426 team/(10179:10204): El ID del mensaje es: 4
+[INFO] 13:06:09:426 team/(10179:10204): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:06:09:427 team/(10179:10204): El TAMANIO del mensaje es: 20
+[INFO] 13:06:09:427 team/(10179:10204): El pokemon Flareon no es requerido
+[INFO] 13:06:09:427 team/(10179:10204): Estoy esperando mensaje APPEARED
+[INFO] 13:06:09:428 team/(10179:10205): El ID del mensaje es: 9
+[INFO] 13:06:09:428 team/(10179:10205): El ID CORRELATIVO del mensaje es: 5
+[INFO] 13:06:09:428 team/(10179:10205): El TAMANIO del mensaje es: 16
+[INFO] 13:06:09:428 team/(10179:10205): El id 5 esta en la lista de LOCALIZED
+[INFO] 13:06:09:428 team/(10179:10205): El nombre del LOCALIZED es Squirtle
+[INFO] 13:06:09:428 team/(10179:10205): El LOCALIZED de Squirtle no será tenido en cuenta porque, previamente, ya se recibio un mensaje de su aparicion
+[INFO] 13:06:09:428 team/(10179:10205): Estoy esperando mensaje LOCALIZED
+[INFO] 13:06:09:428 team/(10179:10205): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:06:09:428 team/(10179:10205): El ID del mensaje es: 10
+[INFO] 13:06:09:428 team/(10179:10205): El ID CORRELATIVO del mensaje es: 7
+[INFO] 13:06:09:428 team/(10179:10205): El TAMANIO del mensaje es: 12
+[INFO] 13:06:09:428 team/(10179:10205): El id 7 esta en la lista de LOCALIZED
+[INFO] 13:06:09:428 team/(10179:10205): El nombre del LOCALIZED es Onix
+[INFO] 13:06:09:428 team/(10179:10205): La cantidad del LOCALIZED es 486539264
+[INFO] 13:06:14:428 team/(10179:10191): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:06:14:428 team/(10179:10191): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:06:14:428 team/(10179:10191): Entrenador 2 consume 1 de CPU
+[INFO] 13:06:14:432 team/(10179:10221): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:06:19:433 team/(10179:10191): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:06:19:433 team/(10179:10191): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:06:19:433 team/(10179:10191): Entrenador 2 consume 1 de CPU
+[INFO] 13:06:19:437 team/(10179:10222): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:06:24:437 team/(10179:10191): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:06:24:437 team/(10179:10191): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:06:24:437 team/(10179:10191): Entrenador 2 consume 1 de CPU
+[INFO] 13:06:24:445 team/(10179:10223): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:10:39:73 team/(10479:10479): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:10:39:73 team/(10479:10479): Necesito 2 pokemons Squirtle
+[INFO] 13:10:39:73 team/(10479:10479): Necesito 1 pokemons Pikachu
+[INFO] 13:10:39:73 team/(10479:10479): Necesito 1 pokemons Onix
+[INFO] 13:10:39:73 team/(10479:10479): Necesito 1 pokemons Gengar
+[INFO] 13:10:39:73 team/(10479:10479): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:74 team/(10479:10479): Se realizo el envio de GET correctamente
+[INFO] 13:10:39:74 team/(10479:10479): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:74 team/(10479:10479): Se realizo el envio de GET correctamente
+[INFO] 13:10:39:74 team/(10479:10479): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:74 team/(10479:10479): Se realizo el envio de GET correctamente
+[INFO] 13:10:39:74 team/(10479:10479): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:75 team/(10479:10479): Se realizo el envio de GET correctamente
+[INFO] 13:10:39:76 team/(10479:10483): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:10:39:79 team/(10479:10490): Esperando alguna accion
+[INFO] 13:10:39:80 team/(10479:10491): Estoy en el planificador
+[INFO] 13:10:39:80 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:10:39:81 team/(10479:10489): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:10:39:82 team/(10479:10485): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:10:39:85 team/(10479:10487): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:10:39:85 team/(10479:10481): El broker no esta conectado...
+[INFO] 13:10:39:85 team/(10479:10481): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:86 team/(10479:10481): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:89 team/(10479:10481): La conexion del appeared es 5
+[INFO] 13:10:39:90 team/(10479:10481): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:90 team/(10479:10481): La conexion del localized es 7
+[INFO] 13:10:39:90 team/(10479:10481): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:91 team/(10479:10481): La conexion del caught es 8
+[INFO] 13:10:39:91 team/(10479:10480): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:10:39:91 team/(10479:10481): Funciona broker, activando las tres colas...
+[INFO] 13:10:39:91 team/(10479:10481): Bloqueo de conexiones al broker
+[INFO] 13:10:39:91 team/(10479:10480): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 13:10:39:110 team/(10479:10504): Suscripcion exitosa a la cola
+[INFO] 13:10:39:111 team/(10479:10505): Suscripcion exitosa a la cola
+[INFO] 13:10:39:111 team/(10479:10506): Suscripcion exitosa a la cola
+[INFO] 13:10:39:112 team/(10479:10504): Estoy esperando mensaje CAUGHT
+[INFO] 13:10:39:112 team/(10479:10506): Estoy esperando mensaje LOCALIZED
+[INFO] 13:10:39:112 team/(10479:10506): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:10:39:112 team/(10479:10506): El ID del mensaje es: 9
+[INFO] 13:10:39:113 team/(10479:10506): El ID CORRELATIVO del mensaje es: 7
+[INFO] 13:10:39:115 team/(10479:10506): El TAMANIO del mensaje es: 15
+[INFO] 13:10:39:115 team/(10479:10506): El id 7 esta en la lista de LOCALIZED
+[INFO] 13:10:39:121 team/(10479:10506): El nombre del LOCALIZED es Pikachu
+[INFO] 13:10:39:121 team/(10479:10506): La cantidad del LOCALIZED es 0
+[INFO] 13:10:39:122 team/(10479:10506): Estoy esperando mensaje LOCALIZED
+[INFO] 13:10:39:122 team/(10479:10506): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:10:39:122 team/(10479:10506): El ID del mensaje es: 11
+[INFO] 13:10:39:122 team/(10479:10506): El ID CORRELATIVO del mensaje es: 8
+[INFO] 13:10:39:122 team/(10479:10506): El TAMANIO del mensaje es: 12
+[INFO] 13:10:39:123 team/(10479:10506): El id 8 esta en la lista de LOCALIZED
+[INFO] 13:10:39:123 team/(10479:10506): El nombre del LOCALIZED es Onix
+[INFO] 13:10:39:123 team/(10479:10506): La cantidad del LOCALIZED es 486539264
+[INFO] 13:10:39:129 team/(10479:10505): Estoy esperando mensaje APPEARED
+[INFO] 13:10:39:129 team/(10479:10505): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:10:39:129 team/(10479:10505): El ID del mensaje es: 1
+[INFO] 13:10:39:129 team/(10479:10505): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:10:39:129 team/(10479:10505): El TAMANIO del mensaje es: 20
+[INFO] 13:10:39:129 team/(10479:10505): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:10:39:129 team/(10479:10505): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:10:39:129 team/(10479:10491): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:10:39:129 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:10:39:129 team/(10479:10505): Estoy esperando mensaje APPEARED
+[INFO] 13:10:39:129 team/(10479:10505): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:10:39:129 team/(10479:10505): El ID del mensaje es: 2
+[INFO] 13:10:39:129 team/(10479:10505): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:10:39:129 team/(10479:10505): El TAMANIO del mensaje es: 21
+[INFO] 13:10:39:129 team/(10479:10505): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:10:39:129 team/(10479:10505): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:10:39:129 team/(10479:10505): Estoy esperando mensaje APPEARED
+[INFO] 13:10:39:129 team/(10479:10505): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:10:39:129 team/(10479:10505): El ID del mensaje es: 3
+[INFO] 13:10:39:129 team/(10479:10505): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:10:39:129 team/(10479:10505): El TAMANIO del mensaje es: 20
+[INFO] 13:10:39:129 team/(10479:10505): El pokemon Jolteon no es requerido
+[INFO] 13:10:39:129 team/(10479:10505): Estoy esperando mensaje APPEARED
+[INFO] 13:10:39:129 team/(10479:10505): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:10:39:129 team/(10479:10505): El ID del mensaje es: 4
+[INFO] 13:10:39:129 team/(10479:10505): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:10:39:130 team/(10479:10505): El TAMANIO del mensaje es: 20
+[INFO] 13:10:39:130 team/(10479:10505): El pokemon Flareon no es requerido
+[INFO] 13:10:39:130 team/(10479:10505): Estoy esperando mensaje APPEARED
+[INFO] 13:10:39:130 team/(10479:10518): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:10:44:130 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:10:44:131 team/(10479:10491): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:10:44:131 team/(10479:10491): Entrenador 2 consume 1 de CPU
+[INFO] 13:10:44:134 team/(10479:10520): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:10:49:135 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:10:49:135 team/(10479:10491): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:10:49:135 team/(10479:10491): Entrenador 2 consume 1 de CPU
+[INFO] 13:10:49:137 team/(10479:10521): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:10:54:137 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:10:54:138 team/(10479:10491): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:10:54:138 team/(10479:10491): Entrenador 2 consume 1 de CPU
+[INFO] 13:10:54:145 team/(10479:10522): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:10:59:149 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:10:59:149 team/(10479:10491): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:10:59:149 team/(10479:10491): Entrenador 2 consume 1 de CPU
+[INFO] 13:10:59:154 team/(10479:10523): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:59:154 team/(10479:10523): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:10:59:154 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:10:59:156 team/(10479:10490): Esperando alguna accion
+[INFO] 13:10:59:156 team/(10479:10491): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:10:59:156 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:10:59:163 team/(10479:10526): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:10:59:166 team/(10479:10525): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:10:59:173 team/(10479:10504): Se recibio un mensaje del broker en la conexion 8
+[INFO] 13:10:59:174 team/(10479:10504): El ID del mensaje es: 14
+[INFO] 13:10:59:174 team/(10479:10504): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:10:59:174 team/(10479:10504): El TAMANIO del mensaje es: 4
+[INFO] 13:10:59:174 team/(10479:10504): El id 13 estan en la lista CAUGHT
+[INFO] 13:10:59:174 team/(10479:10504): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:10:59:174 team/(10479:10504): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:10:59:174 team/(10479:10504): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:10:59:174 team/(10479:10504): Estoy esperando mensaje CAUGHT
+[INFO] 13:11:04:163 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:04:164 team/(10479:10491): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:11:04:164 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:04:166 team/(10479:10531): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:11:09:168 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:09:169 team/(10479:10491): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:11:09:169 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:09:173 team/(10479:10532): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:11:14:173 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:14:174 team/(10479:10491): Estimado restante de entrenador 1 es 5.500000
+[INFO] 13:11:14:174 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:14:175 team/(10479:10536): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:11:19:176 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:19:176 team/(10479:10491): Estimado restante de entrenador 1 es 4.500000
+[INFO] 13:11:19:176 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:19:178 team/(10479:10537): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:11:24:179 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:24:180 team/(10479:10491): Estimado restante de entrenador 1 es 3.500000
+[INFO] 13:11:24:180 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:24:182 team/(10479:10538): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:11:29:183 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:29:183 team/(10479:10491): Estimado restante de entrenador 1 es 2.500000
+[INFO] 13:11:29:184 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:29:185 team/(10479:10539): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:11:34:186 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:34:186 team/(10479:10491): Estimado restante de entrenador 1 es 1.500000
+[INFO] 13:11:34:186 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:34:188 team/(10479:10540): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:11:39:188 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:39:189 team/(10479:10491): Estimado restante de entrenador 1 es 0.500000
+[INFO] 13:11:39:189 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:39:191 team/(10479:10541): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:11:44:193 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:44:193 team/(10479:10491): Estimado restante de entrenador 1 es -0.500000
+[INFO] 13:11:44:193 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:44:197 team/(10479:10542): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:11:49:198 team/(10479:10491): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:11:49:198 team/(10479:10491): Estimado restante de entrenador 1 es -1.500000
+[INFO] 13:11:49:198 team/(10479:10491): Entrenador 1 consume 1 de CPU
+[INFO] 13:11:49:200 team/(10479:10543): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:18:04:155 team/(11210:11210): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:18:04:155 team/(11210:11210): Necesito 2 pokemons Squirtle
+[INFO] 13:18:04:155 team/(11210:11210): Necesito 1 pokemons Pikachu
+[INFO] 13:18:04:155 team/(11210:11210): Necesito 1 pokemons Onix
+[INFO] 13:18:04:155 team/(11210:11210): Necesito 1 pokemons Gengar
+[INFO] 13:18:04:156 team/(11210:11210): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:156 team/(11210:11210): Se realizo el envio de GET correctamente
+[INFO] 13:18:04:156 team/(11210:11210): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:156 team/(11210:11210): Se realizo el envio de GET correctamente
+[INFO] 13:18:04:156 team/(11210:11210): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:156 team/(11210:11210): Se realizo el envio de GET correctamente
+[INFO] 13:18:04:157 team/(11210:11210): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:157 team/(11210:11210): Se realizo el envio de GET correctamente
+[INFO] 13:18:04:162 team/(11210:11214): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:18:04:165 team/(11210:11218): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:18:04:165 team/(11210:11221): Esperando alguna accion
+[INFO] 13:18:04:165 team/(11210:11222): Estoy en el planificador
+[INFO] 13:18:04:169 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:04:170 team/(11210:11212): El broker no esta conectado...
+[INFO] 13:18:04:170 team/(11210:11212): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:170 team/(11210:11212): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:170 team/(11210:11220): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:18:04:170 team/(11210:11212): La conexion del appeared es 5
+[INFO] 13:18:04:173 team/(11210:11216): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:18:04:173 team/(11210:11212): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:174 team/(11210:11212): La conexion del localized es 8
+[INFO] 13:18:04:174 team/(11210:11212): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:174 team/(11210:11212): La conexion del caught es 10
+[INFO] 13:18:04:174 team/(11210:11212): Funciona broker, activando las tres colas...
+[INFO] 13:18:04:175 team/(11210:11212): Bloqueo de conexiones al broker
+[INFO] 13:18:04:175 team/(11210:11211): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:18:04:177 team/(11210:11211): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 13:18:04:194 team/(11210:11234): Suscripcion exitosa a la cola
+[INFO] 13:18:04:194 team/(11210:11235): Suscripcion exitosa a la cola
+[INFO] 13:18:04:195 team/(11210:11236): Suscripcion exitosa a la cola
+[INFO] 13:18:04:195 team/(11210:11234): Estoy esperando mensaje CAUGHT
+[INFO] 13:18:04:195 team/(11210:11236): Estoy esperando mensaje LOCALIZED
+[INFO] 13:18:04:195 team/(11210:11235): Estoy esperando mensaje APPEARED
+[INFO] 13:18:04:195 team/(11210:11235): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:18:04:195 team/(11210:11235): El ID del mensaje es: 1
+[INFO] 13:18:04:196 team/(11210:11235): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:18:04:196 team/(11210:11235): El TAMANIO del mensaje es: 20
+[INFO] 13:18:04:196 team/(11210:11235): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:18:04:197 team/(11210:11235): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:18:04:197 team/(11210:11222): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:18:04:197 team/(11210:11222): Entrenador 1 consume 1 de CPU
+[INFO] 13:18:04:197 team/(11210:11235): Estoy esperando mensaje APPEARED
+[INFO] 13:18:04:197 team/(11210:11236): Se recibio un mensaje del broker en la conexion 8
+[INFO] 13:18:04:197 team/(11210:11235): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:18:04:201 team/(11210:11235): El ID del mensaje es: 2
+[INFO] 13:18:04:202 team/(11210:11235): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:18:04:202 team/(11210:11235): El TAMANIO del mensaje es: 21
+[INFO] 13:18:04:203 team/(11210:11235): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:18:04:203 team/(11210:11235): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:18:04:204 team/(11210:11235): Estoy esperando mensaje APPEARED
+[INFO] 13:18:04:204 team/(11210:11235): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:18:04:204 team/(11210:11235): El ID del mensaje es: 3
+[INFO] 13:18:04:204 team/(11210:11235): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:18:04:204 team/(11210:11235): El TAMANIO del mensaje es: 20
+[INFO] 13:18:04:204 team/(11210:11245): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:18:04:204 team/(11210:11235): El pokemon Jolteon no es requerido
+[INFO] 13:18:04:204 team/(11210:11235): Estoy esperando mensaje APPEARED
+[INFO] 13:18:04:205 team/(11210:11235): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:18:04:205 team/(11210:11235): El ID del mensaje es: 4
+[INFO] 13:18:04:205 team/(11210:11235): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:18:04:205 team/(11210:11235): El TAMANIO del mensaje es: 20
+[INFO] 13:18:04:205 team/(11210:11235): El pokemon Flareon no es requerido
+[INFO] 13:18:04:205 team/(11210:11235): Estoy esperando mensaje APPEARED
+[INFO] 13:18:04:205 team/(11210:11236): El ID del mensaje es: 9
+[INFO] 13:18:04:205 team/(11210:11236): El ID CORRELATIVO del mensaje es: 7
+[INFO] 13:18:04:205 team/(11210:11236): El TAMANIO del mensaje es: 14
+[INFO] 13:18:04:205 team/(11210:11236): El id 7 esta en la lista de LOCALIZED
+[INFO] 13:18:04:214 team/(11210:11236): El nombre del LOCALIZED es Gengar
+[INFO] 13:18:04:214 team/(11210:11236): La cantidad del LOCALIZED es 285212672
+[INFO] 13:18:09:205 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:09:205 team/(11210:11222): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:18:09:206 team/(11210:11222): Entrenador 2 consume 1 de CPU
+[INFO] 13:18:09:209 team/(11210:11250): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:18:14:210 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:14:210 team/(11210:11222): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:18:14:210 team/(11210:11222): Entrenador 2 consume 1 de CPU
+[INFO] 13:18:14:217 team/(11210:11258): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:18:19:218 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:19:218 team/(11210:11222): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:18:19:218 team/(11210:11222): Entrenador 2 consume 1 de CPU
+[INFO] 13:18:19:221 team/(11210:11259): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:18:24:221 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:24:222 team/(11210:11222): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:18:24:222 team/(11210:11222): Entrenador 2 consume 1 de CPU
+[INFO] 13:18:24:225 team/(11210:11261): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:24:225 team/(11210:11261): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:18:24:225 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:24:225 team/(11210:11221): Esperando alguna accion
+[INFO] 13:18:24:225 team/(11210:11222): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:18:24:225 team/(11210:11222): Entrenador 1 consume 1 de CPU
+[INFO] 13:18:24:226 team/(11210:11264): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:18:24:227 team/(11210:11263): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:18:24:232 team/(11210:11234): Se recibio un mensaje del broker en la conexion 10
+[INFO] 13:18:24:233 team/(11210:11234): El ID del mensaje es: 14
+[INFO] 13:18:24:233 team/(11210:11234): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:18:24:233 team/(11210:11234): El TAMANIO del mensaje es: 4
+[INFO] 13:18:24:233 team/(11210:11234): El id 13 estan en la lista CAUGHT
+[INFO] 13:18:24:233 team/(11210:11234): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:18:24:233 team/(11210:11234): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:18:24:233 team/(11210:11234): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:18:24:233 team/(11210:11234): Estoy esperando mensaje CAUGHT
+[INFO] 13:18:29:226 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:29:227 team/(11210:11222): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:18:29:227 team/(11210:11222): Entrenador 1 consume 1 de CPU
+[INFO] 13:18:29:231 team/(11210:11269): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:18:34:231 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:34:231 team/(11210:11222): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:18:34:231 team/(11210:11222): Entrenador 1 consume 1 de CPU
+[INFO] 13:18:34:241 team/(11210:11270): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:18:39:243 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:39:244 team/(11210:11222): Estimado restante de entrenador 1 es 5.500000
+[INFO] 13:18:39:244 team/(11210:11222): Entrenador 1 consume 1 de CPU
+[INFO] 13:18:39:246 team/(11210:11271): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:18:44:247 team/(11210:11222): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:18:44:247 team/(11210:11222): Estimado restante de entrenador 1 es 4.500000
+[INFO] 13:18:44:247 team/(11210:11222): Entrenador 1 consume 1 de CPU
+[INFO] 13:18:44:249 team/(11210:11273): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:24:03:742 team/(11588:11588): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:24:03:742 team/(11588:11588): Necesito 2 pokemons Squirtle
+[INFO] 13:24:03:742 team/(11588:11588): Necesito 1 pokemons Pikachu
+[INFO] 13:24:03:742 team/(11588:11588): Necesito 1 pokemons Onix
+[INFO] 13:24:03:742 team/(11588:11588): Necesito 1 pokemons Gengar
+[INFO] 13:24:03:743 team/(11588:11588): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:743 team/(11588:11588): Se realizo el envio de GET correctamente
+[INFO] 13:24:03:743 team/(11588:11588): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:743 team/(11588:11588): Se realizo el envio de GET correctamente
+[INFO] 13:24:03:744 team/(11588:11588): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:744 team/(11588:11588): Se realizo el envio de GET correctamente
+[INFO] 13:24:03:744 team/(11588:11588): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:744 team/(11588:11588): Se realizo el envio de GET correctamente
+[INFO] 13:24:03:746 team/(11588:11592): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:24:03:747 team/(11588:11599): Esperando alguna accion
+[INFO] 13:24:03:749 team/(11588:11600): Estoy en el planificador
+[INFO] 13:24:03:750 team/(11588:11596): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:24:03:750 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:03:751 team/(11588:11598): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:24:03:752 team/(11588:11594): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:24:03:752 team/(11588:11590): El broker no esta conectado...
+[INFO] 13:24:03:753 team/(11588:11590): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:753 team/(11588:11590): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:753 team/(11588:11590): La conexion del appeared es 5
+[INFO] 13:24:03:753 team/(11588:11590): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:753 team/(11588:11590): La conexion del localized es 7
+[INFO] 13:24:03:753 team/(11588:11590): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:754 team/(11588:11590): La conexion del caught es 8
+[INFO] 13:24:03:759 team/(11588:11590): Funciona broker, activando las tres colas...
+[INFO] 13:24:03:760 team/(11588:11590): Bloqueo de conexiones al broker
+[INFO] 13:24:03:760 team/(11588:11589): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:24:03:760 team/(11588:11589): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 13:24:03:778 team/(11588:11613): Suscripcion exitosa a la cola
+[INFO] 13:24:03:778 team/(11588:11614): Suscripcion exitosa a la cola
+[INFO] 13:24:03:778 team/(11588:11615): Suscripcion exitosa a la cola
+[INFO] 13:24:03:778 team/(11588:11613): Estoy esperando mensaje CAUGHT
+[INFO] 13:24:03:778 team/(11588:11615): Estoy esperando mensaje LOCALIZED
+[INFO] 13:24:03:778 team/(11588:11614): Estoy esperando mensaje APPEARED
+[INFO] 13:24:03:782 team/(11588:11614): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:24:03:782 team/(11588:11615): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:24:03:782 team/(11588:11614): El ID del mensaje es: 1
+[INFO] 13:24:03:782 team/(11588:11614): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:24:03:782 team/(11588:11614): El TAMANIO del mensaje es: 20
+[INFO] 13:24:03:782 team/(11588:11614): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:24:03:783 team/(11588:11614): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:24:03:783 team/(11588:11600): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:24:03:783 team/(11588:11600): Entrenador 1 consume 1 de CPU
+[INFO] 13:24:03:783 team/(11588:11614): Estoy esperando mensaje APPEARED
+[INFO] 13:24:03:785 team/(11588:11614): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:24:03:785 team/(11588:11614): El ID del mensaje es: 2
+[INFO] 13:24:03:785 team/(11588:11614): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:24:03:786 team/(11588:11614): El TAMANIO del mensaje es: 21
+[INFO] 13:24:03:786 team/(11588:11614): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:24:03:787 team/(11588:11614): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:24:03:787 team/(11588:11614): Estoy esperando mensaje APPEARED
+[INFO] 13:24:03:787 team/(11588:11614): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:24:03:793 team/(11588:11625): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:24:03:793 team/(11588:11614): El ID del mensaje es: 3
+[INFO] 13:24:03:793 team/(11588:11614): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:24:03:793 team/(11588:11614): El TAMANIO del mensaje es: 20
+[INFO] 13:24:03:793 team/(11588:11614): El pokemon Jolteon no es requerido
+[INFO] 13:24:03:793 team/(11588:11614): Estoy esperando mensaje APPEARED
+[INFO] 13:24:03:793 team/(11588:11614): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:24:03:794 team/(11588:11614): El ID del mensaje es: 4
+[INFO] 13:24:03:794 team/(11588:11614): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:24:03:794 team/(11588:11614): El TAMANIO del mensaje es: 20
+[INFO] 13:24:03:794 team/(11588:11614): El pokemon Flareon no es requerido
+[INFO] 13:24:03:794 team/(11588:11614): Estoy esperando mensaje APPEARED
+[INFO] 13:24:03:794 team/(11588:11615): El ID del mensaje es: 9
+[INFO] 13:24:03:794 team/(11588:11615): El ID CORRELATIVO del mensaje es: 5
+[INFO] 13:24:03:794 team/(11588:11615): El TAMANIO del mensaje es: 16
+[INFO] 13:24:03:794 team/(11588:11615): El id 5 esta en la lista de LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): El nombre del LOCALIZED es Squirtle
+[INFO] 13:24:03:794 team/(11588:11615): El LOCALIZED de Squirtle no será tenido en cuenta porque, previamente, ya se recibio un mensaje de su aparicion
+[INFO] 13:24:03:794 team/(11588:11615): Estoy esperando mensaje LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:24:03:794 team/(11588:11615): El ID del mensaje es: 10
+[INFO] 13:24:03:794 team/(11588:11615): El ID CORRELATIVO del mensaje es: 7
+[INFO] 13:24:03:794 team/(11588:11615): El TAMANIO del mensaje es: 14
+[INFO] 13:24:03:794 team/(11588:11615): El id 7 esta en la lista de LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): El nombre del LOCALIZED es Gengar
+[INFO] 13:24:03:794 team/(11588:11615): La cantidad del LOCALIZED es 0
+[INFO] 13:24:03:794 team/(11588:11615): Estoy esperando mensaje LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:24:03:794 team/(11588:11615): El ID del mensaje es: 11
+[INFO] 13:24:03:794 team/(11588:11615): El ID CORRELATIVO del mensaje es: 8
+[INFO] 13:24:03:794 team/(11588:11615): El TAMANIO del mensaje es: 15
+[INFO] 13:24:03:794 team/(11588:11615): El id 8 esta en la lista de LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): El nombre del LOCALIZED es Pikachu
+[INFO] 13:24:03:794 team/(11588:11615): El LOCALIZED de Pikachu no será tenido en cuenta porque, previamente, ya se recibio un mensaje de su aparicion
+[INFO] 13:24:03:794 team/(11588:11615): Estoy esperando mensaje LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:24:03:794 team/(11588:11615): El ID del mensaje es: 12
+[INFO] 13:24:03:794 team/(11588:11615): El ID CORRELATIVO del mensaje es: 6
+[INFO] 13:24:03:794 team/(11588:11615): El TAMANIO del mensaje es: 12
+[INFO] 13:24:03:794 team/(11588:11615): El id 6 esta en la lista de LOCALIZED
+[INFO] 13:24:03:794 team/(11588:11615): El nombre del LOCALIZED es Onix
+[INFO] 13:24:03:794 team/(11588:11615): La cantidad del LOCALIZED es 486539264
+[INFO] 13:24:08:794 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:08:795 team/(11588:11600): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:24:08:795 team/(11588:11600): Entrenador 2 consume 1 de CPU
+[INFO] 13:24:08:796 team/(11588:11628): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:24:13:796 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:13:797 team/(11588:11600): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:24:13:797 team/(11588:11600): Entrenador 2 consume 1 de CPU
+[INFO] 13:24:13:802 team/(11588:11636): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:24:18:803 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:18:803 team/(11588:11600): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:24:18:803 team/(11588:11600): Entrenador 2 consume 1 de CPU
+[INFO] 13:24:18:813 team/(11588:11637): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:24:23:817 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:23:817 team/(11588:11600): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:24:23:817 team/(11588:11600): Entrenador 2 consume 1 de CPU
+[INFO] 13:24:23:821 team/(11588:11638): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:23:821 team/(11588:11638): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:24:23:822 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:23:822 team/(11588:11599): Esperando alguna accion
+[INFO] 13:24:23:822 team/(11588:11600): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:24:23:822 team/(11588:11600): Entrenador 1 consume 1 de CPU
+[INFO] 13:24:23:822 team/(11588:11641): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:24:23:824 team/(11588:11640): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:24:23:830 team/(11588:11613): Se recibio un mensaje del broker en la conexion 8
+[INFO] 13:24:23:830 team/(11588:11613): El ID del mensaje es: 14
+[INFO] 13:24:23:830 team/(11588:11613): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:24:23:830 team/(11588:11613): El TAMANIO del mensaje es: 4
+[INFO] 13:24:23:830 team/(11588:11613): El id 13 estan en la lista CAUGHT
+[INFO] 13:24:23:830 team/(11588:11613): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:24:23:830 team/(11588:11613): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:24:23:830 team/(11588:11613): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:24:23:830 team/(11588:11613): Estoy esperando mensaje CAUGHT
+[INFO] 13:24:28:823 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:28:823 team/(11588:11600): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:24:28:823 team/(11588:11600): Entrenador 1 consume 1 de CPU
+[INFO] 13:24:28:825 team/(11588:11646): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:24:33:825 team/(11588:11600): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:24:33:826 team/(11588:11600): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:24:33:826 team/(11588:11600): Entrenador 1 consume 1 de CPU
+[INFO] 13:24:33:829 team/(11588:11647): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:29:05:502 team/(12075:12075): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:29:05:502 team/(12075:12075): Necesito 2 pokemons Squirtle
+[INFO] 13:29:05:502 team/(12075:12075): Necesito 1 pokemons Pikachu
+[INFO] 13:29:05:502 team/(12075:12075): Necesito 1 pokemons Onix
+[INFO] 13:29:05:502 team/(12075:12075): Necesito 1 pokemons Gengar
+[INFO] 13:29:05:502 team/(12075:12075): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:502 team/(12075:12075): Se realizo el envio de GET correctamente
+[INFO] 13:29:05:505 team/(12075:12075): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:505 team/(12075:12075): Se realizo el envio de GET correctamente
+[INFO] 13:29:05:505 team/(12075:12075): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:505 team/(12075:12075): Se realizo el envio de GET correctamente
+[INFO] 13:29:05:506 team/(12075:12075): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:506 team/(12075:12075): Se realizo el envio de GET correctamente
+[INFO] 13:29:05:507 team/(12075:12079): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:29:05:511 team/(12075:12083): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:29:05:517 team/(12075:12086): Esperando alguna accion
+[INFO] 13:29:05:517 team/(12075:12087): Estoy en el planificador
+[INFO] 13:29:05:518 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:05:520 team/(12075:12085): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:29:05:520 team/(12075:12077): El broker no esta conectado...
+[INFO] 13:29:05:521 team/(12075:12077): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:521 team/(12075:12077): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:522 team/(12075:12081): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:29:05:535 team/(12075:12077): La conexion del appeared es 5
+[INFO] 13:29:05:535 team/(12075:12077): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:535 team/(12075:12077): La conexion del localized es 8
+[INFO] 13:29:05:536 team/(12075:12077): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:537 team/(12075:12077): La conexion del caught es 9
+[INFO] 13:29:05:537 team/(12075:12077): Funciona broker, activando las tres colas...
+[INFO] 13:29:05:537 team/(12075:12076): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:29:05:537 team/(12075:12077): Bloqueo de conexiones al broker
+[INFO] 13:29:05:538 team/(12075:12076): Listo para recibir conexion de GAMEBOY, en servidor: 10
+[INFO] 13:29:05:558 team/(12075:12100): Suscripcion exitosa a la cola
+[INFO] 13:29:05:558 team/(12075:12101): Suscripcion exitosa a la cola
+[INFO] 13:29:05:558 team/(12075:12102): Suscripcion exitosa a la cola
+[INFO] 13:29:05:559 team/(12075:12100): Estoy esperando mensaje CAUGHT
+[INFO] 13:29:05:559 team/(12075:12102): Estoy esperando mensaje LOCALIZED
+[INFO] 13:29:05:560 team/(12075:12101): Estoy esperando mensaje APPEARED
+[INFO] 13:29:05:567 team/(12075:12102): Se recibio un mensaje del broker en la conexion 8
+[INFO] 13:29:05:567 team/(12075:12102): El ID del mensaje es: 9
+[INFO] 13:29:05:567 team/(12075:12102): El ID CORRELATIVO del mensaje es: 5
+[INFO] 13:29:05:568 team/(12075:12102): El TAMANIO del mensaje es: 16
+[INFO] 13:29:05:568 team/(12075:12102): El id 5 esta en la lista de LOCALIZED
+[INFO] 13:29:05:568 team/(12075:12102): El nombre del LOCALIZED es Squirtle
+[INFO] 13:29:05:568 team/(12075:12102): La cantidad del LOCALIZED es 402653184
+[INFO] 13:29:05:574 team/(12075:12101): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:29:05:574 team/(12075:12101): El ID del mensaje es: 1
+[INFO] 13:29:05:574 team/(12075:12101): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:29:05:575 team/(12075:12101): El TAMANIO del mensaje es: 20
+[INFO] 13:29:05:575 team/(12075:12101): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:29:05:575 team/(12075:12101): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:29:05:575 team/(12075:12087): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:29:05:575 team/(12075:12087): Entrenador 1 consume 1 de CPU
+[INFO] 13:29:05:575 team/(12075:12101): Estoy esperando mensaje APPEARED
+[INFO] 13:29:05:575 team/(12075:12101): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:29:05:575 team/(12075:12101): El ID del mensaje es: 2
+[INFO] 13:29:05:575 team/(12075:12101): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:29:05:575 team/(12075:12101): El TAMANIO del mensaje es: 21
+[INFO] 13:29:05:575 team/(12075:12101): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:29:05:575 team/(12075:12101): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:29:05:575 team/(12075:12101): Estoy esperando mensaje APPEARED
+[INFO] 13:29:05:575 team/(12075:12101): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:29:05:575 team/(12075:12101): El ID del mensaje es: 3
+[INFO] 13:29:05:575 team/(12075:12101): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:29:05:575 team/(12075:12101): El TAMANIO del mensaje es: 20
+[INFO] 13:29:05:575 team/(12075:12101): El pokemon Jolteon no es requerido
+[INFO] 13:29:05:575 team/(12075:12101): Estoy esperando mensaje APPEARED
+[INFO] 13:29:05:575 team/(12075:12101): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:29:05:575 team/(12075:12101): El ID del mensaje es: 4
+[INFO] 13:29:05:575 team/(12075:12101): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:29:05:575 team/(12075:12101): El TAMANIO del mensaje es: 20
+[INFO] 13:29:05:575 team/(12075:12101): El pokemon Flareon no es requerido
+[INFO] 13:29:05:575 team/(12075:12101): Estoy esperando mensaje APPEARED
+[INFO] 13:29:05:577 team/(12075:12114): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:29:10:582 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:10:582 team/(12075:12087): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:29:10:582 team/(12075:12087): Entrenador 2 consume 1 de CPU
+[INFO] 13:29:10:584 team/(12075:12115): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:29:15:585 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:15:585 team/(12075:12087): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:29:15:585 team/(12075:12087): Entrenador 2 consume 1 de CPU
+[INFO] 13:29:15:587 team/(12075:12118): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:29:20:588 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:20:588 team/(12075:12087): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:29:20:588 team/(12075:12087): Entrenador 2 consume 1 de CPU
+[INFO] 13:29:20:590 team/(12075:12119): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:29:25:597 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:25:597 team/(12075:12087): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:29:25:597 team/(12075:12087): Entrenador 2 consume 1 de CPU
+[INFO] 13:29:25:599 team/(12075:12120): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:25:599 team/(12075:12120): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:29:25:599 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:25:599 team/(12075:12086): Esperando alguna accion
+[INFO] 13:29:25:599 team/(12075:12087): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:29:25:599 team/(12075:12087): Entrenador 1 consume 1 de CPU
+[INFO] 13:29:25:605 team/(12075:12123): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:29:25:615 team/(12075:12122): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:29:25:623 team/(12075:12100): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:29:25:623 team/(12075:12100): El ID del mensaje es: 14
+[INFO] 13:29:25:630 team/(12075:12100): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:29:25:630 team/(12075:12100): El TAMANIO del mensaje es: 4
+[INFO] 13:29:25:630 team/(12075:12100): El id 13 estan en la lista CAUGHT
+[INFO] 13:29:25:630 team/(12075:12100): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:29:25:630 team/(12075:12100): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:29:25:630 team/(12075:12100): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:29:25:630 team/(12075:12100): Estoy esperando mensaje CAUGHT
+[INFO] 13:29:30:615 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:30:615 team/(12075:12087): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:29:30:615 team/(12075:12087): Entrenador 1 consume 1 de CPU
+[INFO] 13:29:30:620 team/(12075:12128): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:29:35:620 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:35:621 team/(12075:12087): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:29:35:621 team/(12075:12087): Entrenador 1 consume 1 de CPU
+[INFO] 13:29:35:625 team/(12075:12129): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:29:40:626 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:40:626 team/(12075:12087): Estimado restante de entrenador 1 es 5.500000
+[INFO] 13:29:40:626 team/(12075:12087): Entrenador 1 consume 1 de CPU
+[INFO] 13:29:40:630 team/(12075:12130): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:29:45:631 team/(12075:12087): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:29:45:632 team/(12075:12087): Estimado restante de entrenador 1 es 4.500000
+[INFO] 13:29:45:632 team/(12075:12087): Entrenador 1 consume 1 de CPU
+[INFO] 13:29:45:635 team/(12075:12131): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:36:35:766 team/(13414:13414): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:36:35:769 team/(13414:13414): Necesito 2 pokemons Squirtle
+[INFO] 13:36:35:769 team/(13414:13414): Necesito 1 pokemons Pikachu
+[INFO] 13:36:35:769 team/(13414:13414): Necesito 1 pokemons Onix
+[INFO] 13:36:35:769 team/(13414:13414): Necesito 1 pokemons Gengar
+[INFO] 13:36:35:769 team/(13414:13414): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:770 team/(13414:13414): Se realizo el envio de GET correctamente
+[INFO] 13:36:35:770 team/(13414:13414): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:770 team/(13414:13414): Se realizo el envio de GET correctamente
+[INFO] 13:36:35:770 team/(13414:13414): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:770 team/(13414:13414): Se realizo el envio de GET correctamente
+[INFO] 13:36:35:771 team/(13414:13414): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:771 team/(13414:13414): Se realizo el envio de GET correctamente
+[INFO] 13:36:35:772 team/(13414:13418): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:36:35:786 team/(13414:13425): Esperando alguna accion
+[INFO] 13:36:35:786 team/(13414:13426): Estoy en el planificador
+[INFO] 13:36:35:786 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:36:35:787 team/(13414:13422): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:36:35:788 team/(13414:13424): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:36:35:789 team/(13414:13420): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:36:35:789 team/(13414:13416): El broker no esta conectado...
+[INFO] 13:36:35:789 team/(13414:13416): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:789 team/(13414:13416): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:789 team/(13414:13416): La conexion del appeared es 5
+[INFO] 13:36:35:789 team/(13414:13416): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:789 team/(13414:13416): La conexion del localized es 7
+[INFO] 13:36:35:790 team/(13414:13416): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:790 team/(13414:13416): La conexion del caught es 8
+[INFO] 13:36:35:790 team/(13414:13416): Funciona broker, activando las tres colas...
+[INFO] 13:36:35:790 team/(13414:13416): Bloqueo de conexiones al broker
+[INFO] 13:36:35:790 team/(13414:13415): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:36:35:791 team/(13414:13415): Listo para recibir conexion de GAMEBOY, en servidor: 9
+[INFO] 13:36:35:797 team/(13414:13438): Suscripcion exitosa a la cola
+[INFO] 13:36:35:797 team/(13414:13439): Suscripcion exitosa a la cola
+[INFO] 13:36:35:797 team/(13414:13440): Suscripcion exitosa a la cola
+[INFO] 13:36:35:797 team/(13414:13438): Estoy esperando mensaje CAUGHT
+[INFO] 13:36:35:798 team/(13414:13440): Estoy esperando mensaje LOCALIZED
+[INFO] 13:36:35:798 team/(13414:13439): Estoy esperando mensaje APPEARED
+[INFO] 13:36:35:805 team/(13414:13440): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:36:35:805 team/(13414:13440): El ID del mensaje es: 9
+[INFO] 13:36:35:805 team/(13414:13440): El ID CORRELATIVO del mensaje es: 5
+[INFO] 13:36:35:805 team/(13414:13440): El TAMANIO del mensaje es: 16
+[INFO] 13:36:35:805 team/(13414:13440): El id 5 esta en la lista de LOCALIZED
+[INFO] 13:36:35:805 team/(13414:13440): El nombre del LOCALIZED es Squirtle
+[INFO] 13:36:35:805 team/(13414:13440): La cantidad del LOCALIZED es 268435456
+[INFO] 13:36:35:814 team/(13414:13439): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:36:35:815 team/(13414:13439): El ID del mensaje es: 1
+[INFO] 13:36:35:815 team/(13414:13439): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:36:35:815 team/(13414:13439): El TAMANIO del mensaje es: 20
+[INFO] 13:36:35:815 team/(13414:13439): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:36:35:815 team/(13414:13439): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:36:35:815 team/(13414:13426): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:36:35:815 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:36:35:815 team/(13414:13439): Estoy esperando mensaje APPEARED
+[INFO] 13:36:35:815 team/(13414:13439): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:36:35:815 team/(13414:13439): El ID del mensaje es: 2
+[INFO] 13:36:35:815 team/(13414:13439): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:36:35:815 team/(13414:13439): El TAMANIO del mensaje es: 21
+[INFO] 13:36:35:815 team/(13414:13439): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:36:35:815 team/(13414:13439): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:36:35:815 team/(13414:13439): Estoy esperando mensaje APPEARED
+[INFO] 13:36:35:815 team/(13414:13439): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:36:35:815 team/(13414:13439): El ID del mensaje es: 3
+[INFO] 13:36:35:815 team/(13414:13439): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:36:35:815 team/(13414:13439): El TAMANIO del mensaje es: 20
+[INFO] 13:36:35:815 team/(13414:13439): El pokemon Jolteon no es requerido
+[INFO] 13:36:35:815 team/(13414:13439): Estoy esperando mensaje APPEARED
+[INFO] 13:36:35:815 team/(13414:13439): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:36:35:815 team/(13414:13439): El ID del mensaje es: 4
+[INFO] 13:36:35:815 team/(13414:13439): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:36:35:815 team/(13414:13439): El TAMANIO del mensaje es: 20
+[INFO] 13:36:35:815 team/(13414:13439): El pokemon Flareon no es requerido
+[INFO] 13:36:35:815 team/(13414:13439): Estoy esperando mensaje APPEARED
+[INFO] 13:36:35:815 team/(13414:13453): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:36:40:815 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:36:40:816 team/(13414:13426): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:36:40:816 team/(13414:13426): Entrenador 2 consume 1 de CPU
+[INFO] 13:36:40:819 team/(13414:13454): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:36:45:820 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:36:45:820 team/(13414:13426): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:36:45:820 team/(13414:13426): Entrenador 2 consume 1 de CPU
+[INFO] 13:36:45:822 team/(13414:13456): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:36:50:822 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:36:50:822 team/(13414:13426): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:36:50:822 team/(13414:13426): Entrenador 2 consume 1 de CPU
+[INFO] 13:36:50:825 team/(13414:13457): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:36:55:825 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:36:55:826 team/(13414:13426): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:36:55:826 team/(13414:13426): Entrenador 2 consume 1 de CPU
+[INFO] 13:36:55:828 team/(13414:13458): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:55:828 team/(13414:13458): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:36:55:828 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:36:55:828 team/(13414:13425): Esperando alguna accion
+[INFO] 13:36:55:828 team/(13414:13426): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:36:55:828 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:36:55:833 team/(13414:13461): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:36:55:834 team/(13414:13460): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:36:55:847 team/(13414:13438): Se recibio un mensaje del broker en la conexion 8
+[INFO] 13:36:55:847 team/(13414:13438): El ID del mensaje es: 14
+[INFO] 13:36:55:847 team/(13414:13438): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:36:55:847 team/(13414:13438): El TAMANIO del mensaje es: 4
+[INFO] 13:36:55:847 team/(13414:13438): El id 13 estan en la lista CAUGHT
+[INFO] 13:36:55:847 team/(13414:13438): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:36:55:847 team/(13414:13438): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:36:55:847 team/(13414:13438): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:36:55:847 team/(13414:13438): Estoy esperando mensaje CAUGHT
+[INFO] 13:37:00:834 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:00:837 team/(13414:13426): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:37:00:837 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:00:849 team/(13414:13466): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:37:05:851 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:05:853 team/(13414:13426): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:37:05:853 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:05:855 team/(13414:13467): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:37:10:856 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:10:856 team/(13414:13426): Estimado restante de entrenador 1 es 5.500000
+[INFO] 13:37:10:856 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:10:859 team/(13414:13468): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:37:15:861 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:15:862 team/(13414:13426): Estimado restante de entrenador 1 es 4.500000
+[INFO] 13:37:15:862 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:15:865 team/(13414:13471): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:37:20:869 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:20:870 team/(13414:13426): Estimado restante de entrenador 1 es 3.500000
+[INFO] 13:37:20:870 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:20:878 team/(13414:13472): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:37:25:879 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:25:879 team/(13414:13426): Estimado restante de entrenador 1 es 2.500000
+[INFO] 13:37:25:879 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:25:881 team/(13414:13476): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:37:30:881 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:30:885 team/(13414:13426): Estimado restante de entrenador 1 es 1.500000
+[INFO] 13:37:30:885 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:30:889 team/(13414:13477): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:37:35:889 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:35:890 team/(13414:13426): Estimado restante de entrenador 1 es 0.500000
+[INFO] 13:37:35:890 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:35:892 team/(13414:13484): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:37:40:892 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:40:893 team/(13414:13426): Estimado restante de entrenador 1 es -0.500000
+[INFO] 13:37:40:893 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:40:898 team/(13414:13485): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:37:45:899 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:45:899 team/(13414:13426): Estimado restante de entrenador 1 es -1.500000
+[INFO] 13:37:45:899 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:45:905 team/(13414:13486): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:37:50:906 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:50:906 team/(13414:13426): Estimado restante de entrenador 1 es -2.500000
+[INFO] 13:37:50:906 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:50:911 team/(13414:13487): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 13:37:55:913 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:55:913 team/(13414:13426): Estimado restante de entrenador 1 es -3.500000
+[INFO] 13:37:55:913 team/(13414:13426): Entrenador 1 consume 1 de CPU
+[INFO] 13:37:55:929 team/(13414:13488): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:37:55:929 team/(13414:13488): Se realizo el envio de CATCH Pikachu correctamente
+[INFO] 13:37:55:929 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:55:929 team/(13414:13425): Esperando alguna accion
+[INFO] 13:37:55:929 team/(13414:13426): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:37:55:931 team/(13414:13490): Se recibio correctamente el ID: 15, para esperar en CAUGHT
+[INFO] 13:37:55:937 team/(13414:13438): Se recibio un mensaje del broker en la conexion 8
+[INFO] 13:37:55:937 team/(13414:13438): El ID del mensaje es: 16
+[INFO] 13:37:55:937 team/(13414:13438): El ID CORRELATIVO del mensaje es: 15
+[INFO] 13:37:55:937 team/(13414:13438): El TAMANIO del mensaje es: 4
+[INFO] 13:37:55:937 team/(13414:13438): El id 15 estan en la lista CAUGHT
+[INFO] 13:37:55:937 team/(13414:13438): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:37:55:937 team/(13414:13438): 3. No se pudo realizar la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 13:37:55:937 team/(13414:13438): El entrenador 1 queda en BLOCK_READY
+[INFO] 13:37:55:937 team/(13414:13438): Estoy esperando mensaje CAUGHT
+[INFO] 13:41:34:153 team/(13765:13765): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:41:34:153 team/(13765:13765): Necesito 2 pokemons Squirtle
+[INFO] 13:41:34:153 team/(13765:13765): Necesito 1 pokemons Pikachu
+[INFO] 13:41:34:153 team/(13765:13765): Necesito 1 pokemons Onix
+[INFO] 13:41:34:153 team/(13765:13765): Necesito 1 pokemons Gengar
+[INFO] 13:41:34:154 team/(13765:13765): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:157 team/(13765:13765): Se realizo el envio de GET correctamente
+[INFO] 13:41:34:157 team/(13765:13765): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:157 team/(13765:13765): Se realizo el envio de GET correctamente
+[INFO] 13:41:34:157 team/(13765:13765): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:158 team/(13765:13765): Se realizo el envio de GET correctamente
+[INFO] 13:41:34:158 team/(13765:13765): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:158 team/(13765:13765): Se realizo el envio de GET correctamente
+[INFO] 13:41:34:160 team/(13765:13769): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:41:34:163 team/(13765:13771): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:41:34:166 team/(13765:13776): Esperando alguna accion
+[INFO] 13:41:34:166 team/(13765:13777): Estoy en el planificador
+[INFO] 13:41:34:166 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:34:168 team/(13765:13775): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:41:34:168 team/(13765:13767): El broker no esta conectado...
+[INFO] 13:41:34:172 team/(13765:13773): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:41:34:172 team/(13765:13767): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:172 team/(13765:13767): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:172 team/(13765:13767): La conexion del appeared es 5
+[INFO] 13:41:34:172 team/(13765:13767): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:172 team/(13765:13767): La conexion del localized es 7
+[INFO] 13:41:34:173 team/(13765:13767): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:173 team/(13765:13767): La conexion del caught es 9
+[INFO] 13:41:34:173 team/(13765:13767): Funciona broker, activando las tres colas...
+[INFO] 13:41:34:173 team/(13765:13767): Bloqueo de conexiones al broker
+[INFO] 13:41:34:174 team/(13765:13766): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:41:34:174 team/(13765:13766): Listo para recibir conexion de GAMEBOY, en servidor: 8
+[INFO] 13:41:34:194 team/(13765:13789): Suscripcion exitosa a la cola
+[INFO] 13:41:34:194 team/(13765:13790): Suscripcion exitosa a la cola
+[INFO] 13:41:34:194 team/(13765:13791): Suscripcion exitosa a la cola
+[INFO] 13:41:34:194 team/(13765:13789): Estoy esperando mensaje CAUGHT
+[INFO] 13:41:34:194 team/(13765:13790): Estoy esperando mensaje APPEARED
+[INFO] 13:41:34:194 team/(13765:13791): Estoy esperando mensaje LOCALIZED
+[INFO] 13:41:34:196 team/(13765:13791): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:41:34:196 team/(13765:13790): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:41:34:196 team/(13765:13791): El ID del mensaje es: 9
+[INFO] 13:41:34:196 team/(13765:13791): El ID CORRELATIVO del mensaje es: 7
+[INFO] 13:41:34:196 team/(13765:13791): El TAMANIO del mensaje es: 14
+[INFO] 13:41:34:196 team/(13765:13791): El id 7 esta en la lista de LOCALIZED
+[INFO] 13:41:34:196 team/(13765:13791): El nombre del LOCALIZED es Gengar
+[INFO] 13:41:34:196 team/(13765:13791): La cantidad del LOCALIZED es 2080374784
+[INFO] 13:41:34:197 team/(13765:13790): El ID del mensaje es: 1
+[INFO] 13:41:34:197 team/(13765:13790): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:41:34:197 team/(13765:13790): El TAMANIO del mensaje es: 20
+[INFO] 13:41:34:197 team/(13765:13790): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:41:34:203 team/(13765:13790): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:41:34:203 team/(13765:13777): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:41:34:203 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:41:34:203 team/(13765:13790): Estoy esperando mensaje APPEARED
+[INFO] 13:41:34:203 team/(13765:13790): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:41:34:203 team/(13765:13790): El ID del mensaje es: 2
+[INFO] 13:41:34:203 team/(13765:13790): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:41:34:203 team/(13765:13790): El TAMANIO del mensaje es: 21
+[INFO] 13:41:34:203 team/(13765:13790): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:41:34:204 team/(13765:13790): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:41:34:204 team/(13765:13790): Estoy esperando mensaje APPEARED
+[INFO] 13:41:34:205 team/(13765:13790): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:41:34:205 team/(13765:13790): El ID del mensaje es: 3
+[INFO] 13:41:34:205 team/(13765:13790): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:41:34:206 team/(13765:13790): El TAMANIO del mensaje es: 20
+[INFO] 13:41:34:206 team/(13765:13790): El pokemon Jolteon no es requerido
+[INFO] 13:41:34:206 team/(13765:13790): Estoy esperando mensaje APPEARED
+[INFO] 13:41:34:206 team/(13765:13790): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:41:34:206 team/(13765:13790): El ID del mensaje es: 4
+[INFO] 13:41:34:206 team/(13765:13790): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:41:34:206 team/(13765:13790): El TAMANIO del mensaje es: 20
+[INFO] 13:41:34:206 team/(13765:13801): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:41:34:207 team/(13765:13790): El pokemon Flareon no es requerido
+[INFO] 13:41:34:207 team/(13765:13790): Estoy esperando mensaje APPEARED
+[INFO] 13:41:39:208 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:39:208 team/(13765:13777): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:41:39:208 team/(13765:13777): Entrenador 2 consume 1 de CPU
+[INFO] 13:41:39:209 team/(13765:13805): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:41:44:210 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:44:210 team/(13765:13777): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:41:44:210 team/(13765:13777): Entrenador 2 consume 1 de CPU
+[INFO] 13:41:44:213 team/(13765:13806): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:41:49:214 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:49:214 team/(13765:13777): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:41:49:214 team/(13765:13777): Entrenador 2 consume 1 de CPU
+[INFO] 13:41:49:217 team/(13765:13807): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:41:54:218 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:54:218 team/(13765:13777): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:41:54:218 team/(13765:13777): Entrenador 2 consume 1 de CPU
+[INFO] 13:41:54:220 team/(13765:13808): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:54:221 team/(13765:13808): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:41:54:222 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:54:222 team/(13765:13776): Esperando alguna accion
+[INFO] 13:41:54:222 team/(13765:13777): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:41:54:222 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:41:54:227 team/(13765:13811): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:41:54:228 team/(13765:13810): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:41:54:259 team/(13765:13789): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:41:54:260 team/(13765:13789): El ID del mensaje es: 14
+[INFO] 13:41:54:260 team/(13765:13789): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:41:54:260 team/(13765:13789): El TAMANIO del mensaje es: 4
+[INFO] 13:41:54:260 team/(13765:13789): El id 13 estan en la lista CAUGHT
+[INFO] 13:41:54:260 team/(13765:13789): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:41:54:260 team/(13765:13789): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:41:54:260 team/(13765:13789): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:41:54:260 team/(13765:13789): Estoy esperando mensaje CAUGHT
+[INFO] 13:41:59:227 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:41:59:228 team/(13765:13777): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:41:59:228 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:41:59:237 team/(13765:13816): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:42:04:240 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:04:240 team/(13765:13777): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:42:04:241 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:04:247 team/(13765:13819): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:42:09:248 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:09:248 team/(13765:13777): Estimado restante de entrenador 1 es 5.500000
+[INFO] 13:42:09:248 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:09:251 team/(13765:13821): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:42:14:253 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:14:253 team/(13765:13777): Estimado restante de entrenador 1 es 4.500000
+[INFO] 13:42:14:253 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:14:261 team/(13765:13826): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:42:19:262 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:19:262 team/(13765:13777): Estimado restante de entrenador 1 es 3.500000
+[INFO] 13:42:19:263 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:19:266 team/(13765:13833): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:42:24:266 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:24:267 team/(13765:13777): Estimado restante de entrenador 1 es 2.500000
+[INFO] 13:42:24:267 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:24:279 team/(13765:13840): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:42:29:279 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:29:280 team/(13765:13777): Estimado restante de entrenador 1 es 1.500000
+[INFO] 13:42:29:280 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:29:289 team/(13765:13841): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:42:34:290 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:34:290 team/(13765:13777): Estimado restante de entrenador 1 es 0.500000
+[INFO] 13:42:34:290 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:34:293 team/(13765:13846): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:42:39:293 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:39:294 team/(13765:13777): Estimado restante de entrenador 1 es -0.500000
+[INFO] 13:42:39:294 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:39:301 team/(13765:13847): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:42:44:302 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:44:303 team/(13765:13777): Estimado restante de entrenador 1 es -1.500000
+[INFO] 13:42:44:303 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:44:309 team/(13765:13848): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:42:49:309 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:49:310 team/(13765:13777): Estimado restante de entrenador 1 es -2.500000
+[INFO] 13:42:49:310 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:49:316 team/(13765:13849): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 13:42:54:317 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:54:318 team/(13765:13777): Estimado restante de entrenador 1 es -3.500000
+[INFO] 13:42:54:318 team/(13765:13777): Entrenador 1 consume 1 de CPU
+[INFO] 13:42:54:321 team/(13765:13850): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:42:54:321 team/(13765:13850): Se realizo el envio de CATCH Pikachu correctamente
+[INFO] 13:42:54:321 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:54:321 team/(13765:13776): Esperando alguna accion
+[INFO] 13:42:54:321 team/(13765:13777): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:42:54:326 team/(13765:13852): Se recibio correctamente el ID: 15, para esperar en CAUGHT
+[INFO] 13:42:54:338 team/(13765:13789): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:42:54:338 team/(13765:13789): El ID del mensaje es: 16
+[INFO] 13:42:54:338 team/(13765:13789): El ID CORRELATIVO del mensaje es: 15
+[INFO] 13:42:54:338 team/(13765:13789): El TAMANIO del mensaje es: 4
+[INFO] 13:42:54:338 team/(13765:13789): El id 15 estan en la lista CAUGHT
+[INFO] 13:42:54:338 team/(13765:13789): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:42:54:338 team/(13765:13789): 3. No se pudo realizar la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 13:42:54:338 team/(13765:13789): El entrenador 1 queda en BLOCK_READY
+[INFO] 13:42:54:339 team/(13765:13789): Estoy esperando mensaje CAUGHT
+[INFO] 13:44:02:973 team/(13765:13789): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:44:02:974 team/(13765:13790): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:44:02:974 team/(13765:13789): Se perdio la conexion con el broker
+[INFO] 13:44:02:974 team/(13765:13767): Desbloqueo de conexiones al broker
+[INFO] 13:44:02:975 team/(13765:13790): Se perdio la conexion con el broker
+[INFO] 13:44:02:975 team/(13765:13767): El broker no esta conectado...
+[INFO] 13:44:02:975 team/(13765:13767): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:54 team/(14894:14894): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 13:45:32:54 team/(14894:14894): Necesito 2 pokemons Squirtle
+[INFO] 13:45:32:54 team/(14894:14894): Necesito 1 pokemons Pikachu
+[INFO] 13:45:32:54 team/(14894:14894): Necesito 1 pokemons Onix
+[INFO] 13:45:32:54 team/(14894:14894): Necesito 1 pokemons Gengar
+[INFO] 13:45:32:54 team/(14894:14894): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:54 team/(14894:14894): Se realizo el envio de GET correctamente
+[INFO] 13:45:32:55 team/(14894:14894): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:55 team/(14894:14894): Se realizo el envio de GET correctamente
+[INFO] 13:45:32:55 team/(14894:14894): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:55 team/(14894:14894): Se realizo el envio de GET correctamente
+[INFO] 13:45:32:56 team/(14894:14894): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:56 team/(14894:14894): Se realizo el envio de GET correctamente
+[INFO] 13:45:32:57 team/(14894:14900): Se recibio correctamente el ID: 5, para esperar en LOCALIZED
+[INFO] 13:45:32:59 team/(14894:14898): Se recibio correctamente el ID: 6, para esperar en LOCALIZED
+[INFO] 13:45:32:61 team/(14894:14905): Esperando alguna accion
+[INFO] 13:45:32:61 team/(14894:14906): Estoy en el planificador
+[INFO] 13:45:32:61 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:32:63 team/(14894:14904): Se recibio correctamente el ID: 7, para esperar en LOCALIZED
+[INFO] 13:45:32:63 team/(14894:14896): El broker no esta conectado...
+[INFO] 13:45:32:63 team/(14894:14896): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:63 team/(14894:14896): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:69 team/(14894:14902): Se recibio correctamente el ID: 8, para esperar en LOCALIZED
+[INFO] 13:45:32:69 team/(14894:14896): La conexion del appeared es 5
+[INFO] 13:45:32:73 team/(14894:14896): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:73 team/(14894:14896): La conexion del localized es 7
+[INFO] 13:45:32:73 team/(14894:14896): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:73 team/(14894:14896): La conexion del caught es 9
+[INFO] 13:45:32:73 team/(14894:14896): Funciona broker, activando las tres colas...
+[INFO] 13:45:32:74 team/(14894:14896): Bloqueo de conexiones al broker
+[INFO] 13:45:32:84 team/(14894:14895): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 13:45:32:84 team/(14894:14895): Listo para recibir conexion de GAMEBOY, en servidor: 8
+[INFO] 13:45:32:94 team/(14894:14918): Suscripcion exitosa a la cola
+[INFO] 13:45:32:94 team/(14894:14919): Suscripcion exitosa a la cola
+[INFO] 13:45:32:94 team/(14894:14920): Suscripcion exitosa a la cola
+[INFO] 13:45:32:95 team/(14894:14918): Estoy esperando mensaje CAUGHT
+[INFO] 13:45:32:95 team/(14894:14920): Estoy esperando mensaje LOCALIZED
+[INFO] 13:45:32:95 team/(14894:14920): Se recibio un mensaje del broker en la conexion 7
+[INFO] 13:45:32:95 team/(14894:14920): El ID del mensaje es: 9
+[INFO] 13:45:32:95 team/(14894:14920): El ID CORRELATIVO del mensaje es: 5
+[INFO] 13:45:32:95 team/(14894:14920): El TAMANIO del mensaje es: 15
+[INFO] 13:45:32:96 team/(14894:14920): El id 5 esta en la lista de LOCALIZED
+[INFO] 13:45:32:96 team/(14894:14920): El nombre del LOCALIZED es Pikachu
+[INFO] 13:45:32:97 team/(14894:14920): La cantidad del LOCALIZED es 134217728
+[INFO] 13:45:32:101 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:45:32:101 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:45:32:101 team/(14894:14919): El ID del mensaje es: 1
+[INFO] 13:45:32:101 team/(14894:14919): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:45:32:101 team/(14894:14919): El TAMANIO del mensaje es: 20
+[INFO] 13:45:32:101 team/(14894:14919): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:45:32:101 team/(14894:14919): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:45:32:102 team/(14894:14906): Estimado restante de entrenador 1 es 9.500000
+[INFO] 13:45:32:102 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:45:32:102 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:45:32:102 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:45:32:102 team/(14894:14919): El ID del mensaje es: 2
+[INFO] 13:45:32:102 team/(14894:14919): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:45:32:102 team/(14894:14919): El TAMANIO del mensaje es: 21
+[INFO] 13:45:32:102 team/(14894:14919): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:45:32:102 team/(14894:14919): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:45:32:109 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:45:32:109 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:45:32:112 team/(14894:14919): El ID del mensaje es: 3
+[INFO] 13:45:32:113 team/(14894:14919): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:45:32:113 team/(14894:14919): El TAMANIO del mensaje es: 20
+[INFO] 13:45:32:113 team/(14894:14919): El pokemon Jolteon no es requerido
+[INFO] 13:45:32:113 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:45:32:113 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:45:32:113 team/(14894:14919): El ID del mensaje es: 4
+[INFO] 13:45:32:113 team/(14894:14919): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:45:32:113 team/(14894:14919): El TAMANIO del mensaje es: 20
+[INFO] 13:45:32:113 team/(14894:14919): El pokemon Flareon no es requerido
+[INFO] 13:45:32:113 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:45:32:114 team/(14894:14931): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 13:45:37:114 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:37:114 team/(14894:14906): Estimado restante de entrenador 2 es 4.500000
+[INFO] 13:45:37:114 team/(14894:14906): Entrenador 2 consume 1 de CPU
+[INFO] 13:45:37:121 team/(14894:14934): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:45:42:121 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:42:121 team/(14894:14906): Estimado restante de entrenador 2 es 3.500000
+[INFO] 13:45:42:122 team/(14894:14906): Entrenador 2 consume 1 de CPU
+[INFO] 13:45:42:124 team/(14894:14935): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:45:47:125 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:47:125 team/(14894:14906): Estimado restante de entrenador 2 es 2.500000
+[INFO] 13:45:47:125 team/(14894:14906): Entrenador 2 consume 1 de CPU
+[INFO] 13:45:47:133 team/(14894:14936): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:45:52:134 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:52:134 team/(14894:14906): Estimado restante de entrenador 2 es 1.500000
+[INFO] 13:45:52:134 team/(14894:14906): Entrenador 2 consume 1 de CPU
+[INFO] 13:45:52:137 team/(14894:14937): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:52:137 team/(14894:14937): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:45:52:137 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:52:137 team/(14894:14905): Esperando alguna accion
+[INFO] 13:45:52:137 team/(14894:14906): Estimado restante de entrenador 1 es 8.500000
+[INFO] 13:45:52:138 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:45:52:141 team/(14894:14940): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 13:45:52:142 team/(14894:14939): Se recibio correctamente el ID: 13, para esperar en CAUGHT
+[INFO] 13:45:52:151 team/(14894:14918): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:45:52:151 team/(14894:14918): El ID del mensaje es: 14
+[INFO] 13:45:52:151 team/(14894:14918): El ID CORRELATIVO del mensaje es: 13
+[INFO] 13:45:52:151 team/(14894:14918): El TAMANIO del mensaje es: 4
+[INFO] 13:45:52:151 team/(14894:14918): El id 13 estan en la lista CAUGHT
+[INFO] 13:45:52:151 team/(14894:14918): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:45:52:151 team/(14894:14918): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:45:52:152 team/(14894:14918): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:45:52:152 team/(14894:14918): Estoy esperando mensaje CAUGHT
+[INFO] 13:45:57:142 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:45:57:142 team/(14894:14906): Estimado restante de entrenador 1 es 7.500000
+[INFO] 13:45:57:143 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:45:57:145 team/(14894:14945): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 13:46:02:146 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:02:146 team/(14894:14906): Estimado restante de entrenador 1 es 6.500000
+[INFO] 13:46:02:146 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:02:148 team/(14894:14946): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 13:46:07:149 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:07:150 team/(14894:14906): Estimado restante de entrenador 1 es 5.500000
+[INFO] 13:46:07:150 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:07:153 team/(14894:14947): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 13:46:12:153 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:12:154 team/(14894:14906): Estimado restante de entrenador 1 es 4.500000
+[INFO] 13:46:12:154 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:12:161 team/(14894:14948): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 13:46:17:162 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:17:163 team/(14894:14906): Estimado restante de entrenador 1 es 3.500000
+[INFO] 13:46:17:163 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:17:170 team/(14894:14951): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 13:46:22:171 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:22:171 team/(14894:14906): Estimado restante de entrenador 1 es 2.500000
+[INFO] 13:46:22:171 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:22:181 team/(14894:14952): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 13:46:27:184 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:27:185 team/(14894:14906): Estimado restante de entrenador 1 es 1.500000
+[INFO] 13:46:27:185 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:27:188 team/(14894:14953): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 13:46:32:189 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:32:190 team/(14894:14906): Estimado restante de entrenador 1 es 0.500000
+[INFO] 13:46:32:190 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:32:199 team/(14894:14954): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 13:46:37:199 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:37:200 team/(14894:14906): Estimado restante de entrenador 1 es -0.500000
+[INFO] 13:46:37:200 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:37:205 team/(14894:14955): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 13:46:42:206 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:42:206 team/(14894:14906): Estimado restante de entrenador 1 es -1.500000
+[INFO] 13:46:42:206 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:42:212 team/(14894:14956): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 13:46:47:213 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:47:214 team/(14894:14906): Estimado restante de entrenador 1 es -2.500000
+[INFO] 13:46:47:214 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:47:224 team/(14894:14957): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 13:46:52:227 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:52:227 team/(14894:14906): Estimado restante de entrenador 1 es -3.500000
+[INFO] 13:46:52:227 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:46:52:237 team/(14894:14958): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:46:52:237 team/(14894:14958): Se realizo el envio de CATCH Pikachu correctamente
+[INFO] 13:46:52:237 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:52:237 team/(14894:14905): Esperando alguna accion
+[INFO] 13:46:52:237 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:46:52:238 team/(14894:14960): Se recibio correctamente el ID: 15, para esperar en CAUGHT
+[INFO] 13:46:52:244 team/(14894:14918): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:46:52:244 team/(14894:14918): El ID del mensaje es: 16
+[INFO] 13:46:52:244 team/(14894:14918): El ID CORRELATIVO del mensaje es: 15
+[INFO] 13:46:52:244 team/(14894:14918): El TAMANIO del mensaje es: 4
+[INFO] 13:46:52:245 team/(14894:14918): El id 15 estan en la lista CAUGHT
+[INFO] 13:46:52:245 team/(14894:14918): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:46:52:245 team/(14894:14918): 3. No se pudo realizar la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 13:46:52:245 team/(14894:14918): El entrenador 1 queda en BLOCK_READY
+[INFO] 13:46:52:245 team/(14894:14918): Estoy esperando mensaje CAUGHT
+[INFO] 13:58:22:158 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:58:22:158 team/(14894:14919): El ID del mensaje es: 17
+[INFO] 13:58:22:158 team/(14894:14919): El ID CORRELATIVO del mensaje es: 1
+[INFO] 13:58:22:158 team/(14894:14919): El TAMANIO del mensaje es: 20
+[INFO] 13:58:22:158 team/(14894:14919): Aparecio un Pikachu en 9|9, el cual es requerido
+[INFO] 13:58:22:158 team/(14894:14919): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 13:58:22:158 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:58:22:158 team/(14894:14906): Estimado restante de entrenador 1 es 5.250000
+[INFO] 13:58:22:158 team/(14894:14906): Entrenador 1 consume 1 de CPU
+[INFO] 13:58:22:159 team/(14894:15853): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:58:22:160 team/(14894:15853): Se realizo el envio de CATCH Pikachu correctamente
+[INFO] 13:58:22:160 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:58:22:160 team/(14894:14905): Esperando alguna accion
+[INFO] 13:58:22:178 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:58:22:178 team/(14894:14919): El ID del mensaje es: 19
+[INFO] 13:58:22:178 team/(14894:14919): El ID CORRELATIVO del mensaje es: 2
+[INFO] 13:58:22:178 team/(14894:14919): El TAMANIO del mensaje es: 21
+[INFO] 13:58:22:179 team/(14894:14919): Aparecio un Squirtle en 5|2, el cual es requerido
+[INFO] 13:58:22:179 team/(14894:14919): Se encontro entrenador para asignar a la busqueda de Squirtle
+[INFO] 13:58:22:179 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:58:22:179 team/(14894:14906): Estimado restante de entrenador 2 es 2.750000
+[INFO] 13:58:22:179 team/(14894:14906): Entrenador 2 consume 1 de CPU
+[INFO] 13:58:22:179 team/(14894:15856): Se recibio correctamente el ID: 18, para esperar en CAUGHT
+[INFO] 13:58:22:187 team/(14894:15861): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:58:22:188 team/(14894:15861): Se realizo el envio de CATCH Squirtle correctamente
+[INFO] 13:58:22:189 team/(14894:14906): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 13:58:22:189 team/(14894:14905): Esperando alguna accion
+[INFO] 13:58:22:196 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:58:22:196 team/(14894:14919): El ID del mensaje es: 21
+[INFO] 13:58:22:196 team/(14894:14919): El ID CORRELATIVO del mensaje es: 3
+[INFO] 13:58:22:196 team/(14894:14919): El TAMANIO del mensaje es: 20
+[INFO] 13:58:22:196 team/(14894:14919): El pokemon Jolteon no es requerido
+[INFO] 13:58:22:196 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:58:22:197 team/(14894:15862): Se recibio correctamente el ID: 20, para esperar en CAUGHT
+[INFO] 13:58:22:198 team/(14894:14918): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:58:22:198 team/(14894:14918): El ID del mensaje es: 22
+[INFO] 13:58:22:198 team/(14894:14918): El ID CORRELATIVO del mensaje es: 18
+[INFO] 13:58:22:198 team/(14894:14918): El TAMANIO del mensaje es: 4
+[INFO] 13:58:22:198 team/(14894:14918): El id 18 estan en la lista CAUGHT
+[INFO] 13:58:22:198 team/(14894:14918): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:58:22:198 team/(14894:14918): 3. No se pudo realizar la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 13:58:22:198 team/(14894:14918): El entrenador 1 queda en BLOCK_READY
+[INFO] 13:58:22:198 team/(14894:14918): Estoy esperando mensaje CAUGHT
+[INFO] 13:58:22:202 team/(14894:14918): Se recibio un mensaje del broker en la conexion 9
+[INFO] 13:58:22:202 team/(14894:14918): El ID del mensaje es: 23
+[INFO] 13:58:22:203 team/(14894:14918): El ID CORRELATIVO del mensaje es: 20
+[INFO] 13:58:22:203 team/(14894:14918): El TAMANIO del mensaje es: 4
+[INFO] 13:58:22:203 team/(14894:14918): El id 20 estan en la lista CAUGHT
+[INFO] 13:58:22:203 team/(14894:14918): El mensaje CAUGHT corresponde a un ID que se estaba esperando
+[INFO] 13:58:22:203 team/(14894:14918): 3. No se pudo realizar la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 13:58:22:203 team/(14894:14918): El entrenador 2 queda en BLOCK_READY
+[INFO] 13:58:22:203 team/(14894:14918): Estoy esperando mensaje CAUGHT
+[INFO] 13:58:22:203 team/(14894:14919): Se recibio un mensaje del broker en la conexion 5
+[INFO] 13:58:22:203 team/(14894:14919): El ID del mensaje es: 24
+[INFO] 13:58:22:203 team/(14894:14919): El ID CORRELATIVO del mensaje es: 4
+[INFO] 13:58:22:203 team/(14894:14919): El TAMANIO del mensaje es: 20
+[INFO] 13:58:22:203 team/(14894:14919): El pokemon Flareon no es requerido
+[INFO] 13:58:22:203 team/(14894:14919): Estoy esperando mensaje APPEARED
+[INFO] 13:58:33:269 team/(14894:14918): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:58:33:270 team/(14894:14919): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:58:33:270 team/(14894:14918): Se perdio la conexion con el broker
+[INFO] 13:58:33:270 team/(14894:14896): Desbloqueo de conexiones al broker
+[INFO] 13:58:33:271 team/(14894:14919): Se perdio la conexion con el broker
+[INFO] 13:58:33:271 team/(14894:14896): El broker no esta conectado...
+[INFO] 13:58:33:271 team/(14894:14896): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:59:03:272 team/(14894:14896): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:59:33:272 team/(14894:14896): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009

@@ -192,12 +192,12 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 		memcpy(&largo_nombre_pokemon, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
 		log_info(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
-		char* nombre_pokemon = malloc(largo_nombre_pokemon + 1);
+		char* nombre_pokemon = malloc(largo_nombre_pokemon+1);
 		int posicion_x;
 		int posicion_y;
-		memcpy(nombre_pokemon, (paquete->buffer->stream) + offset, largo_nombre_pokemon + 1);
+		memcpy(nombre_pokemon, (paquete->buffer->stream) + offset, largo_nombre_pokemon);
 		log_info(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
-		offset+=largo_nombre_pokemon + 1;
+		offset+=largo_nombre_pokemon;
 		memcpy(&posicion_x, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
 		log_info(mi_log, "La posicion x del pokemon es %d", posicion_x);

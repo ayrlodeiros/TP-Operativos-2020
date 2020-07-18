@@ -1,0 +1,767 @@
+[INFO] 12:45:34:597 gamecard/(8736:8736): TERMINE DE CREAR BITMAP
+[INFO] 12:45:34:599 gamecard/(8736:8738): El broker no esta conectado...
+[INFO] 12:45:34:599 gamecard/(8736:8738): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:45:34:600 gamecard/(8736:8738): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:45:34:600 gamecard/(8736:8738): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:45:34:600 gamecard/(8736:8738): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:45:34:600 gamecard/(8736:8738): Funciona broker, activando las tres colas...
+[INFO] 12:45:34:600 gamecard/(8736:8738): Bloqueo de conexiones al broker
+[INFO] 12:45:34:601 gamecard/(8736:8737): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 12:45:34:601 gamecard/(8736:8737): Listo para recibir conexion de GAMEBOY, 
+[INFO] 12:45:34:605 gamecard/(8736:8744): Suscripcion exitosa a la cola
+[INFO] 12:45:34:605 gamecard/(8736:8745): Suscripcion exitosa a la cola
+[INFO] 12:45:34:606 gamecard/(8736:8743): Suscripcion exitosa a la cola
+[INFO] 12:45:34:606 gamecard/(8736:8744): Estoy esperando mensaje CATCH
+[INFO] 12:45:34:607 gamecard/(8736:8743): Estoy esperando mensaje NEW
+[INFO] 12:45:34:607 gamecard/(8736:8745): Estoy esperando mensaje GET
+[INFO] 12:45:55:900 gamecard/(8736:8745): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:45:55:900 gamecard/(8736:8744): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:45:55:900 gamecard/(8736:8743): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:45:55:900 gamecard/(8736:8745): Se perdio la conexion con el broker
+[INFO] 12:45:55:900 gamecard/(8736:8738): Desbloqueo de conexiones al broker
+[INFO] 12:45:55:901 gamecard/(8736:8738): El broker no esta conectado...
+[INFO] 12:45:55:901 gamecard/(8736:8738): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:45:55:901 gamecard/(8736:8744): Se perdio la conexion con el broker
+[INFO] 12:45:55:901 gamecard/(8736:8743): Se perdio la conexion con el broker
+[INFO] 12:47:27:353 gamecard/(8906:8906): TERMINE DE CREAR BITMAP
+[INFO] 12:47:27:357 gamecard/(8906:8910): El broker no esta conectado...
+[INFO] 12:47:27:357 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:47:27:357 gamecard/(8906:8910): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:47:27:358 gamecard/(8906:8910): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:47:27:358 gamecard/(8906:8909): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 12:47:27:358 gamecard/(8906:8910): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:47:27:358 gamecard/(8906:8909): Listo para recibir conexion de GAMEBOY, 
+[INFO] 12:47:27:358 gamecard/(8906:8910): Funciona broker, activando las tres colas...
+[INFO] 12:47:27:358 gamecard/(8906:8910): Bloqueo de conexiones al broker
+[INFO] 12:47:27:361 gamecard/(8906:8916): Suscripcion exitosa a la cola
+[INFO] 12:47:27:361 gamecard/(8906:8917): Suscripcion exitosa a la cola
+[INFO] 12:47:27:366 gamecard/(8906:8916): Estoy esperando mensaje CATCH
+[INFO] 12:47:27:366 gamecard/(8906:8915): Suscripcion exitosa a la cola
+[INFO] 12:47:27:367 gamecard/(8906:8915): Estoy esperando mensaje NEW
+[INFO] 12:47:27:367 gamecard/(8906:8917): Estoy esperando mensaje GET
+[INFO] 12:48:28:908 gamecard/(8906:8917): Se recibio el mensaje del broker correctamente
+[INFO] 12:48:28:908 gamecard/(8906:8917): Estoy esperando mensaje GET
+[INFO] 12:48:28:909 gamecard/(8906:8917): Se recibio el mensaje del broker correctamente
+[INFO] 12:48:28:909 gamecard/(8906:8917): Estoy esperando mensaje GET
+[INFO] 12:48:28:911 gamecard/(8906:8917): Se recibio el mensaje del broker correctamente
+[INFO] 12:48:28:911 gamecard/(8906:8917): Estoy esperando mensaje GET
+[INFO] 12:48:28:912 gamecard/(8906:8917): Se recibio el mensaje del broker correctamente
+[INFO] 12:48:28:912 gamecard/(8906:8917): Estoy esperando mensaje GET
+[INFO] 12:48:28:918 gamecard/(8906:8984): No se encontro al Pokemon
+[INFO] 12:48:28:925 gamecard/(8906:8986): No se encontro al Pokemon
+[INFO] 12:48:28:927 gamecard/(8906:8988): No se encontro al Pokemon
+[INFO] 12:48:28:927 gamecard/(8906:8984): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 12:48:28:927 gamecard/(8906:8984): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:928 gamecard/(8906:8990): No se encontro al Pokemon
+[INFO] 12:48:28:929 gamecard/(8906:8984): Se realizo el envio del LOCALIZED de Squirtle correctamente
+[INFO] 12:48:28:929 gamecard/(8906:8986): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 12:48:28:929 gamecard/(8906:8986): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:929 gamecard/(8906:8986): Se realizo el envio del LOCALIZED de Onix correctamente
+[INFO] 12:48:28:930 gamecard/(8906:8990): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 12:48:28:930 gamecard/(8906:8990): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:930 gamecard/(8906:8990): Se realizo el envio del LOCALIZED de Pikachu correctamente
+[INFO] 12:48:28:931 gamecard/(8906:8988): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 12:48:28:931 gamecard/(8906:8988): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:28:931 gamecard/(8906:8988): Se realizo el envio del LOCALIZED de Gengar correctamente
+[INFO] 12:48:28:938 gamecard/(8906:8984): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 12:48:28:942 gamecard/(8906:8990): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 12:48:28:946 gamecard/(8906:8986): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Onix correctamente
+[INFO] 12:48:28:946 gamecard/(8906:8988): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 12:48:29:568 gamecard/(8906:8917): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:48:29:568 gamecard/(8906:8916): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:48:29:568 gamecard/(8906:8915): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:48:29:568 gamecard/(8906:8917): Se perdio la conexion con el broker
+[INFO] 12:48:29:568 gamecard/(8906:8910): Desbloqueo de conexiones al broker
+[INFO] 12:48:29:569 gamecard/(8906:8910): El broker no esta conectado...
+[INFO] 12:48:29:569 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:29:569 gamecard/(8906:8915): Se perdio la conexion con el broker
+[INFO] 12:48:29:569 gamecard/(8906:8916): Se perdio la conexion con el broker
+[INFO] 12:48:39:570 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:49:571 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:48:59:572 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:49:09:572 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:49:19:573 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:49:29:573 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:49:39:575 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:49:49:576 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:49:59:576 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:50:09:577 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:50:19:578 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:50:29:578 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:50:39:579 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:50:49:579 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:50:59:580 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:51:09:580 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:51:19:581 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:51:29:582 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:51:39:582 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:51:49:593 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:51:59:594 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:52:09:595 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:52:19:595 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:52:29:597 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:52:39:601 gamecard/(8906:8910): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:26:573 gamecard/(9254:9254): TERMINE DE CREAR BITMAP
+[INFO] 12:53:26:574 gamecard/(9254:9256): El broker no esta conectado...
+[INFO] 12:53:26:574 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:26:576 gamecard/(9254:9256): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:26:576 gamecard/(9254:9256): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:26:576 gamecard/(9254:9256): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:26:576 gamecard/(9254:9256): Funciona broker, activando las tres colas...
+[INFO] 12:53:26:577 gamecard/(9254:9256): Bloqueo de conexiones al broker
+[INFO] 12:53:26:580 gamecard/(9254:9255): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 12:53:26:580 gamecard/(9254:9255): Listo para recibir conexion de GAMEBOY, 
+[INFO] 12:53:26:580 gamecard/(9254:9262): Suscripcion exitosa a la cola
+[INFO] 12:53:26:580 gamecard/(9254:9263): Suscripcion exitosa a la cola
+[INFO] 12:53:26:581 gamecard/(9254:9262): Estoy esperando mensaje CATCH
+[INFO] 12:53:26:581 gamecard/(9254:9263): Estoy esperando mensaje GET
+[INFO] 12:53:26:581 gamecard/(9254:9261): Suscripcion exitosa a la cola
+[INFO] 12:53:26:581 gamecard/(9254:9261): Estoy esperando mensaje NEW
+[INFO] 12:53:39:135 gamecard/(9254:9263): Se recibio el mensaje del broker correctamente
+[INFO] 12:53:39:135 gamecard/(9254:9263): Estoy esperando mensaje GET
+[INFO] 12:53:39:136 gamecard/(9254:9263): Se recibio el mensaje del broker correctamente
+[INFO] 12:53:39:136 gamecard/(9254:9263): Estoy esperando mensaje GET
+[INFO] 12:53:39:137 gamecard/(9254:9263): Se recibio el mensaje del broker correctamente
+[INFO] 12:53:39:137 gamecard/(9254:9263): Estoy esperando mensaje GET
+[INFO] 12:53:39:137 gamecard/(9254:9263): Se recibio el mensaje del broker correctamente
+[INFO] 12:53:39:137 gamecard/(9254:9263): Estoy esperando mensaje GET
+[INFO] 12:53:39:139 gamecard/(9254:9322): No se encontro al Pokemon
+[INFO] 12:53:39:139 gamecard/(9254:9325): No se encontro al Pokemon
+[INFO] 12:53:39:139 gamecard/(9254:9322): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu1
+[INFO] 12:53:39:139 gamecard/(9254:9328): No se encontro al Pokemon
+[INFO] 12:53:39:140 gamecard/(9254:9322): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:140 gamecard/(9254:9330): No se encontro al Pokemon
+[INFO] 12:53:39:140 gamecard/(9254:9322): Se realizo el envio del LOCALIZED de Pikachu1 correctamente
+[INFO] 12:53:39:141 gamecard/(9254:9325): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 12:53:39:141 gamecard/(9254:9325): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:141 gamecard/(9254:9325): Se realizo el envio del LOCALIZED de Squirtle correctamente
+[INFO] 12:53:39:141 gamecard/(9254:9330): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 12:53:39:142 gamecard/(9254:9328): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 12:53:39:142 gamecard/(9254:9328): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:142 gamecard/(9254:9328): Se realizo el envio del LOCALIZED de Onix correctamente
+[INFO] 12:53:39:142 gamecard/(9254:9330): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:142 gamecard/(9254:9330): Se realizo el envio del LOCALIZED de Gengar correctamente
+[INFO] 12:53:39:176 gamecard/(9254:9330): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 12:53:39:178 gamecard/(9254:9325): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 12:53:39:178 gamecard/(9254:9328): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Onix correctamente
+[INFO] 12:53:39:805 gamecard/(9254:9322): No se pudo recibir el id de respuesta del mensaje LOCALIZED de Pikachu1
+[INFO] 12:53:39:806 gamecard/(9254:9263): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:53:39:806 gamecard/(9254:9262): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:53:39:806 gamecard/(9254:9261): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 12:53:39:807 gamecard/(9254:9262): Se perdio la conexion con el broker
+[INFO] 12:53:39:807 gamecard/(9254:9256): Desbloqueo de conexiones al broker
+[INFO] 12:53:39:807 gamecard/(9254:9256): El broker no esta conectado...
+[INFO] 12:53:39:808 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:39:808 gamecard/(9254:9261): Se perdio la conexion con el broker
+[INFO] 12:53:39:808 gamecard/(9254:9263): Se perdio la conexion con el broker
+[INFO] 12:53:49:809 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:53:59:809 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:09:813 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:19:814 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:29:815 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:39:815 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:49:817 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:54:59:818 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:55:09:818 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:55:19:819 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:55:29:819 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:55:39:820 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:55:49:821 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:55:59:822 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:56:09:823 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:56:19:824 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:56:29:825 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:56:39:826 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:56:49:827 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:56:59:827 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:57:09:828 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:57:19:828 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:57:29:829 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:57:39:829 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:57:49:830 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:57:59:831 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:09:832 gamecard/(9254:9256): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:26:500 gamecard/(9491:9491): TERMINE DE CREAR BITMAP
+[INFO] 12:58:26:505 gamecard/(9491:9493): El broker no esta conectado...
+[INFO] 12:58:26:505 gamecard/(9491:9493): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:26:505 gamecard/(9491:9493): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:26:506 gamecard/(9491:9493): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:26:506 gamecard/(9491:9493): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:26:506 gamecard/(9491:9493): Funciona broker, activando las tres colas...
+[INFO] 12:58:26:506 gamecard/(9491:9493): Bloqueo de conexiones al broker
+[INFO] 12:58:26:507 gamecard/(9491:9492): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 12:58:26:507 gamecard/(9491:9492): Listo para recibir conexion de GAMEBOY, 
+[INFO] 12:58:26:507 gamecard/(9491:9499): Suscripcion exitosa a la cola
+[INFO] 12:58:26:507 gamecard/(9491:9500): Suscripcion exitosa a la cola
+[INFO] 12:58:26:507 gamecard/(9491:9498): Suscripcion exitosa a la cola
+[INFO] 12:58:26:508 gamecard/(9491:9499): Estoy esperando mensaje CATCH
+[INFO] 12:58:26:508 gamecard/(9491:9498): Estoy esperando mensaje NEW
+[INFO] 12:58:26:508 gamecard/(9491:9500): Estoy esperando mensaje GET
+[INFO] 12:58:46:575 gamecard/(9491:9500): Se recibio el mensaje del broker correctamente
+[INFO] 12:58:46:575 gamecard/(9491:9500): Estoy esperando mensaje GET
+[INFO] 12:58:46:578 gamecard/(9491:9500): Se recibio el mensaje del broker correctamente
+[INFO] 12:58:46:578 gamecard/(9491:9500): Estoy esperando mensaje GET
+[INFO] 12:58:46:583 gamecard/(9491:9500): Se recibio el mensaje del broker correctamente
+[INFO] 12:58:46:583 gamecard/(9491:9500): Estoy esperando mensaje GET
+[INFO] 12:58:46:584 gamecard/(9491:9500): Se recibio el mensaje del broker correctamente
+[INFO] 12:58:46:585 gamecard/(9491:9500): Estoy esperando mensaje GET
+[INFO] 12:58:46:599 gamecard/(9491:9560): No se encontro al Pokemon
+[INFO] 12:58:46:601 gamecard/(9491:9560): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu8
+[INFO] 12:58:46:601 gamecard/(9491:9563): No se encontro al Pokemon
+[INFO] 12:58:46:601 gamecard/(9491:9560): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:604 gamecard/(9491:9560): Se realizo el envio del LOCALIZED de Pikachu8 correctamente
+[INFO] 12:58:46:604 gamecard/(9491:9565): No se encontro al Pokemon
+[INFO] 12:58:46:604 gamecard/(9491:9567): No se encontro al Pokemon
+[INFO] 12:58:46:604 gamecard/(9491:9565): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 12:58:46:604 gamecard/(9491:9565): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:621 gamecard/(9491:9567): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onixši	
+[INFO] 12:58:46:622 gamecard/(9491:9567): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:623 gamecard/(9491:9567): Se realizo el envio del LOCALIZED de Onixši	 correctamente
+[INFO] 12:58:46:623 gamecard/(9491:9560): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Pikachu8 correctamente
+[INFO] 12:58:46:623 gamecard/(9491:9563): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 12:58:46:624 gamecard/(9491:9563): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 12:58:46:624 gamecard/(9491:9563): Se realizo el envio del LOCALIZED de Squirtle correctamente
+[INFO] 12:58:46:624 gamecard/(9491:9567): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Onixši	 correctamente
+[INFO] 12:58:46:625 gamecard/(9491:9563): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 12:58:46:684 gamecard/(9491:9565): Se realizo el envio del LOCALIZED de Gengar correctamente
+[INFO] 12:58:46:693 gamecard/(9491:9565): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:04:20:585 gamecard/(9491:9500): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:04:20:585 gamecard/(9491:9499): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:04:20:585 gamecard/(9491:9498): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:04:20:586 gamecard/(9491:9500): Se perdio la conexion con el broker
+[INFO] 13:04:20:586 gamecard/(9491:9493): Desbloqueo de conexiones al broker
+[INFO] 13:04:20:586 gamecard/(9491:9493): El broker no esta conectado...
+[INFO] 13:04:20:586 gamecard/(9491:9493): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:04:20:586 gamecard/(9491:9499): Se perdio la conexion con el broker
+[INFO] 13:04:20:587 gamecard/(9491:9498): Se perdio la conexion con el broker
+[INFO] 13:05:51:162 gamecard/(10124:10124): TERMINE DE CREAR BITMAP
+[INFO] 13:05:51:162 gamecard/(10124:10128): El broker no esta conectado...
+[INFO] 13:05:51:162 gamecard/(10124:10128): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:05:51:163 gamecard/(10124:10128): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:05:51:163 gamecard/(10124:10128): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:05:51:164 gamecard/(10124:10128): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:05:51:181 gamecard/(10124:10128): Funciona broker, activando las tres colas...
+[INFO] 13:05:51:181 gamecard/(10124:10128): Bloqueo de conexiones al broker
+[INFO] 13:05:51:181 gamecard/(10124:10127): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:05:51:182 gamecard/(10124:10127): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:05:51:182 gamecard/(10124:10133): Suscripcion exitosa a la cola
+[INFO] 13:05:51:185 gamecard/(10124:10134): Suscripcion exitosa a la cola
+[INFO] 13:05:51:185 gamecard/(10124:10135): Suscripcion exitosa a la cola
+[INFO] 13:05:51:186 gamecard/(10124:10133): Estoy esperando mensaje NEW
+[INFO] 13:05:51:186 gamecard/(10124:10135): Estoy esperando mensaje GET
+[INFO] 13:05:51:186 gamecard/(10124:10134): Estoy esperando mensaje CATCH
+[INFO] 13:06:09:381 gamecard/(10124:10135): Se recibio el mensaje del broker correctamente
+[INFO] 13:06:09:381 gamecard/(10124:10135): Estoy esperando mensaje GET
+[INFO] 13:06:09:385 gamecard/(10124:10135): Se recibio el mensaje del broker correctamente
+[INFO] 13:06:09:385 gamecard/(10124:10135): Estoy esperando mensaje GET
+[INFO] 13:06:09:386 gamecard/(10124:10135): Se recibio el mensaje del broker correctamente
+[INFO] 13:06:09:386 gamecard/(10124:10135): Estoy esperando mensaje GET
+[INFO] 13:06:09:388 gamecard/(10124:10135): Se recibio el mensaje del broker correctamente
+[INFO] 13:06:09:388 gamecard/(10124:10135): Estoy esperando mensaje GET
+[INFO] 13:06:09:395 gamecard/(10124:10193): No se encontro al Pokemon
+[INFO] 13:06:09:395 gamecard/(10124:10193): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:06:09:395 gamecard/(10124:10193): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:396 gamecard/(10124:10195): No se encontro al Pokemon
+[INFO] 13:06:09:396 gamecard/(10124:10193): Se realizo el envio del LOCALIZED de Squirtle correctamente
+[INFO] 13:06:09:396 gamecard/(10124:10195): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengarr´:186
+[INFO] 13:06:09:396 gamecard/(10124:10197): No se encontro al Pokemon
+[INFO] 13:06:09:396 gamecard/(10124:10199): No se encontro al Pokemon
+[INFO] 13:06:09:396 gamecard/(10124:10195): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:397 gamecard/(10124:10195): Se realizo el envio del LOCALIZED de Gengarr´:186 correctamente
+[INFO] 13:06:09:397 gamecard/(10124:10197): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 13:06:09:397 gamecard/(10124:10197): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:397 gamecard/(10124:10197): Se realizo el envio del LOCALIZED de Onix correctamente
+[INFO] 13:06:09:397 gamecard/(10124:10199): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:06:09:398 gamecard/(10124:10199): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:06:09:398 gamecard/(10124:10199): Se realizo el envio del LOCALIZED de Pikachu correctamente
+[INFO] 13:06:09:420 gamecard/(10124:10193): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:06:09:426 gamecard/(10124:10197): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Onix correctamente
+[INFO] 13:06:09:427 gamecard/(10124:10199): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:06:09:427 gamecard/(10124:10195): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Gengarr´:186 correctamente
+[INFO] 13:10:33:63 gamecard/(10424:10424): TERMINE DE CREAR BITMAP
+[INFO] 13:10:33:69 gamecard/(10424:10428): El broker no esta conectado...
+[INFO] 13:10:33:69 gamecard/(10424:10428): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:33:69 gamecard/(10424:10428): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:33:70 gamecard/(10424:10428): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:33:70 gamecard/(10424:10428): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:33:71 gamecard/(10424:10428): Funciona broker, activando las tres colas...
+[INFO] 13:10:33:71 gamecard/(10424:10428): Bloqueo de conexiones al broker
+[INFO] 13:10:33:71 gamecard/(10424:10427): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:10:33:71 gamecard/(10424:10427): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:10:33:71 gamecard/(10424:10434): Suscripcion exitosa a la cola
+[INFO] 13:10:33:71 gamecard/(10424:10435): Suscripcion exitosa a la cola
+[INFO] 13:10:33:72 gamecard/(10424:10434): Estoy esperando mensaje CATCH
+[INFO] 13:10:33:72 gamecard/(10424:10433): Suscripcion exitosa a la cola
+[INFO] 13:10:33:72 gamecard/(10424:10433): Estoy esperando mensaje NEW
+[INFO] 13:10:33:72 gamecard/(10424:10435): Estoy esperando mensaje GET
+[INFO] 13:10:39:75 gamecard/(10424:10435): Se recibio el mensaje del broker correctamente
+[INFO] 13:10:39:76 gamecard/(10424:10435): Estoy esperando mensaje GET
+[INFO] 13:10:39:80 gamecard/(10424:10435): Se recibio el mensaje del broker correctamente
+[INFO] 13:10:39:80 gamecard/(10424:10435): Estoy esperando mensaje GET
+[INFO] 13:10:39:82 gamecard/(10424:10435): Se recibio el mensaje del broker correctamente
+[INFO] 13:10:39:82 gamecard/(10424:10435): Estoy esperando mensaje GET
+[INFO] 13:10:39:83 gamecard/(10424:10435): Se recibio el mensaje del broker correctamente
+[INFO] 13:10:39:83 gamecard/(10424:10435): Estoy esperando mensaje GET
+[INFO] 13:10:39:90 gamecard/(10424:10492): No se encontro al Pokemon
+[INFO] 13:10:39:90 gamecard/(10424:10492): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtlem71
+[INFO] 13:10:39:91 gamecard/(10424:10492): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:91 gamecard/(10424:10492): Se realizo el envio del LOCALIZED de Squirtlem71 de cantidad 0 correctamente
+[INFO] 13:10:39:97 gamecard/(10424:10495): No se encontro al Pokemon
+[INFO] 13:10:39:97 gamecard/(10424:10497): No se encontro al Pokemon
+[INFO] 13:10:39:98 gamecard/(10424:10499): No se encontro al Pokemon
+[INFO] 13:10:39:98 gamecard/(10424:10497): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:10:39:101 gamecard/(10424:10497): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:109 gamecard/(10424:10497): Se realizo el envio del LOCALIZED de Pikachu de cantidad 0 correctamente
+[INFO] 13:10:39:109 gamecard/(10424:10495): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:10:39:109 gamecard/(10424:10495): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:109 gamecard/(10424:10495): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:10:39:109 gamecard/(10424:10499): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE OnixÄ¬
+[INFO] 13:10:39:110 gamecard/(10424:10499): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:39:110 gamecard/(10424:10499): Se realizo el envio del LOCALIZED de OnixÄ¬ de cantidad 0 correctamente
+[INFO] 13:10:39:110 gamecard/(10424:10497): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:10:39:121 gamecard/(10424:10499): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de OnixÄ¬ correctamente
+[INFO] 13:10:39:121 gamecard/(10424:10492): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Squirtlem71 correctamente
+[INFO] 13:10:39:122 gamecard/(10424:10495): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:10:59:166 gamecard/(10424:10434): Se recibio el mensaje del broker correctamente
+[INFO] 13:10:59:166 gamecard/(10424:10434): Estoy esperando mensaje CATCH
+[INFO] 13:10:59:169 gamecard/(10424:10527): El id del mensaje CATCH es 13
+[INFO] 13:10:59:169 gamecard/(10424:10527): El nombre del pokemon es Squirtletlem
+[ERROR] 13:10:59:170 gamecard/(10424:10527): No existe ese pokemon
+[INFO] 13:10:59:170 gamecard/(10424:10527): EL RESULTADO DEL CATCH PARA Squirtletlem ES DE: 0
+[INFO] 13:10:59:170 gamecard/(10424:10527): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:10:59:170 gamecard/(10424:10527): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:10:59:174 gamecard/(10424:10527): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:15:31:593 gamecard/(10424:10435): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:15:31:593 gamecard/(10424:10434): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:15:31:593 gamecard/(10424:10433): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:15:31:593 gamecard/(10424:10435): Se perdio la conexion con el broker
+[INFO] 13:15:31:594 gamecard/(10424:10428): Desbloqueo de conexiones al broker
+[INFO] 13:15:31:594 gamecard/(10424:10428): El broker no esta conectado...
+[INFO] 13:15:31:594 gamecard/(10424:10428): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:15:31:594 gamecard/(10424:10434): Se perdio la conexion con el broker
+[INFO] 13:15:31:594 gamecard/(10424:10433): Se perdio la conexion con el broker
+[INFO] 13:16:50:378 gamecard/(11150:11150): TERMINE DE CREAR BITMAP
+[INFO] 13:16:50:379 gamecard/(11150:11154): El broker no esta conectado...
+[INFO] 13:16:50:379 gamecard/(11150:11154): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:16:50:380 gamecard/(11150:11154): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:16:50:381 gamecard/(11150:11154): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:16:50:381 gamecard/(11150:11154): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:16:50:381 gamecard/(11150:11154): Funciona broker, activando las tres colas...
+[INFO] 13:16:50:381 gamecard/(11150:11154): Bloqueo de conexiones al broker
+[INFO] 13:16:50:385 gamecard/(11150:11153): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:16:50:385 gamecard/(11150:11153): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:16:50:385 gamecard/(11150:11160): Suscripcion exitosa a la cola
+[INFO] 13:16:50:385 gamecard/(11150:11161): Suscripcion exitosa a la cola
+[INFO] 13:16:50:386 gamecard/(11150:11160): Estoy esperando mensaje CATCH
+[INFO] 13:16:50:386 gamecard/(11150:11159): Suscripcion exitosa a la cola
+[INFO] 13:16:50:386 gamecard/(11150:11159): Estoy esperando mensaje NEW
+[INFO] 13:16:50:387 gamecard/(11150:11161): Estoy esperando mensaje GET
+[INFO] 13:18:04:161 gamecard/(11150:11161): Se recibio el mensaje del broker correctamente
+[INFO] 13:18:04:161 gamecard/(11150:11161): Estoy esperando mensaje GET
+[INFO] 13:18:04:164 gamecard/(11150:11161): Se recibio el mensaje del broker correctamente
+[INFO] 13:18:04:164 gamecard/(11150:11161): Estoy esperando mensaje GET
+[INFO] 13:18:04:169 gamecard/(11150:11161): Se recibio el mensaje del broker correctamente
+[INFO] 13:18:04:169 gamecard/(11150:11161): Estoy esperando mensaje GET
+[INFO] 13:18:04:171 gamecard/(11150:11161): Se recibio el mensaje del broker correctamente
+[INFO] 13:18:04:171 gamecard/(11150:11161): Estoy esperando mensaje GET
+[INFO] 13:18:04:174 gamecard/(11150:11223): No se encontro al Pokemon
+[INFO] 13:18:04:175 gamecard/(11150:11223): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:18:04:175 gamecard/(11150:11223): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:175 gamecard/(11150:11226): No se encontro al Pokemon
+[INFO] 13:18:04:176 gamecard/(11150:11223): Se realizo el envio del LOCALIZED de Squirtle de cantidad 0 correctamente
+[INFO] 13:18:04:176 gamecard/(11150:11226): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 13:18:04:176 gamecard/(11150:11226): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:189 gamecard/(11150:11227): No se encontro al Pokemon
+[INFO] 13:18:04:190 gamecard/(11150:11226): Se realizo el envio del LOCALIZED de Onix de cantidad 0 correctamente
+[INFO] 13:18:04:190 gamecard/(11150:11227): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:18:04:193 gamecard/(11150:11227): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:193 gamecard/(11150:11230): No se encontro al Pokemon
+[INFO] 13:18:04:193 gamecard/(11150:11227): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:18:04:193 gamecard/(11150:11230): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:18:04:194 gamecard/(11150:11230): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:04:194 gamecard/(11150:11230): Se realizo el envio del LOCALIZED de Pikachu de cantidad 0 correctamente
+[INFO] 13:18:04:201 gamecard/(11150:11227): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:18:04:202 gamecard/(11150:11223): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:18:04:203 gamecard/(11150:11226): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Onix correctamente
+[INFO] 13:18:04:204 gamecard/(11150:11230): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:18:24:227 gamecard/(11150:11160): Se recibio el mensaje del broker correctamente
+[INFO] 13:18:24:227 gamecard/(11150:11160): Estoy esperando mensaje CATCH
+[INFO] 13:18:24:229 gamecard/(11150:11265): El id del mensaje CATCH es 13
+[INFO] 13:18:24:229 gamecard/(11150:11265): El nombre del pokemon es Squirtletle
+[ERROR] 13:18:24:229 gamecard/(11150:11265): No existe ese pokemon
+[INFO] 13:18:24:229 gamecard/(11150:11265): EL RESULTADO DEL CATCH PARA Squirtletle ES DE: 0
+[INFO] 13:18:24:230 gamecard/(11150:11265): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:18:24:230 gamecard/(11150:11265): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:18:24:241 gamecard/(11150:11265): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:21:00:843 gamecard/(11470:11470): TERMINE DE CREAR BITMAP
+[INFO] 13:21:00:845 gamecard/(11470:11472): El broker no esta conectado...
+[INFO] 13:21:00:845 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:21:00:845 gamecard/(11470:11472): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:21:00:846 gamecard/(11470:11472): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:21:00:846 gamecard/(11470:11472): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:21:00:846 gamecard/(11470:11472): Funciona broker, activando las tres colas...
+[INFO] 13:21:00:846 gamecard/(11470:11472): Bloqueo de conexiones al broker
+[INFO] 13:21:00:846 gamecard/(11470:11471): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:21:00:846 gamecard/(11470:11471): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:21:00:850 gamecard/(11470:11478): Suscripcion exitosa a la cola
+[INFO] 13:21:00:850 gamecard/(11470:11479): Suscripcion exitosa a la cola
+[INFO] 13:21:00:850 gamecard/(11470:11477): Suscripcion exitosa a la cola
+[INFO] 13:21:00:851 gamecard/(11470:11478): Estoy esperando mensaje CATCH
+[INFO] 13:21:00:851 gamecard/(11470:11477): Estoy esperando mensaje NEW
+[INFO] 13:21:00:851 gamecard/(11470:11479): Estoy esperando mensaje GET
+[INFO] 13:24:03:745 gamecard/(11470:11479): Se recibio el mensaje del broker correctamente
+[INFO] 13:24:03:745 gamecard/(11470:11479): Estoy esperando mensaje GET
+[INFO] 13:24:03:749 gamecard/(11470:11479): Se recibio el mensaje del broker correctamente
+[INFO] 13:24:03:749 gamecard/(11470:11479): Estoy esperando mensaje GET
+[INFO] 13:24:03:751 gamecard/(11470:11479): Se recibio el mensaje del broker correctamente
+[INFO] 13:24:03:751 gamecard/(11470:11479): Estoy esperando mensaje GET
+[INFO] 13:24:03:752 gamecard/(11470:11479): Se recibio el mensaje del broker correctamente
+[INFO] 13:24:03:752 gamecard/(11470:11479): Estoy esperando mensaje GET
+[INFO] 13:24:03:754 gamecard/(11470:11602): No se encontro al Pokemon
+[INFO] 13:24:03:760 gamecard/(11470:11602): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:24:03:760 gamecard/(11470:11602): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:760 gamecard/(11470:11602): Se realizo el envio del LOCALIZED de Squirtle de cantidad 0 correctamente
+[INFO] 13:24:03:762 gamecard/(11470:11604): No se encontro al Pokemon
+[INFO] 13:24:03:762 gamecard/(11470:11604): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 13:24:03:762 gamecard/(11470:11606): No se encontro al Pokemon
+[INFO] 13:24:03:762 gamecard/(11470:11604): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:762 gamecard/(11470:11608): No se encontro al Pokemon
+[INFO] 13:24:03:762 gamecard/(11470:11604): Se realizo el envio del LOCALIZED de Onix de cantidad 0 correctamente
+[INFO] 13:24:03:769 gamecard/(11470:11606): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:24:03:769 gamecard/(11470:11606): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:777 gamecard/(11470:11606): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:24:03:777 gamecard/(11470:11608): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:24:03:777 gamecard/(11470:11608): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:03:777 gamecard/(11470:11608): Se realizo el envio del LOCALIZED de Pikachu de cantidad 0 correctamente
+[INFO] 13:24:03:779 gamecard/(11470:11602): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:24:03:779 gamecard/(11470:11606): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:24:03:786 gamecard/(11470:11608): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:24:03:786 gamecard/(11470:11604): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Onix correctamente
+[INFO] 13:24:23:823 gamecard/(11470:11478): Se recibio el mensaje del broker correctamente
+[INFO] 13:24:23:823 gamecard/(11470:11478): Estoy esperando mensaje CATCH
+[INFO] 13:24:23:824 gamecard/(11470:11642): El id del mensaje CATCH es 13
+[INFO] 13:24:23:824 gamecard/(11470:11642): El nombre del pokemon es Squirtle
+[ERROR] 13:24:23:824 gamecard/(11470:11642): No existe ese pokemon
+[INFO] 13:24:23:824 gamecard/(11470:11642): EL RESULTADO DEL CATCH PARA Squirtle ES DE: 0
+[INFO] 13:24:23:825 gamecard/(11470:11642): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:24:23:825 gamecard/(11470:11642): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:24:23:831 gamecard/(11470:11642): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:25:13:242 gamecard/(11470:11479): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:25:13:242 gamecard/(11470:11478): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:25:13:242 gamecard/(11470:11477): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:25:13:243 gamecard/(11470:11479): Se perdio la conexion con el broker
+[INFO] 13:25:13:243 gamecard/(11470:11472): Desbloqueo de conexiones al broker
+[INFO] 13:25:13:245 gamecard/(11470:11472): El broker no esta conectado...
+[INFO] 13:25:13:245 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:25:13:245 gamecard/(11470:11478): Se perdio la conexion con el broker
+[INFO] 13:25:13:245 gamecard/(11470:11477): Se perdio la conexion con el broker
+[INFO] 13:25:23:246 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:25:33:247 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:25:43:248 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:25:53:251 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:26:03:253 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:26:13:257 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:26:23:257 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:26:33:259 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:26:43:259 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:26:53:260 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:27:03:261 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:27:13:261 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:27:23:261 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:27:33:262 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:27:43:264 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:27:53:265 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:03:266 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:13:269 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:23:269 gamecard/(11470:11472): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:34:884 gamecard/(11981:11981): TERMINE DE CREAR BITMAP
+[INFO] 13:28:34:890 gamecard/(11981:11983): El broker no esta conectado...
+[INFO] 13:28:34:890 gamecard/(11981:11983): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:34:891 gamecard/(11981:11983): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:34:891 gamecard/(11981:11983): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:34:891 gamecard/(11981:11983): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:28:34:891 gamecard/(11981:11983): Funciona broker, activando las tres colas...
+[INFO] 13:28:34:892 gamecard/(11981:11983): Bloqueo de conexiones al broker
+[INFO] 13:28:34:892 gamecard/(11981:11982): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:28:34:892 gamecard/(11981:11982): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:28:34:892 gamecard/(11981:11989): Suscripcion exitosa a la cola
+[INFO] 13:28:34:892 gamecard/(11981:11990): Suscripcion exitosa a la cola
+[INFO] 13:28:34:892 gamecard/(11981:11989): Estoy esperando mensaje CATCH
+[INFO] 13:28:34:893 gamecard/(11981:11990): Estoy esperando mensaje GET
+[INFO] 13:28:34:893 gamecard/(11981:11988): Suscripcion exitosa a la cola
+[INFO] 13:28:34:894 gamecard/(11981:11988): Estoy esperando mensaje NEW
+[INFO] 13:29:05:507 gamecard/(11981:11990): Se recibio el mensaje del broker correctamente
+[INFO] 13:29:05:507 gamecard/(11981:11990): Estoy esperando mensaje GET
+[INFO] 13:29:05:510 gamecard/(11981:11990): Se recibio el mensaje del broker correctamente
+[INFO] 13:29:05:511 gamecard/(11981:11990): Estoy esperando mensaje GET
+[INFO] 13:29:05:520 gamecard/(11981:11990): Se recibio el mensaje del broker correctamente
+[INFO] 13:29:05:520 gamecard/(11981:11990): Estoy esperando mensaje GET
+[INFO] 13:29:05:522 gamecard/(11981:11990): Se recibio el mensaje del broker correctamente
+[INFO] 13:29:05:522 gamecard/(11981:11990): Estoy esperando mensaje GET
+[INFO] 13:29:05:535 gamecard/(11981:12088): No se encontro al Pokemon
+[INFO] 13:29:05:537 gamecard/(11981:12088): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:29:05:537 gamecard/(11981:12088): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:538 gamecard/(11981:12091): No se encontro al Pokemon
+[INFO] 13:29:05:538 gamecard/(11981:12088): Se realizo el envio del LOCALIZED de Squirtle de cantidad 0 correctamente
+[INFO] 13:29:05:549 gamecard/(11981:12091): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 13:29:05:550 gamecard/(11981:12091): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:550 gamecard/(11981:12091): Se realizo el envio del LOCALIZED de Onix de cantidad 0 correctamente
+[INFO] 13:29:05:550 gamecard/(11981:12093): No se encontro al Pokemon
+[INFO] 13:29:05:558 gamecard/(11981:12093): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:29:05:558 gamecard/(11981:12093): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:558 gamecard/(11981:12096): No se encontro al Pokemon
+[INFO] 13:29:05:558 gamecard/(11981:12093): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:29:05:559 gamecard/(11981:12096): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:29:05:559 gamecard/(11981:12096): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:05:559 gamecard/(11981:12096): Se realizo el envio del LOCALIZED de Pikachu de cantidad 0 correctamente
+[INFO] 13:29:05:561 gamecard/(11981:12088): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:29:05:565 gamecard/(11981:12091): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Onix correctamente
+[INFO] 13:29:05:573 gamecard/(11981:12093): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:29:05:574 gamecard/(11981:12096): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:29:25:615 gamecard/(11981:11989): Se recibio el mensaje del broker correctamente
+[INFO] 13:29:25:615 gamecard/(11981:11989): Estoy esperando mensaje CATCH
+[INFO] 13:29:25:616 gamecard/(11981:12124): El id del mensaje CATCH es 13
+[INFO] 13:29:25:616 gamecard/(11981:12124): El nombre del pokemon es Squirtletle
+[ERROR] 13:29:25:616 gamecard/(11981:12124): No existe ese pokemon
+[INFO] 13:29:25:619 gamecard/(11981:12124): EL RESULTADO DEL CATCH PARA Squirtletle ES DE: 0
+[INFO] 13:29:25:619 gamecard/(11981:12124): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:29:25:620 gamecard/(11981:12124): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:29:25:632 gamecard/(11981:12124): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:35:08:81 gamecard/(11981:11990): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:35:08:81 gamecard/(11981:11989): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:35:08:81 gamecard/(11981:11988): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:35:08:82 gamecard/(11981:11990): Se perdio la conexion con el broker
+[INFO] 13:35:08:82 gamecard/(11981:11983): Desbloqueo de conexiones al broker
+[INFO] 13:35:08:83 gamecard/(11981:11983): El broker no esta conectado...
+[INFO] 13:35:08:83 gamecard/(11981:11983): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:35:08:83 gamecard/(11981:11989): Se perdio la conexion con el broker
+[INFO] 13:35:08:83 gamecard/(11981:11988): Se perdio la conexion con el broker
+[INFO] 13:36:16:866 gamecard/(13360:13360): TERMINE DE CREAR BITMAP
+[INFO] 13:36:16:869 gamecard/(13360:13364): El broker no esta conectado...
+[INFO] 13:36:16:869 gamecard/(13360:13364): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:16:869 gamecard/(13360:13364): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:16:870 gamecard/(13360:13364): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:16:870 gamecard/(13360:13364): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:16:870 gamecard/(13360:13364): Funciona broker, activando las tres colas...
+[INFO] 13:36:16:871 gamecard/(13360:13364): Bloqueo de conexiones al broker
+[INFO] 13:36:16:871 gamecard/(13360:13363): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:36:16:871 gamecard/(13360:13363): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:36:16:871 gamecard/(13360:13370): Suscripcion exitosa a la cola
+[INFO] 13:36:16:871 gamecard/(13360:13371): Suscripcion exitosa a la cola
+[INFO] 13:36:16:878 gamecard/(13360:13370): Estoy esperando mensaje CATCH
+[INFO] 13:36:16:878 gamecard/(13360:13371): Estoy esperando mensaje GET
+[INFO] 13:36:16:878 gamecard/(13360:13369): Suscripcion exitosa a la cola
+[INFO] 13:36:16:878 gamecard/(13360:13369): Estoy esperando mensaje NEW
+[INFO] 13:36:35:772 gamecard/(13360:13371): Se recibio el mensaje del broker correctamente
+[INFO] 13:36:35:772 gamecard/(13360:13371): Estoy esperando mensaje GET
+[INFO] 13:36:35:786 gamecard/(13360:13371): Se recibio el mensaje del broker correctamente
+[INFO] 13:36:35:786 gamecard/(13360:13371): Estoy esperando mensaje GET
+[INFO] 13:36:35:787 gamecard/(13360:13371): Se recibio el mensaje del broker correctamente
+[INFO] 13:36:35:788 gamecard/(13360:13371): Estoy esperando mensaje GET
+[INFO] 13:36:35:789 gamecard/(13360:13371): Se recibio el mensaje del broker correctamente
+[INFO] 13:36:35:789 gamecard/(13360:13371): Estoy esperando mensaje GET
+[INFO] 13:36:35:790 gamecard/(13360:13427): No se encontro al Pokemon
+[INFO] 13:36:35:790 gamecard/(13360:13427): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:36:35:790 gamecard/(13360:13427): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:790 gamecard/(13360:13427): Se realizo el envio del LOCALIZED de Squirtle de cantidad 0 correctamente
+[INFO] 13:36:35:791 gamecard/(13360:13429): No se encontro al Pokemon
+[INFO] 13:36:35:791 gamecard/(13360:13429): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 13:36:35:791 gamecard/(13360:13429): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:791 gamecard/(13360:13431): No se encontro al Pokemon
+[INFO] 13:36:35:792 gamecard/(13360:13429): Se realizo el envio del LOCALIZED de Onix de cantidad 0 correctamente
+[INFO] 13:36:35:792 gamecard/(13360:13433): No se encontro al Pokemon
+[INFO] 13:36:35:792 gamecard/(13360:13433): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:36:35:792 gamecard/(13360:13433): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:793 gamecard/(13360:13433): Se realizo el envio del LOCALIZED de Pikachu de cantidad 0 correctamente
+[INFO] 13:36:35:793 gamecard/(13360:13431): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:36:35:793 gamecard/(13360:13431): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:35:793 gamecard/(13360:13431): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:36:35:811 gamecard/(13360:13427): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:36:35:813 gamecard/(13360:13429): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Onix correctamente
+[INFO] 13:36:35:813 gamecard/(13360:13433): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:36:35:814 gamecard/(13360:13431): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:36:55:834 gamecard/(13360:13370): Se recibio el mensaje del broker correctamente
+[INFO] 13:36:55:834 gamecard/(13360:13370): Estoy esperando mensaje CATCH
+[INFO] 13:36:55:834 gamecard/(13360:13462): El id del mensaje CATCH es 13
+[INFO] 13:36:55:835 gamecard/(13360:13462): El nombre del pokemon es Squirtletle
+[ERROR] 13:36:55:835 gamecard/(13360:13462): No existe ese pokemon
+[INFO] 13:36:55:835 gamecard/(13360:13462): EL RESULTADO DEL CATCH PARA Squirtletle ES DE: 0
+[INFO] 13:36:55:835 gamecard/(13360:13462): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:36:55:836 gamecard/(13360:13462): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:36:55:848 gamecard/(13360:13462): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:37:55:930 gamecard/(13360:13370): Se recibio el mensaje del broker correctamente
+[INFO] 13:37:55:930 gamecard/(13360:13370): Estoy esperando mensaje CATCH
+[INFO] 13:37:55:931 gamecard/(13360:13491): El id del mensaje CATCH es 15
+[INFO] 13:37:55:931 gamecard/(13360:13491): El nombre del pokemon es Pikachu	:931
+[ERROR] 13:37:55:935 gamecard/(13360:13491): No existe ese pokemon
+[INFO] 13:37:55:935 gamecard/(13360:13491): EL RESULTADO DEL CATCH PARA Pikachu	:931 ES DE: 0
+[INFO] 13:37:55:936 gamecard/(13360:13491): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:37:55:936 gamecard/(13360:13491): Se realizo el envio del CAUGHT, con ID: 15, correctamente
+[INFO] 13:37:55:937 gamecard/(13360:13491): Se recibio el id de respuesta: 16 del mensaje CAUGHT, con ID: 15, correctamente
+[INFO] 13:41:27:89 gamecard/(13702:13702): TERMINE DE CREAR BITMAP
+[INFO] 13:41:27:97 gamecard/(13702:13705): El broker no esta conectado...
+[INFO] 13:41:27:97 gamecard/(13702:13705): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:27:97 gamecard/(13702:13705): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:27:98 gamecard/(13702:13705): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:27:98 gamecard/(13702:13705): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:27:98 gamecard/(13702:13705): Funciona broker, activando las tres colas...
+[INFO] 13:41:27:98 gamecard/(13702:13705): Bloqueo de conexiones al broker
+[INFO] 13:41:27:103 gamecard/(13702:13711): Suscripcion exitosa a la cola
+[INFO] 13:41:27:103 gamecard/(13702:13712): Suscripcion exitosa a la cola
+[INFO] 13:41:27:103 gamecard/(13702:13704): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:41:27:103 gamecard/(13702:13710): Suscripcion exitosa a la cola
+[INFO] 13:41:27:104 gamecard/(13702:13711): Estoy esperando mensaje CATCH
+[INFO] 13:41:27:104 gamecard/(13702:13712): Estoy esperando mensaje GET
+[INFO] 13:41:27:104 gamecard/(13702:13704): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:41:27:104 gamecard/(13702:13710): Estoy esperando mensaje NEW
+[INFO] 13:41:34:159 gamecard/(13702:13712): Se recibio el mensaje del broker correctamente
+[INFO] 13:41:34:159 gamecard/(13702:13712): Estoy esperando mensaje GET
+[INFO] 13:41:34:163 gamecard/(13702:13712): Se recibio el mensaje del broker correctamente
+[INFO] 13:41:34:163 gamecard/(13702:13712): Estoy esperando mensaje GET
+[INFO] 13:41:34:167 gamecard/(13702:13712): Se recibio el mensaje del broker correctamente
+[INFO] 13:41:34:167 gamecard/(13702:13712): Estoy esperando mensaje GET
+[INFO] 13:41:34:169 gamecard/(13702:13712): Se recibio el mensaje del broker correctamente
+[INFO] 13:41:34:169 gamecard/(13702:13712): Estoy esperando mensaje GET
+[INFO] 13:41:34:173 gamecard/(13702:13778): No se encontro al Pokemon
+[INFO] 13:41:34:174 gamecard/(13702:13781): No se encontro al Pokemon
+[INFO] 13:41:34:174 gamecard/(13702:13778): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:41:34:174 gamecard/(13702:13778): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:175 gamecard/(13702:13778): Se realizo el envio del LOCALIZED de Squirtle de cantidad 0 correctamente
+[INFO] 13:41:34:175 gamecard/(13702:13783): No se encontro al Pokemon
+[INFO] 13:41:34:175 gamecard/(13702:13781): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachur:104
+[INFO] 13:41:34:175 gamecard/(13702:13781): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:175 gamecard/(13702:13781): Se realizo el envio del LOCALIZED de Pikachur:104 de cantidad 0 correctamente
+[INFO] 13:41:34:176 gamecard/(13702:13783): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:41:34:189 gamecard/(13702:13783): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:189 gamecard/(13702:13785): No se encontro al Pokemon
+[INFO] 13:41:34:193 gamecard/(13702:13783): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:41:34:193 gamecard/(13702:13785): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix
+[INFO] 13:41:34:193 gamecard/(13702:13785): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:34:194 gamecard/(13702:13785): Se realizo el envio del LOCALIZED de Onix de cantidad 0 correctamente
+[INFO] 13:41:34:195 gamecard/(13702:13783): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:41:34:204 gamecard/(13702:13785): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Onix correctamente
+[INFO] 13:41:34:205 gamecard/(13702:13781): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Pikachur:104 correctamente
+[INFO] 13:41:34:206 gamecard/(13702:13778): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:41:54:228 gamecard/(13702:13711): Se recibio el mensaje del broker correctamente
+[INFO] 13:41:54:228 gamecard/(13702:13711): Estoy esperando mensaje CATCH
+[INFO] 13:41:54:228 gamecard/(13702:13812): El id del mensaje CATCH es 13
+[INFO] 13:41:54:229 gamecard/(13702:13812): El nombre del pokemon es Squirtle
+[ERROR] 13:41:54:229 gamecard/(13702:13812): No existe ese pokemon
+[INFO] 13:41:54:237 gamecard/(13702:13812): EL RESULTADO DEL CATCH PARA Squirtle ES DE: 0
+[INFO] 13:41:54:237 gamecard/(13702:13812): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:41:54:240 gamecard/(13702:13812): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:41:54:260 gamecard/(13702:13812): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:42:54:325 gamecard/(13702:13711): Se recibio el mensaje del broker correctamente
+[INFO] 13:42:54:325 gamecard/(13702:13711): Estoy esperando mensaje CATCH
+[INFO] 13:42:54:327 gamecard/(13702:13853): El id del mensaje CATCH es 15
+[INFO] 13:42:54:327 gamecard/(13702:13853): El nombre del pokemon es Pikachuµ:327
+[ERROR] 13:42:54:327 gamecard/(13702:13853): No existe ese pokemon
+[INFO] 13:42:54:328 gamecard/(13702:13853): EL RESULTADO DEL CATCH PARA Pikachuµ:327 ES DE: 0
+[INFO] 13:42:54:334 gamecard/(13702:13853): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:42:54:334 gamecard/(13702:13853): Se realizo el envio del CAUGHT, con ID: 15, correctamente
+[INFO] 13:42:54:339 gamecard/(13702:13853): Se recibio el id de respuesta: 16 del mensaje CAUGHT, con ID: 15, correctamente
+[INFO] 13:44:02:974 gamecard/(13702:13712): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:44:02:974 gamecard/(13702:13711): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:44:02:974 gamecard/(13702:13710): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:44:02:974 gamecard/(13702:13712): Se perdio la conexion con el broker
+[INFO] 13:44:02:974 gamecard/(13702:13705): Desbloqueo de conexiones al broker
+[INFO] 13:44:02:974 gamecard/(13702:13705): El broker no esta conectado...
+[INFO] 13:44:02:974 gamecard/(13702:13705): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:44:02:975 gamecard/(13702:13710): Se perdio la conexion con el broker
+[INFO] 13:44:02:975 gamecard/(13702:13711): Se perdio la conexion con el broker
+[INFO] 13:44:12:977 gamecard/(13702:13705): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:24:60 gamecard/(14840:14840): TERMINE DE CREAR BITMAP
+[INFO] 13:45:24:61 gamecard/(14840:14844): El broker no esta conectado...
+[INFO] 13:45:24:61 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:24:68 gamecard/(14840:14844): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:24:68 gamecard/(14840:14844): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:24:69 gamecard/(14840:14844): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:24:72 gamecard/(14840:14844): Funciona broker, activando las tres colas...
+[INFO] 13:45:24:73 gamecard/(14840:14844): Bloqueo de conexiones al broker
+[INFO] 13:45:24:73 gamecard/(14840:14843): Servidor levantado en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 13:45:24:74 gamecard/(14840:14843): Listo para recibir conexion de GAMEBOY, 
+[INFO] 13:45:24:74 gamecard/(14840:14850): Suscripcion exitosa a la cola
+[INFO] 13:45:24:75 gamecard/(14840:14851): Suscripcion exitosa a la cola
+[INFO] 13:45:24:75 gamecard/(14840:14849): Suscripcion exitosa a la cola
+[INFO] 13:45:24:76 gamecard/(14840:14850): Estoy esperando mensaje CATCH
+[INFO] 13:45:24:77 gamecard/(14840:14849): Estoy esperando mensaje NEW
+[INFO] 13:45:24:77 gamecard/(14840:14851): Estoy esperando mensaje GET
+[INFO] 13:45:32:57 gamecard/(14840:14851): Se recibio el mensaje del broker correctamente
+[INFO] 13:45:32:57 gamecard/(14840:14851): Estoy esperando mensaje GET
+[INFO] 13:45:32:58 gamecard/(14840:14851): Se recibio el mensaje del broker correctamente
+[INFO] 13:45:32:58 gamecard/(14840:14851): Estoy esperando mensaje GET
+[INFO] 13:45:32:62 gamecard/(14840:14851): Se recibio el mensaje del broker correctamente
+[INFO] 13:45:32:62 gamecard/(14840:14851): Estoy esperando mensaje GET
+[INFO] 13:45:32:64 gamecard/(14840:14851): Se recibio el mensaje del broker correctamente
+[INFO] 13:45:32:64 gamecard/(14840:14851): Estoy esperando mensaje GET
+[INFO] 13:45:32:80 gamecard/(14840:14907): No se encontro al Pokemon
+[INFO] 13:45:32:84 gamecard/(14840:14907): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Pikachu
+[INFO] 13:45:32:84 gamecard/(14840:14910): No se encontro al Pokemon
+[INFO] 13:45:32:84 gamecard/(14840:14907): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:84 gamecard/(14840:14907): Se realizo el envio del LOCALIZED de Pikachu de cantidad 0 correctamente
+[INFO] 13:45:32:85 gamecard/(14840:14912): No se encontro al Pokemon
+[INFO] 13:45:32:86 gamecard/(14840:14915): No se encontro al Pokemon
+[INFO] 13:45:32:88 gamecard/(14840:14912): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Gengar
+[INFO] 13:45:32:88 gamecard/(14840:14912): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:88 gamecard/(14840:14912): Se realizo el envio del LOCALIZED de Gengar de cantidad 0 correctamente
+[INFO] 13:45:32:88 gamecard/(14840:14915): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Onix¤ç
+[INFO] 13:45:32:88 gamecard/(14840:14915): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:89 gamecard/(14840:14915): Se realizo el envio del LOCALIZED de Onix¤ç de cantidad 0 correctamente
+[INFO] 13:45:32:89 gamecard/(14840:14910): HAY 0 POSICIONES DISTINTAS EN LA QUE APARECE Squirtle
+[INFO] 13:45:32:89 gamecard/(14840:14910): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:32:89 gamecard/(14840:14910): Se realizo el envio del LOCALIZED de Squirtle de cantidad 0 correctamente
+[INFO] 13:45:32:93 gamecard/(14840:14907): Se recibio el id de respuesta: 9 del mensaje LOCALIZED de Pikachu correctamente
+[INFO] 13:45:32:97 gamecard/(14840:14912): Se recibio el id de respuesta: 10 del mensaje LOCALIZED de Gengar correctamente
+[INFO] 13:45:32:109 gamecard/(14840:14915): Se recibio el id de respuesta: 11 del mensaje LOCALIZED de Onix¤ç correctamente
+[INFO] 13:45:32:110 gamecard/(14840:14910): Se recibio el id de respuesta: 12 del mensaje LOCALIZED de Squirtle correctamente
+[INFO] 13:45:52:142 gamecard/(14840:14850): Se recibio el mensaje del broker correctamente
+[INFO] 13:45:52:142 gamecard/(14840:14850): Estoy esperando mensaje CATCH
+[INFO] 13:45:52:146 gamecard/(14840:14941): El id del mensaje CATCH es 13
+[INFO] 13:45:52:149 gamecard/(14840:14941): El nombre del pokemon es Squirtle
+[ERROR] 13:45:52:149 gamecard/(14840:14941): No existe ese pokemon
+[INFO] 13:45:52:150 gamecard/(14840:14941): EL RESULTADO DEL CATCH PARA Squirtle ES DE: 0
+[INFO] 13:45:52:150 gamecard/(14840:14941): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:45:52:150 gamecard/(14840:14941): Se realizo el envio del CAUGHT, con ID: 13, correctamente
+[INFO] 13:45:52:155 gamecard/(14840:14941): Se recibio el id de respuesta: 14 del mensaje CAUGHT, con ID: 13, correctamente
+[INFO] 13:46:52:238 gamecard/(14840:14850): Se recibio el mensaje del broker correctamente
+[INFO] 13:46:52:238 gamecard/(14840:14850): Estoy esperando mensaje CATCH
+[INFO] 13:46:52:240 gamecard/(14840:14961): El id del mensaje CATCH es 15
+[INFO] 13:46:52:240 gamecard/(14840:14961): El nombre del pokemon es Pikachuµ
+[ERROR] 13:46:52:241 gamecard/(14840:14961): No existe ese pokemon
+[INFO] 13:46:52:241 gamecard/(14840:14961): EL RESULTADO DEL CATCH PARA Pikachuµ ES DE: 0
+[INFO] 13:46:52:241 gamecard/(14840:14961): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:46:52:241 gamecard/(14840:14961): Se realizo el envio del CAUGHT, con ID: 15, correctamente
+[INFO] 13:46:52:245 gamecard/(14840:14961): Se recibio el id de respuesta: 16 del mensaje CAUGHT, con ID: 15, correctamente
+[INFO] 13:58:22:177 gamecard/(14840:14850): Se recibio el mensaje del broker correctamente
+[INFO] 13:58:22:177 gamecard/(14840:14850): Estoy esperando mensaje CATCH
+[INFO] 13:58:22:184 gamecard/(14840:15858): El id del mensaje CATCH es 18
+[INFO] 13:58:22:187 gamecard/(14840:15858): El nombre del pokemon es Pikachu·
+[ERROR] 13:58:22:187 gamecard/(14840:15858): No existe ese pokemon
+[INFO] 13:58:22:189 gamecard/(14840:15858): EL RESULTADO DEL CATCH PARA Pikachu· ES DE: 0
+[INFO] 13:58:22:190 gamecard/(14840:15858): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:58:22:193 gamecard/(14840:15858): Se realizo el envio del CAUGHT, con ID: 18, correctamente
+[INFO] 13:58:22:195 gamecard/(14840:14850): Se recibio el mensaje del broker correctamente
+[INFO] 13:58:22:195 gamecard/(14840:14850): Estoy esperando mensaje CATCH
+[INFO] 13:58:22:198 gamecard/(14840:15858): Se recibio el id de respuesta: 22 del mensaje CAUGHT, con ID: 18, correctamente
+[INFO] 13:58:22:198 gamecard/(14840:15867): El id del mensaje CATCH es 20
+[INFO] 13:58:22:199 gamecard/(14840:15867): El nombre del pokemon es Squirtle:
+[ERROR] 13:58:22:199 gamecard/(14840:15867): No existe ese pokemon
+[INFO] 13:58:22:199 gamecard/(14840:15867): EL RESULTADO DEL CATCH PARA Squirtle: ES DE: 0
+[INFO] 13:58:22:199 gamecard/(14840:15867): Conexion exitosa en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:58:22:199 gamecard/(14840:15867): Se realizo el envio del CAUGHT, con ID: 20, correctamente
+[INFO] 13:58:22:206 gamecard/(14840:15867): Se recibio el id de respuesta: 23 del mensaje CAUGHT, con ID: 20, correctamente
+[INFO] 13:58:33:270 gamecard/(14840:14851): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:58:33:270 gamecard/(14840:14850): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:58:33:270 gamecard/(14840:14849): No se pudo recibir el mensaje del broker, se perdio la conexion
+[INFO] 13:58:33:270 gamecard/(14840:14851): Se perdio la conexion con el broker
+[INFO] 13:58:33:270 gamecard/(14840:14844): Desbloqueo de conexiones al broker
+[INFO] 13:58:33:271 gamecard/(14840:14844): El broker no esta conectado...
+[INFO] 13:58:33:271 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:58:33:271 gamecard/(14840:14850): Se perdio la conexion con el broker
+[INFO] 13:58:33:271 gamecard/(14840:14849): Se perdio la conexion con el broker
+[INFO] 13:58:43:273 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:58:53:274 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:59:03:278 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:59:13:279 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:59:23:279 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 13:59:33:280 gamecard/(14840:14844): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
