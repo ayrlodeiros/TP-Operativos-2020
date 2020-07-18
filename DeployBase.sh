@@ -242,6 +242,7 @@ make all
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba
 
+cp -r broker-v2/ broker-v2-CONSOLIDACION-LRU
 cp -r broker-v2/ broker-v2-COMPACTACION-PD-FIFO
 cp -r broker-v2/ broker-v2-COMPACTACION-PD-LRU
 cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-FIFO
@@ -249,7 +250,7 @@ cp -r broker-v2/ broker-v2-BUDDY-SYSTEM-LRU
 
 #CONFIGURO BROKERS
 
-#Configuro broker consolidacion Particiones dinamicas
+#Configuro broker consolidacion Particiones dinamicas -FIFO
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/
 
@@ -269,6 +270,31 @@ PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/reso
 ID_MODULO=5\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/log_broker.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt\n">> broker.config
+
+cd ../../Debug
+make clean
+make all
+
+#Configuro broker consolidacion Particiones dinamicas -LRU
+
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/
+
+if test -e broker.config; then
+	rm broker.config
+fi
+
+echo -e "TAMANO_MEMORIA=64\n
+TAMANO_MINIMO_PARTICION=4\n
+ALGORITMO_MEMORIA=PARTICIONES\n
+ALGORITMO_REEMPLAZO=LRU\n
+ALGORITMO_PARTICION_LIBRE=FF\n
+IP_BROKER=127.0.0.1\n
+PUERTO_BROKER=4444\n
+FRECUENCIA_COMPACTACION=10\n
+PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-CONSOLIDACION-LRU/src/resources/dump_file.txt\n
+ID_MODULO=5\n
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-CONSOLIDACION-LRU/src/resources/log_broker.txt\n
+NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-CONSOLIDACION-LRU/src/resources/mi_log_broker.txt\n">> broker.config
 
 cd ../../Debug
 make clean
