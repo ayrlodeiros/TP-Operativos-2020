@@ -382,5 +382,3 @@ if test ! -d /home/utnso/Documentos; then
 fi
 
 cd
-
-mv /home/utnso/tp-2020-1c-C-aprueba/  /home/utnso/Documentos
