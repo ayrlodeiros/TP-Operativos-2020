@@ -90,3 +90,7 @@
 [INFO] 14:40:22:809 gameBoy/(23828:23828): Se suscribio correctamente a la cola 4 por 10 segundos
 [INFO] 14:40:32:822 gameBoy/(23832:23832): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 14:40:32:823 gameBoy/(23832:23832): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134521966
+[INFO] 01:16:55:103 gameBoy/(3874:3874): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:16:55:105 gameBoy/(3874:3874): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:18:19:665 gameBoy/(4053:4053): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:18:19:665 gameBoy/(4053:4053): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009

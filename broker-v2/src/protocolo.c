@@ -51,9 +51,10 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 
 		log_info(mi_log,"Voy a mandar el id de msj: %d al socket %d",mensaje->id,socket_cliente);
 
+		int id_mensaje = mensaje->id;
 		pthread_mutex_unlock(&mutex_memoria_principal);
 
-		enviar_id_msj_cliente(socket_cliente,mensaje->id);
+		enviar_id_msj_cliente(socket_cliente,id_mensaje);
 }
 
 
@@ -72,18 +73,17 @@ void agregar_msj_cola(t_mq* queue,t_mensaje* mensaje){
 
 
 void enviar_id_msj_cliente(int socket_cliente,int id_msj){
-
 	bool se_mando = false;
 	int contador = 3;
 	while(!se_mando && contador != 0){
-	if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
-		se_mando = true;
-		log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente");
+		if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
+			se_mando = true;
+			log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente");
 		}
-	else{
-		log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
-		contador--;
-		sleep(10);
+		else{
+			log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
+			contador--;
+			sleep(10);
 		}
 	}
 

@@ -167,3 +167,18 @@
 [INFO] 14:40:32:814 gameBoy/(23832:23832): -----------------Leyendo archivo config-----------------
 [INFO] 14:40:32:822 gameBoy/(23832:23832): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 14:40:32:823 gameBoy/(23832:23832): -----------------Destruyendo archivo config-----------------
+[INFO] 01:12:56:836 gameBoy/(2492:2492): -----------------Leyendo archivo config-----------------
+[INFO] 01:12:56:842 gameBoy/(2492:2492): hola
+[ERROR] 01:12:56:843 gameBoy/(2492:2492): MENSAJE INCORRECTO
+[INFO] 01:12:56:843 gameBoy/(2492:2492): -----------------Destruyendo archivo config-----------------
+[INFO] 01:16:45:763 gameBoy/(3840:3840): -----------------Leyendo archivo config-----------------
+[ERROR] 01:16:45:763 gameBoy/(3840:3840): CANTIDAD INCORRECTA DE ARGUMENTOS
+[INFO] 01:16:45:764 gameBoy/(3840:3840): -----------------Destruyendo archivo config-----------------
+[INFO] 01:16:55:103 gameBoy/(3874:3874): -----------------Leyendo archivo config-----------------
+[INFO] 01:16:55:104 gameBoy/(3874:3874): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:16:55:105 gameBoy/(3874:3874): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:16:55:105 gameBoy/(3874:3874): -----------------Destruyendo archivo config-----------------
+[INFO] 01:18:19:665 gameBoy/(4053:4053): -----------------Leyendo archivo config-----------------
+[INFO] 01:18:19:665 gameBoy/(4053:4053): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:18:19:665 gameBoy/(4053:4053): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:18:19:666 gameBoy/(4053:4053): -----------------Destruyendo archivo config-----------------

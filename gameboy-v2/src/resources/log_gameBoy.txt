@@ -1,0 +1,285 @@
+[INFO] 01:20:48:412 gameBoy/(4200:4200): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:20:48:412 gameBoy/(4200:4200): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:21:30:917 gameBoy/(4266:4266): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:21:30:917 gameBoy/(4266:4266): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:28:00:423 gameBoy/(5020:5020): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:28:00:423 gameBoy/(5020:5020): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:29:21:421 gameBoy/(5108:5108): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:29:21:422 gameBoy/(5108:5108): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:29:50:717 gameBoy/(5230:5230): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:29:50:717 gameBoy/(5230:5230): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:32:05:297 gameBoy/(5423:5423): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:32:05:297 gameBoy/(5423:5423): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:35:04:874 gameBoy/(5681:5681): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:35:04:875 gameBoy/(5681:5681): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:35:08:408 gameBoy/(5716:5716): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:35:08:408 gameBoy/(5716:5716): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:36:02:43 gameBoy/(5821:5821): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:36:02:43 gameBoy/(5821:5821): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:36:05:701 gameBoy/(5856:5856): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:36:05:701 gameBoy/(5856:5856): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:38:53:31 gameBoy/(6052:6052): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:38:53:32 gameBoy/(6052:6052): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:41:11:367 gameBoy/(6208:6208): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:41:11:367 gameBoy/(6208:6208): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:42:23:362 gameBoy/(6349:6349): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:42:23:363 gameBoy/(6349:6349): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:45:33:807 gameBoy/(6505:6505): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:45:33:807 gameBoy/(6505:6505): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:47:42:504 gameBoy/(6876:6876): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:47:42:505 gameBoy/(6876:6876): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:48:02:411 gameBoy/(6999:6999): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:48:02:411 gameBoy/(6999:6999): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:51:55:584 gameBoy/(7329:7329): El cliente se conecto exitosamente en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:51:55:584 gameBoy/(7329:7329): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:209 gameBoy/(8843:8843): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:209 gameBoy/(8843:8843): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:22:30:211 gameBoy/(8845:8845): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:211 gameBoy/(8845:8845): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:22:30:214 gameBoy/(8847:8847): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:214 gameBoy/(8847:8847): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:216 gameBoy/(8849:8849): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:216 gameBoy/(8849:8849): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:224 gameBoy/(8851:8851): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:224 gameBoy/(8851:8851): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:22:30:226 gameBoy/(8853:8853): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:226 gameBoy/(8853:8853): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:22:30:227 gameBoy/(8855:8855): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:229 gameBoy/(8855:8855): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:230 gameBoy/(8856:8856): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:22:30:253 gameBoy/(8856:8856): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:22 gameBoy/(9073:9073): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:22 gameBoy/(9073:9073): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:25:18:26 gameBoy/(9075:9075): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:26 gameBoy/(9075:9075): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:25:18:29 gameBoy/(9077:9077): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:29 gameBoy/(9077:9077): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:37 gameBoy/(9079:9079): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:37 gameBoy/(9079:9079): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:40 gameBoy/(9081:9081): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:40 gameBoy/(9081:9081): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:25:18:42 gameBoy/(9083:9083): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:42 gameBoy/(9083:9083): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:25:18:43 gameBoy/(9085:9085): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:46 gameBoy/(9085:9085): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:72 gameBoy/(9086:9086): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:25:18:72 gameBoy/(9086:9086): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:93 gameBoy/(9357:9357): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:94 gameBoy/(9357:9357): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:28:47:124 gameBoy/(9359:9359): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:125 gameBoy/(9359:9359): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:28:47:141 gameBoy/(9360:9360): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:142 gameBoy/(9360:9360): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:158 gameBoy/(9361:9361): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:158 gameBoy/(9361:9361): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:166 gameBoy/(9362:9362): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:166 gameBoy/(9362:9362): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:28:47:181 gameBoy/(9363:9363): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:182 gameBoy/(9363:9363): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:28:47:194 gameBoy/(9364:9364): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:195 gameBoy/(9364:9364): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:205 gameBoy/(9365:9365): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:28:47:206 gameBoy/(9365:9365): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:678 gameBoy/(9438:9438): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:678 gameBoy/(9438:9438): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:29:19:702 gameBoy/(9440:9440): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:708 gameBoy/(9440:9440): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:29:19:722 gameBoy/(9441:9441): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:723 gameBoy/(9441:9441): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:740 gameBoy/(9442:9442): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:740 gameBoy/(9442:9442): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:750 gameBoy/(9443:9443): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:751 gameBoy/(9443:9443): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:29:19:757 gameBoy/(9444:9444): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:757 gameBoy/(9444:9444): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:29:19:770 gameBoy/(9445:9445): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:770 gameBoy/(9445:9445): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:786 gameBoy/(9446:9446): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:29:19:787 gameBoy/(9446:9446): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:23 gameBoy/(9704:9704): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:24 gameBoy/(9705:9705): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:25 gameBoy/(9706:9706): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:27 gameBoy/(9707:9707): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:28 gameBoy/(9708:9708): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:29 gameBoy/(9709:9709): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:30 gameBoy/(9710:9710): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[ERROR] 02:36:59:34 gameBoy/(9711:9711): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:526 gameBoy/(9767:9767): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:531 gameBoy/(9767:9767): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:37:07:535 gameBoy/(9769:9769): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:538 gameBoy/(9769:9769): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:37:07:543 gameBoy/(9771:9771): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:543 gameBoy/(9771:9771): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:557 gameBoy/(9773:9773): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:557 gameBoy/(9773:9773): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:562 gameBoy/(9775:9775): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:562 gameBoy/(9775:9775): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:37:07:566 gameBoy/(9777:9777): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:566 gameBoy/(9777:9777): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:37:07:570 gameBoy/(9779:9779): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:570 gameBoy/(9779:9779): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:574 gameBoy/(9780:9780): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:37:07:574 gameBoy/(9780:9780): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:54:960 gameBoy/(10303:10303): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:54:960 gameBoy/(10303:10303): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:47:54:983 gameBoy/(10305:10305): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:54:983 gameBoy/(10305:10305): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:47:54:993 gameBoy/(10307:10307): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:54:993 gameBoy/(10307:10307): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:54:1 gameBoy/(10309:10309): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:54:1 gameBoy/(10309:10309): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:55:5 gameBoy/(10311:10311): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:55:5 gameBoy/(10311:10311): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:47:55:9 gameBoy/(10313:10313): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:55:10 gameBoy/(10313:10313): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:47:55:11 gameBoy/(10315:10315): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:55:20 gameBoy/(10315:10315): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:55:31 gameBoy/(10316:10316): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:47:55:32 gameBoy/(10316:10316): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:506 gameBoy/(10409:10409): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:506 gameBoy/(10409:10409): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:48:20:509 gameBoy/(10411:10411): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:509 gameBoy/(10411:10411): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:48:20:512 gameBoy/(10413:10413): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:513 gameBoy/(10413:10413): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:516 gameBoy/(10415:10415): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:523 gameBoy/(10415:10415): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:544 gameBoy/(10417:10417): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:544 gameBoy/(10417:10417): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:48:20:546 gameBoy/(10419:10419): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:547 gameBoy/(10419:10419): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:48:20:556 gameBoy/(10421:10421): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:556 gameBoy/(10421:10421): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:557 gameBoy/(10422:10422): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:48:20:558 gameBoy/(10422:10422): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:146 gameBoy/(10537:10537): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:146 gameBoy/(10537:10537): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:49:11:149 gameBoy/(10539:10539): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:149 gameBoy/(10539:10539): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:49:11:152 gameBoy/(10541:10541): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:153 gameBoy/(10541:10541): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:163 gameBoy/(10543:10543): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:164 gameBoy/(10543:10543): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:168 gameBoy/(10545:10545): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:168 gameBoy/(10545:10545): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:49:11:189 gameBoy/(10547:10547): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:189 gameBoy/(10547:10547): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:49:11:192 gameBoy/(10549:10549): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:192 gameBoy/(10549:10549): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:197 gameBoy/(10550:10550): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:49:11:197 gameBoy/(10550:10550): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:73 gameBoy/(10707:10707): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:74 gameBoy/(10707:10707): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:52:50:78 gameBoy/(10709:10709): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:79 gameBoy/(10709:10709): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:52:50:93 gameBoy/(10711:10711): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:95 gameBoy/(10711:10711): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:110 gameBoy/(10713:10713): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:113 gameBoy/(10713:10713): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:117 gameBoy/(10715:10715): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:117 gameBoy/(10715:10715): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:52:50:121 gameBoy/(10717:10717): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:121 gameBoy/(10717:10717): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:52:50:129 gameBoy/(10719:10719): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:136 gameBoy/(10719:10719): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:141 gameBoy/(10720:10720): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:52:50:148 gameBoy/(10720:10720): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:576 gameBoy/(10956:10956): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:576 gameBoy/(10956:10956): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:59:04:582 gameBoy/(10958:10958): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:582 gameBoy/(10958:10958): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:59:04:585 gameBoy/(10960:10960): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:586 gameBoy/(10960:10960): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:593 gameBoy/(10962:10962): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:593 gameBoy/(10962:10962): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:609 gameBoy/(10964:10964): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:609 gameBoy/(10964:10964): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:59:04:616 gameBoy/(10966:10966): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:616 gameBoy/(10966:10966): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 02:59:04:624 gameBoy/(10968:10968): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:625 gameBoy/(10968:10968): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:626 gameBoy/(10969:10969): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 02:59:04:626 gameBoy/(10969:10969): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:541 gameBoy/(11125:11125): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:542 gameBoy/(11125:11125): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:00:40:545 gameBoy/(11127:11127): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:545 gameBoy/(11127:11127): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:00:40:548 gameBoy/(11129:11129): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:548 gameBoy/(11129:11129): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:556 gameBoy/(11131:11131): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:557 gameBoy/(11131:11131): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:560 gameBoy/(11133:11133): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:560 gameBoy/(11133:11133): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:00:40:563 gameBoy/(11135:11135): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:563 gameBoy/(11135:11135): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:00:40:564 gameBoy/(11137:11137): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:564 gameBoy/(11137:11137): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:588 gameBoy/(11138:11138): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:00:40:588 gameBoy/(11138:11138): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:42 gameBoy/(11370:11370): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:42 gameBoy/(11370:11370): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:07:40:46 gameBoy/(11372:11372): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:46 gameBoy/(11372:11372): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:07:40:49 gameBoy/(11374:11374): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:50 gameBoy/(11374:11374): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:58 gameBoy/(11376:11376): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:58 gameBoy/(11376:11376): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:61 gameBoy/(11378:11378): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:61 gameBoy/(11378:11378): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:07:40:64 gameBoy/(11380:11380): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:65 gameBoy/(11380:11380): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:07:40:84 gameBoy/(11382:11382): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:84 gameBoy/(11382:11382): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:96 gameBoy/(11384:11384): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:07:40:96 gameBoy/(11384:11384): Se envio el mensaje GET a IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:489 gameBoy/(11488:11488): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:489 gameBoy/(11488:11488): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:493 gameBoy/(11490:11490): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:493 gameBoy/(11490:11490): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:497 gameBoy/(11492:11492): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:503 gameBoy/(11492:11492): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:10:52:506 gameBoy/(11494:11494): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:506 gameBoy/(11494:11494): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:10:52:523 gameBoy/(11496:11496): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:10:52:524 gameBoy/(11496:11496): Realizando suscripcion a cola: 5
+[INFO] 03:10:52:524 gameBoy/(11496:11496): Se suscribio correctamente a la cola 5 por 10 segundos
+[INFO] 03:10:52:532 gameBoy/(11496:11496): Se recibio un mensaje del broker
+[INFO] 03:10:52:532 gameBoy/(11496:11496): ID: 3
+[INFO] 03:10:52:532 gameBoy/(11496:11496): ID CORRELATIVO: -1
+[INFO] 03:10:52:532 gameBoy/(11496:11496): TAMANIO: 23
+[INFO] 03:11:02:535 gameBoy/(11500:11500): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:11:02:535 gameBoy/(11500:11500): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:13:05:875 gameBoy/(11585:11585): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:875 gameBoy/(11585:11585): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:879 gameBoy/(11587:11587): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:880 gameBoy/(11587:11587): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:882 gameBoy/(11589:11589): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:883 gameBoy/(11589:11589): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:13:05:890 gameBoy/(11591:11591): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:890 gameBoy/(11591:11591): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:13:05:893 gameBoy/(11593:11593): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:05:893 gameBoy/(11593:11593): Realizando suscripcion a cola: 5
+[INFO] 03:13:05:893 gameBoy/(11593:11593): Se suscribio correctamente a la cola 5 por 10 segundos
+[INFO] 03:13:05:894 gameBoy/(11593:11593): Se recibio un mensaje del broker
+[INFO] 03:13:05:894 gameBoy/(11593:11593): ID: 3
+[INFO] 03:13:05:894 gameBoy/(11593:11593): ID CORRELATIVO: -1
+[INFO] 03:13:05:894 gameBoy/(11593:11593): TAMANIO: 23
+[INFO] 03:13:15:900 gameBoy/(11602:11602): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:13:15:901 gameBoy/(11602:11602): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:20:41:380 gameBoy/(11806:11806): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:381 gameBoy/(11806:11806): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:385 gameBoy/(11808:11808): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:385 gameBoy/(11808:11808): Se envio el mensaje CAUGHT: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:393 gameBoy/(11810:11810): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:393 gameBoy/(11810:11810): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:20:41:397 gameBoy/(11812:11812): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:397 gameBoy/(11812:11812): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215
+[INFO] 03:20:41:400 gameBoy/(11814:11814): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:41:401 gameBoy/(11814:11814): Realizando suscripcion a cola: 5
+[INFO] 03:20:41:401 gameBoy/(11814:11814): Se suscribio correctamente a la cola 5 por 10 segundos
+[INFO] 03:20:41:401 gameBoy/(11814:11814): Se recibio un mensaje del broker
+[INFO] 03:20:41:401 gameBoy/(11814:11814): ID: 3
+[INFO] 03:20:41:401 gameBoy/(11814:11814): ID CORRELATIVO: -1
+[INFO] 03:20:41:401 gameBoy/(11814:11814): TAMANIO: 23
+[INFO] 03:20:51:405 gameBoy/(11818:11818): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 03:20:51:405 gameBoy/(11818:11818): Se envio el mensaje CATCH: 127.0.0.1 y PUERTO: 134522215

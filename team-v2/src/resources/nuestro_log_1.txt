@@ -2019,3 +2019,360 @@
 [INFO] 14:32:32:394 team/(21826:21828): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 14:33:02:395 team/(21826:21828): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 14:33:32:395 team/(21826:21828): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:27:47:593 team/(5008:5008): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:27:47:593 team/(5008:5008): Necesito 2 pokemons Squirtle
+[INFO] 01:27:47:594 team/(5008:5008): Necesito 1 pokemons Pikachu
+[INFO] 01:27:47:594 team/(5008:5008): Necesito 1 pokemons Onix
+[INFO] 01:27:47:594 team/(5008:5008): Necesito 1 pokemons Gengar
+[INFO] 01:27:47:594 team/(5008:5008): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:27:47:594 team/(5008:5008): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:27:47:594 team/(5008:5008): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:27:47:594 team/(5008:5008): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:27:47:595 team/(5008:5012): Estoy en el planificador
+[INFO] 01:27:47:595 team/(5008:5012): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:27:47:595 team/(5008:5011): Esperando alguna accion
+[INFO] 01:27:47:595 team/(5008:5010): El broker no esta conectado...
+[INFO] 01:27:47:595 team/(5008:5010): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:27:47:595 team/(5008:5009): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:27:47:595 team/(5008:5009): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:28:00:422 team/(5008:5009): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:28:00:423 team/(5008:5009): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:28:00:424 team/(5008:5021): El nombre del pokemon es: Pikachuµ
+[INFO] 01:28:00:424 team/(5008:5021): Posicion x: 2560
+[INFO] 01:28:00:424 team/(5008:5021): Posicion Y: 2560
+[INFO] 01:28:00:424 team/(5008:5021): El pokemon Pikachuµ no es requerido
+[INFO] 01:28:17:595 team/(5008:5010): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:28:47:596 team/(5008:5010): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:29:17:596 team/(5008:5010): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:29:21:421 team/(5008:5009): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:29:21:421 team/(5008:5009): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:29:21:423 team/(5008:5109): El nombre del pokemon es: Pikachu7
+[INFO] 01:29:21:423 team/(5008:5109): Posicion x: 10
+[INFO] 01:29:21:423 team/(5008:5109): Posicion Y: 10
+[INFO] 01:29:21:423 team/(5008:5109): El pokemon Pikachu7 no es requerido
+[INFO] 01:29:47:316 team/(5225:5225): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:29:47:322 team/(5225:5225): Necesito 2 pokemons Squirtle
+[INFO] 01:29:47:322 team/(5225:5225): Necesito 1 pokemons Pikachu
+[INFO] 01:29:47:322 team/(5225:5225): Necesito 1 pokemons Onix
+[INFO] 01:29:47:322 team/(5225:5225): Necesito 1 pokemons Gengar
+[INFO] 01:29:47:323 team/(5225:5225): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:29:47:330 team/(5225:5225): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:29:47:330 team/(5225:5225): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:29:47:330 team/(5225:5225): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:29:47:331 team/(5225:5227): El broker no esta conectado...
+[INFO] 01:29:47:332 team/(5225:5227): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:29:47:333 team/(5225:5229): Estoy en el planificador
+[INFO] 01:29:47:333 team/(5225:5229): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:29:47:333 team/(5225:5228): Esperando alguna accion
+[INFO] 01:29:47:333 team/(5225:5226): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:29:47:333 team/(5225:5226): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:29:50:716 team/(5225:5226): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:29:50:717 team/(5225:5226): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:29:50:722 team/(5225:5231): El nombre del pokemon es: Pikachu
+[INFO] 01:29:50:722 team/(5225:5231): Posicion x: 10
+[INFO] 01:29:50:722 team/(5225:5231): Posicion Y: 10
+[INFO] 01:29:50:722 team/(5225:5231): Aparecio un Pikachu en 10|10, el cual es requerido
+[INFO] 01:29:50:722 team/(5225:5231): Se encontro entrenador para asignar a la busqueda de Pikachu
+[INFO] 01:29:50:722 team/(5225:5229): Estimado restante de entrenador 1 es 10.500000
+[INFO] 01:29:50:722 team/(5225:5229): Entrenador 1 consume 1 de CPU
+[INFO] 01:29:50:724 team/(5225:5233): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 01:29:55:725 team/(5225:5229): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:29:55:726 team/(5225:5229): Estimado restante de entrenador 1 es 9.500000
+[INFO] 01:29:55:726 team/(5225:5229): Entrenador 1 consume 1 de CPU
+[INFO] 01:29:55:726 team/(5225:5266): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 01:30:00:727 team/(5225:5229): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:30:00:728 team/(5225:5229): Estimado restante de entrenador 1 es 8.500000
+[INFO] 01:30:00:728 team/(5225:5229): Entrenador 1 consume 1 de CPU
+[INFO] 01:30:00:739 team/(5225:5285): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 01:30:05:742 team/(5225:5229): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:30:05:744 team/(5225:5229): Estimado restante de entrenador 1 es 7.500000
+[INFO] 01:30:05:764 team/(5225:5229): Entrenador 1 consume 1 de CPU
+[INFO] 01:30:05:764 team/(5225:5286): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 01:31:58:966 team/(5418:5418): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:31:58:967 team/(5418:5418): Necesito 2 pokemons Squirtle
+[INFO] 01:31:58:967 team/(5418:5418): Necesito 1 pokemons Pikachu
+[INFO] 01:31:58:967 team/(5418:5418): Necesito 1 pokemons Onix
+[INFO] 01:31:58:967 team/(5418:5418): Necesito 1 pokemons Gengar
+[INFO] 01:31:58:967 team/(5418:5418): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:31:58:967 team/(5418:5418): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:31:58:967 team/(5418:5418): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:31:58:968 team/(5418:5418): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:31:58:968 team/(5418:5422): Estoy en el planificador
+[INFO] 01:31:58:968 team/(5418:5422): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:31:58:968 team/(5418:5421): Esperando alguna accion
+[INFO] 01:31:58:968 team/(5418:5420): El broker no esta conectado...
+[INFO] 01:31:58:968 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:31:58:968 team/(5418:5419): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:31:58:968 team/(5418:5419): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:32:05:296 team/(5418:5419): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:32:05:296 team/(5418:5419): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:32:05:298 team/(5418:5424): El nombre del pokemon es: Asdµ@
+[INFO] 01:32:05:298 team/(5418:5424): El tamanio calculado es: 5
+[INFO] 01:32:05:298 team/(5418:5424): El tamanio recibido es: 3
+[INFO] 01:32:05:298 team/(5418:5424): El pokemon Asdµ@ no es requerido
+[INFO] 01:32:28:972 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:32:58:972 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:33:28:973 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:33:58:974 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:34:28:975 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:34:58:975 team/(5418:5420): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:35:00:822 team/(5673:5673): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:35:00:822 team/(5673:5673): Necesito 2 pokemons Squirtle
+[INFO] 01:35:00:822 team/(5673:5673): Necesito 1 pokemons Pikachu
+[INFO] 01:35:00:823 team/(5673:5673): Necesito 1 pokemons Onix
+[INFO] 01:35:00:823 team/(5673:5673): Necesito 1 pokemons Gengar
+[INFO] 01:35:00:823 team/(5673:5673): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:00:823 team/(5673:5673): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:00:823 team/(5673:5673): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:00:823 team/(5673:5673): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:00:824 team/(5673:5675): El broker no esta conectado...
+[INFO] 01:35:00:824 team/(5673:5675): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:35:00:824 team/(5673:5674): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:35:00:824 team/(5673:5677): Estoy en el planificador
+[INFO] 01:35:00:824 team/(5673:5674): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:35:00:824 team/(5673:5677): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:35:00:824 team/(5673:5676): Esperando alguna accion
+[INFO] 01:35:04:872 team/(5673:5674): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:35:04:872 team/(5673:5674): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:35:04:880 team/(5673:5682): El nombre del pokemon es: Asd
+[INFO] 01:35:04:886 team/(5673:5682): El tamanio recibido es: 3
+[INFO] 01:35:04:886 team/(5673:5682): El tamanio calculado es: 3
+[INFO] 01:35:04:889 team/(5673:5682): El nuevo nombre del pokemon es: Asd
+[INFO] 01:35:04:890 team/(5673:5682): El nuevo tamanio calculado es: 3
+[INFO] 01:35:04:891 team/(5673:5682): Posicion x: 10
+[INFO] 01:35:04:891 team/(5673:5682): Posicion Y: 10
+[INFO] 01:35:04:891 team/(5673:5682): El pokemon Asd no es requerido
+[INFO] 01:35:08:408 team/(5673:5674): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:35:08:408 team/(5673:5674): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:35:08:409 team/(5673:5717): El nombre del pokemon es: Asd∑v∑1:35
+[INFO] 01:35:08:409 team/(5673:5717): El tamanio recibido es: 3
+[INFO] 01:35:08:409 team/(5673:5717): El tamanio calculado es: 13
+[INFO] 01:35:08:409 team/(5673:5717): El nuevo nombre del pokemon es: Asd∑v∑1:35
+[INFO] 01:35:08:409 team/(5673:5717): El nuevo tamanio calculado es: 12
+[INFO] 01:35:08:409 team/(5673:5717): Posicion x: 10
+[INFO] 01:35:08:410 team/(5673:5717): Posicion Y: 10
+[INFO] 01:35:08:410 team/(5673:5717): El pokemon Asd∑v∑1:35 no es requerido
+[INFO] 01:35:30:824 team/(5673:5675): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:35:59:375 team/(5815:5815): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:35:59:375 team/(5815:5815): Necesito 2 pokemons Squirtle
+[INFO] 01:35:59:375 team/(5815:5815): Necesito 1 pokemons Pikachu
+[INFO] 01:35:59:375 team/(5815:5815): Necesito 1 pokemons Onix
+[INFO] 01:35:59:375 team/(5815:5815): Necesito 1 pokemons Gengar
+[INFO] 01:35:59:376 team/(5815:5815): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:59:376 team/(5815:5815): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:59:376 team/(5815:5815): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:59:376 team/(5815:5815): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:35:59:376 team/(5815:5819): Estoy en el planificador
+[INFO] 01:35:59:376 team/(5815:5819): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:35:59:376 team/(5815:5818): Esperando alguna accion
+[INFO] 01:35:59:376 team/(5815:5817): El broker no esta conectado...
+[INFO] 01:35:59:376 team/(5815:5817): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:35:59:377 team/(5815:5816): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:35:59:377 team/(5815:5816): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:36:02:43 team/(5815:5816): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:36:02:43 team/(5815:5816): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:36:02:44 team/(5815:5822): El nombre del pokemon es: Asdµ@
+[INFO] 01:36:02:44 team/(5815:5822): El tamanio recibido es: 3
+[INFO] 01:36:02:44 team/(5815:5822): El tamanio calculado es: 5
+[INFO] 01:36:02:45 team/(5815:5822): El nuevo nombre del pokemon es: Asdµ@
+[INFO] 01:36:02:45 team/(5815:5822): El nuevo tamanio calculado es: 5
+[INFO] 01:36:02:45 team/(5815:5822): Posicion x: 10
+[INFO] 01:36:02:45 team/(5815:5822): Posicion Y: 10
+[INFO] 01:36:02:45 team/(5815:5822): El pokemon Asdµ@ no es requerido
+[INFO] 01:36:05:700 team/(5815:5816): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:36:05:701 team/(5815:5816): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:36:05:702 team/(5815:5857): El nombre del pokemon es: Asd
+[INFO] 01:36:05:702 team/(5815:5857): El tamanio recibido es: 3
+[INFO] 01:36:05:702 team/(5815:5857): El tamanio calculado es: 3
+[INFO] 01:36:05:702 team/(5815:5857): El nuevo nombre del pokemon es: Asd
+[INFO] 01:36:05:702 team/(5815:5857): El nuevo tamanio calculado es: 3
+[INFO] 01:36:05:702 team/(5815:5857): Posicion x: 10
+[INFO] 01:36:05:702 team/(5815:5857): Posicion Y: 10
+[INFO] 01:36:05:703 team/(5815:5857): El pokemon Asd no es requerido
+[INFO] 01:36:29:377 team/(5815:5817): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:36:59:377 team/(5815:5817): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:37:29:378 team/(5815:5817): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:37:59:379 team/(5815:5817): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:38:29:380 team/(5815:5817): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:38:50:243 team/(6047:6047): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:38:50:243 team/(6047:6047): Necesito 2 pokemons Squirtle
+[INFO] 01:38:50:244 team/(6047:6047): Necesito 1 pokemons Pikachu
+[INFO] 01:38:50:244 team/(6047:6047): Necesito 1 pokemons Onix
+[INFO] 01:38:50:244 team/(6047:6047): Necesito 1 pokemons Gengar
+[INFO] 01:38:50:256 team/(6047:6049): El broker no esta conectado...
+[INFO] 01:38:50:256 team/(6047:6049): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:38:50:259 team/(6047:6048): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:38:50:259 team/(6047:6048): Listo para recibir conexion de GAMEBOY, en servidor: 8
+[INFO] 01:38:50:259 team/(6047:6047): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:38:50:260 team/(6047:6047): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:38:50:260 team/(6047:6047): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:38:50:260 team/(6047:6047): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:38:50:260 team/(6047:6051): Estoy en el planificador
+[INFO] 01:38:50:260 team/(6047:6051): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:38:50:260 team/(6047:6050): Esperando alguna accion
+[INFO] 01:38:53:31 team/(6047:6048): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:38:53:31 team/(6047:6048): Listo para recibir conexion de GAMEBOY, en servidor: 8
+[INFO] 01:38:53:37 team/(6047:6053): El nombre del pokemon es: Asd∂∏@∂
+[INFO] 01:38:53:38 team/(6047:6053): El tamanio recibido es: 3
+[INFO] 01:38:53:38 team/(6047:6053): El tamanio calculado es: 9
+[INFO] 01:38:53:38 team/(6047:6053): El nuevo nombre del pokemon es: Asd∂∏@∂
+[INFO] 01:38:53:38 team/(6047:6053): El nuevo tamanio calculado es: 9
+[INFO] 01:38:53:40 team/(6047:6053): Posicion x: 10
+[INFO] 01:38:53:40 team/(6047:6053): Posicion Y: 10
+[INFO] 01:38:53:40 team/(6047:6053): El pokemon Asd∂∏@∂ no es requerido
+[INFO] 01:39:20:256 team/(6047:6049): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:39:50:258 team/(6047:6049): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:40:20:260 team/(6047:6049): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:40:50:260 team/(6047:6049): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:41:03:44 team/(6200:6200): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:41:03:44 team/(6200:6200): Necesito 2 pokemons Squirtle
+[INFO] 01:41:03:44 team/(6200:6200): Necesito 1 pokemons Pikachu
+[INFO] 01:41:03:44 team/(6200:6200): Necesito 1 pokemons Onix
+[INFO] 01:41:03:44 team/(6200:6200): Necesito 1 pokemons Gengar
+[INFO] 01:41:03:44 team/(6200:6200): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:41:03:45 team/(6200:6200): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:41:03:45 team/(6200:6200): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:41:03:45 team/(6200:6200): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:41:03:45 team/(6200:6204): Estoy en el planificador
+[INFO] 01:41:03:45 team/(6200:6204): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:41:03:45 team/(6200:6203): Esperando alguna accion
+[INFO] 01:41:03:45 team/(6200:6202): El broker no esta conectado...
+[INFO] 01:41:03:46 team/(6200:6202): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:41:03:46 team/(6200:6201): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:41:03:46 team/(6200:6201): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:41:11:367 team/(6200:6201): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:41:11:367 team/(6200:6201): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:41:11:368 team/(6200:6209): El nombre del pokemon es: Asdµ@
+[INFO] 01:41:11:368 team/(6200:6209): El tamanio recibido es: 3
+[INFO] 01:41:11:380 team/(6200:6209): El tamanio calculado es: 5
+[INFO] 01:41:11:380 team/(6200:6209): El nuevo nombre del pokemon es: Asd
+[INFO] 01:41:11:380 team/(6200:6209): El nuevo tamanio calculado es: 3
+[INFO] 01:41:11:380 team/(6200:6209): Posicion x: 10
+[INFO] 01:41:11:380 team/(6200:6209): Posicion Y: 10
+[INFO] 01:41:11:380 team/(6200:6209): El pokemon Asdµ@ no es requerido
+[INFO] 01:42:20:475 team/(6344:6344): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:42:20:475 team/(6344:6344): Necesito 2 pokemons Squirtle
+[INFO] 01:42:20:475 team/(6344:6344): Necesito 1 pokemons Pikachu
+[INFO] 01:42:20:475 team/(6344:6344): Necesito 1 pokemons Onix
+[INFO] 01:42:20:482 team/(6344:6344): Necesito 1 pokemons Gengar
+[INFO] 01:42:20:482 team/(6344:6344): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:42:20:482 team/(6344:6344): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:42:20:482 team/(6344:6344): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:42:20:483 team/(6344:6344): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:42:20:483 team/(6344:6348): Estoy en el planificador
+[INFO] 01:42:20:483 team/(6344:6348): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:42:20:483 team/(6344:6347): Esperando alguna accion
+[INFO] 01:42:20:483 team/(6344:6346): El broker no esta conectado...
+[INFO] 01:42:20:483 team/(6344:6346): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:42:20:484 team/(6344:6345): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:42:20:484 team/(6344:6345): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:42:23:362 team/(6344:6345): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:42:23:362 team/(6344:6345): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:42:23:363 team/(6344:6350): El nombre del pokemon es: Asd
+[INFO] 01:42:23:363 team/(6344:6350): El tamanio recibido es: 3
+[INFO] 01:42:23:363 team/(6344:6350): El tamanio calculado es: 3
+[INFO] 01:42:23:364 team/(6344:6350): El nuevo nombre del pokemon es: Asd
+[INFO] 01:42:23:364 team/(6344:6350): El nuevo tamanio calculado es: 3
+[INFO] 01:42:23:364 team/(6344:6350): Posicion x: 10
+[INFO] 01:42:23:364 team/(6344:6350): Posicion Y: 10
+[INFO] 01:42:23:364 team/(6344:6350): El pokemon Asd no es requerido
+[INFO] 01:45:32:45 team/(6500:6500): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:45:32:45 team/(6500:6500): Necesito 2 pokemons Squirtle
+[INFO] 01:45:32:45 team/(6500:6500): Necesito 1 pokemons Pikachu
+[INFO] 01:45:32:45 team/(6500:6500): Necesito 1 pokemons Onix
+[INFO] 01:45:32:45 team/(6500:6500): Necesito 1 pokemons Gengar
+[INFO] 01:45:32:46 team/(6500:6500): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:45:32:46 team/(6500:6500): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:45:32:46 team/(6500:6500): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:45:32:46 team/(6500:6500): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:45:32:46 team/(6500:6504): Estoy en el planificador
+[INFO] 01:45:32:46 team/(6500:6504): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:45:32:46 team/(6500:6503): Esperando alguna accion
+[INFO] 01:45:32:46 team/(6500:6502): El broker no esta conectado...
+[INFO] 01:45:32:47 team/(6500:6502): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:45:32:47 team/(6500:6501): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:45:32:47 team/(6500:6501): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:45:33:805 team/(6500:6501): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:45:33:807 team/(6500:6501): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:45:33:810 team/(6500:6506): El nombre del pokemon es: Asd
+[INFO] 01:45:33:811 team/(6500:6506): El tamanio recibido es: 3
+[INFO] 01:45:33:811 team/(6500:6506): El tamanio calculado es: 3
+[INFO] 01:45:33:811 team/(6500:6506): El nuevo nombre del pokemon es: Asd
+[INFO] 01:45:33:811 team/(6500:6506): El nuevo tamanio calculado es: 3
+[INFO] 01:45:33:811 team/(6500:6506): Posicion x: 10
+[INFO] 01:45:33:811 team/(6500:6506): Posicion Y: 10
+[INFO] 01:45:33:812 team/(6500:6506): El pokemon Asd no es requerido
+[INFO] 01:47:39:818 team/(6871:6871): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:47:39:818 team/(6871:6871): Necesito 2 pokemons Squirtle
+[INFO] 01:47:39:818 team/(6871:6871): Necesito 1 pokemons Pikachu
+[INFO] 01:47:39:818 team/(6871:6871): Necesito 1 pokemons Onix
+[INFO] 01:47:39:818 team/(6871:6871): Necesito 1 pokemons Gengar
+[INFO] 01:47:39:819 team/(6871:6871): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:47:39:819 team/(6871:6871): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:47:39:819 team/(6871:6871): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:47:39:819 team/(6871:6871): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:47:39:820 team/(6871:6875): Estoy en el planificador
+[INFO] 01:47:39:820 team/(6871:6875): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:47:39:820 team/(6871:6873): El broker no esta conectado...
+[INFO] 01:47:39:820 team/(6871:6874): Esperando alguna accion
+[INFO] 01:47:39:820 team/(6871:6873): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:47:39:821 team/(6871:6872): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:47:39:821 team/(6871:6872): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:47:42:504 team/(6871:6872): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:47:42:504 team/(6871:6872): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:47:42:505 team/(6871:6877): El nombre del pokemon es: Asdµ@
+[INFO] 01:47:42:505 team/(6871:6877): El tamanio recibido es: 3
+[INFO] 01:47:42:506 team/(6871:6877): El tamanio calculado es: 5
+[INFO] 01:47:42:506 team/(6871:6877): El nuevo nombre del pokemon es: As
+[INFO] 01:47:42:506 team/(6871:6877): El nuevo tamanio calculado es: 2
+[INFO] 01:47:42:506 team/(6871:6877): Posicion x: 10
+[INFO] 01:47:42:506 team/(6871:6877): Posicion Y: 10
+[INFO] 01:47:42:506 team/(6871:6877): El pokemon Asdµ@ no es requerido
+[INFO] 01:48:00:255 team/(6984:6984): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:48:00:255 team/(6984:6984): Necesito 2 pokemons Squirtle
+[INFO] 01:48:00:255 team/(6984:6984): Necesito 1 pokemons Pikachu
+[INFO] 01:48:00:256 team/(6984:6984): Necesito 1 pokemons Onix
+[INFO] 01:48:00:256 team/(6984:6984): Necesito 1 pokemons Gengar
+[INFO] 01:48:00:256 team/(6984:6984): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:48:00:256 team/(6984:6984): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:48:00:256 team/(6984:6984): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:48:00:256 team/(6984:6984): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:48:00:257 team/(6984:6988): Estoy en el planificador
+[INFO] 01:48:00:257 team/(6984:6988): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:48:00:257 team/(6984:6987): Esperando alguna accion
+[INFO] 01:48:00:257 team/(6984:6986): El broker no esta conectado...
+[INFO] 01:48:00:257 team/(6984:6986): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:48:00:257 team/(6984:6985): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:48:00:257 team/(6984:6985): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:48:02:410 team/(6984:6985): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:48:02:411 team/(6984:6985): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:48:02:412 team/(6984:7000): El nombre del pokemon es: Asdµ@
+[INFO] 01:48:02:412 team/(6984:7000): El tamanio recibido es: 3
+[INFO] 01:48:02:412 team/(6984:7000): El tamanio calculado es: 5
+[INFO] 01:48:02:413 team/(6984:7000): El nuevo nombre del pokemon es: Asd
+[INFO] 01:48:02:413 team/(6984:7000): El nuevo tamanio calculado es: 3
+[INFO] 01:48:02:413 team/(6984:7000): Posicion x: 10
+[INFO] 01:48:02:413 team/(6984:7000): Posicion Y: 10
+[INFO] 01:48:02:413 team/(6984:7000): El pokemon Asdµ@ no es requerido
+[INFO] 01:51:49:100 team/(7324:7324): La cantidad de entrenadores del equipo es de 3 entrenadores
+[INFO] 01:51:49:100 team/(7324:7324): Necesito 2 pokemons Squirtle
+[INFO] 01:51:49:100 team/(7324:7324): Necesito 1 pokemons Pikachu
+[INFO] 01:51:49:100 team/(7324:7324): Necesito 1 pokemons Onix
+[INFO] 01:51:49:100 team/(7324:7324): Necesito 1 pokemons Gengar
+[INFO] 01:51:49:100 team/(7324:7324): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:51:49:101 team/(7324:7324): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:51:49:101 team/(7324:7324): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:51:49:101 team/(7324:7324): 9. Se realizar√° el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 01:51:49:101 team/(7324:7326): El broker no esta conectado...
+[INFO] 01:51:49:101 team/(7324:7326): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 01:51:49:101 team/(7324:7328): Estoy en el planificador
+[INFO] 01:51:49:101 team/(7324:7328): Estoy en SJF CON DESALOJO preparado para planificar
+[INFO] 01:51:49:105 team/(7324:7325): Servidor levantado en IP: 127.0.0.2 y PUERTO: 5002
+[INFO] 01:51:49:105 team/(7324:7327): Esperando alguna accion
+[INFO] 01:51:49:107 team/(7324:7325): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:51:55:583 team/(7324:7325): CONEXION REALIZADA CORRECTAMENTE EN SERVIDOR PARA EL GAMEBOY
+[INFO] 01:51:55:583 team/(7324:7325): Listo para recibir conexion de GAMEBOY, en servidor: 11
+[INFO] 01:51:55:585 team/(7324:7330): El nombre del pokemon es: JUANCITO
+[INFO] 01:51:55:585 team/(7324:7330): Posicion x: 10
+[INFO] 01:51:55:585 team/(7324:7330): Posicion Y: 10
+[INFO] 01:51:55:585 team/(7324:7330): El pokemon JUANCITO no es requerido

@@ -73,6 +73,7 @@ int levantar_servidor(char* ip, char* puerto);
 
 void atender_conexion_gameboy();
 void recibir_mensaje_de_gameboy(int socket_gameboy);
+char* limpiar_cadena(char* cadena_a_limpiar, int tamanio_deseado);
 void procesar_mensaje_new(int hubo_error, int socket_gameboy, int id_mensaje);
 void procesar_mensaje_catch(int hubo_error, int socket_gameboy, int id_mensaje);
 void procesar_mensaje_get(int hubo_error, int socket_gameboy, int id_mensaje);

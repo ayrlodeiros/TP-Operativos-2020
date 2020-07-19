@@ -20,6 +20,7 @@ int levantar_servidor(char* ip, char* puerto);
 	//PARA GAMEBOY
 void atender_conexion_gameboy();
 void recibir_mensaje_de_gameboy(int socket_gameboy);
+char* limpiar_cadena(char* cadena_a_limpiar, int tamanio_deseado);
 	//FIN DE PARA GAMEBOY
 	//PARA BROKER
 int intentar_conectar_al_broker();

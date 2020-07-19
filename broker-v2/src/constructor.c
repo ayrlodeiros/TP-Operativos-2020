@@ -955,36 +955,48 @@ void inicializar_lista_bs(){
 }
 
 int obtener_posicion_bs(int tamanio) {
-
+	//TODO BORRAR ESTOS LOGS
+	printf("\n----------------------------------INICIO----------------------------------------\n");
 	int potencia_de_dos_limite = obtener_potencia_de_dos_mas_cercana(leer_tamano_minimo_particion());
 	int potencia_de_dos_deseada = obtener_potencia_de_dos_mas_cercana(tamanio);
 	//Esto se hace para respetar el tamaño minimo que puede tener una particion
 	if(potencia_de_dos_limite > potencia_de_dos_deseada) {
 		potencia_de_dos_deseada = potencia_de_dos_limite;
 	}
+	log_info(mi_log, "POTENCIA DE DOS DESEADA: %d", potencia_de_dos_deseada);
 
 	//OBTIENE LA POSICION DE LA PARTICION QUE MAS SE ACERCA A LA POTENCIA DE DOS DESEADA, DEVUELVE -1 SI NO ENCONTRO NIGUNA
 	int posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_deseada);
+	log_info(mi_log, "LA POSICION DE LA PARTICION MAS CERCANA ES: %d", posicion_de_particion_en_lista);
 
 	//REALIZAR LIBERACION Y CONSOLIDACION, HASTA OBTENER posicion DISTINTA DE -1
 	while(posicion_de_particion_en_lista == -1) {
+		log_info(mi_log, "SE LIBERARA Y CONSOLIDARA");
 		liberar_y_consolidar();
 
 		posicion_de_particion_en_lista = obtener_posicion_particion_mas_cercana(potencia_de_dos_deseada);
+		log_info(mi_log, "LA NUEVA POSICION DE LA PARTICION MAS CERCANA ES: %d", posicion_de_particion_en_lista);
 	}
 
 	t_particion_bs* posible_particion = list_get(lista_particiones, posicion_de_particion_en_lista);
 
 	//SI LA POTENCIA DE DOS DE LA PARTICION ENCONTRADA NO ES IGUAL A LA DESEADA SE PARTICIONA A LA PARTICION
+	log_info(mi_log, "POTENCIA DE DOS DE PARTICION ENCONTRADA: %d", posible_particion->potencia_de_dos);
 	if(posible_particion->potencia_de_dos != potencia_de_dos_deseada) {
 		// DIVIDIR EN DOS HASTA LLEGAR A POTENCIA DE DOS MAS CERCANA
 		posible_particion = particionar_y_obtener_particion(posicion_de_particion_en_lista, potencia_de_dos_deseada);
+		log_info(mi_log, "POTENCIA DE DOS DE PARTICION ENCONTRADA: %d", posible_particion->potencia_de_dos);
 	}
 
 	// OCUPAR LA PARTICION
 	posible_particion->libre = false;
 	posible_particion->tiempo_ingreso = timestamp();
 	posible_particion->ult_vez_usado = timestamp();
+
+	log_info(mi_log, "INICIO DE PARTICION ENCONTRADA: %d", posible_particion->inicio);
+	log_info(mi_log, "FIN DE PARTICION ENCONTRADA: %d", posible_particion->fin);
+
+	printf("\n----------------------------------FIN----------------------------------------\n\n");
 
 	return posible_particion->inicio;
 }
@@ -1022,12 +1034,16 @@ int obtener_posicion_particion_mas_cercana(int potencia_de_dos) {
 }
 
 void liberar_y_consolidar() {
+	//TODO BORRAR LOGS
+	log_info(mi_log, "Voy a liberar");
 	int posicion_particion_liberada = liberar_una_particion();
 
 	int posicion_consolidacion = evaluar_consolidacion(posicion_particion_liberada);
+	log_info(mi_log, "Resultado consolidacion debe ser -1 y es: %d", posicion_consolidacion);
 	//Hasta que no devuelva -1 quiere decir que se puede seguir intentando consolidar la misma particion
 	while(posicion_consolidacion != -1) {
 		posicion_consolidacion = evaluar_consolidacion(posicion_consolidacion);
+		log_info(mi_log, "Resultado consolidacion debe ser -1 y es: %d", posicion_consolidacion);
 	}
 }
 
@@ -1069,16 +1085,20 @@ int obtener_posicion_de_particion_liberada_fifo() {
 int obtener_posicion_de_particion_liberada_lru() {
 	t_particion_bs* particion_objetivo = NULL;
 	int posicion;
-
+	//TODO borrar logs (salvo el ultimo)
+	log_info(mi_log, "Cantidad de particiones: %d", list_size(lista_particiones));
 	for(int i = 0; i<list_size(lista_particiones); i++) {
 		t_particion_bs* particion_aux = list_get(lista_particiones, i);
+		log_info(mi_log, "Particion %d, esta libre? %d. Tamanio: %d", i, particion_aux->libre, (particion_aux->fin-particion_aux->inicio));
 		if(!(particion_aux->libre) && (particion_objetivo == NULL || particion_aux->ult_vez_usado < particion_objetivo->ult_vez_usado)) {
 			particion_objetivo = particion_aux;
 			posicion = i;
 		}
 	}
 
+	log_info(mi_log, "Se entro a borrar msj");
 	borrar_msj_mp(particion_objetivo->inicio);
+	log_info(mi_log, "Se salio de borrar msj");
 	particion_objetivo->libre = true;
 
 	log_info(mi_log, "Se libero, por LRU, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
@@ -1096,8 +1116,9 @@ int evaluar_consolidacion(int posicion_buddy_1) {
 		posicion_buddy_2 = posicion_buddy_1 - 1;
 	}
 
+	int ultima_posicion_en_lista = list_size(lista_particiones)-1;
 
-	if(list_size(lista_particiones) >= posicion_buddy_2 && list_size(lista_particiones) >= posicion_buddy_1) {
+	if(ultima_posicion_en_lista >= posicion_buddy_2 && ultima_posicion_en_lista >= posicion_buddy_1) {
 		t_particion_bs* buddy_2 = list_get(lista_particiones, posicion_buddy_2);
 
 		if(buddy_2->libre) {
