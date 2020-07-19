@@ -191,19 +191,19 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 		int largo_nombre_pokemon;
 		memcpy(&largo_nombre_pokemon, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
-		log_info(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
+		log_debug(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
 		char* nombre_pokemon = malloc(largo_nombre_pokemon+1);
 		int posicion_x;
 		int posicion_y;
 		memcpy(nombre_pokemon, (paquete->buffer->stream) + offset, largo_nombre_pokemon);
-		log_info(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
+		log_debug(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
 		offset+=largo_nombre_pokemon;
 		memcpy(&posicion_x, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
-		log_info(mi_log, "La posicion x del pokemon es %d", posicion_x);
+		log_debug(mi_log, "La posicion x del pokemon es %d", posicion_x);
 		memcpy(&posicion_y, (paquete->buffer->stream) + offset, sizeof(uint32_t));
 		offset+=sizeof(uint32_t);
-		log_info(mi_log, "La posicion y del pokemon es %d", posicion_y);
+		log_debug(mi_log, "La posicion y del pokemon es %d", posicion_y);
 	}
 
 	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
@@ -212,9 +212,13 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,suscriptor);
-		log_info(mi_log,"Se envio el mensaje al suscriptor de id %d y socket %d de la cola %d.",suscriptor->identificador,suscriptor->conexion, mensaje->cola);
+		log_info(mi_log,"SE ENVIO EL MENSAJE AL SUSCRIPTOR DE ID %d Y SOCKET %d, EL MSJ ES DE LA COLA %d.",suscriptor->identificador,suscriptor->conexion, mensaje->cola);
+		add_sub_lista_conf_msj(mensaje,suscriptor);
+		// todo dejo esto comentado porque no anda, pero las conexiones se rompen por otra razon se ve. Luego de arreglar eso hay q arreglar esto tambien
+		/*
 		pthread_create(&hilo_ack, NULL, recibir_ACK ,msj_susc);
 		pthread_detach(hilo_ack);
+		*/
 	}
 	else
 		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor.");
@@ -253,10 +257,10 @@ void recibir_ACK(aux_msj_susc* msj_y_susc){
 	}
 	else{
 
-		log_info(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
+		log_debug(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
 
 		if(valor == 1) {
-			log_info(mi_log, "Recibi la confirmacion de recepcion del suscriptor %d.",msj_y_susc->suscriptor->identificador);
+			log_info(mi_log, "Recibi la confirmacion de recepcion del mensaje del suscriptor %d.",msj_y_susc->suscriptor->identificador);
 			add_sub_lista_conf_msj(msj_y_susc->mensaje,msj_y_susc->suscriptor);
 		} else {
 			//TODO Ver como reaccionar en caso de que la recepcion no sea correcta
@@ -414,7 +418,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 
 	int posicion = guardar_mensaje_en_memoria(tamanio, buffer);
 	mensaje->id = asignar_id_univoco();
-	log_info(mi_log, "El id del mensaje creado es %d", mensaje->id);
+	log_debug(mi_log, "El id del mensaje creado es %d", mensaje->id);
 	mensaje->id_cor = id_correlativo;
 	mensaje->cola = cola;
 	mensaje->suscriptores_env = list_create();
@@ -423,7 +427,7 @@ t_mensaje* crear_mensaje(void* buffer,int tamanio,mq_nombre cola,int id_correlat
 	mensaje->pos_en_memoria = malloc(sizeof(t_pos_memoria));
 	mensaje->pos_en_memoria->pos = posicion;
 	mensaje->pos_en_memoria->tamanio = tamanio;
-	log_info(mi_log,"SE GUARDO UN NUEVO MENSAJE EN LA COLA %d, POSICION %d y TAMANIO %d .",cola,posicion,tamanio);
+	log_info(mi_log,"SE GUARDO UN NUEVO MENSAJE EN MEMORIA, POSICION %d, TAMANIO %d Y COLA %d.",posicion,tamanio,cola);
 
 
 	return mensaje;
@@ -567,7 +571,7 @@ bool noEstaOcupado(void* elemento){
 }
 
 void borrarParticion(void* elemento){
-	log_info(mi_log,"Se ha eliminado una particion de memoria, su posicion de inicio era %d.",((t_particion_dinamica*) elemento)->inicio);
+	log_debug(mi_log,"Se ha eliminado una particion de memoria, su posicion de inicio era %d.",((t_particion_dinamica*) elemento)->inicio);
 	free((t_particion_dinamica*) elemento);
 }
 
@@ -583,7 +587,6 @@ void borrarParticion(void* elemento){
 
 t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 
-	log_info(mi_log,"La posicion que vas a buscar en la lista es: %d",posicion);
 	for(int i = 0; list_size(lista_msjs) > i ;i++ ){
 		t_mensaje* msj = list_get(lista_msjs,i);
 		if(msj->pos_en_memoria->pos == posicion){
@@ -597,12 +600,12 @@ t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 }
 
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
-	log_info(mi_log,"La posicion vieja es : %d",pos_vieja);
-	log_info(mi_log,"La posicion nueva es %d",pos_nueva);
+	log_debug(mi_log,"La posicion vieja es : %d",pos_vieja);
+	log_debug(mi_log,"La posicion nueva es %d",pos_nueva);
 	t_mensaje* mensaje = obtener_estructura_msj(pos_vieja,lista_global_msjs);
-	log_info(mi_log,"El id del msj es : %d",mensaje->id);
+	log_debug(mi_log,"El id del msj es : %d",mensaje->id);
 	mensaje->pos_en_memoria->pos = pos_nueva;
-	log_info(mi_log,"La nueva posicion inical del msj es : %d",mensaje->pos_en_memoria->pos);
+	log_debug(mi_log,"La nueva posicion inical del msj es : %d",mensaje->pos_en_memoria->pos);
 }
 
 void compactacion(){
@@ -627,8 +630,8 @@ void compactacion(){
 		particion->inicio = prox_posicion;
 		particion->fin = prox_posicion + particion->tamanio_ocupado -1;
 		prox_posicion = prox_posicion + particion->tamanio_ocupado;
-		log_info(mi_log,"La particion ocupada arranca en la posicion %d",particion->inicio);
-		log_info(mi_log,"La particion ocupada terminar en la posicion %d",particion->fin);
+		log_debug(mi_log,"La particion ocupada arranca en la posicion %d",particion->inicio);
+		log_debug(mi_log,"La particion ocupada terminar en la posicion %d",particion->fin);
 		actualizar_estructura_mensaje(aux_para_encontrar_msjs,particion->inicio);
 
 		llenar_memoria_principal(particion->inicio,particion->tamanio_ocupado,aux->memoria);
@@ -644,8 +647,8 @@ void compactacion(){
 	particion_libre->inicio = prox_posicion;
 	particion_libre->fin = leer_tamano_memoria() - 1;
 	list_add(lista_particiones,particion_libre);
-	log_info(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->inicio);
-	log_info(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->fin);
+	log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->inicio);
+	log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->fin);
 
 	}
 
@@ -680,15 +683,15 @@ void liberar_particion(){
 
 	switch(leer_algoritmo_reemplazo()){
 		case FIFO:
-			log_info(mi_log,"ENTRE POR FIFO");
+			log_debug(mi_log,"ENTRE POR FIFO");
 			ubicacion_particion = algoritmo_reemplazo_fifo();
 			break;
 		case LRU:
-			log_info(mi_log,"ENTRE POR LRU");
+			log_debug(mi_log,"ENTRE POR LRU");
 				ubicacion_particion = algoritmo_reemplazo_lru();
 			break;
 	}
-	log_info(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
+	log_debug(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
 	consolidar(ubicacion_particion);
 	log_info(mi_log,"Se termino de consolidar");
 }
@@ -701,31 +704,17 @@ int algoritmo_reemplazo_fifo(void){
 
 		for (int i = 0; list_size(lista_particiones) > i ;i++){
 			t_particion_dinamica* particion = list_get(lista_particiones,i);
-			log_info(mi_log,"Analizando la particion de posicion en la lista %d e inicio %d",i,particion->inicio);
-			if(!particion->libre){
-				char lru_c[21];
-				sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
-				log_info(mi_log,"La particion tiene como utimo timestamp el valor %s",lru_c);
-				if(primera_particion == NULL){
-					log_info(mi_log,"ES LA PRIMERA PARTICION A ANALIZAR");
+
+			if(!esta_libre(particion) && (primera_particion == NULL || particion->tiempo_ingreso < primera_particion->tiempo_ingreso)){
+
 					primera_particion = particion;
 					pos_primera_particion = i;
-					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
 
-				}
-				else if(particion->tiempo_ingreso < primera_particion->tiempo_ingreso){
-					primera_particion = particion;
-					pos_primera_particion = i;
-					log_info(mi_log,"LA POSIBLE PARTICION A LIBERAR POR AHORA ESTA EN LA POSICION %d DE LA LISTA Y ARRANCA EN LA POSICION %d",pos_primera_particion,primera_particion->inicio);
-
-				}
 			}
-			else log_info(mi_log,"LA PARTICION YA ESTA LIBRE.");
 		}
+
 		borrar_msj_mp(primera_particion->inicio);
 		primera_particion->libre = true;
-
-
 		return pos_primera_particion;
 }
 
@@ -737,23 +726,17 @@ int algoritmo_reemplazo_lru(void){
 	for (int i = 0; list_size(lista_particiones) > i ;i++){
 		t_particion_dinamica* particion = list_get(lista_particiones,i);
 
-		log_info(mi_log,"La ultima vez usada la particion es :%d", particion->ult_vez_usado);
-
-		if(!esta_libre(particion)){
-
-			if(part_menos_usada == NULL || particion->ult_vez_usado < part_menos_usada->ult_vez_usado){
+		if(!esta_libre(particion) && (part_menos_usada == NULL || particion->ult_vez_usado < part_menos_usada->ult_vez_usado)){
 
 				part_menos_usada = particion;
 				pos_part_menos_usada = i;
 
-			}
 		}
 	}
 
 	borrar_msj_mp(part_menos_usada->inicio);
 	part_menos_usada->libre = true;
 	part_menos_usada->tamanio_ocupado = 0;
-	//consolidar() tal vez conviene mejor ponerlo aca
 	return pos_part_menos_usada;
 }
 
@@ -765,37 +748,35 @@ void consolidar(int pos_particion){
 	int pos = pos_particion;
 
 	if(particion_libre_a_la_izquierda(pos_particion,liberada->inicio)){
-		log_info(mi_log,"Entra izquierda ");
+		log_debug(mi_log,"Entra izquierda ");
 		t_particion_dinamica* izquierda = list_get(lista_particiones,pos_particion-1);
-		log_info(mi_log,"La particion de la izquierda arranca en %d",izquierda->inicio);
-		log_info(mi_log,"La particion de la izquierda termina en %d",izquierda->fin);
+		log_debug(mi_log,"La particion de la izquierda arranca en %d",izquierda->inicio);
+		log_debug(mi_log,"La particion de la izquierda termina en %d",izquierda->fin);
 		izquierda->fin = liberada->fin;
 		aux = izquierda;
 		list_remove_and_destroy_element(lista_particiones,pos,borrarParticion);
 		pos = pos_particion -1;
-		log_info(mi_log,"La particion auxiliar arranca en %d",aux->inicio);
-		log_info(mi_log,"La particion auxiliar termina en %d",aux->fin);
+		log_debug(mi_log,"La particion auxiliar arranca en %d",aux->inicio);
+		log_debug(mi_log,"La particion auxiliar termina en %d",aux->fin);
 	}
 	if (particion_libre_a_la_derecha(pos,aux->fin)){
-		log_info(mi_log,"Entra a la derecha");
+		log_debug(mi_log,"Entra a la derecha");
 		t_particion_dinamica* derecha = list_get(lista_particiones,pos+1);
-		log_info(mi_log,"La particion aux arranca en %d",aux->inicio);
-		log_info(mi_log,"La particion aux termina en %d",aux->fin);
-		log_info(mi_log,"La particion de la izquierda arranca en %d",derecha->inicio);
-		log_info(mi_log,"La particion de la izquierda termina en %d",derecha->fin);
+		log_debug(mi_log,"La particion aux arranca en %d",aux->inicio);
+		log_debug(mi_log,"La particion aux termina en %d",aux->fin);
+		log_debug(mi_log,"La particion de la izquierda arranca en %d",derecha->inicio);
+		log_debug(mi_log,"La particion de la izquierda termina en %d",derecha->fin);
 		aux->fin = derecha->fin;
 		list_remove_and_destroy_element(lista_particiones,pos+1,borrarParticion);
 	}
 }
 
 bool particion_libre_a_la_izquierda(int posicion,int inicio_part_liberada){
-	log_info(mi_log,"ME FIJO SI ESTA LIBRE A LA IZQUIERDA");
 	return inicio_part_liberada - 1 >= 0 && esta_libre(list_get(lista_particiones,posicion-1));
 
 }
 
 bool particion_libre_a_la_derecha(int posicion,int fin_part_liberada){
-	log_info(mi_log,"ME FIJO SI ESTA LIBRE A LA DERECHA");
 	return fin_part_liberada + 1 <= leer_tamano_memoria()-1 && esta_libre(list_get(lista_particiones,posicion+1));
 }
 
@@ -822,12 +803,12 @@ int algoritmo_best_fit(int tamanio){
 	for(int i = 0; list_size(lista_particiones) > i ; i++ ){
 		t_particion_dinamica* particion_actual = list_get(lista_particiones,i);
 
-		log_info(mi_log,"En best fit estoy analizando la particion cuyo inicio es %d:", particion_actual->inicio);
+		log_debug(mi_log,"En best fit estoy analizando la particion cuyo inicio es %d:", particion_actual->inicio);
 
 		if(esta_libre(particion_actual)){
 			int diferencia = diferencia_tamanio_particion(particion_actual,tamanio);
-			log_info(mi_log,"Esta libre esa particion %d:", particion_actual->inicio);
-			log_info(mi_log,"La diferencica de tamanio entre esa particion y el mensaje es de %d:", diferencia);
+			log_debug(mi_log,"Esta libre esa particion %d:", particion_actual->inicio);
+			log_debug(mi_log,"La diferencica de tamanio entre esa particion y el mensaje es de %d:", diferencia);
 
 			if(diferencia >= 0){
 
@@ -841,7 +822,7 @@ int algoritmo_best_fit(int tamanio){
 	}
 
 	if(dif_mejor_part < 0){
-		log_info(mi_log,"NO SE ENCONTRO PARTICION LIBRE");
+		log_debug(mi_log,"NO SE ENCONTRO PARTICION LIBRE");
 		return -1;
 	}
 	else if(dif_mejor_part >= leer_tamano_minimo_particion())
@@ -904,10 +885,6 @@ int llenar_y_realizar_nueva_particion(t_particion_dinamica* particion,int tamani
 	particion->ult_vez_usado = timestamp();
 
 	list_add_in_index(lista_particiones,posicion_en_lista+1,nueva_particion);
-	char lru_c[21];
-	sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
-	log_info(mi_log,"Se creo una nueva particion y se lleno la particion vieja con inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
-
 	return particion->inicio;
 
 }
@@ -917,9 +894,6 @@ int llenar_particion(t_particion_dinamica* particion, int tamanio){
 	particion->libre = false;
 	particion->tiempo_ingreso = timestamp();
 	particion->ult_vez_usado = timestamp();
-	char lru_c[21];
-	sprintf(lru_c, "%" PRIu64, particion->tiempo_ingreso);
-	log_info(mi_log,"Se lleno la particion de inicio %d y fin %d y su timestamp es %s",particion->inicio,particion->fin,lru_c);
 	return particion->inicio;
 }
 
