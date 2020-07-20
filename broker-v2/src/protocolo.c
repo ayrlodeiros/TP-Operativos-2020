@@ -76,7 +76,7 @@ void enviar_id_msj_cliente(int socket_cliente,int id_msj){
 	while(!se_mando && contador != 0){
 		if(send(socket_cliente,&id_msj, sizeof(int), 0) > 0){
 			se_mando = true;
-			log_info(mi_log,"Se envio el id del mensaje al suscriptor correspondiente correctamente");
+			log_info(mi_log,"Se envio el id del mensaje %d al suscriptor correspondiente correctamente", id_msj);
 		}
 		else{
 			log_info(mi_log,"No se pudo mandar el id, se intentara nuevamente.......");
