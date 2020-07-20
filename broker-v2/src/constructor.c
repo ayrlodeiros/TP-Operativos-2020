@@ -190,6 +190,7 @@ void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* suscriptor)
 
 	void* a_enviar = serializar_paquete(paquete, bytes);
 	log_info(mi_log,"ESTOY A PUNTO DE ENVIAR EL MENSAJE. EL MENSAJE DE ID %d, TAMANIO %d PARA EL SUSCRIPTOR %d y su CONEXION ES %d.",paquete->id,bytes,suscriptor->identificador,suscriptor->conexion);
+	//todo chequear porque tira seg fault el send cuando el suscriptor esta caido
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		log_info(mi_log,"ENTRO AL IF ");
 		add_sub_lista_env_msj(mensaje,suscriptor);
