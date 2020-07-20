@@ -164,17 +164,18 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 
 		pthread_mutex_lock(&mutex_memoria_principal);
 		if(!list_is_empty(mq->cola)) {
+
 			enviar_mensaje_suscriptores(mq);
 		}
+		log_info(mi_log,"**************SE SALIO DEL IF EN ESPERAR MENSAJE*********************");
 		pthread_mutex_unlock(&mutex_memoria_principal);
 	}
 }
 
-void enviar_mensaje(aux_msj_susc* msj_susc)
+void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* suscriptor)
 {
+	aux_msj_susc* msj_susc = malloc(sizeof(aux_msj_susc));
 	pthread_t* hilo_ack;
-	t_mensaje* mensaje = msj_susc->mensaje;
-	suscriptor_t* suscriptor = msj_susc->suscriptor;
 	t_paquete* paquete= malloc(sizeof(t_paquete));
 
 	paquete->id = mensaje->id;
@@ -185,27 +186,6 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 
 	memcpy(paquete->buffer->stream, memoria_principal + mensaje->pos_en_memoria->pos, paquete->buffer->size);
 
-	// TODO borrar al final
-	if(mensaje->cola == CATCH) {
-		int offset=0;
-		int largo_nombre_pokemon;
-		memcpy(&largo_nombre_pokemon, (paquete->buffer->stream) + offset, sizeof(uint32_t));
-		offset+=sizeof(uint32_t);
-		log_debug(mi_log, "El largo del nombre del pokemon es %d", largo_nombre_pokemon);
-		char* nombre_pokemon = malloc(largo_nombre_pokemon+1);
-		int posicion_x;
-		int posicion_y;
-		memcpy(nombre_pokemon, (paquete->buffer->stream) + offset, largo_nombre_pokemon);
-		log_debug(mi_log, "El nombre del pokemon es %s", nombre_pokemon);
-		offset+=largo_nombre_pokemon;
-		memcpy(&posicion_x, (paquete->buffer->stream) + offset, sizeof(uint32_t));
-		offset+=sizeof(uint32_t);
-		log_debug(mi_log, "La posicion x del pokemon es %d", posicion_x);
-		memcpy(&posicion_y, (paquete->buffer->stream) + offset, sizeof(uint32_t));
-		offset+=sizeof(uint32_t);
-		log_debug(mi_log, "La posicion y del pokemon es %d", posicion_y);
-	}
-
 	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
 
 	void* a_enviar = serializar_paquete(paquete, bytes);
@@ -213,12 +193,14 @@ void enviar_mensaje(aux_msj_susc* msj_susc)
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
 		add_sub_lista_env_msj(mensaje,suscriptor);
 		log_info(mi_log,"SE ENVIO EL MENSAJE AL SUSCRIPTOR DE ID %d Y SOCKET %d, EL MSJ ES DE LA COLA %d.",suscriptor->identificador,suscriptor->conexion, mensaje->cola);
-		add_sub_lista_conf_msj(mensaje,suscriptor);
+		//add_sub_lista_conf_msj(mensaje,suscriptor);
 		// todo dejo esto comentado porque no anda, pero las conexiones se rompen por otra razon se ve. Luego de arreglar eso hay q arreglar esto tambien
-		/*
+		msj_susc->msj_id = mensaje->id;
+		msj_susc->susc_conexion = suscriptor->conexion;
+		msj_susc->susc_id = suscriptor->identificador;
 		pthread_create(&hilo_ack, NULL, recibir_ACK ,msj_susc);
 		pthread_detach(hilo_ack);
-		*/
+
 	}
 	else
 		log_info(mi_log,"NO se envio correctamente el mensaje al suscriptor.");
@@ -249,22 +231,25 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 void recibir_ACK(aux_msj_susc* msj_y_susc){
 
 	int valor;
-	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->suscriptor->identificador);
-	if (recv(msj_y_susc->suscriptor->conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
+	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->susc_id);
+	if (recv(msj_y_susc->susc_conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
 
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
 
 	}
 	else{
 
-		log_debug(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->suscriptor->identificador);
+		log_debug(mi_log, "Se recibio el valor de ack: %d del suscriptor %d", valor, msj_y_susc->susc_id);
 
 		if(valor == 1) {
-			log_info(mi_log, "Recibi la confirmacion de recepcion del mensaje del suscriptor %d.",msj_y_susc->suscriptor->identificador);
-			add_sub_lista_conf_msj(msj_y_susc->mensaje,msj_y_susc->suscriptor);
-		} else {
-			//TODO Ver como reaccionar en caso de que la recepcion no sea correcta
+			//nose si es mejor aca o dnetor de actualizar confimardos mensaje
+			pthread_mutex_lock(&mutex_lista_msjs);
+			actualizar_confirmados_mensaje(msj_y_susc->msj_id,msj_y_susc->susc_id);
+			pthread_mutex_unlock(&mutex_lista_msjs);
+			log_info(mi_log, "Recibi la confirmacion de recepcion del mensaje %d del suscriptor %d.",msj_y_susc->msj_id,msj_y_susc->susc_id);
+			//add_sub_lista_conf_msj(msj_y_susc->mensaje,msj_y_susc->suscriptor);
 		}
+
 	}
 
 	free(msj_y_susc);
@@ -280,22 +265,19 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 
 void enviar_mensaje_suscriptores(t_mq* cola){
 
-	aux_msj_susc* aux = malloc(sizeof(aux_msj_susc));
 	t_mensaje* mensaje = list_remove(cola->cola,0);
 	suscriptor_t* suscriptor;
 	int i;
-
 	actualizar_ultima_vez_usado_particion(mensaje);
 
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
+	log_info(mi_log,"**************PUEDE QUE EL ERROR OCURRA DENTRO DEL FOR *********************");
 
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
 
-			aux->mensaje = mensaje;
-			aux->suscriptor = suscriptor;
-			enviar_mensaje(aux);
-
+			enviar_mensaje(mensaje,suscriptor);
+			log_info(mi_log,"TERMINA DE ENVIAR MENSAJE ?");
 		}
 	}
 }
@@ -585,6 +567,20 @@ void borrarParticion(void* elemento){
 }
 */
 
+t_mensaje* obtener_estructura_mjs_con_id(int id,t_list* lista_msjs){
+
+	for(int i = 0; list_size(lista_msjs) > i ;i++ ){
+		t_mensaje* msj = list_get(lista_msjs,i);
+		if(msj->id== id){
+
+			return msj;
+		}
+	}
+	log_info(mi_log,"No se encontro el msj");
+	return NULL;
+}
+
+
 t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 
 	for(int i = 0; list_size(lista_msjs) > i ;i++ ){
@@ -597,6 +593,16 @@ t_mensaje* obtener_estructura_msj(int posicion,t_list* lista_msjs){
 	log_info(mi_log,"Retornas NULL");
 	return NULL;
 
+}
+
+void actualizar_confirmados_mensaje(int id_mensaje,int id_suscriptor){
+	t_mensaje* mensaje = obtener_estructura_mjs_con_id(id_mensaje,lista_global_msjs);
+
+	if(mensaje != NULL){
+		list_add(mensaje->suscriptores_conf,id_suscriptor);
+		log_info(mi_log,"Se agrego el suscriptor %d a la lista de confirmados del mensaje %d",mensaje->id,id_suscriptor);
+	}
+	log_info(mi_log,"El mensaje %d que se recibio el ACK ya fue eliminado de la memoria. ",id_mensaje);
 }
 
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
