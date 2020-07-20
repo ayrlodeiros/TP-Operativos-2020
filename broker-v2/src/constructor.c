@@ -189,8 +189,9 @@ void enviar_mensaje(t_mensaje* mensaje, suscriptor_t* suscriptor)
 	int bytes = paquete->buffer->size + 3*sizeof(uint32_t);
 
 	void* a_enviar = serializar_paquete(paquete, bytes);
-
+	log_info(mi_log,"ESTOY A PUNTO DE ENVIAR EL MENSAJE. EL MENSAJE DE ID %d, TAMANIO %d PARA EL SUSCRIPTOR %d y su CONEXION ES %d.",paquete->id,bytes,suscriptor->identificador,suscriptor->conexion);
 	if(send(suscriptor->conexion, a_enviar, bytes, 0) > 0){
+		log_info(mi_log,"ENTRO AL IF ");
 		add_sub_lista_env_msj(mensaje,suscriptor);
 		log_info(mi_log,"SE ENVIO EL MENSAJE AL SUSCRIPTOR DE ID %d Y SOCKET %d, EL MSJ ES DE LA COLA %d.",suscriptor->identificador,suscriptor->conexion, mensaje->cola);
 		//add_sub_lista_conf_msj(mensaje,suscriptor);
@@ -272,14 +273,14 @@ void enviar_mensaje_suscriptores(t_mq* cola){
 
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
-	log_info(mi_log,"**************PUEDE QUE EL ERROR OCURRA DENTRO DEL FOR *********************");
-
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
 
+		log_info(mi_log,"VOY A ENVIAR MENSAJE %d A SUSCRIPTOR %d",mensaje->id,suscriptor->identificador);
 			enviar_mensaje(mensaje,suscriptor);
-			log_info(mi_log,"TERMINA DE ENVIAR MENSAJE ?");
+			log_info(mi_log,"SE ENVIO EL MENSAJE %d A SUSCRIPTOR %d",mensaje->id,suscriptor->identificador);
 		}
 	}
+	log_info(mi_log,"SE SALIO DEL FOR, SE ENVIO EL MENSAJE A TODOS LOS SUSCRIPTORES");
 }
 
 bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
@@ -600,9 +601,10 @@ void actualizar_confirmados_mensaje(int id_mensaje,int id_suscriptor){
 
 	if(mensaje != NULL){
 		list_add(mensaje->suscriptores_conf,id_suscriptor);
-		log_info(mi_log,"Se agrego el suscriptor %d a la lista de confirmados del mensaje %d",mensaje->id,id_suscriptor);
+		log_info(mi_log,"Se agrego el suscriptor %d a la lista de confirmados del mensaje %d",id_suscriptor,mensaje->id);
 	}
-	log_info(mi_log,"El mensaje %d que se recibio el ACK ya fue eliminado de la memoria. ",id_mensaje);
+	else
+		log_info(mi_log,"El mensaje %d que se recibio el ACK ya fue eliminado de la memoria. ",id_mensaje);
 }
 
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
