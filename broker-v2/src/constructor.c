@@ -1138,8 +1138,11 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 	int tamanio_deseado = potencia(2, potencia_de_dos_deseada);
 
 	t_list* lista_auxiliar = list_create();
+	log_info(mi_log, "EL TAMANIO DESEADO ES: %d", tamanio_deseado);
+	log_info(mi_log, "EL TAMANIO ACTUAL ES: %d", tamanio_actual);
 	while(tamanio_actual != tamanio_deseado) {
 		tamanio_actual /= 2;
+		log_info(mi_log, "EL TAMANIO A PARTICIONAR ES: %d", tamanio_actual);
 		int potencia_nueva = obtener_potencia_de_dos_mas_cercana(tamanio_actual);
 
 		t_particion_bs* nueva_particion = malloc(sizeof(t_particion_bs));
@@ -1155,8 +1158,10 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 	particion_a_particionar->potencia_de_dos = potencia_de_dos_deseada;
 
 	// AGREGO LAS NUEVAS PARTICIONES A LA LISTA DE PARTICIONES, DETRAS DE LA PARTICION QUE CREE
+	log_info(mi_log, "Posicion que particione: %d", posicion_a_particionar);
 	posicion_a_particionar++;
 	for(int i = (list_size(lista_auxiliar)-1); i >= 0; i--) {
+		log_info(mi_log, "Posicion con particion nueva: %d", posicion_a_particionar);
 		list_add_in_index(lista_particiones, posicion_a_particionar, list_get(lista_auxiliar, i));
 		posicion_a_particionar++;
 	}
