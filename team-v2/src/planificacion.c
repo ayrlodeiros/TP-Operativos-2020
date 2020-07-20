@@ -35,23 +35,28 @@ void fifo(){
 	}
 
 	while(!terminaron_todos_los_entrenadores()){
+
 		if(list_size(entrenadores_ready) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
 		}
 
-		entrenador* entrenador_a_ejecutar = obtener_primer_entrenador_ready();
+		if(list_size(entrenadores_ready) > 0) {
+			entrenador* entrenador_a_ejecutar = obtener_primer_entrenador_ready();
 
-		//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
-		evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
-		id_entrenador_anterior = entrenador_a_ejecutar->id;
+			//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+			evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+			id_entrenador_anterior = entrenador_a_ejecutar->id;
 
-		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
-			ejecutar(entrenador_a_ejecutar);
+			while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
+				ejecutar(entrenador_a_ejecutar);
+			}
+
+			evaluar_si_entrenador_termino(entrenador_a_ejecutar);
+
+			evaluar_y_atacar_deadlock();
+		} else {
+			evaluar_y_atacar_deadlock();
 		}
-
-		evaluar_si_entrenador_termino(entrenador_a_ejecutar);
-
-		evaluar_y_atacar_deadlock();
 
 	}
 
@@ -72,44 +77,49 @@ void round_robin(){
 			pthread_mutex_lock(&lock_de_planificacion);
 		}
 
-		entrenador* entrenador_a_ejecutar = obtener_primer_entrenador_ready();
+		if(list_size(entrenadores_ready) > 0) {
+			entrenador* entrenador_a_ejecutar = obtener_primer_entrenador_ready();
 
-		//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
-		evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
-		id_entrenador_anterior = entrenador_a_ejecutar->id;
+			//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+			evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+			id_entrenador_anterior = entrenador_a_ejecutar->id;
 
-		quantum_restante = leer_quantum();
+			quantum_restante = leer_quantum();
 
-		while(quantum_restante > 0 && list_size(entrenador_a_ejecutar->acciones) > 0){
+			while(quantum_restante > 0 && list_size(entrenador_a_ejecutar->acciones) > 0){
 
-			accion* proxima_accion = list_get(entrenador_a_ejecutar->acciones, 0);
+				accion* proxima_accion = list_get(entrenador_a_ejecutar->acciones, 0);
 
-			if(proxima_accion->cpu_requerido <= entrenador_a_ejecutar->cpu_rr_anterior + quantum_restante) {
-				log_info(nuestro_log, "El entrenador %d consume %d de QUANTUM", entrenador_a_ejecutar->id, (proxima_accion->cpu_requerido - entrenador_a_ejecutar->cpu_rr_anterior));
+				if(proxima_accion->cpu_requerido <= entrenador_a_ejecutar->cpu_rr_anterior + quantum_restante) {
+					log_info(nuestro_log, "El entrenador %d consume %d de QUANTUM", entrenador_a_ejecutar->id, (proxima_accion->cpu_requerido - entrenador_a_ejecutar->cpu_rr_anterior));
 
-				quantum_restante -= proxima_accion->cpu_requerido;
-				ejecutar(entrenador_a_ejecutar);
+					quantum_restante -= proxima_accion->cpu_requerido;
+					ejecutar(entrenador_a_ejecutar);
 
-				//Vuelvo a setear el sobrante en 0
-				entrenador_a_ejecutar->cpu_rr_anterior = 0;
+					//Vuelvo a setear el sobrante en 0
+					entrenador_a_ejecutar->cpu_rr_anterior = 0;
 
-			} else {
-				log_info(nuestro_log, "El entrenador %d consume %d de QUANTUM", entrenador_a_ejecutar->id, quantum_restante);
-				entrenador_a_ejecutar->cpu_rr_anterior += quantum_restante;
-				quantum_restante = 0;
+				} else {
+					log_info(nuestro_log, "El entrenador %d consume %d de QUANTUM", entrenador_a_ejecutar->id, quantum_restante);
+					entrenador_a_ejecutar->cpu_rr_anterior += quantum_restante;
+					quantum_restante = 0;
+				}
 			}
+
+			log_info(nuestro_log, "El entrenador %d se quedo sin QUANTUM o sin acciones para ejecutar", entrenador_a_ejecutar->id);
+
+
+			if(list_size(entrenador_a_ejecutar->acciones) > 0){
+				list_add(entrenadores_ready,entrenador_a_ejecutar);
+			}
+
+			evaluar_si_entrenador_termino(entrenador_a_ejecutar);
+
+			evaluar_y_atacar_deadlock();
+
+		} else {
+			evaluar_y_atacar_deadlock();
 		}
-
-		log_info(nuestro_log, "El entrenador %d se quedo sin QUANTUM o sin acciones para ejecutar", entrenador_a_ejecutar->id);
-
-
-		if(list_size(entrenador_a_ejecutar->acciones) > 0){
-			list_add(entrenadores_ready,entrenador_a_ejecutar);
-		}
-
-		evaluar_si_entrenador_termino(entrenador_a_ejecutar);
-
-		evaluar_y_atacar_deadlock();
 	}
 
 	terminar_team();
@@ -124,33 +134,36 @@ void sjf_sin_desalojo(){
 	}
 
 	while(!terminaron_todos_los_entrenadores()){
-		log_info(nuestro_log, "Estoy en SJF SIN DESALOJO preparado para planificar");
 
 		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
 		}
 
-		pthread_mutex_lock(&mutex_entrenadores_ready);
-		while(list_size(entrenadores_ready) > 0){
-			entrenador* entrenador_a_estimar = list_remove(entrenadores_ready, 0);
-			asignar_rafaga_estimada_al_entrenador(entrenador_a_estimar);
-			list_add(entrenadores_con_rafagas_estimadas, entrenador_a_estimar);
+		if(list_size(entrenadores_ready) > 0 || list_size(entrenadores_con_rafagas_estimadas) > 0) {
+			pthread_mutex_lock(&mutex_entrenadores_ready);
+			while(list_size(entrenadores_ready) > 0){
+				entrenador* entrenador_a_estimar = list_remove(entrenadores_ready, 0);
+				asignar_rafaga_estimada_al_entrenador(entrenador_a_estimar);
+				list_add(entrenadores_con_rafagas_estimadas, entrenador_a_estimar);
+			}
+			pthread_mutex_unlock(&mutex_entrenadores_ready);
+
+			entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
+
+			//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
+			evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
+			id_entrenador_anterior = entrenador_a_ejecutar->id;
+
+			while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
+				log_info(nuestro_log, "Estimado de entrenador %d es %f", entrenador_a_ejecutar->id, entrenador_a_ejecutar->cpu_estimado_restante);
+				ejecutar(entrenador_a_ejecutar);
+			}
+
+			evaluar_si_entrenador_termino(entrenador_a_ejecutar);
+			evaluar_y_atacar_deadlock();
+		} else {
+			evaluar_y_atacar_deadlock();
 		}
-		pthread_mutex_unlock(&mutex_entrenadores_ready);
-
-		entrenador* entrenador_a_ejecutar = entrenador_con_menor_rafaga_estimada(entrenadores_con_rafagas_estimadas);
-
-		//Verifico si el entrenador anterior es distinto al de ahora, si es asi, quiere decir que hubo cambio de contexto
-		evaluar_cambio_de_contexto(id_entrenador_anterior, entrenador_a_ejecutar->id);
-		id_entrenador_anterior = entrenador_a_ejecutar->id;
-
-		while(cpu_restante_entrenador(entrenador_a_ejecutar) != 0){
-			log_info(nuestro_log, "Estimado de entrenador %d es %f", entrenador_a_ejecutar->id, entrenador_a_ejecutar->cpu_estimado_restante);
-			ejecutar(entrenador_a_ejecutar);
-		}
-
-		evaluar_si_entrenador_termino(entrenador_a_ejecutar);
-		evaluar_y_atacar_deadlock();
 	}
 
 	list_destroy(entrenadores_con_rafagas_estimadas);
@@ -168,12 +181,11 @@ void sjf_con_desalojo(){
 	}
 
 	while(!terminaron_todos_los_entrenadores()){
-		log_info(nuestro_log, "Estoy en SJF CON DESALOJO preparado para planificar");
 		if(list_size(entrenadores_ready) == 0 && list_size(entrenadores_con_rafagas_estimadas) == 0) {
 			pthread_mutex_lock(&lock_de_planificacion);
 		}
 
-		if(list_size(entrenadores_ready) != 0 || list_size(entrenadores_con_rafagas_estimadas) != 0) {
+		if(list_size(entrenadores_ready) > 0 || list_size(entrenadores_con_rafagas_estimadas) > 0) {
 
 			//Cada ciclo de cpu voy a evaluar si hay nuevos entrenadores en ready (mayor overhead)
 			pthread_mutex_lock(&mutex_entrenadores_ready);
@@ -219,6 +231,8 @@ void sjf_con_desalojo(){
 				}
 			}
 
+		} else {
+			evaluar_y_atacar_deadlock();
 		}
 	}
 

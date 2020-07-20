@@ -1079,7 +1079,7 @@ void esperar_id_localized(int socket_get) {
 
 //CATCH
 void catch_pokemon(entrenador* entrenador) {
-	cambiar_estado_entrenador(entrenador, BLOCK_READY);
+	cambiar_estado_entrenador(entrenador, BLOCK_CATCHING);
 	int socket_catch = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
 	if(funciona_broker == 0 || socket_catch == -1) {
 		//ACCION POR DEFAULT
@@ -1121,27 +1121,35 @@ void catch_pokemon(entrenador* entrenador) {
 			s_y_e->conexion = socket_catch;
 			s_y_e->entrenador = entrenador;
 
+			//TODO BORRAR LOGS
+			log_info(nuestro_log, "Se creara el hilo de espera del id caught");
 			pthread_t* hilo_espera_catch;
-			pthread_create(&hilo_espera_catch,NULL, esperar_id_caught, s_y_e);
+			pthread_create(&hilo_espera_catch, NULL,esperar_id_caught, s_y_e);
 			pthread_detach(hilo_espera_catch);
 		} else{
 			log_info(logger, "9. No se pudo realizar el envio del CATCH al broker, se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
 			log_info(nuestro_log, "9. No se pudo realizar el envio del CATCH al broker, se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
 			manejar_la_captura_del_pokemon(entrenador);
 		}
-
+		log_info(nuestro_log, "VOY A LIBERAR");
 		free(a_enviar);
 		destruir_paquete(paquete);
+		log_info(nuestro_log, "LIBERE");
 	}
 }
 
 void esperar_id_caught(socket_y_entrenador* sye) {
 	int id_caught;
 
+	//TODO borrar log
+	log_info(nuestro_log, "Se entro a esperar el ID_CAUGHT");
+
 	int conexion = sye->conexion;
 	entrenador* entr = sye->entrenador;
+	log_info(nuestro_log, "Voy a hacer el free");
 	free(sye);
 
+	log_info(nuestro_log, "La conexion es %d y el entrenador es de id %d", conexion, entr->id);
 	if(recv(conexion, &id_caught, sizeof(int), 0) > 0){
 		log_info(nuestro_log, "Se recibio correctamente el ID: %d, para esperar en CAUGHT", id_caught);
 
@@ -1167,9 +1175,11 @@ void accionar_en_funcion_del_estado_del_entrenador(entrenador* entrenador){
 	} else if (el_entrenador_no_puede_capturar_mas_pokemons(entrenador)) {
 		log_info(nuestro_log,"El entrenador %d se bloquea quedando en estado DEADLOCK", entrenador->id);
 		cambiar_estado_entrenador(entrenador, BLOCK_DEADLOCK);
+		pthread_mutex_unlock(&lock_de_planificacion);
 	} else {
 		log_info(nuestro_log,"El entrenador %d queda en BLOCK_READY", entrenador->id);
 		cambiar_estado_entrenador(entrenador, BLOCK_READY);
+		pthread_mutex_unlock(&lock_de_entrenador_disponible);
 	}
 }
 
