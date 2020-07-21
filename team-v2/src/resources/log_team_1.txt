@@ -1003,3 +1003,813 @@
 [INFO] 02:19:29:14 team/(5813:5826): Cantidad de ciclos de CPU realizados por entrenador 1: 34
 [INFO] 02:19:29:14 team/(5813:5826): Cantidad de ciclos de CPU realizados por entrenador 2: 21
 [INFO] 02:19:29:14 team/(5813:5826): Deadlocks producidos y resueltos: 2
+[INFO] 13:54:38:610 team/(15349:15351): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 13:54:38:611 team/(15349:15351): 11. Intento de conexion con el broker exitosa.
+[INFO] 13:56:15:688 team/(15349:15515): 2. Entrenador 1 moviendose a la posicion: 2|4.
+[INFO] 13:56:17:700 team/(15349:15535): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 13:56:19:704 team/(15349:15537): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 13:56:21:707 team/(15349:15539): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 13:56:23:713 team/(15349:15541): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 13:56:25:728 team/(15349:15554): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 13:56:26:745 team/(15349:15369): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 13:56:27:733 team/(15349:15561): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 13:56:29:736 team/(15349:15563): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 13:56:31:742 team/(15349:15573): 2. Entrenador 2 moviendose a la posicion: 5|3.
+[INFO] 13:56:33:745 team/(15349:15578): 2. Entrenador 2 moviendose a la posicion: 5|4.
+[INFO] 13:56:35:748 team/(15349:15580): 2. Entrenador 2 moviendose a la posicion: 5|5.
+[INFO] 13:56:37:756 team/(15349:15593): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 13:56:38:778 team/(15349:15369): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 13:56:39:760 team/(15349:15600): 2. Entrenador 0 moviendose a la posicion: 3|3.
+[INFO] 13:56:41:764 team/(15349:15602): 2. Entrenador 0 moviendose a la posicion: 4|3.
+[INFO] 13:56:43:767 team/(15349:15604): 2. Entrenador 0 moviendose a la posicion: 5|3.
+[INFO] 13:56:45:772 team/(15349:15606): 2. Entrenador 0 moviendose a la posicion: 6|3.
+[INFO] 13:56:47:777 team/(15349:15608): 2. Entrenador 0 moviendose a la posicion: 6|4.
+[INFO] 13:56:49:780 team/(15349:15611): 2. Entrenador 0 moviendose a la posicion: 6|5.
+[INFO] 13:56:51:784 team/(15349:15613): 2. Entrenador 0 moviendose a la posicion: 6|6.
+[INFO] 13:56:54:803 team/(15349:15369): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 14:00:39:473 team/(15860:15862): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:00:39:476 team/(15860:15862): 11. Intento de conexion con el broker exitosa.
+[INFO] 14:00:40:497 team/(15860:15888): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 14:00:42:500 team/(15860:15922): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 14:00:44:503 team/(15860:15924): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 14:00:47:525 team/(15860:15880): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 14:02:00:248 team/(16122:16124): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:02:00:257 team/(16122:16124): 11. Intento de conexion con el broker exitosa.
+[INFO] 14:02:01:300 team/(16122:16156): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 14:02:03:302 team/(16122:16158): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 14:02:05:309 team/(16122:16159): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 14:02:07:317 team/(16122:16163): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 14:02:08:336 team/(16122:16146): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 14:02:09:321 team/(16122:16218): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 14:02:11:324 team/(16122:16225): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 14:02:13:328 team/(16122:16230): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 14:02:15:332 team/(16122:16232): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 14:02:17:334 team/(16122:16238): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 14:02:19:340 team/(16122:16243): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 14:02:21:344 team/(16122:16245): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 14:02:23:348 team/(16122:16247): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 14:02:25:368 team/(16122:16249): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 14:02:27:371 team/(16122:16251): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 14:02:29:376 team/(16122:16254): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 14:02:31:380 team/(16122:16256): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 14:02:34:406 team/(16122:16146): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 14:02:54:584 team/(16122:16324): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 14:02:56:589 team/(16122:16343): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 14:02:58:592 team/(16122:16345): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 14:03:00:595 team/(16122:16347): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 14:03:02:600 team/(16122:16349): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 14:03:04:604 team/(16122:16359): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 14:03:06:612 team/(16122:16364): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 14:03:07:627 team/(16122:16146): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 14:03:08:616 team/(16122:16373): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 14:03:10:620 team/(16122:16383): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 14:03:12:623 team/(16122:16385): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 14:03:14:628 team/(16122:16387): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 14:03:16:633 team/(16122:16400): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 14:03:17:650 team/(16122:16146): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 14:03:18:637 team/(16122:16407): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 14:03:20:640 team/(16122:16409): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 14:03:22:645 team/(16122:16411): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 14:03:24:649 team/(16122:16413): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 14:03:26:652 team/(16122:16415): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 14:03:28:655 team/(16122:16417): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 14:03:30:660 team/(16122:16419): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 14:03:32:665 team/(16122:16424): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 14:03:33:683 team/(16122:16146): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 14:03:34:669 team/(16122:16431): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 14:03:36:673 team/(16122:16433): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 14:03:38:676 team/(16122:16435): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 14:03:40:680 team/(16122:16438): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 14:03:42:684 team/(16122:16440): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 14:03:44:689 team/(16122:16443): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 14:03:46:692 team/(16122:16445): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 14:03:48:695 team/(16122:16447): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 14:03:50:700 team/(16122:16454): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 14:03:52:704 team/(16122:16456): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 14:03:54:708 team/(16122:16458): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 14:03:56:713 team/(16122:16134): -------- METRICAS --------
+[INFO] 14:03:56:713 team/(16122:16134): Cantidad de ciclos de CPU total: 62
+[INFO] 14:03:56:713 team/(16122:16134): Cantidad de cambios de contextos realizados: 7
+[INFO] 14:03:56:713 team/(16122:16134): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 14:03:56:713 team/(16122:16134): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 14:03:56:713 team/(16122:16134): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 14:03:56:713 team/(16122:16134): Deadlocks producidos y resueltos: 2
+[INFO] 15:36:55:317 team/(18135:18137): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:36:55:326 team/(18135:18137): 11. Intento de conexion con el broker exitosa.
+[INFO] 15:36:56:370 team/(18135:18163): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 15:36:58:374 team/(18135:18164): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 15:37:00:377 team/(18135:18198): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 15:37:02:381 team/(18135:18200): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 15:37:04:385 team/(18135:18202): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 15:37:06:390 team/(18135:18212): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 15:37:08:394 team/(18135:18222): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 15:37:10:398 team/(18135:18224): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 15:37:12:401 team/(18135:18226): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 15:37:14:406 team/(18135:18228): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 15:37:16:408 team/(18135:18232): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 15:37:18:413 team/(18135:18234): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 15:37:20:418 team/(18135:18236): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 15:37:23:445 team/(18135:18155): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 15:38:19:178 team/(18135:18307): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 15:38:21:182 team/(18135:18326): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 15:38:23:185 team/(18135:18328): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 15:38:25:188 team/(18135:18330): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 15:38:27:193 team/(18135:18332): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 15:38:29:198 team/(18135:18342): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 15:38:31:203 team/(18135:18347): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 15:38:32:224 team/(18135:18155): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 15:38:33:206 team/(18135:18354): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 15:38:35:209 team/(18135:18364): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 15:38:37:214 team/(18135:18366): 2. Entrenador 2 moviendose a la posicion: 5|3.
+[INFO] 15:38:39:217 team/(18135:18368): 2. Entrenador 2 moviendose a la posicion: 5|4.
+[INFO] 15:38:41:221 team/(18135:18378): 2. Entrenador 2 moviendose a la posicion: 5|5.
+[INFO] 15:38:43:226 team/(18135:18383): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 15:38:44:248 team/(18135:18155): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 15:38:45:230 team/(18135:18390): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 15:38:47:233 team/(18135:18392): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 15:38:49:237 team/(18135:18394): 2. Entrenador 1 moviendose a la posicion: 6|8.
+[INFO] 15:38:51:242 team/(18135:18402): 2. Entrenador 1 moviendose a la posicion: 6|7.
+[INFO] 15:38:53:246 team/(18135:18404): 2. Entrenador 1 moviendose a la posicion: 6|6.
+[INFO] 15:38:56:267 team/(18135:18155): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 15:49:00:949 team/(19059:19061): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:49:00:949 team/(19059:19061): 11. Intento de conexion con el broker exitosa.
+[INFO] 15:49:01:967 team/(19059:19093): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 15:49:03:971 team/(19059:19140): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 15:49:05:976 team/(19059:19148): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 15:49:07:980 team/(19059:19150): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 15:49:09:984 team/(19059:19152): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 15:49:11:988 team/(19059:19162): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 15:49:13:992 team/(19059:19172): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 15:49:15:0 team/(19059:19176): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 15:49:18:6 team/(19059:19178): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 15:49:20:12 team/(19059:19180): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 15:49:22:27 team/(19059:19182): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 15:49:24:39 team/(19059:19184): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 15:49:26:43 team/(19059:19191): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 15:49:28:48 team/(19059:19195): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 15:49:29:65 team/(19059:19083): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 15:49:30:52 team/(19059:19201): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 15:49:32:56 team/(19059:19202): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 15:49:35:88 team/(19059:19083): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 15:49:52:984 team/(19059:19275): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 15:49:54:992 team/(19059:19293): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 15:49:56:996 team/(19059:19295): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 15:49:58:0 team/(19059:19297): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 15:50:00:2 team/(19059:19299): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 15:50:03:7 team/(19059:19309): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 15:50:05:13 team/(19059:19314): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 15:50:06:29 team/(19059:19083): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 15:50:07:16 team/(19059:19321): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 15:50:09:20 team/(19059:19331): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 15:50:11:23 team/(19059:19333): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 15:50:13:26 team/(19059:19335): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 15:50:15:31 team/(19059:19348): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 15:50:16:42 team/(19059:19083): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 15:50:17:35 team/(19059:19357): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 15:50:19:39 team/(19059:19359): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 15:50:21:42 team/(19059:19361): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 15:50:23:46 team/(19059:19363): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 15:50:25:51 team/(19059:19365): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 15:50:27:60 team/(19059:19367): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 15:50:29:64 team/(19059:19369): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 15:50:31:68 team/(19059:19374): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 15:50:32:85 team/(19059:19083): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 15:50:33:72 team/(19059:19381): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 15:50:35:75 team/(19059:19383): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 15:50:37:79 team/(19059:19385): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 15:50:39:83 team/(19059:19388): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 15:50:41:86 team/(19059:19390): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 15:50:43:91 team/(19059:19393): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 15:50:45:95 team/(19059:19395): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 15:50:47:100 team/(19059:19397): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 15:50:49:103 team/(19059:19399): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 15:50:51:105 team/(19059:19401): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 15:50:53:108 team/(19059:19403): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 15:50:55:112 team/(19059:19071): -------- METRICAS --------
+[INFO] 15:50:55:112 team/(19059:19071): Cantidad de ciclos de CPU total: 62
+[INFO] 15:50:55:112 team/(19059:19071): Cantidad de cambios de contextos realizados: 7
+[INFO] 15:50:55:113 team/(19059:19071): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 15:50:55:113 team/(19059:19071): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 15:50:55:113 team/(19059:19071): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 15:50:55:113 team/(19059:19071): Deadlocks producidos y resueltos: 2
+[INFO] 15:54:17:631 team/(19624:19626): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:54:17:631 team/(19624:19626): 11. Intento de conexion con el broker exitosa.
+[INFO] 15:54:18:647 team/(19624:19701): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 15:54:20:652 team/(19624:19712): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 15:54:22:655 team/(19624:19714): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 15:54:24:660 team/(19624:19716): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 15:54:26:664 team/(19624:19726): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 15:54:28:667 team/(19624:19736): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 15:54:30:670 team/(19624:19738): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 15:54:32:676 team/(19624:19740): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 15:54:34:680 team/(19624:19742): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 15:54:36:684 team/(19624:19744): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 15:54:38:688 team/(19624:19746): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 15:54:40:691 team/(19624:19748): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 15:54:42:695 team/(19624:19749): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 15:54:44:700 team/(19624:19753): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 15:54:45:716 team/(19624:19648): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 15:54:46:704 team/(19624:19759): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 15:54:48:708 team/(19624:19760): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 15:54:51:736 team/(19624:19648): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 15:54:59:147 team/(19624:19829): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 15:55:01:150 team/(19624:19848): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 15:55:03:153 team/(19624:19850): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 15:55:05:159 team/(19624:19852): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 15:55:07:162 team/(19624:19854): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 15:55:09:168 team/(19624:19864): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 15:55:11:172 team/(19624:19869): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 15:55:12:192 team/(19624:19648): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 15:55:13:176 team/(19624:19876): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 15:55:15:180 team/(19624:19886): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 15:55:17:184 team/(19624:19890): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 15:55:19:188 team/(19624:19892): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 15:55:21:193 team/(19624:19905): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 15:55:22:208 team/(19624:19648): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 15:55:23:195 team/(19624:19912): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 15:55:25:199 team/(19624:19914): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 15:55:27:203 team/(19624:19916): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 15:55:29:207 team/(19624:19918): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 15:55:31:212 team/(19624:19920): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 15:55:33:215 team/(19624:19922): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 15:55:35:219 team/(19624:19924): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 15:55:37:225 team/(19624:19929): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 15:55:38:241 team/(19624:19648): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 15:55:39:228 team/(19624:19936): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 15:55:41:232 team/(19624:19938): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 15:55:43:236 team/(19624:19940): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 15:55:45:238 team/(19624:19943): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 15:55:47:241 team/(19624:19945): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 15:55:49:248 team/(19624:19948): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 15:55:51:251 team/(19624:19950): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 15:55:53:256 team/(19624:19952): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 15:55:55:260 team/(19624:19954): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 15:55:57:264 team/(19624:19957): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 15:55:59:268 team/(19624:19959): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 15:56:01:272 team/(19624:19636): -------- METRICAS --------
+[INFO] 15:56:01:272 team/(19624:19636): Cantidad de ciclos de CPU total: 62
+[INFO] 15:56:01:272 team/(19624:19636): Cantidad de cambios de contextos realizados: 7
+[INFO] 15:56:01:272 team/(19624:19636): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 15:56:01:272 team/(19624:19636): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 15:56:01:272 team/(19624:19636): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 15:56:01:272 team/(19624:19636): Deadlocks producidos y resueltos: 2
+[INFO] 15:59:07:564 team/(20184:20186): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 15:59:07:565 team/(20184:20186): 11. Intento de conexion con el broker exitosa.
+[INFO] 15:59:08:596 team/(20184:20217): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 15:59:10:600 team/(20184:20269): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 15:59:12:603 team/(20184:20271): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 15:59:14:608 team/(20184:20273): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 15:59:16:611 team/(20184:20282): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 15:59:18:615 team/(20184:20291): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 15:59:20:620 team/(20184:20296): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 15:59:22:623 team/(20184:20298): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 15:59:24:627 team/(20184:20300): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 15:59:26:632 team/(20184:20302): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 15:59:28:635 team/(20184:20304): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 15:59:30:639 team/(20184:20306): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 15:59:32:644 team/(20184:20308): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 15:59:34:648 team/(20184:20312): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 15:59:35:671 team/(20184:20208): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 15:59:36:652 team/(20184:20318): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 15:59:38:655 team/(20184:20319): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 15:59:41:682 team/(20184:20208): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 16:00:46:369 team/(20184:20398): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:00:48:374 team/(20184:20415): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:00:50:382 team/(20184:20417): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:00:52:392 team/(20184:20419): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:00:54:396 team/(20184:20421): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:00:56:401 team/(20184:20431): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:00:58:408 team/(20184:20436): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:00:59:422 team/(20184:20208): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:01:00:412 team/(20184:20444): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:01:02:416 team/(20184:20455): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:01:04:419 team/(20184:20458): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:01:06:423 team/(20184:20461): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:01:08:445 team/(20184:20474): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:01:09:497 team/(20184:20208): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:01:10:456 team/(20184:20482): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:01:12:460 team/(20184:20484): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:01:14:463 team/(20184:20486): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 16:01:16:468 team/(20184:20491): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 16:01:18:471 team/(20184:20493): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 16:01:20:476 team/(20184:20496): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 16:01:22:479 team/(20184:20499): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 16:01:24:491 team/(20184:20504): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:01:25:529 team/(20184:20208): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:01:26:496 team/(20184:20511): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:01:28:500 team/(20184:20513): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 16:01:30:503 team/(20184:20515): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:01:32:511 team/(20184:20518): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:01:34:517 team/(20184:20520): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:01:36:524 team/(20184:20523): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:01:38:536 team/(20184:20525): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 16:01:40:546 team/(20184:20527): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 16:01:42:560 team/(20184:20529): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 16:01:44:568 team/(20184:20533): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 16:01:46:572 team/(20184:20537): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 16:01:48:576 team/(20184:20196): -------- METRICAS --------
+[INFO] 16:01:48:576 team/(20184:20196): Cantidad de ciclos de CPU total: 62
+[INFO] 16:01:48:576 team/(20184:20196): Cantidad de cambios de contextos realizados: 7
+[INFO] 16:01:48:576 team/(20184:20196): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:01:48:576 team/(20184:20196): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 16:01:48:576 team/(20184:20196): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 16:01:48:577 team/(20184:20196): Deadlocks producidos y resueltos: 2
+[INFO] 16:10:54:597 team/(21882:21884): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:10:54:603 team/(21882:21884): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:10:55:637 team/(21882:21914): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 16:10:57:642 team/(21882:21958): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:10:59:647 team/(21882:21966): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:11:01:656 team/(21882:21979): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:11:02:681 team/(21882:21906): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 16:11:03:659 team/(21882:21986): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:11:05:663 team/(21882:21988): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:11:07:673 team/(21882:21998): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:11:09:676 team/(21882:22000): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:11:11:679 team/(21882:22002): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:11:13:683 team/(21882:22004): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:11:15:687 team/(21882:22006): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:11:17:691 team/(21882:22010): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:11:19:694 team/(21882:22012): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:11:21:699 team/(21882:22013): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:11:23:703 team/(21882:22014): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:11:25:707 team/(21882:22015): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:11:28:731 team/(21882:21906): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:12:25:769 team/(21882:22086): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:12:27:773 team/(21882:22104): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:12:29:777 team/(21882:22107): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:12:31:779 team/(21882:22109): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:12:33:782 team/(21882:22111): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:12:35:786 team/(21882:22121): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:12:37:791 team/(21882:22126): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:12:38:812 team/(21882:21906): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:12:39:794 team/(21882:22133): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:12:41:799 team/(21882:22143): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:12:43:803 team/(21882:22145): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:12:45:807 team/(21882:22147): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:12:47:812 team/(21882:22160): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:12:48:834 team/(21882:21906): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:12:49:814 team/(21882:22167): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:12:51:819 team/(21882:22169): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:12:53:821 team/(21882:22171): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 16:12:55:824 team/(21882:22173): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 16:12:57:830 team/(21882:22175): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 16:12:59:835 team/(21882:22177): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 16:13:01:838 team/(21882:22179): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 16:13:03:847 team/(21882:22184): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:13:04:867 team/(21882:21906): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:13:05:849 team/(21882:22191): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:13:07:855 team/(21882:22193): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 16:13:09:859 team/(21882:22195): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:13:11:864 team/(21882:22198): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:13:13:867 team/(21882:22200): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:13:15:872 team/(21882:22203): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:13:17:875 team/(21882:22207): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 16:13:19:878 team/(21882:22209): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 16:13:21:883 team/(21882:22211): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 16:13:23:887 team/(21882:22213): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 16:13:25:891 team/(21882:22215): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 16:13:27:895 team/(21882:21894): -------- METRICAS --------
+[INFO] 16:13:27:895 team/(21882:21894): Cantidad de ciclos de CPU total: 62
+[INFO] 16:13:27:895 team/(21882:21894): Cantidad de cambios de contextos realizados: 7
+[INFO] 16:13:27:895 team/(21882:21894): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:13:27:895 team/(21882:21894): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 16:13:27:895 team/(21882:21894): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 16:13:27:895 team/(21882:21894): Deadlocks producidos y resueltos: 2
+[INFO] 16:20:33:588 team/(22815:22818): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:20:33:598 team/(22815:22818): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:20:34:622 team/(22815:22891): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:20:36:626 team/(22815:22902): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:20:38:631 team/(22815:22905): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:20:40:635 team/(22815:22907): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:20:42:639 team/(22815:22918): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:20:44:643 team/(22815:22930): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:20:46:647 team/(22815:22933): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:20:48:651 team/(22815:22937): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:20:50:654 team/(22815:22940): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:20:52:658 team/(22815:22943): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:20:54:664 team/(22815:22946): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:20:56:667 team/(22815:22948): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:20:58:671 team/(22815:22951): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:21:00:679 team/(22815:22955): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 16:21:01:687 team/(22815:22841): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:21:02:682 team/(22815:22962): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:21:04:687 team/(22815:22964): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:21:07:705 team/(22815:22841): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 16:21:51:855 team/(22815:23062): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:21:53:859 team/(22815:23080): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:21:55:863 team/(22815:23083): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:21:57:866 team/(22815:23087): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:21:59:870 team/(22815:23089): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:22:01:875 team/(22815:23093): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:22:03:880 team/(22815:23098): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:22:04:896 team/(22815:22841): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:22:05:884 team/(22815:23105): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:22:07:887 team/(22815:23109): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:22:09:891 team/(22815:23111): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:22:11:895 team/(22815:23115): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:22:13:902 team/(22815:23144): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:22:14:912 team/(22815:22841): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:22:15:906 team/(22815:23151): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:22:17:911 team/(22815:23162): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:22:19:915 team/(22815:23164): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 16:22:21:927 team/(22815:23168): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 16:22:23:931 team/(22815:23170): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 16:22:25:935 team/(22815:23172): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 16:22:27:939 team/(22815:23176): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 16:22:29:948 team/(22815:23182): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:22:30:968 team/(22815:22841): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:22:31:952 team/(22815:23191): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:22:33:957 team/(22815:23193): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 16:22:35:963 team/(22815:23195): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:22:37:967 team/(22815:23199): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:22:39:971 team/(22815:23201): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:22:41:978 team/(22815:23206): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:22:43:983 team/(22815:23208): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 16:22:45:987 team/(22815:23210): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 16:22:47:991 team/(22815:23214): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 16:22:49:995 team/(22815:23216): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 16:22:51:999 team/(22815:23220): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 16:22:54:8 team/(22815:22828): -------- METRICAS --------
+[INFO] 16:22:54:8 team/(22815:22828): Cantidad de ciclos de CPU total: 62
+[INFO] 16:22:54:8 team/(22815:22828): Cantidad de cambios de contextos realizados: 7
+[INFO] 16:22:54:8 team/(22815:22828): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:22:54:8 team/(22815:22828): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 16:22:54:8 team/(22815:22828): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 16:22:54:8 team/(22815:22828): Deadlocks producidos y resueltos: 2
+[INFO] 16:24:50:218 team/(23461:23463): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:24:50:219 team/(23461:23463): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:24:51:268 team/(23461:23536): 2. Entrenador 2 moviendose a la posicion: 3|2.
+[INFO] 16:24:53:275 team/(23461:23548): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:24:55:278 team/(23461:23550): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:24:57:283 team/(23461:23556): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:24:58:322 team/(23461:23485): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 16:24:59:287 team/(23461:23571): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:25:01:290 team/(23461:23582): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:25:03:295 team/(23461:23584): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:25:05:299 team/(23461:23587): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:25:07:303 team/(23461:23590): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:25:09:306 team/(23461:23592): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:25:11:308 team/(23461:23595): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:25:13:311 team/(23461:23597): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:25:15:315 team/(23461:23598): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:25:17:318 team/(23461:23600): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:25:19:322 team/(23461:23603): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:25:21:326 team/(23461:23604): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:25:24:356 team/(23461:23485): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:25:41:18 team/(23461:23680): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:25:43:21 team/(23461:23701): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:25:45:27 team/(23461:23704): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:25:47:30 team/(23461:23711): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:25:49:35 team/(23461:23715): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:25:51:39 team/(23461:23726): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:25:53:44 team/(23461:23732): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:25:54:65 team/(23461:23485): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:25:55:48 team/(23461:23739): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:25:57:51 team/(23461:23751): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:25:59:55 team/(23461:23754): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:26:01:59 team/(23461:23757): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:26:03:67 team/(23461:23771): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:26:04:85 team/(23461:23485): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:26:05:71 team/(23461:23778): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:26:07:75 team/(23461:23781): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:26:09:79 team/(23461:23784): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 16:26:11:83 team/(23461:23788): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 16:26:13:87 team/(23461:23791): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 16:26:15:91 team/(23461:23793): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 16:26:17:94 team/(23461:23796): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 16:26:19:100 team/(23461:23804): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:26:20:116 team/(23461:23485): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:26:21:103 team/(23461:23812): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:26:23:106 team/(23461:23815): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 16:26:25:111 team/(23461:23817): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:26:27:114 team/(23461:23821): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:26:29:118 team/(23461:23824): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:26:31:123 team/(23461:23828): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:26:33:126 team/(23461:23831): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 16:26:35:131 team/(23461:23833): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 16:26:37:135 team/(23461:23836): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 16:26:39:139 team/(23461:23839): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 16:26:41:143 team/(23461:23842): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 16:26:43:147 team/(23461:23473): -------- METRICAS --------
+[INFO] 16:26:43:147 team/(23461:23473): Cantidad de ciclos de CPU total: 62
+[INFO] 16:26:43:147 team/(23461:23473): Cantidad de cambios de contextos realizados: 7
+[INFO] 16:26:43:147 team/(23461:23473): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:26:43:147 team/(23461:23473): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 16:26:43:147 team/(23461:23473): Cantidad de ciclos de CPU realizados por entrenador 2: 21
+[INFO] 16:26:43:147 team/(23461:23473): Deadlocks producidos y resueltos: 2
+[INFO] 16:28:48:773 team/(24002:24002): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:28:48:773 team/(24002:24002): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:28:48:773 team/(24002:24002): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:28:48:773 team/(24002:24002): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:28:48:774 team/(24002:24005): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:28:48:774 team/(24002:24005): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:29:06:113 team/(24002:24021): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:29:08:116 team/(24002:24062): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:29:10:116 team/(24002:24064): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:29:12:117 team/(24002:24067): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:29:14:118 team/(24002:24068): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:29:16:119 team/(24002:24071): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:29:18:120 team/(24002:24074): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:29:18:775 team/(24002:24005): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:29:18:775 team/(24002:24005): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:29:20:120 team/(24002:24075): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:29:22:125 team/(24002:24078): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:29:24:127 team/(24002:24079): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:29:26:128 team/(24002:24082): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:29:28:129 team/(24002:24083): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:29:30:129 team/(24002:24085): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:29:32:130 team/(24002:24088): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:29:32:130 team/(24002:24088): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:29:32:130 team/(24002:24089): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:29:34:132 team/(24002:24090): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:29:36:133 team/(24002:24093): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:29:38:133 team/(24002:24094): 2. Entrenador 1 moviendose a la posicion: 6|8.
+[INFO] 16:29:40:134 team/(24002:24095): 2. Entrenador 1 moviendose a la posicion: 6|7.
+[INFO] 16:29:42:136 team/(24002:24098): 2. Entrenador 1 moviendose a la posicion: 6|6.
+[INFO] 16:29:44:136 team/(24002:24099): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:29:44:137 team/(24002:24099): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:29:44:137 team/(24002:24100): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:29:46:138 team/(24002:24103): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:29:48:139 team/(24002:24104): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:29:48:776 team/(24002:24005): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:29:48:776 team/(24002:24005): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:29:50:139 team/(24002:24105): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:29:52:140 team/(24002:24108): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:29:54:146 team/(24002:24109): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:29:56:147 team/(24002:24112): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:29:58:147 team/(24002:24113): 2. Entrenador 2 moviendose a la posicion: 6|7.
+[INFO] 16:30:00:148 team/(24002:24114): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:30:00:148 team/(24002:24114): 3. Se realiza la captura del pokemon Squirtle, en la posicion 6|7 exitosamente.
+[INFO] 16:30:00:149 team/(24002:24115): 2. Entrenador 2 moviendose a la posicion: 5|7.
+[INFO] 16:30:02:150 team/(24002:24118): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:30:04:151 team/(24002:24119): 2. Entrenador 2 moviendose a la posicion: 5|5.
+[INFO] 16:30:06:151 team/(24002:24122): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:30:06:152 team/(24002:24122): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:30:06:152 team/(24002:24123): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:30:08:153 team/(24002:24124): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:30:10:154 team/(24002:24125): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:30:12:154 team/(24002:24128): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:30:14:155 team/(24002:24129): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:30:16:156 team/(24002:24132): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:30:18:156 team/(24002:24135): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:30:18:156 team/(24002:24135): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:30:18:157 team/(24002:24136): 2. Entrenador 2 moviendose a la posicion: 4|5.
+[INFO] 16:30:18:777 team/(24002:24005): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:30:18:778 team/(24002:24005): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:30:20:158 team/(24002:24137): 2. Entrenador 2 moviendose a la posicion: 3|5.
+[INFO] 16:30:22:159 team/(24002:24140): 2. Entrenador 2 moviendose a la posicion: 2|5.
+[INFO] 16:30:24:162 team/(24002:24141): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:30:26:164 team/(24002:24144): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:30:28:164 team/(24002:24145): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:30:30:165 team/(24002:24007): -------- METRICAS --------
+[INFO] 16:30:30:165 team/(24002:24007): Cantidad de ciclos de CPU total: 52
+[INFO] 16:30:30:165 team/(24002:24007): Cantidad de cambios de contextos realizados: 5
+[INFO] 16:30:30:165 team/(24002:24007): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:30:30:165 team/(24002:24007): Cantidad de ciclos de CPU realizados por entrenador 1: 21
+[INFO] 16:30:30:165 team/(24002:24007): Cantidad de ciclos de CPU realizados por entrenador 2: 24
+[INFO] 16:30:30:165 team/(24002:24007): Deadlocks producidos y resueltos: 1
+[INFO] 16:31:00:344 team/(24194:24194): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:00:345 team/(24194:24194): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:00:345 team/(24194:24194): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:00:359 team/(24194:24194): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:00:362 team/(24194:24197): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:31:00:364 team/(24194:24197): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:31:04:28 team/(24194:24204): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:31:06:30 team/(24194:24252): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:31:08:31 team/(24194:24253): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:31:10:32 team/(24194:24255): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:31:12:32 team/(24194:24260): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:31:14:33 team/(24194:24261): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:31:16:34 team/(24194:24263): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:31:18:35 team/(24194:24266): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:31:20:37 team/(24194:24267): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:31:22:41 team/(24194:24269): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:31:24:42 team/(24194:24270): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:31:26:42 team/(24194:24272): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:31:28:43 team/(24194:24273): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:31:30:44 team/(24194:24274): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:31:30:364 team/(24194:24197): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:31:30:364 team/(24194:24197): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:31:32:45 team/(24194:24276): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:31:34:46 team/(24194:24277): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:31:36:46 team/(24194:24279): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:31:38:50 team/(24194:24280): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:31:40:51 team/(24194:24281): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:31:42:52 team/(24194:24283): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:31:44:52 team/(24194:24284): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:31:46:54 team/(24194:24286): 2. Entrenador 2 moviendose a la posicion: 6|7.
+[INFO] 16:31:48:55 team/(24194:24287): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:48:55 team/(24194:24287): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:31:48:56 team/(24194:24288): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:31:50:56 team/(24194:24289): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:31:52:57 team/(24194:24291): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:52:57 team/(24194:24291): 3. Se realiza la captura del pokemon Squirtle, en la posicion 6|7 exitosamente.
+[INFO] 16:31:52:58 team/(24194:24292): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:31:54:58 team/(24194:24293): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:31:56:59 team/(24194:24295): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:31:58:59 team/(24194:24296): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:31:58:59 team/(24194:24296): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:31:58:60 team/(24194:24297): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:32:00:61 team/(24194:24298): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:32:00:364 team/(24194:24197): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:32:00:365 team/(24194:24197): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:32:02:62 team/(24194:24300): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:32:04:66 team/(24194:24301): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:32:04:68 team/(24194:24301): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:32:04:73 team/(24194:24302): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 16:32:06:74 team/(24194:24304): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:32:08:74 team/(24194:24305): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:32:10:75 team/(24194:24306): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:32:12:76 team/(24194:24308): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:32:14:77 team/(24194:24309): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:32:16:78 team/(24194:24311): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:32:18:79 team/(24194:24314): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 16:32:20:81 team/(24194:24315): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 16:32:22:83 team/(24194:24317): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 16:32:24:84 team/(24194:24318): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 16:32:26:85 team/(24194:24320): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 16:32:28:87 team/(24194:24322): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:32:28:88 team/(24194:24322): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:32:28:88 team/(24194:24323): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:32:30:89 team/(24194:24324): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 16:32:30:365 team/(24194:24197): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:32:30:365 team/(24194:24197): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:32:32:90 team/(24194:24326): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 16:32:34:91 team/(24194:24327): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 16:32:36:93 team/(24194:24329): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 16:32:38:94 team/(24194:24330): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 16:32:40:97 team/(24194:24199): -------- METRICAS --------
+[INFO] 16:32:40:97 team/(24194:24199): Cantidad de ciclos de CPU total: 63
+[INFO] 16:32:40:97 team/(24194:24199): Cantidad de cambios de contextos realizados: 23
+[INFO] 16:32:40:97 team/(24194:24199): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:32:40:97 team/(24194:24199): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 16:32:40:97 team/(24194:24199): Cantidad de ciclos de CPU realizados por entrenador 2: 22
+[INFO] 16:32:40:97 team/(24194:24199): Deadlocks producidos y resueltos: 2
+[INFO] 16:33:04:127 team/(24376:24376): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:04:127 team/(24376:24376): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:04:128 team/(24376:24376): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:04:128 team/(24376:24376): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:04:135 team/(24376:24379): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:33:04:136 team/(24376:24379): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:33:05:99 team/(24376:24386): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:33:07:114 team/(24376:24427): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:33:09:114 team/(24376:24428): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:33:11:115 team/(24376:24430): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:33:13:116 team/(24376:24431): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:33:15:117 team/(24376:24433): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:33:17:118 team/(24376:24434): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:33:19:119 team/(24376:24437): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:33:21:120 team/(24376:24439): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:33:23:121 team/(24376:24440): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:33:25:122 team/(24376:24442): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:33:27:123 team/(24376:24443): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:33:29:124 team/(24376:24444): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:33:31:125 team/(24376:24446): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:31:125 team/(24376:24446): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:33:31:126 team/(24376:24447): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:33:33:127 team/(24376:24448): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:33:34:137 team/(24376:24379): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:33:34:138 team/(24376:24379): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:33:35:128 team/(24376:24450): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:33:37:129 team/(24376:24452): 2. Entrenador 1 moviendose a la posicion: 6|8.
+[INFO] 16:33:39:130 team/(24376:24453): 2. Entrenador 1 moviendose a la posicion: 6|7.
+[INFO] 16:33:41:131 team/(24376:24455): 2. Entrenador 1 moviendose a la posicion: 6|6.
+[INFO] 16:33:43:131 team/(24376:24456): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:43:131 team/(24376:24456): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:33:43:132 team/(24376:24457): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:33:45:133 team/(24376:24459): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:33:47:133 team/(24376:24460): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:33:49:135 team/(24376:24461): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:33:51:138 team/(24376:24463): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:33:53:139 team/(24376:24469): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:33:55:141 team/(24376:24471): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:33:55:141 team/(24376:24471): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:33:55:142 team/(24376:24472): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:33:57:143 team/(24376:24473): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:33:59:144 team/(24376:24474): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:34:01:145 team/(24376:24476): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:34:03:147 team/(24376:24477): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:34:04:139 team/(24376:24379): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:34:04:139 team/(24376:24379): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:34:05:147 team/(24376:24479): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:34:07:149 team/(24376:24480): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:34:09:150 team/(24376:24481): 2. Entrenador 2 moviendose a la posicion: 6|7.
+[INFO] 16:34:11:151 team/(24376:24483): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:34:11:151 team/(24376:24483): 3. Se realiza la captura del pokemon Squirtle, en la posicion 6|7 exitosamente.
+[INFO] 16:34:11:152 team/(24376:24484): 2. Entrenador 2 moviendose a la posicion: 5|7.
+[INFO] 16:34:13:153 team/(24376:24485): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:34:15:154 team/(24376:24487): 2. Entrenador 2 moviendose a la posicion: 5|5.
+[INFO] 16:34:17:154 team/(24376:24488): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:34:17:154 team/(24376:24488): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:34:17:155 team/(24376:24489): 2. Entrenador 2 moviendose a la posicion: 4|5.
+[INFO] 16:34:19:156 team/(24376:24492): 2. Entrenador 2 moviendose a la posicion: 3|5.
+[INFO] 16:34:21:158 team/(24376:24494): 2. Entrenador 2 moviendose a la posicion: 2|5.
+[INFO] 16:34:23:158 team/(24376:24495): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:34:25:161 team/(24376:24497): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:34:27:162 team/(24376:24498): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:34:29:163 team/(24376:24381): -------- METRICAS --------
+[INFO] 16:34:29:163 team/(24376:24381): Cantidad de ciclos de CPU total: 52
+[INFO] 16:34:29:163 team/(24376:24381): Cantidad de cambios de contextos realizados: 3
+[INFO] 16:34:29:163 team/(24376:24381): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:34:29:163 team/(24376:24381): Cantidad de ciclos de CPU realizados por entrenador 1: 21
+[INFO] 16:34:29:163 team/(24376:24381): Cantidad de ciclos de CPU realizados por entrenador 2: 24
+[INFO] 16:34:29:163 team/(24376:24381): Deadlocks producidos y resueltos: 1
+[INFO] 16:34:43:826 team/(24545:24545): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:34:43:827 team/(24545:24545): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:34:43:827 team/(24545:24545): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:34:43:827 team/(24545:24545): 9. Se realizará el GET por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:34:43:827 team/(24545:24548): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:34:43:827 team/(24545:24548): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:34:48:794 team/(24545:24555): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:34:50:795 team/(24545:24597): 2. Entrenador 0 moviendose a la posicion: 2|3.
+[INFO] 16:34:52:798 team/(24545:24598): 2. Entrenador 0 moviendose a la posicion: 2|4.
+[INFO] 16:34:54:800 team/(24545:24600): 2. Entrenador 0 moviendose a la posicion: 2|5.
+[INFO] 16:34:56:800 team/(24545:24602): 2. Entrenador 0 moviendose a la posicion: 2|6.
+[INFO] 16:34:58:802 team/(24545:24603): 2. Entrenador 0 moviendose a la posicion: 2|7.
+[INFO] 16:35:00:803 team/(24545:24605): 2. Entrenador 0 moviendose a la posicion: 2|8.
+[INFO] 16:35:02:803 team/(24545:24608): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:35:02:803 team/(24545:24608): 3. Se realiza la captura del pokemon Onix, en la posicion 2|8 exitosamente.
+[INFO] 16:35:02:804 team/(24545:24609): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:35:04:811 team/(24545:24611): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:35:06:811 team/(24545:24614): 2. Entrenador 2 moviendose a la posicion: 6|2.
+[INFO] 16:35:08:812 team/(24545:24616): 2. Entrenador 2 moviendose a la posicion: 6|3.
+[INFO] 16:35:10:817 team/(24545:24624): 2. Entrenador 2 moviendose a la posicion: 6|4.
+[INFO] 16:35:12:823 team/(24545:24627): 2. Entrenador 2 moviendose a la posicion: 6|5.
+[INFO] 16:35:13:828 team/(24545:24548): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:35:13:829 team/(24545:24548): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:35:14:824 team/(24545:24630): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:35:16:824 team/(24545:24631): 2. Entrenador 2 moviendose a la posicion: 6|7.
+[INFO] 16:35:18:825 team/(24545:24634): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:35:18:825 team/(24545:24634): 3. Se realiza la captura del pokemon Squirtle, en la posicion 6|7 exitosamente.
+[INFO] 16:35:18:826 team/(24545:24635): 2. Entrenador 2 moviendose a la posicion: 6|6.
+[INFO] 16:35:20:826 team/(24545:24639): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:35:20:826 team/(24545:24639): 3. Se realiza la captura del pokemon Gengar, en la posicion 6|6 exitosamente.
+[INFO] 16:35:20:827 team/(24545:24640): 2. Entrenador 2 moviendose a la posicion: 5|6.
+[INFO] 16:35:22:828 team/(24545:24641): 2. Entrenador 2 moviendose a la posicion: 4|6.
+[INFO] 16:35:24:830 team/(24545:24644): 2. Entrenador 2 moviendose a la posicion: 3|6.
+[INFO] 16:35:26:830 team/(24545:24646): 2. Entrenador 2 moviendose a la posicion: 2|6.
+[INFO] 16:35:28:831 team/(24545:24647): 2. Entrenador 2 moviendose a la posicion: 2|7.
+[INFO] 16:35:30:834 team/(24545:24650): 2. Entrenador 2 moviendose a la posicion: 2|8.
+[INFO] 16:35:32:842 team/(24545:24653): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:35:34:842 team/(24545:24656): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:35:36:850 team/(24545:24658): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:35:38:851 team/(24545:24660): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:35:40:855 team/(24545:24661): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:35:42:855 team/(24545:24663): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:35:43:830 team/(24545:24548): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:35:43:830 team/(24545:24548): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:35:44:856 team/(24545:24666): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:35:46:858 team/(24545:24669): 2. Entrenador 1 moviendose a la posicion: 9|5.
+[INFO] 16:35:48:859 team/(24545:24671): 2. Entrenador 1 moviendose a la posicion: 9|6.
+[INFO] 16:35:50:862 team/(24545:24673): 2. Entrenador 1 moviendose a la posicion: 9|7.
+[INFO] 16:35:52:863 team/(24545:24674): 2. Entrenador 1 moviendose a la posicion: 9|8.
+[INFO] 16:35:54:869 team/(24545:24677): 2. Entrenador 1 moviendose a la posicion: 9|9.
+[INFO] 16:35:56:879 team/(24545:24680): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:35:56:879 team/(24545:24680): 3. Se realiza la captura del pokemon Pikachu, en la posicion 9|9 exitosamente.
+[INFO] 16:35:56:886 team/(24545:24681): 2. Entrenador 1 moviendose a la posicion: 8|9.
+[INFO] 16:35:58:887 team/(24545:24683): 2. Entrenador 1 moviendose a la posicion: 7|9.
+[INFO] 16:36:00:890 team/(24545:24684): 2. Entrenador 1 moviendose a la posicion: 6|9.
+[INFO] 16:36:02:895 team/(24545:24688): 2. Entrenador 1 moviendose a la posicion: 5|9.
+[INFO] 16:36:04:899 team/(24545:24693): 2. Entrenador 1 moviendose a la posicion: 5|8.
+[INFO] 16:36:06:899 team/(24545:24697): 2. Entrenador 1 moviendose a la posicion: 5|7.
+[INFO] 16:36:08:900 team/(24545:24700): 2. Entrenador 1 moviendose a la posicion: 5|6.
+[INFO] 16:36:10:903 team/(24545:24704): 2. Entrenador 1 moviendose a la posicion: 5|5.
+[INFO] 16:36:12:907 team/(24545:24706): 9. Se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.
+[INFO] 16:36:12:907 team/(24545:24706): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|5 exitosamente.
+[INFO] 16:36:12:909 team/(24545:24707): 2. Entrenador 1 moviendose a la posicion: 4|5.
+[INFO] 16:36:13:831 team/(24545:24548): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:36:13:831 team/(24545:24548): 11. Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:36:14:909 team/(24545:24709): 2. Entrenador 1 moviendose a la posicion: 3|5.
+[INFO] 16:36:16:911 team/(24545:24710): 2. Entrenador 1 moviendose a la posicion: 2|5.
+[INFO] 16:36:18:912 team/(24545:24714): 2. Entrenador 1 moviendose a la posicion: 2|6.
+[INFO] 16:36:20:912 team/(24545:24715): 2. Entrenador 1 moviendose a la posicion: 2|7.
+[INFO] 16:36:22:914 team/(24545:24716): 2. Entrenador 1 moviendose a la posicion: 2|8.
+[INFO] 16:36:24:915 team/(24545:24550): -------- METRICAS --------
+[INFO] 16:36:24:915 team/(24545:24550): Cantidad de ciclos de CPU total: 63
+[INFO] 16:36:24:915 team/(24545:24550): Cantidad de cambios de contextos realizados: 4
+[INFO] 16:36:24:915 team/(24545:24550): Cantidad de ciclos de CPU realizados por entrenador 0: 7
+[INFO] 16:36:24:915 team/(24545:24550): Cantidad de ciclos de CPU realizados por entrenador 1: 34
+[INFO] 16:36:24:915 team/(24545:24550): Cantidad de ciclos de CPU realizados por entrenador 2: 22
+[INFO] 16:36:24:915 team/(24545:24550): Deadlocks producidos y resueltos: 2
+[INFO] 16:40:20:301 team/(25124:25127): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:40:20:303 team/(25124:25127): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:41:24:191 team/(25248:25250): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:41:24:192 team/(25248:25250): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:43:10:623 team/(25472:25475): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:43:10:627 team/(25472:25475): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:59:25:46 team/(26131:26134): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:25:70 team/(26131:26134): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:59:36:44 team/(26201:26204): 10. Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:59:36:62 team/(26201:26204): 11. Intento de conexion con el broker exitosa.
+[INFO] 16:59:37:98 team/(26201:26237): 2. Entrenador 1 moviendose a la posicion: 3|3.
+[INFO] 16:59:39:102 team/(26201:26239): 2. Entrenador 2 moviendose a la posicion: 4|2.
+[INFO] 16:59:41:106 team/(26201:26241): 2. Entrenador 2 moviendose a la posicion: 5|2.
+[INFO] 16:59:43:115 team/(26201:26245): 2. Entrenador 1 moviendose a la posicion: 4|3.
+[INFO] 16:59:44:170 team/(26201:26227): 3. Se realiza la captura del pokemon Squirtle, en la posicion 5|2 exitosamente.
+[INFO] 16:59:45:118 team/(26201:26250): 2. Entrenador 1 moviendose a la posicion: 5|3.
+[INFO] 16:59:47:122 team/(26201:26252): 2. Entrenador 1 moviendose a la posicion: 6|3.
+[INFO] 16:59:49:128 team/(26201:26254): 2. Entrenador 1 moviendose a la posicion: 7|3.
+[INFO] 16:59:51:139 team/(26201:26257): 2. Entrenador 1 moviendose a la posicion: 8|3.
+[INFO] 16:59:53:156 team/(26201:26258): 2. Entrenador 1 moviendose a la posicion: 9|3.
+[INFO] 16:59:55:158 team/(26201:26259): 2. Entrenador 1 moviendose a la posicion: 9|4.
+[INFO] 16:59:57:162 team/(26201:26261): 2. Entrenador 1 moviendose a la posicion: 9|5.

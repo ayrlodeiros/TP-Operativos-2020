@@ -192,18 +192,14 @@ void recibir_mensaje_de_gameboy(int socket_gameboy) {
 	}
 	char* nombre_pokemon_arreglado = limpiar_cadena(nombre_pokemon, largo_nombre_pokemon);
 
-	log_info(nuestro_log, "El nombre del pokemon es: %s", nombre_pokemon_arreglado);
-
 	if(recv(socket_gameboy, &posicionX, sizeof(int), MSG_WAITALL) == -1) {
 		hubo_error = 1;
 		log_info(nuestro_log, "No se puedo recibir la posicion en X");
 	}
-	log_info(nuestro_log, "Posicion x: %d", posicionX);
 	if(recv(socket_gameboy, &posicionY, sizeof(int), MSG_WAITALL) == -1) {
 		hubo_error = 1;
 		log_info(nuestro_log, "No se puedo recibir la posicion en Y");
 	}
-	log_info(nuestro_log, "Posicion Y: %d", posicionY);
 	if(hubo_error == 0) {
 		manejar_aparicion_de_pokemon(nombre_pokemon_arreglado, posicionX, posicionY);
 	} else {
@@ -257,23 +253,17 @@ void levantar_conexiones_al_broker() {
 			pthread_create(&hilo_localized,NULL, esperar_mensaje_localized, NULL);
 			pthread_detach(hilo_localized);
 
-			log_info(nuestro_log, "Bloqueo de conexiones al broker");
 
 			pthread_mutex_lock(&lock_reintento_broker);
-
-			log_info(nuestro_log, "Desbloqueo de conexiones al broker");
 		} else {
 
 			log_info(nuestro_log, "El broker no esta conectado...");
 
 			conexion_appeared = intentar_conectar_al_broker();
-			log_info(nuestro_log, "La conexion del appeared es %d", conexion_appeared);
 
 			conexion_localized = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-			log_info(nuestro_log, "La conexion del localized es %d", conexion_localized);
 
 			conexion_caught = crear_conexion_como_cliente(leer_ip_broker(), leer_puerto_broker());
-			log_info(nuestro_log, "La conexion del caught es %d", conexion_caught);
 
 			if(conexion_appeared == -1 || conexion_localized == -1 || conexion_caught == -1) {
 				cambiar_valor_de_funciona_broker(0);
@@ -326,11 +316,8 @@ mensaje_broker* recibir_msj_broker(int conexion_broker) {
 		log_info(nuestro_log, "Se recibio un mensaje del broker en la conexion %d", conexion_broker);
 		mensaje_broker* msj_broker = malloc(sizeof(mensaje_broker));
 		msj_broker->id = id;
-		log_info(nuestro_log, "El ID del mensaje es: %d", id);
 		msj_broker->id_correlativo = id_cor;
-		log_info(nuestro_log, "El ID CORRELATIVO del mensaje es: %d", id_cor);
 		msj_broker->tamanio = tamanio;
-		log_info(nuestro_log, "El TAMANIO del mensaje es: %d", tamanio);
 		msj_broker->payload = payload;
 
 		mandar_ack(conexion_broker, 1);
@@ -419,7 +406,6 @@ void esperar_mensaje_localized() {
 					memcpy(&cantidad, payload+offset, sizeof(uint32_t));
 					offset+=sizeof(uint32_t);
 
-					log_info(nuestro_log, "La cantidad del LOCALIZED es %d", cantidad);
 					if(cantidad > 0) {
 						actualizar_pokemon_como_recibido(nombre_arreglado);
 
@@ -543,7 +529,7 @@ int obtener_posicion_en_lista_de_id_caught(int id_caught) {
 	for(int i = 0; i<list_size(lista_ids_caught); i++) {
 		id_y_entrenador* iye = list_get(lista_ids_caught, i);
 		if(iye->id == id_caught) {
-			log_info(nuestro_log, "El id %d estan en la lista CAUGHT", iye->id);
+			log_info(nuestro_log, "El id %d esta en la lista CAUGHT", iye->id);
 			pthread_mutex_unlock(&mutex_lista_ids_caught);
 			return i;
 
@@ -777,7 +763,6 @@ int necesito_mas_de_ese_pokemon(char* nombre_pokemon){
 
 //PARTE DE DETECCION DEADLOCK (FALTA TERMINAR)
 void planear_intercambio(entrenador* entrenador1){
-	log_info(nuestro_log,"Entre a planear el intercambio");
 	intercambio* un_intercambio = malloc(sizeof(intercambio));
 
 	cambiar_estado_entrenador(entrenador1, INTERCAMBIO);
@@ -803,9 +788,6 @@ void planear_intercambio(entrenador* entrenador1){
 		cambiar_estado_entrenador(entrenador1, BLOCK_DEADLOCK);
 		free(un_intercambio);
 	}
-
-	log_info(nuestro_log,"Sali de planear el intercambio");
-
 }
 
 void sumar_uno_a_cantidad_de_deadlocks() {
@@ -1121,8 +1103,6 @@ void catch_pokemon(entrenador* entrenador) {
 			s_y_e->conexion = socket_catch;
 			s_y_e->entrenador = entrenador;
 
-			//TODO BORRAR LOGS
-			log_info(nuestro_log, "Se creara el hilo de espera del id caught");
 			pthread_t* hilo_espera_catch;
 			pthread_create(&hilo_espera_catch, NULL,esperar_id_caught, s_y_e);
 			pthread_detach(hilo_espera_catch);
@@ -1131,25 +1111,18 @@ void catch_pokemon(entrenador* entrenador) {
 			log_info(nuestro_log, "9. No se pudo realizar el envio del CATCH al broker, se realizará el CATCH por DEFAULT debido a que la conexion con el broker fallo.");
 			manejar_la_captura_del_pokemon(entrenador);
 		}
-		log_info(nuestro_log, "VOY A LIBERAR");
 		free(a_enviar);
 		destruir_paquete(paquete);
-		log_info(nuestro_log, "LIBERE");
 	}
 }
 
 void esperar_id_caught(socket_y_entrenador* sye) {
 	int id_caught;
 
-	//TODO borrar log
-	log_info(nuestro_log, "Se entro a esperar el ID_CAUGHT");
-
 	int conexion = sye->conexion;
 	entrenador* entr = sye->entrenador;
-	log_info(nuestro_log, "Voy a hacer el free");
 	free(sye);
 
-	log_info(nuestro_log, "La conexion es %d y el entrenador es de id %d", conexion, entr->id);
 	if(recv(conexion, &id_caught, sizeof(int), 0) > 0){
 		log_info(nuestro_log, "Se recibio correctamente el ID: %d, para esperar en CAUGHT", id_caught);
 
