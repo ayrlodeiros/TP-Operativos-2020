@@ -285,6 +285,7 @@ int liberar_una_particion();
 int obtener_posicion_de_particion_liberada_fifo();
 int obtener_posicion_de_particion_liberada_lru();
 int evaluar_consolidacion(int posicion_buddy_1);
+int el_de_la_izquierda_es_buddy(int posicion_izquierda, int potencia_de_dos);
 void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener);
 t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int potencia_de_dos_deseada);
 int potencia(int base, int exponente);

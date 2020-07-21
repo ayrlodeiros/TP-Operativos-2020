@@ -266,12 +266,14 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
-
+	log_info(mi_log, "ANTES DE HACER EL list_remove");
 	t_mensaje* mensaje = list_remove(cola->cola,0);
 	suscriptor_t* suscriptor;
 	int i;
+	log_info(mi_log, "ANTES DE actualizar_ultima_vez_usado_particion");
 	actualizar_ultima_vez_usado_particion(mensaje);
 
+	log_info(mi_log, "ANTES DEL for");
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
@@ -939,7 +941,7 @@ void inicializar_lista_bs(){
 
 int obtener_posicion_bs(int tamanio) {
 	//TODO BORRAR ESTOS LOGS
-	printf("\n----------------------------------INICIO----------------------------------------\n");
+	log_info(mi_log,"\n----------------------------------INICIO----------------------------------------\n");
 	int potencia_de_dos_limite = obtener_potencia_de_dos_mas_cercana(leer_tamano_minimo_particion());
 	int potencia_de_dos_deseada = obtener_potencia_de_dos_mas_cercana(tamanio);
 	//Esto se hace para respetar el tamaño minimo que puede tener una particion
@@ -979,7 +981,11 @@ int obtener_posicion_bs(int tamanio) {
 	log_info(mi_log, "INICIO DE PARTICION ENCONTRADA: %d", posible_particion->inicio);
 	log_info(mi_log, "FIN DE PARTICION ENCONTRADA: %d", posible_particion->fin);
 
-	printf("\n----------------------------------FIN----------------------------------------\n\n");
+	char tiempo[21];
+	sprintf(tiempo, "%" PRIu64, posible_particion->tiempo_ingreso);
+	log_info(mi_log, "TIMESTAMP INGRESO PARTICION: %s", tiempo);
+
+	log_info(mi_log,"\n----------------------------------FIN----------------------------------------\n\n");
 
 	return posible_particion->inicio;
 }
@@ -1049,6 +1055,7 @@ int obtener_posicion_de_particion_liberada_fifo() {
 	t_particion_bs* particion_objetivo = NULL;
 	int posicion;
 
+	log_info(mi_log, "Cantidad de particiones: %d", list_size(lista_particiones));
 	for(int i = 0; i<list_size(lista_particiones); i++) {
 		t_particion_bs* particion_aux = list_get(lista_particiones, i);
 		if(!(particion_aux->libre) && (particion_objetivo == NULL || particion_aux->tiempo_ingreso < particion_objetivo->tiempo_ingreso)) {
@@ -1060,7 +1067,7 @@ int obtener_posicion_de_particion_liberada_fifo() {
 	borrar_msj_mp(particion_objetivo->inicio);
 	particion_objetivo->libre = true;
 
-	log_info(mi_log, "Se libero, por FIFO, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
+	log_info(mi_log, "Se libero, por FIFO, la particion %d ubicada entre %d y %d", posicion, particion_objetivo->inicio, particion_objetivo->fin);
 
 	return posicion;
 }
@@ -1084,42 +1091,65 @@ int obtener_posicion_de_particion_liberada_lru() {
 	log_info(mi_log, "Se salio de borrar msj");
 	particion_objetivo->libre = true;
 
-	log_info(mi_log, "Se libero, por LRU, la particion %d ubicada entre %p y %p", posicion, memoria_principal+(particion_objetivo->inicio), memoria_principal+(particion_objetivo->fin));
+	log_info(mi_log, "Se libero, por LRU, la particion %d ubicada entre %d y %d", posicion, particion_objetivo->inicio, particion_objetivo->fin);
 
 	return posicion;
 }
 
 // EVALUA SI SE PUEDE CONSOLIDAR, Y CONSOLIDA DE SER POSIBLE, SI CONSOLIDO DEVUELVE LA POSICION EN LA QUE QUEDO LA PARTICION CONSOLIDADA, SI NO -1
 int evaluar_consolidacion(int posicion_buddy_1) {
-	int posicion_buddy_2;
-	//CONSIGO LAS POSICIONES DE LOS DOS BUDDIES
-	if(posicion_buddy_1%2 == 0) {
-		posicion_buddy_2 = posicion_buddy_1 + 1;
-	} else {
-		posicion_buddy_2 = posicion_buddy_1 - 1;
+
+	t_particion_bs* buddy_1 = list_get(lista_particiones, posicion_buddy_1);
+
+	t_particion_bs* buddy_izq = NULL;
+	int posicion_buddy_izq = posicion_buddy_1-1;
+	if(posicion_buddy_izq >= 0) {
+		buddy_izq = list_get(lista_particiones, posicion_buddy_izq);
+	}
+	t_particion_bs* buddy_der = NULL;
+	int posicion_buddy_der = posicion_buddy_1+1;
+	if(posicion_buddy_der < list_size(lista_particiones)) {
+		buddy_der = list_get(lista_particiones, posicion_buddy_der);
 	}
 
-	int ultima_posicion_en_lista = list_size(lista_particiones)-1;
-
-	if(ultima_posicion_en_lista >= posicion_buddy_2 && ultima_posicion_en_lista >= posicion_buddy_1) {
-		t_particion_bs* buddy_2 = list_get(lista_particiones, posicion_buddy_2);
-
-		if(buddy_2->libre) {
-			int posicion_mas_chica;
-			if(posicion_buddy_1 > posicion_buddy_2) {
-				posicion_mas_chica = posicion_buddy_2;
-				consolidar_buddies(posicion_buddy_1, buddy_2);
-			} else {
-				posicion_mas_chica = posicion_buddy_1;
-				consolidar_buddies(posicion_buddy_2, list_get(lista_particiones, posicion_buddy_1));
-			}
-
-			return posicion_mas_chica;
+	if(buddy_izq == NULL && buddy_der->libre && buddy_der->potencia_de_dos==buddy_1->potencia_de_dos) {
+		consolidar_buddies(posicion_buddy_der, buddy_1);
+		log_info(mi_log, "BUDDY CONSOLIDADO VA DE %d A %d", buddy_1->inicio, buddy_1->fin);
+		return posicion_buddy_1;
+	}
+	if(buddy_der == NULL && buddy_izq->libre && buddy_izq->potencia_de_dos==buddy_1->potencia_de_dos) {
+		consolidar_buddies(posicion_buddy_1, buddy_izq);
+		log_info(mi_log, "BUDDY CONSOLIDADO VA DE %d A %d", buddy_izq->inicio, buddy_izq->fin);
+		return posicion_buddy_izq;
+	}
+	if(buddy_izq != NULL && buddy_der != NULL) {
+		if(buddy_izq->libre && (buddy_izq->potencia_de_dos==buddy_1->potencia_de_dos) && el_de_la_izquierda_es_buddy(posicion_buddy_izq, buddy_1->potencia_de_dos)) {
+			consolidar_buddies(posicion_buddy_1, buddy_izq);
+			log_info(mi_log, "BUDDY CONSOLIDADO VA DE %d A %d", buddy_izq->inicio, buddy_izq->fin);
+			return posicion_buddy_izq;
 		}
-
+		if(buddy_der->libre && (buddy_der->potencia_de_dos==buddy_1->potencia_de_dos) && !el_de_la_izquierda_es_buddy(posicion_buddy_izq, buddy_1->potencia_de_dos)) {
+			consolidar_buddies(posicion_buddy_der, buddy_1);
+			log_info(mi_log, "BUDDY CONSOLIDADO VA DE %d A %d", buddy_1->inicio, buddy_1->fin);
+			return posicion_buddy_1;
+		}
 	}
 
+	log_info(mi_log, "NO SE CONSOLIDO BUDDY %d", posicion_buddy_1);
 	return -1;
+}
+
+int el_de_la_izquierda_es_buddy(int posicion_izquierda, int potencia_de_dos) {
+	int tamanio_deseado = potencia(2, potencia_de_dos);
+
+	t_particion_bs* particion_inicial = list_get(lista_particiones, 0);
+	t_particion_bs* particion_a_izquierda = list_get(lista_particiones, posicion_izquierda);
+
+	int tamanio_total_a_izquierda = particion_a_izquierda->fin-particion_inicial->inicio+1;
+
+	int division_por_tamanio_deseado = tamanio_total_a_izquierda/tamanio_deseado;
+
+	return division_por_tamanio_deseado % 2;
 }
 
 void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_mantener) {
@@ -1129,7 +1159,7 @@ void consolidar_buddies(int posicion_buddy_a_eliminar, t_particion_bs* buddy_a_m
 	buddy_a_mantener->potencia_de_dos++;
 	buddy_a_mantener->fin = buddy_eliminado->fin;
 
-	log_info(mi_log, "Se asociaron los bloques (buddies) con posiciones de inicio: %p y %p. Quedando una particion con valor de potencia de dos: %d", memoria_principal+(buddy_a_mantener->inicio), memoria_principal+(buddy_eliminado->inicio), buddy_a_mantener->potencia_de_dos);
+	log_info(mi_log, "Se asociaron los bloques (buddies) con posiciones de inicio: %d y %d. Quedando una particion con valor de potencia de dos: %d", buddy_a_mantener->inicio, buddy_eliminado->inicio, buddy_a_mantener->potencia_de_dos);
 
 	free(buddy_eliminado);
 }
@@ -1150,7 +1180,9 @@ t_particion_bs* particionar_y_obtener_particion(int posicion_a_particionar, int 
 
 		t_particion_bs* nueva_particion = malloc(sizeof(t_particion_bs));
 		nueva_particion->inicio = particion_a_particionar->inicio + tamanio_actual;
+		log_info(mi_log, "INICIO DE NUEVA PARTICION: %d", nueva_particion->inicio);
 		nueva_particion->fin = nueva_particion->inicio + tamanio_actual -1;
+		log_info(mi_log, "FIN DE NUEVA PARTICION: %d", nueva_particion->fin);
 		nueva_particion->potencia_de_dos = potencia_nueva;
 		nueva_particion->libre = true;
 		list_add(lista_auxiliar, nueva_particion);
@@ -1277,9 +1309,13 @@ void actualizar_ultima_vez_dinamica(t_mensaje* mensaje) {
 }
 
 void actualizar_ultima_vez_bs(t_mensaje* mensaje) {
+	log_info(mi_log, "Antes del for de actualizacions, tamanio de la lista: %d", list_size(lista_particiones));
 	for(int i=0; i< list_size(lista_particiones); i++) {
+		log_info(mi_log, "Antes de obtener la particion en posicion %d", i);
 		t_particion_bs* particion = list_get(lista_particiones, i);
+		log_info(mi_log, "Antes de hacer el if");
 		if(mensaje->pos_en_memoria->pos == particion->inicio) {
+			log_info(mi_log, "Entre al if");
 			particion->ult_vez_usado = timestamp();
 			break;
 		}

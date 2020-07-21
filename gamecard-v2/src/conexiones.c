@@ -450,10 +450,12 @@ void trabajar_mensaje_new(mensaje_broker* msj_broker) {
 	int posicion_x;
 	memcpy(&posicion_x, payload+offset, sizeof(uint32_t));
 	offset+=sizeof(uint32_t);
+	log_info(nuestro_log, "La posicion en X del pokemon es: %d", posicion_x);
 
 	int posicion_y;
 	memcpy(&posicion_y, payload+offset, sizeof(uint32_t));
 	offset+=sizeof(uint32_t);
+	log_info(nuestro_log, "La posicion en Y del pokemon es: %d", posicion_y);
 
 	int cantidad;
 	memcpy(&cantidad, payload+offset, sizeof(uint32_t));
@@ -559,10 +561,12 @@ void trabajar_mensaje_catch(mensaje_broker* msj_broker) {
 	int posicion_x;
 	memcpy(&posicion_x, payload+offset, sizeof(uint32_t));
 	offset+=sizeof(uint32_t);
+	log_info(nuestro_log, "La posicion en X del pokemon es: %d", posicion_x);
 
 	int posicion_y;
 	memcpy(&posicion_y, payload+offset, sizeof(uint32_t));
 	offset+=sizeof(uint32_t);
+	log_info(nuestro_log, "La posicion en Y del pokemon es: %d", posicion_y);
 
 	int resultado_del_catch;
 	resultado_del_catch = disminuir_cantidad_de_pokemon_en_la_posicion(nombre_arreglado,posicion_x,posicion_y);
@@ -698,7 +702,7 @@ void enviar_mensaje_localized(int id_mensaje, int largo_nombre_pokemon, char* no
 			posicion* pos = list_get(posiciones, i);
 			memcpy(stream + offset,&(pos->posicion_x), sizeof(uint32_t));
 			offset += sizeof(uint32_t);
-			memcpy(stream + offset,&(pos->posicion_x), sizeof(uint32_t));
+			memcpy(stream + offset,&(pos->posicion_y), sizeof(uint32_t));
 			offset += sizeof(uint32_t);
 		}
 
