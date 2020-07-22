@@ -2803,3 +2803,1147 @@
 [INFO] 02:19:04:982 gamecard/(5743:6136): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
 [INFO] 02:20:41:495 gamecard/(5743:5746): Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 02:20:41:496 gamecard/(5743:5746): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:39:45:275 gamecard/(5022:5022): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 23:39:45:283 gamecard/(5022:5022): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 23:39:45:300 gamecard/(5022:5022): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 23:39:45:405 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:39:45:405 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:39:55:405 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:39:55:405 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:40:05:181 gamecard/(5022:5040): se asigno el bloque [0] al bitmap
+[INFO] 23:40:05:181 gamecard/(5022:5040): se asigno el bloque [0] al files del pokemon : Pikachu
+[INFO] 23:40:05:182 gamecard/(5022:5040): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin 
+[INFO] 23:40:05:182 gamecard/(5022:5040): se abrio el archivo : Pikachu
+[INFO] 23:40:05:183 gamecard/(5022:5040): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1280-1280=256
+
+[INFO] 23:40:05:183 gamecard/(5022:5040): se guardo el dato 1280-1280=256
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 23:40:05:183 gamecard/(5022:5040): se agrego la posicion (1280-1280) con la cantidad (256)
+[INFO] 23:40:05:200 gamecard/(5022:5040): Tamaño del archivo del pokemon Pikachu: 14
+[INFO] 23:40:05:406 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:40:05:406 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:40:06:201 gamecard/(5022:5040): se cerro el archivo : Pikachu
+[INFO] 23:40:06:201 gamecard/(5022:5040): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 23:40:15:406 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:40:15:406 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:40:25:407 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:40:25:407 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:40:35:447 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:40:35:447 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:40:38:780 gamecard/(5022:5082): se abrio el archivo : Pikachu
+[INFO] 23:40:38:780 gamecard/(5022:5082): se reemplazo la cantidad en la posicion (1280-1280) con la nueva cantidad (512)
+[INFO] 23:40:38:780 gamecard/(5022:5082): se limpio el bloque 0
+[INFO] 23:40:38:803 gamecard/(5022:5082): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 23:40:38:803 gamecard/(5022:5082): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1280-1280=512
+
+[INFO] 23:40:38:803 gamecard/(5022:5082): se guardo el dato 1280-1280=512
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 23:40:38:804 gamecard/(5022:5082): Tamaño del archivo del pokemon Pikachu: 14
+[INFO] 23:40:39:804 gamecard/(5022:5082): se cerro el archivo : Pikachu
+[INFO] 23:40:39:804 gamecard/(5022:5082): No se pudo realizar la conexión con el BROKER para el envio del mensaje APPEARED de Pikachu
+[INFO] 23:40:45:453 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:40:45:453 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:40:55:453 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:40:55:453 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:41:05:454 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:41:05:454 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:41:15:455 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:41:15:455 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:41:25:456 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:41:25:456 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:41:35:456 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:41:35:456 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:41:45:457 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:41:45:457 gamecard/(5022:5024): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 23:41:47:312 gamecard/(5022:5238): se abrio el archivo : Pikachu
+[INFO] 23:41:47:312 gamecard/(5022:5238): se reemplazo la cantidad en la posicion (1280-1280) con la nueva cantidad (768)
+[INFO] 23:41:47:312 gamecard/(5022:5238): se limpio el bloque 0
+[INFO] 23:41:47:316 gamecard/(5022:5238): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 23:41:47:316 gamecard/(5022:5238): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1280-1280=768
+
+[INFO] 23:41:47:316 gamecard/(5022:5238): se guardo el dato 1280-1280=768
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 23:41:47:328 gamecard/(5022:5238): Tamaño del archivo del pokemon Pikachu: 14
+[INFO] 23:41:48:329 gamecard/(5022:5238): se cerro el archivo : Pikachu
+[INFO] 23:41:52:956 gamecard/(5022:5241): se abrio el archivo : Pikachu
+[INFO] 23:41:52:956 gamecard/(5022:5241): se reemplazo la cantidad en la posicion (1280-1280) con la nueva cantidad (1024)
+[INFO] 23:41:52:956 gamecard/(5022:5241): se limpio el bloque 0
+[INFO] 23:41:52:961 gamecard/(5022:5241): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 23:41:52:961 gamecard/(5022:5241): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1280-1280=1024
+
+[INFO] 23:41:52:962 gamecard/(5022:5241): se guardo el dato 1280-1280=1024
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 23:41:52:962 gamecard/(5022:5241): Tamaño del archivo del pokemon Pikachu: 15
+[INFO] 23:41:53:962 gamecard/(5022:5241): se cerro el archivo : Pikachu
+[INFO] 23:41:55:459 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:41:55:460 gamecard/(5022:5024): Intento de conexion con el broker exitosa.
+[INFO] 23:41:57:156 gamecard/(5022:5250): se abrio el archivo : Pikachu
+[INFO] 23:41:57:156 gamecard/(5022:5250): se reemplazo la cantidad en la posicion (1280-1280) con la nueva cantidad (1280)
+[INFO] 23:41:57:156 gamecard/(5022:5250): se limpio el bloque 0
+[INFO] 23:41:57:158 gamecard/(5022:5250): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 23:41:57:158 gamecard/(5022:5250): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 1280-1280=1280
+
+[INFO] 23:41:57:158 gamecard/(5022:5250): se guardo el dato 1280-1280=1280
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 23:41:57:158 gamecard/(5022:5250): Tamaño del archivo del pokemon Pikachu: 15
+[INFO] 23:41:58:159 gamecard/(5022:5250): se cerro el archivo : Pikachu
+[INFO] 23:43:03:315 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:43:03:315 gamecard/(5022:5024): Intento de conexion con el broker exitosa.
+[INFO] 23:43:03:319 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:43:03:319 gamecard/(5022:5024): Intento de conexion con el broker exitosa.
+[INFO] 23:43:03:320 gamecard/(5022:5024): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 23:43:03:320 gamecard/(5022:5024): Intento de conexion con el broker exitosa.
+[INFO] 16:42:42:334 gamecard/(5668:5668): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 16:42:42:475 gamecard/(5668:5668): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 16:42:42:492 gamecard/(5668:5668): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 16:42:43:588 gamecard/(5668:5670): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:42:43:605 gamecard/(5668:5670): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:47:23:220 gamecard/(6465:6465): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 16:47:23:220 gamecard/(6465:6465): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 16:47:23:220 gamecard/(6465:6465): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 16:47:23:282 gamecard/(6465:6467): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:47:23:283 gamecard/(6465:6467): Intento de conexion con el broker exitosa.
+[INFO] 16:47:23:411 gamecard/(6465:6475): No se encontro al Pokemon
+[INFO] 16:47:23:581 gamecard/(6465:6478): No se encontro al Pokemon
+[INFO] 16:49:23:423 gamecard/(6465:6517): se abrio el archivo : Pikachu
+[INFO] 16:49:23:424 gamecard/(6465:6517): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 9-9=1
+
+[INFO] 16:49:23:424 gamecard/(6465:6517): se guardo el dato 9-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 16:49:23:424 gamecard/(6465:6517): se agrego la posicion (9-9) con la cantidad (1)
+[INFO] 16:49:23:446 gamecard/(6465:6517): Tamaño del archivo del pokemon Pikachu: 6
+[INFO] 16:49:24:446 gamecard/(6465:6517): se cerro el archivo : Pikachu
+[INFO] 16:49:38:444 gamecard/(6465:6535): se asigno el bloque [1] al bitmap
+[INFO] 16:49:38:445 gamecard/(6465:6535): se asigno el bloque [1] al files del pokemon : Squirtle
+[INFO] 16:49:38:445 gamecard/(6465:6535): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 16:49:38:445 gamecard/(6465:6535): se abrio el archivo : Squirtle
+[INFO] 16:49:38:445 gamecard/(6465:6535): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-9=1
+
+[INFO] 16:49:38:445 gamecard/(6465:6535): se guardo el dato 5-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 16:49:38:445 gamecard/(6465:6535): se agrego la posicion (5-9) con la cantidad (1)
+[INFO] 16:49:38:445 gamecard/(6465:6535): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 16:49:39:446 gamecard/(6465:6535): se cerro el archivo : Squirtle
+[INFO] 16:49:50:652 gamecard/(6465:6549): se abrio el archivo : Pikachu
+[INFO] 16:49:50:653 gamecard/(6465:6549): Se disminuye en 1 la cantidad en la posicion 9-9,del (Pokemon : Pikachu)
+[INFO] 16:49:50:653 gamecard/(6465:6549): se limpio el bloque 0
+[INFO] 16:49:50:678 gamecard/(6465:6549): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin
+[INFO] 16:49:50:678 gamecard/(6465:6549): se cerro el archivo : Pikachu
+[INFO] 16:49:50:678 gamecard/(6465:6549): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Pikachu)
+[INFO] 16:49:56:151 gamecard/(6465:6572): se asigno el bloque [0] al bitmap
+[INFO] 16:49:56:151 gamecard/(6465:6572): se asigno el bloque [0] al files del pokemon : Jolteon
+[INFO] 16:49:56:151 gamecard/(6465:6572): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin 
+[INFO] 16:49:56:151 gamecard/(6465:6572): se abrio el archivo : Jolteon
+[INFO] 16:49:56:151 gamecard/(6465:6572): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 16:49:56:151 gamecard/(6465:6572): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 16:49:56:152 gamecard/(6465:6572): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 16:49:56:152 gamecard/(6465:6572): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 16:49:57:153 gamecard/(6465:6572): se cerro el archivo : Jolteon
+[INFO] 16:50:08:699 gamecard/(6465:6587): se abrio el archivo : Squirtle
+[INFO] 16:50:08:699 gamecard/(6465:6587): Se disminuye en 1 la cantidad en la posicion 5-9,del (Pokemon : Squirtle)
+[INFO] 16:50:08:699 gamecard/(6465:6587): se limpio el bloque 1
+[INFO] 16:50:08:712 gamecard/(6465:6587): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 16:50:08:712 gamecard/(6465:6587): se cerro el archivo : Squirtle
+[INFO] 16:50:08:712 gamecard/(6465:6587): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 16:51:16:187 gamecard/(6465:6596): se asigno el bloque [1] al bitmap
+[INFO] 16:51:16:187 gamecard/(6465:6596): se asigno el bloque [1] al files del pokemon : Flareon
+[INFO] 16:51:16:187 gamecard/(6465:6596): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin 
+[INFO] 16:51:16:187 gamecard/(6465:6596): se abrio el archivo : Flareon
+[INFO] 16:51:16:187 gamecard/(6465:6596): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 16:51:16:187 gamecard/(6465:6596): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 16:51:16:188 gamecard/(6465:6596): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 16:51:16:188 gamecard/(6465:6596): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 16:51:17:188 gamecard/(6465:6596): se cerro el archivo : Flareon
+[INFO] 16:51:40:369 gamecard/(6465:6467): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:51:40:370 gamecard/(6465:6467): Intento de conexion con el broker exitosa.
+[INFO] 16:51:40:371 gamecard/(6465:6467): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:51:40:371 gamecard/(6465:6467): Intento de conexion con el broker exitosa.
+[INFO] 16:51:40:372 gamecard/(6465:6467): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:51:40:372 gamecard/(6465:6467): Intento de conexion con el broker exitosa.
+[INFO] 16:54:11:519 gamecard/(6654:6654): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 16:54:11:519 gamecard/(6654:6654): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 16:54:11:519 gamecard/(6654:6654): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 16:54:11:606 gamecard/(6654:6656): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:54:11:606 gamecard/(6654:6656): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 16:54:21:608 gamecard/(6654:6656): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:54:21:610 gamecard/(6654:6656): Intento de conexion con el broker exitosa.
+[INFO] 16:54:32:723 gamecard/(6654:6683): se asigno el bloque [2] al bitmap
+[INFO] 16:54:32:723 gamecard/(6654:6683): se asigno el bloque [2] al files del pokemon : Pikachu
+[INFO] 16:54:32:723 gamecard/(6654:6683): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin 
+[INFO] 16:54:32:723 gamecard/(6654:6683): se abrio el archivo : Pikachu
+[INFO] 16:54:32:723 gamecard/(6654:6683): se escribio el bloque 2 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 9-9=1
+
+[INFO] 16:54:32:723 gamecard/(6654:6683): se guardo el dato 9-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 16:54:32:724 gamecard/(6654:6683): se agrego la posicion (9-9) con la cantidad (1)
+[INFO] 16:54:32:724 gamecard/(6654:6683): Tamaño del archivo del pokemon Pikachu: 6
+[INFO] 16:54:33:724 gamecard/(6654:6683): se cerro el archivo : Pikachu
+[INFO] 16:54:35:68 gamecard/(6654:6688): se asigno el bloque [3] al bitmap
+[INFO] 16:54:35:68 gamecard/(6654:6688): se asigno el bloque [3] al files del pokemon : Squirtle
+[INFO] 16:54:35:68 gamecard/(6654:6688): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 16:54:35:68 gamecard/(6654:6688): se abrio el archivo : Squirtle
+[INFO] 16:54:35:69 gamecard/(6654:6688): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-9=1
+
+[INFO] 16:54:35:69 gamecard/(6654:6688): se guardo el dato 5-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 16:54:35:76 gamecard/(6654:6688): se agrego la posicion (5-9) con la cantidad (1)
+[INFO] 16:54:35:77 gamecard/(6654:6688): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 16:54:36:77 gamecard/(6654:6688): se cerro el archivo : Squirtle
+[INFO] 16:54:41:389 gamecard/(6654:6702): se abrio el archivo : Jolteon
+[INFO] 16:54:41:389 gamecard/(6654:6702): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 16:54:41:389 gamecard/(6654:6702): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 16:54:41:389 gamecard/(6654:6702): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 16:54:41:394 gamecard/(6654:6702): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 16:54:42:395 gamecard/(6654:6702): se cerro el archivo : Jolteon
+[INFO] 16:54:44:554 gamecard/(6654:6710): se abrio el archivo : Flareon
+[INFO] 16:54:44:554 gamecard/(6654:6710): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 16:54:44:554 gamecard/(6654:6710): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 16:54:44:555 gamecard/(6654:6710): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 16:54:44:555 gamecard/(6654:6710): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 16:54:45:556 gamecard/(6654:6710): se cerro el archivo : Flareon
+[INFO] 16:54:58:962 gamecard/(6654:6656): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:54:58:962 gamecard/(6654:6656): Intento de conexion con el broker exitosa.
+[INFO] 16:54:58:963 gamecard/(6654:6656): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:54:58:963 gamecard/(6654:6656): Intento de conexion con el broker exitosa.
+[INFO] 16:54:58:964 gamecard/(6654:6656): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:54:58:964 gamecard/(6654:6656): Intento de conexion con el broker exitosa.
+[INFO] 16:56:11:817 gamecard/(6775:6775): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 16:56:11:818 gamecard/(6775:6775): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 16:56:11:818 gamecard/(6775:6775): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 16:56:11:895 gamecard/(6775:6777): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:56:11:896 gamecard/(6775:6777): Intento de conexion con el broker exitosa.
+[INFO] 16:56:12:87 gamecard/(6775:6785): se abrio el archivo : Pikachu
+[INFO] 16:56:12:163 gamecard/(6775:6787): No se encontro al Pokemon
+[INFO] 16:56:12:222 gamecard/(6775:6790): se abrio el archivo : Squirtle
+[INFO] 16:56:12:255 gamecard/(6775:6793): No se encontro al Pokemon
+[INFO] 16:56:13:87 gamecard/(6775:6785): se cerro el archivo : Pikachu
+[INFO] 16:56:13:223 gamecard/(6775:6790): se cerro el archivo : Squirtle
+[INFO] 16:56:18:385 gamecard/(6775:6803): se abrio el archivo : Pikachu
+[INFO] 16:56:18:385 gamecard/(6775:6803): se escribio el bloque 2 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 9-9=1
+
+[INFO] 16:56:18:385 gamecard/(6775:6803): se guardo el dato 9-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 16:56:18:385 gamecard/(6775:6803): se agrego la posicion (9-9) con la cantidad (1)
+[INFO] 16:56:18:386 gamecard/(6775:6803): Tamaño del archivo del pokemon Pikachu: 6
+[INFO] 16:56:19:386 gamecard/(6775:6803): se cerro el archivo : Pikachu
+[INFO] 16:56:20:492 gamecard/(6775:6810): se abrio el archivo : Squirtle
+[INFO] 16:56:20:492 gamecard/(6775:6810): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-9=1
+
+[INFO] 16:56:20:492 gamecard/(6775:6810): se guardo el dato 5-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 16:56:20:493 gamecard/(6775:6810): se agrego la posicion (5-9) con la cantidad (1)
+[INFO] 16:56:20:493 gamecard/(6775:6810): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 16:56:21:493 gamecard/(6775:6810): se cerro el archivo : Squirtle
+[INFO] 16:56:22:834 gamecard/(6775:6817): se abrio el archivo : Jolteon
+[INFO] 16:56:22:835 gamecard/(6775:6817): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 16:56:22:835 gamecard/(6775:6817): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 16:56:22:835 gamecard/(6775:6817): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 16:56:22:835 gamecard/(6775:6817): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 16:56:23:835 gamecard/(6775:6817): se cerro el archivo : Jolteon
+[INFO] 16:56:27:348 gamecard/(6775:6825): se abrio el archivo : Flareon
+[INFO] 16:56:27:348 gamecard/(6775:6825): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 16:56:27:348 gamecard/(6775:6825): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 16:56:27:348 gamecard/(6775:6825): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 16:56:27:363 gamecard/(6775:6825): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 16:56:28:364 gamecard/(6775:6825): se cerro el archivo : Flareon
+[INFO] 16:56:42:418 gamecard/(6775:6777): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:56:42:418 gamecard/(6775:6777): Intento de conexion con el broker exitosa.
+[INFO] 16:56:42:426 gamecard/(6775:6777): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:56:42:426 gamecard/(6775:6777): Intento de conexion con el broker exitosa.
+[INFO] 16:56:42:428 gamecard/(6775:6777): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:56:42:428 gamecard/(6775:6777): Intento de conexion con el broker exitosa.
+[INFO] 16:58:02:358 gamecard/(6904:6904): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 16:58:02:359 gamecard/(6904:6904): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 16:58:02:359 gamecard/(6904:6904): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 16:58:02:441 gamecard/(6904:6906): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:02:446 gamecard/(6904:6906): Intento de conexion con el broker exitosa.
+[INFO] 16:58:02:634 gamecard/(6904:6914): se abrio el archivo : Squirtle
+[INFO] 16:58:02:703 gamecard/(6904:6916): se abrio el archivo : Pikachu
+[INFO] 16:58:02:739 gamecard/(6904:6918): No se encontro al Pokemon
+[INFO] 16:58:02:765 gamecard/(6904:6921): No se encontro al Pokemon
+[INFO] 16:58:03:635 gamecard/(6904:6914): se cerro el archivo : Squirtle
+[INFO] 16:58:03:704 gamecard/(6904:6916): se cerro el archivo : Pikachu
+[INFO] 16:58:07:480 gamecard/(6904:6932): se abrio el archivo : Pikachu
+[INFO] 16:58:07:481 gamecard/(6904:6932): se escribio el bloque 2 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 9-9=1
+
+[INFO] 16:58:07:481 gamecard/(6904:6932): se guardo el dato 9-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 16:58:07:481 gamecard/(6904:6932): se agrego la posicion (9-9) con la cantidad (1)
+[INFO] 16:58:07:481 gamecard/(6904:6932): Tamaño del archivo del pokemon Pikachu: 6
+[INFO] 16:58:08:482 gamecard/(6904:6932): se cerro el archivo : Pikachu
+[INFO] 16:58:09:716 gamecard/(6904:6939): se abrio el archivo : Squirtle
+[INFO] 16:58:09:716 gamecard/(6904:6939): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-9=1
+
+[INFO] 16:58:09:717 gamecard/(6904:6939): se guardo el dato 5-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 16:58:09:717 gamecard/(6904:6939): se agrego la posicion (5-9) con la cantidad (1)
+[INFO] 16:58:09:717 gamecard/(6904:6939): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 16:58:10:717 gamecard/(6904:6939): se cerro el archivo : Squirtle
+[INFO] 16:58:12:153 gamecard/(6904:6946): se abrio el archivo : Jolteon
+[INFO] 16:58:12:154 gamecard/(6904:6946): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 16:58:12:154 gamecard/(6904:6946): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 16:58:12:159 gamecard/(6904:6946): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 16:58:12:159 gamecard/(6904:6946): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 16:58:13:160 gamecard/(6904:6946): se cerro el archivo : Jolteon
+[INFO] 16:58:14:386 gamecard/(6904:6953): se abrio el archivo : Flareon
+[INFO] 16:58:14:386 gamecard/(6904:6953): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 16:58:14:386 gamecard/(6904:6953): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 16:58:14:404 gamecard/(6904:6953): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 16:58:14:404 gamecard/(6904:6953): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 16:58:15:404 gamecard/(6904:6953): se cerro el archivo : Flareon
+[INFO] 16:58:28:261 gamecard/(6904:6906): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:28:261 gamecard/(6904:6906): Intento de conexion con el broker exitosa.
+[INFO] 16:58:28:262 gamecard/(6904:6906): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:28:264 gamecard/(6904:6906): Intento de conexion con el broker exitosa.
+[INFO] 16:58:28:269 gamecard/(6904:6906): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 16:58:28:270 gamecard/(6904:6906): Intento de conexion con el broker exitosa.
+[INFO] 17:21:13:475 gamecard/(7733:7733): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 17:21:13:475 gamecard/(7733:7733): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 17:21:13:475 gamecard/(7733:7733): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 17:21:13:546 gamecard/(7733:7735): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:21:13:551 gamecard/(7733:7735): Intento de conexion con el broker exitosa.
+[INFO] 17:21:18:165 gamecard/(7733:7762): se abrio el archivo : Squirtle
+[INFO] 17:21:18:234 gamecard/(7733:7764): se abrio el archivo : Pikachu
+[INFO] 17:21:18:277 gamecard/(7733:7766): No se encontro al Pokemon
+[INFO] 17:21:18:338 gamecard/(7733:7769): No se encontro al Pokemon
+[INFO] 17:21:19:165 gamecard/(7733:7762): se cerro el archivo : Squirtle
+[INFO] 17:21:19:239 gamecard/(7733:7764): se cerro el archivo : Pikachu
+[INFO] 17:21:23:25 gamecard/(7733:7780): se abrio el archivo : Pikachu
+[INFO] 17:21:23:25 gamecard/(7733:7780): se escribio el bloque 2 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 9-9=1
+
+[INFO] 17:21:23:25 gamecard/(7733:7780): se guardo el dato 9-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 17:21:23:26 gamecard/(7733:7780): se agrego la posicion (9-9) con la cantidad (1)
+[INFO] 17:21:23:26 gamecard/(7733:7780): Tamaño del archivo del pokemon Pikachu: 6
+[INFO] 17:21:24:27 gamecard/(7733:7780): se cerro el archivo : Pikachu
+[INFO] 17:21:25:717 gamecard/(7733:7787): se abrio el archivo : Squirtle
+[INFO] 17:21:25:717 gamecard/(7733:7787): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-9=1
+
+[INFO] 17:21:25:717 gamecard/(7733:7787): se guardo el dato 5-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:21:25:718 gamecard/(7733:7787): se agrego la posicion (5-9) con la cantidad (1)
+[INFO] 17:21:25:718 gamecard/(7733:7787): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 17:21:26:718 gamecard/(7733:7787): se cerro el archivo : Squirtle
+[INFO] 17:21:27:949 gamecard/(7733:7794): se abrio el archivo : Jolteon
+[INFO] 17:21:27:949 gamecard/(7733:7794): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 17:21:27:949 gamecard/(7733:7794): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 17:21:27:949 gamecard/(7733:7794): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 17:21:27:950 gamecard/(7733:7794): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 17:21:28:951 gamecard/(7733:7794): se cerro el archivo : Jolteon
+[INFO] 17:21:30:411 gamecard/(7733:7802): se abrio el archivo : Flareon
+[INFO] 17:21:30:411 gamecard/(7733:7802): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 17:21:30:411 gamecard/(7733:7802): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 17:21:30:412 gamecard/(7733:7802): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 17:21:30:412 gamecard/(7733:7802): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 17:21:31:412 gamecard/(7733:7802): se cerro el archivo : Flareon
+[INFO] 17:21:46:588 gamecard/(7733:7735): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:21:46:588 gamecard/(7733:7735): Intento de conexion con el broker exitosa.
+[INFO] 17:21:46:589 gamecard/(7733:7735): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:21:46:589 gamecard/(7733:7735): Intento de conexion con el broker exitosa.
+[INFO] 17:21:46:590 gamecard/(7733:7735): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:21:46:590 gamecard/(7733:7735): Intento de conexion con el broker exitosa.
+[INFO] 17:23:05:770 gamecard/(7848:7848): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 17:23:05:773 gamecard/(7848:7848): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 17:23:05:773 gamecard/(7848:7848): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 17:23:05:879 gamecard/(7848:7850): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:23:05:883 gamecard/(7848:7850): Intento de conexion con el broker exitosa.
+[INFO] 17:25:57:293 gamecard/(7989:7989): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 17:25:57:293 gamecard/(7989:7989): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 17:25:57:293 gamecard/(7989:7989): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 17:25:57:375 gamecard/(7989:7991): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:25:57:378 gamecard/(7989:7991): Intento de conexion con el broker exitosa.
+[INFO] 17:27:19:842 gamecard/(7989:8014): se abrio el archivo : Flareon
+[INFO] 17:27:19:843 gamecard/(7989:8014): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 17:27:19:843 gamecard/(7989:8014): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 17:27:19:846 gamecard/(7989:8014): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 17:27:19:846 gamecard/(7989:8014): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 17:27:19:909 gamecard/(7989:8016): se abrio el archivo : Jolteon
+[INFO] 17:27:19:909 gamecard/(7989:8016): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 17:27:19:909 gamecard/(7989:8016): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 17:27:19:910 gamecard/(7989:8016): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 17:27:19:910 gamecard/(7989:8016): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 17:27:20:847 gamecard/(7989:8014): se cerro el archivo : Flareon
+[INFO] 17:27:20:915 gamecard/(7989:8016): se cerro el archivo : Jolteon
+[INFO] 17:27:45:263 gamecard/(7989:8049): se abrio el archivo : Pikachu
+[INFO] 17:27:45:339 gamecard/(7989:8052): No se encontro al Pokemon
+[INFO] 17:27:45:365 gamecard/(7989:8054): No se encontro al Pokemon
+[INFO] 17:27:45:428 gamecard/(7989:8058): se abrio el archivo : Squirtle
+[INFO] 17:27:46:263 gamecard/(7989:8049): se cerro el archivo : Pikachu
+[INFO] 17:27:46:429 gamecard/(7989:8058): se cerro el archivo : Squirtle
+[INFO] 17:28:08:774 gamecard/(7989:8080): se asigno el bloque [4] al bitmap
+[INFO] 17:28:08:774 gamecard/(7989:8080): se asigno el bloque [4] al files del pokemon : Umbreon
+[INFO] 17:28:08:774 gamecard/(7989:8080): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Umbreon/Metadata.bin 
+[INFO] 17:28:08:775 gamecard/(7989:8080): se abrio el archivo : Umbreon
+[INFO] 17:28:08:775 gamecard/(7989:8080): se escribio el bloque 4 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Umbreon/Metadata.bin  con el dato 10-6=1
+
+[INFO] 17:28:08:775 gamecard/(7989:8080): se guardo el dato 10-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/4.bin
+[INFO] 17:28:08:775 gamecard/(7989:8080): se agrego la posicion (10-6) con la cantidad (1)
+[INFO] 17:28:08:775 gamecard/(7989:8080): Tamaño del archivo del pokemon Umbreon: 7
+[INFO] 17:28:08:807 gamecard/(7989:8082): se asigno el bloque [5] al bitmap
+[INFO] 17:28:08:807 gamecard/(7989:8082): se asigno el bloque [5] al files del pokemon : Espeon
+[INFO] 17:28:08:807 gamecard/(7989:8082): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin 
+[INFO] 17:28:08:808 gamecard/(7989:8082): se abrio el archivo : Espeon
+[INFO] 17:28:08:808 gamecard/(7989:8082): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 17:28:08:808 gamecard/(7989:8082): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 17:28:08:809 gamecard/(7989:8082): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 17:28:08:809 gamecard/(7989:8082): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 17:28:08:835 gamecard/(7989:8084): se asigno el bloque [6] al bitmap
+[INFO] 17:28:08:835 gamecard/(7989:8084): se asigno el bloque [6] al files del pokemon : Vaporeon
+[INFO] 17:28:08:835 gamecard/(7989:8084): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin 
+[INFO] 17:28:08:835 gamecard/(7989:8084): se abrio el archivo : Vaporeon
+[INFO] 17:28:08:835 gamecard/(7989:8084): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 17:28:08:835 gamecard/(7989:8084): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 17:28:08:836 gamecard/(7989:8084): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 17:28:08:836 gamecard/(7989:8084): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 17:28:09:776 gamecard/(7989:8080): se cerro el archivo : Umbreon
+[INFO] 17:28:09:811 gamecard/(7989:8082): se cerro el archivo : Espeon
+[INFO] 17:28:09:836 gamecard/(7989:8084): se cerro el archivo : Vaporeon
+[INFO] 17:28:38:283 gamecard/(7989:7991): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:28:38:283 gamecard/(7989:7991): Intento de conexion con el broker exitosa.
+[INFO] 17:28:38:284 gamecard/(7989:7991): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:28:38:284 gamecard/(7989:7991): Intento de conexion con el broker exitosa.
+[INFO] 17:28:38:286 gamecard/(7989:7991): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:28:38:286 gamecard/(7989:7991): Intento de conexion con el broker exitosa.
+[INFO] 17:41:08:197 gamecard/(8598:8598): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 17:41:08:197 gamecard/(8598:8598): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 17:41:08:198 gamecard/(8598:8598): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 17:41:08:425 gamecard/(8598:8600): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:41:08:430 gamecard/(8598:8600): Intento de conexion con el broker exitosa.
+[INFO] 17:41:13:338 gamecard/(8598:8627): se abrio el archivo : Squirtle
+[INFO] 17:41:13:406 gamecard/(8598:8629): se abrio el archivo : Pikachu
+[INFO] 17:41:13:440 gamecard/(8598:8631): No se encontro al Pokemon
+[INFO] 17:41:13:486 gamecard/(8598:8634): No se encontro al Pokemon
+[INFO] 17:41:14:342 gamecard/(8598:8627): se cerro el archivo : Squirtle
+[INFO] 17:41:14:407 gamecard/(8598:8629): se cerro el archivo : Pikachu
+[INFO] 17:41:26:286 gamecard/(8598:8652): se abrio el archivo : Squirtle
+[INFO] 17:41:26:286 gamecard/(8598:8652): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-2=1
+
+[INFO] 17:41:26:286 gamecard/(8598:8652): se guardo el dato 5-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:41:26:287 gamecard/(8598:8652): se agrego la posicion (5-2) con la cantidad (1)
+[INFO] 17:41:26:287 gamecard/(8598:8652): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 17:41:26:312 gamecard/(8598:8654): se abrio el archivo : Jolteon
+[INFO] 17:41:26:312 gamecard/(8598:8654): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 17:41:26:312 gamecard/(8598:8654): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 17:41:26:321 gamecard/(8598:8654): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 17:41:26:321 gamecard/(8598:8654): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 17:41:26:348 gamecard/(8598:8656): se abrio el archivo : Flareon
+[INFO] 17:41:26:348 gamecard/(8598:8656): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 17:41:26:348 gamecard/(8598:8656): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 17:41:26:349 gamecard/(8598:8656): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 17:41:26:349 gamecard/(8598:8656): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 17:41:27:287 gamecard/(8598:8652): se cerro el archivo : Squirtle
+[INFO] 17:41:27:322 gamecard/(8598:8654): se cerro el archivo : Jolteon
+[INFO] 17:41:27:351 gamecard/(8598:8656): se cerro el archivo : Flareon
+[INFO] 17:41:31:361 gamecard/(8598:8669): se abrio el archivo : Squirtle
+[INFO] 17:41:31:361 gamecard/(8598:8669): Se disminuye en 1 la cantidad en la posicion 5-2,del (Pokemon : Squirtle)
+[INFO] 17:41:31:361 gamecard/(8598:8669): se limpio el bloque 3
+[INFO] 17:41:31:371 gamecard/(8598:8669): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 17:41:31:371 gamecard/(8598:8669): se cerro el archivo : Squirtle
+[INFO] 17:41:31:371 gamecard/(8598:8669): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 17:41:41:469 gamecard/(8598:8683): se asigno el bloque [3] al bitmap
+[INFO] 17:41:41:469 gamecard/(8598:8683): se asigno el bloque [3] al files del pokemon : Onix
+[INFO] 17:41:41:469 gamecard/(8598:8683): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 17:41:41:471 gamecard/(8598:8683): se abrio el archivo : Onix
+[INFO] 17:41:41:471 gamecard/(8598:8683): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 17:41:41:471 gamecard/(8598:8683): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:41:41:472 gamecard/(8598:8683): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 17:41:41:472 gamecard/(8598:8683): Tamaño del archivo del pokemon Onix: 6
+[INFO] 17:41:41:597 gamecard/(8598:8688): se asigno el bloque [7] al bitmap
+[INFO] 17:41:41:597 gamecard/(8598:8688): se asigno el bloque [7] al files del pokemon : Squirtle
+[INFO] 17:41:41:597 gamecard/(8598:8688): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 17:41:41:598 gamecard/(8598:8688): se abrio el archivo : Squirtle
+[INFO] 17:41:41:598 gamecard/(8598:8688): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-5=1
+
+[INFO] 17:41:41:598 gamecard/(8598:8688): se guardo el dato 5-5=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 17:41:41:598 gamecard/(8598:8688): se agrego la posicion (5-5) con la cantidad (1)
+[INFO] 17:41:41:623 gamecard/(8598:8688): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 17:41:41:651 gamecard/(8598:8690): se abrio el archivo : Espeon
+[INFO] 17:41:41:651 gamecard/(8598:8690): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 17:41:41:651 gamecard/(8598:8690): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 17:41:41:652 gamecard/(8598:8690): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 17:41:41:652 gamecard/(8598:8690): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 17:41:41:707 gamecard/(8598:8692): se abrio el archivo : Vaporeon
+[INFO] 17:41:41:707 gamecard/(8598:8692): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 17:41:41:707 gamecard/(8598:8692): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 17:41:41:707 gamecard/(8598:8692): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 17:41:41:708 gamecard/(8598:8692): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 17:41:42:473 gamecard/(8598:8683): se cerro el archivo : Onix
+[INFO] 17:41:42:626 gamecard/(8598:8688): se cerro el archivo : Squirtle
+[INFO] 17:41:42:652 gamecard/(8598:8690): se cerro el archivo : Espeon
+[INFO] 17:41:42:708 gamecard/(8598:8692): se cerro el archivo : Vaporeon
+[INFO] 17:41:50:550 gamecard/(8598:8710): se abrio el archivo : Squirtle
+[INFO] 17:41:50:565 gamecard/(8598:8710): Se disminuye en 1 la cantidad en la posicion 5-5,del (Pokemon : Squirtle)
+[INFO] 17:41:50:565 gamecard/(8598:8710): se limpio el bloque 7
+[INFO] 17:41:50:567 gamecard/(8598:8710): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 17:41:50:567 gamecard/(8598:8710): se cerro el archivo : Squirtle
+[INFO] 17:41:50:567 gamecard/(8598:8710): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 17:41:58:585 gamecard/(8598:8720): se abrio el archivo : Onix
+[INFO] 17:41:58:586 gamecard/(8598:8720): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 17:41:58:586 gamecard/(8598:8720): se limpio el bloque 3
+[INFO] 17:41:58:587 gamecard/(8598:8720): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 17:41:58:588 gamecard/(8598:8720): se cerro el archivo : Onix
+[INFO] 17:41:58:588 gamecard/(8598:8720): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 17:42:11:110 gamecard/(8598:8600): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:42:11:113 gamecard/(8598:8600): Intento de conexion con el broker exitosa.
+[INFO] 17:42:11:118 gamecard/(8598:8600): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:42:11:119 gamecard/(8598:8600): Intento de conexion con el broker exitosa.
+[INFO] 17:42:11:120 gamecard/(8598:8600): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:42:11:124 gamecard/(8598:8600): Intento de conexion con el broker exitosa.
+[INFO] 17:44:36:793 gamecard/(8835:8835): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 17:44:36:793 gamecard/(8835:8835): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 17:44:36:794 gamecard/(8835:8835): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 17:44:36:937 gamecard/(8835:8837): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:44:36:942 gamecard/(8835:8837): Intento de conexion con el broker exitosa.
+[INFO] 17:44:38:921 gamecard/(8835:8864): No se encontro al Pokemon
+[INFO] 17:44:39:30 gamecard/(8835:8868): se abrio el archivo : Pikachu
+[INFO] 17:44:39:71 gamecard/(8835:8870): No se encontro al Pokemon
+[INFO] 17:44:39:209 gamecard/(8835:8873): No se encontro al Pokemon
+[INFO] 17:44:40:30 gamecard/(8835:8868): se cerro el archivo : Pikachu
+[INFO] 17:44:42:60 gamecard/(8835:8890): se asigno el bloque [3] al bitmap
+[INFO] 17:44:42:60 gamecard/(8835:8890): se asigno el bloque [3] al files del pokemon : Squirtle
+[INFO] 17:44:42:60 gamecard/(8835:8890): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 17:44:42:61 gamecard/(8835:8890): se abrio el archivo : Squirtle
+[INFO] 17:44:42:61 gamecard/(8835:8890): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-2=1
+
+[INFO] 17:44:42:61 gamecard/(8835:8890): se guardo el dato 5-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:44:42:61 gamecard/(8835:8890): se agrego la posicion (5-2) con la cantidad (1)
+[INFO] 17:44:42:61 gamecard/(8835:8890): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 17:44:42:114 gamecard/(8835:8892): se abrio el archivo : Jolteon
+[INFO] 17:44:42:114 gamecard/(8835:8892): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 17:44:42:114 gamecard/(8835:8892): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 17:44:42:115 gamecard/(8835:8892): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 17:44:42:116 gamecard/(8835:8892): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 17:44:42:138 gamecard/(8835:8894): se abrio el archivo : Flareon
+[INFO] 17:44:42:139 gamecard/(8835:8894): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 17:44:42:139 gamecard/(8835:8894): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 17:44:42:139 gamecard/(8835:8894): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 17:44:42:139 gamecard/(8835:8894): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 17:44:43:62 gamecard/(8835:8890): se cerro el archivo : Squirtle
+[INFO] 17:44:43:116 gamecard/(8835:8892): se cerro el archivo : Jolteon
+[INFO] 17:44:43:139 gamecard/(8835:8894): se cerro el archivo : Flareon
+[INFO] 17:44:45:651 gamecard/(8835:8914): se asigno el bloque [7] al bitmap
+[INFO] 17:44:45:651 gamecard/(8835:8914): se asigno el bloque [7] al files del pokemon : Onix
+[INFO] 17:44:45:651 gamecard/(8835:8914): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 17:44:45:651 gamecard/(8835:8914): se abrio el archivo : Onix
+[INFO] 17:44:45:652 gamecard/(8835:8914): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 17:44:45:652 gamecard/(8835:8914): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 17:44:45:652 gamecard/(8835:8914): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 17:44:45:652 gamecard/(8835:8914): Tamaño del archivo del pokemon Onix: 6
+[INFO] 17:44:45:742 gamecard/(8835:8919): se abrio el archivo : Squirtle
+[INFO] 17:44:45:743 gamecard/(8835:8919): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-5=1
+
+[INFO] 17:44:45:743 gamecard/(8835:8919): se guardo el dato 5-5=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:44:45:743 gamecard/(8835:8919): se agrego la posicion (5-5) con la cantidad (1)
+[INFO] 17:44:45:790 gamecard/(8835:8919): Tamaño del archivo del pokemon Squirtle: 12
+[INFO] 17:44:45:812 gamecard/(8835:8921): se abrio el archivo : Espeon
+[INFO] 17:44:45:812 gamecard/(8835:8921): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 17:44:45:813 gamecard/(8835:8921): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 17:44:45:813 gamecard/(8835:8921): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 17:44:45:813 gamecard/(8835:8921): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 17:44:45:888 gamecard/(8835:8923): se abrio el archivo : Vaporeon
+[INFO] 17:44:45:889 gamecard/(8835:8923): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 17:44:45:889 gamecard/(8835:8923): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 17:44:45:889 gamecard/(8835:8923): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 17:44:45:889 gamecard/(8835:8923): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 17:44:46:653 gamecard/(8835:8914): se cerro el archivo : Onix
+[INFO] 17:44:46:790 gamecard/(8835:8919): se cerro el archivo : Squirtle
+[INFO] 17:44:46:813 gamecard/(8835:8921): se cerro el archivo : Espeon
+[INFO] 17:44:46:889 gamecard/(8835:8923): se cerro el archivo : Vaporeon
+[INFO] 17:44:47:146 gamecard/(8835:8937): se abrio el archivo : Squirtle
+[INFO] 17:44:47:146 gamecard/(8835:8937): Se disminuye en 1 la cantidad en la posicion 5-2,del (Pokemon : Squirtle)
+[INFO] 17:44:47:147 gamecard/(8835:8937): se limpio el bloque 3
+[INFO] 17:44:47:152 gamecard/(8835:8937): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 17:44:47:153 gamecard/(8835:8937): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-5=1
+
+[INFO] 17:44:47:153 gamecard/(8835:8937): se guardo el dato 5-5=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:44:47:163 gamecard/(8835:8937): se cerro el archivo : Squirtle
+[INFO] 17:44:57:178 gamecard/(8835:8949): se abrio el archivo : Onix
+[INFO] 17:44:57:179 gamecard/(8835:8949): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 17:44:57:179 gamecard/(8835:8949): se limpio el bloque 7
+[INFO] 17:44:57:198 gamecard/(8835:8949): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 17:44:57:198 gamecard/(8835:8949): se cerro el archivo : Onix
+[INFO] 17:44:57:199 gamecard/(8835:8949): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 17:45:09:221 gamecard/(8835:8963): se abrio el archivo : Squirtle
+[INFO] 17:45:09:221 gamecard/(8835:8963): Se disminuye en 1 la cantidad en la posicion 5-5,del (Pokemon : Squirtle)
+[INFO] 17:45:09:221 gamecard/(8835:8963): se limpio el bloque 3
+[INFO] 17:45:09:225 gamecard/(8835:8963): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 17:45:09:225 gamecard/(8835:8963): se cerro el archivo : Squirtle
+[INFO] 17:45:09:225 gamecard/(8835:8963): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 17:45:28:267 gamecard/(8835:8837): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:45:28:267 gamecard/(8835:8837): Intento de conexion con el broker exitosa.
+[INFO] 17:45:28:268 gamecard/(8835:8837): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:45:28:268 gamecard/(8835:8837): Intento de conexion con el broker exitosa.
+[INFO] 17:45:28:269 gamecard/(8835:8837): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:45:28:269 gamecard/(8835:8837): Intento de conexion con el broker exitosa.
+[INFO] 17:47:14:79 gamecard/(9105:9105): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 17:47:14:79 gamecard/(9105:9105): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 17:47:14:80 gamecard/(9105:9105): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 17:47:14:151 gamecard/(9105:9107): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:47:14:157 gamecard/(9105:9107): Intento de conexion con el broker exitosa.
+[INFO] 17:47:18:985 gamecard/(9105:9139): se abrio el archivo : Pikachu
+[INFO] 17:47:19:96 gamecard/(9105:9141): No se encontro al Pokemon
+[INFO] 17:47:19:163 gamecard/(9105:9145): No se encontro al Pokemon
+[INFO] 17:47:19:492 gamecard/(9105:9148): No se encontro al Pokemon
+[INFO] 17:47:19:997 gamecard/(9105:9139): se cerro el archivo : Pikachu
+[INFO] 17:47:21:847 gamecard/(9105:9164): se asigno el bloque [3] al bitmap
+[INFO] 17:47:21:847 gamecard/(9105:9164): se asigno el bloque [3] al files del pokemon : Squirtle
+[INFO] 17:47:21:847 gamecard/(9105:9164): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 17:47:21:848 gamecard/(9105:9164): se abrio el archivo : Squirtle
+[INFO] 17:47:21:848 gamecard/(9105:9164): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-2=1
+
+[INFO] 17:47:21:848 gamecard/(9105:9164): se guardo el dato 5-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 17:47:21:848 gamecard/(9105:9164): se agrego la posicion (5-2) con la cantidad (1)
+[INFO] 17:47:21:848 gamecard/(9105:9164): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 17:47:21:871 gamecard/(9105:9166): se abrio el archivo : Jolteon
+[INFO] 17:47:21:872 gamecard/(9105:9166): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 17:47:21:872 gamecard/(9105:9166): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 17:47:21:872 gamecard/(9105:9166): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 17:47:21:872 gamecard/(9105:9166): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 17:47:21:920 gamecard/(9105:9168): se abrio el archivo : Flareon
+[INFO] 17:47:21:921 gamecard/(9105:9168): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 17:47:21:921 gamecard/(9105:9168): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 17:47:21:921 gamecard/(9105:9168): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 17:47:21:921 gamecard/(9105:9168): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 17:47:22:849 gamecard/(9105:9164): se cerro el archivo : Squirtle
+[INFO] 17:47:22:873 gamecard/(9105:9166): se cerro el archivo : Jolteon
+[INFO] 17:47:22:922 gamecard/(9105:9168): se cerro el archivo : Flareon
+[INFO] 17:47:25:796 gamecard/(9105:9189): se asigno el bloque [7] al bitmap
+[INFO] 17:47:25:796 gamecard/(9105:9189): se asigno el bloque [7] al files del pokemon : Onix
+[INFO] 17:47:25:797 gamecard/(9105:9189): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 17:47:25:797 gamecard/(9105:9189): se abrio el archivo : Onix
+[INFO] 17:47:25:797 gamecard/(9105:9189): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 17:47:25:797 gamecard/(9105:9189): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 17:47:25:816 gamecard/(9105:9189): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 17:47:25:816 gamecard/(9105:9189): Tamaño del archivo del pokemon Onix: 6
+[INFO] 17:47:25:915 gamecard/(9105:9193): se abrio el archivo : Espeon
+[INFO] 17:47:25:915 gamecard/(9105:9193): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 17:47:25:915 gamecard/(9105:9193): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 17:47:25:916 gamecard/(9105:9193): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 17:47:25:916 gamecard/(9105:9193): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 17:47:25:959 gamecard/(9105:9195): se abrio el archivo : Vaporeon
+[INFO] 17:47:25:960 gamecard/(9105:9195): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 17:47:25:960 gamecard/(9105:9195): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 17:47:25:960 gamecard/(9105:9195): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 17:47:25:960 gamecard/(9105:9195): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 17:47:26:816 gamecard/(9105:9189): se cerro el archivo : Onix
+[INFO] 17:47:26:918 gamecard/(9105:9193): se cerro el archivo : Espeon
+[INFO] 17:47:26:945 gamecard/(9105:9204): se abrio el archivo : Squirtle
+[INFO] 17:47:26:945 gamecard/(9105:9204): Se disminuye en 1 la cantidad en la posicion 5-2,del (Pokemon : Squirtle)
+[INFO] 17:47:26:945 gamecard/(9105:9204): se limpio el bloque 3
+[INFO] 17:47:26:961 gamecard/(9105:9195): se cerro el archivo : Vaporeon
+[INFO] 17:47:26:966 gamecard/(9105:9204): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 17:47:26:966 gamecard/(9105:9204): se cerro el archivo : Squirtle
+[INFO] 17:47:26:967 gamecard/(9105:9204): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 17:47:36:951 gamecard/(9105:9218): se abrio el archivo : Onix
+[INFO] 17:47:36:951 gamecard/(9105:9218): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 17:47:36:952 gamecard/(9105:9218): se limpio el bloque 7
+[INFO] 17:47:36:964 gamecard/(9105:9218): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 17:47:36:964 gamecard/(9105:9218): se cerro el archivo : Onix
+[INFO] 17:47:36:964 gamecard/(9105:9218): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 17:48:29:369 gamecard/(9105:9107): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:48:29:370 gamecard/(9105:9107): Intento de conexion con el broker exitosa.
+[INFO] 17:48:29:373 gamecard/(9105:9107): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:48:29:373 gamecard/(9105:9107): Intento de conexion con el broker exitosa.
+[INFO] 17:48:29:375 gamecard/(9105:9107): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 17:48:29:375 gamecard/(9105:9107): Intento de conexion con el broker exitosa.
+[INFO] 18:04:12:613 gamecard/(9493:9493): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 18:04:12:613 gamecard/(9493:9493): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 18:04:12:613 gamecard/(9493:9493): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 18:04:12:686 gamecard/(9493:9495): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:04:12:691 gamecard/(9493:9495): Intento de conexion con el broker exitosa.
+[INFO] 18:04:18:515 gamecard/(9493:9522): No se encontro al Pokemon
+[INFO] 18:04:18:608 gamecard/(9493:9526): se abrio el archivo : Pikachu
+[INFO] 18:04:18:630 gamecard/(9493:9528): No se encontro al Pokemon
+[INFO] 18:04:19:608 gamecard/(9493:9526): se cerro el archivo : Pikachu
+[INFO] 18:04:22:106 gamecard/(9493:9543): se asigno el bloque [3] al bitmap
+[INFO] 18:04:22:106 gamecard/(9493:9543): se asigno el bloque [3] al files del pokemon : Squirtle
+[INFO] 18:04:22:106 gamecard/(9493:9543): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 18:04:22:111 gamecard/(9493:9543): se abrio el archivo : Squirtle
+[INFO] 18:04:22:111 gamecard/(9493:9543): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-2=1
+
+[INFO] 18:04:22:111 gamecard/(9493:9543): se guardo el dato 5-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 18:04:22:111 gamecard/(9493:9543): se agrego la posicion (5-2) con la cantidad (1)
+[INFO] 18:04:22:111 gamecard/(9493:9543): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 18:04:22:140 gamecard/(9493:9545): se abrio el archivo : Flareon
+[INFO] 18:04:22:140 gamecard/(9493:9545): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 18:04:22:140 gamecard/(9493:9545): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 18:04:22:140 gamecard/(9493:9545): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 18:04:22:140 gamecard/(9493:9545): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 18:04:23:112 gamecard/(9493:9543): se cerro el archivo : Squirtle
+[INFO] 18:04:23:146 gamecard/(9493:9545): se cerro el archivo : Flareon
+[INFO] 18:04:24:841 gamecard/(9493:9564): se asigno el bloque [7] al bitmap
+[INFO] 18:04:24:841 gamecard/(9493:9564): se asigno el bloque [7] al files del pokemon : Onix
+[INFO] 18:04:24:841 gamecard/(9493:9564): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 18:04:24:841 gamecard/(9493:9564): se abrio el archivo : Onix
+[INFO] 18:04:24:841 gamecard/(9493:9564): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 18:04:24:841 gamecard/(9493:9564): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 18:04:24:842 gamecard/(9493:9564): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 18:04:24:842 gamecard/(9493:9564): Tamaño del archivo del pokemon Onix: 6
+[INFO] 18:04:24:926 gamecard/(9493:9567): se abrio el archivo : Umbreon
+[INFO] 18:04:24:926 gamecard/(9493:9567): se escribio el bloque 4 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Umbreon/Metadata.bin  con el dato 10-6=1
+
+[INFO] 18:04:24:926 gamecard/(9493:9567): se guardo el dato 10-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/4.bin
+[INFO] 18:04:24:926 gamecard/(9493:9567): se agrego la posicion (10-6) con la cantidad (1)
+[INFO] 18:04:24:940 gamecard/(9493:9567): Tamaño del archivo del pokemon Umbreon: 7
+[INFO] 18:04:24:963 gamecard/(9493:9569): se abrio el archivo : Vaporeon
+[INFO] 18:04:24:963 gamecard/(9493:9569): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 18:04:24:963 gamecard/(9493:9569): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 18:04:24:963 gamecard/(9493:9569): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 18:04:25:22 gamecard/(9493:9569): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 18:04:25:842 gamecard/(9493:9564): se cerro el archivo : Onix
+[INFO] 18:04:25:942 gamecard/(9493:9567): se cerro el archivo : Umbreon
+[INFO] 18:04:26:23 gamecard/(9493:9569): se cerro el archivo : Vaporeon
+[INFO] 18:04:27:202 gamecard/(9493:9582): se abrio el archivo : Squirtle
+[INFO] 18:04:27:202 gamecard/(9493:9582): Se disminuye en 1 la cantidad en la posicion 5-2,del (Pokemon : Squirtle)
+[INFO] 18:04:27:202 gamecard/(9493:9582): se limpio el bloque 3
+[INFO] 18:04:27:222 gamecard/(9493:9582): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 18:04:27:222 gamecard/(9493:9582): se cerro el archivo : Squirtle
+[INFO] 18:04:27:223 gamecard/(9493:9582): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 18:04:37:231 gamecard/(9493:9593): se abrio el archivo : Onix
+[INFO] 18:04:37:231 gamecard/(9493:9593): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 18:04:37:232 gamecard/(9493:9593): se limpio el bloque 7
+[INFO] 18:04:37:238 gamecard/(9493:9593): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 18:04:37:239 gamecard/(9493:9593): se cerro el archivo : Onix
+[INFO] 18:04:37:239 gamecard/(9493:9593): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 18:05:22:218 gamecard/(9493:9495): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:05:22:218 gamecard/(9493:9495): Intento de conexion con el broker exitosa.
+[INFO] 18:05:22:219 gamecard/(9493:9495): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:05:22:219 gamecard/(9493:9495): Intento de conexion con el broker exitosa.
+[INFO] 18:05:22:221 gamecard/(9493:9495): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:05:22:221 gamecard/(9493:9495): Intento de conexion con el broker exitosa.
+[INFO] 18:05:22:247 gamecard/(9493:9495): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:05:22:247 gamecard/(9493:9495): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 18:08:31:314 gamecard/(9884:9884): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 18:08:31:314 gamecard/(9884:9884): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 18:08:31:314 gamecard/(9884:9884): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 18:08:31:498 gamecard/(9884:9886): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:08:31:503 gamecard/(9884:9886): Intento de conexion con el broker exitosa.
+[INFO] 18:08:33:549 gamecard/(9884:9913): se abrio el archivo : Pikachu
+[INFO] 18:08:33:646 gamecard/(9884:9915): No se encontro al Pokemon
+[INFO] 18:08:33:830 gamecard/(9884:9918): No se encontro al Pokemon
+[INFO] 18:08:33:939 gamecard/(9884:9922): No se encontro al Pokemon
+[INFO] 18:08:34:550 gamecard/(9884:9913): se cerro el archivo : Pikachu
+[INFO] 18:08:35:749 gamecard/(9884:9938): se asigno el bloque [3] al bitmap
+[INFO] 18:08:35:749 gamecard/(9884:9938): se asigno el bloque [3] al files del pokemon : Squirtle
+[INFO] 18:08:35:749 gamecard/(9884:9938): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 18:08:35:749 gamecard/(9884:9938): se abrio el archivo : Squirtle
+[INFO] 18:08:35:750 gamecard/(9884:9938): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-2=1
+
+[INFO] 18:08:35:750 gamecard/(9884:9938): se guardo el dato 5-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 18:08:35:795 gamecard/(9884:9938): se agrego la posicion (5-2) con la cantidad (1)
+[INFO] 18:08:35:796 gamecard/(9884:9938): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 18:08:35:811 gamecard/(9884:9940): se abrio el archivo : Jolteon
+[INFO] 18:08:35:811 gamecard/(9884:9940): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 18:08:35:811 gamecard/(9884:9940): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 18:08:35:811 gamecard/(9884:9940): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 18:08:35:823 gamecard/(9884:9940): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 18:08:35:895 gamecard/(9884:9942): se abrio el archivo : Flareon
+[INFO] 18:08:35:895 gamecard/(9884:9942): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 18:08:35:895 gamecard/(9884:9942): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 18:08:35:895 gamecard/(9884:9942): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 18:08:35:895 gamecard/(9884:9942): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 18:08:36:797 gamecard/(9884:9938): se cerro el archivo : Squirtle
+[INFO] 18:08:36:823 gamecard/(9884:9940): se cerro el archivo : Jolteon
+[INFO] 18:08:36:896 gamecard/(9884:9942): se cerro el archivo : Flareon
+[INFO] 18:08:38:441 gamecard/(9884:9959): se asigno el bloque [7] al bitmap
+[INFO] 18:08:38:441 gamecard/(9884:9959): se asigno el bloque [7] al files del pokemon : Onix
+[INFO] 18:08:38:441 gamecard/(9884:9959): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 18:08:38:451 gamecard/(9884:9959): se abrio el archivo : Onix
+[INFO] 18:08:38:451 gamecard/(9884:9959): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 18:08:38:451 gamecard/(9884:9959): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 18:08:38:451 gamecard/(9884:9959): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 18:08:38:464 gamecard/(9884:9959): Tamaño del archivo del pokemon Onix: 6
+[INFO] 18:08:38:565 gamecard/(9884:9966): se asigno el bloque [8] al bitmap
+[INFO] 18:08:38:565 gamecard/(9884:9966): se asigno el bloque [8] al files del pokemon : Gengar
+[INFO] 18:08:38:566 gamecard/(9884:9966): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Gengar/Metadata.bin 
+[INFO] 18:08:38:566 gamecard/(9884:9966): se abrio el archivo : Gengar
+[INFO] 18:08:38:566 gamecard/(9884:9966): se escribio el bloque 8 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Gengar/Metadata.bin  con el dato 6-6=1
+
+[INFO] 18:08:38:566 gamecard/(9884:9966): se guardo el dato 6-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/8.bin
+[INFO] 18:08:38:581 gamecard/(9884:9966): se agrego la posicion (6-6) con la cantidad (1)
+[INFO] 18:08:38:581 gamecard/(9884:9966): Tamaño del archivo del pokemon Gengar: 6
+[INFO] 18:08:38:646 gamecard/(9884:9968): se abrio el archivo : Espeon
+[INFO] 18:08:38:647 gamecard/(9884:9968): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 18:08:38:647 gamecard/(9884:9968): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 18:08:38:647 gamecard/(9884:9968): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 18:08:38:647 gamecard/(9884:9968): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 18:08:38:698 gamecard/(9884:9970): se abrio el archivo : Vaporeon
+[INFO] 18:08:38:698 gamecard/(9884:9970): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 18:08:38:711 gamecard/(9884:9970): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 18:08:38:711 gamecard/(9884:9970): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 18:08:38:711 gamecard/(9884:9970): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 18:08:39:464 gamecard/(9884:9959): se cerro el archivo : Onix
+[INFO] 18:08:39:581 gamecard/(9884:9966): se cerro el archivo : Gengar
+[INFO] 18:08:39:648 gamecard/(9884:9968): se cerro el archivo : Espeon
+[INFO] 18:08:39:714 gamecard/(9884:9970): se cerro el archivo : Vaporeon
+[INFO] 18:08:40:881 gamecard/(9884:9985): se abrio el archivo : Squirtle
+[INFO] 18:08:40:881 gamecard/(9884:9985): Se disminuye en 1 la cantidad en la posicion 5-2,del (Pokemon : Squirtle)
+[INFO] 18:08:40:882 gamecard/(9884:9985): se limpio el bloque 3
+[INFO] 18:08:40:890 gamecard/(9884:9985): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 18:08:40:891 gamecard/(9884:9985): se cerro el archivo : Squirtle
+[INFO] 18:08:40:891 gamecard/(9884:9985): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 18:08:50:909 gamecard/(9884:9997): se abrio el archivo : Onix
+[INFO] 18:08:50:909 gamecard/(9884:9997): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 18:08:50:909 gamecard/(9884:9997): se limpio el bloque 7
+[INFO] 18:08:50:911 gamecard/(9884:9997): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 18:08:50:912 gamecard/(9884:9997): se cerro el archivo : Onix
+[INFO] 18:08:50:912 gamecard/(9884:9997): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 18:09:06:956 gamecard/(9884:10014): se abrio el archivo : Gengar
+[INFO] 18:09:06:956 gamecard/(9884:10014): Se disminuye en 1 la cantidad en la posicion 6-6,del (Pokemon : Gengar)
+[INFO] 18:09:06:957 gamecard/(9884:10014): se limpio el bloque 8
+[INFO] 18:09:06:958 gamecard/(9884:10014): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Gengar/Metadata.bin
+[INFO] 18:09:06:958 gamecard/(9884:10014): se cerro el archivo : Gengar
+[INFO] 18:09:06:958 gamecard/(9884:10014): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Gengar)
+[INFO] 18:09:11:916 gamecard/(9884:9886): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:09:11:916 gamecard/(9884:9886): Intento de conexion con el broker exitosa.
+[INFO] 18:09:11:917 gamecard/(9884:9886): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:09:11:917 gamecard/(9884:9886): Intento de conexion con el broker exitosa.
+[INFO] 18:09:11:918 gamecard/(9884:9886): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:09:11:918 gamecard/(9884:9886): Intento de conexion con el broker exitosa.
+[INFO] 18:09:53:97 gamecard/(10087:10087): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 18:09:53:97 gamecard/(10087:10087): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 18:09:53:97 gamecard/(10087:10087): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 18:09:53:177 gamecard/(10087:10089): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:09:53:177 gamecard/(10087:10089): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 18:10:03:177 gamecard/(10087:10089): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:10:03:177 gamecard/(10087:10089): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 18:10:13:178 gamecard/(10087:10089): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:10:13:178 gamecard/(10087:10089): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 18:10:23:178 gamecard/(10087:10089): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:10:23:178 gamecard/(10087:10089): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 18:10:33:179 gamecard/(10087:10089): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:10:33:179 gamecard/(10087:10089): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 18:11:11:497 gamecard/(10141:10141): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 18:11:11:497 gamecard/(10141:10141): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 18:11:11:497 gamecard/(10141:10141): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 18:11:11:582 gamecard/(10141:10143): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:11:11:586 gamecard/(10141:10143): Intento de conexion con el broker exitosa.
+[INFO] 18:11:15:599 gamecard/(10141:10170): No se encontro al Pokemon
+[INFO] 18:11:15:780 gamecard/(10141:10173): No se encontro al Pokemon
+[INFO] 18:11:20:478 gamecard/(10141:10187): se abrio el archivo : Flareon
+[INFO] 18:11:20:479 gamecard/(10141:10187): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 18:11:20:479 gamecard/(10141:10187): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 18:11:20:479 gamecard/(10141:10187): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 18:11:20:479 gamecard/(10141:10187): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 18:11:20:526 gamecard/(10141:10189): se abrio el archivo : Jolteon
+[INFO] 18:11:20:527 gamecard/(10141:10189): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 18:11:20:527 gamecard/(10141:10189): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 18:11:20:527 gamecard/(10141:10189): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 18:11:20:527 gamecard/(10141:10189): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 18:11:21:480 gamecard/(10141:10187): se cerro el archivo : Flareon
+[INFO] 18:11:21:530 gamecard/(10141:10189): se cerro el archivo : Jolteon
+[INFO] 18:11:24:453 gamecard/(10141:10203): se asigno el bloque [3] al bitmap
+[INFO] 18:11:24:453 gamecard/(10141:10203): se asigno el bloque [3] al files del pokemon : Onix
+[INFO] 18:11:24:453 gamecard/(10141:10203): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 18:11:24:453 gamecard/(10141:10203): se abrio el archivo : Onix
+[INFO] 18:11:24:454 gamecard/(10141:10203): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 18:11:24:462 gamecard/(10141:10203): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 18:11:24:462 gamecard/(10141:10203): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 18:11:24:482 gamecard/(10141:10203): Tamaño del archivo del pokemon Onix: 6
+[INFO] 18:11:24:560 gamecard/(10141:10210): se asigno el bloque [7] al bitmap
+[INFO] 18:11:24:560 gamecard/(10141:10210): se asigno el bloque [7] al files del pokemon : Squirtle
+[INFO] 18:11:24:560 gamecard/(10141:10210): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 18:11:24:561 gamecard/(10141:10210): se abrio el archivo : Squirtle
+[INFO] 18:11:24:561 gamecard/(10141:10210): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-5=1
+
+[INFO] 18:11:24:561 gamecard/(10141:10210): se guardo el dato 5-5=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 18:11:24:561 gamecard/(10141:10210): se agrego la posicion (5-5) con la cantidad (1)
+[INFO] 18:11:24:561 gamecard/(10141:10210): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 18:11:24:639 gamecard/(10141:10212): se abrio el archivo : Espeon
+[INFO] 18:11:24:639 gamecard/(10141:10212): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 18:11:24:639 gamecard/(10141:10212): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 18:11:24:639 gamecard/(10141:10212): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 18:11:24:640 gamecard/(10141:10212): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 18:11:24:686 gamecard/(10141:10214): se abrio el archivo : Vaporeon
+[INFO] 18:11:24:687 gamecard/(10141:10214): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 18:11:24:687 gamecard/(10141:10214): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 18:11:24:687 gamecard/(10141:10214): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 18:11:24:687 gamecard/(10141:10214): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 18:11:25:483 gamecard/(10141:10203): se cerro el archivo : Onix
+[INFO] 18:11:25:566 gamecard/(10141:10210): se cerro el archivo : Squirtle
+[INFO] 18:11:25:641 gamecard/(10141:10212): se cerro el archivo : Espeon
+[INFO] 18:11:25:688 gamecard/(10141:10214): se cerro el archivo : Vaporeon
+[INFO] 18:11:35:583 gamecard/(10141:10233): se abrio el archivo : Onix
+[INFO] 18:11:35:583 gamecard/(10141:10233): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 18:11:35:583 gamecard/(10141:10233): se limpio el bloque 3
+[INFO] 18:11:35:596 gamecard/(10141:10233): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 18:11:35:596 gamecard/(10141:10233): se cerro el archivo : Onix
+[INFO] 18:11:35:596 gamecard/(10141:10233): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 18:11:45:598 gamecard/(10141:10244): se abrio el archivo : Squirtle
+[INFO] 18:11:45:599 gamecard/(10141:10244): Se disminuye en 1 la cantidad en la posicion 5-5,del (Pokemon : Squirtle)
+[INFO] 18:11:45:599 gamecard/(10141:10244): se limpio el bloque 7
+[INFO] 18:11:45:612 gamecard/(10141:10244): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 18:11:45:612 gamecard/(10141:10244): se cerro el archivo : Squirtle
+[INFO] 18:11:45:612 gamecard/(10141:10244): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 18:11:51:572 gamecard/(10141:10143): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:11:51:572 gamecard/(10141:10143): Intento de conexion con el broker exitosa.
+[INFO] 18:11:51:572 gamecard/(10141:10143): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:11:51:573 gamecard/(10141:10143): Intento de conexion con el broker exitosa.
+[INFO] 18:11:51:574 gamecard/(10141:10143): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:11:51:574 gamecard/(10141:10143): Intento de conexion con el broker exitosa.
+[INFO] 18:15:50:596 gamecard/(10346:10346): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 18:15:50:596 gamecard/(10346:10346): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 18:15:50:599 gamecard/(10346:10346): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 18:15:50:685 gamecard/(10346:10348): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:15:50:689 gamecard/(10346:10348): Intento de conexion con el broker exitosa.
+[INFO] 18:15:54:505 gamecard/(10346:10375): No se encontro al Pokemon
+[INFO] 18:15:54:679 gamecard/(10346:10378): se abrio el archivo : Pikachu
+[INFO] 18:15:54:760 gamecard/(10346:10381): No se encontro al Pokemon
+[INFO] 18:15:55:682 gamecard/(10346:10378): se cerro el archivo : Pikachu
+[INFO] 18:15:59:654 gamecard/(10346:10396): se abrio el archivo : Pikachu
+[INFO] 18:15:59:655 gamecard/(10346:10396): se escribio el bloque 2 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Pikachu/Metadata.bin  con el dato 9-9=1
+
+[INFO] 18:15:59:655 gamecard/(10346:10396): se guardo el dato 9-9=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/2.bin
+[INFO] 18:15:59:656 gamecard/(10346:10396): se agrego la posicion (9-9) con la cantidad (1)
+[INFO] 18:15:59:656 gamecard/(10346:10396): Tamaño del archivo del pokemon Pikachu: 6
+[INFO] 18:15:59:710 gamecard/(10346:10398): se abrio el archivo : Jolteon
+[INFO] 18:15:59:715 gamecard/(10346:10398): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 18:15:59:715 gamecard/(10346:10398): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 18:15:59:715 gamecard/(10346:10398): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 18:15:59:715 gamecard/(10346:10398): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 18:15:59:753 gamecard/(10346:10400): se abrio el archivo : Flareon
+[INFO] 18:15:59:753 gamecard/(10346:10400): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 18:15:59:753 gamecard/(10346:10400): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 18:15:59:753 gamecard/(10346:10400): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 18:15:59:753 gamecard/(10346:10400): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 18:16:00:665 gamecard/(10346:10396): se cerro el archivo : Pikachu
+[INFO] 18:16:00:717 gamecard/(10346:10398): se cerro el archivo : Jolteon
+[INFO] 18:16:00:754 gamecard/(10346:10400): se cerro el archivo : Flareon
+[INFO] 18:16:02:303 gamecard/(10346:10417): se asigno el bloque [3] al bitmap
+[INFO] 18:16:02:303 gamecard/(10346:10417): se asigno el bloque [3] al files del pokemon : Onix
+[INFO] 18:16:02:304 gamecard/(10346:10417): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 18:16:02:304 gamecard/(10346:10417): se abrio el archivo : Onix
+[INFO] 18:16:02:304 gamecard/(10346:10417): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 18:16:02:304 gamecard/(10346:10417): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 18:16:02:304 gamecard/(10346:10417): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 18:16:02:304 gamecard/(10346:10417): Tamaño del archivo del pokemon Onix: 6
+[INFO] 18:16:02:432 gamecard/(10346:10424): se asigno el bloque [7] al bitmap
+[INFO] 18:16:02:432 gamecard/(10346:10424): se asigno el bloque [7] al files del pokemon : Gengar
+[INFO] 18:16:02:432 gamecard/(10346:10424): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Gengar/Metadata.bin 
+[INFO] 18:16:02:432 gamecard/(10346:10424): se abrio el archivo : Gengar
+[INFO] 18:16:02:432 gamecard/(10346:10424): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Gengar/Metadata.bin  con el dato 6-6=1
+
+[INFO] 18:16:02:432 gamecard/(10346:10424): se guardo el dato 6-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 18:16:02:433 gamecard/(10346:10424): se agrego la posicion (6-6) con la cantidad (1)
+[INFO] 18:16:02:433 gamecard/(10346:10424): Tamaño del archivo del pokemon Gengar: 6
+[INFO] 18:16:02:492 gamecard/(10346:10426): se abrio el archivo : Espeon
+[INFO] 18:16:02:492 gamecard/(10346:10426): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 18:16:02:493 gamecard/(10346:10426): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 18:16:02:493 gamecard/(10346:10426): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 18:16:02:493 gamecard/(10346:10426): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 18:16:02:539 gamecard/(10346:10428): se abrio el archivo : Vaporeon
+[INFO] 18:16:02:539 gamecard/(10346:10428): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 18:16:02:540 gamecard/(10346:10428): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 18:16:02:540 gamecard/(10346:10428): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 18:16:02:540 gamecard/(10346:10428): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 18:16:03:305 gamecard/(10346:10417): se cerro el archivo : Onix
+[INFO] 18:16:03:434 gamecard/(10346:10424): se cerro el archivo : Gengar
+[INFO] 18:16:03:498 gamecard/(10346:10426): se cerro el archivo : Espeon
+[INFO] 18:16:03:541 gamecard/(10346:10428): se cerro el archivo : Vaporeon
+[INFO] 18:16:16:820 gamecard/(10346:10451): se abrio el archivo : Onix
+[INFO] 18:16:16:820 gamecard/(10346:10451): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 18:16:16:821 gamecard/(10346:10451): se limpio el bloque 3
+[INFO] 18:16:16:822 gamecard/(10346:10451): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 18:16:16:823 gamecard/(10346:10451): se cerro el archivo : Onix
+[INFO] 18:16:16:823 gamecard/(10346:10451): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 18:16:30:849 gamecard/(10346:10466): se abrio el archivo : Gengar
+[INFO] 18:16:30:849 gamecard/(10346:10466): Se disminuye en 1 la cantidad en la posicion 6-6,del (Pokemon : Gengar)
+[INFO] 18:16:30:849 gamecard/(10346:10466): se limpio el bloque 7
+[INFO] 18:16:30:887 gamecard/(10346:10466): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Gengar/Metadata.bin
+[INFO] 18:16:30:888 gamecard/(10346:10466): se cerro el archivo : Gengar
+[INFO] 18:16:30:888 gamecard/(10346:10466): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Gengar)
+[INFO] 18:16:42:216 gamecard/(10346:10348): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:16:42:216 gamecard/(10346:10348): Intento de conexion con el broker exitosa.
+[INFO] 18:16:42:217 gamecard/(10346:10348): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:16:42:217 gamecard/(10346:10348): Intento de conexion con el broker exitosa.
+[INFO] 18:16:42:218 gamecard/(10346:10348): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:16:42:218 gamecard/(10346:10348): Intento de conexion con el broker exitosa.
+[INFO] 18:18:25:859 gamecard/(10552:10552): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 18:18:25:859 gamecard/(10552:10552): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 18:18:25:859 gamecard/(10552:10552): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 18:18:25:946 gamecard/(10552:10554): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:18:25:950 gamecard/(10552:10554): Intento de conexion con el broker exitosa.
+[INFO] 18:18:28:20 gamecard/(10552:10581): se abrio el archivo : Pikachu
+[INFO] 18:18:28:74 gamecard/(10552:10583): No se encontro al Pokemon
+[INFO] 18:18:28:125 gamecard/(10552:10586): No se encontro al Pokemon
+[INFO] 18:18:29:21 gamecard/(10552:10581): se cerro el archivo : Pikachu
+[INFO] 18:18:31:296 gamecard/(10552:10602): se abrio el archivo : Jolteon
+[INFO] 18:18:31:296 gamecard/(10552:10602): se escribio el bloque 0 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Jolteon/Metadata.bin  con el dato 2-2=1
+
+[INFO] 18:18:31:296 gamecard/(10552:10602): se guardo el dato 2-2=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/0.bin
+[INFO] 18:18:31:297 gamecard/(10552:10602): se agrego la posicion (2-2) con la cantidad (1)
+[INFO] 18:18:31:297 gamecard/(10552:10602): Tamaño del archivo del pokemon Jolteon: 6
+[INFO] 18:18:31:335 gamecard/(10552:10604): se abrio el archivo : Flareon
+[INFO] 18:18:31:336 gamecard/(10552:10604): se escribio el bloque 1 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Flareon/Metadata.bin  con el dato 4-6=1
+
+[INFO] 18:18:31:336 gamecard/(10552:10604): se guardo el dato 4-6=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/1.bin
+[INFO] 18:18:31:336 gamecard/(10552:10604): se agrego la posicion (4-6) con la cantidad (1)
+[INFO] 18:18:31:336 gamecard/(10552:10604): Tamaño del archivo del pokemon Flareon: 6
+[INFO] 18:18:32:297 gamecard/(10552:10602): se cerro el archivo : Jolteon
+[INFO] 18:18:32:337 gamecard/(10552:10604): se cerro el archivo : Flareon
+[INFO] 18:18:35:330 gamecard/(10552:10618): se asigno el bloque [3] al bitmap
+[INFO] 18:18:35:330 gamecard/(10552:10618): se asigno el bloque [3] al files del pokemon : Onix
+[INFO] 18:18:35:330 gamecard/(10552:10618): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin 
+[INFO] 18:18:35:330 gamecard/(10552:10618): se abrio el archivo : Onix
+[INFO] 18:18:35:330 gamecard/(10552:10618): se escribio el bloque 3 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin  con el dato 2-8=1
+
+[INFO] 18:18:35:330 gamecard/(10552:10618): se guardo el dato 2-8=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/3.bin
+[INFO] 18:18:35:331 gamecard/(10552:10618): se agrego la posicion (2-8) con la cantidad (1)
+[INFO] 18:18:35:331 gamecard/(10552:10618): Tamaño del archivo del pokemon Onix: 6
+[INFO] 18:18:35:418 gamecard/(10552:10625): se asigno el bloque [7] al bitmap
+[INFO] 18:18:35:418 gamecard/(10552:10625): se asigno el bloque [7] al files del pokemon : Squirtle
+[INFO] 18:18:35:418 gamecard/(10552:10625): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin 
+[INFO] 18:18:35:418 gamecard/(10552:10625): se abrio el archivo : Squirtle
+[INFO] 18:18:35:419 gamecard/(10552:10625): se escribio el bloque 7 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin  con el dato 5-5=1
+
+[INFO] 18:18:35:419 gamecard/(10552:10625): se guardo el dato 5-5=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/7.bin
+[INFO] 18:18:35:419 gamecard/(10552:10625): se agrego la posicion (5-5) con la cantidad (1)
+[INFO] 18:18:35:419 gamecard/(10552:10625): Tamaño del archivo del pokemon Squirtle: 6
+[INFO] 18:18:35:484 gamecard/(10552:10627): se abrio el archivo : Espeon
+[INFO] 18:18:35:484 gamecard/(10552:10627): se escribio el bloque 5 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Espeon/Metadata.bin  con el dato 7-1=1
+
+[INFO] 18:18:35:484 gamecard/(10552:10627): se guardo el dato 7-1=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/5.bin
+[INFO] 18:18:35:484 gamecard/(10552:10627): se agrego la posicion (7-1) con la cantidad (1)
+[INFO] 18:18:35:484 gamecard/(10552:10627): Tamaño del archivo del pokemon Espeon: 6
+[INFO] 18:18:35:520 gamecard/(10552:10629): se abrio el archivo : Vaporeon
+[INFO] 18:18:35:520 gamecard/(10552:10629): se escribio el bloque 6 perteneciente al metadata /home/utnso/Escritorio/tallgrass/Files/Vaporeon/Metadata.bin  con el dato 4-10=1
+
+[INFO] 18:18:35:520 gamecard/(10552:10629): se guardo el dato 4-10=1
+ en el path del bloque /home/utnso/Escritorio/tallgrass/Blocks/6.bin
+[INFO] 18:18:35:520 gamecard/(10552:10629): se agrego la posicion (4-10) con la cantidad (1)
+[INFO] 18:18:35:520 gamecard/(10552:10629): Tamaño del archivo del pokemon Vaporeon: 7
+[INFO] 18:18:36:331 gamecard/(10552:10618): se cerro el archivo : Onix
+[INFO] 18:18:36:420 gamecard/(10552:10625): se cerro el archivo : Squirtle
+[INFO] 18:18:36:489 gamecard/(10552:10627): se cerro el archivo : Espeon
+[INFO] 18:18:36:526 gamecard/(10552:10629): se cerro el archivo : Vaporeon
+[INFO] 18:18:46:447 gamecard/(10552:10648): se abrio el archivo : Onix
+[INFO] 18:18:46:447 gamecard/(10552:10648): Se disminuye en 1 la cantidad en la posicion 2-8,del (Pokemon : Onix)
+[INFO] 18:18:46:447 gamecard/(10552:10648): se limpio el bloque 3
+[INFO] 18:18:46:467 gamecard/(10552:10648): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Onix/Metadata.bin
+[INFO] 18:18:46:467 gamecard/(10552:10648): se cerro el archivo : Onix
+[INFO] 18:18:46:468 gamecard/(10552:10648): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Onix)
+[INFO] 18:18:56:489 gamecard/(10552:10659): se abrio el archivo : Squirtle
+[INFO] 18:18:56:489 gamecard/(10552:10659): Se disminuye en 1 la cantidad en la posicion 5-5,del (Pokemon : Squirtle)
+[INFO] 18:18:56:492 gamecard/(10552:10659): se limpio el bloque 7
+[INFO] 18:18:56:501 gamecard/(10552:10659): se resetean los bloques del metadata del pokemon : /home/utnso/Escritorio/tallgrass/Files/Squirtle/Metadata.bin
+[INFO] 18:18:56:501 gamecard/(10552:10659): se cerro el archivo : Squirtle
+[INFO] 18:18:56:501 gamecard/(10552:10659): Al no existir mas el pokemon, se borran su carpeta y su metadata (Pokemon : Squirtle)
+[INFO] 18:19:04:684 gamecard/(10552:10554): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:19:04:684 gamecard/(10552:10554): Intento de conexion con el broker exitosa.
+[INFO] 18:19:04:698 gamecard/(10552:10554): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:19:04:698 gamecard/(10552:10554): Intento de conexion con el broker exitosa.
+[INFO] 18:19:04:699 gamecard/(10552:10554): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 18:19:04:699 gamecard/(10552:10554): Intento de conexion con el broker exitosa.

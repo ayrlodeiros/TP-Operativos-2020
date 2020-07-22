@@ -20,49 +20,68 @@ void destruir_config(){
 	config_destroy(config);
 }
 
+void setear_tamano_minimo_particion(void){
+	//todo volver a setear los valores
+	TAMANO_MINIMO_PARTICION = 4;
+			//config_get_int_value(config, "TAMANO_MINIMO_PARTICION");
+}
 
 void setear_tamano_memoria(void){
-	TAMANO_MEMORIA = config_get_int_value(config,"TAMANO_MEMORIA");
-}
-void setear_tamano_minimo_particion(void){
-	TAMANO_MINIMO_PARTICION = config_get_int_value(config, "TAMANO_MINIMO_PARTICION");
+	TAMANO_MEMORIA = 64;
+			//config_get_int_value(config,"TAMANO_MEMORIA");
 }
 void setear_algoritmo_memoria(void){
-	char* algoritmo = config_get_string_value(config,"ALGORITMO_MEMORIA");
+	ALGORITMO_MEMORIA = 2;
+	/*
+	char* algoritmo =
+			config_get_string_value(config,"ALGORITMO_MEMORIA");
 	if(string_equals_ignore_case(algoritmo,"PARTICIONES")) ALGORITMO_MEMORIA = 1;
 	else if(string_equals_ignore_case(algoritmo,"BS")) ALGORITMO_MEMORIA = 2;
 		else
 		ALGORITMO_MEMORIA = 3;
+	*/
 }
 void setear_algoritmo_reemplazo(void){
+	ALGORITMO_REEMPLAZO = 2;
+			/*
 	char* algoritmo = config_get_string_value(config,"ALGORITMO_REEMPLAZO");
 		if(string_equals_ignore_case(algoritmo,"FIFO")) ALGORITMO_REEMPLAZO = 1;
 		else
 			ALGORITMO_REEMPLAZO = 2;
+*/
 }
 void setear_algoritmo_particion_libre(void){
+	ALGORITMO_PARTICION_LIBRE = 1;
+	/*
 	char* algoritmo = config_get_string_value(config,"ALGORITMO_PARTICION_LIBRE");
 			if(string_equals_ignore_case(algoritmo,"FF")) ALGORITMO_PARTICION_LIBRE = 1;
 			else
 				ALGORITMO_PARTICION_LIBRE = 2;
+				*/
 }
 void setear_ip_broker(void){
-	IP_BROKER = config_get_string_value(config,"IP_BROKER");
+	IP_BROKER = "127.0.0.1";
+			//config_get_string_value(config,"IP_BROKER");
 }
 void setear_puerto_broker(void){
-	PUERTO_BROKER = config_get_int_value(config,"PUERTO_BROKER");
+	PUERTO_BROKER = 6009;
+			//config_get_int_value(config,"PUERTO_BROKER");
 }
 void setear_frecuencia_compactacion(void){
-	FRECUENCIA_COMPACTACION = config_get_int_value(config,"FRECUENCIA_COMPACTACION");
+	FRECUENCIA_COMPACTACION = 1;
+			//config_get_int_value(config,"FRECUENCIA_COMPACTACION");
 }
 void setear_path_archivo_dump(void){
-	PATH_ARCHIVO_DUMP = config_get_string_value(config,"PATH_ARCHIVO_DUMP");
+	PATH_ARCHIVO_DUMP = "/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/dump_file.txt";
+			//config_get_string_value(config,"PATH_ARCHIVO_DUMP");
 }
 void setear_log_file(void){
-	LOG_FILE = config_get_string_value(config,"LOG_FILE");
+	LOG_FILE = "/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/log_broker.txt";
+			//config_get_string_value(config,"LOG_FILE");
 }
 void setear_nuestro_log_file(void){
-	NUESTRO_LOG_FILE = config_get_string_value(config,"NUESTRO_LOG_FILE");
+	NUESTRO_LOG_FILE ="/home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/mi_log_broker.txt";
+			//config_get_string_value(config,"NUESTRO_LOG_FILE");
 }
 
 int leer_tamano_memoria(void){

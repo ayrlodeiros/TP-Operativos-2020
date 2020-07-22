@@ -40,8 +40,8 @@ char* NUESTRO_LOG_FILE;
 void iniciar_config(void);
 void destruir_config(void);
 
-void setear_tamano_memoria(void);
 void setear_tamano_minimo_particion(void);
+void setear_tamano_memoria(void);
 void setear_algoritmo_memoria(void);
 void setear_algoritmo_reemplazo(void);
 void setear_algoritmo_particion_libre(void);

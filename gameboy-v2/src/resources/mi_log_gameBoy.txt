@@ -606,3 +606,455 @@
 [INFO] 03:20:51:405 gameBoy/(11818:11818): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 03:20:51:405 gameBoy/(11818:11818): TAMANIO DEL MENSAJE: 22 BYTES
 [INFO] 03:20:51:405 gameBoy/(11818:11818): -----------------Destruyendo archivo config-----------------
+[INFO] 16:49:23:253 gameBoy/(6515:6515): -----------------Leyendo archivo config-----------------
+[INFO] 16:49:23:259 gameBoy/(6515:6515): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:49:23:259 gameBoy/(6515:6515): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:49:23:259 gameBoy/(6515:6515): -----------------Destruyendo archivo config-----------------
+[INFO] 16:49:38:342 gameBoy/(6533:6533): -----------------Leyendo archivo config-----------------
+[INFO] 16:49:38:345 gameBoy/(6533:6533): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:49:38:345 gameBoy/(6533:6533): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 16:49:38:345 gameBoy/(6533:6533): -----------------Destruyendo archivo config-----------------
+[INFO] 16:49:56:59 gameBoy/(6570:6570): -----------------Leyendo archivo config-----------------
+[INFO] 16:49:56:60 gameBoy/(6570:6570): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:49:56:60 gameBoy/(6570:6570): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:49:56:60 gameBoy/(6570:6570): -----------------Destruyendo archivo config-----------------
+[INFO] 16:51:16:105 gameBoy/(6594:6594): -----------------Leyendo archivo config-----------------
+[INFO] 16:51:16:108 gameBoy/(6594:6594): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:51:16:108 gameBoy/(6594:6594): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:51:16:108 gameBoy/(6594:6594): -----------------Destruyendo archivo config-----------------
+[INFO] 16:54:32:367 gameBoy/(6681:6681): -----------------Leyendo archivo config-----------------
+[INFO] 16:54:32:375 gameBoy/(6681:6681): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:54:32:375 gameBoy/(6681:6681): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:54:32:375 gameBoy/(6681:6681): -----------------Destruyendo archivo config-----------------
+[INFO] 16:54:34:928 gameBoy/(6686:6686): -----------------Leyendo archivo config-----------------
+[INFO] 16:54:34:931 gameBoy/(6686:6686): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:54:34:931 gameBoy/(6686:6686): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 16:54:34:932 gameBoy/(6686:6686): -----------------Destruyendo archivo config-----------------
+[INFO] 16:54:41:307 gameBoy/(6700:6700): -----------------Leyendo archivo config-----------------
+[INFO] 16:54:41:308 gameBoy/(6700:6700): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:54:41:308 gameBoy/(6700:6700): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:54:41:308 gameBoy/(6700:6700): -----------------Destruyendo archivo config-----------------
+[INFO] 16:54:44:473 gameBoy/(6708:6708): -----------------Leyendo archivo config-----------------
+[INFO] 16:54:44:476 gameBoy/(6708:6708): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:54:44:476 gameBoy/(6708:6708): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:54:44:477 gameBoy/(6708:6708): -----------------Destruyendo archivo config-----------------
+[INFO] 16:56:18:291 gameBoy/(6801:6801): -----------------Leyendo archivo config-----------------
+[INFO] 16:56:18:292 gameBoy/(6801:6801): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:56:18:292 gameBoy/(6801:6801): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:56:18:292 gameBoy/(6801:6801): -----------------Destruyendo archivo config-----------------
+[INFO] 16:56:20:386 gameBoy/(6808:6808): -----------------Leyendo archivo config-----------------
+[INFO] 16:56:20:387 gameBoy/(6808:6808): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:56:20:387 gameBoy/(6808:6808): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 16:56:20:387 gameBoy/(6808:6808): -----------------Destruyendo archivo config-----------------
+[INFO] 16:56:22:731 gameBoy/(6815:6815): -----------------Leyendo archivo config-----------------
+[INFO] 16:56:22:733 gameBoy/(6815:6815): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:56:22:733 gameBoy/(6815:6815): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:56:22:733 gameBoy/(6815:6815): -----------------Destruyendo archivo config-----------------
+[INFO] 16:56:27:235 gameBoy/(6823:6823): -----------------Leyendo archivo config-----------------
+[INFO] 16:56:27:236 gameBoy/(6823:6823): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:56:27:237 gameBoy/(6823:6823): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:56:27:237 gameBoy/(6823:6823): -----------------Destruyendo archivo config-----------------
+[INFO] 16:58:07:387 gameBoy/(6930:6930): -----------------Leyendo archivo config-----------------
+[INFO] 16:58:07:389 gameBoy/(6930:6930): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:58:07:389 gameBoy/(6930:6930): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:58:07:389 gameBoy/(6930:6930): -----------------Destruyendo archivo config-----------------
+[INFO] 16:58:09:620 gameBoy/(6937:6937): -----------------Leyendo archivo config-----------------
+[INFO] 16:58:09:621 gameBoy/(6937:6937): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:58:09:621 gameBoy/(6937:6937): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 16:58:09:621 gameBoy/(6937:6937): -----------------Destruyendo archivo config-----------------
+[INFO] 16:58:12:43 gameBoy/(6944:6944): -----------------Leyendo archivo config-----------------
+[INFO] 16:58:12:44 gameBoy/(6944:6944): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:58:12:44 gameBoy/(6944:6944): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:58:12:44 gameBoy/(6944:6944): -----------------Destruyendo archivo config-----------------
+[INFO] 16:58:14:297 gameBoy/(6951:6951): -----------------Leyendo archivo config-----------------
+[INFO] 16:58:14:298 gameBoy/(6951:6951): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 16:58:14:298 gameBoy/(6951:6951): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 16:58:14:299 gameBoy/(6951:6951): -----------------Destruyendo archivo config-----------------
+[INFO] 17:21:22:924 gameBoy/(7778:7778): -----------------Leyendo archivo config-----------------
+[INFO] 17:21:22:926 gameBoy/(7778:7778): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:21:22:926 gameBoy/(7778:7778): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:21:22:927 gameBoy/(7778:7778): -----------------Destruyendo archivo config-----------------
+[INFO] 17:21:25:621 gameBoy/(7785:7785): -----------------Leyendo archivo config-----------------
+[INFO] 17:21:25:622 gameBoy/(7785:7785): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:21:25:623 gameBoy/(7785:7785): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:21:25:623 gameBoy/(7785:7785): -----------------Destruyendo archivo config-----------------
+[INFO] 17:21:27:843 gameBoy/(7792:7792): -----------------Leyendo archivo config-----------------
+[INFO] 17:21:27:845 gameBoy/(7792:7792): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:21:27:845 gameBoy/(7792:7792): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:21:27:845 gameBoy/(7792:7792): -----------------Destruyendo archivo config-----------------
+[INFO] 17:21:30:331 gameBoy/(7800:7800): -----------------Leyendo archivo config-----------------
+[INFO] 17:21:30:334 gameBoy/(7800:7800): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:21:30:335 gameBoy/(7800:7800): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:21:30:335 gameBoy/(7800:7800): -----------------Destruyendo archivo config-----------------
+[INFO] 17:27:19:331 gameBoy/(8006:8006): -----------------Leyendo archivo config-----------------
+[INFO] 17:27:19:334 gameBoy/(8006:8006): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:27:19:334 gameBoy/(8006:8006): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:27:19:334 gameBoy/(8006:8006): -----------------Destruyendo archivo config-----------------
+[INFO] 17:27:19:354 gameBoy/(8008:8008): -----------------Leyendo archivo config-----------------
+[INFO] 17:27:19:354 gameBoy/(8008:8008): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:27:19:354 gameBoy/(8008:8008): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:27:19:355 gameBoy/(8008:8008): -----------------Destruyendo archivo config-----------------
+[INFO] 17:27:19:370 gameBoy/(8009:8009): -----------------Leyendo archivo config-----------------
+[INFO] 17:27:19:390 gameBoy/(8009:8009): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:27:19:391 gameBoy/(8009:8009): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:27:19:391 gameBoy/(8009:8009): -----------------Destruyendo archivo config-----------------
+[INFO] 17:27:19:400 gameBoy/(8011:8011): -----------------Leyendo archivo config-----------------
+[INFO] 17:27:19:407 gameBoy/(8011:8011): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:27:19:408 gameBoy/(8011:8011): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:27:19:408 gameBoy/(8011:8011): -----------------Destruyendo archivo config-----------------
+[INFO] 17:28:08:514 gameBoy/(8068:8068): -----------------Leyendo archivo config-----------------
+[INFO] 17:28:08:519 gameBoy/(8068:8068): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:28:08:519 gameBoy/(8068:8068): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 17:28:08:519 gameBoy/(8068:8068): -----------------Destruyendo archivo config-----------------
+[INFO] 17:28:08:521 gameBoy/(8069:8069): -----------------Leyendo archivo config-----------------
+[INFO] 17:28:08:539 gameBoy/(8069:8069): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:28:08:539 gameBoy/(8069:8069): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:28:08:540 gameBoy/(8069:8069): -----------------Destruyendo archivo config-----------------
+[INFO] 17:28:08:553 gameBoy/(8072:8072): -----------------Leyendo archivo config-----------------
+[INFO] 17:28:08:554 gameBoy/(8072:8072): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:28:08:554 gameBoy/(8072:8072): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:28:08:555 gameBoy/(8072:8072): -----------------Destruyendo archivo config-----------------
+[INFO] 17:28:08:560 gameBoy/(8073:8073): -----------------Leyendo archivo config-----------------
+[INFO] 17:28:08:569 gameBoy/(8073:8073): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:28:08:570 gameBoy/(8073:8073): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:28:08:570 gameBoy/(8073:8073): -----------------Destruyendo archivo config-----------------
+[INFO] 17:28:08:580 gameBoy/(8075:8075): -----------------Leyendo archivo config-----------------
+[INFO] 17:28:08:588 gameBoy/(8075:8075): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:28:08:591 gameBoy/(8075:8075): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:28:08:598 gameBoy/(8075:8075): -----------------Destruyendo archivo config-----------------
+[INFO] 17:28:08:614 gameBoy/(8077:8077): -----------------Leyendo archivo config-----------------
+[INFO] 17:28:08:619 gameBoy/(8077:8077): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:28:08:619 gameBoy/(8077:8077): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:28:08:620 gameBoy/(8077:8077): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:26:107 gameBoy/(8644:8644): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:26:108 gameBoy/(8644:8644): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:26:111 gameBoy/(8644:8644): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:41:26:111 gameBoy/(8644:8644): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:26:115 gameBoy/(8646:8646): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:26:122 gameBoy/(8646:8646): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:26:122 gameBoy/(8646:8646): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:41:26:122 gameBoy/(8646:8646): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:26:133 gameBoy/(8648:8648): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:26:146 gameBoy/(8648:8648): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:26:149 gameBoy/(8648:8648): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:41:26:150 gameBoy/(8648:8648): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:26:155 gameBoy/(8649:8649): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:26:156 gameBoy/(8649:8649): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:26:156 gameBoy/(8649:8649): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:41:26:156 gameBoy/(8649:8649): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:41:369 gameBoy/(8674:8674): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:41:370 gameBoy/(8674:8674): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:41:373 gameBoy/(8674:8674): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 17:41:41:373 gameBoy/(8674:8674): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:41:379 gameBoy/(8676:8676): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:41:382 gameBoy/(8676:8676): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:41:383 gameBoy/(8676:8676): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:41:41:384 gameBoy/(8676:8676): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:41:396 gameBoy/(8678:8678): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:41:406 gameBoy/(8678:8678): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:41:406 gameBoy/(8678:8678): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:41:41:407 gameBoy/(8678:8678): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:41:413 gameBoy/(8680:8680): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:41:420 gameBoy/(8680:8680): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:41:420 gameBoy/(8680:8680): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:41:41:420 gameBoy/(8680:8680): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:41:438 gameBoy/(8681:8681): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:41:456 gameBoy/(8681:8681): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:41:463 gameBoy/(8681:8681): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:41:41:468 gameBoy/(8681:8681): -----------------Destruyendo archivo config-----------------
+[INFO] 17:41:41:495 gameBoy/(8686:8686): -----------------Leyendo archivo config-----------------
+[INFO] 17:41:41:503 gameBoy/(8686:8686): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:41:41:503 gameBoy/(8686:8686): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:41:41:503 gameBoy/(8686:8686): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:41:911 gameBoy/(8882:8882): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:41:912 gameBoy/(8882:8882): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:41:913 gameBoy/(8882:8882): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:44:41:913 gameBoy/(8882:8882): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:41:914 gameBoy/(8884:8884): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:41:923 gameBoy/(8884:8884): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:41:924 gameBoy/(8884:8884): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:44:41:924 gameBoy/(8884:8884): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:41:927 gameBoy/(8886:8886): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:41:947 gameBoy/(8886:8886): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:41:947 gameBoy/(8886:8886): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:44:41:947 gameBoy/(8886:8886): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:41:953 gameBoy/(8887:8887): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:41:956 gameBoy/(8887:8887): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:41:957 gameBoy/(8887:8887): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:44:41:957 gameBoy/(8887:8887): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:45:543 gameBoy/(8905:8905): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:45:545 gameBoy/(8905:8905): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:45:545 gameBoy/(8905:8905): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 17:44:45:547 gameBoy/(8905:8905): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:45:552 gameBoy/(8907:8907): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:45:554 gameBoy/(8907:8907): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:45:554 gameBoy/(8907:8907): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:44:45:555 gameBoy/(8907:8907): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:45:560 gameBoy/(8909:8909): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:45:571 gameBoy/(8909:8909): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:45:574 gameBoy/(8909:8909): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:44:45:575 gameBoy/(8909:8909): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:45:583 gameBoy/(8910:8910): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:45:592 gameBoy/(8910:8910): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:45:592 gameBoy/(8910:8910): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:44:45:592 gameBoy/(8910:8910): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:45:609 gameBoy/(8912:8912): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:45:646 gameBoy/(8912:8912): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:45:647 gameBoy/(8912:8912): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:44:45:647 gameBoy/(8912:8912): -----------------Destruyendo archivo config-----------------
+[INFO] 17:44:45:663 gameBoy/(8916:8916): -----------------Leyendo archivo config-----------------
+[INFO] 17:44:45:683 gameBoy/(8916:8916): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:44:45:684 gameBoy/(8916:8916): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:44:45:685 gameBoy/(8916:8916): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:21:592 gameBoy/(9156:9156): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:21:598 gameBoy/(9156:9156): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:21:598 gameBoy/(9156:9156): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:47:21:599 gameBoy/(9156:9156): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:21:617 gameBoy/(9158:9158): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:21:625 gameBoy/(9158:9158): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:21:632 gameBoy/(9158:9158): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:47:21:633 gameBoy/(9158:9158): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:21:639 gameBoy/(9160:9160): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:21:648 gameBoy/(9160:9160): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:21:651 gameBoy/(9160:9160): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:47:21:651 gameBoy/(9160:9160): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:21:673 gameBoy/(9161:9161): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:21:674 gameBoy/(9161:9161): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:21:679 gameBoy/(9161:9161): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:47:21:679 gameBoy/(9161:9161): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:25:691 gameBoy/(9179:9179): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:25:693 gameBoy/(9179:9179): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:25:693 gameBoy/(9179:9179): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 17:47:25:694 gameBoy/(9179:9179): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:25:700 gameBoy/(9181:9181): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:25:702 gameBoy/(9181:9181): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:25:702 gameBoy/(9181:9181): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:47:25:702 gameBoy/(9181:9181): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:25:711 gameBoy/(9183:9183): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:25:727 gameBoy/(9183:9183): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:25:728 gameBoy/(9183:9183): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:47:25:728 gameBoy/(9183:9183): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:25:735 gameBoy/(9185:9185): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:25:745 gameBoy/(9185:9185): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:25:745 gameBoy/(9185:9185): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 17:47:25:745 gameBoy/(9185:9185): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:25:761 gameBoy/(9186:9186): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:25:767 gameBoy/(9186:9186): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:25:768 gameBoy/(9186:9186): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 17:47:25:779 gameBoy/(9186:9186): -----------------Destruyendo archivo config-----------------
+[INFO] 17:47:25:785 gameBoy/(9191:9191): -----------------Leyendo archivo config-----------------
+[INFO] 17:47:25:810 gameBoy/(9191:9191): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 17:47:25:815 gameBoy/(9191:9191): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 17:47:25:816 gameBoy/(9191:9191): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:21:896 gameBoy/(9535:9535): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:21:899 gameBoy/(9535:9535): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:21:899 gameBoy/(9535:9535): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:04:21:899 gameBoy/(9535:9535): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:21:907 gameBoy/(9537:9537): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:21:923 gameBoy/(9537:9537): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:21:928 gameBoy/(9537:9537): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:04:21:928 gameBoy/(9537:9537): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:21:932 gameBoy/(9539:9539): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:21:933 gameBoy/(9539:9539): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:21:933 gameBoy/(9539:9539): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:04:21:934 gameBoy/(9539:9539): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:21:958 gameBoy/(9540:9540): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:21:984 gameBoy/(9540:9540): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:21:984 gameBoy/(9540:9540): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:04:21:984 gameBoy/(9540:9540): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:24:708 gameBoy/(9553:9553): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:24:711 gameBoy/(9553:9553): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:24:711 gameBoy/(9553:9553): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 18:04:24:711 gameBoy/(9553:9553): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:24:720 gameBoy/(9555:9555): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:24:721 gameBoy/(9555:9555): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:24:721 gameBoy/(9555:9555): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:04:24:721 gameBoy/(9555:9555): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:24:724 gameBoy/(9557:9557): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:24:737 gameBoy/(9557:9557): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:24:739 gameBoy/(9557:9557): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:04:24:739 gameBoy/(9557:9557): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:24:764 gameBoy/(9559:9559): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:24:765 gameBoy/(9559:9559): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:24:766 gameBoy/(9559:9559): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:04:24:767 gameBoy/(9559:9559): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:24:774 gameBoy/(9560:9560): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:24:795 gameBoy/(9560:9560): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:24:797 gameBoy/(9560:9560): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:04:24:797 gameBoy/(9560:9560): -----------------Destruyendo archivo config-----------------
+[INFO] 18:04:24:804 gameBoy/(9563:9563): -----------------Leyendo archivo config-----------------
+[INFO] 18:04:24:827 gameBoy/(9563:9563): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:04:24:828 gameBoy/(9563:9563): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:04:24:828 gameBoy/(9563:9563): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:35:608 gameBoy/(9930:9930): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:35:610 gameBoy/(9930:9930): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:35:610 gameBoy/(9930:9930): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:08:35:610 gameBoy/(9930:9930): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:35:615 gameBoy/(9932:9932): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:35:622 gameBoy/(9932:9932): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:35:623 gameBoy/(9932:9932): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:08:35:623 gameBoy/(9932:9932): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:35:637 gameBoy/(9933:9933): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:35:646 gameBoy/(9933:9933): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:35:649 gameBoy/(9933:9933): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:08:35:649 gameBoy/(9933:9933): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:35:659 gameBoy/(9935:9935): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:35:660 gameBoy/(9935:9935): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:35:661 gameBoy/(9935:9935): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:08:35:661 gameBoy/(9935:9935): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:38:383 gameBoy/(9952:9952): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:38:384 gameBoy/(9952:9952): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:38:385 gameBoy/(9952:9952): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 18:08:38:385 gameBoy/(9952:9952): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:38:392 gameBoy/(9954:9954): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:38:395 gameBoy/(9954:9954): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:38:395 gameBoy/(9954:9954): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:08:38:395 gameBoy/(9954:9954): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:38:412 gameBoy/(9955:9955): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:38:421 gameBoy/(9955:9955): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:38:421 gameBoy/(9955:9955): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:08:38:421 gameBoy/(9955:9955): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:38:430 gameBoy/(9957:9957): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:38:434 gameBoy/(9957:9957): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:38:434 gameBoy/(9957:9957): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:08:38:435 gameBoy/(9957:9957): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:38:464 gameBoy/(9962:9962): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:38:495 gameBoy/(9962:9962): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:38:503 gameBoy/(9962:9962): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:08:38:503 gameBoy/(9962:9962): -----------------Destruyendo archivo config-----------------
+[INFO] 18:08:38:518 gameBoy/(9964:9964): -----------------Leyendo archivo config-----------------
+[INFO] 18:08:38:521 gameBoy/(9964:9964): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:08:38:521 gameBoy/(9964:9964): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:08:38:521 gameBoy/(9964:9964): -----------------Destruyendo archivo config-----------------
+[INFO] 18:09:57:719 gameBoy/(10097:10097): -----------------Leyendo archivo config-----------------
+[ERROR] 18:09:57:720 gameBoy/(10097:10097): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:09:57:720 gameBoy/(10097:10097): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:09:57:725 gameBoy/(10098:10098): -----------------Leyendo archivo config-----------------
+[ERROR] 18:09:57:725 gameBoy/(10098:10098): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:09:57:726 gameBoy/(10098:10098): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:09:57:728 gameBoy/(10099:10099): -----------------Leyendo archivo config-----------------
+[ERROR] 18:09:57:730 gameBoy/(10099:10099): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:09:57:730 gameBoy/(10099:10099): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:09:57:733 gameBoy/(10100:10100): -----------------Leyendo archivo config-----------------
+[ERROR] 18:09:57:733 gameBoy/(10100:10100): El cliente fallo al conectarse en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:09:57:733 gameBoy/(10100:10100): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:11:20:327 gameBoy/(10179:10179): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:20:333 gameBoy/(10179:10179): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:20:334 gameBoy/(10179:10179): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:11:20:334 gameBoy/(10179:10179): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:20:342 gameBoy/(10181:10181): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:20:343 gameBoy/(10181:10181): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:20:343 gameBoy/(10181:10181): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:11:20:343 gameBoy/(10181:10181): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:20:355 gameBoy/(10183:10183): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:20:363 gameBoy/(10183:10183): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:20:363 gameBoy/(10183:10183): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:11:20:364 gameBoy/(10183:10183): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:20:367 gameBoy/(10184:10184): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:20:375 gameBoy/(10184:10184): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:20:375 gameBoy/(10184:10184): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:11:20:375 gameBoy/(10184:10184): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:24:390 gameBoy/(10196:10196): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:24:393 gameBoy/(10196:10196): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:24:393 gameBoy/(10196:10196): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 18:11:24:393 gameBoy/(10196:10196): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:24:396 gameBoy/(10198:10198): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:24:397 gameBoy/(10198:10198): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:24:397 gameBoy/(10198:10198): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:11:24:397 gameBoy/(10198:10198): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:24:412 gameBoy/(10199:10199): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:24:424 gameBoy/(10199:10199): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:24:430 gameBoy/(10199:10199): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:11:24:432 gameBoy/(10199:10199): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:24:439 gameBoy/(10201:10201): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:24:459 gameBoy/(10201:10201): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:24:460 gameBoy/(10201:10201): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:11:24:461 gameBoy/(10201:10201): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:24:480 gameBoy/(10206:10206): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:24:494 gameBoy/(10206:10206): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:24:494 gameBoy/(10206:10206): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:11:24:494 gameBoy/(10206:10206): -----------------Destruyendo archivo config-----------------
+[INFO] 18:11:24:513 gameBoy/(10207:10207): -----------------Leyendo archivo config-----------------
+[INFO] 18:11:24:515 gameBoy/(10207:10207): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:11:24:523 gameBoy/(10207:10207): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:11:24:524 gameBoy/(10207:10207): -----------------Destruyendo archivo config-----------------
+[INFO] 18:15:59:535 gameBoy/(10388:10388): -----------------Leyendo archivo config-----------------
+[INFO] 18:15:59:538 gameBoy/(10388:10388): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:15:59:539 gameBoy/(10388:10388): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:15:59:539 gameBoy/(10388:10388): -----------------Destruyendo archivo config-----------------
+[INFO] 18:15:59:547 gameBoy/(10390:10390): -----------------Leyendo archivo config-----------------
+[INFO] 18:15:59:548 gameBoy/(10390:10390): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:15:59:548 gameBoy/(10390:10390): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:15:59:548 gameBoy/(10390:10390): -----------------Destruyendo archivo config-----------------
+[INFO] 18:15:59:560 gameBoy/(10391:10391): -----------------Leyendo archivo config-----------------
+[INFO] 18:15:59:571 gameBoy/(10391:10391): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:15:59:572 gameBoy/(10391:10391): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:15:59:572 gameBoy/(10391:10391): -----------------Destruyendo archivo config-----------------
+[INFO] 18:15:59:578 gameBoy/(10393:10393): -----------------Leyendo archivo config-----------------
+[INFO] 18:15:59:580 gameBoy/(10393:10393): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:15:59:580 gameBoy/(10393:10393): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:15:59:580 gameBoy/(10393:10393): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:02:251 gameBoy/(10410:10410): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:02:252 gameBoy/(10410:10410): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:02:252 gameBoy/(10410:10410): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 18:16:02:253 gameBoy/(10410:10410): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:02:259 gameBoy/(10412:10412): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:02:262 gameBoy/(10412:10412): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:02:262 gameBoy/(10412:10412): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:16:02:262 gameBoy/(10412:10412): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:02:279 gameBoy/(10413:10413): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:02:293 gameBoy/(10413:10413): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:02:294 gameBoy/(10413:10413): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:16:02:294 gameBoy/(10413:10413): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:02:301 gameBoy/(10415:10415): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:02:325 gameBoy/(10415:10415): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:02:331 gameBoy/(10415:10415): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:16:02:331 gameBoy/(10415:10415): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:02:335 gameBoy/(10420:10420): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:02:347 gameBoy/(10420:10420): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:02:358 gameBoy/(10420:10420): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:16:02:359 gameBoy/(10420:10420): -----------------Destruyendo archivo config-----------------
+[INFO] 18:16:02:363 gameBoy/(10422:10422): -----------------Leyendo archivo config-----------------
+[INFO] 18:16:02:372 gameBoy/(10422:10422): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:16:02:379 gameBoy/(10422:10422): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:16:02:379 gameBoy/(10422:10422): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:31:125 gameBoy/(10594:10594): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:31:127 gameBoy/(10594:10594): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:31:128 gameBoy/(10594:10594): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:18:31:128 gameBoy/(10594:10594): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:31:132 gameBoy/(10596:10596): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:31:145 gameBoy/(10596:10596): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:31:145 gameBoy/(10596:10596): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:18:31:150 gameBoy/(10596:10596): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:31:160 gameBoy/(10598:10598): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:31:165 gameBoy/(10598:10598): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:31:165 gameBoy/(10598:10598): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:18:31:166 gameBoy/(10598:10598): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:31:178 gameBoy/(10599:10599): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:31:193 gameBoy/(10599:10599): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:31:194 gameBoy/(10599:10599): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:18:31:195 gameBoy/(10599:10599): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:35:245 gameBoy/(10611:10611): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:35:246 gameBoy/(10611:10611): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:35:247 gameBoy/(10611:10611): TAMANIO DEL MENSAJE: 20 BYTES
+[INFO] 18:18:35:247 gameBoy/(10611:10611): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:35:251 gameBoy/(10613:10613): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:35:263 gameBoy/(10613:10613): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:35:263 gameBoy/(10613:10613): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:18:35:263 gameBoy/(10613:10613): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:35:272 gameBoy/(10614:10614): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:35:284 gameBoy/(10614:10614): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:35:284 gameBoy/(10614:10614): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:18:35:284 gameBoy/(10614:10614): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:35:307 gameBoy/(10616:10616): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:35:312 gameBoy/(10616:10616): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:35:313 gameBoy/(10616:10616): TAMANIO DEL MENSAJE: 23 BYTES
+[INFO] 18:18:35:314 gameBoy/(10616:10616): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:35:356 gameBoy/(10621:10621): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:35:362 gameBoy/(10621:10621): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:35:362 gameBoy/(10621:10621): TAMANIO DEL MENSAJE: 22 BYTES
+[INFO] 18:18:35:362 gameBoy/(10621:10621): -----------------Destruyendo archivo config-----------------
+[INFO] 18:18:35:380 gameBoy/(10622:10622): -----------------Leyendo archivo config-----------------
+[INFO] 18:18:35:384 gameBoy/(10622:10622): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 18:18:35:384 gameBoy/(10622:10622): TAMANIO DEL MENSAJE: 24 BYTES
+[INFO] 18:18:35:384 gameBoy/(10622:10622): -----------------Destruyendo archivo config-----------------

@@ -94,3 +94,13 @@
 [INFO] 01:16:55:105 gameBoy/(3874:3874): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
 [INFO] 01:18:19:665 gameBoy/(4053:4053): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 01:18:19:665 gameBoy/(4053:4053): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
+[INFO] 23:40:05:172 gameBoy/(5039:5039): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:40:05:172 gameBoy/(5039:5039): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521966
+[INFO] 23:40:38:773 gameBoy/(5081:5081): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:40:38:774 gameBoy/(5081:5081): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521966
+[INFO] 23:41:47:306 gameBoy/(5237:5237): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:41:47:306 gameBoy/(5237:5237): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521966
+[INFO] 23:41:52:946 gameBoy/(5240:5240): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:41:52:947 gameBoy/(5240:5240): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521966
+[INFO] 23:41:57:148 gameBoy/(5249:5249): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:41:57:151 gameBoy/(5249:5249): Se envio el mensaje NEW: 127.0.0.1 y PUERTO: 134521966

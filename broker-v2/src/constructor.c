@@ -7,9 +7,9 @@ void iniciar_funcionalidades() {
 	iniciar_contador_ids_mensaje();
 	iniciar_list_global();
 	iniciar_signal_handler();
-	iniciar_sigint_handler();
+//	iniciar_sigint_handler();
 }
-
+/*
 void int_handler(int signal){
 	terminar_broker();
 }
@@ -18,7 +18,7 @@ void iniciar_sigint_handler(void){
 	signal(SIGINT, int_handler);
 
 }
-
+*/
 void iniciar_signal_handler() {
 	if(signal(SIGUSR1, signal_handler) == SIG_ERR) {
 		log_info(mi_log, "No se pudo recibir la SIGURS1");
@@ -432,7 +432,7 @@ int asignar_id_univoco(){
 }
 
 suscriptor_t* crear_suscriptor(int conexion_suscriptor,int id_modulo){
-	suscriptor_t* suscriptor = malloc(sizeof(suscriptor));
+	suscriptor_t* suscriptor = malloc(sizeof(suscriptor_t));
 	suscriptor->identificador = id_modulo;
 	suscriptor->conexion = conexion_suscriptor;
 	return suscriptor;
@@ -554,7 +554,7 @@ bool noEstaOcupado(void* elemento){
 }
 
 void borrarParticion(void* elemento){
-	log_debug(mi_log,"Se ha eliminado una particion de memoria, su posicion de inicio era %d.",((t_particion_dinamica*) elemento)->inicio);
+	//log_debug(mi_log,"Se ha eliminado una particion de memoria, su posicion de inicio era %d.",((t_particion_dinamica*) elemento)->inicio);
 	free((t_particion_dinamica*) elemento);
 }
 
@@ -645,18 +645,18 @@ void compactacion(){
 		llenar_memoria_principal(particion->inicio,particion->tamanio_ocupado,aux->memoria);
 
 		free(aux->memoria);
-		free(aux);
+		//free(aux);
 
 	}
 	pthread_mutex_unlock(&mutex_lista_msjs);
 	//Creo la particion libre y la agrego al final de la memoria
-	list_destroy(lista_temporal);
+	list_destroy_and_destroy_elements(lista_temporal,free);
 	t_particion_dinamica* particion_libre = crear_particion_dinamica_libre();
 	particion_libre->inicio = prox_posicion;
 	particion_libre->fin = leer_tamano_memoria() - 1;
 	list_add(lista_particiones,particion_libre);
-	log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->inicio);
-	log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->fin);
+	//log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->inicio);
+	//log_debug(mi_log,"La particion libre que quedo arranca en la posicion %d",particion_libre->fin);
 
 	}
 
@@ -756,24 +756,17 @@ void consolidar(int pos_particion){
 	int pos = pos_particion;
 
 	if(particion_libre_a_la_izquierda(pos_particion,liberada->inicio)){
-		log_debug(mi_log,"Entra izquierda ");
+
 		t_particion_dinamica* izquierda = list_get(lista_particiones,pos_particion-1);
-		log_debug(mi_log,"La particion de la izquierda arranca en %d",izquierda->inicio);
-		log_debug(mi_log,"La particion de la izquierda termina en %d",izquierda->fin);
 		izquierda->fin = liberada->fin;
 		aux = izquierda;
 		list_remove_and_destroy_element(lista_particiones,pos,borrarParticion);
 		pos = pos_particion -1;
-		log_debug(mi_log,"La particion auxiliar arranca en %d",aux->inicio);
-		log_debug(mi_log,"La particion auxiliar termina en %d",aux->fin);
+
 	}
 	if (particion_libre_a_la_derecha(pos,aux->fin)){
-		log_debug(mi_log,"Entra a la derecha");
+
 		t_particion_dinamica* derecha = list_get(lista_particiones,pos+1);
-		log_debug(mi_log,"La particion aux arranca en %d",aux->inicio);
-		log_debug(mi_log,"La particion aux termina en %d",aux->fin);
-		log_debug(mi_log,"La particion de la izquierda arranca en %d",derecha->inicio);
-		log_debug(mi_log,"La particion de la izquierda termina en %d",derecha->fin);
 		aux->fin = derecha->fin;
 		list_remove_and_destroy_element(lista_particiones,pos+1,borrarParticion);
 	}

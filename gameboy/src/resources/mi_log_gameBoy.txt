@@ -182,3 +182,18 @@
 [INFO] 01:18:19:665 gameBoy/(4053:4053): El cliente se conecto exitosamente en IP: 127.0.0.1 y PUERTO: 6009
 [INFO] 01:18:19:665 gameBoy/(4053:4053): Se envio el mensaje APPEARED: 127.0.0.1 y PUERTO: 6009
 [INFO] 01:18:19:666 gameBoy/(4053:4053): -----------------Destruyendo archivo config-----------------
+[INFO] 23:40:05:171 gameBoy/(5039:5039): -----------------Leyendo archivo config-----------------
+[INFO] 23:40:05:172 gameBoy/(5039:5039): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:40:05:172 gameBoy/(5039:5039): -----------------Destruyendo archivo config-----------------
+[INFO] 23:40:38:767 gameBoy/(5081:5081): -----------------Leyendo archivo config-----------------
+[INFO] 23:40:38:773 gameBoy/(5081:5081): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:40:38:774 gameBoy/(5081:5081): -----------------Destruyendo archivo config-----------------
+[INFO] 23:41:47:300 gameBoy/(5237:5237): -----------------Leyendo archivo config-----------------
+[INFO] 23:41:47:306 gameBoy/(5237:5237): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:41:47:306 gameBoy/(5237:5237): -----------------Destruyendo archivo config-----------------
+[INFO] 23:41:52:944 gameBoy/(5240:5240): -----------------Leyendo archivo config-----------------
+[INFO] 23:41:52:947 gameBoy/(5240:5240): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:41:52:947 gameBoy/(5240:5240): -----------------Destruyendo archivo config-----------------
+[INFO] 23:41:57:140 gameBoy/(5249:5249): -----------------Leyendo archivo config-----------------
+[INFO] 23:41:57:148 gameBoy/(5249:5249): El cliente se conecto exitosamente en IP: 127.0.0.3 y PUERTO: 5001
+[INFO] 23:41:57:151 gameBoy/(5249:5249): -----------------Destruyendo archivo config-----------------
