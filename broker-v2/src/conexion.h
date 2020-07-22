@@ -11,7 +11,6 @@
 
 #include"protocolo.h"
 
-
 /* liberar_conexion:
  * Recibe un socket al que finalizaremos
  * */

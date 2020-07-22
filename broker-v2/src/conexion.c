@@ -43,11 +43,14 @@ void levantar_servidor(char* ip, int port) {
 	for (p=servinfo; p != NULL; p = p->ai_next) {
 		if ((socket_servidor = socket(p->ai_family, p->ai_socktype, p->ai_protocol)) == -1)
 			continue;
+		if (setsockopt(socket_servidor, SOL_SOCKET, SO_REUSEADDR, &(int){1}, sizeof(int)) < 0)
+		    log_info(mi_log,"setsockopt(SO_REUSEADDR) failed");
 
-	    if (bind(socket_servidor, p->ai_addr, p->ai_addrlen) == -1) {
-	        close(socket_servidor);
+		if (bind(socket_servidor, p->ai_addr, p->ai_addrlen) == -1) {
+	    	close(socket_servidor);
 	        socket_servidor = -1;
 	        continue;
+
 	    }
 	    break;
 	}

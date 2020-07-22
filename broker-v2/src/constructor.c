@@ -167,7 +167,6 @@ void esperar_mensaje_en_cola(t_mq* mq) {
 
 			enviar_mensaje_suscriptores(mq);
 		}
-		log_info(mi_log,"**************SE SALIO DEL IF EN ESPERAR MENSAJE*********************");
 		pthread_mutex_unlock(&mutex_memoria_principal);
 	}
 }
@@ -230,7 +229,7 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 void recibir_ACK(aux_msj_susc* msj_y_susc){
 
 	int valor;
-	log_info(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->susc_id);
+	log_debug(mi_log, "Estoy esperando acknowledgement del suscriptor %d.",msj_y_susc->susc_id);
 	if (recv(msj_y_susc->susc_conexion, &valor, sizeof(int), MSG_WAITALL) < 0){
 
 		log_info(mi_log,"No se recibio la confirmacion de envio del mensaje");
@@ -263,24 +262,23 @@ void add_sub_lista_env_msj(t_mensaje* mensaje,suscriptor_t* suscriptor){
 }
 
 void enviar_mensaje_suscriptores(t_mq* cola){
-	log_info(mi_log, "ANTES DE HACER EL list_remove");
+
 	t_mensaje* mensaje = list_remove(cola->cola,0);
 	suscriptor_t* suscriptor;
 	int i;
-	log_info(mi_log, "ANTES DE actualizar_ultima_vez_usado_particion");
 	actualizar_ultima_vez_usado_particion(mensaje);
 
-	log_info(mi_log, "ANTES DEL for");
+	log_debug(mi_log, "ANTES DEL for");
 	for(i=0;i<list_size(cola->suscriptores);i++){
 		suscriptor = list_get(cola->suscriptores,i);
 		if(!msj_enviado_a_suscriptor(suscriptor->identificador,mensaje->suscriptores_conf)){
 
-		log_info(mi_log,"VOY A ENVIAR MENSAJE %d A SUSCRIPTOR %d",mensaje->id,suscriptor->identificador);
+		log_debug(mi_log,"VOY A ENVIAR MENSAJE %d A SUSCRIPTOR %d",mensaje->id,suscriptor->identificador);
 			enviar_mensaje(mensaje,suscriptor);
 			log_info(mi_log,"SE ENVIO EL MENSAJE %d A SUSCRIPTOR %d",mensaje->id,suscriptor->identificador);
 		}
 	}
-	log_info(mi_log,"SE SALIO DEL FOR, SE ENVIO EL MENSAJE A TODOS LOS SUSCRIPTORES");
+
 }
 
 bool msj_enviado_a_suscriptor(int id_suscriptor,t_list* suscriptores_conf){
@@ -601,10 +599,10 @@ void actualizar_confirmados_mensaje(int id_mensaje,int id_suscriptor){
 
 	if(mensaje != NULL){
 		list_add(mensaje->suscriptores_conf,id_suscriptor);
-		log_info(mi_log,"Se agrego el suscriptor %d a la lista de confirmados del mensaje %d",id_suscriptor,mensaje->id);
+		log_debug(mi_log,"Se agrego el suscriptor %d a la lista de confirmados del mensaje %d",id_suscriptor,mensaje->id);
 	}
 	else
-		log_info(mi_log,"El mensaje %d que se recibio el ACK ya fue eliminado de la memoria. ",id_mensaje);
+		log_debug(mi_log,"El mensaje %d que se recibio el ACK ya fue eliminado de la memoria. ",id_mensaje);
 }
 
 void actualizar_estructura_mensaje(int pos_vieja,int pos_nueva){
@@ -701,7 +699,7 @@ void liberar_particion(){
 	}
 	log_debug(mi_log,"Se ha liberado la memoria en la particion %d",ubicacion_particion);
 	consolidar(ubicacion_particion);
-	log_info(mi_log,"Se termino de consolidar");
+	log_info(mi_log,"SE TERMINO LA CONSOLIDACION");
 }
 
 /* si hay tiempo, estas dos funciones son casi identicas, podrian abstraerse quedar mejor */
