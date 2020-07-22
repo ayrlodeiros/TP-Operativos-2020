@@ -13,28 +13,13 @@ fi
 
 cd
 
-git clone https://github.com/sisoputnfrba/so-commons-library.git 
+git clone https://github.com/sisoputnfrba/so-commons-library.git
 cd so-commons-library/
 sudo make install
 
 cd
 
 #FIN DE COMMONS
-
-#COPIO CARPETA TP
-
-if test -d /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/; then
-	sudo rm -r /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
-fi
-
-mkdir Documentos
-
-cd tp-2020-1c-C-aprueba
-git checkout develop
-cd ..
-cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
-
-#FIN DE COPIAR CARPETA
 
 #STRESS
 
@@ -52,7 +37,23 @@ mkdir Metadata
 cd Metadata/
 echo -e "BLOCK_SIZE=64\nBLOCKS=1024\nMAGIC_NUMBER=TALL_GRASS" >> Metadata.bin
 
+cd
 #FIN STRESS
+
+#COPIO CARPETA TP
+
+if test -d /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/; then
+	sudo rm -r /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
+fi
+
+mkdir Documentos
+
+cd tp-2020-1c-C-aprueba
+git checkout develop
+cd ..
+cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
+
+#FIN DE COPIAR CARPETA
 
 cd
 cd Documentos/tp-2020-1c-C-aprueba-stress
@@ -64,8 +65,8 @@ cd Documentos/tp-2020-1c-C-aprueba-stress
 
 cd /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/
 
-cp -r gameboy/ gameboy-team-1-stress
-cp -r gameboy/ gameboy-team-2-stress
+cp -r gameboy-v2/ gameboy-team-1-stress
+cp -r gameboy-v2/ gameboy-team-2-stress
 
 #CONFIGURO GAMEBOYS
 

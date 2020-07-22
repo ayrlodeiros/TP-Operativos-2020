@@ -13,7 +13,7 @@ fi
 
 cd
 
-git clone https://github.com/sisoputnfrba/so-commons-library.git 
+git clone https://github.com/sisoputnfrba/so-commons-library.git
 cd so-commons-library/
 sudo make install
 
@@ -61,7 +61,7 @@ cd Documentos/tp-2020-1c-C-aprueba
 
 #INICIO DE GAMEBOY
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/
 
 if test -e gameBoy.config; then
 	rm gameBoy.config
@@ -74,8 +74,8 @@ PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
 ID_MODULO=0\n
-LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/log_gameBoy.txt\n
-MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
+LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/log_gameBoy.txt\n
+MI_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gameboy-v2/src/resources/mi_log_gameBoy.txt" >> gameBoy.config
 
 cd ../../Debug
 make clean
@@ -397,14 +397,5 @@ make clean
 make all
 
 #FIN DE BROKER
-
-cd
-
-# -------------
-#Deploy de los sistemas
-
-if test ! -d /home/utnso/Documentos; then
-    mkdir /home/utnso/Documentos
-fi
 
 cd
