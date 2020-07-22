@@ -15,7 +15,7 @@ cd
 
 git clone https://github.com/sisoputnfrba/so-commons-library.git 
 cd so-commons-library/
-make install
+sudo make install
 
 cd
 
@@ -29,6 +29,9 @@ fi
 
 mkdir Documentos
 
+cd tp-2020-1c-C-aprueba
+git checkout develop
+cd ..
 cp -r tp-2020-1c-C-aprueba/ /home/utnso/Documentos/tp-2020-1c-C-aprueba-stress
 
 #FIN DE COPIAR CARPETA
