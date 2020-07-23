@@ -277,7 +277,7 @@ make all
 
 #Configuro broker consolidacion Particiones dinamicas -LRU
 
-cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2/src/resources/
+cd /home/utnso/Documentos/tp-2020-1c-C-aprueba/broker-v2-CONSOLIDACION-LRU/src/resources/
 
 if test -e broker.config; then
 	rm broker.config
