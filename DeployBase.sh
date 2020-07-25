@@ -68,8 +68,8 @@ if test -e gameBoy.config; then
 fi
 #REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
 echo -e "IP_BROKER=127.0.0.1\n
-IP_TEAM=127.0.0.2\n
-IP_GAMECARD=127.0.0.3\n
+IP_TEAM=127.0.0.1\n
+IP_GAMECARD=127.0.0.1\n
 PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
@@ -97,7 +97,7 @@ PUNTO_MONTAJE_TALLGRASS=/home/utnso/tallgrass-base\n
 IP_BROKER=127.0.0.1\n
 PUERTO_BROKER=4444\n
 ID_MODULO=20\n
-IP_GAMECARD=127.0.0.3\n
+IP_GAMECARD=127.0.0.1\n
 PUERTO_GAMECARD=5001\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/log_gamecard_base.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/gamecard-v2/src/resources/nuestro_log_gamecard_base.txt" >> gamecard.config
@@ -140,7 +140,7 @@ PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/log_team_FIFO.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2/src/resources/nuestro_log_team_FIFO.txt
 ID_MODULO=10\n
-IP_TEAM=127.0.0.2\n
+IP_TEAM=127.0.0.1\n
 PUERTO_TEAM=5002" >> team.config
 
 cd ../../Debug
@@ -169,7 +169,7 @@ PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR/src/resources/log_team_RR.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-RR/src/resources/nuestro_log_team_RR.txt\n
 ID_MODULO=11\n
-IP_TEAM=127.0.0.2\n
+IP_TEAM=127.0.0.1\n
 PUERTO_TEAM=5002" >> team.config
 
 cd ../../Debug
@@ -198,7 +198,7 @@ PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD/src/resources/log_team_SJF-SD.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-SD/src/resources/nuestro_log_team_SJF-SD.txt\n
 ID_MODULO=12\n
-IP_TEAM=127.0.0.2\n
+IP_TEAM=127.0.0.1\n
 PUERTO_TEAM=5002" >> team.config
 
 cd ../../Debug
@@ -227,7 +227,7 @@ PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/log_team_SJF-CD.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba/team-v2-SJF-CD/src/resources/nuestro_log_team_SJF-CD.txt\n
 ID_MODULO=13\n
-IP_TEAM=127.0.0.2\n
+IP_TEAM=127.0.0.1\n
 PUERTO_TEAM=5002" >> team.config
 
 cd ../../Debug
