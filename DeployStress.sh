@@ -76,9 +76,9 @@ if test -e gameBoy.config; then
 	rm gameBoy.config
 fi
 #REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
-echo -e "IP_BROKER=127.0.0.1\n
-IP_TEAM=127.0.0.1\n
-IP_GAMECARD=127.0.0.1\n
+echo -e "IP_BROKER=10.108.32.2\n
+IP_TEAM=10.108.32.3\n
+IP_GAMECARD=10.108.32.2\n
 PUERTO_BROKER=4444\n
 PUERTO_TEAM=5002\n
 PUERTO_GAMECARD=5001\n
@@ -96,9 +96,9 @@ if test -e gameBoy.config; then
 	rm gameBoy.config
 fi
 #REVISAR -> No encuentro los parametros del gamecard(config en el archivo)
-echo -e "IP_BROKER=127.0.0.1\n
-IP_TEAM=127.0.0.1\n
-IP_GAMECARD=127.0.0.1\n
+echo -e "IP_BROKER=10.108.32.2\n
+IP_TEAM=10.108.32.4\n
+IP_GAMECARD=10.108.32.2\n
 PUERTO_BROKER=4444\n
 PUERTO_TEAM=5003\n
 PUERTO_GAMECARD=5001\n
@@ -125,10 +125,10 @@ echo -e "TIEMPO_DE_REINTENTO_CONEXION=10\n
 TIEMPO_DE_REINTENTO_OPERACION=5\n
 TIEMPO_RETARDO_OPERACION=1\n
 PUNTO_MONTAJE_TALLGRASS=/home/utnso/tallgrass-stress\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 ID_MODULO=25\n
-IP_GAMECARD=127.0.0.1\n
+IP_GAMECARD=10.108.32.2\n
 PUERTO_GAMECARD=5001\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/log_gamecard_stress.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/gamecard-v2/src/resources/nuestro_log_gamecard_stress.txt" >> gamecard.config
@@ -165,7 +165,7 @@ TAMANO_MINIMO_PARTICION=4\n
 ALGORITMO_MEMORIA=PARTICIONES\n
 ALGORITMO_REEMPLAZO=FIFO\n
 ALGORITMO_PARTICION_LIBRE=FF\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=10\n
 PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-Particiones-dinamicas-stress/src/resources/dump_file.txt\n
@@ -190,7 +190,7 @@ TAMANO_MINIMO_PARTICION=4\n
 ALGORITMO_MEMORIA=BS\n
 ALGORITMO_REEMPLAZO=FIFO\n
 ALGORITMO_PARTICION_LIBRE=FF\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 FRECUENCIA_COMPACTACION=1\n
 PATH_ARCHIVO_DUMP=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/broker-v2-BUDDY-SYSTEM-stress/src/resources/dump_file.txt\n
@@ -234,12 +234,12 @@ ALGORITMO_PLANIFICACION=FIFO\n
 QUANTUM=0\n
 ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-FIFO-stress/src/resources/log_team_FIFO.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-FIFO-stress/src/resources/nuestro_log_team_FIFO.txt\n
 ID_MODULO=15\n
-IP_TEAM=127.0.0.1\n
+IP_TEAM=10.108.32.3\n
 PUERTO_TEAM=5002" >> team.config
 
 cd ../../Debug
@@ -263,12 +263,12 @@ ALGORITMO_PLANIFICACION=RR\n
 QUANTUM=1\n
 ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-stress/src/resources/log_team_RR.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-RR-stress/src/resources/nuestro_log_team_RR.txt\n
 ID_MODULO=16\n
-IP_TEAM=127.0.0.1\n
+IP_TEAM=10.108.32.4\n
 PUERTO_TEAM=5003" >> team.config
 
 cd ../../Debug
@@ -292,12 +292,12 @@ ALGORITMO_PLANIFICACION=SJF-SD\n
 QUANTUM=0\n
 ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-SD-stress/src/resources/log_team_SJF-SD.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-SD-stress/src/resources/nuestro_log_team_SJF-SD.txt\n
 ID_MODULO=17\n
-IP_TEAM=127.0.0.1\n
+IP_TEAM=10.108.32.3\n
 PUERTO_TEAM=5002" >> team.config
 
 cd ../../Debug
@@ -321,12 +321,12 @@ ALGORITMO_PLANIFICACION=SJF-CD\n
 QUANTUM=1\n
 ALPHA=0.5\n
 ESTIMACION_INICIAL=5\n
-IP_BROKER=127.0.0.1\n
+IP_BROKER=10.108.32.2\n
 PUERTO_BROKER=4444\n
 LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-CD-stress/src/resources/log_team_SJF-CD.txt\n
 NUESTRO_LOG_FILE=/home/utnso/Documentos/tp-2020-1c-C-aprueba-stress/team-v2-SJF-CD-stress/src/resources/nuestro_log_team_SJF-CD.txt\n
 ID_MODULO=18\n
-IP_TEAM=127.0.0.1\n
+IP_TEAM=10.108.32.4\n
 PUERTO_TEAM=5003" >> team.config
 
 cd ../../Debug
