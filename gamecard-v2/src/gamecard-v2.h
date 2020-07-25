@@ -3,7 +3,6 @@
 
 #include "conexiones.h"
 
-void while_infinito();
 void iniciar_gamecard();
 void terminar_gamecard();
 

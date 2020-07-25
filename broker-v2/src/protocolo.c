@@ -47,13 +47,10 @@ void recibir_y_guardar_mensaje(int socket_cliente,t_mq* queue){
 			agregar_msj_cola(queue,mensaje);
 		}
 
-		log_debug(mi_log,"********Voy a mandar el id de msj: %d al socket %d *******",mensaje->id,socket_cliente);
-
 		int id_mensaje = mensaje->id;
 		pthread_mutex_unlock(&mutex_memoria_principal);
 
 		enviar_id_msj_cliente(socket_cliente,id_mensaje);
-		log_info(mi_log,"*********PUEDE QUE EL ERROR ESTE DESPUES DE ENVIAR ID*********");
 }
 
 

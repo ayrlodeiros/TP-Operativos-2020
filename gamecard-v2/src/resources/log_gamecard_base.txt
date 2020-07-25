@@ -3947,3 +3947,50 @@
 [INFO] 18:19:04:698 gamecard/(10552:10554): Intento de conexion con el broker exitosa.
 [INFO] 18:19:04:699 gamecard/(10552:10554): Inicio de proceso de intento de comunicación con el Broker.
 [INFO] 18:19:04:699 gamecard/(10552:10554): Intento de conexion con el broker exitosa.
+[INFO] 14:23:57:130 gamecard/(11200:11200): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 14:23:57:130 gamecard/(11200:11200): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 14:24:04:247 gamecard/(11239:11239): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 14:24:04:248 gamecard/(11239:11239): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 14:24:18:167 gamecard/(11305:11305): se creo el punto de montaje correctamente en el path /home/utnso/Escritorio/tallgrass 
+[INFO] 14:24:18:167 gamecard/(11305:11305): Se creo el archivo metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Metadata/Metadata.bin 
+[INFO] 14:24:18:167 gamecard/(11305:11305): Se creo el archivo files metadata correctamente en el path /home/utnso/Escritorio/tallgrass/Files/Metadata.bin 
+[INFO] 14:24:18:274 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:24:18:274 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:24:28:274 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:24:28:274 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:24:38:275 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:24:38:275 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:24:48:276 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:24:48:277 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:24:58:277 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:24:58:277 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:25:08:278 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:25:08:279 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:25:18:280 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:25:18:281 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:25:28:281 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:25:28:282 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:25:38:282 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:25:38:282 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:25:48:284 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:25:48:284 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:25:58:285 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:25:58:285 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:26:08:286 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:26:08:286 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:26:18:286 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:26:18:287 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:26:28:287 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:26:28:288 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:26:38:289 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:26:38:289 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:26:48:289 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:26:48:289 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:26:58:291 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:26:58:292 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:27:08:292 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:27:08:292 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:27:18:293 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:27:18:293 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.
+[INFO] 14:27:28:293 gamecard/(11305:11307): Inicio de proceso de intento de comunicación con el Broker.
+[INFO] 14:27:28:293 gamecard/(11305:11307): Intento de conexion con el broker fallida. Se volvera a intentar.

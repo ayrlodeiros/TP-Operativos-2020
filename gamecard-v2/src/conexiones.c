@@ -17,7 +17,7 @@ void levantar_conexiones() {
 
 	pthread_t* hilo_broker;
 	pthread_create(&hilo_broker,NULL, levantar_conexiones_al_broker, NULL);
-	pthread_detach(hilo_broker);
+	pthread_join(hilo_broker, NULL);
 }
 
 t_paquete* crear_paquete(codigo_operacion cod_op, codigo_accion cod_acc, int id_mensaje, t_buffer* buffer) {

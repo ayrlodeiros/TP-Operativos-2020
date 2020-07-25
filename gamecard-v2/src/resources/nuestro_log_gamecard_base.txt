@@ -6116,3 +6116,27 @@
 [INFO] 18:19:04:702 gamecard/(10552:10677): No se pudo realizar la suscripcion, el broker no funciona
 [INFO] 18:19:04:702 gamecard/(10552:10675): No se pudo realizar la suscripcion, el broker no funciona
 [INFO] 18:19:04:702 gamecard/(10552:10676): No se pudo realizar la suscripcion, el broker no funciona
+[INFO] 14:24:18:273 gamecard/(11305:11305): TERMINE DE CREAR BITMAP
+[INFO] 14:24:18:273 gamecard/(11305:11307): El broker no esta conectado...
+[INFO] 14:24:18:273 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:24:18:274 gamecard/(11305:11306): Servidor levantado en IP: 127.0.0.1 y PUERTO: 5001
+[INFO] 14:24:18:274 gamecard/(11305:11306): Listo para recibir conexion de GAMEBOY, 
+[INFO] 14:24:28:274 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:24:38:275 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:24:48:276 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:24:58:277 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:25:08:278 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:25:18:280 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:25:28:281 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:25:38:282 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:25:48:283 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:25:58:284 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:26:08:285 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:26:18:286 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:26:28:287 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:26:38:288 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:26:48:289 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:26:58:291 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:27:08:292 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:27:18:292 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009
+[INFO] 14:27:28:293 gamecard/(11305:11307): Intentando conectar con broker en IP: 127.0.0.1 y PUERTO: 6009

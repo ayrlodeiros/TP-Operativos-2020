@@ -193,20 +193,12 @@ int main(void)
 
 
 
-	//TODO BORRAR
-	pthread_t* hilo_infinito;
-	pthread_create(&hilo_infinito,NULL, while_infinito, NULL);
-	pthread_join(hilo_infinito, NULL);
-
 	log_info(nuestro_log,"Termine");
 	//log_info(nuestro_log,config_get_string_value(config,"miele"));
 	terminar_gamecard();
 	return EXIT_SUCCESS;
 }
 
-void while_infinito() {
-	while(1);
-}
 void iniciar_gamecard() {
 	iniciar_config();
 	logger = log_create(leer_path_logger(), "gamecard", false, LOG_LEVEL_INFO);
