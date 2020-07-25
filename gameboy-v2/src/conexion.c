@@ -111,8 +111,8 @@ void enviar_mensaje_appeared_team(t_appeared_pokemon appeared_pokemon, int socke
 
 
 	if(send(socket,mensaje_a_enviar,size_serializados,0)>0){
-		log_info(logger, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
-		log_info(mi_log, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_broker(), leer_puerto_broker());
+		log_info(logger, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_team(), leer_puerto_team());
+		log_info(mi_log, "Se envio el mensaje APPEARED: %s y PUERTO: %d",leer_ip_team(), leer_puerto_team());
 	}else{
 		log_error(logger, "No se pudo enviar el mensaje APPEARED.");
 		log_error(mi_log, "No se pudo enviar el mensaje APPEARED.");
